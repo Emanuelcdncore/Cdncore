@@ -1,0 +1,166 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-background: #0a0a0f;
+  --color-foreground: #ffffff;
+  --font-sans: var(--font-inter);
+  --font-depot: var(--font-depot);
+}
+
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #131115;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Mobile scroll optimizations */
+@media (max-width: 768px) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .section-padding,
+  section {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+  }
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* Depot font class */
+.depot-font {
+  font-family: var(--font-depot), 'Depot', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-feature-settings: "liga" 0, "kern" 1;
+  letter-spacing: 0.02em;
+}
+
+/* Gradient text class */
+.gradient-text {
+  background: linear-gradient(135deg, #9945ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gray text */
+.gray-text {
+  color: #b8b7b7;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131115;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}
+
+/* Selection */
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #ffffff;
+}
+
+/* Global link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Button reset */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Image defaults */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Gradient separator line used across sections */
+.glow-separator {
+  height: 3px;
+  background: linear-gradient(to right,
+    transparent 0%,
+    rgba(64, 64, 64, 0.8) 15%,
+    rgba(153, 69, 255, 0.9) 35%,
+    rgba(255, 20, 147, 0.8) 50%,
+    rgba(255, 255, 255, 1.5) 50%,
+    rgba(255, 20, 147, 0.8) 50%,
+    rgba(153, 69, 255, 0.9) 65%,
+    rgba(64, 64, 64, 0.8) 85%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .glow-separator {
+    height: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-separator {
+    height: 1px;
+  }
+}

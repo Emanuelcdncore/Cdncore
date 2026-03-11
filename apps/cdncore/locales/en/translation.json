@@ -1,0 +1,106 @@
+{
+    "common": {
+        "read_more": "Read More",
+        "search_placeholder": "Search...",
+        "back": "Back",
+        "loading": "Loading...",
+        "previous": "Previous",
+        "next": "Next",
+        "results_found": "{{count}} result found",
+        "results_found_other": "{{count}} results found"
+    },
+    "news": {
+        "page_title": "News",
+        "hero": {
+            "banner1": {
+                "title": "Boost Innovation",
+                "subtitle": "Emerging Technologies 2026",
+                "description": "Discover the trends that will shape the future of technology",
+                "badge": "Exclusive Insight"
+            },
+            "banner2": {
+                "title": "Digital Security",
+                "subtitle": "Protect What Matters",
+                "description": "Best practices and cybersecurity frameworks",
+                "badge": "Complete Guide"
+            },
+            "banner3": {
+                "title": "Cloud & DevOps",
+                "subtitle": "Modern Architectures",
+                "description": "Scalable infrastructure for next-generation applications",
+                "badge": "Deep Analysis"
+            }
+        },
+        "sections": {
+            "more_news": "More News",
+            "more_news_desc": "Explore the latest updates and articles on technology, innovation, and digital trends",
+            "featured": "Featured",
+            "search_placeholder": "Search news...",
+            "sort_by": "Sort by:"
+        },
+        "filters": {
+            "all": "All",
+            "news": "News",
+            "events": "Events",
+            "papers": "Papers"
+        },
+        "sort": {
+            "newest": "Newest",
+            "oldest": "Oldest",
+            "az": "A-Z",
+            "za": "Z-A"
+        },
+        "card": {
+            "read_time": "read"
+        },
+        "detail": {
+            "read_time": "read",
+            "share": "Share",
+            "share_desc": "Share this news on your social networks",
+            "copy_link": "Copy Link",
+            "related_articles": "Related News/Articles",
+            "related_tags": "Related Tags",
+            "categories": "Categories",
+            "distribution": "Distribution by Type",
+            "view_all": "View All",
+            "main_topics": "Main Topics Covered",
+            "networking": "Networking and Collaboration"
+        }
+    },
+    "impact": {
+        "title": "Our Impact",
+        "description": "Numbers that demonstrate our commitment to quality information",
+        "stats": {
+            "published_articles": "Published Articles",
+            "active_readers": "Active Readers",
+            "connected_years": "Connected Years"
+        },
+        "newsletter": {
+            "title": "Don't Miss Any Updates",
+            "description": "Subscribe to our newsletter and receive the most important news directly in your email",
+            "placeholder": "Enter your email...",
+            "button": "Subscribe",
+            "button_sending": "Sending...",
+            "button_success": "Subscribed!",
+            "disclaimer": "You can unsubscribe at any time. We respect your privacy."
+        }
+    },
+    "categories": {
+        "technology": "Technology",
+        "business": "Business",
+        "innovation": "Innovation",
+        "work": "Work",
+        "design": "Design",
+        "products": "Products",
+        "security": "Security",
+        "data_science": "Data Science",
+        "robotics": "Robotics",
+        "vr_ar": "VR/AR",
+        "sustainability": "Sustainability",
+        "networks": "Networks",
+        "blockchain": "Blockchain",
+        "quantum": "Quantum",
+        "ai_ml": "AI & ML",
+        "cloud": "Cloud"
+    }
+}

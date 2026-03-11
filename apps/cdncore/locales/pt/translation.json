@@ -1,0 +1,106 @@
+{
+    "common": {
+        "read_more": "Ler Mais",
+        "search_placeholder": "Pesquisar...",
+        "back": "Voltar",
+        "loading": "A carregar...",
+        "previous": "Anterior",
+        "next": "Proxima",
+        "results_found": "{{count}} resultado encontrado",
+        "results_found_other": "{{count}} resultados encontrados"
+    },
+    "news": {
+        "page_title": "Noticias",
+        "hero": {
+            "banner1": {
+                "title": "Impulsione a Inovacao",
+                "subtitle": "Tecnologias Emergentes 2026",
+                "description": "Descubra as tendencias que vao moldar o futuro da tecnologia",
+                "badge": "Insight Exclusivo"
+            },
+            "banner2": {
+                "title": "Seguranca Digital",
+                "subtitle": "Proteja o que Importa",
+                "description": "As melhores praticas e frameworks de ciberseguranca",
+                "badge": "Guia Completo"
+            },
+            "banner3": {
+                "title": "Cloud & DevOps",
+                "subtitle": "Arquiteturas Modernas",
+                "description": "Infraestrutura escalavel para aplicacoes de nova geracao",
+                "badge": "Analise Profunda"
+            }
+        },
+        "sections": {
+            "more_news": "Mais Noticias",
+            "more_news_desc": "Explore as ultimas atualizacoes e artigos sobre tecnologia, inovacao e tendencias digitais",
+            "featured": "Em Destaque",
+            "search_placeholder": "Pesquisar noticias...",
+            "sort_by": "Ordenar por:"
+        },
+        "filters": {
+            "all": "Todos",
+            "news": "Noticias",
+            "events": "Eventos",
+            "papers": "Papers"
+        },
+        "sort": {
+            "newest": "Mais Recentes",
+            "oldest": "Mais Antigos",
+            "az": "A-Z",
+            "za": "Z-A"
+        },
+        "card": {
+            "read_time": "de leitura"
+        },
+        "detail": {
+            "read_time": "de leitura",
+            "share": "Partilhar",
+            "share_desc": "Partilhe esta noticia nas suas redes sociais",
+            "copy_link": "Copiar Link",
+            "related_articles": "Noticias/Artigos Relacionados",
+            "related_tags": "Tags Relacionadas",
+            "categories": "Categorias",
+            "distribution": "Distribuicao por Tipo",
+            "view_all": "Ver Todos",
+            "main_topics": "Principais Temas Abordados",
+            "networking": "Networking e Colaboracao"
+        }
+    },
+    "impact": {
+        "title": "O Nosso Impacto",
+        "description": "Numeros que demonstram o nosso compromisso com informacao de qualidade",
+        "stats": {
+            "published_articles": "Artigos Publicados",
+            "active_readers": "Leitores Ativos",
+            "connected_years": "Anos Conectados"
+        },
+        "newsletter": {
+            "title": "Nao Perca Nenhuma Atualizacao",
+            "description": "Subscreva a nossa newsletter e receba as noticias mais importantes diretamente no seu email",
+            "placeholder": "Insira o seu email...",
+            "button": "Subscrever",
+            "button_sending": "A enviar...",
+            "button_success": "Subscrito!",
+            "disclaimer": "Pode cancelar a subscricao a qualquer momento. Respeitamos a sua privacidade."
+        }
+    },
+    "categories": {
+        "technology": "Tecnologia",
+        "business": "Negocios",
+        "innovation": "Inovacao",
+        "work": "Trabalho",
+        "design": "Design",
+        "products": "Produtos",
+        "security": "Seguranca",
+        "data_science": "Ciencia de Dados",
+        "robotics": "Robotica",
+        "vr_ar": "VR/AR",
+        "sustainability": "Sustentabilidade",
+        "networks": "Redes",
+        "blockchain": "Blockchain",
+        "quantum": "Quantica",
+        "ai_ml": "IA & ML",
+        "cloud": "Cloud"
+    }
+}

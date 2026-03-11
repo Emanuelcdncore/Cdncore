@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: "Depot";
+  src: url("/fonts/Depot.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-depot: "Depot", "Inter", sans-serif;
+
+  --color-background: hsl(210 15% 8%);
+  --color-foreground: hsl(210 5% 92%);
+  --color-card: hsl(210 12% 12%);
+  --color-card-foreground: hsl(210 5% 92%);
+  --color-popover: hsl(210 12% 12%);
+  --color-popover-foreground: hsl(210 5% 92%);
+  --color-primary: hsl(160 100% 43%);
+  --color-primary-foreground: hsl(210 15% 8%);
+  --color-secondary: hsl(210 20% 18%);
+  --color-secondary-foreground: hsl(210 5% 92%);
+  --color-muted: hsl(210 10% 35%);
+  --color-muted-foreground: hsl(210 5% 65%);
+  --color-accent: hsl(160 100% 43%);
+  --color-accent-foreground: hsl(210 15% 8%);
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-border: hsl(210 15% 20%);
+  --color-input: hsl(210 15% 15%);
+  --color-ring: hsl(160 100% 43%);
+  --radius: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Depot", "Inter", sans-serif;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: "Inter", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+:where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+pre,
+code {
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* Gradient utilities */
+.gradient-primary {
+  background: linear-gradient(to right, hsl(160 100% 43% / 0.2), hsl(160 100% 43% / 0.1), transparent);
+}
+
+.gradient-glow {
+  background: linear-gradient(to right, hsl(217 91% 60% / 0.2), hsl(188 95% 60% / 0.2), transparent);
+}
+
+/* Glass morphism effect */
+.glass {
+  background-color: hsl(210 15% 8% / 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid hsl(210 15% 20% / 0.4);
+}
+
+/* Section container */
+.section-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 300ms ease-in-out;
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(to right, hsl(160 100% 43%), hsl(188 80% 60%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Prose styles for news content */
+.prose-invert h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-invert p {
+  color: #9ca3af;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.prose-invert ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #9ca3af;
+}
+
+.prose-invert li {
+  margin-bottom: 0.5rem;
+}

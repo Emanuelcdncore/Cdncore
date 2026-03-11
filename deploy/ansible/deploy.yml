@@ -1,0 +1,213 @@
+---
+- name: Deploy CDN Landings (Zero-Downtime Rolling)
+  hosts: webservers
+  become: true
+  vars_files:
+    - group_vars/all.yml
+  vars:
+    build_mode: "remote"
+    images_dir: "/tmp/cdn-landings-images"
+
+  tasks:
+    # ── Ensure app directory exists ──
+    - name: Create app directory
+      file:
+        path: "{{ app_dir }}"
+        state: directory
+        owner: "{{ deploy_user }}"
+        group: "{{ deploy_user }}"
+
+    # ── Sync project files ──
+    - name: Rsync project files to server
+      synchronize:
+        src: "{{ playbook_dir }}/../../"
+        dest: "{{ app_dir }}/"
+        delete: true
+        rsync_opts:
+          - "--exclude=node_modules"
+          - "--exclude=.git"
+          - "--exclude=.next"
+          - "--exclude=deploy/ansible"
+          - "--exclude=.claude"
+      become: false
+
+    # ── Production compose + nginx ──
+    - name: Copy production docker-compose
+      copy:
+        src: "{{ playbook_dir }}/../docker-compose.prod.yml"
+        dest: "{{ app_dir }}/docker-compose.yml"
+        remote_src: no
+
+    - name: Template production nginx config
+      template:
+        src: "{{ playbook_dir }}/../nginx/nginx.prod.conf.j2"
+        dest: "{{ app_dir }}/nginx/nginx.conf"
+
+    - name: Set directory ownership
+      file:
+        path: "{{ app_dir }}"
+        state: directory
+        owner: "{{ deploy_user }}"
+        group: "{{ deploy_user }}"
+        recurse: yes
+
+    # ══════════════════════════════════════════════
+    # PHASE 1a: LOCAL BUILD - transfer and load images
+    # ══════════════════════════════════════════════
+    - name: "LOCAL: Create images directory on server"
+      file:
+        path: "{{ app_dir }}/images"
+        state: directory
+        owner: "{{ deploy_user }}"
+        group: "{{ deploy_user }}"
+      when: build_mode == "local"
+
+    - name: "LOCAL: Transfer image {{ item }}"
+      copy:
+        src: "{{ images_dir }}/{{ item }}.tar.gz"
+        dest: "{{ app_dir }}/images/{{ item }}.tar.gz"
+      loop:
+        - cdncore
+        - cdntek
+        - cdntv
+      when: build_mode == "local"
+
+    - name: "LOCAL: Load image {{ item }}"
+      shell: "gunzip -c {{ app_dir }}/images/{{ item }}.tar.gz | docker load"
+      loop:
+        - cdncore
+        - cdntek
+        - cdntv
+      when: build_mode == "local"
+
+    - name: "LOCAL: Cleanup image tars"
+      file:
+        path: "{{ app_dir }}/images"
+        state: absent
+      when: build_mode == "local"
+
+    # ══════════════════════════════════════════════
+    # PHASE 1b: REMOTE BUILD - build on server one by one
+    # ══════════════════════════════════════════════
+    - name: "REMOTE: Build {{ item }}"
+      command: "docker compose build {{ item }}"
+      args:
+        chdir: "{{ app_dir }}"
+      loop:
+        - cdncore
+        - cdntek
+        - cdntv
+      when: build_mode == "remote"
+
+    # ══════════════════════════════════════════════
+    # PHASE 2: Infra (postgres + migrations)
+    # ══════════════════════════════════════════════
+    - name: Ensure postgres is running
+      command: docker compose up -d postgres
+      args:
+        chdir: "{{ app_dir }}"
+
+    - name: Wait for PostgreSQL healthy
+      command: >
+        docker compose exec -T postgres
+        pg_isready -U {{ db_user }} -d {{ db_name }}
+      args:
+        chdir: "{{ app_dir }}"
+      register: pg_ready
+      retries: 15
+      delay: 2
+      until: pg_ready.rc == 0
+
+    - name: Run migrations
+      command: docker compose --profile migration up migrate
+      args:
+        chdir: "{{ app_dir }}"
+
+    - name: Show migration logs
+      command: docker compose logs migrate
+      args:
+        chdir: "{{ app_dir }}"
+      register: migrate_logs
+
+    - name: Print migration output
+      debug:
+        var: migrate_logs.stdout_lines
+
+    # ══════════════════════════════════════════════
+    # PHASE 3: Rolling deploy (one app at a time)
+    # ══════════════════════════════════════════════
+
+    # ── CDNCore ──
+    - name: "ROLL: Restart cdncore"
+      command: docker compose up -d --no-deps --force-recreate cdncore
+      args:
+        chdir: "{{ app_dir }}"
+
+    - name: "HEALTH: Wait for CDNCore"
+      uri:
+        url: "http://127.0.0.1:3001/cdncore"
+        method: GET
+        status_code: [200, 301, 302, 308]
+      retries: 30
+      delay: 3
+      register: health_core
+      until: health_core.status is defined
+
+    # ── CDNTek ──
+    - name: "ROLL: Restart cdntek"
+      command: docker compose up -d --no-deps --force-recreate cdntek
+      args:
+        chdir: "{{ app_dir }}"
+
+    - name: "HEALTH: Wait for CDNTek"
+      uri:
+        url: "http://127.0.0.1:3002/cdntek"
+        method: GET
+        status_code: [200, 301, 302, 308]
+      retries: 30
+      delay: 3
+      register: health_tek
+      until: health_tek.status is defined
+
+    # ── CDNTV ──
+    - name: "ROLL: Restart cdntv"
+      command: docker compose up -d --no-deps --force-recreate cdntv
+      args:
+        chdir: "{{ app_dir }}"
+
+    - name: "HEALTH: Wait for CDNTV"
+      uri:
+        url: "http://127.0.0.1:3003/cdntv"
+        method: GET
+        status_code: [200, 301, 302, 308]
+      retries: 30
+      delay: 3
+      register: health_tv
+      until: health_tv.status is defined
+
+    # ══════════════════════════════════════════════
+    # PHASE 4: Ensure nginx is up with latest config
+    # ══════════════════════════════════════════════
+    - name: Ensure nginx is running
+      command: docker compose up -d --no-deps nginx
+      args:
+        chdir: "{{ app_dir }}"
+
+    - name: Reload nginx config
+      command: docker compose exec -T nginx nginx -s reload
+      args:
+        chdir: "{{ app_dir }}"
+
+    # ── Cleanup ──
+    - name: Prune dangling images
+      command: docker image prune -f
+      args:
+        chdir: "{{ app_dir }}"
+
+    - name: Deployment complete
+      debug:
+        msg: |
+          CDN Landings deployed successfully ({{ build_mode }} build)!
+          - CDNCore: http://192.168.30.110/cdncore
+          - CDNTek:  http://192.168.30.110/cdntek
+          - CDNTV:   http://192.168.30.110/cdntv

@@ -1,0 +1,165 @@
+{
+  "header": {
+    "services": "SERVICES",
+    "products": "PRODUCTS",
+    "news": "NEWS",
+    "about": "ABOUT",
+    "faq": "FAQ",
+    "contact": "CONTACT"
+  },
+  "about": {
+    "title": "CDN GROUP",
+    "paragraph1": "The CDN Group is dedicated to innovation, technological development and operational excellence, operating in multiple areas to offer future-oriented solutions.",
+    "paragraph2": "The CDN Group's operations are based on three fundamental pillars:",
+    "pillars": "technology, corporate services and digital transformation.",
+    "paragraph3": "Through multidisciplinary teams and advanced competencies, the group develops projects ranging from strategic consulting and institutional communication to technological solutions, intelligent systems and specialized services."
+  },
+  "stats": {
+    "title": "Our Impact",
+    "subtitle": "Years of experience generating trust and value",
+    "years": "Years of Experience",
+    "clients": "Satisfied Clients",
+    "projects": "Completed Projects",
+    "countries": "Countries Where We Operate"
+  },
+  "features": {
+    "title": "WHY ",
+    "titleHighlight": "CDNTEK?",
+    "subtitle": "Discover what makes us different and unique in the market",
+    "tech": {
+      "title": "Technological Efficiency and Performance",
+      "description": "Our experience in protocol usage is guaranteed and based on our expertise and international documentation."
+    },
+    "security": {
+      "title": "Advanced and Reliable Protection",
+      "description": "TEK protects your infrastructure with advanced cybersecurity technologies and fully optimized network management."
+    },
+    "coverage": {
+      "title": "Services Worldwide",
+      "description": "Our international coverage offers support for events and photography. Simultaneous interpretation, technical support."
+    },
+    "innovation": {
+      "title": "Innovative and Modern Solutions",
+      "description": "We use the most modern technologies to ensure cutting-edge solutions that drive your business into the future."
+    }
+  },
+  "company": {
+    "title": "ITC GROUP",
+    "tagline": "i trust creation",
+    "description": "By combining CDNTEK's excellence with ITC's industrial power, with over 31 years of experience and a track record of success in more than 1,500,000 projects, we ensure that our customers receive only superior quality products with international certifications (CE, RoHs, EN54, ISO, CCC) and European quality standards. This alliance allows CDNTEK to acquire the best and most competitive products to ultimately offer the best value and performance to our customers",
+    "founded2008": "Established in 2008",
+    "founded1993": "ITC brand founded in 1993",
+    "employees": "6,500+ Collaborators",
+    "coverage": "Coverage in the Iberian Peninsula",
+    "highTech": "International High-Tech Company",
+    "solutions": "Leading Industry Solutions",
+    "moreInfo": "+ info"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": {
+      "business": {
+        "question": "How can CDNTEK help my business?",
+        "answer": "CDNTEK offers complete solutions in IT infrastructure, network management, cybersecurity and state-of-the-art audiovisual equipment."
+      },
+      "contact": {
+        "question": "What types of contacts can be established for TEK?",
+        "answer": "We offer multiple forms of contact: phone, email, web form, in person or through scheduled meetings."
+      },
+      "support": {
+        "question": "Is technical support included?",
+        "answer": "Yes, technical support is included in all our services and contacts, with 24/7 availability for emergencies."
+      },
+      "smallBusiness": {
+        "question": "Is TEK suitable for small businesses?",
+        "answer": "Absolutely! We have scalable solutions suitable for companies of any size, from startups to large corporations."
+      },
+      "implementation": {
+        "question": "What is the implementation time?",
+        "answer": "The time varies according to the complexity of the project. We work to implement solutions quickly and efficiently."
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title1": "Our services",
+      "title2": "at your disposal",
+      "description": "CDNTEK is the official representative of Guangdong BaoLun Electronics Co., Ltd. in the Iberian Peninsula, guaranteeing direct access to quality products and cutting-edge technology.",
+      "learnMore": "Learn more"
+    },
+    "audiovisual": {
+      "title": "INSTALLATION, MANAGEMENT AND MAINTENANCE OF AUDIOVISUAL EQUIPMENT",
+      "description": "Official coverage of institutional events and photographic sessions. Comprehensive technical support, including simultaneous interpretation, media management and sound assistance."
+    },
+    "cybersecurity": {
+      "title": "CYBERSECURITY AND NETWORK MANAGEMENT",
+      "description": "TEK protects your infrastructure with advanced cybersecurity technologies and fully optimized network management. We monitor, prevent and respond to threats in real time, ensuring a secure, stable digital environment ready to scale with your business."
+    }
+  },
+  "contact": {
+    "title": "CONTACT",
+    "subtitle": "& SUPPORT",
+    "dedicated": "Dedicated service",
+    "help": "HOW CAN WE HELP?",
+    "design": "DESIGN TEAM",
+    "digital": "DIGITAL INNOVATION TEAM",
+    "address": {
+      "parkurbis": "Parkurbis",
+      "park": "Covilh\u00e3 Science and Technology Park",
+      "postal": "6200-865 Covilh\u00e3"
+    },
+    "schedule": "Schedule",
+    "weekdays": "Monday - Friday 09:00 - 18:00",
+    "weekend": "Saturday - Sunday - CLOSED",
+    "linkedin": "Contact via LinkedIn",
+    "form": {
+      "topic": "TOPIC",
+      "selectTopic": "Select a topic...",
+      "support": "Support",
+      "commercial": "Commercial",
+      "other": "Other",
+      "firstName": "FIRST NAME",
+      "lastName": "LAST NAME",
+      "email": "EMAIL",
+      "message": "MESSAGE",
+      "submit": "Submit"
+    }
+  },
+  "footer": {
+    "description": "Digital excellence in engineering through innovative platforms, robust code and comprehensive services.",
+    "emailPlaceholder": "Email",
+    "subscribe": "Subscribe",
+    "subscribed": "\u2713 Subscribed",
+    "sections": {
+      "services": "Services",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "installation": "Audiovisual equipment installation",
+      "management": "Audiovisual equipment management",
+      "maintenance": "Audiovisual equipment maintenance",
+      "networks": "Network management",
+      "cybersecurity": "Cybersecurity",
+      "about": "About",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions of Service"
+    },
+    "copyright": "Copyright \u00a9 CDNTV 2025 - Powered by CDNCORE. All rights reserved"
+  },
+  "partners": {
+    "title": "OUR PARTNERS"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Protecting your data with transparency",
+    "lastUpdated": "Last updated: November 28, 2025"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "subtitle": "Using our technology responsibly",
+    "lastUpdated": "Last updated: November 28, 2025"
+  }
+}

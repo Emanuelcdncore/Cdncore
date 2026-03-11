@@ -1,0 +1,8 @@
+.hamburger-btn { display: none; position: fixed; top: 20px; right: 20px; z-index: 1001; width: 44px; height: 44px; border-radius: 50%; background: rgba(19, 17, 21, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(139, 92, 246, 0.2); align-items: center; justify-content: center; cursor: pointer; color: #ffffff; }
+@media (max-width: 768px) { .hamburger-btn { display: flex; } }
+.mobile-nav-panel { position: fixed; top: 0; right: 0; width: 280px; height: 100vh; background: rgba(19, 17, 21, 0.95); backdrop-filter: blur(30px); border-left: 1px solid rgba(139, 92, 246, 0.2); z-index: 1000; padding: 80px 30px 30px; display: flex; flex-direction: column; gap: 15px; }
+.mobile-nav-item { display: flex; align-items: center; gap: 15px; padding: 14px 16px; border-radius: 12px; color: #9CA3AF; cursor: pointer; transition: all 0.3s ease; background: transparent; border: none; font-size: 16px; width: 100%; text-align: left; }
+.mobile-nav-item:hover { color: #ffffff; background: rgba(139, 92, 246, 0.15); }
+.mobile-nav-item.active { color: #8B5CF6; background: rgba(139, 92, 246, 0.1); }
+.mobile-nav-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+.mobile-nav-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); z-index: 999; }

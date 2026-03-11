@@ -1,0 +1,110 @@
+.intro-section {
+  background: #000000;
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.intro-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.intro-text {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: left;
+  position: relative;
+  z-index: 3;
+}
+
+.intro-text .gray-text {
+  font-size: 0.64em;
+  line-height: 1.3;
+}
+
+.intro-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right,
+    transparent 0%,
+    rgba(64, 64, 64, 0.8) 15%,
+    rgba(153, 69, 255, 0.9) 35%,
+    rgba(255, 20, 147, 0.8) 50%,
+    rgba(255, 255, 255, 1.5) 50%,
+    rgba(255, 20, 147, 0.8) 50%,
+    rgba(153, 69, 255, 0.9) 65%,
+    rgba(64, 64, 64, 0.8) 85%,
+    transparent 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .intro-gradient-overlay { height: 2px; }
+  .intro-section { min-height: 50vh; }
+  .intro-content {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    min-height: 50vh;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+  .intro-left { height: 400px; order: 2; }
+  .intro-right { align-items: center; order: 1; padding: 20px 20px 10px; }
+  .intro-text { font-size: 32px; text-align: center; line-height: 1.3; }
+}
+
+@media (max-width: 480px) {
+  .intro-gradient-overlay { height: 1px; }
+  .intro-section { min-height: 45vh; }
+  .intro-content { gap: 20px; padding: 25px 15px; min-height: 45vh; }
+  .intro-left { height: 300px; }
+  .intro-right { padding: 10px 15px; }
+  .intro-text { font-size: 24px; line-height: 1.4; }
+}
+
+@media (max-width: 360px) {
+  .intro-section { min-height: 40vh; }
+  .intro-content { padding: 20px 10px; gap: 15px; min-height: 40vh; }
+  .intro-right { padding: 8px 10px; }
+  .intro-text { font-size: 20px; }
+  .intro-left { height: 250px; }
+}
+
+@media (min-width: 2560px) {
+  .intro-content { gap: 100px; }
+  .intro-text { font-size: 56px; }
+  .intro-left { height: 600px; }
+  .intro-right { padding: 60px; }
+}

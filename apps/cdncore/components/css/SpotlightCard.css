@@ -1,0 +1,40 @@
+.spotlight-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(15, 15, 20, 0.95);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-2px);
+}
+
+.spotlight-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+}
+
+.spotlight-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 16px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.spotlight-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

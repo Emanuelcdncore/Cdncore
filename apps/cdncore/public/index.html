@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="CDNCORE - AI Agent & Drone Services" />
+    <!-- Web App Manifest (like Vite projects) -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Favicons - Optimized for small sizes -->
+    <!-- Using ICO for 16x16/32x32, PNG for larger sizes -->
+    <!-- Auto-generated favicon from symbol center -->
+    <link rel="icon" href="/favicon.ico?v=8" />
+    <link rel="shortcut icon" href="/favicon.ico?v=8" />
+    <!-- PNG icons for larger sizes only -->
+    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="%PUBLIC_URL%/android-chrome-512x512.png" />
+    <!-- Apple touch icons for iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <!-- Preload largest favicon for better quality -->
+    <link rel="preload" href="%PUBLIC_URL%/android-chrome-512x512.png" as="image" />
+    <!-- Windows tiles -->
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/android-chrome-192x192.png" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <title>CDNCORE</title>
+    <!-- Font preloads -->
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Inter.ttc" as="font" type="font/ttc" crossorigin>
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Depot.ttf" as="font" type="font/ttf" crossorigin>
+    <!-- Font faces -->
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        src: url('%PUBLIC_URL%/fonts/Inter.ttc') format('truetype-collection');
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: optional;
+      }
+      @font-face {
+        font-family: 'Depot';
+        src: url('%PUBLIC_URL%/fonts/Depot.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Depot';
+        src: url('%PUBLIC_URL%/fonts/Depot.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Depot';
+        src: url('%PUBLIC_URL%/fonts/Depot.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <!-- Preload critical scripts for better performance -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.dots.min.js" as="script">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Load scripts at end of body to prevent render blocking with async initialization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.dots.min.js" defer></script>
+    <script>
+      // Async script loading with main thread yielding
+      const loadScriptsAsync = async () => {
+        // Yield to main thread before checking
+        await new Promise(resolve => requestIdleCallback || setTimeout(resolve, 0));
+        
+        console.log('[Index] THREE loaded:', typeof window.THREE !== 'undefined');
+        console.log('[Index] VANTA loaded:', typeof window.VANTA !== 'undefined');
+        console.log('[Index] VANTA.FOG available:', typeof window.VANTA !== 'undefined' && typeof window.VANTA.FOG !== 'undefined');
+        console.log('[Index] VANTA.DOTS available:', typeof window.VANTA !== 'undefined' && typeof window.VANTA.DOTS !== 'undefined');
+      };
+      
+      // Use DOMContentLoaded for better performance
+      document.addEventListener('DOMContentLoaded', loadScriptsAsync);
+    </script>
+  </body>
+</html>
+

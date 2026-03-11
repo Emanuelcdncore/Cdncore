@@ -1,0 +1,18 @@
+.text-type-wrapper {
+  display: inline;
+}
+
+.text-type-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: #8B5CF6;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: cursorBlink 1s ease-in-out infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

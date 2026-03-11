@@ -1,0 +1,217 @@
+.commitments-cta {
+  background: #1a1a1a; /* Dark background to match beehive pattern */
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px; /* Added vertical padding for better spacing */
+  position: relative;
+  z-index: 3; /* Ensure content is above beehive pattern */
+}
+
+.cta-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.cta-title-white {
+  color: #ffffff;
+}
+
+.cta-title-pink {
+  color: #EC4899;
+  font-weight: 700 !important;
+  font-family: 'Depot', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  font-style: normal !important;
+  text-rendering: geometricPrecision !important;
+  -webkit-font-smoothing: none !important;
+  -moz-osx-font-smoothing: unset !important;
+  font-feature-settings: "liga" 0, "kern" 1 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #8B5CF6;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  background: #2a2a2a;
+  border-color: #EC4899;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+}
+
+/* CTA Bottom Gradient Line */
+.cta-bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, 
+    transparent 0%, 
+    rgba(64, 64, 64, 0.8) 15%, 
+    rgba(153, 69, 255, 0.9) 35%, 
+    rgba(255, 20, 147, 0.8) 50%, 
+    rgba(255, 255, 255, 1.5) 50%, 
+    rgba(255, 20, 147, 0.8) 50%, 
+    rgba(153, 69, 255, 0.9) 65%, 
+    rgba(64, 64, 64, 0.8) 85%, 
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+/* CTA Gradient Responsive Adjustments */
+@media (max-width: 768px) {
+  .cta-bottom-gradient {
+    height: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-bottom-gradient {
+    height: 1px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .cta-content {
+    max-width: 700px;
+    padding: 50px 20px;
+  }
+  
+  .cta-title {
+    font-size: 42px;
+  }
+  
+  .cta-subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .commitments-cta {
+    min-height: 80vh;
+  }
+  
+  .cta-content {
+    max-width: 600px;
+    padding: 40px 20px;
+  }
+  
+  .cta-title {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  
+  .cta-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    padding: 14px 35px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .commitments-cta {
+    min-height: 70vh;
+  }
+  
+  .cta-content {
+    max-width: 100%;
+    padding: 30px 15px;
+  }
+  
+  .cta-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  
+  .cta-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cta-content {
+    padding: 25px 10px;
+  }
+  
+  .cta-title {
+    font-size: 24px;
+  }
+  
+  .cta-subtitle {
+    font-size: 13px;
+  }
+  
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+}
+
+/* Ultra-wide monitors */
+@media (min-width: 2560px) {
+  .cta-content {
+    max-width: 1000px;
+    padding: 80px 40px;
+  }
+  
+  .cta-title {
+    font-size: 56px;
+  }
+  
+  .cta-subtitle {
+    font-size: 20px;
+  }
+  
+  .cta-button {
+    padding: 18px 50px;
+    font-size: 18px;
+  }
+}

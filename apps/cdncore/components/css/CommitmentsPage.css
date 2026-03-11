@@ -1,0 +1,186 @@
+/* Commitments Page Styles */
+.commitments-page {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #c9d1d9;
+  overflow-x: hidden;
+  overflow-y: visible !important;
+  background: #131115;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  height: auto !important;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Ensure VANTA canvas doesn't block scroll events */
+.commitments-page .vanta-dots-background,
+.commitments-page .vanta-dots-background canvas {
+  pointer-events: none !important;
+  touch-action: none !important;
+}
+
+
+/* Hero Section - Scoped to commitments page only */
+.commitments-page .hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+  background-color: #1b181b;
+  pointer-events: none;
+}
+
+.commitments-page .hero-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right,
+    transparent 0%,
+    rgba(64, 64, 64, 0.8) 15%,
+    rgba(153, 69, 255, 0.9) 35%,
+    rgba(255, 20, 147, 0.8) 50%,
+    rgba(255, 255, 255, 1.5) 50%,
+    rgba(255, 20, 147, 0.8) 50%,
+    rgba(153, 69, 255, 0.9) 65%,
+    rgba(64, 64, 64, 0.8) 85%,
+    transparent 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+.commitments-page .hero > * {
+  pointer-events: auto;
+}
+
+.commitments-page .hero-content {
+  text-align: center;
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: auto;
+}
+
+.commitments-page .hero-content h1 {
+  font-family: var(--font-depot), 'Depot', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  color: white;
+  pointer-events: auto;
+}
+
+.commitments-page .hero-content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  max-width: 600px;
+  margin: 0 auto;
+  color: #c9d1d9;
+  pointer-events: auto;
+}
+
+.glow-separator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #5449d0, #b193fb, #ffe9ff, transparent);
+  box-shadow: 0 0 20px rgba(177, 147, 251, 0.6);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .commitments-page {
+    overflow-y: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  .commitments-page .hero {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+
+  .commitments-page .hero-content h1 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .commitments-page .hero-content p {
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    padding: 0 3%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .commitments-page {
+    overflow-y: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  .commitments-page .hero {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+
+  .commitments-page .hero-content h1 {
+    font-size: clamp(1.8rem, 10vw, 2.2rem);
+  }
+
+  .commitments-page .hero-content p {
+    font-size: clamp(0.9rem, 4.5vw, 1rem);
+    padding: 0 4%;
+    text-align: center;
+  }
+}
+
+/* Large monitors (1440p and above) */
+@media (min-width: 1441px) {
+  .commitments-page .hero-content h1 {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .commitments-page .hero-content p {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    max-width: 900px;
+  }
+}
+
+/* Ultra-wide monitors (2560px and above) */
+@media (min-width: 2561px) {
+  .commitments-page .hero-content h1 {
+    font-size: clamp(4rem, 3vw, 6rem);
+  }
+
+  .commitments-page .hero-content p {
+    font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+    max-width: 1000px;
+  }
+}

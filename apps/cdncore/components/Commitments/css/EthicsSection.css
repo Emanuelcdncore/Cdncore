@@ -1,0 +1,455 @@
+/* ETHICS SECTION */
+.ethics-section {
+  padding: 40px 0;
+  background: #131115;
+  position: relative;
+  margin-top: 60px;
+  overflow: visible !important;
+  overflow-y: visible !important;
+  height: auto !important;
+  max-height: none !important;
+  min-height: auto !important;
+}
+
+.ethics-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #5449d0, #b193fb, #ffe9ff, transparent);
+  box-shadow: 0 0 20px rgba(177, 147, 251, 0.6);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.ethics-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #5449d0, #b193fb, #ffe9ff, transparent);
+  box-shadow: 0 0 20px rgba(177, 147, 251, 0.6);
+  z-index: 3;
+  pointer-events: none;
+}
+
+
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-family: 'Depot', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #afb4b9;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.ethics-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 80px;
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+.ethics-principles {
+  position: sticky;
+  top: 100px;
+}
+
+.principles-list {
+  list-style: none;
+  padding: 0;
+}
+
+.principle-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(48, 54, 61, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  color: #c9d1d9;
+}
+
+.principle-item:last-child {
+  border-bottom: none;
+}
+
+.principle-item:hover {
+  background: rgba(22, 27, 34, 0.3);
+  padding-left: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(177, 147, 251, 0.6);
+}
+
+.principle-item.active {
+  color: #cbbcf1;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(177, 147, 251, 0.6);
+  padding-left: 10px;
+}
+
+.principle-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 40px;
+  background: linear-gradient(180deg, #5449d0, #b193fb);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(84, 73, 208, 0.5);
+}
+
+.ethics-content {
+  background: transparent;
+  padding: 40px;
+  border-radius: 12px;
+  min-height: 500px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  overflow: visible !important; /* Changed from hidden to visible */
+  height: auto !important;
+  max-height: none !important;
+}
+
+.ethics-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(135deg, 
+    rgba(32, 32, 32, 0.4) 0%,
+    rgba(64, 64, 64, 0.6) 25%,
+    rgba(84, 73, 208, 0.8) 50%,
+    rgba(177, 147, 251, 0.9) 75%,
+    rgba(255, 182, 193, 0.8) 100%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  z-index: 1;
+}
+
+
+.principle-detail {
+  display: none;
+}
+
+.principle-detail.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.principle-detail h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #b193fb;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(177, 147, 251, 0.6);
+}
+
+.principle-detail p {
+  font-size: 1.1rem;
+  color: #f0f6fc;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.principle-detail ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.principle-detail li {
+  color: #c9d1d9;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.principle-detail li::marker {
+  color: #5449d0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.commitment-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 40px 20px;
+  background: transparent;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(135deg, 
+    rgba(255, 182, 193, 0.8) 0%,
+    rgba(177, 147, 251, 0.9) 25%,
+    rgba(84, 73, 208, 0.8) 50%,
+    rgba(64, 64, 64, 0.6) 75%,
+    rgba(32, 32, 32, 0.4) 100%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  z-index: 1;
+}
+
+.stat-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: none;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.4),
+    0 0 30px rgba(177, 147, 251, 0.25);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #b193fb;
+  display: block;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(177, 147, 251, 0.4);
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #c9d1d9;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .ethics-grid {
+    grid-template-columns: 1fr;
+    gap: 4%;
+    justify-items: center;
+  }
+  
+  .commitment-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .stat-item {
+    padding: 30px 15px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ethics-section {
+    padding: 40px 0 250px 0; /* Increased bottom padding */
+    overflow: visible !important;
+    overflow-y: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .ethics-grid {
+    margin-bottom: 100px; /* Increased margin */
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .ethics-principles {
+    position: static;
+  }
+  
+  .ethics-content {
+    padding: 6% 5%;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .commitment-stats {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .stat-item {
+    padding: 25px 20px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .stat-number {
+    font-size: 2.2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ethics-section {
+    padding: 30px 0 300px 0; /* Massively increased bottom padding */
+    overflow: visible !important;
+    overflow-y: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .ethics-grid {
+    grid-template-columns: 1fr;
+    gap: 4%;
+    justify-items: center;
+    margin-bottom: 120px; /* Increased margin */
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .commitment-stats {
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+  
+  .stat-item {
+    padding: 20px 15px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  .ethics-content {
+    padding: 8% 6%;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .ethics-section {
+    padding: 25px 0 250px 0; /* Massively increased bottom padding */
+    overflow: visible !important;
+    overflow-y: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .ethics-grid {
+    margin-bottom: 100px; /* Increased margin */
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  .commitment-stats {
+    gap: 15px;
+    padding: 0 5px;
+  }
+  
+  .stat-item {
+    padding: 15px 10px;
+    max-width: 250px;
+  }
+  
+  .stat-number {
+    font-size: 1.6rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  
+  .ethics-content {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+}

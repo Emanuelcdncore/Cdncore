@@ -1,0 +1,1 @@
+ALTER TABLE news ADD COLUMN subtitle VARCHAR(1000);
