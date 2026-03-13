@@ -65,6 +65,16 @@ const Footer: React.FC = () => {
             unoptimized
           />
         </div>
+        <div className="footer-prr-banner" style={{ padding: '24px 0' }}>
+          <Image
+            src={`${bp}/footer.webp`}
+            alt="PRR - República Portuguesa - Financiado pela União Europeia"
+            width={1200}
+            height={100}
+            unoptimized
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </div>
         <div className="footer-bottom-separator"></div>
         <div className="footer-copyright-row">
           <div className="footer-copyright">

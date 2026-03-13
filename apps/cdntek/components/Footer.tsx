@@ -166,6 +166,18 @@ export default function Footer() {
           ))}
         </div>
 
+        {/* PRR Footer Banner */}
+        <div className="py-8">
+          <Image
+            src={`${bp}/footer.webp`}
+            alt="PRR - República Portuguesa - Financiado pela União Europeia"
+            width={1200}
+            height={100}
+            unoptimized
+            className="w-full h-auto"
+          />
+        </div>
+
         {/* Copyright */}
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
           <p>{t("footer.copyright")}</p>
