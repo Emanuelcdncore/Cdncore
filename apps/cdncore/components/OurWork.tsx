@@ -53,7 +53,7 @@ const OurWork: React.FC = () => {
         <div className="ow-header">
           <Reveal width="100%" duration={0.8} variant="blur">
             <h2 className="ow-title">
-              <span className="depot-font">OUR WORK</span>
+              <span className="depot-font">PRODUCTS</span>
             </h2>
           </Reveal>
         </div>

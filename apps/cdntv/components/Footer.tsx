@@ -254,14 +254,16 @@ const Footer: React.FC = () => {
             {/* PRR Footer Banner */}
             <section className="bg-black -mt-6">
                 <div className="w-full max-w-7xl mx-auto px-8 lg:px-24 py-6">
-                    <Image
-                        src={`${bp}/footer.webp`}
-                        alt="PRR - República Portuguesa - Financiado pela União Europeia"
-                        width={1200}
-                        height={100}
-                        unoptimized
-                        className="w-full h-auto"
-                    />
+                    <a href={`${bp}/estagios-profissionais.pdf`} target="_blank" rel="noopener noreferrer">
+                        <Image
+                            src={`${bp}/footer.webp`}
+                            alt="PRR - República Portuguesa - Financiado pela União Europeia"
+                            width={1200}
+                            height={100}
+                            unoptimized
+                            className="w-full h-auto cursor-pointer"
+                        />
+                    </a>
                 </div>
             </section>
 
