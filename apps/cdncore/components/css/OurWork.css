@@ -1,0 +1,201 @@
+.our-work {
+  background: #0D1116;
+  position: relative;
+  z-index: 2;
+  padding: 100px 0;
+}
+
+.ow-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ow-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.ow-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ow-title .depot-font {
+  font-family: 'Depot', sans-serif;
+}
+
+.ow-subtitle {
+  text-align: center;
+  color: #9CA3AF;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.ow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.ow-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+}
+
+/* Image area */
+.ow-card-image {
+  position: relative;
+  height: 200px;
+  margin: -40px -40px 0 -40px;
+  width: calc(100% + 80px);
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.ow-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s ease;
+}
+
+.ow-card:hover .ow-card-image img {
+  transform: scale(1.05);
+}
+
+.ow-card-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(15, 15, 20, 0.95) 100%);
+  pointer-events: none;
+}
+
+.ow-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.ow-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.ow-card-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(139, 92, 246, 0.12);
+  color: #A78BFA;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  text-transform: uppercase;
+}
+
+.ow-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.ow-card-desc {
+  color: #9CA3AF;
+  font-size: 14px;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.ow-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.ow-card-type {
+  font-size: 12px;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ow-card-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #A78BFA;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.ow-card-link:hover {
+  color: #C4B5FD;
+  gap: 10px;
+}
+
+.ow-card-link-arrow {
+  transition: transform 0.2s ease;
+}
+
+.ow-card-link:hover .ow-card-link-arrow {
+  transform: translateX(2px);
+}
+
+.ow-card-internal {
+  font-size: 12px;
+  color: #6B7280;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ow-card-internal-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4B5563;
+}
+
+@media (max-width: 1024px) {
+  .ow-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-work {
+    padding: 60px 0;
+  }
+  .ow-title {
+    font-size: 32px;
+  }
+  .ow-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .ow-card {
+    min-height: auto;
+  }
+  .ow-card-image {
+    height: 160px;
+  }
+}
