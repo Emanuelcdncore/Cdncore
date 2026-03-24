@@ -11,6 +11,7 @@ interface TeamMember {
   bio: string;
   linkedin: string;
   icon: string;
+  hoverTitle?: string;
 }
 
 const bp = process.env.BASE_PATH || '';
@@ -22,13 +23,6 @@ const teamMembers: TeamMember[] = [
     bio: "Sérgio the CEO and Founder of CDN and Co-Founder of Privant. He also works as an official cameraman for the European Commission and the Council of the European Union.",
     linkedin: "https://www.linkedin.com/in/sergio-pinheiro-cdntv",
     icon: `${bp}/assets/images/CEO.png`
-  },
-  {
-    name: "Joana Fidalgo",
-    role: "CFO/COO",
-    bio: "Joana brings extensive experience in financial management and operations, ensuring CDNCORE's strategic growth and operational excellence. She oversees financial planning, business operations, and organizational development.",
-    linkedin: "https://www.linkedin.com/in/joana-silva-aab83336/",
-    icon: `${bp}/assets/images/CFO.png`
   },
   {
     name: "Dr. Daniel Silvestre",
@@ -56,7 +50,8 @@ const teamMembers: TeamMember[] = [
     role: "Software Engineer",
     bio: "Henrique is a talented Software Engineer contributing to the development and innovation at CDNCORE with a focus on cutting-edge technologies.",
     linkedin: "https://www.linkedin.com/in/henriquer01/",
-    icon: `${bp}/assets/images/Developers.png`
+    icon: `${bp}/assets/images/Developers.png`,
+    hoverTitle: "Chief of the CTO"
   }
 ];
 
@@ -125,6 +120,7 @@ const TeamSection: React.FC = () => {
                   <ProfileCard
                     name={member.name}
                     title={member.role}
+                    hoverTitle={member.hoverTitle}
                     handle={handle}
                     status="Available"
                     contactText="LinkedIn"

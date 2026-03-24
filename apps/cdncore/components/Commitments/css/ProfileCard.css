@@ -308,6 +308,28 @@
   -webkit-background-clip: text;
 }
 
+.pc-title {
+  display: inline-block;
+}
+
+.pc-title-default,
+.pc-title-hover {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.pc-title-hover {
+  display: none;
+}
+
+.pc-card.active .pc-title-default {
+  display: none;
+}
+
+.pc-card.active .pc-title-hover {
+  display: block;
+}
+
 @keyframes glow-bg {
   0% {
     --bgrotate: 0deg;

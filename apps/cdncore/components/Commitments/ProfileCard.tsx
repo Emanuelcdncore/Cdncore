@@ -33,6 +33,7 @@ interface ProfileCardProps {
   miniAvatarUrl?: string;
   name?: string;
   title?: string;
+  hoverTitle?: string;
   handle?: string;
   status?: string;
   contactText?: string;
@@ -54,6 +55,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   miniAvatarUrl,
   name = '',
   title = '',
+  hoverTitle,
   handle = '',
   status = 'Online',
   contactText = 'Contact',
@@ -289,7 +291,10 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           <div className="pc-content">
             <div className="pc-details">
               <h3>{name}</h3>
-              <p>{title}</p>
+              <p className="pc-title">
+                <span className="pc-title-default">{title}</span>
+                {hoverTitle && <span className="pc-title-hover">{hoverTitle}</span>}
+              </p>
             </div>
           </div>
         </div>
