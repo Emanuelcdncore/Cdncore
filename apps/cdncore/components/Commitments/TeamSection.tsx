@@ -50,8 +50,7 @@ const teamMembers: TeamMember[] = [
     role: "Software Engineer",
     bio: "Henrique is a talented Software Engineer contributing to the development and innovation at CDNCORE with a focus on cutting-edge technologies.",
     linkedin: "https://www.linkedin.com/in/henriquer01/",
-    icon: `${bp}/assets/images/Developers.png`,
-    hoverTitle: "Chief of the CTO"
+    icon: `${bp}/assets/images/Developers.png`
   }
 ];
 
