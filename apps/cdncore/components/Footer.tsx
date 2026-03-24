@@ -65,15 +65,23 @@ const Footer: React.FC = () => {
             unoptimized
           />
         </div>
-        <div className="footer-prr-banner" style={{ padding: '24px 0' }}>
-          <a href={`${bp}/estagios-profissionais.pdf`} target="_blank" rel="noopener noreferrer">
+        <div className="footer-prr-banner" style={{ padding: '24px 0', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px', justifyContent: 'center' }}>
+          <Image
+            src={`${bp}/footer.webp`}
+            alt="PRR - República Portuguesa - Financiado pela União Europeia"
+            width={600}
+            height={40}
+            unoptimized
+            style={{ height: '40px', width: 'auto', objectFit: 'contain' }}
+          />
+          <a href={`${bp}/estagios-profissionais`}>
             <Image
-              src={`${bp}/footer.webp`}
-              alt="PRR - República Portuguesa - Financiado pela União Europeia"
-              width={1200}
-              height={100}
+              src={`${bp}/assets/footer-iefp.png`}
+              alt="IEFP - Pessoas 2030 - Portugal 2030 - Cofinanciado pela União Europeia"
+              width={600}
+              height={130}
               unoptimized
-              style={{ width: '100%', height: 'auto', cursor: 'pointer' }}
+              style={{ height: '130px', width: 'auto', objectFit: 'contain', cursor: 'pointer' }}
             />
           </a>
         </div>

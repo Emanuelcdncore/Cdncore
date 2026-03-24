@@ -34,7 +34,25 @@ const projects: Project[] = [
     tags: ['Open Source', 'Nextcloud', 'DevTools'],
     type: 'Open Source Tool',
     image: `${bp}/assets/images/project-appdrop.png`,
-    link: { url: 'https://cdncore-pt.github.io/AppDrop/', label: 'View Project' },
+    link: { url: 'https://cdncore-pt.github.io/AppDrop/', label: 'View Product' },
+  },
+  {
+    title: 'cdnMonitor',
+    description:
+      'Unified monitoring platform that brings infrastructure visibility, topology mapping, syslog investigation, actionable alerts, and AI-powered operational guidance into one system. Built-in AI explains alerts in plain language, summarizes noisy events, and helps teams act without deep specialist knowledge.',
+    tags: ['Monitoring', 'AI Ops', 'Infrastructure'],
+    type: 'Software',
+    image: `${bp}/assets/images/project-cdnmonitor.png`,
+    link: { url: 'https://cdnmonitor.cdnglobal.eu', label: 'Visit Platform' },
+  },
+  {
+    title: 'Vertex Network',
+    description:
+      'Integrated operations and growth platform that connects partners, admins, and IT teams in one secure environment to manage referrals, contracts, commissions, communications, and infrastructure in real time. Helps organizations scale partnerships with clear visibility, automated workflows, and reliable governance across both commercial and technical operations.',
+    tags: ['Partners', 'Commissions', 'Enterprise'],
+    type: 'Software',
+    image: `${bp}/assets/images/project-vertex.jpg`,
+    link: { url: 'https://vertex.cdnglobal.eu', label: 'Visit Platform' },
   },
   {
     title: 'Auth-Central',

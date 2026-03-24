@@ -1,0 +1,429 @@
+:root {
+  --pointer-x: 50%;
+  --pointer-y: 50%;
+  --pointer-from-center: 0;
+  --pointer-from-top: 0.5;
+  --pointer-from-left: 0.5;
+  --card-opacity: 0;
+  --rotate-x: 0deg;
+  --rotate-y: 0deg;
+  --background-x: 50%;
+  --background-y: 50%;
+  --grain: none;
+  --icon: none;
+  --behind-gradient: none;
+  --behind-glow-color: rgba(242, 142, 18, 0.55);
+  --behind-glow-size: 25%;
+  --inner-gradient: none;
+  --sunpillar-1: hsl(2, 100%, 73%);
+  --sunpillar-2: hsl(53, 100%, 69%);
+  --sunpillar-3: hsl(93, 100%, 69%);
+  --sunpillar-4: hsl(176, 100%, 76%);
+  --sunpillar-5: hsl(228, 100%, 74%);
+  --sunpillar-6: hsl(283, 100%, 73%);
+  --sunpillar-clr-1: var(--sunpillar-1);
+  --sunpillar-clr-2: var(--sunpillar-2);
+  --sunpillar-clr-3: var(--sunpillar-3);
+  --sunpillar-clr-4: var(--sunpillar-4);
+  --sunpillar-clr-5: var(--sunpillar-5);
+  --sunpillar-clr-6: var(--sunpillar-6);
+  --card-radius: 30px;
+}
+
+.pc-card-wrapper {
+  perspective: 500px;
+  transform: translate3d(0, 0, 0.1px);
+  position: relative;
+  touch-action: none;
+  filter: drop-shadow(0 20px 48px rgba(242, 142, 18, 0.24));
+  transition: filter 0.3s ease;
+}
+
+.pc-behind {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--pointer-x) var(--pointer-y),
+    var(--behind-glow-color) 0%,
+    transparent var(--behind-glow-size)
+  );
+  filter: blur(32px) saturate(0.95);
+  opacity: calc(0.4 * var(--card-opacity));
+  transform: scale(0.92);
+  transition: opacity 180ms ease, transform 0.35s ease, filter 0.35s ease;
+}
+
+.pc-card-wrapper:hover,
+.pc-card-wrapper.active {
+  --card-opacity: 1;
+  filter: drop-shadow(0 32px 72px rgba(242, 142, 18, 0.38));
+}
+
+.pc-card-wrapper:hover .pc-behind,
+.pc-card-wrapper.active .pc-behind {
+  opacity: 0.95;
+  filter: blur(40px) saturate(1.25) brightness(1.1);
+  transform: scale(1.18);
+}
+
+.pc-card {
+  height: 70svh;
+  max-height: 475px;
+  display: grid;
+  aspect-ratio: 0.718;
+  border-radius: var(--card-radius);
+  position: relative;
+  background: linear-gradient(155deg, rgba(60, 30, 6, 0.9) 0%, rgba(242, 142, 18, 0.82) 45%, rgba(255, 196, 125, 0.78) 100%);
+  animation: glow-bg 12s linear infinite;
+  box-shadow: rgba(0, 0, 0, 0.65) calc((var(--pointer-from-left) * 10px) - 3px)
+    calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
+  transition: box-shadow 0.6s ease, border-color 0.6s ease;
+  transform: translateZ(0);
+  border: 1px solid rgba(242, 142, 18, 0.4);
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.pc-card-shell.entering .pc-card {
+  transition: transform 180ms ease-out;
+}
+
+.pc-card-shell {
+  position: relative;
+  z-index: 1;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+  transition: transform 0.28s cubic-bezier(0.22, 0.61, 0.36, 1), transform-origin 0.28s ease;
+  will-change: transform;
+}
+
+.pc-card-shell.active,
+.pc-card-wrapper:hover .pc-card-shell {
+  transform: rotateX(var(--rotate-y)) rotateY(var(--rotate-x)) translateZ(0);
+}
+
+.pc-card-wrapper.mobile-static:hover .pc-card-shell,
+.pc-card-wrapper.mobile-static .pc-card-shell {
+  transform: none !important;
+}
+
+.pc-card * {
+  display: grid;
+  grid-area: 1/-1;
+  border-radius: var(--card-radius);
+  pointer-events: none;
+}
+
+.pc-inside {
+  inset: 0;
+  position: absolute;
+  background-image: var(--inner-gradient);
+  background-color: rgba(36, 18, 6, 0.75);
+  transform: none;
+}
+
+.pc-shine {
+  mask-image: var(--icon);
+  mask-mode: luminance;
+  mask-repeat: repeat;
+  mask-size: 150%;
+  mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
+  transition: filter 0.6s ease;
+  filter: brightness(0.55) contrast(1.2) saturate(0.4) opacity(0.4);
+  animation: holo-bg 18s linear infinite;
+  animation-play-state: running;
+  mix-blend-mode: screen;
+}
+
+.pc-shine,
+.pc-shine::after {
+  --space: 6%;
+  --angle: -30deg;
+  transform: translate3d(0, 0, 1px);
+  overflow: hidden;
+  z-index: 3;
+  background: transparent;
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(135deg, rgba(255, 194, 125, 0.5), rgba(242, 142, 18, 0.25)),
+    radial-gradient(
+      farthest-corner circle at var(--pointer-x) var(--pointer-y),
+      rgba(50, 22, 6, 0.18) 0%,
+      rgba(14, 8, 4, 0.32) 80%
+    );
+  background-blend-mode: screen, multiply;
+  background-size:
+    200% 200%,
+    150% 150%;
+}
+
+.pc-shine::before,
+.pc-shine::after {
+  content: '';
+  background-position: center;
+  background-size: cover;
+  grid-area: 1/1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.pc-card:hover .pc-shine,
+.pc-card.active .pc-shine {
+  filter: brightness(0.75) contrast(1.35) saturate(0.55) opacity(0.55);
+}
+
+.pc-card:hover .pc-shine::before,
+.pc-card.active .pc-shine::before,
+.pc-card:hover .pc-shine::after,
+.pc-card.active .pc-shine::after {
+  opacity: 1;
+}
+
+.pc-shine::before {
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(255, 205, 151, 0.6),
+      rgba(242, 142, 18, 0.45)
+    );
+  filter: brightness(calc(1.4 - var(--pointer-from-center))) contrast(1.3) saturate(1);
+  mix-blend-mode: lighten;
+}
+
+.pc-shine::after {
+  background-image: linear-gradient(
+    115deg,
+    rgba(247, 173, 109, 0.4),
+    rgba(230, 110, 48, 0.25)
+  );
+  mix-blend-mode: soft-light;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.pc-glare {
+  transform: translate3d(0, 0, 1.1px);
+  overflow: hidden;
+  background-image: radial-gradient(
+    circle at var(--pointer-x) var(--pointer-y),
+    rgba(255, 205, 151, 0.3) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  mix-blend-mode: screen;
+  opacity: 0.38;
+  z-index: 4;
+}
+
+.pc-avatar-content {
+  position: relative;
+  mix-blend-mode: normal;
+  overflow: visible;
+  transform: translateZ(2);
+  backface-visibility: hidden;
+}
+
+.pc-role-pattern {
+  position: absolute;
+  inset: 12% 10% 24% 10%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: clamp(2px, 0.6vw, 7px);
+  opacity: 0.32;
+  filter: saturate(1.2) brightness(1.05);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pc-role-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  grid-area: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pc-role-pattern > .pc-role-cell {
+  grid-area: auto;
+}
+
+.pc-role-cell img {
+  width: clamp(16px, 3vw, 28px);
+  height: auto;
+  opacity: 0.32;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.22));
+}
+
+.pc-avatar-content .avatar {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: translateX(-50%) translateZ(0);
+  bottom: -1px;
+  backface-visibility: hidden;
+  will-change: auto;
+  transition: none;
+  filter: sepia(0.35) saturate(1.2) hue-rotate(-10deg) brightness(1.05);
+  z-index: 1;
+}
+
+.pc-role-badge {
+  display: none;
+}
+
+.pc-card:hover .pc-role-badge,
+.pc-card.active .pc-role-badge {
+  transform: translateY(-6px) scale(1.03);
+  opacity: 1;
+}
+
+.pc-avatar-content::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  backdrop-filter: none;
+  pointer-events: none;
+}
+
+.pc-user-info {
+  position: absolute;
+  --ui-inset: 20px;
+  --ui-radius-bias: 6px;
+  bottom: var(--ui-inset);
+  left: var(--ui-inset);
+  right: var(--ui-inset);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgba(36, 18, 6, 0.82) 0%, rgba(24, 12, 4, 0.78) 100%);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(247, 198, 138, 0.45);
+  border-radius: calc(max(0px, var(--card-radius) - var(--ui-inset) + var(--ui-radius-bias)));
+  padding: 12px 14px;
+  pointer-events: auto;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+}
+
+.pc-user-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pc-mini-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.pc-mini-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.pc-user-text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pc-handle {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1;
+}
+
+.pc-status {
+  font-size: 14px;
+  color: rgba(255, 214, 170, 0.92);
+  line-height: 1;
+}
+
+.pc-contact-btn {
+  border: 1px solid rgba(247, 198, 138, 0.55);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 214, 170, 0.95);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 214, 170, 0.2);
+}
+
+.pc-contact-btn:hover {
+  border-color: rgba(255, 214, 170, 0.7);
+  background: rgba(247, 198, 138, 0.28);
+  transform: translateY(-0.5px);
+}
+
+.pc-content:not(.pc-avatar-content) {
+  max-height: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transform: none;
+  z-index: 5;
+  mix-blend-mode: luminosity;
+}
+
+.pc-details {
+  width: 100%;
+  position: absolute;
+  top: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.pc-details h3 {
+  font-weight: 600;
+  margin: 0;
+  font-size: min(5svh, 3em);
+  margin: 0;
+  background-image: linear-gradient(to bottom, #fff, #6f6fbe);
+  background-size: 1em 1.5em;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.pc-details p {
+  font-weight: 600;
+  position: relative;
+  top: -4px;
+  white-space: nowrap;
+  font-size: 16px;
+  margin: 0 auto;
+  width: min-content;
+  background-image: linear-gradient(to bottom, #fff, #4a4ac0);
+  background-size: 1em 1.5em;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.pc-card-shell.active .pc-card,
+.pc-card-wrapper:hover .pc-card {
+  box-shadow: 0 26px 52px rgba(0, 0, 0, 0.45);
+  border-color: rgba(247, 198, 138, 0.55);
+}
+
+.pc-card-wrapper.mobile-static,
+.pc-card-shell.mobile-static {
+  transform: none !important;
+  transition: none !important;
+}
