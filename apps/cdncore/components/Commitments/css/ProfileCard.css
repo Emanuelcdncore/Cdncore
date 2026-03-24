@@ -322,11 +322,11 @@
   display: none;
 }
 
-.pc-card.active .pc-title-default {
+.pc-card.active .pc-title:has(.pc-title-hover) .pc-title-default {
   display: none;
 }
 
-.pc-card.active .pc-title-hover {
+.pc-card.active .pc-title:has(.pc-title-hover) .pc-title-hover {
   display: block;
 }
 
