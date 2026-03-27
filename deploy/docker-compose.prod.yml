@@ -66,7 +66,6 @@ services:
       - "80:80"
     volumes:
       - ./deploy/nginx/nginx.prod.conf:/etc/nginx/nginx.conf:ro
-      - ./deploy/nginx/cloudflare.conf:/etc/nginx/cloudflare.conf:ro
       - ./deploy/nginx/sites:/etc/nginx/sites:ro
     depends_on:
       - cdncore
