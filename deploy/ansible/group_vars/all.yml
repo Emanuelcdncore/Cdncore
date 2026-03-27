@@ -1,9 +1,3 @@
 ---
-app_name: cdn-landings
 app_dir: /opt/cdn-landings
 deploy_user: it
-
-# Database
-db_name: cdnlandings
-db_user: postgres
-db_password: postgres

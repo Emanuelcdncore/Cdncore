@@ -21,7 +21,8 @@ npm run build             # Build all apps
 - `packages/*` — Shared packages (`@cdn/email`, `@cdn/news`)
 - `nginx/nginx.conf` — Dev reverse proxy: routes subdomains (`cdncore.localhost`, etc.) to containers
 - `deploy/` — Production configs: path-based routing (`/cdncore`, `/cdntek`, `/cdntv`) with `BASE_PATH` env var
-- `database/migrations/` — PostgreSQL migration scripts
+- `database/` — Multi-database migrations: each subdirectory is a database with its own `migrate.sh` + `migrations/`
+- `.forgejo/workflows/deploy.yml` — CI/CD: auto-deploy on push to main (build → transfer → rolling deploy)
 
 ## Conventions
 

@@ -25,10 +25,10 @@ services:
       postgres:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/cdnlandings
+      DATABASE_URL_CDNLANDINGS: postgresql://postgres:postgres@postgres:5432/cdnlandings
     volumes:
       - ./database:/database:ro
-    entrypoint: ["/bin/sh", "-c", "cd / && /database/migrate.sh"]
+    entrypoint: ["/bin/sh", "-c", "cd / && /database/migrate-all.sh"]
     restart: "no"
     profiles:
       - migration
@@ -37,12 +37,8 @@ services:
     build:
       context: .
       dockerfile: apps/cdncore/Dockerfile
-      args:
-        BASE_PATH: /cdncore
     expose:
       - "3000"
-    ports:
-      - "127.0.0.1:3001:3000"
     restart: unless-stopped
     mem_limit: 512M
 
@@ -50,12 +46,8 @@ services:
     build:
       context: .
       dockerfile: apps/cdntek/Dockerfile
-      args:
-        BASE_PATH: /cdntek
     expose:
       - "3000"
-    ports:
-      - "127.0.0.1:3002:3000"
     restart: unless-stopped
     mem_limit: 512M
 
@@ -63,12 +55,8 @@ services:
     build:
       context: .
       dockerfile: apps/cdntv/Dockerfile
-      args:
-        BASE_PATH: /cdntv
     expose:
       - "3000"
-    ports:
-      - "127.0.0.1:3003:3000"
     restart: unless-stopped
     mem_limit: 512M
 
@@ -77,7 +65,9 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./deploy/nginx/nginx.prod.conf:/etc/nginx/nginx.conf:ro
+      - ./deploy/nginx/cloudflare.conf:/etc/nginx/cloudflare.conf:ro
+      - ./deploy/nginx/sites:/etc/nginx/sites:ro
     depends_on:
       - cdncore
       - cdntek

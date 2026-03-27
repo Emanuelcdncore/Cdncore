@@ -42,18 +42,21 @@ Copy an existing Dockerfile (e.g., `apps/cdncore/Dockerfile`) and replace all re
 
 ```dockerfile
 FROM node:22-alpine AS base
+ENV NEXT_TELEMETRY_DISABLED=1
 
 FROM base AS deps
 WORKDIR /app
-COPY package.json ./
+COPY package.json package-lock.json ./
 COPY apps/cdnx/package.json ./apps/cdnx/
 COPY packages/email/package.json ./packages/email/
 COPY packages/news/package.json ./packages/news/
-RUN npm install
+RUN --mount=type=cache,target=/root/.npm \
+    npm ci --no-audit --no-fund
 
 FROM base AS builder
 ARG BASE_PATH=""
 ENV BASE_PATH=$BASE_PATH
+ENV NODE_ENV=production
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY package.json ./
@@ -66,14 +69,14 @@ RUN npm run build
 FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV=production
-RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs
-COPY --from=builder /app/apps/cdnx/.next/standalone ./
-COPY --from=builder /app/apps/cdnx/.next/static ./apps/cdnx/.next/static
-COPY --from=builder /app/apps/cdnx/public ./apps/cdnx/public
-USER nextjs
-EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs
+COPY --from=builder --chown=nextjs:nodejs /app/apps/cdnx/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/apps/cdnx/.next/static ./apps/cdnx/.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/apps/cdnx/public ./apps/cdnx/public
+USER nextjs
+EXPOSE 3000
 CMD ["node", "apps/cdnx/server.js"]
 ```
 
@@ -141,7 +144,39 @@ server {
 "start:cdnx": "npm -w apps/cdnx run start"
 ```
 
-## 7. (Production) Update Deploy Configs
+## 7. (Optional) Add a New Database
+
+If your app needs its own database (separate from `cdnlandings`), create a new migration directory:
+
+```
+database/
+├── migrate-all.sh
+├── cdnlandings/          # existing shared database
+│   ├── migrate.sh
+│   └── migrations/
+└── mynewdb/              # your new database
+    ├── migrate.sh
+    └── migrations/
+        └── 001_create_something.sql
+```
+
+1. Copy `database/cdnlandings/migrate.sh` to `database/mynewdb/migrate.sh` (it works generically)
+2. Add your SQL migrations in `database/mynewdb/migrations/`
+3. Add a new postgres service (or reuse the existing one) in `docker-compose.yml`
+4. Add `DATABASE_URL_MYNEWDB` to the `migrate` service environment:
+
+```yaml
+migrate:
+  environment:
+    DATABASE_URL_CDNLANDINGS: postgresql://postgres:postgres@postgres:5432/cdnlandings
+    DATABASE_URL_MYNEWDB: postgresql://postgres:postgres@postgres:5432/mynewdb
+```
+
+`migrate-all.sh` discovers all subdirectories with a `migrate.sh` automatically.
+
+If your app shares the existing `cdnlandings` database, no changes are needed — just use the `@cdn/email` and `@cdn/news` packages.
+
+## 8. (Production) Update Deploy Configs
 
 ### `deploy/docker-compose.prod.yml`
 
@@ -154,11 +189,17 @@ cdnx:
     dockerfile: apps/cdnx/Dockerfile
     args:
       BASE_PATH: /cdnx
-  depends_on:
-    migrate:
-      condition: service_completed_successfully
+  expose:
+    - "3000"
+  ports:
+    - "127.0.0.1:300X:3000"
   restart: unless-stopped
+  mem_limit: 512M
 ```
+
+### `.forgejo/workflows/deploy.yml`
+
+Add the new app to the build, transfer, and rolling deploy steps following the existing pattern (build → save → transfer → health check).
 
 ### `deploy/nginx/nginx.prod.conf.j2`
 
@@ -189,3 +230,5 @@ location /cdnx {
 | `package.json` (root) | Dev/start scripts |
 | `deploy/docker-compose.prod.yml` | New service with BASE_PATH |
 | `deploy/nginx/nginx.prod.conf.j2` | Upstream + location block |
+| `.forgejo/workflows/deploy.yml` | Build, transfer, and deploy steps |
+| `database/newdb/` | (Optional) New database migrations |

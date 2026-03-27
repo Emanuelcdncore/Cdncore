@@ -1,0 +1,177 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PROJECT_NAME: cdn-landings
+  APP_DIR: /opt/cdn-landings
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    timeout-minutes: 30
+
+    steps:
+      # ─── Checkout ───
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ─── Setup SSH ───
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p 22 ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          cat > ~/.ssh/config <<SSHEOF
+          Host prod
+            HostName ${{ secrets.DEPLOY_HOST }}
+            User ${{ secrets.DEPLOY_USER }}
+            IdentityFile ~/.ssh/deploy_key
+            StrictHostKeyChecking no
+          SSHEOF
+          chmod 600 ~/.ssh/config
+
+      - name: Verify SSH connection
+        run: ssh prod "echo 'SSH connection OK'"
+
+      # ─── Build Docker images ───
+      - name: Build cdncore
+        run: |
+          docker compose -p $PROJECT_NAME \
+            -f deploy/docker-compose.prod.yml \
+            --project-directory . \
+            build cdncore
+
+      - name: Build cdntek
+        run: |
+          docker compose -p $PROJECT_NAME \
+            -f deploy/docker-compose.prod.yml \
+            --project-directory . \
+            build cdntek
+
+      - name: Build cdntv
+        run: |
+          docker compose -p $PROJECT_NAME \
+            -f deploy/docker-compose.prod.yml \
+            --project-directory . \
+            build cdntv
+
+      # ─── Save and transfer images ───
+      - name: Save and transfer images
+        run: |
+          mkdir -p /tmp/cdn-images
+          for svc in cdncore cdntek cdntv; do
+            echo "=== Saving ${svc} ==="
+            docker save "${PROJECT_NAME}-${svc}" | gzip > "/tmp/cdn-images/${svc}.tar.gz"
+            ls -lh "/tmp/cdn-images/${svc}.tar.gz"
+
+            echo "=== Transferring ${svc} ==="
+            scp "/tmp/cdn-images/${svc}.tar.gz" prod:/tmp/${svc}.tar.gz
+          done
+
+      # ─── Sync project files ───
+      - name: Sync project files to production
+        run: |
+          rsync -az --delete \
+            --exclude=node_modules \
+            --exclude=.git \
+            --exclude=.next \
+            --exclude=.claude \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${APP_DIR}/
+
+      # ─── Prepare production configs ───
+      - name: Prepare production configs
+        run: |
+          ssh prod "cp ${APP_DIR}/deploy/docker-compose.prod.yml ${APP_DIR}/docker-compose.yml"
+
+      # ─── Load images on production ───
+      - name: Load Docker images
+        run: |
+          for svc in cdncore cdntek cdntv; do
+            echo "=== Loading ${svc} ==="
+            ssh prod "gunzip -c /tmp/${svc}.tar.gz | docker load"
+            ssh prod "rm -f /tmp/${svc}.tar.gz"
+          done
+
+      # ─── Database: postgres + migrations ───
+      - name: Start postgres and run migrations
+        run: |
+          ssh prod "cd ${APP_DIR} && docker compose up -d postgres"
+
+          echo "Waiting for PostgreSQL..."
+          for i in $(seq 1 30); do
+            if ssh prod "cd ${APP_DIR} && docker compose exec -T postgres pg_isready -U postgres -d cdnlandings" 2>/dev/null; then
+              echo "PostgreSQL is ready."
+              break
+            fi
+            echo "  Attempt $i/30..."
+            sleep 2
+          done
+
+          ssh prod "cd ${APP_DIR} && docker compose --profile migration up migrate"
+
+      # ─── Rolling deploy ───
+      - name: "Rolling deploy: cdncore"
+        run: |
+          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdncore"
+          echo "Waiting for cdncore health..."
+          for i in $(seq 1 30); do
+            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdncore wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+              echo "cdncore is healthy"
+              break
+            fi
+            echo "  Attempt $i/30..."
+            sleep 3
+          done
+
+      - name: "Rolling deploy: cdntek"
+        run: |
+          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdntek"
+          echo "Waiting for cdntek health..."
+          for i in $(seq 1 30); do
+            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdntek wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+              echo "cdntek is healthy"
+              break
+            fi
+            echo "  Attempt $i/30..."
+            sleep 3
+          done
+
+      - name: "Rolling deploy: cdntv"
+        run: |
+          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdntv"
+          echo "Waiting for cdntv health..."
+          for i in $(seq 1 30); do
+            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdntv wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+              echo "cdntv is healthy"
+              break
+            fi
+            echo "  Attempt $i/30..."
+            sleep 3
+          done
+
+      # ─── Nginx reload ───
+      - name: Reload nginx
+        run: |
+          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps nginx"
+          ssh prod "cd ${APP_DIR} && docker compose exec -T nginx nginx -s reload"
+
+      # ─── Cleanup ───
+      - name: Cleanup
+        run: |
+          rm -rf /tmp/cdn-images
+          ssh prod "docker image prune -f"
+          echo ""
+          echo "=== Deployment Complete ==="
+          echo "  CDNCore: https://cdncore.eu"
+          echo "  CDNTek:  https://cdntek.eu"
+          echo "  CDNTV:   https://cdntv.eu"
+
+      - name: Cleanup SSH credentials
+        if: always()
+        run: rm -rf ~/.ssh/deploy_key ~/.ssh/config

@@ -2,9 +2,10 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-DB_URL="postgresql://postgres:postgres@postgres:5432/cdnlandings"
+DB_NAME="$(basename "$SCRIPT_DIR")"
+DB_URL="${DATABASE_URL:?DATABASE_URL is required}"
 
-echo "Running migrations..."
+echo "Running migrations for $DB_NAME..."
 
 # Create migrations tracking table if it doesn't exist
 psql "$DB_URL" -q -c "

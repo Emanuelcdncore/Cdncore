@@ -61,14 +61,20 @@ cdn-landings/
 │   ├── email/            # Shared email utilities
 │   └── news/             # Shared news utilities
 ├── database/
-│   └── migrations/       # PostgreSQL migrations
+│   ├── migrate-all.sh    # Runs migrations for all databases
+│   └── cdnlandings/      # Shared database (contact + news)
+│       ├── migrate.sh
+│       └── migrations/
 ├── nginx/
 │   └── nginx.conf        # Dev reverse proxy config (subdomain routing)
+├── .forgejo/
+│   └── workflows/
+│       └── deploy.yml    # CI/CD: auto-deploy on push to main
 ├── deploy/
 │   ├── nginx/            # Production Nginx config
 │   ├── ansible/          # Ansible deployment playbooks
 │   ├── docker-compose.prod.yml
-│   └── deploy.sh
+│   └── deploy.sh         # Manual deploy script
 ├── docker-compose.yml    # Dev Docker Compose
 ├── start.sh              # Start all services
 └── stop.sh               # Stop all services
@@ -95,6 +101,20 @@ domain.com/cdncore  ->  nginx  ->  cdncore:3000
 domain.com/cdntek   ->  nginx  ->  cdntek:3000
 domain.com/cdntv    ->  nginx  ->  cdntv:3000
 ```
+
+## Deployment
+
+### Automatic (CI/CD)
+
+Pushing to `main` triggers a Forgejo Actions workflow that builds, transfers, and deploys all apps to production with rolling restarts and health checks.
+
+### Manual
+
+```bash
+./deploy/deploy.sh deploy
+```
+
+Choose between building locally (recommended) or on the production server.
 
 ## Adding a New Landing
 

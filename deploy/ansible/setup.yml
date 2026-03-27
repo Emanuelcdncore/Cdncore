@@ -20,7 +20,6 @@
           - htop
           - vim
           - rsync
-          - logrotate
           - unattended-upgrades
           - ca-certificates
           - gnupg

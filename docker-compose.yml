@@ -21,10 +21,10 @@ services:
       postgres:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/cdnlandings
+      DATABASE_URL_CDNLANDINGS: postgresql://postgres:postgres@postgres:5432/cdnlandings
     volumes:
       - ./database:/database
-    entrypoint: ["/bin/sh", "-c", "cd / && /database/migrate.sh"]
+    entrypoint: ["/bin/sh", "-c", "cd / && /database/migrate-all.sh"]
     restart: "no"
 
   cdncore:
