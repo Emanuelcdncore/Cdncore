@@ -42,21 +42,21 @@ jobs:
       # ─── Build Docker images ───
       - name: Build cdncore
         run: |
-          docker compose -p $PROJECT_NAME \
+          docker-compose -p $PROJECT_NAME \
             -f deploy/docker-compose.prod.yml \
             --project-directory . \
             build cdncore
 
       - name: Build cdntek
         run: |
-          docker compose -p $PROJECT_NAME \
+          docker-compose -p $PROJECT_NAME \
             -f deploy/docker-compose.prod.yml \
             --project-directory . \
             build cdntek
 
       - name: Build cdntv
         run: |
-          docker compose -p $PROJECT_NAME \
+          docker-compose -p $PROJECT_NAME \
             -f deploy/docker-compose.prod.yml \
             --project-directory . \
             build cdntv
@@ -102,11 +102,11 @@ jobs:
       # ─── Database: postgres + migrations ───
       - name: Start postgres and run migrations
         run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d postgres"
+          ssh prod "cd ${APP_DIR} && docker-compose up -d postgres"
 
           echo "Waiting for PostgreSQL..."
           for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T postgres pg_isready -U postgres -d cdnlandings" 2>/dev/null; then
+            if ssh prod "cd ${APP_DIR} && docker-compose exec -T postgres pg_isready -U postgres -d cdnlandings" 2>/dev/null; then
               echo "PostgreSQL is ready."
               break
             fi
@@ -114,15 +114,15 @@ jobs:
             sleep 2
           done
 
-          ssh prod "cd ${APP_DIR} && docker compose --profile migration up migrate"
+          ssh prod "cd ${APP_DIR} && docker-compose --profile migration up migrate"
 
       # ─── Rolling deploy ───
       - name: "Rolling deploy: cdncore"
         run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdncore"
+          ssh prod "cd ${APP_DIR} && docker-compose up -d --no-deps --force-recreate cdncore"
           echo "Waiting for cdncore health..."
           for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdncore wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+            if ssh prod "cd ${APP_DIR} && docker-compose exec -T cdncore wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
               echo "cdncore is healthy"
               break
             fi
@@ -132,10 +132,10 @@ jobs:
 
       - name: "Rolling deploy: cdntek"
         run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdntek"
+          ssh prod "cd ${APP_DIR} && docker-compose up -d --no-deps --force-recreate cdntek"
           echo "Waiting for cdntek health..."
           for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdntek wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+            if ssh prod "cd ${APP_DIR} && docker-compose exec -T cdntek wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
               echo "cdntek is healthy"
               break
             fi
@@ -145,10 +145,10 @@ jobs:
 
       - name: "Rolling deploy: cdntv"
         run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdntv"
+          ssh prod "cd ${APP_DIR} && docker-compose up -d --no-deps --force-recreate cdntv"
           echo "Waiting for cdntv health..."
           for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdntv wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+            if ssh prod "cd ${APP_DIR} && docker-compose exec -T cdntv wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
               echo "cdntv is healthy"
               break
             fi
@@ -159,8 +159,8 @@ jobs:
       # ─── Nginx reload ───
       - name: Reload nginx
         run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps nginx"
-          ssh prod "cd ${APP_DIR} && docker compose exec -T nginx nginx -s reload"
+          ssh prod "cd ${APP_DIR} && docker-compose up -d --no-deps nginx"
+          ssh prod "cd ${APP_DIR} && docker-compose exec -T nginx nginx -s reload"
 
       # ─── Cleanup ───
       - name: Cleanup
