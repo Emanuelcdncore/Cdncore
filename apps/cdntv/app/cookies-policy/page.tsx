@@ -1,8 +1,14 @@
-'use client';
-
+import type { Metadata } from "next";
 import React from 'react';
 import '@/components/css/LegalPages.css';
 import Navigation from '@/components/Navigation';
+
+export const metadata: Metadata = {
+  title: "Cookies Policy",
+  description:
+    "CDNTV cookies policy. Understand the types of cookies we use, how to manage your preferences and your rights under EU regulations.",
+  alternates: { canonical: "/cookies-policy" },
+};
 
 export default function CookiesPolicy() {
   return (

@@ -1,9 +1,15 @@
-'use client';
-
+import type { Metadata } from "next";
 import React from 'react';
 import '@/components/css/LegalPages.css';
 import Navigation from '@/components/Navigation';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description:
+    "CDNTV terms of service. Read the conditions governing the use of our website and audiovisual production services.",
+  alternates: { canonical: "/terms-of-service" },
+};
 
 export default function TermsOfService() {
   return (

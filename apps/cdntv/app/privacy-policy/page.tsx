@@ -1,8 +1,14 @@
-'use client';
-
+import type { Metadata } from "next";
 import React from 'react';
 import '@/components/css/LegalPages.css';
 import Navigation from '@/components/Navigation';
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "CDNTV privacy policy. Learn how we collect, use and protect your personal data in compliance with GDPR.",
+  alternates: { canonical: "/privacy-policy" },
+};
 
 export default function PrivacyPolicy() {
   return (

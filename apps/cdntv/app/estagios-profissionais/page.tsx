@@ -1,10 +1,16 @@
-'use client';
-
+import type { Metadata } from "next";
 import React from 'react';
 import Image from 'next/image';
 import '@/components/css/LegalPages.css';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: "Estágios Profissionais",
+  description:
+    "CDNTV professional internships programme supported by IEFP and the European Social Fund, promoting youth employment and professional reconversion.",
+  alternates: { canonical: "/estagios-profissionais" },
+};
 
 const bp = process.env.BASE_PATH || '';
 

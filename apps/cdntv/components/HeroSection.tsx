@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from "framer-motion";
-import Squares from "@/components/Squares";
 import Image from "next/image";
 
 const bp = process.env.BASE_PATH || '';
@@ -9,17 +8,6 @@ const bp = process.env.BASE_PATH || '';
 const HeroSection = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-                        {/* Squares Background */}
-                        <div className="absolute inset-0">
-                                                                <Squares
-                                                                    direction="right"
-                                                                    speed={1}
-                                                                    borderColor="rgba(191, 167, 106, 0.35)"
-                                                                    squareSize={40}
-                                                                    hoverFillColor="#222"
-                                                                    className="w-full h-full" />
-                        </div>
-
             <div className="container mx-auto px-6 relative z-10">
                 <div className="flex flex-col justify-center items-center text-center">
                     <Image

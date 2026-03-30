@@ -20,6 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((path) => ({
     url: `${SITE_URL}${path}`,
+    lastModified: new Date(),
     changeFrequency: path === '/news' ? 'daily' : 'monthly',
     priority: path === '/' ? 1 : 0.8,
   }));

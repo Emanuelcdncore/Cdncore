@@ -25,9 +25,45 @@ const depot = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CDNTEK - Technology & Innovation",
+  metadataBase: new URL("https://cdntek.pt"),
+  title: {
+    default: "CDNTEK - Tecnologia, Audiovisual e Ciberseguran\u00e7a",
+    template: "%s | CDNTEK",
+  },
   description:
-    "CDNTEK - Solu\u00e7\u00f5es de tecnologia, audiovisual, ciberseguran\u00e7a e gest\u00e3o de redes.",
+    "Solu\u00e7\u00f5es profissionais de tecnologia audiovisual, ciberseguran\u00e7a e gest\u00e3o de redes. Representante oficial ITC na Pen\u00ednsula Ib\u00e9rica.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_PT",
+    siteName: "CDNTEK",
+    title: "CDNTEK - Tecnologia, Audiovisual e Ciberseguran\u00e7a",
+    description:
+      "Solu\u00e7\u00f5es profissionais de tecnologia audiovisual, ciberseguran\u00e7a e gest\u00e3o de redes.",
+    url: "https://cdntek.pt",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "CDNTEK - Tecnologia, Audiovisual e Ciberseguran\u00e7a",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CDNTEK - Tecnologia, Audiovisual e Ciberseguran\u00e7a",
+    description:
+      "Solu\u00e7\u00f5es profissionais de tecnologia audiovisual, ciberseguran\u00e7a e gest\u00e3o de redes.",
+    images: ["/og-default.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+    ],
+  },
 };
 
 export default function RootLayout({

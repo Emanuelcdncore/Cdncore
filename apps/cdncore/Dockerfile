@@ -3,12 +3,12 @@ ENV NEXT_TELEMETRY_DISABLED=1
 
 FROM base AS deps
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY package.json ./
 COPY apps/cdncore/package.json ./apps/cdncore/
 COPY packages/email/package.json ./packages/email/
 COPY packages/news/package.json ./packages/news/
 RUN --mount=type=cache,target=/root/.npm \
-    npm ci --no-audit --no-fund
+    npm install --no-audit --no-fund
 
 FROM base AS builder
 ARG BASE_PATH=""

@@ -20,8 +20,40 @@ const depot = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CDNCore - Applied Informatics & AI Solutions",
-  description: "Cutting-edge applied informatics and AI solutions, driven by R&D and innovation, empowering modern enterprises through agentic intelligence.",
+  metadataBase: new URL("https://cdncore.pt"),
+  title: {
+    default: "CDNCore - Applied Informatics & AI Solutions",
+    template: "%s | CDNCore",
+  },
+  description:
+    "Cutting-edge applied informatics and AI solutions, driven by R&D and innovation, empowering modern enterprises through agentic intelligence.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "CDNCore",
+    title: "CDNCore - Applied Informatics & AI Solutions",
+    description:
+      "Cutting-edge applied informatics and AI solutions, driven by R&D and innovation.",
+    url: "https://cdncore.pt",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "CDNCore - Applied Informatics & AI Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CDNCore - Applied Informatics & AI Solutions",
+    description:
+      "Cutting-edge applied informatics and AI solutions, driven by R&D and innovation.",
+    images: ["/og-default.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },

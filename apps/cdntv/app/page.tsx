@@ -8,6 +8,45 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                name: "CDNTV",
+                url: "https://cdntv.pt",
+                logo: "https://cdntv.pt/logo_first.png",
+                description:
+                  "Professional audiovisual production company specializing in institutional coverage, corporate video, social media content and live event broadcasting.",
+                foundingDate: "2009",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress:
+                    "Parkurbis - Parque de Ciência e Tecnologia da Covilhã",
+                  addressLocality: "Covilhã",
+                  postalCode: "6200-865",
+                  addressCountry: "PT",
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+351-275-959-168",
+                  contactType: "customer service",
+                  email: "info@cdntv.pt",
+                },
+                sameAs: ["https://www.linkedin.com/company/cdntv"],
+              },
+              {
+                "@type": "WebSite",
+                name: "CDNTV",
+                url: "https://cdntv.pt",
+              },
+            ],
+          }),
+        }}
+      />
       <main>
         <section id="home">
           <HeroSection />
