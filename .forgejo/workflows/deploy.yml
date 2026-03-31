@@ -17,7 +17,8 @@ jobs:
     steps:
       # ─── Checkout ───
       - name: Checkout repository
-        uses: actions/checkout@v4
+        run: |
+          git clone --depth 1 --branch main http://any:${{ github.token }}@192.168.30.41:3000/henrique/cdn-landings.git .
 
       # ─── Setup SSH ───
       - name: Setup SSH key
