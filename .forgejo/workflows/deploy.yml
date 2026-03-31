@@ -17,8 +17,7 @@ jobs:
     steps:
       # ─── Checkout ───
       - name: Checkout repository
-        run: |
-          git clone --depth 1 --branch main http://any:${{ github.token }}@192.168.30.41:3000/henrique/cdn-landings.git .
+        uses: actions/checkout@v4
 
       # ─── Setup SSH ───
       - name: Setup SSH key
@@ -39,40 +38,25 @@ jobs:
       - name: Verify SSH connection
         run: ssh prod "echo 'SSH connection OK'"
 
-      # ─── Install dependencies ───
-      - name: Install Docker Compose plugin
-        run: |
-          if ! docker compose version &>/dev/null; then
-            sudo apt-get update
-            sudo apt-get install -y ca-certificates curl gnupg
-            sudo install -m 0755 -d /etc/apt/keyrings
-            curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-            sudo chmod a+r /etc/apt/keyrings/docker.gpg
-            echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-            sudo apt-get update
-            sudo apt-get install -y docker-compose-plugin
-          fi
-          docker compose version
-
       # ─── Build Docker images ───
       - name: Build cdncore
         run: |
           docker compose -p $PROJECT_NAME \
-            -f deploy/docker compose.prod.yml \
+            -f deploy/docker-compose.prod.yml \
             --project-directory . \
             build cdncore
 
       - name: Build cdntek
         run: |
           docker compose -p $PROJECT_NAME \
-            -f deploy/docker compose.prod.yml \
+            -f deploy/docker-compose.prod.yml \
             --project-directory . \
             build cdntek
 
       - name: Build cdntv
         run: |
           docker compose -p $PROJECT_NAME \
-            -f deploy/docker compose.prod.yml \
+            -f deploy/docker-compose.prod.yml \
             --project-directory . \
             build cdntv
 
@@ -103,7 +87,7 @@ jobs:
       # ─── Prepare production configs ───
       - name: Prepare production configs
         run: |
-          ssh prod "cp ${APP_DIR}/deploy/docker compose.prod.yml ${APP_DIR}/docker compose.yml"
+          ssh prod "cp ${APP_DIR}/deploy/docker-compose.prod.yml ${APP_DIR}/docker-compose.yml"
 
       # ─── Load images on production ───
       - name: Load Docker images
