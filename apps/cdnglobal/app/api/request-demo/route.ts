@@ -6,9 +6,9 @@ const PRODUCTS = ['CDNMonitor'] as const;
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { firstName, lastName, email, company, products, message } = body;
+    const { name, email, phone, company, products, message } = body;
 
-    if (!firstName || !lastName || !email || !products?.length) {
+    if (!name || !email || !phone || !products?.length) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
@@ -31,11 +31,12 @@ export async function POST(req: NextRequest) {
       from: 'no-reply@cdnglobal.eu',
       to: 'info@cdnglobal.eu',
       replyTo: email,
-      subject: `[DEMO REQUEST] ${products.join(', ')} - ${firstName} ${lastName}`,
+      subject: `[DEMO REQUEST] ${products.join(', ')} - ${name}`,
       html: `
         <h2>New Demo Request</h2>
-        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+        <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
         ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
         <p><strong>Products:</strong> ${products.join(', ')}</p>
         ${message ? `<hr /><p><strong>Message:</strong></p><p>${message.replace(/\n/g, '<br />')}</p>` : ''}

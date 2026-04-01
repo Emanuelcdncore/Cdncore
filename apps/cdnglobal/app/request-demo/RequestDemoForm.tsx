@@ -34,9 +34,9 @@ export default function RequestDemoForm() {
 
     const form = new FormData(e.currentTarget);
     const body = {
-      firstName: form.get('firstName'),
-      lastName: form.get('lastName'),
+      name: form.get('name'),
       email: form.get('email'),
+      phone: form.get('phone'),
       company: form.get('company'),
       message: form.get('message'),
       products: selectedProducts,
@@ -157,32 +157,17 @@ export default function RequestDemoForm() {
           {/* Contact fields */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
-              <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-1">
-                First Name <span className="text-red-400">*</span>
+              <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+                Name <span className="text-red-400">*</span>
               </label>
               <input
-                id="firstName"
-                name="firstName"
+                id="name"
+                name="name"
                 type="text"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition"
               />
             </div>
-            <div>
-              <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-1">
-                Last Name <span className="text-red-400">*</span>
-              </label>
-              <input
-                id="lastName"
-                name="lastName"
-                type="text"
-                required
-                className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition"
-              />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
                 Work Email <span className="text-red-400">*</span>
@@ -191,6 +176,21 @@ export default function RequestDemoForm() {
                 id="email"
                 name="email"
                 type="email"
+                required
+                className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">
+                Phone <span className="text-red-400">*</span>
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition"
               />
