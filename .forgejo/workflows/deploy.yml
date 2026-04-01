@@ -9,6 +9,7 @@ on:
 env:
   PROJECT_NAME: cdn-landings
   APP_DIR: /opt/cdn-landings
+  ALL_APPS: cdncore cdntek cdntv cdnglobal
 
 jobs:
   deploy:
@@ -19,6 +20,46 @@ jobs:
       # ─── Checkout ───
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      # ─── Detect changed apps ───
+      - name: Detect changed apps
+        id: changes
+        run: |
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+
+          # If we can't diff (first commit, etc), deploy all
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "APPS=cdncore cdntek cdntv cdnglobal" >> "$GITHUB_OUTPUT"
+            echo "INFRA=true" >> "$GITHUB_OUTPUT"
+            echo "Deploy all (no diff available)"
+            exit 0
+          fi
+
+          APPS=""
+          INFRA=false
+
+          # Check each app
+          for app in cdncore cdntek cdntv cdnglobal; do
+            if echo "$CHANGED_FILES" | grep -q "^apps/${app}/"; then
+              APPS="$APPS $app"
+            fi
+          done
+
+          # Shared packages trigger all apps
+          if echo "$CHANGED_FILES" | grep -q "^packages/"; then
+            APPS="cdncore cdntek cdntv cdnglobal"
+          fi
+
+          # Infra changes (docker-compose, nginx, deploy, workflow, database)
+          if echo "$CHANGED_FILES" | grep -qE "^(deploy/|nginx/|docker-compose|database/|\.forgejo/)"; then
+            INFRA=true
+          fi
+
+          APPS=$(echo "$APPS" | xargs)
+          echo "APPS=$APPS" >> "$GITHUB_OUTPUT"
+          echo "INFRA=$INFRA" >> "$GITHUB_OUTPUT"
+          echo "Changed apps: ${APPS:-none}"
+          echo "Infra changed: $INFRA"
 
       # ─── Setup SSH ───
       - name: Setup SSH key
@@ -39,40 +80,24 @@ jobs:
       - name: Verify SSH connection
         run: ssh prod "echo 'SSH connection OK'"
 
-      # ─── Build Docker images ───
-      - name: Build cdncore
+      # ─── Build changed Docker images ───
+      - name: Build changed apps
+        if: steps.changes.outputs.APPS != ''
         run: |
-          docker compose -p $PROJECT_NAME \
-            -f deploy/docker-compose.prod.yml \
-            --project-directory . \
-            build cdncore
-
-      - name: Build cdntek
-        run: |
-          docker compose -p $PROJECT_NAME \
-            -f deploy/docker-compose.prod.yml \
-            --project-directory . \
-            build cdntek
-
-      - name: Build cdntv
-        run: |
-          docker compose -p $PROJECT_NAME \
-            -f deploy/docker-compose.prod.yml \
-            --project-directory . \
-            build cdntv
-
-      - name: Build cdnglobal
-        run: |
-          docker compose -p $PROJECT_NAME \
-            -f deploy/docker-compose.prod.yml \
-            --project-directory . \
-            build cdnglobal
+          for app in ${{ steps.changes.outputs.APPS }}; do
+            echo "=== Building ${app} ==="
+            docker compose -p $PROJECT_NAME \
+              -f deploy/docker-compose.prod.yml \
+              --project-directory . \
+              build ${app}
+          done
 
       # ─── Save and transfer images ───
       - name: Save and transfer images
+        if: steps.changes.outputs.APPS != ''
         run: |
           mkdir -p /tmp/cdn-images
-          for svc in cdncore cdntek cdntv cdnglobal; do
+          for svc in ${{ steps.changes.outputs.APPS }}; do
             echo "=== Saving ${svc} ==="
             docker save "${PROJECT_NAME}-${svc}" | gzip > "/tmp/cdn-images/${svc}.tar.gz"
             ls -lh "/tmp/cdn-images/${svc}.tar.gz"
@@ -99,8 +124,9 @@ jobs:
 
       # ─── Load images on production ───
       - name: Load Docker images
+        if: steps.changes.outputs.APPS != ''
         run: |
-          for svc in cdncore cdntek cdntv cdnglobal; do
+          for svc in ${{ steps.changes.outputs.APPS }}; do
             echo "=== Loading ${svc} ==="
             ssh prod "gunzip -c /tmp/${svc}.tar.gz | docker load"
             ssh prod "rm -f /tmp/${svc}.tar.gz"
@@ -123,61 +149,27 @@ jobs:
 
           ssh prod "cd ${APP_DIR} && docker compose --profile migration up migrate"
 
-      # ─── Rolling deploy ───
-      - name: "Rolling deploy: cdncore"
+      # ─── Rolling deploy (only changed apps) ───
+      - name: Rolling deploy
+        if: steps.changes.outputs.APPS != ''
         run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdncore"
-          echo "Waiting for cdncore health..."
-          for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdncore wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
-              echo "cdncore is healthy"
-              break
-            fi
-            echo "  Attempt $i/30..."
-            sleep 3
-          done
-
-      - name: "Rolling deploy: cdntek"
-        run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdntek"
-          echo "Waiting for cdntek health..."
-          for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdntek wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
-              echo "cdntek is healthy"
-              break
-            fi
-            echo "  Attempt $i/30..."
-            sleep 3
-          done
-
-      - name: "Rolling deploy: cdntv"
-        run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdntv"
-          echo "Waiting for cdntv health..."
-          for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdntv wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
-              echo "cdntv is healthy"
-              break
-            fi
-            echo "  Attempt $i/30..."
-            sleep 3
-          done
-
-      - name: "Rolling deploy: cdnglobal"
-        run: |
-          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdnglobal"
-          echo "Waiting for cdnglobal health..."
-          for i in $(seq 1 30); do
-            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdnglobal wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
-              echo "cdnglobal is healthy"
-              break
-            fi
-            echo "  Attempt $i/30..."
-            sleep 3
+          for app in ${{ steps.changes.outputs.APPS }}; do
+            echo "=== Deploying ${app} ==="
+            ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate ${app}"
+            echo "Waiting for ${app} health..."
+            for i in $(seq 1 30); do
+              if ssh prod "cd ${APP_DIR} && docker compose exec -T ${app} wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+                echo "${app} is healthy"
+                break
+              fi
+              echo "  Attempt $i/30..."
+              sleep 3
+            done
           done
 
       # ─── Nginx reload ───
       - name: Reload nginx
+        if: steps.changes.outputs.INFRA == 'true' || steps.changes.outputs.APPS != ''
         run: |
           ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps nginx"
           ssh prod "cd ${APP_DIR} && docker compose exec -T nginx nginx -s reload"
@@ -189,10 +181,8 @@ jobs:
           ssh prod "docker image prune -f"
           echo ""
           echo "=== Deployment Complete ==="
-          echo "  CDNCore:   https://cdncore.eu"
-          echo "  CDNTek:    https://cdntek.eu"
-          echo "  CDNTV:     https://cdntv.eu"
-          echo "  CDNGlobal: https://cdnglobal.eu"
+          echo "  Changed apps: ${{ steps.changes.outputs.APPS || 'none' }}"
+          echo "  Infra changed: ${{ steps.changes.outputs.INFRA }}"
 
       - name: Cleanup SSH credentials
         if: always()
