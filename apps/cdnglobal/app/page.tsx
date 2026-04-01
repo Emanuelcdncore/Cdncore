@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const bp = process.env.BASE_PATH || '';
 
@@ -72,6 +73,18 @@ export default function Home() {
               </div>
             </a>
           ))}
+        </div>
+
+        <div className="mt-12 fade-in-up delay-300">
+          <Link
+            href="/request-demo"
+            className="inline-flex items-center px-8 py-3 bg-slate-900 text-white rounded-lg font-semibold hover:bg-slate-800 transition-colors"
+          >
+            Request a Demo
+            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
         </div>
       </main>
 
