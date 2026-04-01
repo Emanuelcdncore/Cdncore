@@ -24,14 +24,7 @@ const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/sergio-pinheiro-cdntv",
     icon: `${bp}/assets/images/CEO.png`
   },
-  {
-    name: "Dr. Daniel Silvestre",
-    role: "CO-CTO/Founder",
-    bio: "Daniel holds a Bachelor's Degree in Electrical and Computer Engineering, with an Integrated Master's degree, and a PhD, along with a Master's in Renewable Energy Engineering.",
-    linkedin: "https://www.linkedin.com/in/dsilvestre/",
-    icon: `${bp}/assets/images/Developers.png`
-  },
-  {
+{
     name: "Dr. Mehran Pourvahab",
     role: "CO-CTO/R&D/CISO",
     bio: "Mehran, IEEE Sr. Member, holds a Ph.D. in Computer Eng. As a R&D, bringing expertise in AI, ML, Cyber Security, Cloud Security, and Data Science.",
@@ -58,8 +51,7 @@ const getPhotoFilename = (name: string): string => {
   const nameMap: Record<string, string> = {
     'Sergio Pinheiro': 'Sergio.png',
     'Joana Fidalgo': 'Joana.png',
-    'Dr. Daniel Silvestre': 'Daniel.png',
-    'Dr. Mehran Pourvahab': 'Mehran.png',
+'Dr. Mehran Pourvahab': 'Mehran.png',
     'Guilherme Poeta': 'Poeta.png',
     'Henrique Ramos': 'Henrique.png'
   };
