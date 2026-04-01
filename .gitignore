@@ -5,4 +5,4 @@ out/
 *.tsbuildinfo
 
 # Temporary legacy project
-cdncore/
+/cdncore/
