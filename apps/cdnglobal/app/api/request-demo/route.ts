@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: 'no-reply@cdnglobal.eu',
-      to: 'no-reply@cdnglobal.eu',
+      to: 'info@cdnglobal.eu',
       replyTo: email,
       subject: `[DEMO REQUEST] ${products.join(', ')} - ${firstName} ${lastName}`,
       html: `
