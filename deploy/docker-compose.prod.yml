@@ -60,6 +60,15 @@ services:
     restart: unless-stopped
     mem_limit: 512M
 
+  cdnglobal:
+    build:
+      context: .
+      dockerfile: apps/cdnglobal/Dockerfile
+    expose:
+      - "3000"
+    restart: unless-stopped
+    mem_limit: 256M
+
   nginx:
     image: nginx:alpine
     ports:
@@ -71,6 +80,7 @@ services:
       - cdncore
       - cdntek
       - cdntv
+      - cdnglobal
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1/health"]
       interval: 10s

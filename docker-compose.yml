@@ -54,6 +54,15 @@ services:
         condition: service_completed_successfully
     restart: unless-stopped
 
+  cdnglobal:
+    build:
+      context: .
+      dockerfile: apps/cdnglobal/Dockerfile
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
   nginx:
     image: nginx:alpine
     ports:
@@ -64,6 +73,7 @@ services:
       - cdncore
       - cdntek
       - cdntv
+      - cdnglobal
     restart: unless-stopped
 
 volumes:

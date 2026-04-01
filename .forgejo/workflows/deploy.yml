@@ -61,11 +61,18 @@ jobs:
             --project-directory . \
             build cdntv
 
+      - name: Build cdnglobal
+        run: |
+          docker compose -p $PROJECT_NAME \
+            -f deploy/docker-compose.prod.yml \
+            --project-directory . \
+            build cdnglobal
+
       # ─── Save and transfer images ───
       - name: Save and transfer images
         run: |
           mkdir -p /tmp/cdn-images
-          for svc in cdncore cdntek cdntv; do
+          for svc in cdncore cdntek cdntv cdnglobal; do
             echo "=== Saving ${svc} ==="
             docker save "${PROJECT_NAME}-${svc}" | gzip > "/tmp/cdn-images/${svc}.tar.gz"
             ls -lh "/tmp/cdn-images/${svc}.tar.gz"
@@ -93,7 +100,7 @@ jobs:
       # ─── Load images on production ───
       - name: Load Docker images
         run: |
-          for svc in cdncore cdntek cdntv; do
+          for svc in cdncore cdntek cdntv cdnglobal; do
             echo "=== Loading ${svc} ==="
             ssh prod "gunzip -c /tmp/${svc}.tar.gz | docker load"
             ssh prod "rm -f /tmp/${svc}.tar.gz"
@@ -156,6 +163,19 @@ jobs:
             sleep 3
           done
 
+      - name: "Rolling deploy: cdnglobal"
+        run: |
+          ssh prod "cd ${APP_DIR} && docker compose up -d --no-deps --force-recreate cdnglobal"
+          echo "Waiting for cdnglobal health..."
+          for i in $(seq 1 30); do
+            if ssh prod "cd ${APP_DIR} && docker compose exec -T cdnglobal wget -q --spider http://127.0.0.1:3000/" 2>/dev/null; then
+              echo "cdnglobal is healthy"
+              break
+            fi
+            echo "  Attempt $i/30..."
+            sleep 3
+          done
+
       # ─── Nginx reload ───
       - name: Reload nginx
         run: |
@@ -169,9 +189,10 @@ jobs:
           ssh prod "docker image prune -f"
           echo ""
           echo "=== Deployment Complete ==="
-          echo "  CDNCore: https://cdncore.eu"
-          echo "  CDNTek:  https://cdntek.eu"
-          echo "  CDNTV:   https://cdntv.eu"
+          echo "  CDNCore:   https://cdncore.eu"
+          echo "  CDNTek:    https://cdntek.eu"
+          echo "  CDNTV:     https://cdntv.eu"
+          echo "  CDNGlobal: https://cdnglobal.eu"
 
       - name: Cleanup SSH credentials
         if: always()
