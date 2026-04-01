@@ -3,6 +3,3 @@ node_modules/
 dist/
 out/
 *.tsbuildinfo
-
-# Temporary legacy project
-/cdncore/
