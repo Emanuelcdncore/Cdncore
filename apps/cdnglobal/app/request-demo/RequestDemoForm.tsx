@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const bp = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -81,8 +82,21 @@ export default function RequestDemoForm() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-slate-800 px-4 py-12">
-      <div className="w-full max-w-2xl">
+    <div className="min-h-screen flex flex-col items-center text-slate-800 px-4 py-12">
+      {/* Header logos */}
+      <div className="flex items-center justify-center gap-8 mb-8">
+        <a href="https://cdncore.eu" target="_blank" rel="noopener noreferrer">
+          <Image src={`${bp}/logos/cdncore1.png`} alt="CDN Core" width={120} height={48} unoptimized className="opacity-60 hover:opacity-100 transition-opacity" />
+        </a>
+        <a href="https://cdntv.eu" target="_blank" rel="noopener noreferrer">
+          <Image src={`${bp}/logos/cdntv1.png`} alt="CDN TV" width={120} height={48} unoptimized className="opacity-60 hover:opacity-100 transition-opacity" />
+        </a>
+        <a href="https://cdntek.eu" target="_blank" rel="noopener noreferrer">
+          <Image src={`${bp}/logos/cdntek1.png`} alt="CDN Tek" width={120} height={48} unoptimized className="opacity-60 hover:opacity-100 transition-opacity" />
+        </a>
+      </div>
+
+      <div className="w-full max-w-2xl flex-1">
         <Link href="/" className="inline-flex items-center text-sm text-slate-400 hover:text-slate-600 transition-colors mb-8">
           <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -219,6 +233,11 @@ export default function RequestDemoForm() {
           </button>
         </form>
       </div>
+
+      {/* Footer */}
+      <footer className="w-full text-center py-6 mt-12 text-slate-400 text-sm font-light">
+        <p>&copy; {new Date().getFullYear()} CDN Global Group. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
