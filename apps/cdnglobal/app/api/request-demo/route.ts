@@ -1,21 +1,36 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { z } from 'zod';
 
 const PRODUCTS = ['CDNMonitor'] as const;
+
+const demoRequestSchema = z.object({
+  name: z.string().min(1).max(200),
+  email: z.string().email(),
+  phone: z.string().regex(/^[\d\s\-+().]{7,20}$/),
+  company: z.string().max(200).optional().default(''),
+  message: z.string().max(5000).optional().default(''),
+  products: z.array(z.enum(PRODUCTS)).min(1),
+});
+
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, email, phone, company, products, message } = body;
+    const parsed = demoRequestSchema.safeParse(body);
 
-    if (!name || !email || !phone || !products?.length) {
-      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    if (!parsed.success) {
+      return NextResponse.json({ error: 'Invalid form data' }, { status: 400 });
     }
 
-    const invalidProducts = products.filter((p: string) => !PRODUCTS.includes(p as typeof PRODUCTS[number]));
-    if (invalidProducts.length) {
-      return NextResponse.json({ error: 'Invalid product selection' }, { status: 400 });
-    }
+    const { name, email, phone, company, message, products } = parsed.data;
 
     const transporter = nodemailer.createTransport({
       host: 'mail.cdnglobal.eu',
@@ -27,19 +42,26 @@ export async function POST(req: NextRequest) {
       },
     });
 
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safePhone = escapeHtml(phone);
+    const safeCompany = company ? escapeHtml(company) : '';
+    const safeMessage = message ? escapeHtml(message).replace(/\n/g, '<br />') : '';
+    const safeProducts = products.map((p) => escapeHtml(p)).join(', ');
+
     await transporter.sendMail({
       from: 'no-reply@cdnglobal.eu',
       to: 'info@cdnglobal.eu',
       replyTo: email,
-      subject: `[DEMO REQUEST] ${products.join(', ')} - ${name}`,
+      subject: `[DEMO REQUEST] ${products.join(', ')} - ${name.slice(0, 100)}`,
       html: `
         <h2>New Demo Request</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
-        <p><strong>Products:</strong> ${products.join(', ')}</p>
-        ${message ? `<hr /><p><strong>Message:</strong></p><p>${message.replace(/\n/g, '<br />')}</p>` : ''}
+        <p><strong>Name:</strong> ${safeName}</p>
+        <p><strong>Email:</strong> ${safeEmail}</p>
+        <p><strong>Phone:</strong> ${safePhone}</p>
+        ${safeCompany ? `<p><strong>Company:</strong> ${safeCompany}</p>` : ''}
+        <p><strong>Products:</strong> ${safeProducts}</p>
+        ${safeMessage ? `<hr /><p><strong>Message:</strong></p><p>${safeMessage}</p>` : ''}
       `,
     });
 
