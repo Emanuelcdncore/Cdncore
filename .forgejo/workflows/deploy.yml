@@ -9,7 +9,7 @@ on:
 env:
   PROJECT_NAME: cdn-landings
   APP_DIR: /opt/cdn-landings
-  ALL_APPS: cdncore cdntek cdntv cdnglobal
+  ALL_APPS: cdncore cdntek cdntv cdnglobal aiaccountant
 
 jobs:
   deploy:
@@ -29,7 +29,7 @@ jobs:
 
           # If we can't diff (first commit, etc), deploy all
           if [ -z "$CHANGED_FILES" ]; then
-            echo "APPS=cdncore cdntek cdntv cdnglobal" >> "$GITHUB_OUTPUT"
+            echo "APPS=cdncore cdntek cdntv cdnglobal aiaccountant" >> "$GITHUB_OUTPUT"
             echo "INFRA=true" >> "$GITHUB_OUTPUT"
             echo "Deploy all (no diff available)"
             exit 0
@@ -39,7 +39,7 @@ jobs:
           INFRA=false
 
           # Check each app
-          for app in cdncore cdntek cdntv cdnglobal; do
+          for app in cdncore cdntek cdntv cdnglobal aiaccountant; do
             if echo "$CHANGED_FILES" | grep -q "^apps/${app}/"; then
               APPS="$APPS $app"
             fi
@@ -47,7 +47,7 @@ jobs:
 
           # Shared packages trigger all apps
           if echo "$CHANGED_FILES" | grep -q "^packages/"; then
-            APPS="cdncore cdntek cdntv cdnglobal"
+            APPS="cdncore cdntek cdntv cdnglobal aiaccountant"
           fi
 
           # Infra changes (docker-compose, nginx, deploy, workflow, database)

@@ -12,6 +12,11 @@ const PRODUCTS = [
     name: 'CDNMonitor',
     description: 'Real-time infrastructure monitoring and alerting platform.',
   },
+  {
+    id: 'Ai-Accountant',
+    name: 'Ai-Accountant',
+    description: 'AI-powered autonomous accounting and financial management.',
+  },
 ];
 
 export default function RequestDemoForm() {

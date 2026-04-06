@@ -69,6 +69,22 @@ services:
     restart: unless-stopped
     mem_limit: 256M
 
+  aiaccountant:
+    build:
+      context: .
+      dockerfile: apps/aiaccountant/Dockerfile
+    expose:
+      - "3000"
+    environment:
+      - SMTP_HOST=mail.cdnglobal.eu
+      - SMTP_PORT=587
+      - SMTP_USER=no-reply@cdnglobal.eu
+      - SMTP_PASS=NkxF5@FLa0gTl^&Az
+      - SMTP_FROM=no-reply@cdnglobal.eu
+      - SMTP_TO=info@cdnglobal.eu
+    restart: unless-stopped
+    mem_limit: 256M
+
   nginx:
     image: nginx:alpine
     ports:
@@ -81,6 +97,7 @@ services:
       - cdntek
       - cdntv
       - cdnglobal
+      - aiaccountant
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1/health"]
       interval: 10s

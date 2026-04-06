@@ -10,10 +10,12 @@
     "dev:cdntek": "npm -w apps/cdntek run dev",
     "dev:cdntv": "npm -w apps/cdntv run dev",
     "dev:cdnglobal": "npm -w apps/cdnglobal run dev",
-    "build": "npm -w apps/cdncore run build && npm -w apps/cdntek run build && npm -w apps/cdntv run build && npm -w apps/cdnglobal run build",
+    "dev:aiaccountant": "npm -w apps/aiaccountant run dev",
+    "build": "npm -w apps/cdncore run build && npm -w apps/cdntek run build && npm -w apps/cdntv run build && npm -w apps/cdnglobal run build && npm -w apps/aiaccountant run build",
     "start:cdncore": "npm -w apps/cdncore run start",
     "start:cdntek": "npm -w apps/cdntek run start",
     "start:cdntv": "npm -w apps/cdntv run start",
-    "start:cdnglobal": "npm -w apps/cdnglobal run start"
+    "start:cdnglobal": "npm -w apps/cdnglobal run start",
+    "start:aiaccountant": "npm -w apps/aiaccountant run start"
   }
 }

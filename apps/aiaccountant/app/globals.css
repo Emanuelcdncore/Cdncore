@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+  --font-sans: var(--font-inter);
+  --color-teal-cta: #469C94;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.2);
+  color: #064e3b;
+}
+
+.blur-hero-1 {
+  filter: blur(100px);
+}
+
+.blur-hero-2 {
+  filter: blur(80px);
+}
+
+.shadow-glow-emerald {
+  box-shadow: 0 0 80px rgba(16, 185, 129, 0.3);
+}
