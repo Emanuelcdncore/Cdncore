@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aiaccountant.pt"),
+  metadataBase: new URL("https://ai-accountant.eu"),
   title: {
     default: "Ai-Accountant - The Accounting Revolution",
     template: "%s | Ai-Accountant",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Ai-Accountant - The Accounting Revolution",
     description:
       "Transform financial management with artificial intelligence. Automate processes, eliminate errors, and gain strategic time.",
-    url: "https://aiaccountant.pt",
+    url: "https://ai-accountant.eu",
   },
   twitter: {
     card: "summary_large_image",
