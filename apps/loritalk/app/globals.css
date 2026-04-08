@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Loritalk Brand Colors */
+  --color-loritalk-green: #94BF5C;
+  --color-loritalk-soft-orange: #FF9852;
+  --color-loritalk-orange: #FF6903;
+  --color-loritalk-red: #E54013;
+  --color-loritalk-blue: #5D92E8;
+  --color-loritalk-black: #000000;
+  --color-loritalk-white: #ffffff;
+
+  /* Semantic aliases */
+  --color-primary: #94BF5C;
+  --color-secondary: #5D92E8;
+  --color-accent: #FF6903;
+  --color-warning: #FF9852;
+  --color-danger: #E54013;
+
+  /* Typography */
+  --font-sans: var(--font-readex), 'Readex Pro', sans-serif;
+  --font-display: var(--font-readex), 'Readex Pro', sans-serif;
+
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  letter-spacing: 0 !important;
+  hyphens: none;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

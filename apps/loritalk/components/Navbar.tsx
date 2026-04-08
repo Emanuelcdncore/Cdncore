@@ -1,0 +1,50 @@
+"use client";
+
+import { useState } from "react";
+import LoriLogo from "./icons/LoriLogo";
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <nav className="sticky top-0 z-50 bg-white/95 border-b border-black/8 backdrop-blur-sm">
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <LoriLogo variant="horizontal" size={36} />
+
+        <div className="hidden md:flex items-center gap-8">
+          <a href="#features" className="text-sm font-medium text-black/70 hover:text-black transition-colors">Features</a>
+          <a href="#how-it-works" className="text-sm font-medium text-black/70 hover:text-black transition-colors">How it works</a>
+          <a href="#pricing" className="text-sm font-medium text-black/70 hover:text-black transition-colors">Pricing</a>
+          <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: "#5D92E8" }}>Beta</span>
+        </div>
+
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://app.lori-talk.eu"
+            className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-opacity hover:opacity-90"
+            style={{ backgroundColor: "#94BF5C" }}
+          >
+            Start for free
+          </a>
+        </div>
+
+        <button className="md:hidden p-2 rounded-lg hover:bg-black/5 transition-colors" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+          <span className="material-icons-round text-xl">{open ? "close" : "menu"}</span>
+        </button>
+      </div>
+
+      {open && (
+        <div className="md:hidden border-t border-black/8 bg-white px-6 py-4 flex flex-col gap-4">
+          <a href="#features" className="text-sm font-medium" onClick={() => setOpen(false)}>Features</a>
+          <a href="#how-it-works" className="text-sm font-medium" onClick={() => setOpen(false)}>How it works</a>
+          <a href="#pricing" className="text-sm font-medium" onClick={() => setOpen(false)}>Pricing</a>
+          <div className="flex flex-col gap-2 pt-2 border-t border-black/8">
+            <a href="https://app.lori-talk.eu" className="text-sm font-semibold py-2 rounded-full text-white text-center hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C" }}>
+              Start for free
+            </a>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}

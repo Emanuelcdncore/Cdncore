@@ -72,6 +72,15 @@ services:
         condition: service_completed_successfully
     restart: unless-stopped
 
+  loritalk:
+    build:
+      context: .
+      dockerfile: apps/loritalk/Dockerfile
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
   nginx:
     image: nginx:alpine
     ports:
@@ -84,6 +93,7 @@ services:
       - cdntv
       - cdnglobal
       - aiaccountant
+      - loritalk
     restart: unless-stopped
 
 volumes:
