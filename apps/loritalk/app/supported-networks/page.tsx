@@ -5,8 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Supported Networks — Loritalk",
-  description: "Loritalk supports Instagram, LinkedIn, Facebook, X (Twitter), and TikTok. Generate optimized content for each platform.",
+  title: "Supported Networks",
+  description: "Loritalk supports Instagram, LinkedIn, Facebook, X (Twitter), and TikTok. Generate optimized content for each platform with AI.",
+  alternates: { canonical: "/supported-networks" },
 };
 
 const networks = [

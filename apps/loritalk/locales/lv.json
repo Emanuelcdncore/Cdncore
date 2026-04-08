@@ -156,16 +156,23 @@
     "title": "Vienkāršas, caurspoīdīgas cenas",
     "subtitle": "Bez maksas Beta laikā. Agrīnie lietotāji fiksē savu cenu uz mūžu palaišanas brīdī.",
     "mostPopular": "Populārākais",
+    "monthly": "Mēnesī",
+    "annual": "Gadā",
+    "save2Months": "-17%",
+    "perMonth": "/ mēnesī",
+    "perYear": "/ gadā",
+    "billedAnnually": "Maksājams reizi gadā",
+    "customPriceLabel": "Pielāgots",
     "plans": [
       {
         "name": "Bez maksas",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "Beta laikā",
         "description": "Izmēģiniet visu ar dāsniem ierobežojumiem.",
         "features": [
-          "20 publikācijas / mēn.",
+          "5 publikācijas / mēn.",
           "3 tīkli",
-          "3 valodas",
           "Pamata toņa kontrole",
           "Tēmturu ieteikumi"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Veidotājs",
-        "price": "€19",
-        "period": "mēnesī",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Veidotājiem un zīmoliem, kas publicē regulāri.",
         "features": [
           "200 publikācijas / mēn.",
           "Visi tīkli",
-          "Visas valodas",
           "Uzlabots tonis un personas",
           "Satura kalendārs",
           "Prioritārs atbalsts"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Aģentūra",
-        "price": "€79",
-        "period": "mēnesī",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Komandām, kas pārvalda vairākus zīmolus.",
         "features": [
           "Neierobežotas publikācijas",
           "Visi tīkli",
-          "Visas valodas",
           "Vairāki zīmoli",
           "Komandas sadarbība",
           "Analītika",
           "Konta pārvaldnieks"
         ],
-        "cta": "Sazinieties ar mums"
+        "cta": "Sazinieties ar mums",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Kādus AI modeļus izmanto Loritalk?",
-        "a": "Loritalk savienojas ar vairākiem vadošajiem AI pakalpojumu sniedzējiem, tostarp Claude (Anthropic), GPT (OpenAI) un Gemini (Google). Jūs varat konfigurēt, kuri modeļi piedalās jūsu ģenerēšanas procesā — vai izmantot savus API atslēgas."
+        "a": "Loritalk savienojas ar vairākiem vadošajiem AI pakalpojumu sniedzējiem, tostarp Claude (Anthropic), GPT (OpenAI) un Gemini (Google). Jūs varat konfigurēt, kuri modeļi piedalās jūsu ģenerēšanas procesā."
       },
       {
         "q": "Kā tas atšķiras no ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Kādi sociālie tīkli tiek atbalstīti?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok un jebkura pielāgota platforma caur webhook (korporatīvie emuāri, CMS, iekšējie rīki)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) un TikTok."
       },
       {
         "q": "Vai mans saturs ir privāts?",
@@ -230,10 +240,6 @@
       {
         "q": "Kas notiek pēc Beta?",
         "a": "Stājas spēkā maksas plāni, bet katrs Beta lietotājs saglabā savu pašreizējo cenu fiksētu uz mūžu. Bez pārsteigumiem."
-      },
-      {
-        "q": "Vai varu izmantot savas AI atslēgas?",
-        "a": "Jā. Jūs varat savienot savas OpenAI, Anthropic vai Google API atslēgas. Vai izmantojiet mūsu iebūvēto AI pakalpojumu — ārējās atslēgas nav nepieciešamas."
       }
     ]
   },

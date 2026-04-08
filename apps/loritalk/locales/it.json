@@ -156,16 +156,23 @@
     "title": "Prezzi semplici e trasparenti",
     "subtitle": "Gratuito durante la Beta. I primi utenti bloccano la loro tariffa per sempre al lancio.",
     "mostPopular": "Più popolare",
+    "monthly": "Mensile",
+    "annual": "Annuale",
+    "save2Months": "-17%",
+    "perMonth": "/ mese",
+    "perYear": "/ anno",
+    "billedAnnually": "Fatturato annualmente",
+    "customPriceLabel": "Personalizzato",
     "plans": [
       {
         "name": "Gratuito",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "durante la Beta",
         "description": "Prova tutto con limiti generosi.",
         "features": [
-          "20 post / mese",
+          "5 post / mese",
           "3 network",
-          "3 lingue",
           "Controlli tono base",
           "Suggerimenti hashtag"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Creator",
-        "price": "€19",
-        "period": "al mese",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Per creatori e brand che pubblicano costantemente.",
         "features": [
           "200 post / mese",
           "Tutti i network",
-          "Tutte le lingue",
           "Tono avanzato e personas",
           "Calendario contenuti",
           "Supporto prioritario"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Agenzia",
-        "price": "€79",
-        "period": "al mese",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Per team che gestiscono più brand.",
         "features": [
           "Post illimitati",
           "Tutti i network",
-          "Tutte le lingue",
           "Brand multipli",
           "Collaborazione team",
           "Analitica",
           "Account manager"
         ],
-        "cta": "Parlaci"
+        "cta": "Parlaci",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Quali modelli IA usa Loritalk?",
-        "a": "Loritalk si connette a più fornitori IA leader, tra cui Claude (Anthropic), GPT (OpenAI) e Gemini (Google). Puoi configurare quali modelli partecipano alla tua pipeline di generazione — o usare le tue chiavi API."
+        "a": "Loritalk si connette a più fornitori IA leader, tra cui Claude (Anthropic), GPT (OpenAI) e Gemini (Google). Puoi configurare quali modelli partecipano alla tua pipeline di generazione."
       },
       {
         "q": "In cosa è diverso da ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Quali social network sono supportati?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok e qualsiasi piattaforma personalizzata via webhook (blog aziendali, CMS, strumenti interni)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) e TikTok."
       },
       {
         "q": "I miei contenuti sono privati?",
@@ -230,10 +240,6 @@
       {
         "q": "Cosa succede dopo la Beta?",
         "a": "Entrano in vigore i piani a pagamento, ma ogni utente Beta mantiene la propria tariffa attuale bloccata per sempre. Nessuna sorpresa."
-      },
-      {
-        "q": "Posso usare le mie chiavi IA?",
-        "a": "Sì. Puoi collegare le tue chiavi API OpenAI, Anthropic o Google. Oppure usa il nostro servizio IA integrato — nessuna chiave esterna necessaria."
       }
     ]
   },

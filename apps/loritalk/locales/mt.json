@@ -156,16 +156,23 @@
     "title": "Prezzijiet sempliċi u trasparenti",
     "subtitle": "B'xejn waqt il-Beta. L-utenti bikrija jiffissaw ir-rata tagħhom għal dejjem meta nniedu.",
     "mostPopular": "L-aktar popolari",
+    "monthly": "Kull xahar",
+    "annual": "Kull sena",
+    "save2Months": "-17%",
+    "perMonth": "/ xahar",
+    "perYear": "/ sena",
+    "billedAnnually": "Fatturati annwalment",
+    "customPriceLabel": "Personalizzat",
     "plans": [
       {
         "name": "B'xejn",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "waqt il-Beta",
         "description": "Ipprova kollox b'limiti ġerużi.",
         "features": [
-          "20 post / xahar",
+          "5 post / xahar",
           "3 netwerks",
-          "3 lingwi",
           "Kontrolli bażiċi tat-ton",
           "Suġġerimenti ta' hashtags"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Kreatur",
-        "price": "€19",
-        "period": "fix-xahar",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Għal kreaturi u brands li jippubblikaw b'mod konsistenti.",
         "features": [
           "200 post / xahar",
           "In-netwerks kollha",
-          "Il-lingwi kollha",
           "Ton avvanzat u personas",
           "Kalendarju tal-kontenut",
           "Appoġġ ta' prijorità"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Aġenzija",
-        "price": "€79",
-        "period": "fix-xahar",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Għal timijiet li jimmanigġjaw diversi brands.",
         "features": [
           "Posts illimitati",
           "In-netwerks kollha",
-          "Il-lingwi kollha",
           "Diversi brands",
           "Kollaborazzjoni tat-tim",
           "Analitika",
           "Account manager"
         ],
-        "cta": "Kellem lilna"
+        "cta": "Kellem lilna",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Liema mudelli AI juża Loritalk?",
-        "a": "Loritalk jikkonnettja ma' diversi fornituri ewlenin ta' AI inkluż Claude (Anthropic), GPT (OpenAI), u Gemini (Google). Tista' tikkonfigura liema mudelli jipparteċipaw fil-pipeline ta' ġenerazzjoni tiegħek — jew tuża l-API keys tiegħek stess."
+        "a": "Loritalk jikkonnettja ma' diversi fornituri ewlenin ta' AI inkluż Claude (Anthropic), GPT (OpenAI), u Gemini (Google). Tista' tikkonfigura liema mudelli jipparteċipaw fil-pipeline ta' ġenerazzjoni tiegħek."
       },
       {
         "q": "Kif inhu differenti minn ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Liema netwerks soċjali huma appoġġjati?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok u kwalunkwe pjattaforma personalizzata permezz ta' webhook (blogs korporattivi, CMS, għodod interni)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) u TikTok."
       },
       {
         "q": "Il-kontenut tiegħi huwa privat?",
@@ -230,10 +240,6 @@
       {
         "q": "X'jiġri wara l-Beta?",
         "a": "Il-pjanijiet imħallsa jidħlu fis-seħħ, iżda kull utent tal-Beta jżomm ir-rata attwali tiegħu ffissat għal dejjem. Bla sorpriżi."
-      },
-      {
-        "q": "Nista' nuża l-AI keys tiegħi stess?",
-        "a": "Iva. Tista' tikkonnettja l-OpenAI, Anthropic jew Google API keys tiegħek stess. Jew uża s-servizz AI integrat tagħna — l-ebda keys esterni meħtieġa."
       }
     ]
   },

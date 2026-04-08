@@ -156,16 +156,23 @@
     "title": "Eenvoudige, transparante prijzen",
     "subtitle": "Gratis tijdens de Beta. Vroege gebruikers vergrendelen hun tarief voor altijd bij lancering.",
     "mostPopular": "Meest populair",
+    "monthly": "Maandelijks",
+    "annual": "Jaarlijks",
+    "save2Months": "-17%",
+    "perMonth": "/ maand",
+    "perYear": "/ jaar",
+    "billedAnnually": "Jaarlijks gefactureerd",
+    "customPriceLabel": "Op maat",
     "plans": [
       {
         "name": "Gratis",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "tijdens de Beta",
         "description": "Probeer alles met ruime limieten.",
         "features": [
-          "20 berichten / maand",
+          "5 berichten / maand",
           "3 netwerken",
-          "3 talen",
           "Basis toonbesturing",
           "Hashtag-suggesties"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Creator",
-        "price": "€19",
-        "period": "per maand",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Voor creators en merken die consistent publiceren.",
         "features": [
           "200 berichten / maand",
           "Alle netwerken",
-          "Alle talen",
           "Geavanceerde toon en persona's",
           "Contentkalender",
           "Prioriteitsondersteuning"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Bureau",
-        "price": "€79",
-        "period": "per maand",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Voor teams die meerdere merken beheren.",
         "features": [
           "Onbeperkte berichten",
           "Alle netwerken",
-          "Alle talen",
           "Meerdere merken",
           "Teamsamenwerking",
           "Analytics",
           "Accountmanager"
         ],
-        "cta": "Neem contact op"
+        "cta": "Neem contact op",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Welke AI-modellen gebruikt Loritalk?",
-        "a": "Loritalk verbindt met meerdere toonaangevende AI-providers, waaronder Claude (Anthropic), GPT (OpenAI) en Gemini (Google). Je kunt configureren welke modellen deelnemen aan je generatiepipeline — of je eigen API-sleutels gebruiken."
+        "a": "Loritalk verbindt met meerdere toonaangevende AI-providers, waaronder Claude (Anthropic), GPT (OpenAI) en Gemini (Google). Je kunt configureren welke modellen deelnemen aan je generatiepipeline."
       },
       {
         "q": "Hoe verschilt dit van ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Welke sociale netwerken worden ondersteund?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok en elk aangepast platform via webhook (bedrijfsblogs, CMS, interne tools)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) en TikTok."
       },
       {
         "q": "Is mijn content privé?",
@@ -230,10 +240,6 @@
       {
         "q": "Wat gebeurt er na de Beta?",
         "a": "Betaalde plannen gaan in, maar elke Beta-gebruiker behoudt zijn huidige tarief voor altijd vergrendeld. Geen verrassingen."
-      },
-      {
-        "q": "Kan ik mijn eigen AI-sleutels gebruiken?",
-        "a": "Ja. Je kunt je eigen OpenAI, Anthropic of Google API-sleutels verbinden. Of gebruik onze ingebouwde AI-service — geen externe sleutels nodig."
       }
     ]
   },

@@ -156,16 +156,23 @@
     "title": "Egyszerű, átlátható árazás",
     "subtitle": "Ingyenes a Béta alatt. A korai felhasználók örökre rögzítik az árukat az induláskor.",
     "mostPopular": "Legnépszerűbb",
+    "monthly": "Havi",
+    "annual": "Éves",
+    "save2Months": "-17%",
+    "perMonth": "/ hó",
+    "perYear": "/ év",
+    "billedAnnually": "Évente számlázva",
+    "customPriceLabel": "Egyedi",
     "plans": [
       {
         "name": "Ingyenes",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "a Béta alatt",
         "description": "Próbálj ki mindent bőkezű korlátokkal.",
         "features": [
-          "20 poszt / hó",
+          "5 poszt / hó",
           "3 hálózat",
-          "3 nyelv",
           "Alap hangnem vezérlés",
           "Hashtag javaslatok"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Alkotó",
-        "price": "€19",
-        "period": "havonta",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Alkotók és márkák számára, akik rendszeresen publikálnak.",
         "features": [
           "200 poszt / hó",
           "Minden hálózat",
-          "Minden nyelv",
           "Haladó hangnem és személyiségek",
           "Tartalom naptár",
           "Kiemelt támogatás"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Ügynökség",
-        "price": "€79",
-        "period": "havonta",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Több márkát kezelő csapatok számára.",
         "features": [
           "Korlátlan posztok",
           "Minden hálózat",
-          "Minden nyelv",
           "Több márka",
           "Csapat együttműködés",
           "Analitika",
           "Fiókkezelő"
         ],
-        "cta": "Beszéljünk"
+        "cta": "Beszéljünk",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Milyen AI modelleket használ a Loritalk?",
-        "a": "A Loritalk több vezető AI szolgáltatóhoz csatlakozik, beleértve a Claude (Anthropic), GPT (OpenAI) és Gemini (Google) modelleket. Beállíthatod, melyik modellek vesznek részt a generálási folyamatodban — vagy használhatod a saját API kulcsaidat."
+        "a": "A Loritalk több vezető AI szolgáltatóhoz csatlakozik, beleértve a Claude (Anthropic), GPT (OpenAI) és Gemini (Google) modelleket. Beállíthatod, melyik modellek vesznek részt a generálási folyamatodban."
       },
       {
         "q": "Miben különbözik ez a ChatGPT-től?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Mely közösségi hálózatok támogatottak?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok és bármely egyéni platform webhook-on keresztül (vállalati blogok, CMS, belső eszközök)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) és TikTok."
       },
       {
         "q": "Privát a tartalmam?",
@@ -230,10 +240,6 @@
       {
         "q": "Mi történik a Béta után?",
         "a": "A fizetős csomagok lépnek életbe, de minden Béta felhasználó örökre megtartja a jelenlegi árát. Nincsenek meglepetések."
-      },
-      {
-        "q": "Használhatom a saját AI kulcsaimat?",
-        "a": "Igen. Csatlakoztathatod a saját OpenAI, Anthropic vagy Google API kulcsaidat. Vagy használd a beépített AI szolgáltatásunkat — nincs szükség külső kulcsokra."
       }
     ]
   },

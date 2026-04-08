@@ -4,8 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Loritalk",
-  description: "Terms of Service for Loritalk by CDN Core Technologies.",
+  title: "Terms of Service",
+  description: "Terms of Service for Loritalk by CDN Core Technologies. AI content generation platform. Governed by Portuguese law.",
+  alternates: { canonical: "/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {

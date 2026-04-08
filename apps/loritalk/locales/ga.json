@@ -156,16 +156,23 @@
     "title": "Praghsáil shimplí, thrédhearcach",
     "subtitle": "Saor in aisce le linn Beta. Glasálann luathúsáideoirí a ráta go deo nuair a sheolaim.",
     "mostPopular": "Is coitianta",
+    "monthly": "Míosúil",
+    "annual": "Bliantúil",
+    "save2Months": "-17%",
+    "perMonth": "/ mí",
+    "perYear": "/ bliain",
+    "billedAnnually": "Billeáilte go bliantúil",
+    "customPriceLabel": "Saincheaptha",
     "plans": [
       {
         "name": "Saor in aisce",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "le linn Beta",
         "description": "Bain triail as gach rud le teorainneacha flaithiúla.",
         "features": [
-          "20 postáil / mí",
+          "5 postáil / mí",
           "3 líonra",
-          "3 theanga",
           "Rialuithe toin bunúsacha",
           "Moltaí haischlib"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Cruthaitheoir",
-        "price": "€19",
-        "period": "in aghaidh na míosa",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Do chruthaitheoirí agus brandaí a fhoilsíonn go seasta.",
         "features": [
           "200 postáil / mí",
           "Gach líonra",
-          "Gach teanga",
           "Ton ardleibhéil agus pearsana",
           "Féilire ábhair",
           "Tacaíocht tosaíochta"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Gníomhaireacht",
-        "price": "€79",
-        "period": "in aghaidh na míosa",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "D'fhoirne a bhainistíonn brandaí iolracha.",
         "features": [
           "Postálacha gan teorainn",
           "Gach líonra",
-          "Gach teanga",
           "Brandaí iolracha",
           "Comhoibriú foirne",
           "Anailísíocht",
           "Bainisteoir cuntais"
         ],
-        "cta": "Labhair linn"
+        "cta": "Labhair linn",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Cad iad na múnlaí AI a úsáideann Loritalk?",
-        "a": "Nascann Loritalk le soláthraithe AI ceannródaíocha iolracha lena n-áirítear Claude (Anthropic), GPT (OpenAI), agus Gemini (Google). Is féidir leat a chumrú cé na múnlaí a ghlacann páirt i do phíblíne giniúna — nó d'eochracha API féin a úsáid."
+        "a": "Nascann Loritalk le soláthraithe AI ceannródaíocha iolracha lena n-áirítear Claude (Anthropic), GPT (OpenAI), agus Gemini (Google). Is féidir leat a chumrú cé na múnlaí a ghlacann páirt i do phíblíne giniúna."
       },
       {
         "q": "Conas atá sé seo difriúil ó ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Cé na líonraí sóisialta a thacaítear leo?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok agus aon ardán saincheaptha trí webhook (blaganna corparáideacha, CMS, uirlisí inmheánacha)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) agus TikTok."
       },
       {
         "q": "An bhfuil m'ábhar príobháideach?",
@@ -230,10 +240,6 @@
       {
         "q": "Cad a tharlóidh tar éis Beta?",
         "a": "Tagann pleananna íoctha i bhfeidhm, ach coimeádann gach úsáideoir Beta a ráta reatha glasáilte go deo. Gan iontas."
-      },
-      {
-        "q": "An féidir liom m'eochracha AI féin a úsáid?",
-        "a": "Is féidir. Is féidir leat d'eochracha API OpenAI, Anthropic nó Google féin a nascadh. Nó úsáid ár seirbhís AI ionsuite — níl eochracha seachtracha ag teastáil."
       }
     ]
   },

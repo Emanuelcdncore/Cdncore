@@ -1,252 +1,270 @@
 {
   "navbar": {
-    "features": "Features",
-    "howItWorks": "How it works",
-    "pricing": "Pricing",
+    "features": "Funktioner",
+    "howItWorks": "Så fungerar det",
+    "pricing": "Priser",
     "beta": "Beta",
-    "startForFree": "Start for free"
+    "startForFree": "Börja gratis"
   },
   "hero": {
-    "badge": "Now in Beta — free early access",
-    "headlineOne": "One idea.",
-    "headlineTwo": "Every platform.",
-    "description": "Type a theme or idea. Loritalk's AI writes optimized posts for Instagram, LinkedIn, X, TikTok, and more — in seconds. Multiple AI models compete to give you the best result.",
-    "ctaPrimary": "Start creating for free",
-    "ctaSecondary": "See how it works",
-    "note": "No credit card required · Free during Beta"
+    "badge": "Nu i Beta — gratis tidig åtkomst",
+    "headlineOne": "En idé.",
+    "headlineTwo": "Varje plattform.",
+    "description": "Skriv in ett ämne eller en idé. Loritalk's AI skriver optimerade inlägg för Instagram, LinkedIn, X, TikTok och mer — på sekunder. Flera AI-modeller tävlar för att ge dig bästa resultat.",
+    "ctaPrimary": "Börja skapa gratis",
+    "ctaSecondary": "Se hur det fungerar",
+    "note": "Inget kreditkort krävs · Gratis under Beta"
   },
   "stats": {
     "networksValue": "6+",
-    "networksLabel": "Social networks supported",
+    "networksLabel": "Stödda sociala nätverk",
     "languagesValue": "3",
-    "languagesLabel": "Languages at launch",
+    "languagesLabel": "Språk vid lansering",
     "generationValue": "<5s",
-    "generationLabel": "Average generation time",
-    "freeValue": "Free",
-    "freeLabel": "During Beta — no limits"
+    "generationLabel": "Genomsnittlig genereringstid",
+    "freeValue": "Gratis",
+    "freeLabel": "Under Beta — inga begränsningar"
   },
   "problem": {
-    "title": "Your content workflow is broken",
-    "subtitle": "Sound familiar?",
+    "title": "Ditt innehållsarbetsflöde är trasigt",
+    "subtitle": "Låter det bekant?",
     "items": [
       {
-        "title": "Hours wasted adapting",
-        "description": "You write a post for Instagram, then rewrite it for LinkedIn, then again for X. Every platform needs different tone, length, and hashtags."
+        "title": "Timmar bortkastade på anpassning",
+        "description": "Du skriver ett inlägg för Instagram, skriver om det för LinkedIn och igen för X. Varje plattform kräver olika ton, längd och hashtags."
       },
       {
-        "title": "AI that sounds generic",
-        "description": "ChatGPT gives you one version that sounds like everyone else. No brand voice, no platform awareness, no real optimization."
+        "title": "AI som låter generisk",
+        "description": "ChatGPT ger dig en version som låter som alla andra. Ingen varumärkesstämma, ingen plattformsmedvetenhet, ingen riktig optimering."
       },
       {
-        "title": "Team bottlenecks",
-        "description": "Content waits for approval, gets lost in Slack threads, and nobody knows what's scheduled for next week."
+        "title": "Flaskhalsar i teamet",
+        "description": "Innehåll väntar på godkännande, försvinner i Slack-trådar och ingen vet vad som är schemalägt för nästa vecka."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk fixes all of that",
-    "subtitle": "One briefing. Every platform. Multiple AIs competing for your best post.",
-    "ctaPrimary": "Start creating for free",
+    "title": "Loritalk löser allt det",
+    "subtitle": "En briefing. Varje plattform. Flera AI:er tävlar om ditt bästa inlägg.",
+    "ctaPrimary": "Börja skapa gratis",
     "rows": [
       {
-        "before": "1 post = 45 min adapting to each platform",
-        "after": "1 briefing = all platforms in <5 seconds"
+        "before": "1 inlägg = 45 min anpassning per plattform",
+        "after": "1 briefing = alla plattformar på <5 sekunder"
       },
       {
-        "before": "1 AI model = generic, one-size-fits-all text",
-        "after": "Multiple AI models deliberate and refine each other"
+        "before": "1 AI-modell = generisk, enhetlig text",
+        "after": "Flera AI-modeller överlägger och förfinar varandra"
       },
       {
-        "before": "Content scattered across tools and threads",
-        "after": "One dashboard: create, approve, schedule, publish, track"
+        "before": "Innehåll spritt över verktyg och trådar",
+        "after": "En dashboard: skapa, godkänn, schemalägg, publicera, följ upp"
       }
     ]
   },
   "features": {
-    "title": "Everything your content team needs",
-    "subtitle": "From idea to published post — Loritalk handles the entire workflow.",
+    "title": "Allt ditt innehållsteam behöver",
+    "subtitle": "Från idé till publicerat inlägg — Loritalk hanterar hela arbetsflödet.",
     "items": [
       {
-        "title": "Multi-Model AI Deliberation",
-        "description": "Not one AI — multiple models generate independently, then refine each other's work. You get the best of Claude, GPT, and Gemini combined."
+        "title": "Multimodell AI-deliberation",
+        "description": "Inte en AI — flera modeller genererar oberoende och förfinar sedan varandras arbete. Du får det bästa från Claude, GPT och Gemini kombinerat."
       },
       {
-        "title": "Platform-optimized content",
-        "description": "Each post is tailored for its platform — right tone, length, hashtags, emojis, and format. Instagram captions, LinkedIn articles, X threads, TikTok scripts."
+        "title": "Plattformsoptimerat innehåll",
+        "description": "Varje inlägg är skräddarsytt för sin plattform — rätt ton, längd, hashtags, emojis och format. Instagram-texter, LinkedIn-artiklar, X-trådar, TikTok-manus."
       },
       {
-        "title": "Multilingual generation",
-        "description": "Generate in Portuguese, English, Spanish and more. Native-level fluency with cultural nuance — not just translation."
+        "title": "Flerspråkig generering",
+        "description": "Generera på portugisiska, engelska, spanska och fler. Flytande på modersmålsnivå med kulturella nyanser — inte bara översättning."
       },
       {
-        "title": "Schedule & publish",
-        "description": "Calendar view, scheduled publishing, and direct posting to all connected channels. Different times per platform."
+        "title": "Schemalägg och publicera",
+        "description": "Kalendervy, schemalagd publicering och direkt publicering på alla anslutna kanaler. Olika tider per plattform."
       },
       {
-        "title": "Brand voice & personas",
-        "description": "Create AI personas that write like your brand. Control tone from professional to playful. Every post sounds like you, not a robot."
+        "title": "Varumärkesstämma och personas",
+        "description": "Skapa AI-personas som skriver som ditt varumärke. Styr tonen från professionell till lekfull. Varje inlägg låter som du, inte en robot."
       },
       {
-        "title": "Analytics dashboard",
-        "description": "Track impressions, engagement, clicks, and growth across all channels. Know what content works and double down."
+        "title": "Analysdashboard",
+        "description": "Följ visningar, engagemang, klick och tillväxt över alla kanaler. Veta vilket innehåll som fungerar och dubbla insatsen."
       }
     ]
   },
   "howItWorks": {
-    "title": "From idea to post in 3 steps",
-    "subtitle": "No more blank screens. No more copy-pasting between platforms.",
+    "title": "Från idé till inlägg i 3 steg",
+    "subtitle": "Inga fler tomma skärmar. Inget mer kopierande mellan plattformar.",
     "steps": [
       {
-        "title": "Write your briefing",
-        "description": "Describe what you want to communicate — as simple as \"new product launch\" or as detailed as a full brief. Pick your channels, language, and tone."
+        "title": "Skriv din briefing",
+        "description": "Beskriv vad du vill kommunicera — så enkelt som \"ny produktlansering\" eller så detaljerat som en fullständig brief. Välj dina kanaler, språk och ton."
       },
       {
-        "title": "AI models compete for you",
-        "description": "Multiple AI models generate content independently, then review and refine each other's output. You receive N polished versions per platform."
+        "title": "AI-modeller tävlar för dig",
+        "description": "Flera AI-modeller genererar innehåll oberoende, granskar sedan och förfinar varandras resultat. Du får N polerade versioner per plattform."
       },
       {
-        "title": "Pick, edit & publish",
-        "description": "Choose your favorite version for each channel. Tweak anything with one click. Publish now or schedule for later."
+        "title": "Välj, redigera och publicera",
+        "description": "Välj din favoritversion för varje kanal. Justera vad som helst med ett klick. Publicera nu eller schemalägg för senare."
       }
     ]
   },
   "differentiator": {
-    "title": "Why multiple AIs beat a single one",
-    "subtitle": "Other tools use one model. Loritalk uses several — and makes them improve each other.",
-    "briefLabel": "Your Brief",
-    "channels": "Channels",
-    "language": "Language:",
-    "languages": "English, Portuguese",
-    "submitted": "Submitted 2s ago",
-    "round1": "ROUND 1 — INDEPENDENT GENERATION",
-    "generated": "Generated",
-    "round2": "Round 2 — Cross-Refinement",
-    "round2Desc": "Each model reads all outputs and improves its own version",
-    "qualityNote": "Quality improved by ~40% vs Round 1",
-    "pickEdit": "Pick & Edit",
-    "addMedia": "Add Media",
-    "uploading": "Uploading image...",
-    "imageAttached": "Image uploaded successfully",
-    "generateAI": "Generate with AI",
-    "readyPublish": "Ready to Publish",
-    "publishAll": "Publish all",
-    "scheduled": "Scheduled",
-    "draft": "Draft",
-    "explanation": "Each AI model has different strengths. Claude excels at nuance, GPT at versatility, Gemini at factual precision. By making them collaborate and challenge each other, every final text is better than any single model could produce alone."
+    "title": "Varför flera AI:er slår en enda",
+    "subtitle": "Andra verktyg använder en modell. Loritalk använder flera — och låter dem förbättra varandra.",
+    "briefLabel": "Din briefing",
+    "channels": "Kanaler",
+    "language": "Språk:",
+    "languages": "Engelska, Portugisiska",
+    "submitted": "Skickad för 2 sek sedan",
+    "round1": "RUNDA 1 — OBEROENDE GENERERING",
+    "generated": "Genererad",
+    "round2": "Runda 2 — Korsförfining",
+    "round2Desc": "Varje modell läser alla resultat och förbättrar sin egen version",
+    "qualityNote": "Kvaliteten förbättrades med ~40% jämfört med Runda 1",
+    "pickEdit": "Välj och redigera",
+    "addMedia": "Lägg till media",
+    "uploading": "Laddar upp bild...",
+    "imageAttached": "Bild uppladdad",
+    "generateAI": "Generera med AI",
+    "readyPublish": "Redo att publicera",
+    "publishAll": "Publicera alla",
+    "scheduled": "Schemalagd",
+    "draft": "Utkast",
+    "explanation": "Varje AI-modell har olika styrkor. Claude utmerker sig i nyanser, GPT i mångsidighet, Gemini i faktaprecision. Genom att låta dem samarbeta och utmana varandra blir varje slutgiltig text bättre än vad någon enskild modell kunde producera ensam."
   },
   "useCases": {
-    "title": "Built for teams that publish",
-    "subtitle": "Whether you're a solo creator or a 50-person agency.",
+    "title": "Byggt för team som publicerar",
+    "subtitle": "Oavsett om du är en soloskapare eller en byrå med 50 personer.",
     "items": [
       {
-        "title": "Solo creators & freelancers",
-        "description": "Stop spending hours adapting content. Write once, publish everywhere. Focus on strategy, not copy-pasting."
+        "title": "Soloskapare och frilansare",
+        "description": "Sluta spendera timmar på att anpassa innehåll. Skriv en gång, publicera överallt. Fokusera på strategi, inte på kopiering."
       },
       {
-        "title": "Marketing teams",
-        "description": "One workspace per brand. Approval workflows. Calendar view. Everyone knows what's publishing and when."
+        "title": "Marknadsföringsteam",
+        "description": "En workspace per varumärke. Godkännandearbetsflöden. Kalendervy. Alla vet vad som publiceras och när."
       },
       {
-        "title": "Agencies",
-        "description": "Manage multiple brands from one account. Assign roles, control access, track performance across all clients. Unlimited posts on Agency plan."
+        "title": "Byråer",
+        "description": "Hantera flera varumärken från ett konto. Tilldela roller, styr åtkomst, följ prestanda över alla kunder. Obegränsade inlägg på Byrå-planen."
       }
     ]
   },
   "pricing": {
-    "title": "Simple, transparent pricing",
-    "subtitle": "Free during Beta. Early users lock their rate forever when we launch.",
-    "mostPopular": "Most popular",
-    "monthly": "Monthly",
-    "annual": "Annual",
+    "title": "Enkel, transparent prissättning",
+    "subtitle": "Gratis under Beta. Tidiga användare låser sitt pris för alltid vid lansering.",
+    "mostPopular": "Mest populär",
+    "monthly": "Månadsvis",
+    "annual": "Årsvis",
     "save2Months": "-17%",
-    "perMonth": "/ month",
-    "perYear": "/ year",
-    "billedAnnually": "Billed annually",
-    "customPriceLabel": "Custom",
+    "perMonth": "/ månad",
+    "perYear": "/ år",
+    "billedAnnually": "Faktureras årsvis",
+    "customPriceLabel": "Anpassat",
     "plans": [
       {
-        "name": "Free",
+        "name": "Gratis",
         "monthlyPrice": "€0",
         "annualPrice": "€0",
-        "period": "during Beta",
-        "description": "Try everything with generous limits.",
-        "features": ["5 posts / month", "3 networks", "Basic tone controls", "Hashtag suggestions"],
-        "cta": "Start for free"
+        "period": "under Beta",
+        "description": "Testa allt med generösa gränser.",
+        "features": [
+          "5 inlägg / månad",
+          "3 nätverk",
+          "Grundläggande tonkontroll",
+          "Hashtagförslag"
+        ],
+        "cta": "Börja gratis"
       },
       {
-        "name": "Creator",
+        "name": "Skapare",
         "monthlyPrice": "€30",
         "annualPrice": "€300",
         "annualMonthly": "€25",
         "period": "",
-        "description": "For creators and brands that publish consistently.",
-        "features": ["200 posts / month", "All networks", "Advanced tone & personas", "Content calendar", "Priority support"],
-        "cta": "Start free trial"
+        "description": "För skapare och varumärken som publicerar konsekvent.",
+        "features": [
+          "200 inlägg / månad",
+          "Alla nätverk",
+          "Avancerad ton och personas",
+          "Innehållskalender",
+          "Prioriterad support"
+        ],
+        "cta": "Starta gratis provperiod"
       },
       {
-        "name": "Agency",
+        "name": "Byrå",
         "monthlyPrice": "",
         "annualPrice": "",
         "annualMonthly": "",
         "period": "",
-        "description": "For teams managing multiple brands.",
-        "features": ["Unlimited posts", "All networks", "Multiple brands", "Team collaboration", "Analytics", "Account manager"],
-        "cta": "Talk to us",
+        "description": "För team som hanterar flera varumärken.",
+        "features": [
+          "Obegränsade inlägg",
+          "Alla nätverk",
+          "Flera varumärken",
+          "Teamsamarbete",
+          "Analys",
+          "Kontoadministratör"
+        ],
+        "cta": "Kontakta oss",
         "customPrice": true
       }
     ]
   },
   "faq": {
-    "title": "Questions? We've got answers.",
+    "title": "Frågor? Vi har svaren.",
     "items": [
       {
-        "q": "What AI models does Loritalk use?",
-        "a": "Loritalk connects to multiple leading AI providers including Claude (Anthropic), GPT (OpenAI), and Gemini (Google). You can configure which models participate in your generation pipeline."
+        "q": "Vilka AI-modeller använder Loritalk?",
+        "a": "Loritalk ansluter till flera ledande AI-leverantörer, inklusive Claude (Anthropic), GPT (OpenAI) och Gemini (Google). Du kan konfigurera vilka modeller som deltar i din genereringspipeline."
       },
       {
-        "q": "How is this different from ChatGPT?",
-        "a": "ChatGPT gives you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other's work — producing consistently higher quality. Plus, every post is automatically optimized for each specific platform."
+        "q": "Hur är detta annorlunda än ChatGPT?",
+        "a": "ChatGPT ger dig en utdata från en modell. Loritalk kör flera modeller parallellt och låter dem sedan förfina varandras arbete — vilket konsekvent ger högre kvalitet. Dessutom optimeras varje inlägg automatiskt för varje specifik plattform."
       },
       {
-        "q": "Which social networks are supported?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), and TikTok."
+        "q": "Vilka sociala nätverk stöds?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) och TikTok."
       },
       {
-        "q": "Is my content private?",
-        "a": "Yes. Your content is never used to train AI models. All data is stored on our servers in Europe and processed under GDPR compliance."
+        "q": "Är mitt innehåll privat?",
+        "a": "Ja. Ditt innehåll används aldrig för att träna AI-modeller. All data lagras på våra servrar i Europa och behandlas i enlighet med GDPR."
       },
       {
-        "q": "Can I use it with my team?",
-        "a": "Absolutely. Create workspaces for each brand, invite team members with admin or publisher roles, and set up approval workflows so nothing goes live without review."
+        "q": "Kan jag använda det med mitt team?",
+        "a": "Absolut. Skapa workspaces för varje varumärke, bjud in teammedlemmar med admin- eller utgivarroller och sätt upp godkännandearbetsflöden så inget publiceras utan granskning."
       },
       {
-        "q": "What happens after Beta?",
-        "a": "Paid plans kick in, but every Beta user keeps their current rate locked forever. No surprises."
+        "q": "Vad händer efter Beta?",
+        "a": "Betalplaner träder i kraft, men varje Beta-användare behåller sitt nuvarande pris låst för alltid. Inga överraskningar."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Stop writing. Start publishing.",
-    "subtitle": "Join the Beta — free access, no credit card, and your rate is locked forever when we launch.",
-    "ctaPrimary": "Start creating for free",
-    "ctaSecondary": "See how it works"
+    "headline": "Sluta skriva. Börja publicera.",
+    "subtitle": "Gå med i Beta — gratis åtkomst, inget kreditkort, och ditt pris är låst för alltid vid lansering.",
+    "ctaPrimary": "Börja skapa gratis",
+    "ctaSecondary": "Se hur det fungerar"
   },
   "footer": {
-    "description": "AI content for every social network.",
+    "description": "AI-innehåll för varje socialt nätverk.",
     "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
-    "product": "Product",
-    "resources": "Resources",
-    "legal": "Legal",
-    "features": "Features",
-    "changelog": "Changelog",
-    "supportedNetworks": "Supported networks",
-    "helpCenter": "Help center",
-    "contactUs": "Contact us",
-    "betaFeedback": "Beta feedback",
-    "apiDocs": "API docs",
-    "privacyPolicy": "Privacy policy",
-    "termsOfService": "Terms of service",
-    "cookiePolicy": "Cookie policy",
+    "product": "Produkt",
+    "resources": "Resurser",
+    "legal": "Juridiskt",
+    "features": "Funktioner",
+    "changelog": "Ändringslogg",
+    "supportedNetworks": "Stödda nätverk",
+    "helpCenter": "Hjälpcenter",
+    "contactUs": "Kontakta oss",
+    "betaFeedback": "Beta-feedback",
+    "apiDocs": "API-dokumentation",
+    "privacyPolicy": "Integritetspolicy",
+    "termsOfService": "Användarvillkor",
+    "cookiePolicy": "Cookiepolicy",
     "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
   }
 }

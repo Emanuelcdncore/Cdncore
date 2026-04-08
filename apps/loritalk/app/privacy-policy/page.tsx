@@ -4,8 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Loritalk",
-  description: "Privacy Policy for Loritalk by CDN Core Technologies.",
+  title: "Privacy Policy",
+  description: "Privacy Policy for Loritalk by CDN Core Technologies. GDPR compliant. Data stored in Europe. Your content is never used to train AI models.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

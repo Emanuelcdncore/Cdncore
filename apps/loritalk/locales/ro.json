@@ -98,7 +98,7 @@
     "steps": [
       {
         "title": "Scrie briefing-ul tău",
-        "description": "Descrie ce vrei să comunici — atât de simplu ca „lansarea unui produs nou” sau atât de detaliat ca un briefing complet. Alege canalele, limba și tonul."
+        "description": "Descrie ce vrei să comunici — atât de simplu ca \"lansarea unui produs nou\" sau atât de detaliat ca un briefing complet. Alege canalele, limba și tonul."
       },
       {
         "title": "Modelele AI concurează pentru tine",
@@ -156,16 +156,23 @@
     "title": "Prețuri simple și transparente",
     "subtitle": "Gratuit în timpul Beta. Utilizatorii timpurii își blochează tariful pentru totdeauna la lansare.",
     "mostPopular": "Cel mai popular",
+    "monthly": "Lunar",
+    "annual": "Anual",
+    "save2Months": "-17%",
+    "perMonth": "/ lună",
+    "perYear": "/ an",
+    "billedAnnually": "Facturat anual",
+    "customPriceLabel": "Personalizat",
     "plans": [
       {
         "name": "Gratuit",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "în timpul Beta",
         "description": "Încearcă totul cu limite generoase.",
         "features": [
-          "20 postări / lună",
+          "5 postări / lună",
           "3 rețele",
-          "3 limbi",
           "Controale de bază ale tonului",
           "Sugestii de hashtag-uri"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Creator",
-        "price": "€19",
-        "period": "pe lună",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Pentru creatori și branduri care publică constant.",
         "features": [
           "200 postări / lună",
           "Toate rețelele",
-          "Toate limbile",
           "Ton avansat și personaje",
           "Calendar de conținut",
           "Suport prioritar"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Agenție",
-        "price": "€79",
-        "period": "pe lună",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Pentru echipe care gestionează mai multe branduri.",
         "features": [
           "Postări nelimitate",
           "Toate rețelele",
-          "Toate limbile",
           "Mai multe branduri",
           "Colaborare în echipă",
           "Analiză",
           "Manager de cont"
         ],
-        "cta": "Vorbește cu noi"
+        "cta": "Vorbește cu noi",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Ce modele AI folosește Loritalk?",
-        "a": "Loritalk se conectează la mai mulți furnizori de AI de top, inclusiv Claude (Anthropic), GPT (OpenAI) și Gemini (Google). Poți configura ce modele participă în pipeline-ul tău de generare — sau să folosești propriile chei API."
+        "a": "Loritalk se conectează la mai mulți furnizori de AI de top, inclusiv Claude (Anthropic), GPT (OpenAI) și Gemini (Google). Poți configura ce modele participă în pipeline-ul tău de generare."
       },
       {
         "q": "Cum este diferit de ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Ce rețele sociale sunt suportate?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok și orice platformă personalizată prin webhook (bloguri corporative, CMS, instrumente interne)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) și TikTok."
       },
       {
         "q": "Conținutul meu este privat?",
@@ -230,10 +240,6 @@
       {
         "q": "Ce se întâmplă după Beta?",
         "a": "Planurile plătite intră în vigoare, dar fiecare utilizator Beta își păstrează tariful curent blocat pentru totdeauna. Fără surprize."
-      },
-      {
-        "q": "Pot folosi propriile mele chei AI?",
-        "a": "Da. Poți conecta propriile tale chei API OpenAI, Anthropic sau Google. Sau folosește serviciul nostru AI integrat — nu sunt necesare chei externe."
       }
     ]
   },

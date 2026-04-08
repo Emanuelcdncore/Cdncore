@@ -1,177 +1,177 @@
 {
   "navbar": {
-    "features": "Features",
-    "howItWorks": "How it works",
-    "pricing": "Pricing",
+    "features": "Funkce",
+    "howItWorks": "Jak to funguje",
+    "pricing": "Ceny",
     "beta": "Beta",
-    "startForFree": "Start for free"
+    "startForFree": "Začněte zdarma"
   },
   "hero": {
-    "badge": "Now in Beta — free early access",
-    "headlineOne": "One idea.",
-    "headlineTwo": "Every platform.",
-    "description": "Type a theme or idea. Loritalk's AI writes optimized posts for Instagram, LinkedIn, X, TikTok, and more — in seconds. Multiple AI models compete to give you the best result.",
-    "ctaPrimary": "Start creating for free",
-    "ctaSecondary": "See how it works",
-    "note": "No credit card required · Free during Beta"
+    "badge": "Nyní v Beta — bezplatný předběžný přístup",
+    "headlineOne": "Jeden nápad.",
+    "headlineTwo": "Každá platforma.",
+    "description": "Napište téma nebo nápad. AI od Loritalk vytvoří optimalizované příspěvky pro Instagram, LinkedIn, X, TikTok a další — během sekund. Více AI modelů soutěží, aby vám daly nejlepší výsledek.",
+    "ctaPrimary": "Začněte tvořit zdarma",
+    "ctaSecondary": "Podívejte se, jak to funguje",
+    "note": "Kreditní karta není vyžadována · Zdarma během Beta"
   },
   "stats": {
     "networksValue": "6+",
-    "networksLabel": "Social networks supported",
+    "networksLabel": "Podporovaných sociálních sítí",
     "languagesValue": "3",
-    "languagesLabel": "Languages at launch",
+    "languagesLabel": "Jazyky při spuštění",
     "generationValue": "<5s",
-    "generationLabel": "Average generation time",
-    "freeValue": "Free",
-    "freeLabel": "During Beta — no limits"
+    "generationLabel": "Průměrná doba generování",
+    "freeValue": "Zdarma",
+    "freeLabel": "Během Beta — bez omezení"
   },
   "problem": {
-    "title": "Your content workflow is broken",
-    "subtitle": "Sound familiar?",
+    "title": "Váš pracovní postup pro obsah je rozbitý",
+    "subtitle": "Zní to povědomě?",
     "items": [
       {
-        "title": "Hours wasted adapting",
-        "description": "You write a post for Instagram, then rewrite it for LinkedIn, then again for X. Every platform needs different tone, length, and hashtags."
+        "title": "Hodiny ztracené přizpůsobováním",
+        "description": "Napíšete příspěvek pro Instagram, pak ho přepíšete pro LinkedIn, pak znovu pro X. Každá platforma vyžaduje jiný tón, délku a hashtagy."
       },
       {
-        "title": "AI that sounds generic",
-        "description": "ChatGPT gives you one version that sounds like everyone else. No brand voice, no platform awareness, no real optimization."
+        "title": "AI, která zní genericky",
+        "description": "ChatGPT vám dá jednu verzi, která zní jako od všech ostatních. Žádný hlas značky, žádné povědomí o platformě, žádná skutečná optimalizace."
       },
       {
-        "title": "Team bottlenecks",
-        "description": "Content waits for approval, gets lost in Slack threads, and nobody knows what's scheduled for next week."
+        "title": "Úzká hrdla v týmu",
+        "description": "Obsah čeká na schválení, ztrácí se ve vláknech na Slack a nikdo neví, co je naplánováno na příští týden."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk fixes all of that",
-    "subtitle": "One briefing. Every platform. Multiple AIs competing for your best post.",
-    "ctaPrimary": "Start creating for free",
+    "title": "Loritalk tohle všechno řeší",
+    "subtitle": "Jeden brief. Každá platforma. Více AI modelů soutěží o váš nejlepší příspěvek.",
+    "ctaPrimary": "Začněte tvořit zdarma",
     "rows": [
       {
-        "before": "1 post = 45 min adapting to each platform",
-        "after": "1 briefing = all platforms in <5 seconds"
+        "before": "1 příspěvek = 45 min přizpůsobování pro každou platformu",
+        "after": "1 brief = všechny platformy za <5 sekund"
       },
       {
-        "before": "1 AI model = generic, one-size-fits-all text",
-        "after": "Multiple AI models deliberate and refine each other"
+        "before": "1 AI model = generický, univerzální text",
+        "after": "Více AI modelů diskutuje a vylepšuje práci ostatních"
       },
       {
-        "before": "Content scattered across tools and threads",
-        "after": "One dashboard: create, approve, schedule, publish, track"
+        "before": "Obsah rozptýlený v různých nástrojích a vláknech",
+        "after": "Jeden dashboard: tvořte, schvalujte, plánujte, publikujte, sledujte"
       }
     ]
   },
   "features": {
-    "title": "Everything your content team needs",
-    "subtitle": "From idea to published post — Loritalk handles the entire workflow.",
+    "title": "Vše, co váš obsahový tým potřebuje",
+    "subtitle": "Od nápadu po publikovaný příspěvek — Loritalk zvládne celý pracovní postup.",
     "items": [
       {
-        "title": "Multi-Model AI Deliberation",
-        "description": "Not one AI — multiple models generate independently, then refine each other's work. You get the best of Claude, GPT, and Gemini combined."
+        "title": "Multi-modelová AI diskuse",
+        "description": "Ne jeden AI — více modelů generuje nezávisle a pak vylepšuje práci ostatních. Získáte to nejlepší z Claude, GPT a Gemini dohromady."
       },
       {
-        "title": "Platform-optimized content",
-        "description": "Each post is tailored for its platform — right tone, length, hashtags, emojis, and format. Instagram captions, LinkedIn articles, X threads, TikTok scripts."
+        "title": "Obsah optimalizovaný pro platformu",
+        "description": "Každý příspěvek je přizpůsobený své platformě — správný tón, délka, hashtagy, emotikony a formát. Popisky pro Instagram, články pro LinkedIn, vlákna pro X, scénáře pro TikTok."
       },
       {
-        "title": "Multilingual generation",
-        "description": "Generate in Portuguese, English, Spanish and more. Native-level fluency with cultural nuance — not just translation."
+        "title": "Vícejazyčné generování",
+        "description": "Generujte v portugalštině, angličtině, španělštině a dalších jazycích. Plynulost na úrovni rodilého mluvčího s kulturními nuancemi — ne pouhý překlad."
       },
       {
-        "title": "Schedule & publish",
-        "description": "Calendar view, scheduled publishing, and direct posting to all connected channels. Different times per platform."
+        "title": "Plánování a publikování",
+        "description": "Zobrazení kalendáře, plánované publikování a přímé zveřejňování na všech propojených kanálech. Různé časy pro každou platformu."
       },
       {
-        "title": "Brand voice & personas",
-        "description": "Create AI personas that write like your brand. Control tone from professional to playful. Every post sounds like you, not a robot."
+        "title": "Hlas značky a persony",
+        "description": "Vytvořte AI persony, které píší jako vaše značka. Ovládejte tón od profesionálního po hravý. Každý příspěvek zní jako vy, ne jako robot."
       },
       {
-        "title": "Analytics dashboard",
-        "description": "Track impressions, engagement, clicks, and growth across all channels. Know what content works and double down."
+        "title": "Analytický dashboard",
+        "description": "Sledujte zobrazení, zapojení, kliknutí a růst napříč všemi kanály. Zjistěte, jaký obsah funguje, a zdvojnásobte úsilí."
       }
     ]
   },
   "howItWorks": {
-    "title": "From idea to post in 3 steps",
-    "subtitle": "No more blank screens. No more copy-pasting between platforms.",
+    "title": "Od nápadu k příspěvku ve 3 krocích",
+    "subtitle": "Žádné prázdné obrazovky. Žádné kopírování mezi platformami.",
     "steps": [
       {
-        "title": "Write your briefing",
-        "description": "Describe what you want to communicate — as simple as \"new product launch\" or as detailed as a full brief. Pick your channels, language, and tone."
+        "title": "Napište svůj brief",
+        "description": "Popište, co chcete sdělit — tak jednoduše jako 'uvedení nového produktu' nebo tak podrobně jako kompletní brief. Vyberte si kanály, jazyk a tón."
       },
       {
-        "title": "AI models compete for you",
-        "description": "Multiple AI models generate content independently, then review and refine each other's output. You receive N polished versions per platform."
+        "title": "AI modely soutěží za vás",
+        "description": "Více AI modelů generuje obsah nezávisle, pak si navzájem přezkoumají a vylepší výstupy. Obdržíte N vybroušených verzí pro každou platformu."
       },
       {
-        "title": "Pick, edit & publish",
-        "description": "Choose your favorite version for each channel. Tweak anything with one click. Publish now or schedule for later."
+        "title": "Vyberte, upravte a publikujte",
+        "description": "Zvolte svou oblíbenou verzi pro každý kanál. Upravte cokoli jedním kliknutím. Publikujte hned nebo naplánujte na později."
       }
     ]
   },
   "differentiator": {
-    "title": "Why multiple AIs beat a single one",
-    "subtitle": "Other tools use one model. Loritalk uses several — and makes them improve each other.",
-    "briefLabel": "Your Brief",
-    "channels": "Channels",
-    "language": "Language:",
-    "languages": "English, Portuguese",
-    "submitted": "Submitted 2s ago",
-    "round1": "ROUND 1 — INDEPENDENT GENERATION",
-    "generated": "Generated",
-    "round2": "Round 2 — Cross-Refinement",
-    "round2Desc": "Each model reads all outputs and improves its own version",
-    "qualityNote": "Quality improved by ~40% vs Round 1",
-    "pickEdit": "Pick & Edit",
-    "addMedia": "Add Media",
-    "uploading": "Uploading image...",
-    "imageAttached": "Image uploaded successfully",
-    "generateAI": "Generate with AI",
-    "readyPublish": "Ready to Publish",
-    "publishAll": "Publish all",
-    "scheduled": "Scheduled",
-    "draft": "Draft",
-    "explanation": "Each AI model has different strengths. Claude excels at nuance, GPT at versatility, Gemini at factual precision. By making them collaborate and challenge each other, every final text is better than any single model could produce alone."
+    "title": "Proč více AI modelů porazí jeden jediný",
+    "subtitle": "Jiné nástroje používají jeden model. Loritalk používá několik — a nechá je vzájemně se zlepšovat.",
+    "briefLabel": "Váš brief",
+    "channels": "Kanály",
+    "language": "Jazyk:",
+    "languages": "Angličtina, Portugalština",
+    "submitted": "Odesláno před 2 s",
+    "round1": "KOLO 1 — NEZÁVISLÉ GENEROVÁNÍ",
+    "generated": "Vygenerováno",
+    "round2": "Kolo 2 — Křížové vylepšení",
+    "round2Desc": "Každý model přečte všechny výstupy a vylepší svou vlastní verzi",
+    "qualityNote": "Kvalita se zlepšila o ~40 % oproti Kolu 1",
+    "pickEdit": "Vybrat a upravit",
+    "addMedia": "Přidat média",
+    "uploading": "Nahrávání obrázku...",
+    "imageAttached": "Obrázek úspěšně nahrán",
+    "generateAI": "Generovat pomocí AI",
+    "readyPublish": "Připraveno k publikaci",
+    "publishAll": "Publikovat vše",
+    "scheduled": "Naplánováno",
+    "draft": "Koncept",
+    "explanation": "Každý AI model má jiné silné stránky. Claude vyniká v nuancích, GPT ve všestrannosti, Gemini ve faktické přesnosti. Tím, že je necháme spolupracovat a vzájemně se vyzývat, je každý finální text lepší, než by dokázal kterýkoli model sám."
   },
   "useCases": {
-    "title": "Built for teams that publish",
-    "subtitle": "Whether you're a solo creator or a 50-person agency.",
+    "title": "Vytvořeno pro týmy, které publikují",
+    "subtitle": "Ať už jste samostatný tvůrce nebo agentura s 50 lidmi.",
     "items": [
       {
-        "title": "Solo creators & freelancers",
-        "description": "Stop spending hours adapting content. Write once, publish everywhere. Focus on strategy, not copy-pasting."
+        "title": "Samostatní tvůrci a freelanceři",
+        "description": "Přestaňte trávit hodiny přizpůsobováním obsahu. Napište jednou, publikujte všude. Soustřeďte se na strategii, ne na kopírování."
       },
       {
-        "title": "Marketing teams",
-        "description": "One workspace per brand. Approval workflows. Calendar view. Everyone knows what's publishing and when."
+        "title": "Marketingové týmy",
+        "description": "Jeden pracovní prostor pro každou značku. Schvalovací procesy. Zobrazení kalendáře. Každý ví, co se publikuje a kdy."
       },
       {
-        "title": "Agencies",
-        "description": "Manage multiple brands from one account. Assign roles, control access, track performance across all clients. Unlimited posts on Agency plan."
+        "title": "Agentury",
+        "description": "Spravujte více značek z jednoho účtu. Přiřaďte role, kontrolujte přístupy, sledujte výkonnost napříč všemi klienty. Neomezený počet příspěvků v plánu Agency."
       }
     ]
   },
   "pricing": {
-    "title": "Simple, transparent pricing",
-    "subtitle": "Free during Beta. Early users lock their rate forever when we launch.",
-    "mostPopular": "Most popular",
-    "monthly": "Monthly",
-    "annual": "Annual",
+    "title": "Jednoduché, transparentní ceny",
+    "subtitle": "Zdarma během Beta. Raní uživatelé si navždy zachovají svou sazbu po spuštění.",
+    "mostPopular": "Nejoblíbenější",
+    "monthly": "Měsíčně",
+    "annual": "Ročně",
     "save2Months": "-17%",
-    "perMonth": "/ month",
-    "perYear": "/ year",
-    "billedAnnually": "Billed annually",
-    "customPriceLabel": "Custom",
+    "perMonth": "/ měsíc",
+    "perYear": "/ rok",
+    "billedAnnually": "Účtováno ročně",
+    "customPriceLabel": "Na míru",
     "plans": [
       {
         "name": "Free",
         "monthlyPrice": "€0",
         "annualPrice": "€0",
-        "period": "during Beta",
-        "description": "Try everything with generous limits.",
-        "features": ["5 posts / month", "3 networks", "Basic tone controls", "Hashtag suggestions"],
-        "cta": "Start for free"
+        "period": "během Beta",
+        "description": "Vyzkoušejte vše se štědrými limity.",
+        "features": ["5 příspěvků / měsíc", "3 sítě", "Základní ovládání tónu", "Návrhy hashtagů"],
+        "cta": "Začněte zdarma"
       },
       {
         "name": "Creator",
@@ -179,9 +179,9 @@
         "annualPrice": "€300",
         "annualMonthly": "€25",
         "period": "",
-        "description": "For creators and brands that publish consistently.",
-        "features": ["200 posts / month", "All networks", "Advanced tone & personas", "Content calendar", "Priority support"],
-        "cta": "Start free trial"
+        "description": "Pro tvůrce a značky, které publikují pravidelně.",
+        "features": ["200 příspěvků / měsíc", "Všechny sítě", "Pokročilé tóny a persony", "Obsahový kalendář", "Prioritní podpora"],
+        "cta": "Začněte bezplatnou zkušební verzi"
       },
       {
         "name": "Agency",
@@ -189,64 +189,64 @@
         "annualPrice": "",
         "annualMonthly": "",
         "period": "",
-        "description": "For teams managing multiple brands.",
-        "features": ["Unlimited posts", "All networks", "Multiple brands", "Team collaboration", "Analytics", "Account manager"],
-        "cta": "Talk to us",
+        "description": "Pro týmy spravující více značek.",
+        "features": ["Neomezené příspěvky", "Všechny sítě", "Více značek", "Týmová spolupráce", "Analytika", "Správce účtu"],
+        "cta": "Kontaktujte nás",
         "customPrice": true
       }
     ]
   },
   "faq": {
-    "title": "Questions? We've got answers.",
+    "title": "Otázky? Máme odpovědi.",
     "items": [
       {
-        "q": "What AI models does Loritalk use?",
-        "a": "Loritalk connects to multiple leading AI providers including Claude (Anthropic), GPT (OpenAI), and Gemini (Google). You can configure which models participate in your generation pipeline."
+        "q": "Jaké AI modely Loritalk používá?",
+        "a": "Loritalk se připojuje k více předním poskytovatelům AI, včetně Claude (Anthropic), GPT (OpenAI) a Gemini (Google). Můžete nastavit, které modely se účastní vašeho generovacího procesu."
       },
       {
-        "q": "How is this different from ChatGPT?",
-        "a": "ChatGPT gives you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other's work — producing consistently higher quality. Plus, every post is automatically optimized for each specific platform."
+        "q": "Jak se to liší od ChatGPT?",
+        "a": "ChatGPT vám dá jeden výstup z jednoho modelu. Loritalk spouští více modelů paralelně a pak je nechá vzájemně vylepšovat práci ostatních — a tím produkuje konzistentně vyšší kvalitu. Navíc je každý příspěvek automaticky optimalizován pro konkrétní platformu."
       },
       {
-        "q": "Which social networks are supported?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), and TikTok."
+        "q": "Které sociální sítě jsou podporovány?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) a TikTok."
       },
       {
-        "q": "Is my content private?",
-        "a": "Yes. Your content is never used to train AI models. All data is stored on our servers in Europe and processed under GDPR compliance."
+        "q": "Je můj obsah soukromý?",
+        "a": "Ano. Váš obsah se nikdy nepoužívá k trénování AI modelů. Všechna data jsou uložena na našich serverech v Evropě a zpracovávána v souladu s GDPR."
       },
       {
-        "q": "Can I use it with my team?",
-        "a": "Absolutely. Create workspaces for each brand, invite team members with admin or publisher roles, and set up approval workflows so nothing goes live without review."
+        "q": "Mohu to používat se svým týmem?",
+        "a": "Samozřejmě. Vytvořte pracovní prostory pro každou značku, pozvěte členy týmu s rolí administrátora nebo publikátora a nastavte schvalovací procesy, aby nic nešlo živě bez kontroly."
       },
       {
-        "q": "What happens after Beta?",
-        "a": "Paid plans kick in, but every Beta user keeps their current rate locked forever. No surprises."
+        "q": "Co se stane po Beta?",
+        "a": "Začnou platit placené plány, ale každý uživatel z Beta si navždy zachová svou aktuální sazbu. Žádná překvapení."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Stop writing. Start publishing.",
-    "subtitle": "Join the Beta — free access, no credit card, and your rate is locked forever when we launch.",
-    "ctaPrimary": "Start creating for free",
-    "ctaSecondary": "See how it works"
+    "headline": "Přestaňte psát. Začněte publikovat.",
+    "subtitle": "Připojte se k Beta — bezplatný přístup, bez kreditní karty a vaše sazba je navždy uzamčena po spuštění.",
+    "ctaPrimary": "Začněte tvořit zdarma",
+    "ctaSecondary": "Podívejte se, jak to funguje"
   },
   "footer": {
-    "description": "AI content for every social network.",
+    "description": "AI obsah pro každou sociální síť.",
     "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
-    "product": "Product",
-    "resources": "Resources",
-    "legal": "Legal",
-    "features": "Features",
-    "changelog": "Changelog",
-    "supportedNetworks": "Supported networks",
-    "helpCenter": "Help center",
-    "contactUs": "Contact us",
-    "betaFeedback": "Beta feedback",
-    "apiDocs": "API docs",
-    "privacyPolicy": "Privacy policy",
-    "termsOfService": "Terms of service",
-    "cookiePolicy": "Cookie policy",
+    "product": "Produkt",
+    "resources": "Zdroje",
+    "legal": "Právní informace",
+    "features": "Funkce",
+    "changelog": "Historie změn",
+    "supportedNetworks": "Podporované sítě",
+    "helpCenter": "Centrum nápovědy",
+    "contactUs": "Kontaktujte nás",
+    "betaFeedback": "Zpětná vazba k Beta",
+    "apiDocs": "API dokumentace",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "termsOfService": "Podmínky služby",
+    "cookiePolicy": "Zásady používání cookies",
     "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
   }
 }

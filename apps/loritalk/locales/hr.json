@@ -156,16 +156,23 @@
     "title": "Jednostavne, transparentne cijene",
     "subtitle": "Besplatno tijekom Beta. Rani korisnici zaključavaju svoju cijenu zauvijek kad pokrenemo.",
     "mostPopular": "Najpopularnije",
+    "monthly": "Mjesečno",
+    "annual": "Godišnje",
+    "save2Months": "-17%",
+    "perMonth": "/ mjesec",
+    "perYear": "/ godinu",
+    "billedAnnually": "Naplaćuje se godišnje",
+    "customPriceLabel": "Prilagođeno",
     "plans": [
       {
         "name": "Besplatno",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "tijekom Beta",
         "description": "Isprobajte sve s izdašnim ograničenjima.",
         "features": [
-          "20 objava / mjesec",
+          "5 objava / mjesec",
           "3 mreže",
-          "3 jezika",
           "Osnovna kontrola tona",
           "Prijedlozi hashtagova"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Kreator",
-        "price": "€19",
-        "period": "mjesečno",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Za kreatore i brendove koji objavljuju dosljedno.",
         "features": [
           "200 objava / mjesec",
           "Sve mreže",
-          "Svi jezici",
           "Napredni ton i persone",
           "Kalendar sadržaja",
           "Prioritetna podrška"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Agencija",
-        "price": "€79",
-        "period": "mjesečno",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Za timove koji upravljaju više brendova.",
         "features": [
           "Neograničene objave",
           "Sve mreže",
-          "Svi jezici",
           "Više brendova",
           "Timska suradnja",
           "Analitika",
           "Upravitelj računa"
         ],
-        "cta": "Razgovarajte s nama"
+        "cta": "Razgovarajte s nama",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Koje AI modele koristi Loritalk?",
-        "a": "Loritalk se povezuje s više vodećih pružatelja AI usluga uključujući Claude (Anthropic), GPT (OpenAI) i Gemini (Google). Možete konfigurirati koji modeli sudjeluju u vašem procesu generiranja — ili koristiti vlastite API ključeve."
+        "a": "Loritalk se povezuje s više vodećih pružatelja AI usluga uključujući Claude (Anthropic), GPT (OpenAI) i Gemini (Google). Možete konfigurirati koji modeli sudjeluju u vašem procesu generiranja."
       },
       {
         "q": "Kako se ovo razlikuje od ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Koje društvene mreže su podržane?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok i bilo koja prilagođena platforma putem webhooka (korporativni blogovi, CMS, interni alati)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) i TikTok."
       },
       {
         "q": "Je li moj sadržaj privatan?",
@@ -230,10 +240,6 @@
       {
         "q": "Što se događa nakon Beta?",
         "a": "Stupaju na snagu plaćeni planovi, ali svaki korisnik Beta zadržava svoju trenutnu cijenu zauvijek. Bez iznenađenja."
-      },
-      {
-        "q": "Mogu li koristiti vlastite AI ključeve?",
-        "a": "Da. Možete povezati vlastite OpenAI, Anthropic ili Google API ključeve. Ili koristite našu ugrađenu AI uslugu — nisu potrebni vanjski ključevi."
       }
     ]
   },

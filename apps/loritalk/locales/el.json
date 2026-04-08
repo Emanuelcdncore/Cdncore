@@ -1,177 +1,177 @@
 {
   "navbar": {
-    "features": "Features",
-    "howItWorks": "How it works",
-    "pricing": "Pricing",
+    "features": "Χαρακτηριστικά",
+    "howItWorks": "Πώς λειτουργεί",
+    "pricing": "Τιμές",
     "beta": "Beta",
-    "startForFree": "Start for free"
+    "startForFree": "Ξεκινήστε δωρεάν"
   },
   "hero": {
-    "badge": "Now in Beta — free early access",
-    "headlineOne": "One idea.",
-    "headlineTwo": "Every platform.",
-    "description": "Type a theme or idea. Loritalk's AI writes optimized posts for Instagram, LinkedIn, X, TikTok, and more — in seconds. Multiple AI models compete to give you the best result.",
-    "ctaPrimary": "Start creating for free",
-    "ctaSecondary": "See how it works",
-    "note": "No credit card required · Free during Beta"
+    "badge": "Τώρα σε Beta — δωρεάν πρόωρη πρόσβαση",
+    "headlineOne": "Μία ιδέα.",
+    "headlineTwo": "Κάθε πλατφόρμα.",
+    "description": "Πληκτρολογήστε ένα θέμα ή μια ιδέα. Η AI του Loritalk γράφει βελτιστοποιημένες δημοσιεύσεις για Instagram, LinkedIn, X, TikTok και άλλα — σε δευτερόλεπτα. Πολλαπλά μοντέλα AI ανταγωνίζονται για να σας δώσουν το καλύτερο αποτέλεσμα.",
+    "ctaPrimary": "Ξεκινήστε να δημιουργείτε δωρεάν",
+    "ctaSecondary": "Δείτε πώς λειτουργεί",
+    "note": "Δεν απαιτείται πιστωτική κάρτα · Δωρεάν κατά τη Beta"
   },
   "stats": {
     "networksValue": "6+",
-    "networksLabel": "Social networks supported",
+    "networksLabel": "Υποστηριζόμενα κοινωνικά δίκτυα",
     "languagesValue": "3",
-    "languagesLabel": "Languages at launch",
+    "languagesLabel": "Γλώσσες κατά την εκκίνηση",
     "generationValue": "<5s",
-    "generationLabel": "Average generation time",
-    "freeValue": "Free",
-    "freeLabel": "During Beta — no limits"
+    "generationLabel": "Μέσος χρόνος δημιουργίας",
+    "freeValue": "Δωρεάν",
+    "freeLabel": "Κατά τη Beta — χωρίς όρια"
   },
   "problem": {
-    "title": "Your content workflow is broken",
-    "subtitle": "Sound familiar?",
+    "title": "Η ροή εργασίας περιεχομένου σας είναι χαλασμένη",
+    "subtitle": "Σας ακούγεται γνωστό;",
     "items": [
       {
-        "title": "Hours wasted adapting",
-        "description": "You write a post for Instagram, then rewrite it for LinkedIn, then again for X. Every platform needs different tone, length, and hashtags."
+        "title": "Ώρες χαμένες σε προσαρμογές",
+        "description": "Γράφετε μια δημοσίευση για το Instagram, μετά την ξαναγράφετε για το LinkedIn, μετά πάλι για το X. Κάθε πλατφόρμα χρειάζεται διαφορετικό τόνο, μήκος και hashtags."
       },
       {
-        "title": "AI that sounds generic",
-        "description": "ChatGPT gives you one version that sounds like everyone else. No brand voice, no platform awareness, no real optimization."
+        "title": "AI που ακούγεται γενική",
+        "description": "Το ChatGPT σας δίνει μία εκδοχή που ακούγεται σαν όλων των άλλων. Χωρίς φωνή brand, χωρίς επίγνωση πλατφόρμας, χωρίς πραγματική βελτιστοποίηση."
       },
       {
-        "title": "Team bottlenecks",
-        "description": "Content waits for approval, gets lost in Slack threads, and nobody knows what's scheduled for next week."
+        "title": "Εμπόδια στην ομάδα",
+        "description": "Το περιεχόμενο περιμένει έγκριση, χάνεται σε νήματα στο Slack, και κανείς δεν ξέρει τι είναι προγραμματισμένο για την επόμενη εβδομάδα."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk fixes all of that",
-    "subtitle": "One briefing. Every platform. Multiple AIs competing for your best post.",
-    "ctaPrimary": "Start creating for free",
+    "title": "Το Loritalk λύνει όλα αυτά",
+    "subtitle": "Ένα briefing. Κάθε πλατφόρμα. Πολλαπλά AI μοντέλα ανταγωνίζονται για την καλύτερη δημοσίευσή σας.",
+    "ctaPrimary": "Ξεκινήστε να δημιουργείτε δωρεάν",
     "rows": [
       {
-        "before": "1 post = 45 min adapting to each platform",
-        "after": "1 briefing = all platforms in <5 seconds"
+        "before": "1 δημοσίευση = 45 λεπτά προσαρμογή σε κάθε πλατφόρμα",
+        "after": "1 briefing = όλες οι πλατφόρμες σε <5 δευτερόλεπτα"
       },
       {
-        "before": "1 AI model = generic, one-size-fits-all text",
-        "after": "Multiple AI models deliberate and refine each other"
+        "before": "1 μοντέλο AI = γενικό, ενιαίο κείμενο",
+        "after": "Πολλαπλά μοντέλα AI συζητούν και βελτιώνουν το ένα το άλλο"
       },
       {
-        "before": "Content scattered across tools and threads",
-        "after": "One dashboard: create, approve, schedule, publish, track"
+        "before": "Περιεχόμενο διασκορπισμένο σε εργαλεία και νήματα",
+        "after": "Ένα dashboard: δημιουργία, έγκριση, προγραμματισμός, δημοσίευση, παρακολούθηση"
       }
     ]
   },
   "features": {
-    "title": "Everything your content team needs",
-    "subtitle": "From idea to published post — Loritalk handles the entire workflow.",
+    "title": "Όλα όσα χρειάζεται η ομάδα περιεχομένου σας",
+    "subtitle": "Από την ιδέα στη δημοσιευμένη ανάρτηση — το Loritalk διαχειρίζεται ολόκληρη τη ροή εργασίας.",
     "items": [
       {
-        "title": "Multi-Model AI Deliberation",
-        "description": "Not one AI — multiple models generate independently, then refine each other's work. You get the best of Claude, GPT, and Gemini combined."
+        "title": "Πολυ-μοντέλα AI σε διαβούλευση",
+        "description": "Όχι ένα AI — πολλαπλά μοντέλα δημιουργούν ανεξάρτητα και μετά βελτιώνουν τη δουλειά των άλλων. Παίρνετε το καλύτερο από Claude, GPT και Gemini μαζί."
       },
       {
-        "title": "Platform-optimized content",
-        "description": "Each post is tailored for its platform — right tone, length, hashtags, emojis, and format. Instagram captions, LinkedIn articles, X threads, TikTok scripts."
+        "title": "Περιεχόμενο βελτιστοποιημένο για κάθε πλατφόρμα",
+        "description": "Κάθε δημοσίευση είναι προσαρμοσμένη στην πλατφόρμα της — σωστός τόνος, μήκος, hashtags, emojis και μορφή. Λεζάντες Instagram, άρθρα LinkedIn, νήματα X, σενάρια TikTok."
       },
       {
-        "title": "Multilingual generation",
-        "description": "Generate in Portuguese, English, Spanish and more. Native-level fluency with cultural nuance — not just translation."
+        "title": "Πολύγλωσση δημιουργία",
+        "description": "Δημιουργήστε στα πορτογαλικά, αγγλικά, ισπανικά και άλλα. Ευχέρεια σε επίπεδο μητρικού ομιλητή με πολιτιστικές αποχρώσεις — όχι απλά μετάφραση."
       },
       {
-        "title": "Schedule & publish",
-        "description": "Calendar view, scheduled publishing, and direct posting to all connected channels. Different times per platform."
+        "title": "Προγραμματισμός & δημοσίευση",
+        "description": "Προβολή ημερολογίου, προγραμματισμένη δημοσίευση και απευθείας ανάρτηση σε όλα τα συνδεδεμένα κανάλια. Διαφορετικές ώρες ανά πλατφόρμα."
       },
       {
-        "title": "Brand voice & personas",
-        "description": "Create AI personas that write like your brand. Control tone from professional to playful. Every post sounds like you, not a robot."
+        "title": "Φωνή brand & personas",
+        "description": "Δημιουργήστε AI personas που γράφουν σαν το brand σας. Ελέγξτε τον τόνο από επαγγελματικό μέχρι παιχνιδιάρικο. Κάθε δημοσίευση ακούγεται σαν εσείς, όχι σαν ρομπότ."
       },
       {
-        "title": "Analytics dashboard",
-        "description": "Track impressions, engagement, clicks, and growth across all channels. Know what content works and double down."
+        "title": "Dashboard αναλυτικών",
+        "description": "Παρακολουθήστε εντυπώσεις, αλληλεπίδραση, κλικ και ανάπτυξη σε όλα τα κανάλια. Μάθετε ποιο περιεχόμενο λειτουργεί και διπλασιάστε τις προσπάθειες."
       }
     ]
   },
   "howItWorks": {
-    "title": "From idea to post in 3 steps",
-    "subtitle": "No more blank screens. No more copy-pasting between platforms.",
+    "title": "Από ιδέα σε δημοσίευση σε 3 βήματα",
+    "subtitle": "Τέλος στις κενές οθόνες. Τέλος στην αντιγραφή-επικόλληση μεταξύ πλατφορμών.",
     "steps": [
       {
-        "title": "Write your briefing",
-        "description": "Describe what you want to communicate — as simple as \"new product launch\" or as detailed as a full brief. Pick your channels, language, and tone."
+        "title": "Γράψτε το briefing σας",
+        "description": "Περιγράψτε τι θέλετε να επικοινωνήσετε — τόσο απλά όσο «λανσάρισμα νέου προϊόντος» ή τόσο αναλυτικά όσο ένα πλήρες brief. Επιλέξτε κανάλια, γλώσσα και τόνο."
       },
       {
-        "title": "AI models compete for you",
-        "description": "Multiple AI models generate content independently, then review and refine each other's output. You receive N polished versions per platform."
+        "title": "Τα μοντέλα AI ανταγωνίζονται για εσάς",
+        "description": "Πολλαπλά μοντέλα AI δημιουργούν περιεχόμενο ανεξάρτητα, μετά αξιολογούν και βελτιώνουν τα αποτελέσματα των άλλων. Λαμβάνετε N επεξεργασμένες εκδοχές ανά πλατφόρμα."
       },
       {
-        "title": "Pick, edit & publish",
-        "description": "Choose your favorite version for each channel. Tweak anything with one click. Publish now or schedule for later."
+        "title": "Επιλέξτε, επεξεργαστείτε & δημοσιεύστε",
+        "description": "Διαλέξτε την αγαπημένη σας εκδοχή για κάθε κανάλι. Τροποποιήστε οτιδήποτε με ένα κλικ. Δημοσιεύστε τώρα ή προγραμματίστε για αργότερα."
       }
     ]
   },
   "differentiator": {
-    "title": "Why multiple AIs beat a single one",
-    "subtitle": "Other tools use one model. Loritalk uses several — and makes them improve each other.",
-    "briefLabel": "Your Brief",
-    "channels": "Channels",
-    "language": "Language:",
-    "languages": "English, Portuguese",
-    "submitted": "Submitted 2s ago",
-    "round1": "ROUND 1 — INDEPENDENT GENERATION",
-    "generated": "Generated",
-    "round2": "Round 2 — Cross-Refinement",
-    "round2Desc": "Each model reads all outputs and improves its own version",
-    "qualityNote": "Quality improved by ~40% vs Round 1",
-    "pickEdit": "Pick & Edit",
-    "addMedia": "Add Media",
-    "uploading": "Uploading image...",
-    "imageAttached": "Image uploaded successfully",
-    "generateAI": "Generate with AI",
-    "readyPublish": "Ready to Publish",
-    "publishAll": "Publish all",
-    "scheduled": "Scheduled",
-    "draft": "Draft",
-    "explanation": "Each AI model has different strengths. Claude excels at nuance, GPT at versatility, Gemini at factual precision. By making them collaborate and challenge each other, every final text is better than any single model could produce alone."
+    "title": "Γιατί πολλαπλά AI νικούν ένα μόνο",
+    "subtitle": "Άλλα εργαλεία χρησιμοποιούν ένα μοντέλο. Το Loritalk χρησιμοποιεί πολλά — και τα κάνει να βελτιώνουν το ένα το άλλο.",
+    "briefLabel": "Το briefing σας",
+    "channels": "Κανάλια",
+    "language": "Γλώσσα:",
+    "languages": "Αγγλικά, Πορτογαλικά",
+    "submitted": "Υποβλήθηκε πριν 2 δ",
+    "round1": "ΓΥΡΟΣ 1 — ΑΝΕΞΑΡΤΗΤΗ ΔΗΜΙΟΥΡΓΙΑ",
+    "generated": "Δημιουργήθηκε",
+    "round2": "Γύρος 2 — Διασταυρούμενη βελτίωση",
+    "round2Desc": "Κάθε μοντέλο διαβάζει όλα τα αποτελέσματα και βελτιώνει τη δική του εκδοχή",
+    "qualityNote": "Η ποιότητα βελτιώθηκε κατά ~40% σε σχέση με τον Γύρο 1",
+    "pickEdit": "Επιλέξτε & επεξεργαστείτε",
+    "addMedia": "Προσθήκη πολυμέσων",
+    "uploading": "Μεταφόρτωση εικόνας...",
+    "imageAttached": "Η εικόνα μεταφορτώθηκε επιτυχώς",
+    "generateAI": "Δημιουργία με AI",
+    "readyPublish": "Έτοιμο για δημοσίευση",
+    "publishAll": "Δημοσίευση όλων",
+    "scheduled": "Προγραμματισμένο",
+    "draft": "Πρόχειρο",
+    "explanation": "Κάθε μοντέλο AI έχει διαφορετικά δυνατά σημεία. Το Claude υπερέχει στις αποχρώσεις, το GPT στην ευελιξία, το Gemini στην πραγματική ακρίβεια. Κάνοντάς τα να συνεργαστούν και να προκαλούν το ένα το άλλο, κάθε τελικό κείμενο είναι καλύτερο από αυτό που θα μπορούσε να παράγει ένα μόνο μοντέλο."
   },
   "useCases": {
-    "title": "Built for teams that publish",
-    "subtitle": "Whether you're a solo creator or a 50-person agency.",
+    "title": "Φτιαγμένο για ομάδες που δημοσιεύουν",
+    "subtitle": "Είτε είστε δημιουργός μόνος σας είτε agency 50 ατόμων.",
     "items": [
       {
-        "title": "Solo creators & freelancers",
-        "description": "Stop spending hours adapting content. Write once, publish everywhere. Focus on strategy, not copy-pasting."
+        "title": "Ανεξάρτητοι δημιουργοί & freelancers",
+        "description": "Σταματήστε να σπαταλάτε ώρες προσαρμόζοντας περιεχόμενο. Γράψτε μία φορά, δημοσιεύστε παντού. Εστιάστε στη στρατηγική, όχι στην αντιγραφή."
       },
       {
-        "title": "Marketing teams",
-        "description": "One workspace per brand. Approval workflows. Calendar view. Everyone knows what's publishing and when."
+        "title": "Ομάδες marketing",
+        "description": "Ένας χώρος εργασίας ανά brand. Ροές εργασίας έγκρισης. Προβολή ημερολογίου. Όλοι γνωρίζουν τι δημοσιεύεται και πότε."
       },
       {
         "title": "Agencies",
-        "description": "Manage multiple brands from one account. Assign roles, control access, track performance across all clients. Unlimited posts on Agency plan."
+        "description": "Διαχειριστείτε πολλαπλά brands από έναν λογαριασμό. Αναθέστε ρόλους, ελέγξτε την πρόσβαση, παρακολουθήστε την απόδοση σε όλους τους πελάτες. Απεριόριστες δημοσιεύσεις στο πλάνο Agency."
       }
     ]
   },
   "pricing": {
-    "title": "Simple, transparent pricing",
-    "subtitle": "Free during Beta. Early users lock their rate forever when we launch.",
-    "mostPopular": "Most popular",
-    "monthly": "Monthly",
-    "annual": "Annual",
+    "title": "Απλή, διαφανής τιμολόγηση",
+    "subtitle": "Δωρεάν κατά τη Beta. Οι πρώτοι χρήστες κλειδώνουν την τιμή τους για πάντα κατά το λανσάρισμα.",
+    "mostPopular": "Πιο δημοφιλές",
+    "monthly": "Μηνιαία",
+    "annual": "Ετήσια",
     "save2Months": "-17%",
-    "perMonth": "/ month",
-    "perYear": "/ year",
-    "billedAnnually": "Billed annually",
-    "customPriceLabel": "Custom",
+    "perMonth": "/ μήνα",
+    "perYear": "/ έτος",
+    "billedAnnually": "Χρέωση ετησίως",
+    "customPriceLabel": "Προσαρμοσμένη",
     "plans": [
       {
         "name": "Free",
         "monthlyPrice": "€0",
         "annualPrice": "€0",
-        "period": "during Beta",
-        "description": "Try everything with generous limits.",
-        "features": ["5 posts / month", "3 networks", "Basic tone controls", "Hashtag suggestions"],
-        "cta": "Start for free"
+        "period": "κατά τη Beta",
+        "description": "Δοκιμάστε τα πάντα με γενναιόδωρα όρια.",
+        "features": ["5 δημοσιεύσεις / μήνα", "3 δίκτυα", "Βασικοί έλεγχοι τόνου", "Προτάσεις hashtag"],
+        "cta": "Ξεκινήστε δωρεάν"
       },
       {
         "name": "Creator",
@@ -179,9 +179,9 @@
         "annualPrice": "€300",
         "annualMonthly": "€25",
         "period": "",
-        "description": "For creators and brands that publish consistently.",
-        "features": ["200 posts / month", "All networks", "Advanced tone & personas", "Content calendar", "Priority support"],
-        "cta": "Start free trial"
+        "description": "Για δημιουργούς και brands που δημοσιεύουν τακτικά.",
+        "features": ["200 δημοσιεύσεις / μήνα", "Όλα τα δίκτυα", "Προηγμένοι τόνοι & personas", "Ημερολόγιο περιεχομένου", "Υποστήριξη προτεραιότητας"],
+        "cta": "Ξεκινήστε δωρεάν δοκιμή"
       },
       {
         "name": "Agency",
@@ -189,64 +189,64 @@
         "annualPrice": "",
         "annualMonthly": "",
         "period": "",
-        "description": "For teams managing multiple brands.",
-        "features": ["Unlimited posts", "All networks", "Multiple brands", "Team collaboration", "Analytics", "Account manager"],
-        "cta": "Talk to us",
+        "description": "Για ομάδες που διαχειρίζονται πολλαπλά brands.",
+        "features": ["Απεριόριστες δημοσιεύσεις", "Όλα τα δίκτυα", "Πολλαπλά brands", "Ομαδική συνεργασία", "Αναλυτικά", "Υπεύθυνος λογαριασμού"],
+        "cta": "Επικοινωνήστε μαζί μας",
         "customPrice": true
       }
     ]
   },
   "faq": {
-    "title": "Questions? We've got answers.",
+    "title": "Ερωτήσεις; Έχουμε απαντήσεις.",
     "items": [
       {
-        "q": "What AI models does Loritalk use?",
-        "a": "Loritalk connects to multiple leading AI providers including Claude (Anthropic), GPT (OpenAI), and Gemini (Google). You can configure which models participate in your generation pipeline."
+        "q": "Ποια μοντέλα AI χρησιμοποιεί το Loritalk;",
+        "a": "Το Loritalk συνδέεται με πολλαπλούς κορυφαίους παρόχους AI, συμπεριλαμβανομένων των Claude (Anthropic), GPT (OpenAI) και Gemini (Google). Μπορείτε να ρυθμίσετε ποια μοντέλα συμμετέχουν στη διαδικασία δημιουργίας σας."
       },
       {
-        "q": "How is this different from ChatGPT?",
-        "a": "ChatGPT gives you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other's work — producing consistently higher quality. Plus, every post is automatically optimized for each specific platform."
+        "q": "Πώς διαφέρει από το ChatGPT;",
+        "a": "Το ChatGPT σας δίνει ένα αποτέλεσμα από ένα μοντέλο. Το Loritalk εκτελεί πολλαπλά μοντέλα παράλληλα και μετά τα κάνει να βελτιώνουν τη δουλειά των άλλων — παράγοντας σταθερά υψηλότερη ποιότητα. Επιπλέον, κάθε δημοσίευση βελτιστοποιείται αυτόματα για τη συγκεκριμένη πλατφόρμα."
       },
       {
-        "q": "Which social networks are supported?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), and TikTok."
+        "q": "Ποια κοινωνικά δίκτυα υποστηρίζονται;",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) και TikTok."
       },
       {
-        "q": "Is my content private?",
-        "a": "Yes. Your content is never used to train AI models. All data is stored on our servers in Europe and processed under GDPR compliance."
+        "q": "Είναι ιδιωτικό το περιεχόμενό μου;",
+        "a": "Ναι. Το περιεχόμενό σας δεν χρησιμοποιείται ποτέ για εκπαίδευση μοντέλων AI. Όλα τα δεδομένα αποθηκεύονται στους servers μας στην Ευρώπη και υποβάλλονται σε επεξεργασία σύμφωνα με τον GDPR."
       },
       {
-        "q": "Can I use it with my team?",
-        "a": "Absolutely. Create workspaces for each brand, invite team members with admin or publisher roles, and set up approval workflows so nothing goes live without review."
+        "q": "Μπορώ να το χρησιμοποιήσω με την ομάδα μου;",
+        "a": "Βεβαίως. Δημιουργήστε χώρους εργασίας για κάθε brand, προσκαλέστε μέλη της ομάδας με ρόλους διαχειριστή ή δημοσιευτή και ρυθμίστε ροές εργασίας έγκρισης, ώστε τίποτα να μην δημοσιεύεται χωρίς έλεγχο."
       },
       {
-        "q": "What happens after Beta?",
-        "a": "Paid plans kick in, but every Beta user keeps their current rate locked forever. No surprises."
+        "q": "Τι γίνεται μετά τη Beta;",
+        "a": "Τα πληρωμένα πλάνα τίθενται σε ισχύ, αλλά κάθε χρήστης της Beta διατηρεί την τρέχουσα τιμή του για πάντα. Χωρίς εκπλήξεις."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Stop writing. Start publishing.",
-    "subtitle": "Join the Beta — free access, no credit card, and your rate is locked forever when we launch.",
-    "ctaPrimary": "Start creating for free",
-    "ctaSecondary": "See how it works"
+    "headline": "Σταματήστε να γράφετε. Αρχίστε να δημοσιεύετε.",
+    "subtitle": "Συμμετάσχετε στη Beta — δωρεάν πρόσβαση, χωρίς πιστωτική κάρτα, και η τιμή σας κλειδώνεται για πάντα κατά το λανσάρισμα.",
+    "ctaPrimary": "Ξεκινήστε να δημιουργείτε δωρεάν",
+    "ctaSecondary": "Δείτε πώς λειτουργεί"
   },
   "footer": {
-    "description": "AI content for every social network.",
+    "description": "AI περιεχόμενο για κάθε κοινωνικό δίκτυο.",
     "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
-    "product": "Product",
-    "resources": "Resources",
-    "legal": "Legal",
-    "features": "Features",
-    "changelog": "Changelog",
-    "supportedNetworks": "Supported networks",
-    "helpCenter": "Help center",
-    "contactUs": "Contact us",
-    "betaFeedback": "Beta feedback",
-    "apiDocs": "API docs",
-    "privacyPolicy": "Privacy policy",
-    "termsOfService": "Terms of service",
-    "cookiePolicy": "Cookie policy",
+    "product": "Προϊόν",
+    "resources": "Πόροι",
+    "legal": "Νομικά",
+    "features": "Χαρακτηριστικά",
+    "changelog": "Ιστορικό αλλαγών",
+    "supportedNetworks": "Υποστηριζόμενα δίκτυα",
+    "helpCenter": "Κέντρο βοήθειας",
+    "contactUs": "Επικοινωνήστε μαζί μας",
+    "betaFeedback": "Σχόλια Beta",
+    "apiDocs": "Τεκμηρίωση API",
+    "privacyPolicy": "Πολιτική απορρήτου",
+    "termsOfService": "Όροι χρήσης",
+    "cookiePolicy": "Πολιτική cookies",
     "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
   }
 }

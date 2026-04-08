@@ -98,7 +98,7 @@
     "steps": [
       {
         "title": "Parašykite savo brifingą",
-        "description": "Aprašykite, ką norite perduoti — taip paprastai kaip „naujo produkto pristatymas“ arba taip detaliai kaip pilnas brifingas. Pasirinkite savo kanalus, kalbą ir toną."
+        "description": "Aprašykite, ką norite perduoti — taip paprastai kaip \"naujo produkto pristatymas\" arba taip detaliai kaip pilnas brifingas. Pasirinkite savo kanalus, kalbą ir toną."
       },
       {
         "title": "AI modeliai varžosi dėl jūsų",
@@ -156,16 +156,23 @@
     "title": "Paprastos, skaidrios kainos",
     "subtitle": "Nemokamai Beta metu. Ankstyvieji vartotojai užfiksuoja savo kainą amžinai paleidimo metu.",
     "mostPopular": "Populiariausias",
+    "monthly": "Mėnesinis",
+    "annual": "Metinis",
+    "save2Months": "-17%",
+    "perMonth": "/ mėn.",
+    "perYear": "/ metus",
+    "billedAnnually": "Apmokestinama kasmet",
+    "customPriceLabel": "Individualu",
     "plans": [
       {
         "name": "Nemokamas",
-        "price": "€0",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
         "period": "Beta metu",
         "description": "Išbandykite viską su dosniais limitais.",
         "features": [
-          "20 įrašų / mėn.",
+          "5 įrašai / mėn.",
           "3 tinklai",
-          "3 kalbos",
           "Pagrindiniai tono valdikliai",
           "Žymių pasiūlymai"
         ],
@@ -173,13 +180,14 @@
       },
       {
         "name": "Kūrėjas",
-        "price": "€19",
-        "period": "per mėnesį",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
         "description": "Kūrėjams ir prekės ženklams, kurie nuolat publikuoja.",
         "features": [
           "200 įrašų / mėn.",
           "Visi tinklai",
-          "Visos kalbos",
           "Išplėstinis tonas ir asmenybės",
           "Turinio kalendorius",
           "Prioritetinis palaikymas"
@@ -188,19 +196,21 @@
       },
       {
         "name": "Agentūra",
-        "price": "€79",
-        "period": "per mėnesį",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
         "description": "Komandoms, valdančioms kelis prekės ženklus.",
         "features": [
           "Neriboti įrašai",
           "Visi tinklai",
-          "Visos kalbos",
           "Keli prekės ženklai",
           "Komandinis bendradarbiavimas",
           "Analitika",
           "Paskyros vadybininkas"
         ],
-        "cta": "Susisiekite su mumis"
+        "cta": "Susisiekite su mumis",
+        "customPrice": true
       }
     ]
   },
@@ -209,7 +219,7 @@
     "items": [
       {
         "q": "Kokius AI modelius naudoja Loritalk?",
-        "a": "Loritalk jungiasi prie kelių pirmaujancių AI tiekėjų, įskaitant Claude (Anthropic), GPT (OpenAI) ir Gemini (Google). Galite konfigūruoti, kurie modeliai dalyvauja jūsų generavimo procese — arba naudoti savo API raktus."
+        "a": "Loritalk jungiasi prie kelių pirmaujancių AI tiekėjų, įskaitant Claude (Anthropic), GPT (OpenAI) ir Gemini (Google). Galite konfigūruoti, kurie modeliai dalyvauja jūsų generavimo procese."
       },
       {
         "q": "Kuo tai skiriasi nuo ChatGPT?",
@@ -217,7 +227,7 @@
       },
       {
         "q": "Kokie socialiniai tinklai palaikomi?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok ir bet kokia pritaikyta platforma per webhook (įmonių tinklaraščiai, CMS, vidiniai įrankiai)."
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter) ir TikTok."
       },
       {
         "q": "Ar mano turinys yra privatus?",
@@ -230,10 +240,6 @@
       {
         "q": "Kas atsitiks po Beta?",
         "a": "Įsigalios mokamos prenumeratos, bet kiekvienas Beta naudotojas išlaikys dabartinę kainą užfiksuotą amžinai. Jokių staigmenų."
-      },
-      {
-        "q": "Ar galiu naudoti savo AI raktus?",
-        "a": "Taip. Galite prijungti savo OpenAI, Anthropic ar Google API raktus. Arba naudokite mūsų integruotą AI paslaugą — išorinių raktų nereikia."
       }
     ]
   },

@@ -1,0 +1,39 @@
+# Loritalk
+
+> Loritalk is an AI-powered social media content generation platform by CDN Core Technologies. It uses multiple AI models (Claude by Anthropic, GPT by OpenAI, Gemini by Google) to generate optimized posts for Instagram, LinkedIn, X (Twitter), TikTok, and Facebook — from a single text briefing.
+
+Loritalk is currently in free Beta. It is a web application available at https://app.lori-talk.com. The landing page is at https://lori-talk.eu.
+
+## Key Features
+- Multi-model AI deliberation: multiple AI models generate content independently, then cross-refine each other's output in two rounds
+- Platform-optimized content: tailored tone, length, hashtags, and format per social network
+- Multilingual generation: Portuguese, English, Spanish and more with native-level fluency
+- Content scheduling and direct publishing to connected social channels
+- Brand voice and persona customization
+- Analytics dashboard for cross-channel performance tracking
+- Visual canvas editor for content generation workflows
+
+## Pricing
+- Free plan: 5 posts/month, 3 networks (free during Beta)
+- Creator plan: EUR 25/month (annual) or EUR 30/month, 200 posts/month, all networks
+- Agency plan: custom pricing, unlimited posts, multiple brands
+
+## Supported Networks
+- Instagram: captions, carousel descriptions, Reels scripts, Stories copy
+- LinkedIn: professional posts, articles, company updates
+- Facebook: page posts, group posts, ad copy
+- X (Twitter): posts, threads, quote posts
+- TikTok: video scripts, captions, hashtag strategies
+
+## Company
+- Company: CDN Core Technologies
+- Location: Parkurbis, 6200-865 Covilha, Portugal
+- Phone: +351 275 959 168
+- Email: info@lori-talk.eu
+
+## Pages
+- [Home](https://lori-talk.eu/)
+- [Supported Networks](https://lori-talk.eu/supported-networks)
+- [Contact](https://lori-talk.eu/contact)
+- [Privacy Policy](https://lori-talk.eu/privacy-policy)
+- [Terms of Service](https://lori-talk.eu/terms-of-service)
