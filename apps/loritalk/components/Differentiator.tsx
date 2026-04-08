@@ -2,22 +2,26 @@
 
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const BP = ""; // BASE_PATH placeholder
 
 export default function Differentiator() {
   const sectionRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
 
-      mm.add("(prefers-reduced-motion: no-preference)", () => {
+      // Desktop: full pinned horizontal scroll animation
+      mm.add("(min-width: 768px) and (prefers-reduced-motion: no-preference)", () => {
         const container = scrollRef.current!;
         const nodes = gsap.utils.toArray<HTMLElement>("[data-node]");
         const connectors = gsap.utils.toArray<HTMLElement>("[data-connector]");
@@ -48,6 +52,21 @@ export default function Differentiator() {
             duration: 1.5,
             ease: "power2.inOut",
           }, "<0.5");
+
+          // Typing animation on brief card
+          const typingEl = node.querySelector("[data-typing]");
+          if (typingEl) {
+            const cursor = typingEl.querySelector("[data-cursor]");
+            tl.to(typingEl, {
+              text: { value: '"Launch of our new sustainable sneaker collection targeting Gen Z across all social channels"', delimiter: "" },
+              duration: 4,
+              ease: "none",
+            }, ">-0.5");
+            // Hide cursor after typing
+            if (cursor) {
+              tl.to(cursor, { autoAlpha: 0, duration: 0.3 }, ">");
+            }
+          }
 
           // Inner elements appear one by one
           const inners = node.querySelectorAll("[data-inner]");
@@ -101,8 +120,42 @@ export default function Differentiator() {
         });
       });
 
+      // Mobile: everything visible, just simple fade-in on scroll
+      mm.add("(max-width: 767px)", () => {
+        // Show everything immediately — clear all visibility:hidden
+        gsap.set("[data-diff-title], [data-diff-sub], [data-node], [data-connector], [data-diff-explain], [data-inner], [data-bar], [data-check], [data-reveal], [data-skeleton]", { autoAlpha: 1, clearProps: "transform,scale" });
+        // Hide skeletons on mobile (show final content directly)
+        gsap.set("[data-skeleton]", { autoAlpha: 0 });
+        // Simple fade-in for each node as it enters viewport
+        gsap.utils.toArray<HTMLElement>("[data-node]").forEach((node) => {
+          gsap.from(node, {
+            opacity: 0, y: 20, duration: 0.5, ease: "power2.out",
+            scrollTrigger: { trigger: node, start: "top 90%", once: true },
+          });
+          // Typing on brief card
+          const typingEl = node.querySelector("[data-typing]");
+          if (typingEl) {
+            const cursor = typingEl.querySelector("[data-cursor]");
+            ScrollTrigger.create({
+              trigger: node,
+              start: "top 90%",
+              once: true,
+              onEnter: () => {
+                gsap.to(typingEl, {
+                  text: { value: '"Launch of our new sustainable sneaker collection targeting Gen Z across all social channels"', delimiter: "" },
+                  duration: 2,
+                  ease: "none",
+                  onComplete: () => { if (cursor) gsap.to(cursor, { autoAlpha: 0, duration: 0.3 }); },
+                });
+              },
+            });
+          }
+        });
+      });
+
       mm.add("(prefers-reduced-motion: reduce)", () => {
-        gsap.set("[data-diff-title], [data-diff-sub], [data-node], [data-connector], [data-diff-explain], [data-inner], [data-bar], [data-check]", { autoAlpha: 1, clearProps: "all" });
+        gsap.set("[data-diff-title], [data-diff-sub], [data-node], [data-connector], [data-diff-explain], [data-inner], [data-bar], [data-check], [data-reveal]", { autoAlpha: 1, clearProps: "all" });
+        gsap.set("[data-skeleton]", { autoAlpha: 0 });
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -122,23 +175,23 @@ export default function Differentiator() {
           </div>
         </div>
 
-        <div ref={scrollRef} className="overflow-x-auto pb-6" style={{ scrollbarWidth: "none" }}>
-          <div className="flex items-center py-4 px-4 md:px-16 mx-auto" style={{ width: "max-content" }}>
+        <div ref={scrollRef} className="md:overflow-x-auto pb-6" style={{ scrollbarWidth: "none" }}>
+          <div className="flex flex-col items-center gap-3 px-4 py-4 md:flex-row md:gap-0 md:items-center md:px-16 md:mx-auto md:w-max">
 
             {/* ═══ 1. BRIEF ═══ */}
-            <div data-node className="flex-shrink-0 w-[clamp(220px,20vw,300px)]" style={{ visibility: "hidden" }}>
+            <div data-node className="flex-shrink-0 w-full md:w-[clamp(220px,20vw,300px)]" style={{ visibility: "hidden" }}>
               <div className="bg-white rounded-2xl border-2 border-black/10 shadow-sm overflow-hidden">
                 <div className="px-4 py-2.5 border-b border-black/5 flex items-center gap-2">
                   <span className="material-icons-round text-sm" style={{ color: "#94BF5C" }}>edit_note</span>
-                  <span className="text-xs font-semibold text-black/50">Your Brief</span>
+                  <span className="text-xs font-semibold text-black/50">{t("differentiator.briefLabel")}</span>
                   <span className="ml-auto text-[10px] text-black/25">1/6</span>
                 </div>
                 <div className="p-4 flex flex-col gap-3">
-                  <p className="text-xs text-black/70 leading-relaxed italic">
-                    &quot;Launch of our new sustainable sneaker collection targeting Gen Z across all social channels&quot;
+                  <p data-typing className="text-xs text-black/70 leading-relaxed italic min-h-[2.5rem]">
+                    <span className="inline-block w-px h-3.5 bg-black/40 animate-pulse align-middle" data-cursor />
                   </p>
                   <div className="flex flex-col gap-2">
-                    <span className="text-[10px] text-black/35 font-medium">Channels</span>
+                    <span className="text-[10px] text-black/35 font-medium">{t("differentiator.channels")}</span>
                     <div className="flex flex-wrap gap-1.5">
                       {[
                         { name: "Instagram", logo: "instagram", color: "#E4405F" },
@@ -155,12 +208,12 @@ export default function Differentiator() {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] text-black/35">Language:</span>
-                    <span data-inner className="text-[10px] font-medium text-black/60" style={{ visibility: "hidden" }}>English, Portuguese</span>
+                    <span className="text-[10px] text-black/35">{t("differentiator.language")}</span>
+                    <span data-inner className="text-[10px] font-medium text-black/60" style={{ visibility: "hidden" }}>{t("differentiator.languages")}</span>
                   </div>
                   <div data-inner className="text-[10px] text-black/25 flex items-center gap-1" style={{ visibility: "hidden" }}>
                     <span className="material-icons-round text-xs">schedule</span>
-                    Submitted 2s ago
+                    {t("differentiator.submitted")}
                   </div>
                 </div>
               </div>
@@ -169,8 +222,8 @@ export default function Differentiator() {
             <FanOut color1="#94BF5C" color2="#5D92E8" />
 
             {/* ═══ 2. AI MODELS — Round 1 ═══ */}
-            <div data-node className="flex-shrink-0 flex flex-col gap-2 w-[clamp(240px,22vw,340px)]" style={{ visibility: "hidden" }}>
-              <span className="text-[10px] font-semibold px-3 py-1 rounded-full bg-black/5 text-black/30 self-center">ROUND 1 — INDEPENDENT GENERATION</span>
+            <div data-node className="flex-shrink-0 flex flex-col gap-2 w-full md:w-[clamp(240px,22vw,340px)]" style={{ visibility: "hidden" }}>
+              <span className="text-[10px] font-semibold px-3 py-1 rounded-full bg-black/5 text-black/30 self-center">{t("differentiator.round1")}</span>
               {[
                 { name: "Claude", logo: "claude", text: "Step into the future of fashion. Our sustainable sneakers prove eco-conscious choices don\u2019t mean compromising style. \ud83d\udc5f\u2728 #SustainableFashion", time: "1.2s" },
                 { name: "GPT-4o", logo: "openai", text: "We\u2019re proud to announce our most eco-friendly collection. Built from 80% recycled materials, designed for Gen Z streets.", time: "1.8s" },
@@ -203,7 +256,7 @@ export default function Differentiator() {
                     </div>
                     <div data-inner className="flex items-center gap-1" style={{ visibility: "hidden" }}>
                       <span data-check className="material-icons-round text-xs" style={{ color: "#94BF5C", visibility: "hidden" }}>check_circle</span>
-                      <span className="text-[10px] text-black/30">Generated</span>
+                      <span className="text-[10px] text-black/30">{t("differentiator.generated")}</span>
                     </div>
                   </div>
                 </div>
@@ -213,15 +266,15 @@ export default function Differentiator() {
             <FanIn color1="#5D92E8" color2="#FF9852" />
 
             {/* ═══ 3. REFINEMENT — Round 2 ═══ */}
-            <div data-node className="flex-shrink-0 w-[clamp(230px,21vw,310px)]" style={{ visibility: "hidden" }}>
+            <div data-node className="flex-shrink-0 w-full md:w-[clamp(230px,21vw,310px)]" style={{ visibility: "hidden" }}>
               <div className="bg-white rounded-2xl border-2 shadow-sm overflow-hidden" style={{ borderColor: "#5D92E8" }}>
                 <div className="px-4 py-2.5 border-b border-black/5 flex items-center gap-2" style={{ backgroundColor: "#5D92E810" }}>
                   <span className="material-icons-round text-sm" style={{ color: "#5D92E8" }}>sync</span>
-                  <span className="text-xs font-semibold text-black/50">Round 2 — Cross-Refinement</span>
+                  <span className="text-xs font-semibold text-black/50">{t("differentiator.round2")}</span>
                   <span className="ml-auto text-[10px] text-black/25">3/6</span>
                 </div>
                 <div className="p-4 flex flex-col gap-2.5">
-                  <p data-inner className="text-[11px] text-black/40 leading-relaxed" style={{ visibility: "hidden" }}>Each model reads all outputs and improves its own version</p>
+                  <p data-inner className="text-[11px] text-black/40 leading-relaxed" style={{ visibility: "hidden" }}>{t("differentiator.round2Desc")}</p>
                   {[
                     { name: "Claude", logo: "claude" },
                     { name: "GPT-4o", logo: "openai" },
@@ -238,7 +291,7 @@ export default function Differentiator() {
                   ))}
                   <div data-inner className="text-[10px] text-black/25 flex items-center gap-1 pt-1" style={{ visibility: "hidden" }}>
                     <span className="material-icons-round text-xs">auto_awesome</span>
-                    Quality improved by ~40% vs Round 1
+                    {t("differentiator.qualityNote")}
                   </div>
                 </div>
               </div>
@@ -247,11 +300,11 @@ export default function Differentiator() {
             <Connector color1="#FF9852" color2="#94BF5C" />
 
             {/* ═══ 4. PICK & EDIT ═══ */}
-            <div data-node className="flex-shrink-0 w-[clamp(240px,22vw,330px)]" style={{ visibility: "hidden" }}>
+            <div data-node className="flex-shrink-0 w-full md:w-[clamp(240px,22vw,330px)]" style={{ visibility: "hidden" }}>
               <div className="bg-white rounded-2xl border-2 border-black/10 shadow-sm overflow-hidden">
                 <div className="px-4 py-2.5 border-b border-black/5 flex items-center gap-2">
                   <span className="material-icons-round text-sm" style={{ color: "#94BF5C" }}>touch_app</span>
-                  <span className="text-xs font-semibold text-black/50">Pick &amp; Edit</span>
+                  <span className="text-xs font-semibold text-black/50">{t("differentiator.pickEdit")}</span>
                   <span className="ml-auto text-[10px] text-black/25">4/6</span>
                 </div>
                 <div className="p-4 flex flex-col gap-3">
@@ -317,18 +370,18 @@ export default function Differentiator() {
             <Connector color1="#94BF5C" color2="#FF9852" />
 
             {/* ═══ 5. ADD MEDIA ═══ */}
-            <div data-node className="flex-shrink-0 w-[clamp(210px,19vw,280px)]" style={{ visibility: "hidden" }}>
+            <div data-node className="flex-shrink-0 w-full md:w-[clamp(210px,19vw,280px)]" style={{ visibility: "hidden" }}>
               <div className="bg-white rounded-2xl border-2 border-black/10 shadow-sm overflow-hidden">
                 <div className="px-4 py-2.5 border-b border-black/5 flex items-center gap-2">
                   <span className="material-icons-round text-sm" style={{ color: "#FF9852" }}>image</span>
-                  <span className="text-xs font-semibold text-black/50">Add Media</span>
+                  <span className="text-xs font-semibold text-black/50">{t("differentiator.addMedia")}</span>
                   <span className="ml-auto text-[10px] text-black/25">5/6</span>
                 </div>
                 <div className="p-4 flex flex-col gap-3">
                   {/* Upload progress bar */}
                   <div data-inner style={{ visibility: "hidden" }}>
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-[10px] text-black/40">Uploading image...</span>
+                      <span className="text-[10px] text-black/40">{t("differentiator.uploading")}</span>
                       <span className="text-[10px] text-black/25">100%</span>
                     </div>
                     <div className="h-1.5 rounded-full bg-black/5 overflow-hidden">
@@ -351,12 +404,12 @@ export default function Differentiator() {
                   </div>
                   <div data-inner className="flex items-center gap-2" style={{ visibility: "hidden" }}>
                     <span data-check className="material-icons-round text-xs" style={{ color: "#94BF5C", visibility: "hidden" }}>check_circle</span>
-                    <span className="text-[10px] text-black/40">Image uploaded successfully</span>
+                    <span className="text-[10px] text-black/40">{t("differentiator.imageAttached")}</span>
                   </div>
                   <div data-inner className="flex gap-2" style={{ visibility: "hidden" }}>
                     <div className="flex-1 py-1.5 rounded-lg text-[10px] font-semibold text-white text-center" style={{ backgroundColor: "#FF9852" }}>
                       <span className="material-icons-round text-xs align-middle mr-0.5">auto_awesome</span>
-                      Generate with AI
+                      {t("differentiator.generateAI")}
                     </div>
                   </div>
                 </div>
@@ -366,19 +419,19 @@ export default function Differentiator() {
             <Connector color1="#FF9852" color2="#94BF5C" />
 
             {/* ═══ 6. PUBLISH ═══ */}
-            <div data-node className="flex-shrink-0 w-[clamp(210px,19vw,280px)]" style={{ visibility: "hidden" }}>
+            <div data-node className="flex-shrink-0 w-full md:w-[clamp(210px,19vw,280px)]" style={{ visibility: "hidden" }}>
               <div className="bg-white rounded-2xl border-2 shadow-md overflow-hidden" style={{ borderColor: "#94BF5C" }}>
                 <div className="px-4 py-2.5 border-b flex items-center gap-2" style={{ backgroundColor: "#94BF5C10", borderColor: "#94BF5C20" }}>
                   <span className="material-icons-round text-sm" style={{ color: "#94BF5C" }}>rocket_launch</span>
-                  <span className="text-xs font-semibold text-black/50">Ready to Publish</span>
+                  <span className="text-xs font-semibold text-black/50">{t("differentiator.readyPublish")}</span>
                   <span className="ml-auto text-[10px] text-black/25">6/6</span>
                 </div>
                 <div className="p-4 flex flex-col gap-2.5">
                   {[
-                    { net: "Instagram", logo: "instagram", time: "Today, 14:00", status: "Scheduled" },
-                    { net: "LinkedIn", logo: "linkedin", time: "Today, 15:30", status: "Scheduled" },
-                    { net: "X", logo: "x", time: "Today, 16:00", status: "Draft" },
-                    { net: "TikTok", logo: "tiktok", time: "Today, 17:00", status: "Scheduled" },
+                    { net: "Instagram", logo: "instagram", time: "Today, 14:00", statusKey: "scheduled" },
+                    { net: "LinkedIn", logo: "linkedin", time: "Today, 15:30", statusKey: "scheduled" },
+                    { net: "X", logo: "x", time: "Today, 16:00", statusKey: "draft" },
+                    { net: "TikTok", logo: "tiktok", time: "Today, 17:00", statusKey: "scheduled" },
                   ].map((ch) => (
                     <div key={ch.net} data-inner className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-black/[0.03]" style={{ visibility: "hidden" }}>
                       <img src={`${BP}/logos/${ch.logo}.svg`} alt={ch.net} className="w-3 h-3" />
@@ -387,18 +440,18 @@ export default function Differentiator() {
                       <span
                         className="text-[9px] font-semibold px-1.5 py-0.5 rounded"
                         style={{
-                          backgroundColor: ch.status === "Scheduled" ? "#94BF5C15" : "#FF985215",
-                          color: ch.status === "Scheduled" ? "#94BF5C" : "#FF9852",
+                          backgroundColor: ch.statusKey === "scheduled" ? "#94BF5C15" : "#FF985215",
+                          color: ch.statusKey === "scheduled" ? "#94BF5C" : "#FF9852",
                         }}
                       >
-                        {ch.status}
+                        {t(`differentiator.${ch.statusKey}`)}
                       </span>
                     </div>
                   ))}
                   <div data-inner className="flex gap-2 pt-1" style={{ visibility: "hidden" }}>
                     <div className="flex-1 py-2.5 rounded-xl text-xs font-semibold text-white flex items-center justify-center gap-1" style={{ backgroundColor: "#94BF5C" }}>
                       <span className="material-icons-round text-sm">send</span>
-                      Publish all
+                      {t("differentiator.publishAll")}
                     </div>
                     <div className="py-2.5 px-3 rounded-xl text-xs font-medium border border-black/10 flex items-center">
                       <span className="material-icons-round text-sm text-black/40">schedule</span>
@@ -415,57 +468,68 @@ export default function Differentiator() {
       {/* Explanation */}
       <div data-diff-explain className="max-w-2xl mx-auto px-6 mt-10 mb-16 text-center" style={{ visibility: "hidden" }}>
         <p className="text-sm text-black/45 font-normal leading-relaxed">
-          Each AI model has different strengths. Claude excels at nuance, GPT at versatility, Gemini at factual precision. By making them collaborate and challenge each other, every final text is better than any single model could produce alone.
+          {t("differentiator.explanation")}
         </p>
       </div>
     </section>
   );
 }
 
+function VArrow({ color }: { color: string }) {
+  return (
+    <svg width="12" height="28" viewBox="0 0 12 28" fill="none" className="md:hidden">
+      <line x1="6" y1="0" x2="6" y2="20" stroke={color} strokeWidth="2" strokeLinecap="round" />
+      <polygon points="2,20 6,28 10,20" fill={color} />
+    </svg>
+  );
+}
+
 function Connector({ color1, color2 }: { color1: string; color2: string }) {
   const id = `g-${color1.replace("#","")}-${color2.replace("#","")}`;
   return (
-    <div className="flex-shrink-0 self-center mx-1 md:mx-2" data-connector style={{ visibility: "hidden" }}>
-      <svg width="48" height="12" viewBox="0 0 48 12" fill="none" className="w-10 md:w-12 h-3">
-        <line x1="0" y1="6" x2="40" y2="6" stroke={`url(#${id})`} strokeWidth="2" strokeLinecap="round" />
-        <polygon points="40,2 48,6 40,10" fill={color2} />
-        <defs>
-          <linearGradient id={id} x1="0" y1="0" x2="48" y2="0" gradientUnits="userSpaceOnUse">
-            <stop stopColor={color1} />
-            <stop offset="1" stopColor={color2} />
-          </linearGradient>
-        </defs>
-      </svg>
+    <div data-connector style={{ visibility: "hidden" }}>
+      <div className="hidden md:block flex-shrink-0 mx-2">
+        <svg width="48" height="12" viewBox="0 0 48 12" fill="none" className="w-12 h-3">
+          <line x1="0" y1="6" x2="40" y2="6" stroke={`url(#${id})`} strokeWidth="2" strokeLinecap="round" />
+          <polygon points="40,2 48,6 40,10" fill={color2} />
+          <defs><linearGradient id={id} x1="0" y1="0" x2="48" y2="0" gradientUnits="userSpaceOnUse"><stop stopColor={color1} /><stop offset="1" stopColor={color2} /></linearGradient></defs>
+        </svg>
+      </div>
+      <VArrow color={color2} />
     </div>
   );
 }
 
-/* 3 lines fanning out: 1 point on left → 3 endpoints on right (top/mid/bottom) */
 function FanOut({ color1, color2 }: { color1: string; color2: string }) {
   return (
-    <div className="flex-shrink-0 self-center mx-1 md:mx-2" data-connector style={{ visibility: "hidden" }}>
-      <svg width="56" height="120" viewBox="0 0 56 120" fill="none" className="w-10 md:w-14 h-[120px]">
-        <path d="M0,60 Q28,60 48,16" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
-        <path d="M0,60 Q28,60 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
-        <path d="M0,60 Q28,60 48,104" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
-        <polygon points="48,12 56,16 48,20" fill={color2} />
-        <polygon points="48,56 56,60 48,64" fill={color2} />
-        <polygon points="48,100 56,104 48,108" fill={color2} />
-      </svg>
+    <div data-connector style={{ visibility: "hidden" }}>
+      <div className="hidden md:block flex-shrink-0 mx-2">
+        <svg width="56" height="120" viewBox="0 0 56 120" fill="none" className="w-14 h-[120px]">
+          <path d="M0,60 Q28,60 48,16" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
+          <path d="M0,60 Q28,60 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
+          <path d="M0,60 Q28,60 48,104" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
+          <polygon points="48,12 56,16 48,20" fill={color2} />
+          <polygon points="48,56 56,60 48,64" fill={color2} />
+          <polygon points="48,100 56,104 48,108" fill={color2} />
+        </svg>
+      </div>
+      <VArrow color={color2} />
     </div>
   );
 }
 
-/* 3 lines fanning in: 3 points on left (top/mid/bottom) → 1 endpoint on right */
 function FanIn({ color1, color2 }: { color1: string; color2: string }) {
   return (
-    <div className="flex-shrink-0 self-center mx-1 md:mx-2" data-connector style={{ visibility: "hidden" }}>
-      <svg width="56" height="120" viewBox="0 0 56 120" fill="none" className="w-10 md:w-14 h-[120px]">
-        <path d="M0,16 Q28,16 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
-        <path d="M0,60 Q28,60 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
-        <path d="M0,104 Q28,104 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
-        <polygon points="48,56 56,60 48,64" fill={color2} />
-      </svg>
+    <div data-connector style={{ visibility: "hidden" }}>
+      <div className="hidden md:block flex-shrink-0 mx-2">
+        <svg width="56" height="120" viewBox="0 0 56 120" fill="none" className="w-14 h-[120px]">
+          <path d="M0,16 Q28,16 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
+          <path d="M0,60 Q28,60 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
+          <path d="M0,104 Q28,104 48,60" stroke={color1} strokeWidth="2" fill="none" strokeLinecap="round" />
+          <polygon points="48,56 56,60 48,64" fill={color2} />
+        </svg>
+      </div>
+      <VArrow color={color2} />
     </div>
   );
 }

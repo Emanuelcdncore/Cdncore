@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Funcționalități",
+    "howItWorks": "Cum funcționează",
+    "pricing": "Prețuri",
+    "beta": "Beta",
+    "startForFree": "Începe gratuit"
+  },
+  "hero": {
+    "badge": "Acum în Beta — acces anticipat gratuit",
+    "headlineOne": "O idee.",
+    "headlineTwo": "Fiecare platformă.",
+    "description": "Scrie o temă sau o idee. AI-ul Loritalk scrie postări optimizate pentru Instagram, LinkedIn, X, TikTok și altele — în secunde. Mai multe modele AI concurează pentru a-ți oferi cel mai bun rezultat.",
+    "ctaPrimary": "Începe să creezi gratuit",
+    "ctaSecondary": "Vezi cum funcționează",
+    "note": "Nu este nevoie de card de credit · Gratuit în timpul Beta"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Rețele sociale suportate",
+    "languagesValue": "3",
+    "languagesLabel": "Limbi la lansare",
+    "generationValue": "<5s",
+    "generationLabel": "Timp mediu de generare",
+    "freeValue": "Gratuit",
+    "freeLabel": "În timpul Beta — fără limite"
+  },
+  "problem": {
+    "title": "Fluxul tău de lucru pentru conținut este stricat",
+    "subtitle": "Sună familiar?",
+    "items": [
+      {
+        "title": "Ore pierdute adaptând",
+        "description": "Scrii o postare pentru Instagram, apoi o rescrii pentru LinkedIn, apoi din nou pentru X. Fiecare platformă necesită ton, lungime și hashtag-uri diferite."
+      },
+      {
+        "title": "AI care sună generic",
+        "description": "ChatGPT îți dă o versiune care sună ca toți ceilalți. Fără vocea brandului, fără conștientizarea platformei, fără optimizare reală."
+      },
+      {
+        "title": "Blocaje în echipă",
+        "description": "Conținutul așteaptă aprobarea, se pierde în thread-urile Slack și nimeni nu știe ce este programat pentru săptămâna viitoare."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk rezolvă toate astea",
+    "subtitle": "Un briefing. Fiecare platformă. Mai multe AI-uri concurează pentru cea mai bună postare a ta.",
+    "ctaPrimary": "Începe să creezi gratuit",
+    "rows": [
+      {
+        "before": "1 postare = 45 min de adaptare pentru fiecare platformă",
+        "after": "1 briefing = toate platformele în <5 secunde"
+      },
+      {
+        "before": "1 model AI = text generic, potrivit tuturor",
+        "after": "Mai multe modele AI deliberează și se rafinează reciproc"
+      },
+      {
+        "before": "Conținut răspândit între instrumente și thread-uri",
+        "after": "Un panou: crează, aprobă, programează, publică, monitorizează"
+      }
+    ]
+  },
+  "features": {
+    "title": "Tot ce are nevoie echipa ta de conținut",
+    "subtitle": "De la idee la postarea publicată — Loritalk gestionează întregul flux de lucru.",
+    "items": [
+      {
+        "title": "Deliberare AI Multi-Model",
+        "description": "Nu un singur AI — mai multe modele generează independent, apoi rafinează munca celorlalte. Obții ce e mai bun din Claude, GPT și Gemini combinate."
+      },
+      {
+        "title": "Conținut optimizat pentru platformă",
+        "description": "Fiecare postare este adaptată platformei sale — ton, lungime, hashtag-uri, emoji-uri și format corecte. Descrieri Instagram, articole LinkedIn, thread-uri X, scripturi TikTok."
+      },
+      {
+        "title": "Generare multilingvă",
+        "description": "Generează în portugheză, engleză, spaniolă și altele. Fluență la nivel nativ cu nuance culturale — nu doar traducere."
+      },
+      {
+        "title": "Programează și publică",
+        "description": "Vizualizare calendar, publicare programată și postare directă pe toate canalele conectate. Ore diferite per platformă."
+      },
+      {
+        "title": "Vocea brandului și personaje",
+        "description": "Crează personaje AI care scriu ca brandul tău. Controlează tonul de la profesional la jucăuș. Fiecare postare sună ca tine, nu ca un robot."
+      },
+      {
+        "title": "Panou de analiză",
+        "description": "Monitorizează afișări, interacțiuni, click-uri și creștere pe toate canalele. Află ce conținut funcționează și dublează efortul."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "De la idee la postare în 3 pași",
+    "subtitle": "Fără ecrane goale. Fără copy-paste între platforme.",
+    "steps": [
+      {
+        "title": "Scrie briefing-ul tău",
+        "description": "Descrie ce vrei să comunici — atât de simplu ca „lansarea unui produs nou” sau atât de detaliat ca un briefing complet. Alege canalele, limba și tonul."
+      },
+      {
+        "title": "Modelele AI concurează pentru tine",
+        "description": "Mai multe modele AI generează conținut independent, apoi revizuiesc și rafinează rezultatele celorlalte. Primești N versiuni șlefuite per platformă."
+      },
+      {
+        "title": "Alege, editează și publică",
+        "description": "Alege versiunea ta favorită pentru fiecare canal. Ajustează orice cu un click. Publică acum sau programează pentru mai târziu."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "De ce mai multe AI-uri bat unul singur",
+    "subtitle": "Alte instrumente folosesc un model. Loritalk folosește mai multe — și le face să se îmbunătățească reciproc.",
+    "briefLabel": "Briefing-ul tău",
+    "channels": "Canale",
+    "language": "Limbă:",
+    "languages": "Engleză, Portugheză",
+    "submitted": "Trimis acum 2s",
+    "round1": "RUNDA 1 — GENERARE INDEPENDENTĂ",
+    "generated": "Generat",
+    "round2": "Runda 2 — Rafinare încrucișată",
+    "round2Desc": "Fiecare model citește toate rezultatele și își îmbunătățește propria versiune",
+    "qualityNote": "Calitatea s-a îmbunătățit cu ~40% față de Runda 1",
+    "pickEdit": "Alege și editează",
+    "addMedia": "Adaugă media",
+    "uploading": "Se încarcă imaginea...",
+    "imageAttached": "Imagine încărcată cu succes",
+    "generateAI": "Generează cu AI",
+    "readyPublish": "Gata de publicare",
+    "publishAll": "Publică tot",
+    "scheduled": "Programat",
+    "draft": "Ciornă",
+    "explanation": "Fiecare model AI are puncte forte diferite. Claude excelează în nuance, GPT în versatilitate, Gemini în precizie factuală. Făcându-le să colaboreze și să se provoacxă reciproc, fiecare text final este mai bun decât ce ar putea produce un singur model."
+  },
+  "useCases": {
+    "title": "Construit pentru echipe care publică",
+    "subtitle": "Fie că ești creator solo sau o agenție de 50 de persoane.",
+    "items": [
+      {
+        "title": "Creatori solo și freelanceri",
+        "description": "Nu mai pierde ore adaptând conținut. Scrie o dată, publică peste tot. Concentrează-te pe strategie, nu pe copy-paste."
+      },
+      {
+        "title": "Echipe de marketing",
+        "description": "Un workspace per brand. Fluxuri de aprobare. Vizualizare calendar. Toată lumea știe ce se publică și când."
+      },
+      {
+        "title": "Agenții",
+        "description": "Gestionează mai multe branduri dintr-un singur cont. Atribuie roluri, controlează accesul, monitorizează performanța tuturor clienților. Postări nelimitate în planul Agenție."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Prețuri simple și transparente",
+    "subtitle": "Gratuit în timpul Beta. Utilizatorii timpurii își blochează tariful pentru totdeauna la lansare.",
+    "mostPopular": "Cel mai popular",
+    "plans": [
+      {
+        "name": "Gratuit",
+        "price": "€0",
+        "period": "în timpul Beta",
+        "description": "Încearcă totul cu limite generoase.",
+        "features": [
+          "20 postări / lună",
+          "3 rețele",
+          "3 limbi",
+          "Controale de bază ale tonului",
+          "Sugestii de hashtag-uri"
+        ],
+        "cta": "Începe gratuit"
+      },
+      {
+        "name": "Creator",
+        "price": "€19",
+        "period": "pe lună",
+        "description": "Pentru creatori și branduri care publică constant.",
+        "features": [
+          "200 postări / lună",
+          "Toate rețelele",
+          "Toate limbile",
+          "Ton avansat și personaje",
+          "Calendar de conținut",
+          "Suport prioritar"
+        ],
+        "cta": "Începe perioada de probă gratuită"
+      },
+      {
+        "name": "Agenție",
+        "price": "€79",
+        "period": "pe lună",
+        "description": "Pentru echipe care gestionează mai multe branduri.",
+        "features": [
+          "Postări nelimitate",
+          "Toate rețelele",
+          "Toate limbile",
+          "Mai multe branduri",
+          "Colaborare în echipă",
+          "Analiză",
+          "Manager de cont"
+        ],
+        "cta": "Vorbește cu noi"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Întrebări? Avem răspunsuri.",
+    "items": [
+      {
+        "q": "Ce modele AI folosește Loritalk?",
+        "a": "Loritalk se conectează la mai mulți furnizori de AI de top, inclusiv Claude (Anthropic), GPT (OpenAI) și Gemini (Google). Poți configura ce modele participă în pipeline-ul tău de generare — sau să folosești propriile chei API."
+      },
+      {
+        "q": "Cum este diferit de ChatGPT?",
+        "a": "ChatGPT îți dă un rezultat de la un model. Loritalk rulează mai multe modele în paralel și apoi le face să rafineze munca celorlalte — producând constant calitate mai ridicată. În plus, fiecare postare este optimizată automat pentru fiecare platformă specifică."
+      },
+      {
+        "q": "Ce rețele sociale sunt suportate?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok și orice platformă personalizată prin webhook (bloguri corporative, CMS, instrumente interne)."
+      },
+      {
+        "q": "Conținutul meu este privat?",
+        "a": "Da. Conținutul tău nu este niciodată folosit pentru antrenarea modelelor AI. Toate datele sunt stocate pe serverele noastre din Europa și procesate în conformitate cu GDPR."
+      },
+      {
+        "q": "Pot să-l folosesc cu echipa mea?",
+        "a": "Absolut. Crează workspace-uri pentru fiecare brand, invită membrii echipei cu roluri de admin sau editor și configurează fluxuri de aprobare pentru ca nimic să nu fie publicat fără revizuire."
+      },
+      {
+        "q": "Ce se întâmplă după Beta?",
+        "a": "Planurile plătite intră în vigoare, dar fiecare utilizator Beta își păstrează tariful curent blocat pentru totdeauna. Fără surprize."
+      },
+      {
+        "q": "Pot folosi propriile mele chei AI?",
+        "a": "Da. Poți conecta propriile tale chei API OpenAI, Anthropic sau Google. Sau folosește serviciul nostru AI integrat — nu sunt necesare chei externe."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Nu mai scrie. Începe să publici.",
+    "subtitle": "Alătură-te Beta — acces gratuit, fără card de credit, și tariful tău este blocat pentru totdeauna la lansare.",
+    "ctaPrimary": "Începe să creezi gratuit",
+    "ctaSecondary": "Vezi cum funcționează"
+  },
+  "footer": {
+    "description": "Conținut AI pentru fiecare rețea socială.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Produs",
+    "resources": "Resurse",
+    "legal": "Legal",
+    "features": "Funcționalități",
+    "changelog": "Jurnal de modificări",
+    "supportedNetworks": "Rețele suportate",
+    "helpCenter": "Centru de ajutor",
+    "contactUs": "Contactează-ne",
+    "betaFeedback": "Feedback Beta",
+    "apiDocs": "Documentație API",
+    "privacyPolicy": "Politica de confidențialitate",
+    "termsOfService": "Termeni și condiții",
+    "cookiePolicy": "Politica de cookie-uri",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "navbar": {
+    "features": "Features",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "beta": "Beta",
+    "startForFree": "Start for free"
+  },
+  "hero": {
+    "badge": "Now in Beta — free early access",
+    "headlineOne": "One idea.",
+    "headlineTwo": "Every platform.",
+    "description": "Type a theme or idea. Loritalk's AI writes optimized posts for Instagram, LinkedIn, X, TikTok, and more — in seconds. Multiple AI models compete to give you the best result.",
+    "ctaPrimary": "Start creating for free",
+    "ctaSecondary": "See how it works",
+    "note": "No credit card required · Free during Beta"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Social networks supported",
+    "languagesValue": "3",
+    "languagesLabel": "Languages at launch",
+    "generationValue": "<5s",
+    "generationLabel": "Average generation time",
+    "freeValue": "Free",
+    "freeLabel": "During Beta — no limits"
+  },
+  "problem": {
+    "title": "Your content workflow is broken",
+    "subtitle": "Sound familiar?",
+    "items": [
+      {
+        "title": "Hours wasted adapting",
+        "description": "You write a post for Instagram, then rewrite it for LinkedIn, then again for X. Every platform needs different tone, length, and hashtags."
+      },
+      {
+        "title": "AI that sounds generic",
+        "description": "ChatGPT gives you one version that sounds like everyone else. No brand voice, no platform awareness, no real optimization."
+      },
+      {
+        "title": "Team bottlenecks",
+        "description": "Content waits for approval, gets lost in Slack threads, and nobody knows what's scheduled for next week."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk fixes all of that",
+    "subtitle": "One briefing. Every platform. Multiple AIs competing for your best post.",
+    "ctaPrimary": "Start creating for free",
+    "rows": [
+      {
+        "before": "1 post = 45 min adapting to each platform",
+        "after": "1 briefing = all platforms in <5 seconds"
+      },
+      {
+        "before": "1 AI model = generic, one-size-fits-all text",
+        "after": "Multiple AI models deliberate and refine each other"
+      },
+      {
+        "before": "Content scattered across tools and threads",
+        "after": "One dashboard: create, approve, schedule, publish, track"
+      }
+    ]
+  },
+  "features": {
+    "title": "Everything your content team needs",
+    "subtitle": "From idea to published post — Loritalk handles the entire workflow.",
+    "items": [
+      {
+        "title": "Multi-Model AI Deliberation",
+        "description": "Not one AI — multiple models generate independently, then refine each other's work. You get the best of Claude, GPT, and Gemini combined."
+      },
+      {
+        "title": "Platform-optimized content",
+        "description": "Each post is tailored for its platform — right tone, length, hashtags, emojis, and format. Instagram captions, LinkedIn articles, X threads, TikTok scripts."
+      },
+      {
+        "title": "Multilingual generation",
+        "description": "Generate in Portuguese, English, Spanish and more. Native-level fluency with cultural nuance — not just translation."
+      },
+      {
+        "title": "Schedule & publish",
+        "description": "Calendar view, scheduled publishing, and direct posting to all connected channels. Different times per platform."
+      },
+      {
+        "title": "Brand voice & personas",
+        "description": "Create AI personas that write like your brand. Control tone from professional to playful. Every post sounds like you, not a robot."
+      },
+      {
+        "title": "Analytics dashboard",
+        "description": "Track impressions, engagement, clicks, and growth across all channels. Know what content works and double down."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "From idea to post in 3 steps",
+    "subtitle": "No more blank screens. No more copy-pasting between platforms.",
+    "steps": [
+      {
+        "title": "Write your briefing",
+        "description": "Describe what you want to communicate — as simple as \"new product launch\" or as detailed as a full brief. Pick your channels, language, and tone."
+      },
+      {
+        "title": "AI models compete for you",
+        "description": "Multiple AI models generate content independently, then review and refine each other's output. You receive N polished versions per platform."
+      },
+      {
+        "title": "Pick, edit & publish",
+        "description": "Choose your favorite version for each channel. Tweak anything with one click. Publish now or schedule for later."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Why multiple AIs beat a single one",
+    "subtitle": "Other tools use one model. Loritalk uses several — and makes them improve each other.",
+    "briefLabel": "Your Brief",
+    "channels": "Channels",
+    "language": "Language:",
+    "languages": "English, Portuguese",
+    "submitted": "Submitted 2s ago",
+    "round1": "ROUND 1 — INDEPENDENT GENERATION",
+    "generated": "Generated",
+    "round2": "Round 2 — Cross-Refinement",
+    "round2Desc": "Each model reads all outputs and improves its own version",
+    "qualityNote": "Quality improved by ~40% vs Round 1",
+    "pickEdit": "Pick & Edit",
+    "addMedia": "Add Media",
+    "uploading": "Uploading image...",
+    "imageAttached": "Image uploaded successfully",
+    "generateAI": "Generate with AI",
+    "readyPublish": "Ready to Publish",
+    "publishAll": "Publish all",
+    "scheduled": "Scheduled",
+    "draft": "Draft",
+    "explanation": "Each AI model has different strengths. Claude excels at nuance, GPT at versatility, Gemini at factual precision. By making them collaborate and challenge each other, every final text is better than any single model could produce alone."
+  },
+  "useCases": {
+    "title": "Built for teams that publish",
+    "subtitle": "Whether you're a solo creator or a 50-person agency.",
+    "items": [
+      {
+        "title": "Solo creators & freelancers",
+        "description": "Stop spending hours adapting content. Write once, publish everywhere. Focus on strategy, not copy-pasting."
+      },
+      {
+        "title": "Marketing teams",
+        "description": "One workspace per brand. Approval workflows. Calendar view. Everyone knows what's publishing and when."
+      },
+      {
+        "title": "Agencies",
+        "description": "Manage multiple brands from one account. Assign roles, control access, track performance across all clients. Unlimited posts on Agency plan."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple, transparent pricing",
+    "subtitle": "Free during Beta. Early users lock their rate forever when we launch.",
+    "mostPopular": "Most popular",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save2Months": "-17%",
+    "perMonth": "/ month",
+    "perYear": "/ year",
+    "billedAnnually": "Billed annually",
+    "customPriceLabel": "Custom",
+    "plans": [
+      {
+        "name": "Free",
+        "monthlyPrice": "€0",
+        "annualPrice": "€0",
+        "period": "during Beta",
+        "description": "Try everything with generous limits.",
+        "features": ["5 posts / month", "3 networks", "Basic tone controls", "Hashtag suggestions"],
+        "cta": "Start for free"
+      },
+      {
+        "name": "Creator",
+        "monthlyPrice": "€30",
+        "annualPrice": "€300",
+        "annualMonthly": "€25",
+        "period": "",
+        "description": "For creators and brands that publish consistently.",
+        "features": ["200 posts / month", "All networks", "Advanced tone & personas", "Content calendar", "Priority support"],
+        "cta": "Start free trial"
+      },
+      {
+        "name": "Agency",
+        "monthlyPrice": "",
+        "annualPrice": "",
+        "annualMonthly": "",
+        "period": "",
+        "description": "For teams managing multiple brands.",
+        "features": ["Unlimited posts", "All networks", "Multiple brands", "Team collaboration", "Analytics", "Account manager"],
+        "cta": "Talk to us",
+        "customPrice": true
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions? We've got answers.",
+    "items": [
+      {
+        "q": "What AI models does Loritalk use?",
+        "a": "Loritalk connects to multiple leading AI providers including Claude (Anthropic), GPT (OpenAI), and Gemini (Google). You can configure which models participate in your generation pipeline."
+      },
+      {
+        "q": "How is this different from ChatGPT?",
+        "a": "ChatGPT gives you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other's work — producing consistently higher quality. Plus, every post is automatically optimized for each specific platform."
+      },
+      {
+        "q": "Which social networks are supported?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), and TikTok."
+      },
+      {
+        "q": "Is my content private?",
+        "a": "Yes. Your content is never used to train AI models. All data is stored on our servers in Europe and processed under GDPR compliance."
+      },
+      {
+        "q": "Can I use it with my team?",
+        "a": "Absolutely. Create workspaces for each brand, invite team members with admin or publisher roles, and set up approval workflows so nothing goes live without review."
+      },
+      {
+        "q": "What happens after Beta?",
+        "a": "Paid plans kick in, but every Beta user keeps their current rate locked forever. No surprises."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Stop writing. Start publishing.",
+    "subtitle": "Join the Beta — free access, no credit card, and your rate is locked forever when we launch.",
+    "ctaPrimary": "Start creating for free",
+    "ctaSecondary": "See how it works"
+  },
+  "footer": {
+    "description": "AI content for every social network.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "features": "Features",
+    "changelog": "Changelog",
+    "supportedNetworks": "Supported networks",
+    "helpCenter": "Help center",
+    "contactUs": "Contact us",
+    "betaFeedback": "Beta feedback",
+    "apiDocs": "API docs",
+    "privacyPolicy": "Privacy policy",
+    "termsOfService": "Terms of service",
+    "cookiePolicy": "Cookie policy",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

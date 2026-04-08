@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Funkcijos",
+    "howItWorks": "Kaip tai veikia",
+    "pricing": "Kainos",
+    "beta": "Beta",
+    "startForFree": "Pradėkite nemokamai"
+  },
+  "hero": {
+    "badge": "Dabar Beta — nemokama ankstyvoji prieiga",
+    "headlineOne": "Viena idėja.",
+    "headlineTwo": "Kiekviena platforma.",
+    "description": "Įveskite temą ar idėją. Loritalk AI rašo optimizuotus įrašus Instagram, LinkedIn, X, TikTok ir kitiems — per sekundes. Keli AI modeliai varžosi, kad duotų jums geriausią rezultatą.",
+    "ctaPrimary": "Pradėkite kurti nemokamai",
+    "ctaSecondary": "Pažiūrėkite, kaip tai veikia",
+    "note": "Kredito kortelė nereikalinga · Nemokamai Beta metu"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Palaikomų socialinių tinklų",
+    "languagesValue": "3",
+    "languagesLabel": "Kalbos paleidimo metu",
+    "generationValue": "<5s",
+    "generationLabel": "Vidutinis generavimo laikas",
+    "freeValue": "Nemokamai",
+    "freeLabel": "Beta metu — be apribojimų"
+  },
+  "problem": {
+    "title": "Jūsų turinio darbo eiga yra sugedusi",
+    "subtitle": "Skamba pažįstamai?",
+    "items": [
+      {
+        "title": "Valandos švaistomos adaptuojant",
+        "description": "Rašote įrašą Instagram, tada perrašote LinkedIn, tada vėl X. Kiekviena platforma reikalauja kitokio tono, ilgio ir žymių."
+      },
+      {
+        "title": "AI, kuris skamba generiškai",
+        "description": "ChatGPT duoda vieną versiją, kuri skamba kaip visi kiti. Jokio prekės ženklo balso, jokio platformos suvokimo, jokio tikro optimizavimo."
+      },
+      {
+        "title": "Komandos kliūtys",
+        "description": "Turinys laukia patvirtinimo, pasimeta Slack gijose ir niekas nežino, kas suplanuota kitai savaitei."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk visa tai išsprendžia",
+    "subtitle": "Vienas brifingas. Kiekviena platforma. Keli AI varžosi dėl jūsų geriausio įrašo.",
+    "ctaPrimary": "Pradėkite kurti nemokamai",
+    "rows": [
+      {
+        "before": "1 įrašas = 45 min adaptavimo kiekvienai platformai",
+        "after": "1 brifingas = visos platformos per <5 sekundes"
+      },
+      {
+        "before": "1 AI modelis = generiškas, visiems vienodas tekstas",
+        "after": "Keli AI modeliai diskutuoja ir tobulina vieni kitus"
+      },
+      {
+        "before": "Turinys išsklaidytas tarp įrankių ir gijų",
+        "after": "Viena valdymo skydelis: kurkite, tvirtinkite, planuokite, publikuokite, sekite"
+      }
+    ]
+  },
+  "features": {
+    "title": "Viskas, ko reikia jūsų turinio komandai",
+    "subtitle": "Nuo idėjos iki paskelbto įrašo — Loritalk valdo visą darbo eigą.",
+    "items": [
+      {
+        "title": "Kelių modelių AI deliberacija",
+        "description": "Ne vienas AI — keli modeliai generuoja nepriklausomai, tada tobulina vieni kitų darbą. Gausite geriausią Claude, GPT ir Gemini kombinaciją."
+      },
+      {
+        "title": "Platformai optimizuotas turinys",
+        "description": "Kiekvienas įrašas pritaikytas savo platformai — teisingas tonas, ilgis, žymės, jaustukos ir formatas. Instagram aprašymai, LinkedIn straipsniai, X gijos, TikTok scenarijai."
+      },
+      {
+        "title": "Daugiakalbis generavimas",
+        "description": "Generuokite portugalų, anglų, ispanų ir kitomis kalbomis. Gimtosios kalbos lygio sklandumas su kultūriniais niuansais — ne tik vertimas."
+      },
+      {
+        "title": "Planuokite ir publikuokite",
+        "description": "Kalendoriaus rodinys, suplanuotas publikavimas ir tiesioginis skelbimas visuose prijungtuose kanaluose. Skirtingi laikai kiekvienai platformai."
+      },
+      {
+        "title": "Prekės ženklo balsas ir asmenybės",
+        "description": "Sukurkite AI asmenybes, kurios rašo kaip jūsų prekės ženklas. Valdykite toną nuo profesionalaus iki žaismingo. Kiekvienas įrašas skamba kaip jūs, ne kaip robotas."
+      },
+      {
+        "title": "Analitikos valdymo skydelis",
+        "description": "Sekite peržiūras, įsitraukimą, paspaudimus ir augimą visuose kanaluose. Žinokite, koks turinys veikia, ir padvigubinkite pastangas."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Nuo idėjos iki įrašo per 3 žingsnius",
+    "subtitle": "Jokių tuščių ekranų. Jokio kopijavimo tarp platformų.",
+    "steps": [
+      {
+        "title": "Parašykite savo brifingą",
+        "description": "Aprašykite, ką norite perduoti — taip paprastai kaip „naujo produkto pristatymas“ arba taip detaliai kaip pilnas brifingas. Pasirinkite savo kanalus, kalbą ir toną."
+      },
+      {
+        "title": "AI modeliai varžosi dėl jūsų",
+        "description": "Keli AI modeliai generuoja turinį nepriklausomai, tada peržiūri ir tobulina vieni kitų rezultatus. Gausite N nušlifuotų versijų kiekvienai platformai."
+      },
+      {
+        "title": "Pasirinkite, redaguokite ir publikuokite",
+        "description": "Pasirinkite mėgstamiausią versiją kiekvienam kanalui. Koreguokite bet ką vienu paspaudimu. Publikuokite dabar arba suplanuokite vėliau."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Kodėl keli AI įveikia vieną",
+    "subtitle": "Kiti įrankiai naudoja vieną modelį. Loritalk naudoja kelis — ir verčia juos tobulinti vieni kitus.",
+    "briefLabel": "Jūsų brifingas",
+    "channels": "Kanalai",
+    "language": "Kalba:",
+    "languages": "Anglų, Portugalų",
+    "submitted": "Pateikta prieš 2 s",
+    "round1": "1 RAUNDAS — NEPRIKLAUSOMAS GENERAVIMAS",
+    "generated": "Sugeneruota",
+    "round2": "2 raundas — Kryžminis tobulinimas",
+    "round2Desc": "Kiekvienas modelis skaito visus rezultatus ir tobulina savo versiją",
+    "qualityNote": "Kokybė pagerėjo ~40% palyginti su 1 raundu",
+    "pickEdit": "Pasirinkite ir redaguokite",
+    "addMedia": "Pridėti mediją",
+    "uploading": "Įkeliamas vaizdas...",
+    "imageAttached": "Vaizdas sėkmingai įkeltas",
+    "generateAI": "Generuoti su AI",
+    "readyPublish": "Paruošta publikavimui",
+    "publishAll": "Publikuoti viską",
+    "scheduled": "Suplanuota",
+    "draft": "Juodraštis",
+    "explanation": "Kiekvienas AI modelis turi skirtingas stiprybes. Claude puikiai tinka niuansams, GPT — universalumui, Gemini — faktiniam tikslumui. Verčiant juos bendradarbiauti ir mesti iššūkį vieni kitiems, kiekvienas galutinis tekstas yra geresnis, nei bet kuris vienas modelis galėtų sukurti pats."
+  },
+  "useCases": {
+    "title": "Sukurta komandoms, kurios publikuoja",
+    "subtitle": "Nesvarbu, ar esate vienas kūrėjas, ar 50 žmonių agentūra.",
+    "items": [
+      {
+        "title": "Pavieniai kūrėjai ir laisvai samdomi",
+        "description": "Nustokite švaistyti valandas turinio adaptavimui. Rašykite vieną kartą, publikuokite visur. Sutelkite dėmesį į strategiją, ne į kopijavimą."
+      },
+      {
+        "title": "Rinkodaros komandos",
+        "description": "Viena darbo erdvė kiekvienam prekės ženklui. Patvirtinimo darbo eigos. Kalendoriaus rodinys. Visi žino, kas publikuojama ir kada."
+      },
+      {
+        "title": "Agentūros",
+        "description": "Valdykite kelis prekės ženklus iš vienos paskyros. Priskirkite vaidmenis, valdykite prieigą, sekite rezultatus visų klientų atžvilgiu. Neriboti įrašai Agentūros plane."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Paprastos, skaidrios kainos",
+    "subtitle": "Nemokamai Beta metu. Ankstyvieji vartotojai užfiksuoja savo kainą amžinai paleidimo metu.",
+    "mostPopular": "Populiariausias",
+    "plans": [
+      {
+        "name": "Nemokamas",
+        "price": "€0",
+        "period": "Beta metu",
+        "description": "Išbandykite viską su dosniais limitais.",
+        "features": [
+          "20 įrašų / mėn.",
+          "3 tinklai",
+          "3 kalbos",
+          "Pagrindiniai tono valdikliai",
+          "Žymių pasiūlymai"
+        ],
+        "cta": "Pradėkite nemokamai"
+      },
+      {
+        "name": "Kūrėjas",
+        "price": "€19",
+        "period": "per mėnesį",
+        "description": "Kūrėjams ir prekės ženklams, kurie nuolat publikuoja.",
+        "features": [
+          "200 įrašų / mėn.",
+          "Visi tinklai",
+          "Visos kalbos",
+          "Išplėstinis tonas ir asmenybės",
+          "Turinio kalendorius",
+          "Prioritetinis palaikymas"
+        ],
+        "cta": "Pradėti nemokamą bandomąjį laikotarpį"
+      },
+      {
+        "name": "Agentūra",
+        "price": "€79",
+        "period": "per mėnesį",
+        "description": "Komandoms, valdančioms kelis prekės ženklus.",
+        "features": [
+          "Neriboti įrašai",
+          "Visi tinklai",
+          "Visos kalbos",
+          "Keli prekės ženklai",
+          "Komandinis bendradarbiavimas",
+          "Analitika",
+          "Paskyros vadybininkas"
+        ],
+        "cta": "Susisiekite su mumis"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Klausimai? Turime atsakymus.",
+    "items": [
+      {
+        "q": "Kokius AI modelius naudoja Loritalk?",
+        "a": "Loritalk jungiasi prie kelių pirmaujancių AI tiekėjų, įskaitant Claude (Anthropic), GPT (OpenAI) ir Gemini (Google). Galite konfigūruoti, kurie modeliai dalyvauja jūsų generavimo procese — arba naudoti savo API raktus."
+      },
+      {
+        "q": "Kuo tai skiriasi nuo ChatGPT?",
+        "a": "ChatGPT duoda vieną rezultatą iš vieno modelio. Loritalk paleidžia kelis modelius lygiagrečiai ir verčia juos tobulinti vieni kitų darbą — nuosekliai gamindamas aukštesnę kokybę. Be to, kiekvienas įrašas automatiškai optimizuojamas konkrečiai platformai."
+      },
+      {
+        "q": "Kokie socialiniai tinklai palaikomi?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok ir bet kokia pritaikyta platforma per webhook (įmonių tinklaraščiai, CMS, vidiniai įrankiai)."
+      },
+      {
+        "q": "Ar mano turinys yra privatus?",
+        "a": "Taip. Jūsų turinys niekada nėra naudojamas AI modelių mokymui. Visi duomenys saugomi mūsų serveriuose Europoje ir tvarkomi pagal BDAR."
+      },
+      {
+        "q": "Ar galiu naudoti su savo komanda?",
+        "a": "Žinoma. Sukurkite darbo erdves kiekvienam prekės ženklui, pakvieskite komandos narius su administratoriaus ar leidėjo vaidmenimis ir nustatykite patvirtinimo darbo eigas, kad niekas nepaskelbtų be peržiūros."
+      },
+      {
+        "q": "Kas atsitiks po Beta?",
+        "a": "Įsigalios mokamos prenumeratos, bet kiekvienas Beta naudotojas išlaikys dabartinę kainą užfiksuotą amžinai. Jokių staigmenų."
+      },
+      {
+        "q": "Ar galiu naudoti savo AI raktus?",
+        "a": "Taip. Galite prijungti savo OpenAI, Anthropic ar Google API raktus. Arba naudokite mūsų integruotą AI paslaugą — išorinių raktų nereikia."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Nustokite rašyti. Pradėkite publikuoti.",
+    "subtitle": "Prisijunkite prie Beta — nemokama prieiga, be kredito kortelės, ir jūsų kaina užfiksuota amžinai paleidimo metu.",
+    "ctaPrimary": "Pradėkite kurti nemokamai",
+    "ctaSecondary": "Pažiūrėkite, kaip tai veikia"
+  },
+  "footer": {
+    "description": "AI turinys kiekvienam socialiniam tinklui.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Produktas",
+    "resources": "Ištekliai",
+    "legal": "Teisinė informacija",
+    "features": "Funkcijos",
+    "changelog": "Pakeitimų žurnalas",
+    "supportedNetworks": "Palaikomi tinklai",
+    "helpCenter": "Pagalbos centras",
+    "contactUs": "Susisiekite su mumis",
+    "betaFeedback": "Beta atsiliepimai",
+    "apiDocs": "API dokumentacija",
+    "privacyPolicy": "Privatumo politika",
+    "termsOfService": "Paslaugų sąlygos",
+    "cookiePolicy": "Slapukų politika",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "beta": "Beta",
+    "startForFree": "Commencer gratuitement"
+  },
+  "hero": {
+    "badge": "Maintenant en Beta — accès anticipé gratuit",
+    "headlineOne": "Une idée.",
+    "headlineTwo": "Chaque plateforme.",
+    "description": "Saisissez un thème ou une idée. L'IA de Loritalk rédige des publications optimisées pour Instagram, LinkedIn, X, TikTok et plus — en quelques secondes. Plusieurs modèles d'IA rivalisent pour vous donner le meilleur résultat.",
+    "ctaPrimary": "Commencer à créer gratuitement",
+    "ctaSecondary": "Voir comment ça marche",
+    "note": "Pas de carte bancaire requise · Gratuit pendant la Beta"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Réseaux sociaux supportés",
+    "languagesValue": "3",
+    "languagesLabel": "Langues au lancement",
+    "generationValue": "<5s",
+    "generationLabel": "Temps moyen de génération",
+    "freeValue": "Gratuit",
+    "freeLabel": "Pendant la Beta — sans limites"
+  },
+  "problem": {
+    "title": "Votre workflow de contenu est cassé",
+    "subtitle": "Ça vous dit quelque chose ?",
+    "items": [
+      {
+        "title": "Des heures perdues à adapter",
+        "description": "Vous écrivez une publication pour Instagram, puis la réécrivez pour LinkedIn, puis encore pour X. Chaque plateforme nécessite un ton, une longueur et des hashtags différents."
+      },
+      {
+        "title": "Une IA qui sonne générique",
+        "description": "ChatGPT vous donne une version qui sonne comme tout le monde. Pas de voix de marque, pas de conscience de plateforme, pas de vraie optimisation."
+      },
+      {
+        "title": "Goulots d'étranglement en équipe",
+        "description": "Le contenu attend l'approbation, se perd dans les fils Slack et personne ne sait ce qui est programmé pour la semaine prochaine."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk résout tout ça",
+    "subtitle": "Un brief. Chaque plateforme. Plusieurs IA rivalisent pour votre meilleure publication.",
+    "ctaPrimary": "Commencer à créer gratuitement",
+    "rows": [
+      {
+        "before": "1 publication = 45 min d'adaptation à chaque plateforme",
+        "after": "1 brief = toutes les plateformes en <5 secondes"
+      },
+      {
+        "before": "1 modèle d'IA = texte générique, taille unique",
+        "after": "Plusieurs modèles d'IA délibèrent et s'affinent mutuellement"
+      },
+      {
+        "before": "Contenu dispersé entre outils et fils de discussion",
+        "after": "Un tableau de bord : créer, approuver, planifier, publier, suivre"
+      }
+    ]
+  },
+  "features": {
+    "title": "Tout ce dont votre équipe de contenu a besoin",
+    "subtitle": "De l'idée à la publication — Loritalk gère l'ensemble du workflow.",
+    "items": [
+      {
+        "title": "Délibération IA multi-modèles",
+        "description": "Pas une seule IA — plusieurs modèles génèrent indépendamment, puis affinent le travail des autres. Vous obtenez le meilleur de Claude, GPT et Gemini combinés."
+      },
+      {
+        "title": "Contenu optimisé par plateforme",
+        "description": "Chaque publication est adaptée à sa plateforme — bon ton, longueur, hashtags, emojis et format. Légendes Instagram, articles LinkedIn, fils X, scripts TikTok."
+      },
+      {
+        "title": "Génération multilingue",
+        "description": "Générez en portugais, anglais, espagnol et plus. Fluidité de niveau natif avec nuances culturelles — pas qu'une simple traduction."
+      },
+      {
+        "title": "Planifier et publier",
+        "description": "Vue calendrier, publication planifiée et publication directe sur tous les canaux connectés. Horaires différents par plateforme."
+      },
+      {
+        "title": "Voix de marque et personas",
+        "description": "Créez des personas IA qui écrivent comme votre marque. Contrôlez le ton du professionnel au ludique. Chaque publication sonne comme vous, pas comme un robot."
+      },
+      {
+        "title": "Tableau de bord analytique",
+        "description": "Suivez les impressions, l'engagement, les clics et la croissance sur tous les canaux. Sachez quel contenu fonctionne et doublez la mise."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "De l'idée à la publication en 3 étapes",
+    "subtitle": "Fini les écrans vides. Fini le copier-coller entre plateformes.",
+    "steps": [
+      {
+        "title": "Rédigez votre brief",
+        "description": "Décrivez ce que vous voulez communiquer — aussi simple que « lancement d'un nouveau produit » ou aussi détaillé qu'un brief complet. Choisissez vos canaux, langue et ton."
+      },
+      {
+        "title": "Les modèles d'IA rivalisent pour vous",
+        "description": "Plusieurs modèles d'IA génèrent du contenu indépendamment, puis examinent et affinent les résultats des autres. Vous recevez N versions peaufinées par plateforme."
+      },
+      {
+        "title": "Choisissez, modifiez et publiez",
+        "description": "Choisissez votre version préférée pour chaque canal. Ajustez n'importe quoi en un clic. Publiez maintenant ou planifiez pour plus tard."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Pourquoi plusieurs IA battent une seule",
+    "subtitle": "Les autres outils utilisent un modèle. Loritalk en utilise plusieurs — et les fait s'améliorer mutuellement.",
+    "briefLabel": "Votre brief",
+    "channels": "Canaux",
+    "language": "Langue :",
+    "languages": "Anglais, Portugais",
+    "submitted": "Soumis il y a 2s",
+    "round1": "TOUR 1 — GÉNÉRATION INDÉPENDANTE",
+    "generated": "Généré",
+    "round2": "Tour 2 — Affinage croisé",
+    "round2Desc": "Chaque modèle lit toutes les sorties et améliore sa propre version",
+    "qualityNote": "Qualité améliorée de ~40% par rapport au Tour 1",
+    "pickEdit": "Choisir et modifier",
+    "addMedia": "Ajouter un média",
+    "uploading": "Téléchargement de l'image...",
+    "imageAttached": "Image téléchargée avec succès",
+    "generateAI": "Générer avec l'IA",
+    "readyPublish": "Prêt à publier",
+    "publishAll": "Tout publier",
+    "scheduled": "Planifié",
+    "draft": "Brouillon",
+    "explanation": "Chaque modèle d'IA a des forces différentes. Claude excelle dans la nuance, GPT dans la polyvalence, Gemini dans la précision factuelle. En les faisant collaborer et se challenger mutuellement, chaque texte final est meilleur que ce qu'un seul modèle pourrait produire seul."
+  },
+  "useCases": {
+    "title": "Conçu pour les équipes qui publient",
+    "subtitle": "Que vous soyez créateur solo ou une agence de 50 personnes.",
+    "items": [
+      {
+        "title": "Créateurs solo et freelances",
+        "description": "Arrêtez de passer des heures à adapter du contenu. Écrivez une fois, publiez partout. Concentrez-vous sur la stratégie, pas sur le copier-coller."
+      },
+      {
+        "title": "Équipes marketing",
+        "description": "Un espace de travail par marque. Workflows d'approbation. Vue calendrier. Tout le monde sait ce qui est publié et quand."
+      },
+      {
+        "title": "Agences",
+        "description": "Gérez plusieurs marques depuis un seul compte. Attribuez des rôles, contrôlez l'accès, suivez la performance sur tous les clients. Publications illimitées avec le plan Agence."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Tarification simple et transparente",
+    "subtitle": "Gratuit pendant la Beta. Les premiers utilisateurs verrouillent leur tarif pour toujours au lancement.",
+    "mostPopular": "Le plus populaire",
+    "plans": [
+      {
+        "name": "Gratuit",
+        "price": "€0",
+        "period": "pendant la Beta",
+        "description": "Essayez tout avec des limites généreuses.",
+        "features": [
+          "20 publications / mois",
+          "3 réseaux",
+          "3 langues",
+          "Contrôles de ton basiques",
+          "Suggestions de hashtags"
+        ],
+        "cta": "Commencer gratuitement"
+      },
+      {
+        "name": "Créateur",
+        "price": "€19",
+        "period": "par mois",
+        "description": "Pour les créateurs et marques qui publient régulièrement.",
+        "features": [
+          "200 publications / mois",
+          "Tous les réseaux",
+          "Toutes les langues",
+          "Ton avancé et personas",
+          "Calendrier de contenu",
+          "Support prioritaire"
+        ],
+        "cta": "Démarrer l'essai gratuit"
+      },
+      {
+        "name": "Agence",
+        "price": "€79",
+        "period": "par mois",
+        "description": "Pour les équipes gérant plusieurs marques.",
+        "features": [
+          "Publications illimitées",
+          "Tous les réseaux",
+          "Toutes les langues",
+          "Plusieurs marques",
+          "Collaboration d'équipe",
+          "Analytique",
+          "Gestionnaire de compte"
+        ],
+        "cta": "Contactez-nous"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Des questions ? Nous avons les réponses.",
+    "items": [
+      {
+        "q": "Quels modèles d'IA utilise Loritalk ?",
+        "a": "Loritalk se connecte à plusieurs fournisseurs d'IA de premier plan, dont Claude (Anthropic), GPT (OpenAI) et Gemini (Google). Vous pouvez configurer quels modèles participent à votre pipeline de génération — ou utiliser vos propres clés API."
+      },
+      {
+        "q": "En quoi est-ce différent de ChatGPT ?",
+        "a": "ChatGPT vous donne une sortie d'un modèle. Loritalk exécute plusieurs modèles en parallèle puis les fait affiner le travail des autres — produisant une qualité constamment supérieure. De plus, chaque publication est automatiquement optimisée pour chaque plateforme spécifique."
+      },
+      {
+        "q": "Quels réseaux sociaux sont supportés ?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok et toute plateforme personnalisée via webhook (blogs d'entreprise, CMS, outils internes)."
+      },
+      {
+        "q": "Mon contenu est-il privé ?",
+        "a": "Oui. Votre contenu n'est jamais utilisé pour entraîner des modèles d'IA. Toutes les données sont stockées sur nos serveurs en Europe et traitées en conformité avec le RGPD."
+      },
+      {
+        "q": "Puis-je l'utiliser avec mon équipe ?",
+        "a": "Absolument. Créez des espaces de travail pour chaque marque, invitez des membres d'équipe avec des rôles admin ou éditeur et configurez des workflows d'approbation pour que rien ne soit publié sans vérification."
+      },
+      {
+        "q": "Que se passe-t-il après la Beta ?",
+        "a": "Les plans payants entrent en vigueur, mais chaque utilisateur Beta conserve son tarif actuel verrouillé pour toujours. Pas de surprises."
+      },
+      {
+        "q": "Puis-je utiliser mes propres clés IA ?",
+        "a": "Oui. Vous pouvez connecter vos propres clés API OpenAI, Anthropic ou Google. Ou utilisez notre service IA intégré — aucune clé externe nécessaire."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Arrêtez d'écrire. Commencez à publier.",
+    "subtitle": "Rejoignez la Beta — accès gratuit, pas de carte bancaire, et votre tarif est verrouillé pour toujours au lancement.",
+    "ctaPrimary": "Commencer à créer gratuitement",
+    "ctaSecondary": "Voir comment ça marche"
+  },
+  "footer": {
+    "description": "Contenu IA pour chaque réseau social.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Produit",
+    "resources": "Ressources",
+    "legal": "Mentions légales",
+    "features": "Fonctionnalités",
+    "changelog": "Journal des modifications",
+    "supportedNetworks": "Réseaux supportés",
+    "helpCenter": "Centre d'aide",
+    "contactUs": "Contactez-nous",
+    "betaFeedback": "Retour Beta",
+    "apiDocs": "Documentation API",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookiePolicy": "Politique de cookies",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

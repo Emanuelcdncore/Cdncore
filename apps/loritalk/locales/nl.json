@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Functies",
+    "howItWorks": "Hoe het werkt",
+    "pricing": "Prijzen",
+    "beta": "Beta",
+    "startForFree": "Gratis beginnen"
+  },
+  "hero": {
+    "badge": "Nu in Beta — gratis vroege toegang",
+    "headlineOne": "Eén idee.",
+    "headlineTwo": "Elk platform.",
+    "description": "Typ een thema of idee. De AI van Loritalk schrijft geoptimaliseerde berichten voor Instagram, LinkedIn, X, TikTok en meer — in seconden. Meerdere AI-modellen concurreren om je het beste resultaat te geven.",
+    "ctaPrimary": "Begin gratis te creëren",
+    "ctaSecondary": "Bekijk hoe het werkt",
+    "note": "Geen creditcard nodig · Gratis tijdens de Beta"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Ondersteunde sociale netwerken",
+    "languagesValue": "3",
+    "languagesLabel": "Talen bij lancering",
+    "generationValue": "<5s",
+    "generationLabel": "Gemiddelde generatietijd",
+    "freeValue": "Gratis",
+    "freeLabel": "Tijdens de Beta — zonder beperkingen"
+  },
+  "problem": {
+    "title": "Je contentworkflow is kapot",
+    "subtitle": "Klinkt bekend?",
+    "items": [
+      {
+        "title": "Uren verspild aan aanpassen",
+        "description": "Je schrijft een bericht voor Instagram, herschrijft het voor LinkedIn, dan weer voor X. Elk platform vereist een andere toon, lengte en hashtags."
+      },
+      {
+        "title": "AI die generiek klinkt",
+        "description": "ChatGPT geeft je één versie die klinkt als iedereen. Geen merkstem, geen platformbewustzijn, geen echte optimalisatie."
+      },
+      {
+        "title": "Knelpunten in het team",
+        "description": "Content wacht op goedkeuring, raakt verloren in Slack-threads en niemand weet wat er gepland staat voor volgende week."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk lost dat allemaal op",
+    "subtitle": "Eén briefing. Elk platform. Meerdere AI's concurreren om je beste bericht.",
+    "ctaPrimary": "Begin gratis te creëren",
+    "rows": [
+      {
+        "before": "1 bericht = 45 min aanpassen per platform",
+        "after": "1 briefing = alle platforms in <5 seconden"
+      },
+      {
+        "before": "1 AI-model = generieke, one-size-fits-all tekst",
+        "after": "Meerdere AI-modellen overleggen en verfijnen elkaar"
+      },
+      {
+        "before": "Content verspreid over tools en threads",
+        "after": "Eén dashboard: maak, keur goed, plan, publiceer, volg"
+      }
+    ]
+  },
+  "features": {
+    "title": "Alles wat je contentteam nodig heeft",
+    "subtitle": "Van idee tot gepubliceerd bericht — Loritalk beheert de volledige workflow.",
+    "items": [
+      {
+        "title": "Multi-model AI-deliberatie",
+        "description": "Niet één AI — meerdere modellen genereren onafhankelijk en verfijnen vervolgens elkaars werk. Je krijgt het beste van Claude, GPT en Gemini gecombineerd."
+      },
+      {
+        "title": "Platformgeoptimaliseerde content",
+        "description": "Elk bericht is op maat gemaakt voor zijn platform — juiste toon, lengte, hashtags, emoji's en format. Instagram-bijschriften, LinkedIn-artikelen, X-threads, TikTok-scripts."
+      },
+      {
+        "title": "Meertalige generatie",
+        "description": "Genereer in het Portugees, Engels, Spaans en meer. Vloeiendheid op moedertaalniveau met culturele nuances — niet zomaar een vertaling."
+      },
+      {
+        "title": "Plan en publiceer",
+        "description": "Kalenderweergave, geplande publicatie en direct posten naar alle verbonden kanalen. Verschillende tijden per platform."
+      },
+      {
+        "title": "Merkstem en persona's",
+        "description": "Maak AI-persona's die schrijven zoals jouw merk. Beheer de toon van professioneel tot speels. Elk bericht klinkt als jij, niet als een robot."
+      },
+      {
+        "title": "Analytisch dashboard",
+        "description": "Volg impressies, betrokkenheid, klikken en groei over alle kanalen. Weet welke content werkt en verdubbel je inzet."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Van idee tot bericht in 3 stappen",
+    "subtitle": "Geen lege schermen meer. Geen copy-paste meer tussen platforms.",
+    "steps": [
+      {
+        "title": "Schrijf je briefing",
+        "description": "Beschrijf wat je wilt communiceren — zo eenvoudig als \"nieuwe productlancering\" of zo gedetailleerd als een volledige brief. Kies je kanalen, taal en toon."
+      },
+      {
+        "title": "AI-modellen concurreren voor jou",
+        "description": "Meerdere AI-modellen genereren content onafhankelijk, beoordelen en verfijnen vervolgens elkaars output. Je ontvangt N gepolijste versies per platform."
+      },
+      {
+        "title": "Kies, bewerk en publiceer",
+        "description": "Kies je favoriete versie voor elk kanaal. Pas alles aan met één klik. Publiceer nu of plan voor later."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Waarom meerdere AI's één verslaan",
+    "subtitle": "Andere tools gebruiken één model. Loritalk gebruikt er meerdere — en laat ze elkaar verbeteren.",
+    "briefLabel": "Je briefing",
+    "channels": "Kanalen",
+    "language": "Taal:",
+    "languages": "Engels, Portugees",
+    "submitted": "Ingediend 2s geleden",
+    "round1": "RONDE 1 — ONAFHANKELIJKE GENERATIE",
+    "generated": "Gegenereerd",
+    "round2": "Ronde 2 — Kruisverfijning",
+    "round2Desc": "Elk model leest alle outputs en verbetert zijn eigen versie",
+    "qualityNote": "Kwaliteit verbeterd met ~40% t.o.v. Ronde 1",
+    "pickEdit": "Kies en bewerk",
+    "addMedia": "Media toevoegen",
+    "uploading": "Afbeelding uploaden...",
+    "imageAttached": "Afbeelding succesvol geüpload",
+    "generateAI": "Genereer met AI",
+    "readyPublish": "Klaar om te publiceren",
+    "publishAll": "Alles publiceren",
+    "scheduled": "Gepland",
+    "draft": "Concept",
+    "explanation": "Elk AI-model heeft verschillende sterke punten. Claude blinkt uit in nuance, GPT in veelzijdigheid, Gemini in feitelijke precisie. Door ze te laten samenwerken en elkaar uit te dagen, is elke definitieve tekst beter dan wat één enkel model alleen zou kunnen produceren."
+  },
+  "useCases": {
+    "title": "Gebouwd voor teams die publiceren",
+    "subtitle": "Of je nu een solocreator bent of een bureau van 50 personen.",
+    "items": [
+      {
+        "title": "Solocreators en freelancers",
+        "description": "Stop met uren besteden aan het aanpassen van content. Schrijf één keer, publiceer overal. Focus op strategie, niet op copy-paste."
+      },
+      {
+        "title": "Marketingteams",
+        "description": "Eén workspace per merk. Goedkeuringsworkflows. Kalenderweergave. Iedereen weet wat er gepubliceerd wordt en wanneer."
+      },
+      {
+        "title": "Bureaus",
+        "description": "Beheer meerdere merken vanuit één account. Wijs rollen toe, beheer toegang, volg prestaties over alle klanten. Onbeperkte berichten op het Bureau-plan."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Eenvoudige, transparante prijzen",
+    "subtitle": "Gratis tijdens de Beta. Vroege gebruikers vergrendelen hun tarief voor altijd bij lancering.",
+    "mostPopular": "Meest populair",
+    "plans": [
+      {
+        "name": "Gratis",
+        "price": "€0",
+        "period": "tijdens de Beta",
+        "description": "Probeer alles met ruime limieten.",
+        "features": [
+          "20 berichten / maand",
+          "3 netwerken",
+          "3 talen",
+          "Basis toonbesturing",
+          "Hashtag-suggesties"
+        ],
+        "cta": "Gratis beginnen"
+      },
+      {
+        "name": "Creator",
+        "price": "€19",
+        "period": "per maand",
+        "description": "Voor creators en merken die consistent publiceren.",
+        "features": [
+          "200 berichten / maand",
+          "Alle netwerken",
+          "Alle talen",
+          "Geavanceerde toon en persona's",
+          "Contentkalender",
+          "Prioriteitsondersteuning"
+        ],
+        "cta": "Gratis proefperiode starten"
+      },
+      {
+        "name": "Bureau",
+        "price": "€79",
+        "period": "per maand",
+        "description": "Voor teams die meerdere merken beheren.",
+        "features": [
+          "Onbeperkte berichten",
+          "Alle netwerken",
+          "Alle talen",
+          "Meerdere merken",
+          "Teamsamenwerking",
+          "Analytics",
+          "Accountmanager"
+        ],
+        "cta": "Neem contact op"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Vragen? Wij hebben antwoorden.",
+    "items": [
+      {
+        "q": "Welke AI-modellen gebruikt Loritalk?",
+        "a": "Loritalk verbindt met meerdere toonaangevende AI-providers, waaronder Claude (Anthropic), GPT (OpenAI) en Gemini (Google). Je kunt configureren welke modellen deelnemen aan je generatiepipeline — of je eigen API-sleutels gebruiken."
+      },
+      {
+        "q": "Hoe verschilt dit van ChatGPT?",
+        "a": "ChatGPT geeft je één output van één model. Loritalk draait meerdere modellen parallel en laat ze vervolgens elkaars werk verfijnen — wat consistent hogere kwaliteit oplevert. Bovendien wordt elk bericht automatisch geoptimaliseerd voor elk specifiek platform."
+      },
+      {
+        "q": "Welke sociale netwerken worden ondersteund?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok en elk aangepast platform via webhook (bedrijfsblogs, CMS, interne tools)."
+      },
+      {
+        "q": "Is mijn content privé?",
+        "a": "Ja. Je content wordt nooit gebruikt om AI-modellen te trainen. Alle data wordt opgeslagen op onze servers in Europa en verwerkt conform de AVG."
+      },
+      {
+        "q": "Kan ik het gebruiken met mijn team?",
+        "a": "Absoluut. Maak workspaces voor elk merk, nodig teamleden uit met admin- of publisher-rollen en stel goedkeuringsworkflows in zodat niets live gaat zonder beoordeling."
+      },
+      {
+        "q": "Wat gebeurt er na de Beta?",
+        "a": "Betaalde plannen gaan in, maar elke Beta-gebruiker behoudt zijn huidige tarief voor altijd vergrendeld. Geen verrassingen."
+      },
+      {
+        "q": "Kan ik mijn eigen AI-sleutels gebruiken?",
+        "a": "Ja. Je kunt je eigen OpenAI, Anthropic of Google API-sleutels verbinden. Of gebruik onze ingebouwde AI-service — geen externe sleutels nodig."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Stop met schrijven. Begin met publiceren.",
+    "subtitle": "Doe mee met de Beta — gratis toegang, geen creditcard, en je tarief is voor altijd vergrendeld bij lancering.",
+    "ctaPrimary": "Begin gratis te creëren",
+    "ctaSecondary": "Bekijk hoe het werkt"
+  },
+  "footer": {
+    "description": "AI-content voor elk sociaal netwerk.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Product",
+    "resources": "Bronnen",
+    "legal": "Juridisch",
+    "features": "Functies",
+    "changelog": "Wijzigingslogboek",
+    "supportedNetworks": "Ondersteunde netwerken",
+    "helpCenter": "Helpcentrum",
+    "contactUs": "Neem contact op",
+    "betaFeedback": "Beta-feedback",
+    "apiDocs": "API-documentatie",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfService": "Servicevoorwaarden",
+    "cookiePolicy": "Cookiebeleid",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

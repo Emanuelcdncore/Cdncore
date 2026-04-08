@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Gnéithe",
+    "howItWorks": "Conas a oibríonn sé",
+    "pricing": "Praghsáil",
+    "beta": "Beta",
+    "startForFree": "Tosaigh saor in aisce"
+  },
+  "hero": {
+    "badge": "Anois i mBeta — rochtain luath saor in aisce",
+    "headlineOne": "Smaoineamh amháin.",
+    "headlineTwo": "Gach ardán.",
+    "description": "Clóscríobh téama nó smaoineamh. Scríobhann AI Loritalk postálacha optamaithe d'Instagram, LinkedIn, X, TikTok, agus tuilleadh — i soicindí. Bíonn múnlaí AI éagsúla san iomaíocht chun an toradh is fearr a thabhairt duit.",
+    "ctaPrimary": "Tosaigh ag cruthú saor in aisce",
+    "ctaSecondary": "Féach conas a oibríonn sé",
+    "note": "Níl cárta creidmheasa ag teastáil · Saor in aisce le linn Beta"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Líonraí sóisialta tacaithe",
+    "languagesValue": "3",
+    "languagesLabel": "Teangacha ag an seoladh",
+    "generationValue": "<5s",
+    "generationLabel": "Meánam giniúna",
+    "freeValue": "Saor in aisce",
+    "freeLabel": "Le linn Beta — gan teorainneacha"
+  },
+  "problem": {
+    "title": "Tá do shreabhadh oibre ábhair briste",
+    "subtitle": "An bhfuil sé sin aitheanta?",
+    "items": [
+      {
+        "title": "Uaireanta curtha amú ag oiriúnú",
+        "description": "Scríobhann tú postáil d'Instagram, ansin athscríobhann tú é do LinkedIn, ansin arís do X. Teastaíonn ton, fad agus haischlibeanna éagsúla ó gach ardán."
+      },
+      {
+        "title": "AI a fhuaimníonn ginearálta",
+        "description": "Tugann ChatGPT leagan amháin duit a fhuaimníonn cosúil le gach duine eile. Gan guth branda, gan feasacht ardáin, gan fíor-optamú."
+      },
+      {
+        "title": "Scrogaill fhoirne",
+        "description": "Bíonn ábhar ag fanacht le ceadú, cailltear i snáitheanna Slack é agus ní fhios d'aon duine cad atá sceidealaithe don tseachtain seo chugainn."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Réitíonn Loritalk é seo go léir",
+    "subtitle": "Achoimre amháin. Gach ardán. AIanna iolracha ag iomaíocht ar son do phostáil is fearr.",
+    "ctaPrimary": "Tosaigh ag cruthú saor in aisce",
+    "rows": [
+      {
+        "before": "1 postáil = 45 nóim ag oiriúnú do gach ardán",
+        "after": "1 achoimre = gach ardán i <5 soicind"
+      },
+      {
+        "before": "1 múnla AI = téacs ginearálta, oiriúnach do chách",
+        "after": "Múnlaí AI iolracha ag plé agus ag feabhsú a chéile"
+      },
+      {
+        "before": "Ábhar scaipthe trasna uirlisí agus snáitheanna",
+        "after": "Painéal amháin: cruthaigh, ceadaigh, sceidealáil, foilsigh, rianáil"
+      }
+    ]
+  },
+  "features": {
+    "title": "Gach rud a theastaíonn ó d'fhoireann ábhair",
+    "subtitle": "Ó smaoineamh go postáil fhoilsithe — láimhseálann Loritalk an sreabhadh oibre iomlán.",
+    "items": [
+      {
+        "title": "Díospóireacht AI Il-Mhúnla",
+        "description": "Ní AI amháin — gineann múnlaí iolracha go neamhspleách, ansin feabhsaíonn siad obair a chéile. Faigheann tú an chuid is fearr de Claude, GPT, agus Gemini le chéile."
+      },
+      {
+        "title": "Ábhar optamaithe don ardán",
+        "description": "Tá gach postáil saincheaptha dá ardán féin — ton, fad, haischlibeanna, straoiseoga agus formáid chearta. Fotheidil Instagram, ailt LinkedIn, snáitheanna X, scripteanna TikTok."
+      },
+      {
+        "title": "Giniúint ilteangach",
+        "description": "Gin i bPortaingéilis, Béarla, Spáinnis agus tuilleadh. Líofacht ar leibhéal dúchais le nuáinsí cultúrtha — ní aistriúchán amháin."
+      },
+      {
+        "title": "Sceidealáil agus foilsigh",
+        "description": "Amharc féilire, foilsiú sceidealaithe agus postáil dhíreach chuig gach cainéal nasctha. Amanna éagsúla in aghaidh an ardáin."
+      },
+      {
+        "title": "Guth branda agus pearsa",
+        "description": "Cruthaigh pearsana AI a scríobhann cosúil le do bhranda. Rialú toin ó ghairmiúil go spraíúil. Fuaimníonn gach postáil cosúil leat féin, ní cosúil le róbat."
+      },
+      {
+        "title": "Painéal anailísíochta",
+        "description": "Rianáil tuairimí, rannpháirtíocht, cliceálacha agus fás trasna gach cainéal. Bíodh a fhios agat cén ábhar a oibríonn agus méadaigh an iarracht."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Ó smaoineamh go postáil i 3 chéim",
+    "subtitle": "Níl scáileáin fholmha ann a thuilleadh. Níl cóipeáil idir ardáin ann a thuilleadh.",
+    "steps": [
+      {
+        "title": "Scríobh d'achoimre",
+        "description": "Cuir síos ar cad ba mhaith leat a chur in iúl — chomh simplí le \"seoladh táirge nua\" nó chomh mionsonraithe le hachoimre iomlán. Roghnaigh do chainéil, teanga agus ton."
+      },
+      {
+        "title": "Bíonn múnlaí AI ag iomaíocht ar do shon",
+        "description": "Gineann múnlaí AI iolracha ábhar go neamhspleách, ansin déanann siad athbhreithniú agus feabhsú ar aschur a chéile. Faigheann tú N leagan snasta in aghaidh an ardáin."
+      },
+      {
+        "title": "Roghnaigh, cuir in eagar agus foilsigh",
+        "description": "Roghnaigh do leagan is fearr leat do gach cainéal. Coigeartaigh rud ar bith le cliceáil amháin. Foilsigh anois nó sceidealáil do níos déanaí."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Cén fáth a mbuaileann AIanna iolracha ceann amháin",
+    "subtitle": "Úsáideann uirlisí eile múnla amháin. Úsáideann Loritalk roinnt — agus cuireann sé orthu a chéile a fheabhsú.",
+    "briefLabel": "D'achoimre",
+    "channels": "Cainéil",
+    "language": "Teanga:",
+    "languages": "Béarla, Portaingéilis",
+    "submitted": "Curtha isteach 2s ó shin",
+    "round1": "BABHTA 1 — GINIÚINT NEAMHSPLEÁCH",
+    "generated": "Ginte",
+    "round2": "Babhta 2 — Tras-fheabhsú",
+    "round2Desc": "Léann gach múnla gach aschur agus feabhsaíonn a leagan féin",
+    "qualityNote": "Feabhsaíodh cáilíocht ~40% i gcomparáid le Babhta 1",
+    "pickEdit": "Roghnaigh agus cuir in eagar",
+    "addMedia": "Cuir meán leis",
+    "uploading": "Íomhá á huaslódáil...",
+    "imageAttached": "Íomhá uaslódáilte go rathúil",
+    "generateAI": "Gin le AI",
+    "readyPublish": "Réidh le foilsiú",
+    "publishAll": "Foilsigh iad go léir",
+    "scheduled": "Sceidealaithe",
+    "draft": "Dréacht",
+    "explanation": "Tá láidreachtaí éagsúla ag gach múnla AI. Sáraíonn Claude ar nuáinsí, GPT ar iléagsúlacht, Gemini ar chruinneas fíorasach. Trí iad a chur ag comhoibriú agus ag dúshlán a chéile, bíonn gach téacs deiridh níos fearr ná mar a d'fhéadfadh aon mhúnla amháin a tháirgeadh leis féin."
+  },
+  "useCases": {
+    "title": "Tógtha d'fhoirne a fhoilsíonn",
+    "subtitle": "Cibé an cruthaitheoir aonair thú nó gníomhaireacht 50 duine.",
+    "items": [
+      {
+        "title": "Cruthaitheoirí aonair agus saoroibrithe",
+        "description": "Stad de bheith ag caitheamh uaireanta ag oiriúnú ábhair. Scríobh uair amháin, foilsigh i ngach áit. Dírigh ar straitéis, ní ar chóipeáil."
+      },
+      {
+        "title": "Foirne margaíochta",
+        "description": "Spás oibre amháin in aghaidh an bhranda. Sreabhanna oibre ceadaithe. Amharc féilire. Tá a fhios ag gach duine cad atá á fhoilsiú agus cathain."
+      },
+      {
+        "title": "Gníomhaireachtaí",
+        "description": "Bainistigh brandaí iolracha ó chuntas amháin. Sann róil, rialú rochtain, rianáil feidhmíochta trasna gach cliant. Postálacha gan teorainn ar phlean Gníomhaireachta."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Praghsáil shimplí, thrédhearcach",
+    "subtitle": "Saor in aisce le linn Beta. Glasálann luathúsáideoirí a ráta go deo nuair a sheolaim.",
+    "mostPopular": "Is coitianta",
+    "plans": [
+      {
+        "name": "Saor in aisce",
+        "price": "€0",
+        "period": "le linn Beta",
+        "description": "Bain triail as gach rud le teorainneacha flaithiúla.",
+        "features": [
+          "20 postáil / mí",
+          "3 líonra",
+          "3 theanga",
+          "Rialuithe toin bunúsacha",
+          "Moltaí haischlib"
+        ],
+        "cta": "Tosaigh saor in aisce"
+      },
+      {
+        "name": "Cruthaitheoir",
+        "price": "€19",
+        "period": "in aghaidh na míosa",
+        "description": "Do chruthaitheoirí agus brandaí a fhoilsíonn go seasta.",
+        "features": [
+          "200 postáil / mí",
+          "Gach líonra",
+          "Gach teanga",
+          "Ton ardleibhéil agus pearsana",
+          "Féilire ábhair",
+          "Tacaíocht tosaíochta"
+        ],
+        "cta": "Tosaigh triail saor in aisce"
+      },
+      {
+        "name": "Gníomhaireacht",
+        "price": "€79",
+        "period": "in aghaidh na míosa",
+        "description": "D'fhoirne a bhainistíonn brandaí iolracha.",
+        "features": [
+          "Postálacha gan teorainn",
+          "Gach líonra",
+          "Gach teanga",
+          "Brandaí iolracha",
+          "Comhoibriú foirne",
+          "Anailísíocht",
+          "Bainisteoir cuntais"
+        ],
+        "cta": "Labhair linn"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Ceisteanna? Tá freagraí againn.",
+    "items": [
+      {
+        "q": "Cad iad na múnlaí AI a úsáideann Loritalk?",
+        "a": "Nascann Loritalk le soláthraithe AI ceannródaíocha iolracha lena n-áirítear Claude (Anthropic), GPT (OpenAI), agus Gemini (Google). Is féidir leat a chumrú cé na múnlaí a ghlacann páirt i do phíblíne giniúna — nó d'eochracha API féin a úsáid."
+      },
+      {
+        "q": "Conas atá sé seo difriúil ó ChatGPT?",
+        "a": "Tugann ChatGPT aschur amháin ó mhúnla amháin duit. Ritheann Loritalk múnlaí iolracha go comhthreomhar agus ansin cuireann sé orthu obair a chéile a fheabhsú — ag táirgeadh cáilíochta níos airde go seasta. Ina theannta sin, déantar gach postáil a optamú go huathoibríoch do gach ardán ar leith."
+      },
+      {
+        "q": "Cé na líonraí sóisialta a thacaítear leo?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok agus aon ardán saincheaptha trí webhook (blaganna corparáideacha, CMS, uirlisí inmheánacha)."
+      },
+      {
+        "q": "An bhfuil m'ábhar príobháideach?",
+        "a": "Tá. Ní úsáidtear d'ábhar riamh chun múnlaí AI a thraenáil. Stóráltar gach sonra ar ár bhfreastalaithe san Eoraip agus próiseáiltear iad faoi chomhlíonadh GDPR."
+      },
+      {
+        "q": "An féidir liom é a úsáid le m'fhoireann?",
+        "a": "Cinnte. Cruthaigh spásanna oibre do gach branda, tabhair cuireadh do bhaill foirne le róil riarthóra nó foilsitheora agus socraigh sreabhanna oibre ceadaithe ionas nach rachaidh rud ar bith beo gan athbhreithniú."
+      },
+      {
+        "q": "Cad a tharlóidh tar éis Beta?",
+        "a": "Tagann pleananna íoctha i bhfeidhm, ach coimeádann gach úsáideoir Beta a ráta reatha glasáilte go deo. Gan iontas."
+      },
+      {
+        "q": "An féidir liom m'eochracha AI féin a úsáid?",
+        "a": "Is féidir. Is féidir leat d'eochracha API OpenAI, Anthropic nó Google féin a nascadh. Nó úsáid ár seirbhís AI ionsuite — níl eochracha seachtracha ag teastáil."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Stad de scríobh. Tosaigh ag foilsiú.",
+    "subtitle": "Bí páirteach sa Beta — rochtain saor in aisce, gan cárta creidmheasa, agus tá do ráta glasáilte go deo nuair a sheolaim.",
+    "ctaPrimary": "Tosaigh ag cruthú saor in aisce",
+    "ctaSecondary": "Féach conas a oibríonn sé"
+  },
+  "footer": {
+    "description": "Ábhar AI do gach líonra sóisialta.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Táirge",
+    "resources": "Acmhainní",
+    "legal": "Dlí",
+    "features": "Gnéithe",
+    "changelog": "Loga athruithe",
+    "supportedNetworks": "Líonraí tacaithe",
+    "helpCenter": "Ionad cabhrach",
+    "contactUs": "Déan teagmháil linn",
+    "betaFeedback": "Aiseolas Beta",
+    "apiDocs": "Doiciméadú API",
+    "privacyPolicy": "Beartas príobháideachta",
+    "termsOfService": "Téarmaí seirbhíse",
+    "cookiePolicy": "Beartas fianáin",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

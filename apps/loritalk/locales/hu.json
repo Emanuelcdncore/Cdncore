@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Funkciók",
+    "howItWorks": "Hogyan működik",
+    "pricing": "Árazás",
+    "beta": "Béta",
+    "startForFree": "Kezdd ingyen"
+  },
+  "hero": {
+    "badge": "Most Bétában — ingyenes korai hozzáférés",
+    "headlineOne": "Egy ötlet.",
+    "headlineTwo": "Minden platform.",
+    "description": "Írj be egy témát vagy ötletet. A Loritalk AI optimalizált posztokat ír Instagram, LinkedIn, X, TikTok és más platformokra — másodpercek alatt. Több AI modell versenyez, hogy a legjobb eredményt adja.",
+    "ctaPrimary": "Kezdj el ingyen alkotni",
+    "ctaSecondary": "Nézd meg, hogyan működik",
+    "note": "Nincs szükség bankkártyára · Ingyenes a Béta alatt"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Támogatott közösségi hálózat",
+    "languagesValue": "3",
+    "languagesLabel": "Nyelv induláskor",
+    "generationValue": "<5s",
+    "generationLabel": "Átlagos generálási idő",
+    "freeValue": "Ingyenes",
+    "freeLabel": "A Béta alatt — korlátok nélkül"
+  },
+  "problem": {
+    "title": "A tartalmi munkafolyamatod elromlott",
+    "subtitle": "Ismerősen hangzik?",
+    "items": [
+      {
+        "title": "Órák elvesztegetése adaptálással",
+        "description": "Írsz egy posztot Instagramra, majd átírod LinkedInre, aztán megint X-re. Minden platform más hangnemet, hosszt és hashtageket igényel."
+      },
+      {
+        "title": "AI, ami általánosan hangzik",
+        "description": "A ChatGPT ad egy verziót, ami úgy hangzik, mint mindenki más. Nincs márka hang, nincs platformtudatosság, nincs valódi optimalizálás."
+      },
+      {
+        "title": "Csapat szűk keresztmetszetek",
+        "description": "A tartalom jóváhagyásra vár, elvész a Slack szálakban, és senki sem tudja, mi van tervezve a következő hétre."
+      }
+    ]
+  },
+  "solution": {
+    "title": "A Loritalk mindezt megoldja",
+    "subtitle": "Egy brief. Minden platform. Több AI versenyez a legjobb posztodért.",
+    "ctaPrimary": "Kezdj el ingyen alkotni",
+    "rows": [
+      {
+        "before": "1 poszt = 45 perc adaptálás minden platformra",
+        "after": "1 brief = minden platform <5 másodperc alatt"
+      },
+      {
+        "before": "1 AI modell = általános, mindenkire ugyanolyan szöveg",
+        "after": "Több AI modell tanácskozik és finomítja egymást"
+      },
+      {
+        "before": "Tartalom szétszórva eszközök és szálak között",
+        "after": "Egy vezérlőpult: hozz létre, hagyj jóvá, ütemezz, publikálj, kövess nyomon"
+      }
+    ]
+  },
+  "features": {
+    "title": "Minden, amire a tartalmi csapatodnak szüksége van",
+    "subtitle": "Az ötlettől a publikált posztig — a Loritalk kezeli a teljes munkafolyamatot.",
+    "items": [
+      {
+        "title": "Több modelles AI deliberáció",
+        "description": "Nem egy AI — több modell generál függetlenül, majd finomítja egymás munkáját. Megkapod a Claude, GPT és Gemini legjavát együtt."
+      },
+      {
+        "title": "Platformra optimalizált tartalom",
+        "description": "Minden poszt a platformjára szabott — megfelelő hangnem, hossz, hashtagek, emojik és formátum. Instagram képaláírások, LinkedIn cikkek, X szálak, TikTok szkriptek."
+      },
+      {
+        "title": "Többnyelvű generálás",
+        "description": "Generálj portugálul, angolul, spanyolul és más nyelveken. Anyanyelvi szintű folyékonyság kulturális árnyalatokkal — nem csak fordítás."
+      },
+      {
+        "title": "Ütemezés és publikálás",
+        "description": "Naptárnézet, ütemezett publikálás és közvetlen posztolás minden csatlakoztatott csatornára. Különböző időpontok platformonként."
+      },
+      {
+        "title": "Márka hang és személyiségek",
+        "description": "Hozz létre AI személyiségeket, amelyek úgy írnak, mint a márkád. Irányítsd a hangnemet a professzionálistól a játékosig. Minden poszt úgy hangzik, mint te, nem mint egy robot."
+      },
+      {
+        "title": "Analitikai vezérlőpult",
+        "description": "Kövesd nyomon a megjelenéseket, elköteleződést, kattintásokat és növekedést minden csatornán. Tudd, melyik tartalom működik, és duplázd meg az erőfeszítést."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Az ötlettől a posztig 3 lépésben",
+    "subtitle": "Nincs több üres képernyő. Nincs több másolgatás platformok között.",
+    "steps": [
+      {
+        "title": "Írd meg a briefedet",
+        "description": "Írd le, mit szeretnél közölni — olyan egyszerűen, mint \"új termék bevezetése\" vagy olyan részletesen, mint egy teljes brief. Válaszd ki a csatornáidat, nyelvet és hangnemet."
+      },
+      {
+        "title": "AI modellek versenyeznek érted",
+        "description": "Több AI modell generál tartalmat függetlenül, majd átnézi és finomítja egymás kimenetét. N csiszolt verziót kapsz platformonként."
+      },
+      {
+        "title": "Válassz, szerkessz és publikálj",
+        "description": "Válaszd ki a kedvenc verziódat minden csatornához. Módosíts bármit egyetlen kattintással. Publikálj most vagy ütemezz későbbre."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Miért ver meg több AI egyet",
+    "subtitle": "Más eszközök egy modellt használnak. A Loritalk többet használ — és ráveszi őket, hogy javítsák egymást.",
+    "briefLabel": "A briefed",
+    "channels": "Csatornák",
+    "language": "Nyelv:",
+    "languages": "Angol, Portugál",
+    "submitted": "Beküldve 2 mp-cel ezelőtt",
+    "round1": "1. KÖR — FÜGGETLEN GENERÁLÁS",
+    "generated": "Generálva",
+    "round2": "2. kör — Keresztfinomítás",
+    "round2Desc": "Minden modell olvassa az összes kimenetet és javítja a saját verzióját",
+    "qualityNote": "A minőség ~40%-kal javult az 1. körhöz képest",
+    "pickEdit": "Válassz és szerkessz",
+    "addMedia": "Média hozzáadása",
+    "uploading": "Kép feltöltése...",
+    "imageAttached": "Kép sikeresen feltöltve",
+    "generateAI": "Generálás AI-val",
+    "readyPublish": "Kész a publikálásra",
+    "publishAll": "Összes publikálása",
+    "scheduled": "Ütemezve",
+    "draft": "Vázlat",
+    "explanation": "Minden AI modellnek más erősségei vannak. A Claude a árnyalatokban jeleskedik, a GPT a sokoldalúságban, a Gemini a ténybeli pontosságban. Azzal, hogy együttműködésre és egymás kihívására ösztönözzük őket, minden végleges szöveg jobb, mint amit bármelyik modell egyedül tudna előállítani."
+  },
+  "useCases": {
+    "title": "Publikáló csapatok számára készült",
+    "subtitle": "Akár egyéni alkotó vagy, akár 50 fős ügynökség.",
+    "items": [
+      {
+        "title": "Egyéni alkotók és szabadúszók",
+        "description": "Ne vesztegesd az órákat tartalom adaptálásra. Írj egyszer, publikálj mindenhol. Összpontosíts a stratégiára, ne a másolgatásra."
+      },
+      {
+        "title": "Marketing csapatok",
+        "description": "Egy munkaterület márkánként. Jóváhagyási munkafolyamatok. Naptárnézet. Mindenki tudja, mi jelenik meg és mikor."
+      },
+      {
+        "title": "Ügynökségek",
+        "description": "Kezelj több márkát egy fiókból. Oszd ki a szerepeket, irányítsd a hozzáférést, kövesd nyomon a teljesítményt minden ügyfélnél. Korlátlan posztok az Ügynökség csomagban."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Egyszerű, átlátható árazás",
+    "subtitle": "Ingyenes a Béta alatt. A korai felhasználók örökre rögzítik az árukat az induláskor.",
+    "mostPopular": "Legnépszerűbb",
+    "plans": [
+      {
+        "name": "Ingyenes",
+        "price": "€0",
+        "period": "a Béta alatt",
+        "description": "Próbálj ki mindent bőkezű korlátokkal.",
+        "features": [
+          "20 poszt / hó",
+          "3 hálózat",
+          "3 nyelv",
+          "Alap hangnem vezérlés",
+          "Hashtag javaslatok"
+        ],
+        "cta": "Kezdd ingyen"
+      },
+      {
+        "name": "Alkotó",
+        "price": "€19",
+        "period": "havonta",
+        "description": "Alkotók és márkák számára, akik rendszeresen publikálnak.",
+        "features": [
+          "200 poszt / hó",
+          "Minden hálózat",
+          "Minden nyelv",
+          "Haladó hangnem és személyiségek",
+          "Tartalom naptár",
+          "Kiemelt támogatás"
+        ],
+        "cta": "Ingyenes próba indítása"
+      },
+      {
+        "name": "Ügynökség",
+        "price": "€79",
+        "period": "havonta",
+        "description": "Több márkát kezelő csapatok számára.",
+        "features": [
+          "Korlátlan posztok",
+          "Minden hálózat",
+          "Minden nyelv",
+          "Több márka",
+          "Csapat együttműködés",
+          "Analitika",
+          "Fiókkezelő"
+        ],
+        "cta": "Beszéljünk"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Kérdések? Vannak válaszaink.",
+    "items": [
+      {
+        "q": "Milyen AI modelleket használ a Loritalk?",
+        "a": "A Loritalk több vezető AI szolgáltatóhoz csatlakozik, beleértve a Claude (Anthropic), GPT (OpenAI) és Gemini (Google) modelleket. Beállíthatod, melyik modellek vesznek részt a generálási folyamatodban — vagy használhatod a saját API kulcsaidat."
+      },
+      {
+        "q": "Miben különbözik ez a ChatGPT-től?",
+        "a": "A ChatGPT egy kimenetet ad egy modellből. A Loritalk több modellt futtat párhuzamosan, majd ráveszi őket, hogy finomítsák egymás munkáját — következetesen magasabb minőséget produkálva. Ráadásul minden poszt automatikusan optimalizálódik az adott platformra."
+      },
+      {
+        "q": "Mely közösségi hálózatok támogatottak?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok és bármely egyéni platform webhook-on keresztül (vállalati blogok, CMS, belső eszközök)."
+      },
+      {
+        "q": "Privát a tartalmam?",
+        "a": "Igen. A tartalmad soha nem használjuk AI modellek betanítására. Minden adat az európai szervereinken van tárolva és GDPR-nak megfelelően dolgozzuk fel."
+      },
+      {
+        "q": "Használhatom a csapatommal?",
+        "a": "Természetesen. Hozz létre munkaterületeket minden márkához, hívj meg csapattagokat admin vagy publikáló szerepkörökkel, és állíts be jóváhagyási munkafolyamatokat, hogy semmi ne menjen élesbe ellenőrzés nélkül."
+      },
+      {
+        "q": "Mi történik a Béta után?",
+        "a": "A fizetős csomagok lépnek életbe, de minden Béta felhasználó örökre megtartja a jelenlegi árát. Nincsenek meglepetések."
+      },
+      {
+        "q": "Használhatom a saját AI kulcsaimat?",
+        "a": "Igen. Csatlakoztathatod a saját OpenAI, Anthropic vagy Google API kulcsaidat. Vagy használd a beépített AI szolgáltatásunkat — nincs szükség külső kulcsokra."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Hagyd abba az írást. Kezdj el publikálni.",
+    "subtitle": "Csatlakozz a Bétához — ingyenes hozzáférés, nincs bankkártya, és az árad örökre rögzítve van az induláskor.",
+    "ctaPrimary": "Kezdj el ingyen alkotni",
+    "ctaSecondary": "Nézd meg, hogyan működik"
+  },
+  "footer": {
+    "description": "AI tartalom minden közösségi hálózatra.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Termék",
+    "resources": "Erőforrások",
+    "legal": "Jogi",
+    "features": "Funkciók",
+    "changelog": "Változásnapló",
+    "supportedNetworks": "Támogatott hálózatok",
+    "helpCenter": "Súgóközpont",
+    "contactUs": "Kapcsolat",
+    "betaFeedback": "Béta visszajelzés",
+    "apiDocs": "API dokumentáció",
+    "privacyPolicy": "Adatvédelmi szabályzat",
+    "termsOfService": "Szolgáltatási feltételek",
+    "cookiePolicy": "Cookie szabályzat",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

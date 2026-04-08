@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Značajke",
+    "howItWorks": "Kako funkcionira",
+    "pricing": "Cijene",
+    "beta": "Beta",
+    "startForFree": "Započnite besplatno"
+  },
+  "hero": {
+    "badge": "Sada u Beta — besplatan rani pristup",
+    "headlineOne": "Jedna ideja.",
+    "headlineTwo": "Svaka platforma.",
+    "description": "Upišite temu ili ideju. AI Loritalk piše optimizirane objave za Instagram, LinkedIn, X, TikTok i više — u sekundama. Više AI modela natječe se da vam pruži najbolji rezultat.",
+    "ctaPrimary": "Počnite stvarati besplatno",
+    "ctaSecondary": "Pogledajte kako funkcionira",
+    "note": "Kreditna kartica nije potrebna · Besplatno tijekom Beta"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Podržanih društvenih mreža",
+    "languagesValue": "3",
+    "languagesLabel": "Jezika pri pokretanju",
+    "generationValue": "<5s",
+    "generationLabel": "Prosječno vrijeme generiranja",
+    "freeValue": "Besplatno",
+    "freeLabel": "Tijekom Beta — bez ograničenja"
+  },
+  "problem": {
+    "title": "Vaš tijek rada za sadržaj je neispravan",
+    "subtitle": "Zvuči li poznato?",
+    "items": [
+      {
+        "title": "Sati izgubljeni na prilagodbu",
+        "description": "Napišete objavu za Instagram, zatim je prepišete za LinkedIn, pa opet za X. Svaka platforma zahtijeva drugačiji ton, duljinu i hashtagove."
+      },
+      {
+        "title": "AI koji zvuči generički",
+        "description": "ChatGPT vam daje jednu verziju koja zvuči kao svi ostali. Bez glasa brenda, bez svijesti o platformi, bez prave optimizacije."
+      },
+      {
+        "title": "Uska grla u timu",
+        "description": "Sadržaj čeka odobrenje, gubi se u Slack nitima i nitko ne zna što je zakazano za sljedeći tjedan."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk rješava sve to",
+    "subtitle": "Jedan brief. Svaka platforma. Više AI-jeva natječe se za vašu najbolju objavu.",
+    "ctaPrimary": "Počnite stvarati besplatno",
+    "rows": [
+      {
+        "before": "1 objava = 45 min prilagodbe za svaku platformu",
+        "after": "1 brief = sve platforme u <5 sekundi"
+      },
+      {
+        "before": "1 AI model = generički, univerzalni tekst",
+        "after": "Više AI modela raspravlja i usavršava jedan drugog"
+      },
+      {
+        "before": "Sadržaj raspršen među alatima i nitima",
+        "after": "Jedna kontrolna ploča: stvorite, odobrite, zakažite, objavite, pratite"
+      }
+    ]
+  },
+  "features": {
+    "title": "Sve što vaš tim za sadržaj treba",
+    "subtitle": "Od ideje do objavljene objave — Loritalk upravlja cijelim tijekom rada.",
+    "items": [
+      {
+        "title": "Višemodelna AI deliberacija",
+        "description": "Ne jedan AI — više modela generira neovisno, zatim usavršava rad ostalih. Dobivate najbolje od Claude, GPT i Gemini zajedno."
+      },
+      {
+        "title": "Sadržaj optimiziran za platformu",
+        "description": "Svaka objava je prilagođena svojoj platformi — pravi ton, duljina, hashtagovi, emotikoni i format. Instagram opisi, LinkedIn članci, X niti, TikTok scenariji."
+      },
+      {
+        "title": "Višejezično generiranje",
+        "description": "Generirajte na portugalskom, engleskom, španjolskom i više. Tečnost na razini izvornog govornika s kulturnim nijansama — ne samo prijevod."
+      },
+      {
+        "title": "Zakažite i objavite",
+        "description": "Prikaz kalendara, zakazano objavljivanje i izravno postanje na sve povezane kanale. Različita vremena po platformi."
+      },
+      {
+        "title": "Glas brenda i persone",
+        "description": "Stvorite AI persone koje pišu poput vašeg brenda. Kontrolirajte ton od profesionalnog do razigiranog. Svaka objava zvuči kao vi, ne kao robot."
+      },
+      {
+        "title": "Analitička kontrolna ploča",
+        "description": "Pratite prikaze, angažman, klikove i rast na svim kanalima. Saznajte koji sadržaj funkcionira i udvostručite napore."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Od ideje do objave u 3 koraka",
+    "subtitle": "Nema više praznih ekrana. Nema više kopiranja između platforma.",
+    "steps": [
+      {
+        "title": "Napišite svoj brief",
+        "description": "Opišite što želite komunicirati — jednostavno poput \"lansiranje novog proizvoda\" ili detaljno poput potpunog briefa. Odaberite svoje kanale, jezik i ton."
+      },
+      {
+        "title": "AI modeli se natječu za vas",
+        "description": "Više AI modela generira sadržaj neovisno, zatim pregledava i usavršava izlaz ostalih. Primate N uglađenih verzija po platformi."
+      },
+      {
+        "title": "Odaberite, uredite i objavite",
+        "description": "Odaberite svoju omiljenu verziju za svaki kanal. Prilagodite bilo što jednim klikom. Objavite odmah ili zakažite za kasnije."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Zašto više AI-jeva pobjeđuje jednog",
+    "subtitle": "Drugi alati koriste jedan model. Loritalk koristi više — i čini da poboljšavaju jedni druge.",
+    "briefLabel": "Vaš brief",
+    "channels": "Kanali",
+    "language": "Jezik:",
+    "languages": "Engleski, Portugalski",
+    "submitted": "Poslano prije 2s",
+    "round1": "KRUG 1 — NEOVISNO GENERIRANJE",
+    "generated": "Generirano",
+    "round2": "Krug 2 — Unakrsno usavršavanje",
+    "round2Desc": "Svaki model čita sve izlaze i poboljšava svoju vlastitu verziju",
+    "qualityNote": "Kvaliteta poboljšana za ~40% u odnosu na Krug 1",
+    "pickEdit": "Odaberite i uredite",
+    "addMedia": "Dodaj medij",
+    "uploading": "Učitavanje slike...",
+    "imageAttached": "Slika uspješno učitana",
+    "generateAI": "Generiraj s AI",
+    "readyPublish": "Spremno za objavljivanje",
+    "publishAll": "Objavi sve",
+    "scheduled": "Zakazano",
+    "draft": "Skica",
+    "explanation": "Svaki AI model ima različite snage. Claude se ističe u nijansama, GPT u svestranosti, Gemini u činjeničnoj preciznosti. Čineći ih da surađuju i izazivaju jedni druge, svaki konačni tekst je bolji nego što bi ikoji pojedinačni model mogao proizvesti sam."
+  },
+  "useCases": {
+    "title": "Napravljeno za timove koji objavljuju",
+    "subtitle": "Bilo da ste solo kreator ili agencija od 50 ljudi.",
+    "items": [
+      {
+        "title": "Solo kreatori i freelanceri",
+        "description": "Prestanite trošiti sate na prilagodbu sadržaja. Napišite jednom, objavite svugdje. Usredotočite se na strategiju, ne na kopiranje."
+      },
+      {
+        "title": "Marketinški timovi",
+        "description": "Jedan radni prostor po brendu. Tokovi odobravanja. Prikaz kalendara. Svi znaju što se objavljuje i kada."
+      },
+      {
+        "title": "Agencije",
+        "description": "Upravljajte više brendova s jednog računa. Dodijelite uloge, kontrolirajte pristup, pratite performanse svih klijenata. Neograničene objave na planu Agencija."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Jednostavne, transparentne cijene",
+    "subtitle": "Besplatno tijekom Beta. Rani korisnici zaključavaju svoju cijenu zauvijek kad pokrenemo.",
+    "mostPopular": "Najpopularnije",
+    "plans": [
+      {
+        "name": "Besplatno",
+        "price": "€0",
+        "period": "tijekom Beta",
+        "description": "Isprobajte sve s izdašnim ograničenjima.",
+        "features": [
+          "20 objava / mjesec",
+          "3 mreže",
+          "3 jezika",
+          "Osnovna kontrola tona",
+          "Prijedlozi hashtagova"
+        ],
+        "cta": "Započnite besplatno"
+      },
+      {
+        "name": "Kreator",
+        "price": "€19",
+        "period": "mjesečno",
+        "description": "Za kreatore i brendove koji objavljuju dosljedno.",
+        "features": [
+          "200 objava / mjesec",
+          "Sve mreže",
+          "Svi jezici",
+          "Napredni ton i persone",
+          "Kalendar sadržaja",
+          "Prioritetna podrška"
+        ],
+        "cta": "Započnite besplatno probno razdoblje"
+      },
+      {
+        "name": "Agencija",
+        "price": "€79",
+        "period": "mjesečno",
+        "description": "Za timove koji upravljaju više brendova.",
+        "features": [
+          "Neograničene objave",
+          "Sve mreže",
+          "Svi jezici",
+          "Više brendova",
+          "Timska suradnja",
+          "Analitika",
+          "Upravitelj računa"
+        ],
+        "cta": "Razgovarajte s nama"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Pitanja? Imamo odgovore.",
+    "items": [
+      {
+        "q": "Koje AI modele koristi Loritalk?",
+        "a": "Loritalk se povezuje s više vodećih pružatelja AI usluga uključujući Claude (Anthropic), GPT (OpenAI) i Gemini (Google). Možete konfigurirati koji modeli sudjeluju u vašem procesu generiranja — ili koristiti vlastite API ključeve."
+      },
+      {
+        "q": "Kako se ovo razlikuje od ChatGPT?",
+        "a": "ChatGPT vam daje jedan izlaz od jednog modela. Loritalk pokreće više modela paralelno i zatim ih čini da usavršavaju rad ostalih — proizvodeći dosljedno višu kvalitetu. Osim toga, svaka objava je automatski optimizirana za specifičnu platformu."
+      },
+      {
+        "q": "Koje društvene mreže su podržane?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok i bilo koja prilagođena platforma putem webhooka (korporativni blogovi, CMS, interni alati)."
+      },
+      {
+        "q": "Je li moj sadržaj privatan?",
+        "a": "Da. Vaš sadržaj se nikada ne koristi za obuku AI modela. Svi podaci se pohranjuju na našim poslužiteljima u Europi i obrađuju u skladu s GDPR-om."
+      },
+      {
+        "q": "Mogu li ga koristiti sa svojim timom?",
+        "a": "Naravno. Stvorite radne prostore za svaki brend, pozovite članove tima s ulogama administratora ili izdavača i postavite tokove odobravanja kako ništa ne bi bilo objavljeno bez pregleda."
+      },
+      {
+        "q": "Što se događa nakon Beta?",
+        "a": "Stupaju na snagu plaćeni planovi, ali svaki korisnik Beta zadržava svoju trenutnu cijenu zauvijek. Bez iznenađenja."
+      },
+      {
+        "q": "Mogu li koristiti vlastite AI ključeve?",
+        "a": "Da. Možete povezati vlastite OpenAI, Anthropic ili Google API ključeve. Ili koristite našu ugrađenu AI uslugu — nisu potrebni vanjski ključevi."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Prestanite pisati. Počnite objavljivati.",
+    "subtitle": "Pridružite se Beta — besplatan pristup, bez kreditne kartice, i vaša cijena je zauvijek zaključana kad pokrenemo.",
+    "ctaPrimary": "Počnite stvarati besplatno",
+    "ctaSecondary": "Pogledajte kako funkcionira"
+  },
+  "footer": {
+    "description": "AI sadržaj za svaku društvenu mrežu.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Proizvod",
+    "resources": "Resursi",
+    "legal": "Pravno",
+    "features": "Značajke",
+    "changelog": "Dnevnik promjena",
+    "supportedNetworks": "Podržane mreže",
+    "helpCenter": "Centar za pomoć",
+    "contactUs": "Kontaktirajte nas",
+    "betaFeedback": "Beta povratne informacije",
+    "apiDocs": "API dokumentacija",
+    "privacyPolicy": "Politika privatnosti",
+    "termsOfService": "Uvjeti korištenja",
+    "cookiePolicy": "Politika kolačića",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}

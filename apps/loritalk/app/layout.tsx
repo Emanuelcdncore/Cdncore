@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Readex_Pro } from "next/font/google";
 import "./globals.css";
+import I18nProvider from "@/components/I18nProvider";
 
 const readexPro = Readex_Pro({
   variable: "--font-readex",
@@ -21,14 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${readexPro.variable} antialiased`}>
+    <html lang="en" className={`${readexPro.variable} antialiased`} suppressHydrationWarning>
       <head>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen" suppressHydrationWarning>
+        <I18nProvider>{children}</I18nProvider>
+      </body>
     </html>
   );
 }

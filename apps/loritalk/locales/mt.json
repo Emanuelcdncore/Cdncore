@@ -1,0 +1,264 @@
+{
+  "navbar": {
+    "features": "Karatteristiċi",
+    "howItWorks": "Kif jaħdem",
+    "pricing": "Prezzijiet",
+    "beta": "Beta",
+    "startForFree": "Ibda b'xejn"
+  },
+  "hero": {
+    "badge": "Issa f'Beta — aċċess bikri b'xejn",
+    "headlineOne": "Idea waħda.",
+    "headlineTwo": "Kull pjattaforma.",
+    "description": "Ikteb tema jew idea. L-AI ta' Loritalk tikteb posts ottimizzati għal Instagram, LinkedIn, X, TikTok, u aktar — fi ftit sekondi. Diversi mudelli ta' AI jikkompetu biex jagħtuk l-aħjar riżultat.",
+    "ctaPrimary": "Ibda oħloq b'xejn",
+    "ctaSecondary": "Ara kif jaħdem",
+    "note": "L-ebda karta ta' kreditu meħtieġa · B'xejn waqt il-Beta"
+  },
+  "stats": {
+    "networksValue": "6+",
+    "networksLabel": "Netwerks soċjali appoġġjati",
+    "languagesValue": "3",
+    "languagesLabel": "Lingwi fit-tnedija",
+    "generationValue": "<5s",
+    "generationLabel": "Ħin medju ta' ġenerazzjoni",
+    "freeValue": "B'xejn",
+    "freeLabel": "Waqt il-Beta — mingħajr limiti"
+  },
+  "problem": {
+    "title": "Il-flusso tax-xogħol tal-kontenut tiegħek huwa mkisser",
+    "subtitle": "Jidher familjari?",
+    "items": [
+      {
+        "title": "Sigħat moħlijin fl-adattament",
+        "description": "Tikteb post għal Instagram, imbagħad terġa' tiktbu għal LinkedIn, imbagħad għal X. Kull pjattaforma teħtieġ ton, tul u hashtags differenti."
+      },
+      {
+        "title": "AI li tidher ġenerika",
+        "description": "ChatGPT jagħtik verżjoni waħda li tidher bħal kulħadd. L-ebda vuċi tal-brand, l-ebda għarfien tal-pjattaforma, l-ebda ottimizzazzjoni vera."
+      },
+      {
+        "title": "Bottlenecks tat-tim",
+        "description": "Il-kontenut jistenna l-approvazzjoni, jintilef fi threads ta' Slack u ħadd ma jaf x'hemm skedat għall-ġimgħa d-dieħla."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk issolvi dan kollu",
+    "subtitle": "Briefing waħda. Kull pjattaforma. Diversi AIs jikkompetu għall-aħjar post tiegħek.",
+    "ctaPrimary": "Ibda oħloq b'xejn",
+    "rows": [
+      {
+        "before": "1 post = 45 min adattament għal kull pjattaforma",
+        "after": "1 briefing = il-pjattaformi kollha f'<5 sekondi"
+      },
+      {
+        "before": "1 mudell AI = test ġeneriku, wieħed għal kulħadd",
+        "after": "Diversi mudelli AI jiddiskutu u jirfinaw lil xulxin"
+      },
+      {
+        "before": "Kontenut imxerred bejn għodod u threads",
+        "after": "Dashboard waħda: oħloq, approva, skedula, ippubblika, segwi"
+      }
+    ]
+  },
+  "features": {
+    "title": "Kollox li t-tim tal-kontenut tiegħek għandu bżonn",
+    "subtitle": "Minn idea għal post ippubblikat — Loritalk jimmanigġja l-flusso tax-xogħol kollu.",
+    "items": [
+      {
+        "title": "Deliberazzjoni AI b'Ħafna Mudelli",
+        "description": "Mhux AI waħda — diversi mudelli jiġġeneraw indipendentement, imbagħad jirfinaw ix-xogħol ta' xulxin. Tikseb l-aħjar minn Claude, GPT u Gemini flimkien."
+      },
+      {
+        "title": "Kontenut ottimizzat għall-pjattaforma",
+        "description": "Kull post huwa adattat għall-pjattaforma tiegħu — ton, tul, hashtags, emojis u format korrett. Captions ta' Instagram, artikli ta' LinkedIn, threads ta' X, scripts ta' TikTok."
+      },
+      {
+        "title": "Ġenerazzjoni multilingwi",
+        "description": "Iġġenera bil-Portogiż, Ingliż, Spanjol u aktar. Fluwenza fil-livell tan-nattiv b'nuanzi kulturali — mhux sempliċement traduzzjoni."
+      },
+      {
+        "title": "Skedula u ppubblika",
+        "description": "Vista tal-kalendarju, pubblikazzjoni skedata u posting dirett fuq il-kanali kollha konnessi. Ħinijiet differenti għal kull pjattaforma."
+      },
+      {
+        "title": "Vuċi tal-brand u personas",
+        "description": "Oħloq personas AI li jiktbu bħall-brand tiegħek. Ikkontrolla t-ton minn professjonali għal playful. Kull post jidher bħalek, mhux bħal robot."
+      },
+      {
+        "title": "Dashboard tal-analitika",
+        "description": "Segwi impressjonijiet, engagement, clicks u tkabbir fuq il-kanali kollha. Kun af liema kontenut jaħdem u rdoppja l-isforz."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Minn idea għal post fi 3 passi",
+    "subtitle": "M'hemmx aktar screens vojta. M'hemmx aktar copy-paste bejn pjattaformi.",
+    "steps": [
+      {
+        "title": "Ikteb il-briefing tiegħek",
+        "description": "Iddeskrivi x'tixtieq tikkomunika — sempliċi bħal \"tnedija ta' prodott ġdid\" jew dettaljat bħal brief sħiħ. Agħżel il-kanali, il-lingwa u t-ton tiegħek."
+      },
+      {
+        "title": "Il-mudelli AI jikkompetu għalik",
+        "description": "Diversi mudelli AI jiġġeneraw kontenut indipendentement, imbagħad jirrevedjaw u jirfinaw l-output ta' xulxin. Tirċievi N verżjonijiet ibbrillaw għal kull pjattaforma."
+      },
+      {
+        "title": "Agħżel, editja u ppubblika",
+        "description": "Agħżel il-verżjoni favorita tiegħek għal kull kanal. Ibdel kwalunkwe ħaġa b'click waħda. Ippubblika issa jew skedula għal aktar tard."
+      }
+    ]
+  },
+  "differentiator": {
+    "title": "Għaliex diversi AIs jegħlbu waħda",
+    "subtitle": "Għodod oħra jużaw mudell wieħed. Loritalk juża diversi — u jġagħalhom itejbu lil xulxin.",
+    "briefLabel": "Il-briefing tiegħek",
+    "channels": "Kanali",
+    "language": "Lingwa:",
+    "languages": "Ingliż, Portogiż",
+    "submitted": "Sottomess 2s ilu",
+    "round1": "RAWND 1 — ĠENERAZZJONI INDIPENDENTI",
+    "generated": "Iġġenerat",
+    "round2": "Rawnd 2 — Raffinament inkroċjat",
+    "round2Desc": "Kull mudell jaqra l-outputs kollha u jtejjeb il-verżjoni tiegħu",
+    "qualityNote": "Il-kwalità tjiebet b'~40% vs Rawnd 1",
+    "pickEdit": "Agħżel u editja",
+    "addMedia": "Żid midja",
+    "uploading": "Qed jittella' l-immaġni...",
+    "imageAttached": "L-immaġni ttellgħet b'suċċess",
+    "generateAI": "Iġġenera bl-AI",
+    "readyPublish": "Lest għall-pubblikazzjoni",
+    "publishAll": "Ippubblika kollox",
+    "scheduled": "Skedat",
+    "draft": "Abbozz",
+    "explanation": "Kull mudell AI għandu saħħiet differenti. Claude jeċċella fin-nuanzi, GPT fil-versatilità, Gemini fil-preċiżjoni fattwali. Billi nġagħluhom jikkollaboraw u jisfidaw lil xulxin, kull test finali huwa aħjar milli kwalunkwe mudell wieħed jista' jipproduċi waħdu."
+  },
+  "useCases": {
+    "title": "Mibni għal timijiet li jippubblikaw",
+    "subtitle": "Kemm jekk int kreatur waħdek jew aġenzija ta' 50 persuna.",
+    "items": [
+      {
+        "title": "Kreaturi waħedhom u freelancers",
+        "description": "Ieqaf toqgħod tħalli s-sigħat jadattaw il-kontenut. Ikteb darba, ippubblika kullimkien. Ikkonċentra fuq l-istrateġija, mhux fuq il-copy-paste."
+      },
+      {
+        "title": "Timijiet tal-marketing",
+        "description": "Workspace waħda għal kull brand. Flussi tax-xogħol ta' approvazzjoni. Vista tal-kalendarju. Kulħadd jaf x'qed jiġi ppubblikat u meta."
+      },
+      {
+        "title": "Aġenziji",
+        "description": "Immanigġja diversi brands minn kont wieħed. Assenja rwoli, ikkontrolla l-aċċess, segwi l-prestazzjoni ta' kull klijent. Posts illimitati fuq il-pjan tal-Aġenzija."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Prezzijiet sempliċi u trasparenti",
+    "subtitle": "B'xejn waqt il-Beta. L-utenti bikrija jiffissaw ir-rata tagħhom għal dejjem meta nniedu.",
+    "mostPopular": "L-aktar popolari",
+    "plans": [
+      {
+        "name": "B'xejn",
+        "price": "€0",
+        "period": "waqt il-Beta",
+        "description": "Ipprova kollox b'limiti ġerużi.",
+        "features": [
+          "20 post / xahar",
+          "3 netwerks",
+          "3 lingwi",
+          "Kontrolli bażiċi tat-ton",
+          "Suġġerimenti ta' hashtags"
+        ],
+        "cta": "Ibda b'xejn"
+      },
+      {
+        "name": "Kreatur",
+        "price": "€19",
+        "period": "fix-xahar",
+        "description": "Għal kreaturi u brands li jippubblikaw b'mod konsistenti.",
+        "features": [
+          "200 post / xahar",
+          "In-netwerks kollha",
+          "Il-lingwi kollha",
+          "Ton avvanzat u personas",
+          "Kalendarju tal-kontenut",
+          "Appoġġ ta' prijorità"
+        ],
+        "cta": "Ibda prova b'xejn"
+      },
+      {
+        "name": "Aġenzija",
+        "price": "€79",
+        "period": "fix-xahar",
+        "description": "Għal timijiet li jimmanigġjaw diversi brands.",
+        "features": [
+          "Posts illimitati",
+          "In-netwerks kollha",
+          "Il-lingwi kollha",
+          "Diversi brands",
+          "Kollaborazzjoni tat-tim",
+          "Analitika",
+          "Account manager"
+        ],
+        "cta": "Kellem lilna"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Mistoqsijiet? Għandna t-tweġibiet.",
+    "items": [
+      {
+        "q": "Liema mudelli AI juża Loritalk?",
+        "a": "Loritalk jikkonnettja ma' diversi fornituri ewlenin ta' AI inkluż Claude (Anthropic), GPT (OpenAI), u Gemini (Google). Tista' tikkonfigura liema mudelli jipparteċipaw fil-pipeline ta' ġenerazzjoni tiegħek — jew tuża l-API keys tiegħek stess."
+      },
+      {
+        "q": "Kif inhu differenti minn ChatGPT?",
+        "a": "ChatGPT jagħtik output wieħed minn mudell wieħed. Loritalk imexxi diversi mudelli b'mod parallel u mbagħad iġagħalhom jirfinaw ix-xogħol ta' xulxin — u jipproduċu kwalità ogħla b'mod konsistenti. Barra minn hekk, kull post huwa awtomatikament ottimizzat għal kull pjattaforma speċifika."
+      },
+      {
+        "q": "Liema netwerks soċjali huma appoġġjati?",
+        "a": "LinkedIn, Instagram, Facebook, X (Twitter), TikTok u kwalunkwe pjattaforma personalizzata permezz ta' webhook (blogs korporattivi, CMS, għodod interni)."
+      },
+      {
+        "q": "Il-kontenut tiegħi huwa privat?",
+        "a": "Iva. Il-kontenut tiegħek qatt ma jintuża biex iħarreġ mudelli AI. Id-data kollha hija maħżuna fuq is-servers tagħna fl-Ewropa u proċessata skont il-GDPR."
+      },
+      {
+        "q": "Nista' nużah mat-tim tiegħi?",
+        "a": "Assolutament. Oħloq workspaces għal kull brand, stieden membri tat-tim b'rwoli ta' admin jew publisher u waqqaf flussi tax-xogħol ta' approvazzjoni biex xejn ma jmur live mingħajr reviżjoni."
+      },
+      {
+        "q": "X'jiġri wara l-Beta?",
+        "a": "Il-pjanijiet imħallsa jidħlu fis-seħħ, iżda kull utent tal-Beta jżomm ir-rata attwali tiegħu ffissat għal dejjem. Bla sorpriżi."
+      },
+      {
+        "q": "Nista' nuża l-AI keys tiegħi stess?",
+        "a": "Iva. Tista' tikkonnettja l-OpenAI, Anthropic jew Google API keys tiegħek stess. Jew uża s-servizz AI integrat tagħna — l-ebda keys esterni meħtieġa."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Ieqaf tikteb. Ibda ppubblika.",
+    "subtitle": "Ingħaqad mal-Beta — aċċess b'xejn, l-ebda karta ta' kreditu, u r-rata tiegħek hija ffissata għal dejjem meta nniedu.",
+    "ctaPrimary": "Ibda oħloq b'xejn",
+    "ctaSecondary": "Ara kif jaħdem"
+  },
+  "footer": {
+    "description": "Kontenut AI għal kull netwerk soċjali.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Prodott",
+    "resources": "Riżorsi",
+    "legal": "Legali",
+    "features": "Karatteristiċi",
+    "changelog": "Reġistru tal-bidliet",
+    "supportedNetworks": "Netwerks appoġġjati",
+    "helpCenter": "Ċentru tal-għajnuna",
+    "contactUs": "Ikkuntattjana",
+    "betaFeedback": "Feedback tal-Beta",
+    "apiDocs": "Dokumentazzjoni API",
+    "privacyPolicy": "Politika tal-privatezza",
+    "termsOfService": "Termini tas-servizz",
+    "cookiePolicy": "Politika tal-cookies",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  }
+}
