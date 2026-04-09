@@ -31,43 +31,11 @@ const TeamSection: React.FC = () => {
       iconUrl: undefined
     },
     {
-      name: "Joana Fidalgo",
-      role: "CFO / COO",
-      bio: "Joana brings extensive experience in financial management and operations, ensuring CDNCORE's strategic growth and operational excellence. She oversees financial planning, business operations, and organizational development.",
-      linkedin: "https://www.linkedin.com/in/joana-silva-aab83336/",
-      avatarUrl: "/teamIMG/Joana.png",
-      iconUrl: undefined
-    },
-    {
       name: "João Garcia",
       role: "CDO / UX Designer",
       bio: "João holds a Bachelor's Degree in Industrial Design, a Master's Degree in Videogame Design, and a PhD in Architecture. Has worked as a secondary school teacher and as a researcher.",
       linkedin: "https://www.linkedin.com/in/joaomrgarcia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       avatarUrl: "/teamIMG/Garcia.png",
-      iconUrl: undefined
-    },
-    {
-      name: "Maria Sarrato",
-      role: "Graphic Designer",
-      bio: "Maria holds a Bachelor's Degree in Multimedia Design and a specialization in Communication and Web Technologies.",
-      linkedin: "https://www.linkedin.com/in/maria-sarrato-8a6115207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      avatarUrl: "/teamIMG/Maria.png",
-      iconUrl: undefined
-    },
-    {
-      name: "João Calheiros",
-      role: "3D Designer",
-      bio: "João holds a degree in Equipment Design, currently pursuing a Master's in Industrial Design at UBI. Completed an internship at RSB Comunicação na Imagem and is now part of the CDNTV design team.",
-      linkedin: "https://www.linkedin.com/in/jmgcalheiros",
-      avatarUrl: "/teamIMG/João.png",
-      iconUrl: undefined
-    },
-    {
-      name: "Neuza Silvestre",
-      role: "Graphic Designer",
-      bio: "Neuza holds a degree in Multimedia Design. She has worked as a freelance graphic designer and is currently part of the CDNTV design team.",
-      linkedin: "https://www.linkedin.com/in/neuza-silvestre-05a9b81b1/",
-      avatarUrl: "/teamIMG/Neuza.png",
       iconUrl: undefined
     }
   ];
@@ -111,19 +79,13 @@ const TeamSection: React.FC = () => {
             let iconUrl: string | undefined;
             if (member.name.includes('Sergio') || member.name.includes('Sérgio')) {
               iconUrl = '/teamIMG/CEO.png';
-            } else if (member.name.includes('Joana')) {
-              iconUrl = '/teamIMG/FinancialIMG.png';
-            } else if (
-              ['Maria', 'Neuza', 'Garcia', 'Calheiros'].some((key) =>
-                member.name.includes(key)
-              )
-            ) {
+            } else if (member.name.includes('Garcia')) {
               iconUrl = '/teamIMG/Designers.png';
             } else {
               iconUrl = undefined;
             }
 
-            const scaleUpNames = ['Sergio Pinheiro', 'Sérgio Pinheiro', 'Joana Fidalgo', 'Maria Sarrato'];
+            const scaleUpNames = ['Sergio Pinheiro', 'Sérgio Pinheiro'];
             const scaleDownNames: string[] = [];
             const shouldScaleAvatar = scaleUpNames.some((key) =>
               member.name.includes(key)
