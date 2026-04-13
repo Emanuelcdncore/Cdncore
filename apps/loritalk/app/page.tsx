@@ -27,7 +27,7 @@ const structuredData = {
     {
       "@type": "WebApplication",
       name: "Loritalk",
-      url: "https://app.lori-talk.com",
+      url: "https://app.lori-talk.eu",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Any",
       description: "AI-powered social media content generation platform that uses multiple AI models (Claude, GPT, Gemini) to create optimized posts for Instagram, LinkedIn, X, TikTok, and Facebook.",

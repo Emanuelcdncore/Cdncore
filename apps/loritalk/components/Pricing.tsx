@@ -8,8 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const planMeta = [
-  { color: "#94BF5C", ctaHref: "https://app.lori-talk.com", highlight: false },
-  { color: "#5D92E8", ctaHref: "https://app.lori-talk.com", highlight: true },
+  { color: "#94BF5C", ctaHref: "https://app.lori-talk.eu", highlight: false },
+  { color: "#5D92E8", ctaHref: "https://app.lori-talk.eu", highlight: true },
   { color: "#FF9852", ctaHref: "mailto:info@lori-talk.eu", highlight: false },
 ];
 

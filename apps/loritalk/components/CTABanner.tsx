@@ -38,7 +38,7 @@ export default function CTABanner() {
         <h2 data-cta-headline className="text-3xl md:text-4xl font-bold text-white" style={{ clipPath: "inset(0 0 0 0)" }}>{t("ctaBanner.headline")}</h2>
         <p data-cta-sub className="text-lg text-white/80 font-normal max-w-md" style={{ visibility: "hidden" }}>{t("ctaBanner.subtitle")}</p>
         <div className="flex items-center">
-          <a data-cta-btn href="https://app.lori-talk.com" className="px-8 py-3.5 rounded-full font-semibold text-sm bg-white hover:bg-white/90 transition-colors" style={{ color: "#94BF5C", visibility: "hidden" }}>{t("ctaBanner.ctaPrimary")}</a>
+          <a data-cta-btn href="https://app.lori-talk.eu" className="px-8 py-3.5 rounded-full font-semibold text-sm bg-white hover:bg-white/90 transition-colors" style={{ color: "#94BF5C", visibility: "hidden" }}>{t("ctaBanner.ctaPrimary")}</a>
         </div>
       </div>
     </section>

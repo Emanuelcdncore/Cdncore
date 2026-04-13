@@ -85,7 +85,7 @@ export default function SupportedNetworksPage() {
 
           <div className="mt-12 text-center">
             <p className="text-sm text-black/40 mb-4">More networks coming soon.</p>
-            <Link href="https://app.lori-talk.com" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm text-white hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C" }}>
+            <Link href="https://app.lori-talk.eu" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm text-white hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C" }}>
               <span className="material-icons-round text-base">rocket_launch</span>
               Start creating for free
             </Link>

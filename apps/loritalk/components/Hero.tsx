@@ -60,7 +60,7 @@ export default function Hero() {
             </h1>
             <p data-hero-sub className="text-base md:text-lg text-black/60 font-normal" style={{ visibility: "hidden" }}>{t("hero.description")}</p>
             <div className="flex items-center md:items-start mt-1">
-              <a data-hero-cta href="https://app.lori-talk.com" className="px-7 py-3 rounded-full font-semibold text-white text-sm hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C", visibility: "hidden" }}>{t("hero.ctaPrimary")}</a>
+              <a data-hero-cta href="https://app.lori-talk.eu" className="px-7 py-3 rounded-full font-semibold text-white text-sm hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C", visibility: "hidden" }}>{t("hero.ctaPrimary")}</a>
             </div>
           </div>
         </div>
