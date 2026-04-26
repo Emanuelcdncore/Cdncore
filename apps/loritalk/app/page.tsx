@@ -19,7 +19,7 @@ const structuredData = {
       "@type": "Organization",
       name: "CDN Core Technologies",
       url: "https://lori-talk.eu",
-      logo: "https://lori-talk.eu/logo-bird.png",
+      logo: "https://lori-talk.eu/logo-loritalk.svg",
       foundingDate: "2008",
       address: { "@type": "PostalAddress", streetAddress: "Parkurbis - Parque de Ciencia e Tecnologia da Covilha", addressLocality: "Covilha", postalCode: "6200-865", addressCountry: "PT" },
       contactPoint: { "@type": "ContactPoint", telephone: "+351-275-959-168", contactType: "customer service", email: "info@lori-talk.eu" },

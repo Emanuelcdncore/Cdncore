@@ -6,8 +6,7 @@ const EASE = 0.013;
 const DAMPING = 0.92;
 const MAX_DELAY_MS = 4500;
 const MIN_FLY_MS = 9000;
-const FONT_SIZE = 90;
-const MARGIN = 20;
+const LOGO_W = 560;
 
 interface Particle {
   x: number; y: number;
@@ -41,43 +40,23 @@ export default function ParticleIntro({ onComplete }: { onComplete: () => void }
       await document.fonts.ready;
       if (cancelled) return;
 
-      // Load the real logo image
+      // Load full Loritalk logo (SVG)
       const img = new Image();
-      img.src = `${process.env.BASE_PATH || ""}/logo-bird.png`;
+      img.src = `${process.env.BASE_PATH || ""}/logo-loritalk.svg`;
       await new Promise<void>((resolve, reject) => {
         img.onload = () => resolve();
         img.onerror = () => reject(new Error("Failed to load logo"));
       });
       if (cancelled) return;
 
-      // Scale bird to fit nicely — target ~280px wide
-      const BIRD_W = 280;
-      const BIRD_H = Math.round(BIRD_W * (img.naturalHeight / img.naturalWidth));
-      const LOGO_W = BIRD_W + MARGIN * 2;
-
-      // Layout: "lori" text, bird, "_talk" text
-      const TEXT_Y = FONT_SIZE + 5;
-      const BIRD_OFFSET_Y = TEXT_Y + 20;
-      const BIRD_OFFSET_X = Math.round((LOGO_W - BIRD_W) / 2);
-      const TALK_Y = BIRD_OFFSET_Y + BIRD_H + FONT_SIZE + 5;
-      const LOGO_H = TALK_Y + 15;
+      const LOGO_H = Math.round(LOGO_W * (img.naturalHeight / img.naturalWidth));
 
       // Draw logo on offscreen canvas
       const off = document.createElement("canvas");
       off.width = LOGO_W;
       off.height = LOGO_H;
       const oc = off.getContext("2d")!;
-
-      // Draw the bird image
-      oc.drawImage(img, BIRD_OFFSET_X, BIRD_OFFSET_Y, BIRD_W, BIRD_H);
-
-      // Draw text
-      oc.fillStyle = "#111111";
-      oc.font = `700 ${FONT_SIZE}px "Readex Pro", sans-serif`;
-      oc.textAlign = "center";
-      oc.textBaseline = "alphabetic";
-      oc.fillText("lori", LOGO_W / 2, TEXT_Y);
-      oc.fillText("_talk", LOGO_W / 2, TALK_Y);
+      oc.drawImage(img, 0, 0, LOGO_W, LOGO_H);
 
       // Sample colored pixels — uniform 2px grid
       const imgData = oc.getImageData(0, 0, LOGO_W, LOGO_H).data;

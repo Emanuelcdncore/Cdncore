@@ -1,58 +1,25 @@
-import BirdIcon from "./BirdIcon";
-
 interface LoriLogoProps {
   variant?: "horizontal" | "stacked";
   size?: number;
   className?: string;
 }
 
-/**
- * Loritalk logo in horizontal (nav) or stacked (hero) layout.
- * Wordmark uses bold lowercase — matching the official logotype style.
- */
-export default function LoriLogo({ variant = "horizontal", size = 40, className }: LoriLogoProps) {
-  if (variant === "stacked") {
-    return (
-      <div className={`flex flex-col items-center ${className ?? ""}`}>
-        <span
-          style={{
-            fontWeight: 700,
-            fontSize: size * 1.1,
-            lineHeight: 1,
-            letterSpacing: 0,
-          }}
-        >
-          lori
-        </span>
-        <BirdIcon size={size * 1.8} />
-        <span
-          style={{
-            fontWeight: 700,
-            fontSize: size * 1.1,
-            lineHeight: 1,
-            letterSpacing: 0,
-          }}
-        >
-          _talk
-        </span>
-      </div>
-    );
-  }
+const ASPECT = 385.1 / 179.98;
 
-  // Horizontal variant (default — for navbar)
+export default function LoriLogo({ variant = "horizontal", size = 40, className }: LoriLogoProps) {
+  const height = variant === "stacked" ? size * 3.2 : size;
+  const width = Math.round(height * ASPECT);
+  const src = `${process.env.BASE_PATH || ""}/logo-loritalk.svg`;
+
   return (
-    <div className={`flex items-center gap-2 ${className ?? ""}`}>
-      <BirdIcon size={size} />
-      <span
-        style={{
-          fontWeight: 700,
-          fontSize: size * 0.75,
-          lineHeight: 1,
-          letterSpacing: 0,
-        }}
-      >
-        lori_talk
-      </span>
-    </div>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={src}
+      alt="Loritalk"
+      width={width}
+      height={height}
+      className={className}
+      style={{ width, height }}
+    />
   );
 }

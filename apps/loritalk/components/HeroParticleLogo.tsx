@@ -7,8 +7,7 @@ const EASE = 0.018;
 const DAMPING = 0.9;
 const MAX_DELAY_MS = 2500;
 const MIN_FLY_MS = 5000;
-const FONT_SIZE = 36;
-const BIRD_W = 140;
+const LOGO_W = 320;
 const GRID = 2;
 
 interface Particle {
@@ -38,22 +37,17 @@ export default function HeroParticleLogo({ logoSize = 40 }: { logoSize?: number 
       await document.fonts.ready;
       if (cancelled) return;
 
-      // Load the bird image
+      // Load the full Loritalk logo (SVG)
       const img = new Image();
-      img.src = `${process.env.BASE_PATH || ""}/logo-bird.png`;
+      img.src = `${process.env.BASE_PATH || ""}/logo-loritalk.svg`;
       await new Promise<void>((resolve, reject) => {
         img.onload = () => resolve();
         img.onerror = () => reject(new Error("Failed to load logo"));
       });
       if (cancelled) return;
 
-      const birdH = Math.round(BIRD_W * (img.naturalHeight / img.naturalWidth));
-
-      // Stacked logo layout: "lori" + bird + "_talk"
-      const textH = FONT_SIZE;
-      const gap = 8;
-      const logoW = Math.max(BIRD_W, FONT_SIZE * 3);
-      const logoH = textH + gap + birdH + gap + textH;
+      const logoW = LOGO_W;
+      const logoH = Math.round(LOGO_W * (img.naturalHeight / img.naturalWidth));
 
       // Full viewport canvas
       const VW = window.innerWidth;
@@ -71,22 +65,7 @@ export default function HeroParticleLogo({ logoSize = 40 }: { logoSize?: number 
       off.width = logoW;
       off.height = logoH;
       const oc = off.getContext("2d")!;
-
-      oc.fillStyle = "#111111";
-      oc.font = `700 ${FONT_SIZE}px "Readex Pro", sans-serif`;
-      oc.textAlign = "center";
-      oc.textBaseline = "top";
-      oc.fillText("lori", logoW / 2, 0);
-
-      const birdX = Math.round((logoW - BIRD_W) / 2);
-      const birdY = textH + gap;
-      oc.drawImage(img, birdX, birdY, BIRD_W, birdH);
-
-      oc.fillStyle = "#111111";
-      oc.font = `700 ${FONT_SIZE}px "Readex Pro", sans-serif`;
-      oc.textAlign = "center";
-      oc.textBaseline = "top";
-      oc.fillText("_talk", logoW / 2, birdY + birdH + gap);
+      oc.drawImage(img, 0, 0, logoW, logoH);
 
       // Sample pixels for particles
       const imgData = oc.getImageData(0, 0, logoW, logoH).data;
@@ -217,7 +196,7 @@ export default function HeroParticleLogo({ logoSize = 40 }: { logoSize?: number 
   return (
     <>
       {/* Placeholder reserves space in the hero layout */}
-      <div ref={placeholderRef} style={{ width: 160, height: 220 }} />
+      <div ref={placeholderRef} style={{ width: 280, height: 140 }} />
       {/* Fullscreen canvas for particles flying from across the page */}
       <canvas
         ref={canvasRef}
