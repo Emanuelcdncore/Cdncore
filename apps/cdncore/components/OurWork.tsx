@@ -19,13 +19,13 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'CortexHub',
+    title: 'Lori-Talk',
     description:
       'AI-powered content platform that leverages multi-model deliberation to generate, refine, and distribute content across channels. Claude, GPT, and Gemini work in two deliberation rounds — producing outputs no single model can match — then publish directly to LinkedIn, Facebook, Instagram, and more from one dashboard.',
     tags: ['AI', 'Multi-Model', 'Content'],
     type: 'SaaS Platform',
-    image: `${bp}/assets/images/project-cortexhub.png`,
-    link: { url: 'https://cortexhub.cdnglobal.eu', label: 'Visit Platform' },
+    image: `${bp}/assets/images/project-loritalk.png`,
+    link: { url: 'https://lori-talk.eu', label: 'Visit Platform' },
   },
   {
     title: 'AppDrop',
@@ -37,22 +37,22 @@ const projects: Project[] = [
     link: { url: 'https://cdncore-pt.github.io/AppDrop/', label: 'View Product' },
   },
   {
-    title: 'cdnMonitor',
+    title: 'Atlas Eye',
     description:
       'Unified monitoring platform that brings infrastructure visibility, topology mapping, syslog investigation, actionable alerts, and AI-powered operational guidance into one system. Built-in AI explains alerts in plain language, summarizes noisy events, and helps teams act without deep specialist knowledge.',
     tags: ['Monitoring', 'AI Ops', 'Infrastructure'],
     type: 'Software',
     image: `${bp}/assets/images/project-cdnmonitor.png`,
-    link: { url: 'https://cdnmonitor.cdnglobal.eu', label: 'Visit Platform' },
+    link: { url: 'https://atlaseye.eu', label: 'Visit Platform' },
   },
   {
-    title: 'Vertex Network',
+    title: 'Castori Club',
     description:
       'Integrated operations and growth platform that connects partners, admins, and IT teams in one secure environment to manage referrals, contracts, commissions, communications, and infrastructure in real time. Helps organizations scale partnerships with clear visibility, automated workflows, and reliable governance across both commercial and technical operations.',
     tags: ['Partners', 'Commissions', 'Enterprise'],
     type: 'Software',
-    image: `${bp}/assets/images/project-vertex.jpg`,
-    link: { url: 'https://vertex.cdnglobal.eu', label: 'Visit Platform' },
+    image: `${bp}/assets/images/project-castori.png`,
+    link: { url: 'https://castori.club', label: 'Visit Platform' },
   },
   {
     title: 'Auth-Central',
