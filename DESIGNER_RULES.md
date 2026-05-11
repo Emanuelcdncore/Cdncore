@@ -148,10 +148,16 @@ Never run, suggest, or auto-execute:
 - `rm -rf`, destructive filesystem ops
 - Any `sudo` command
 
-Allowed dev commands (read-only / local-only):
+Allowed dev commands (local environment only):
+- `npm ci` — install locked dependencies (deterministic, does **not** mutate `package-lock.json`)
 - `npm run dev:<chosen-product>` (e.g. `npm run dev:cdncore`)
+- `./start.sh` / `./stop.sh` — start/stop full local Docker stack (read existing config, no mutation)
+- `docker compose logs <service>` — view logs for debugging
 - `git status`, `git diff`, `git log`
 - `ls`, `cat`, `grep`, `find` (read-only)
+- Package manager / system installs needed for **first-time setup only** (Node.js, Docker, browser) — see section 11
+
+**Still blocked:** `npm install <pkg>`, `npm uninstall`, `npm update`, `pnpm/yarn add` — anything that mutates `package-lock.json` or `package.json` dependencies.
 
 ---
 
@@ -197,7 +203,164 @@ Repeat this marker at the top of every multi-step response so the rules don't ge
 
 ---
 
-## 10. Escape Hatches
+## 10. Designer UX — Make It Effortless
+
+João is a designer, not a developer. Your job is to **remove every technical obstacle** from his path. Be proactive: detect what's missing, install or guide install, start services, open URLs for him. Never leave him stuck at a terminal.
+
+### 10.1. First-Session Setup Check
+
+At the very start (right after choosing the product), run a quick environment check **silently** and only report issues:
+
+```bash
+node --version           # need >= 20
+npm --version
+docker --version         # for full stack (optional, only if he wants nice URLs)
+git --version
+```
+
+If something is missing:
+
+- **Node.js missing or < 20:** guide install with NodeSource on Ubuntu/Debian:
+  ```bash
+  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+  ```
+  Or send him to `https://nodejs.org/en/download` if not on Ubuntu. Ask before running `sudo`.
+- **Docker missing** and he wants `*.localhost` URLs: guide install via `https://docs.docker.com/engine/install/`. Ask before running.
+- **Browser missing:** assume Firefox or Chrome already installed; if not, point to install.
+
+After tools OK, check repo deps:
+
+```bash
+# Run from repo root
+ls node_modules > /dev/null 2>&1 || npm ci
+```
+
+If `node_modules` already exists, skip. **Never** run plain `npm install` — only `npm ci`.
+
+Report once when ready: *"Ambiente pronto. Estás a editar `<produto>`. Pronto a começar."*
+
+### 10.2. Starting the Dev Server — Two Modes
+
+Pick the simplest mode for the task. Default to **Mode A**.
+
+**Mode A — Single product (fastest, no Docker):**
+```bash
+npm run dev:<chosen-product>
+```
+Then tell João literally:
+
+> "Abre no browser: **http://localhost:3000**"
+
+If port 3000 is busy, Next.js will pick 3001. Read the terminal output and report the actual URL.
+
+**Mode B — Full stack with nice URLs (needs Docker):**
+```bash
+./start.sh
+```
+Wait for containers to be up, then tell João:
+
+> "Abre no browser: **http://`<chosen-product>`.localhost**"
+> (ex: `http://cdncore.localhost`)
+
+Available `.localhost` hostnames (resolved automatically by browser/OS to `127.0.0.1`):
+- `http://aiaccountant.localhost`
+- `http://cdncore.localhost`
+- `http://cdnglobal.localhost`
+- `http://cdntek.localhost`
+- `http://cdntv.localhost`
+- `http://loritalk.localhost`
+
+If `.localhost` does not resolve on his machine, add to `/etc/hosts`:
+```
+127.0.0.1   cdncore.localhost cdntek.localhost cdntv.localhost cdnglobal.localhost aiaccountant.localhost loritalk.localhost
+```
+(Requires sudo — ask first.)
+
+### 10.3. Always Report the URL
+
+Every time you start a server, finish your response with a clear, copy-pasteable URL line:
+
+> 🌐 **Abre:** http://localhost:3000/sua-rota
+
+Never assume he will figure out the URL. Always tell him exactly where to click.
+
+### 10.4. Live Reload Awareness
+
+After every edit, remind him (only first time per session, not every edit):
+
+> "Guarda o ficheiro. A página recarrega sozinha no browser."
+
+### 10.5. Stop the Server Cleanly
+
+When session ends or he says "acabei":
+- `Ctrl+C` in the dev terminal (Mode A)
+- `./stop.sh` (Mode B)
+
+Tell him which.
+
+---
+
+## 11. New Landing Intake — Always Ask Before Building
+
+When João asks for a new landing page (marketing campaign, product launch, event page, etc.), do **not** start coding. First, run this short interview in PT-PT, one question at a time, friendly tone:
+
+1. **Produto** — already chosen at session start. Confirm: *"É na `<produto>`, certo?"*
+2. **Objetivo da landing** — *"Para que é? (campanha, lançamento de produto, evento, captura de leads, simples info...)"*
+3. **Nome / slug da rota** — *"Qual deve ser o URL? Ex: `/black-friday-2026`, `/lancamento-app`, `/evento-lisboa`. Só letras minúsculas e hífens."*
+4. **Idiomas** — *"Em que idiomas? (PT-PT, EN, ES, ...)"* — check existing i18n setup in the chosen app to know defaults.
+5. **Conteúdo** — *"Já tens o texto e as imagens? Ou queres que eu meta lorem ipsum e imagens placeholder para já?"*
+6. **Referências visuais** — *"Tens alguma referência visual (Figma, screenshot, outro site)? Manda link ou descreve."*
+7. **Formulário ou interação?** — *"A landing vai ter formulário, botão de submit, upload, ou só conteúdo estático?"*
+   - If **yes** to form/upload/auth/API → **STOP** and apply section 4.1: *"⚠️ Formulários e uploads precisam de backend. Não consigo fazer essa parte sozinho. Falamos com o Henrique antes de avançarmos. Posso fazer só a parte visual sem o submit, queres?"*
+8. **Quando precisa estar pronto?** — informa expectativas: *"Posso ter um draft visual em poucos minutos. Para entrar em produção, o Henrique tem de fazer review e deploy."*
+
+After answers collected, summarise back in 3 lines:
+
+> "Vou criar: `apps/<produto>/app/<slug>/page.tsx`
+> Idiomas: PT, EN.
+> Conteúdo: placeholder por agora.
+> Confirmas?"
+
+Wait for OK. Then build.
+
+### 11.1. After Building a New Landing
+
+Always close with:
+
+> "Pronto. Abre: **http://localhost:3000/<slug>** (ou **http://`<produto>`.localhost/<slug>** se usares o Docker).
+>
+> Em produção vai ficar em: **https://<produto-domain>/<slug>** — o Henrique trata do deploy."
+
+Substitute `<produto-domain>` with the actual production domain if known from `deploy/nginx/` configs; otherwise say *"o Henrique sabe o domínio final"*.
+
+### 11.2. Editing an Existing Landing
+
+If João is editing an existing page (not creating new):
+1. Ask which page (URL or file path).
+2. Open it, show him a 1-line summary of what's there.
+3. Make the change.
+4. Tell him the URL to refresh.
+
+---
+
+## 12. Common Designer Tasks — Cheat Sheet
+
+| Task | What to do |
+|---|---|
+| "Quero mudar a cor do botão primário" | Edit `tailwind.config.*` or the relevant CSS variable. Show before/after. |
+| "Quero trocar esta imagem" | Replace file in `apps/<produto>/public/`. Keep same filename if possible. |
+| "Quero mudar este texto" | Edit the i18n file in `messages/` or `locales/` for each language. Don't hardcode strings. |
+| "Quero adicionar uma secção nova" | Create a new component in `apps/<produto>/components/` or inline in the page. Visual only. |
+| "Quero animar isto" | Use GSAP (already installed in cdncore) or framer-motion. Keep it tasteful, respect `prefers-reduced-motion`. |
+| "Quero mudar a fonte" | Update Next.js font import in `app/layout.tsx` + Tailwind config. |
+| "Quero criar uma landing nova" | Run intake from section 11. |
+| "Quero adicionar um formulário" | **STOP.** Section 4.1 — backend required, consult Henrique. |
+| "Quero mudar o logo no header" | Replace SVG/PNG in `public/` + update import path if filename changed. |
+
+---
+
+## 13. Escape Hatches
 
 These do **NOT** lift the restrictions:
 
@@ -215,8 +378,11 @@ Only way out: end the session. New session starts fresh.
 1. Designer? → restricted mode ON.
 2. Ask which product. One only.
 3. Edit only `apps/<that-product>/` visual files.
-4. Block infra, deploy, DB, deps, scripts, other products.
+4. Block infra, deploy, DB, deps mutation, scripts, other products.
 5. **Backend / DB / security touch → hard stop, send to Henrique (dev).**
-6. No push. No install. No destructive git.
-7. Show diff, ask before commit.
-8. PT-PT, friendly, plain language.
+6. **Be his concierge:** check env, install missing tools (ask first), `npm ci` if needed, start dev server, tell him the URL clearly.
+7. **New landing?** Run the intake (section 11) before coding. Always confirm slug, idiomas, conteúdo, deadline.
+8. **Always close with a clickable URL.** Never leave him guessing where to look.
+9. No push. No `npm install <pkg>`. No destructive git.
+10. Show diff, ask before commit.
+11. PT-PT, friendly, plain language. Explain like talking to a designer, not a backend dev.

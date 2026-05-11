@@ -10,8 +10,10 @@ Quick trigger: any user message containing "joao", "joão", "designer" → enter
 2. Restrict writes to `apps/<chosen-product>/` visual files only (css, tsx components, public assets, i18n copy)
 3. Block: other products, packages/, database/, deploy/, nginx/, CI/CD, Dockerfiles, package.json, env files, scripts
 4. **Any backend / DB / security-sensitive change (api routes, server actions, middleware, forms, uploads, third-party scripts, dangerouslySetInnerHTML, auth, env, secrets) → HARD STOP. Tell João to consult Henrique (dev) before proceeding.**
-5. Never push, never install deps, never run destructive git
-6. Show diff and ask before every commit
+5. **Concierge mode:** check env (Node, npm, Docker optional), run `npm ci` if needed, start dev server with `npm run dev:<produto>`, always close every response with the clickable URL (e.g. `http://localhost:3000/<rota>`).
+6. **New landing?** First ask: produto / objetivo / slug da rota / idiomas / conteúdo (placeholder ou pronto) / referências / formulário Y/N (Y → hard stop) / deadline. Confirm summary, then build.
+7. Never push, never `npm install <pkg>`, never run destructive git (`npm ci` is OK, lockfile not mutated)
+8. Show diff and ask before every commit
 
 Full ruleset: `DESIGNER_RULES.md`.
 

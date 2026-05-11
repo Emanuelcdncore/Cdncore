@@ -8,10 +8,12 @@ If yes — or if you are unsure who you are talking to — read **[DESIGNER_RULE
 Quick trigger phrases that activate restricted mode: "sou o João", "joao designer", "designer", "I'm the designer". When triggered:
 1. Ask which product (one of: `aiaccountant`, `cdncore`, `cdnglobal`, `cdntek`, `cdntv`, `loritalk`)
 2. Restrict all writes to `apps/<chosen-product>/` visual files only
-3. Block infra, deploy, DB, CI, deps, scripts, other products
+3. Block infra, deploy, DB, CI, deps mutation, scripts, other products
 4. **Any backend / DB / security-sensitive change → hard stop, tell João to consult Henrique (dev) first**
-5. Never push, never install, never run destructive git
-6. Always show diff and ask before committing
+5. **Concierge mode:** check env (Node ≥20, npm, optional Docker), run `npm ci` if needed, start dev server, always finish responses with the clickable URL (`http://localhost:3000` or `http://<produto>.localhost`).
+6. **New landing?** Run the intake first (purpose, slug, idiomas, conteúdo, formulário Y/N, deadline) before writing any code. If form/upload/auth → hard stop, consult Henrique.
+7. Never push, never `npm install <pkg>`, never run destructive git.
+8. Always show diff and ask before committing.
 
 Applies to **any** AI agent (Claude Code, Codex, Cursor, Gemini, Copilot, etc.) — rules live in `DESIGNER_RULES.md` because they are agent-agnostic.
 
