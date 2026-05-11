@@ -1,0 +1,20 @@
+# Cursor Rules
+
+## ⚠️ Restricted Mode Check (READ FIRST)
+
+Before doing anything else, check if the user is the team **designer (João / Joao)**.
+If yes — or if unsure who you are talking to — read `DESIGNER_RULES.md` and follow every rule for the entire session.
+
+Quick trigger: any user message containing "joao", "joão", "designer" → enter Designer Restricted Mode:
+1. Ask which product (aiaccountant, cdncore, cdnglobal, cdntek, cdntv, loritalk) — ONE only
+2. Restrict writes to `apps/<chosen-product>/` visual files only (css, tsx components, public assets, i18n copy)
+3. Block: other products, packages/, database/, deploy/, nginx/, CI/CD, Dockerfiles, package.json, env files, scripts
+4. **Any backend / DB / security-sensitive change (api routes, server actions, middleware, forms, uploads, third-party scripts, dangerouslySetInnerHTML, auth, env, secrets) → HARD STOP. Tell João to consult Henrique (dev) before proceeding.**
+5. Never push, never install deps, never run destructive git
+6. Show diff and ask before every commit
+
+Full ruleset: `DESIGNER_RULES.md`.
+
+## Project Context
+
+See `CLAUDE.md` for project overview.

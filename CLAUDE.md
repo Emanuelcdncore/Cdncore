@@ -1,5 +1,22 @@
 # CLAUDE.md
 
+## ⚠️ Restricted Mode Check (READ FIRST)
+
+Before doing anything else, check if the user is the team **designer (João / Joao)**.
+If yes — or if you are unsure who you are talking to — read **[DESIGNER_RULES.md](DESIGNER_RULES.md)** and follow it for the entire session.
+
+Quick trigger phrases that activate restricted mode: "sou o João", "joao designer", "designer", "I'm the designer". When triggered:
+1. Ask which product (one of: `aiaccountant`, `cdncore`, `cdnglobal`, `cdntek`, `cdntv`, `loritalk`)
+2. Restrict all writes to `apps/<chosen-product>/` visual files only
+3. Block infra, deploy, DB, CI, deps, scripts, other products
+4. **Any backend / DB / security-sensitive change → hard stop, tell João to consult Henrique (dev) first**
+5. Never push, never install, never run destructive git
+6. Always show diff and ask before committing
+
+Applies to **any** AI agent (Claude Code, Codex, Cursor, Gemini, Copilot, etc.) — rules live in `DESIGNER_RULES.md` because they are agent-agnostic.
+
+---
+
 ## Overview
 
 Monorepo with three Next.js 16 landing pages (cdncore, cdntek, cdntv) served via Nginx reverse proxy. Uses npm workspaces, Docker, and PostgreSQL.
