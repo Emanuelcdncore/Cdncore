@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Readex_Pro } from "next/font/google";
+import { Readex_Pro, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
 
@@ -7,6 +7,20 @@ const readexPro = Readex_Pro({
   variable: "--font-readex",
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -43,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${readexPro.variable} antialiased`} suppressHydrationWarning>
+    <html lang="en" className={`${readexPro.variable} ${plusJakarta.variable} ${jetbrainsMono.variable} antialiased`} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

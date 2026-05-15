@@ -7,13 +7,42 @@
     "startForFree": "Começar gratuitamente"
   },
   "hero": {
-    "badge": "Agora em Beta — acesso antecipado gratuito",
-    "headlineOne": "Uma ideia.",
-    "headlineTwo": "Todas as plataformas.",
-    "description": "Escreva um tema ou ideia. A IA do Loritalk redige publicações otimizadas para Instagram, LinkedIn, X, TikTok e mais — em segundos. Vários modelos de IA competem para lhe dar o melhor resultado.",
-    "ctaPrimary": "Começar a criar gratuitamente",
-    "ctaSecondary": "Veja como funciona",
-    "note": "Sem cartão de crédito necessário · Gratuito durante a Beta"
+    "badge": "Em Beta · Preço de acesso antecipado fixo para sempre",
+    "headlineOne": "Um briefing.",
+    "headlineTwo": "Cada",
+    "headlineTwoTail": "canal.",
+    "headlineStrike": "Reescrito.",
+    "headlineThree": "Auditado.",
+    "lead": "Descreva a sua publicação uma vez. O Loritalk escreve <strong>sete versões nativas por plataforma</strong>, gera imagens on-brand, audita cada palavra e agenda tudo — em menos de cinco segundos.",
+    "ctaPrimary": "Começar grátis — sem cartão",
+    "ctaSecondary": "Ver em acção · 90s",
+    "trust": [
+      "7 integrações nativas",
+      "Auto-auditado",
+      "Isolado por workspace"
+    ],
+    "briefCard": {
+      "label": "O seu briefing · 1 de 1",
+      "typed": "Lançar o novo ténis sustentável. Feito de 80% plástico oceânico reciclado. Para corredores Gen Z.",
+      "meta": "pt · 7 canais · Voz da casa",
+      "send": "Gerar ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "posts · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "perfil · páginas",
+      "x": "X / Twitter",
+      "xTag": "threads · single",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "nativo",
+      "facebook": "Facebook",
+      "facebookTag": "páginas",
+      "telegram": "Telegram",
+      "telegramTag": "canais · grupos"
+    }
   },
   "stats": {
     "networksValue": "6+",
@@ -93,22 +122,85 @@
     ]
   },
   "howItWorks": {
-    "title": "Da ideia à publicação em 3 passos",
-    "subtitle": "Acabaram-se os ecrãs em branco. Acabou o copiar e colar entre plataformas.",
+    "eyebrow": "02 · Fluxo",
+    "title": "Briefing → pré-visualizar → publicar.",
+    "titleAccent": "Três passos.",
+    "titleTail": "Cinco segundos.",
+    "subtitle": "Nunca escolhe um modelo. Nunca redimensiona uma imagem. Nunca copia e cola entre separadores.",
     "steps": [
       {
-        "title": "Escreva o seu briefing",
-        "description": "Descreva o que quer comunicar — tão simples como \"lançamento de novo produto\" ou tão detalhado como um briefing completo. Escolha os seus canais, idioma e tom."
+        "badge": "01",
+        "eyebrow": "Input",
+        "title": "Escreva o briefing",
+        "description": "Uma frase ou três parágrafos. Escolha os canais, a persona e o idioma. É a única coisa que escreve hoje.",
+        "footLeft": "~ 5 seg a escrever",
+        "footRight": "1 briefing"
       },
       {
-        "title": "Os modelos de IA competem por si",
-        "description": "Vários modelos de IA geram conteúdo de forma independente, depois reveem e refinam os resultados uns dos outros. Recebe N versões polidas por plataforma."
+        "badge": "02",
+        "eyebrow": "Geração",
+        "title": "A IA adapta por canal",
+        "description": "Os principais modelos de IA leem o seu briefing, a sua persona e as regras nativas de cada plataforma — depois criam uma versão feita para cada canal. Auto-auditado antes de o ver.",
+        "footLeft": "~ 3 seg por canal",
+        "footRight": "7 versões"
       },
       {
-        "title": "Escolha, edite e publique",
-        "description": "Escolha a sua versão favorita para cada canal. Ajuste qualquer coisa com um clique. Publique agora ou agende para mais tarde."
+        "badge": "03",
+        "eyebrow": "Distribuição",
+        "title": "Publicar ou agendar",
+        "description": "Envie agora ou coloque no calendário com timing por plataforma. Cada canal usa a sua API nativa; falhas ficam isoladas — o Instagram envia mesmo que o Facebook falhe.",
+        "footLeft": "APIs nativas · OAuth",
+        "footRight": "7 canais"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// briefing.txt",
+      "text": "\"Lançar o novo ténis sustentável. Feito de 80% plástico oceânico reciclado. Para corredores Gen Z.\"",
+      "channelsComment": "// canais:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Idioma",
+      "personas": [
+        { "name": "Lori", "desc": "Neutra — a voz da casa" },
+        { "name": "Rupert", "desc": "Descontraído, divertido, conversacional" },
+        { "name": "Core", "desc": "Ousado, otimista, focado na marca" }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        { "platform": "Instagram", "kind": "carrossel", "when": "Hoje 14:00" },
+        { "platform": "LinkedIn", "kind": "long-form", "when": "Hoje 15:30" },
+        { "platform": "X", "kind": "thread", "when": "Hoje 16:00" },
+        { "platform": "YouTube", "kind": "short 0:54", "when": "Amanhã 09:00" },
+        { "platform": "Facebook", "kind": "post", "when": "Amanhã 12:00" }
+      ],
+      "cta": "▶ Publicar tudo · ⏱ Agendar"
+    }
+  },
+  "imagery": {
+    "eyebrow": "06 · Imagens",
+    "title": "Imagens",
+    "titleAccent": "on-brand,",
+    "titleTail": "tamanho certo por plataforma.",
+    "subtitle": "A geração de imagens corre async e por plataforma — sem redimensionar à mão, sem stock fora da marca. Posts simples, carrosséis, formatos de story, hero crops. Cada render referencia as regras visuais da persona activa.",
+    "tiles": {
+      "instagramCaption": "5 a.m. Café, dois separadores, uma decisão.\nBuilt v2 antes da equipa entrar.",
+      "storyQuote": "atingimos 1M MRR na mesma semana em que cortámos metade do roadmap.",
+      "storySwipe": "↑ swipe",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Contratámos 3 freelancers antes do primeiro full-time. Aqui está o spreadsheet.",
+      "linkedinCta": "Ler mais →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "a maior parte do \"founder content\" é um press release num hoodie. escreve como uma pessoa. #shipping",
+      "generatingLabel": "A renderizar · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "PRIMEIRA",
+      "ytTitleLineTwo": "CONTRATAÇÃO.",
+      "ytSubtitle": "Porque esperámos 18 meses.",
+      "ytMeta": "Loritalk · Ep. 14 · 32 min"
+    }
   },
   "differentiator": {
     "title": "Porque é que várias IAs vencem uma só",

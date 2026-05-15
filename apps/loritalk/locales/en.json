@@ -7,13 +7,42 @@
     "startForFree": "Start for free"
   },
   "hero": {
-    "badge": "Now in Beta — free early access",
-    "headlineOne": "One idea.",
-    "headlineTwo": "Every platform.",
-    "description": "Type a theme or idea. Loritalk's AI writes optimized posts for Instagram, LinkedIn, X, TikTok, and more — in seconds. Multiple AI models compete to give you the best result.",
-    "ctaPrimary": "Start creating for free",
-    "ctaSecondary": "See how it works",
-    "note": "No credit card required · Free during Beta"
+    "badge": "In Beta · Early-access pricing locked forever",
+    "headlineOne": "One brief.",
+    "headlineTwo": "Every",
+    "headlineTwoTail": "channel.",
+    "headlineStrike": "Rewritten.",
+    "headlineThree": "Audited.",
+    "lead": "Describe your post once. Loritalk writes <strong>seven platform-native versions</strong>, generates on-brand images, audits every word, and schedules them — in under five seconds.",
+    "ctaPrimary": "Start free — no card",
+    "ctaSecondary": "See it work · 90s",
+    "trust": [
+      "7 native integrations",
+      "Auto-audited",
+      "Workspace-isolated"
+    ],
+    "briefCard": {
+      "label": "Your brief · 1 of 1",
+      "typed": "Launch our new sustainable sneaker. Made from 80% recycled ocean plastic. Targeting Gen Z runners.",
+      "meta": "en · 7 channels · House Voice",
+      "send": "Generate ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "posts · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profile · pages",
+      "x": "X / Twitter",
+      "xTag": "threads · single",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "native",
+      "facebook": "Facebook",
+      "facebookTag": "pages",
+      "telegram": "Telegram",
+      "telegramTag": "channels · groups"
+    }
   },
   "stats": {
     "networksValue": "6+",
@@ -93,22 +122,85 @@
     ]
   },
   "howItWorks": {
-    "title": "From idea to post in 3 steps",
-    "subtitle": "No more blank screens. No more copy-pasting between platforms.",
+    "eyebrow": "02 · Workflow",
+    "title": "Brief → preview → publish.",
+    "titleAccent": "Three moves.",
+    "titleTail": "Five seconds.",
+    "subtitle": "You never pick a model. You never resize an image. You never copy-paste between tabs.",
     "steps": [
       {
-        "title": "Write your briefing",
-        "description": "Describe what you want to communicate — as simple as \"new product launch\" or as detailed as a full brief. Pick your channels, language, and tone."
+        "badge": "01",
+        "eyebrow": "Input",
+        "title": "Write your brief",
+        "description": "One sentence or three paragraphs. Pick the channels, the persona, and the language. That's the only thing you write today.",
+        "footLeft": "~ 5 sec to write",
+        "footRight": "1 brief"
       },
       {
-        "title": "AI models compete for you",
-        "description": "Multiple AI models generate content independently, then review and refine each other's output. You receive N polished versions per platform."
+        "badge": "02",
+        "eyebrow": "Generation",
+        "title": "AI tailors it per channel",
+        "description": "Top AI models read your brief, your persona, and each platform's native rules — then craft a version made for each channel. Auto-audited before you see it.",
+        "footLeft": "~ 3 sec per channel",
+        "footRight": "7 versions"
       },
       {
-        "title": "Pick, edit & publish",
-        "description": "Choose your favorite version for each channel. Tweak anything with one click. Publish now or schedule for later."
+        "badge": "03",
+        "eyebrow": "Distribution",
+        "title": "Publish or schedule",
+        "description": "Send now or drop into the calendar with per-platform timing. Each channel ships through its native API; failures are isolated — Instagram still goes even if Facebook hiccups.",
+        "footLeft": "Native APIs · OAuth",
+        "footRight": "7 channels"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Launch our new sustainable sneaker. Made from 80% recycled ocean plastic. Targeting Gen Z runners.\"",
+      "channelsComment": "// channels:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Language",
+      "personas": [
+        { "name": "Lori", "desc": "Neutral — Lori's house voice" },
+        { "name": "Rupert", "desc": "Relaxed, funny, conversational" },
+        { "name": "Core", "desc": "Bold, optimistic, brand-led" }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        { "platform": "Instagram", "kind": "carousel", "when": "Today 14:00" },
+        { "platform": "LinkedIn", "kind": "long-form", "when": "Today 15:30" },
+        { "platform": "X", "kind": "thread", "when": "Today 16:00" },
+        { "platform": "YouTube", "kind": "short 0:54", "when": "Tomorrow 09:00" },
+        { "platform": "Facebook", "kind": "post", "when": "Tomorrow 12:00" }
+      ],
+      "cta": "▶ Publish all · ⏱ Schedule"
+    }
+  },
+  "imagery": {
+    "eyebrow": "06 · Imagery",
+    "title": "On-brand",
+    "titleAccent": "images",
+    "titleTail": "sized per platform.",
+    "subtitle": "Image generation runs async and per-platform — no manual resizing, no off-brand stock. Single posts, carousels, story formats, hero crops. Every render references the active persona's visual rules.",
+    "tiles": {
+      "instagramCaption": "5 a.m. Coffee, two tabs, one decision.\nBuilt v2 before the team logged on.",
+      "storyQuote": "we hit 1M MRR the same week we removed half the roadmap.",
+      "storySwipe": "↑ swipe",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "We hired 3 contractors before our first full-time. Here's the spreadsheet.",
+      "linkedinCta": "Read more →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "most \"founder content\" is a press release in a hoodie. write like a person. #shipping",
+      "generatingLabel": "Rendering · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "FIRST",
+      "ytTitleLineTwo": "HIRE.",
+      "ytSubtitle": "Why we waited 18 months.",
+      "ytMeta": "Loritalk · Ep. 14 · 32 min"
+    }
   },
   "differentiator": {
     "title": "Why multiple AIs beat a single one",

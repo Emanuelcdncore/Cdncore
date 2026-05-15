@@ -18,11 +18,79 @@
   --color-danger: #E54013;
 
   /* Typography */
-  --font-sans: var(--font-readex), 'Readex Pro', sans-serif;
-  --font-display: var(--font-readex), 'Readex Pro', sans-serif;
+  --font-sans: var(--font-jakarta), var(--font-readex), 'Plus Jakarta Sans', sans-serif;
+  --font-display: var(--font-jakarta), var(--font-readex), 'Plus Jakarta Sans', sans-serif;
+  --font-mono: var(--font-jetbrains), 'JetBrains Mono', ui-monospace, monospace;
 
   --color-background: #ffffff;
   --color-foreground: #000000;
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   Design system tokens (Lori Talk feather palette)
+   Sourced from the design handoff: colors_and_type.css
+   ────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Feather palette */
+  --feather-green: #94bf5c;
+  --feather-green-ink: #4d6e23;
+  --feather-sky: #5d92e8;
+  --feather-sky-ink: #1f5cc4;
+  --feather-cobalt: #2267b2;
+  --feather-cobalt-hi: #1a528f;
+  --feather-tangerine: #ff9852;
+  --feather-tangerine-ink: #b25a1d;
+  --feather-flame: #e54013;
+  --feather-flame-hi: #c1320a;
+
+  /* Soft tints (12% on white) */
+  --tint-green: #eff6e2;
+  --tint-sky: #e3edfb;
+  --tint-cobalt: #d9e6f3;
+  --tint-tangerine: #fdebd7;
+  --tint-flame: #fbded0;
+
+  /* Neutrals — warm-leaning */
+  --ink-1: #15161a;
+  --ink-2: #3a3d44;
+  --ink-3: #6b6f78;
+  --ink-4: #a8acb4;
+  --paper-1: #ffffff;
+  --paper-2: #ffffff;
+  --paper-3: #f5f3ee;
+  --paper-4: #e8e4da;
+
+  /* Semantic */
+  --fg-primary: var(--ink-1);
+  --fg-secondary: var(--ink-2);
+  --fg-tertiary: var(--ink-3);
+  --fg-disabled: var(--ink-4);
+  --border-default: var(--paper-4);
+  --border-strong: var(--ink-4);
+
+  /* Radii */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(20,22,26,0.04), 0 1px 1px rgba(20,22,26,0.03);
+  --shadow-md: 0 4px 12px rgba(20,22,26,0.06), 0 2px 4px rgba(20,22,26,0.04);
+  --shadow-lg: 0 12px 32px rgba(20,22,26,0.10), 0 4px 8px rgba(20,22,26,0.05);
+  --shadow-pop: 0 16px 48px rgba(20,22,26,0.14), 0 6px 16px rgba(20,22,26,0.06);
+
+  /* Feather gradient (decorative) */
+  --feather-gradient: linear-gradient(
+    90deg,
+    var(--feather-green) 0%,
+    var(--feather-sky) 28%,
+    var(--feather-cobalt) 50%,
+    var(--feather-tangerine) 76%,
+    var(--feather-flame) 100%
+  );
 }
 
 html {
@@ -50,4 +118,52 @@ body {
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   Hero / step / imagery animations (design handoff)
+   ────────────────────────────────────────────────────────────────────── */
+@keyframes blink { 50% { opacity: 0; } }
+
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: .6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes floatBlob {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(40px,30px) scale(1.1); }
+}
+
+@keyframes strikeIn {
+  to { transform: scaleX(1); }
+}
+
+@keyframes scrollMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@keyframes genbar { to { left: 100%; } }
+
+@keyframes ytfloat {
+  0%, 100% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(-50%) scale(1.06); }
+}
+
+@keyframes storyProg {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes platformFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }

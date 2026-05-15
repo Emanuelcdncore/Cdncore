@@ -5,6 +5,7 @@ import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
+import Imagery from "@/components/Imagery";
 import Differentiator from "@/components/Differentiator";
 import Reviews from "@/components/Reviews";
 import UseCases from "@/components/UseCases";
@@ -83,6 +84,7 @@ export default function Home() {
         <Solution />
         <Features />
         <HowItWorks />
+        <Imagery />
         <Differentiator />
         <UseCases />
         <Pricing />
