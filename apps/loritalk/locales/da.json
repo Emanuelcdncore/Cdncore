@@ -35,7 +35,7 @@
       },
       {
         "title": "AI der lyder generisk",
-        "description": "ChatGPT giver dig én version, der lyder som alle andres. Ingen brandstemme, ingen platformbevidsthed, ingen reel optimering."
+        "description": "AI giver dig én version, der lyder som alle andres. Ingen brandstemme, ingen platformbevidsthed, ingen reel optimering."
       },
       {
         "title": "Flaskehalse i teamet",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Multi-model AI-deliberation",
-        "description": "Ikke én AI — flere modeller genererer uafhængigt og forbedrer derefter hinandens arbejde. Du får det bedste fra Claude, GPT og Gemini kombineret."
+        "description": "Ikke én AI — flere modeller genererer uafhængigt og forbedrer derefter hinandens arbejde."
       },
       {
         "title": "Platformoptimeret indhold",
@@ -132,7 +132,7 @@
     "publishAll": "Publicer alle",
     "scheduled": "Planlagt",
     "draft": "Kladde",
-    "explanation": "Hver AI-model har forskellige styrker. Claude excellerer i nuancer, GPT i alsidighed, Gemini i faktuel præcision. Ved at få dem til at samarbejde og udfordre hinanden er hver endelig tekst bedre, end nogen enkelt model kunne producere alene."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Bygget til teams, der publicerer",
@@ -170,7 +170,12 @@
         "annualPrice": "€0",
         "period": "under Beta",
         "description": "Prøv alt med generøse grænser.",
-        "features": ["5 opslag / måned", "3 netværk", "Grundlæggende tonekontrol", "Hashtagforslag"],
+        "features": [
+          "5 opslag / måned",
+          "3 netværk",
+          "Grundlæggende tonekontrol",
+          "Hashtagforslag"
+        ],
         "cta": "Start gratis"
       },
       {
@@ -180,7 +185,13 @@
         "annualMonthly": "€25",
         "period": "",
         "description": "For kreative og brands, der publicerer konsekvent.",
-        "features": ["200 opslag / måned", "Alle netværk", "Avancerede toner og personas", "Indholdskalender", "Prioriteret support"],
+        "features": [
+          "200 opslag / måned",
+          "Alle netværk",
+          "Avancerede toner og personas",
+          "Indholdskalender",
+          "Prioriteret support"
+        ],
         "cta": "Start gratis prøveperiode"
       },
       {
@@ -190,7 +201,14 @@
         "annualMonthly": "",
         "period": "",
         "description": "For teams, der administrerer flere brands.",
-        "features": ["Ubegrænsede opslag", "Alle netværk", "Flere brands", "Teamsamarbejde", "Analyse", "Kontoadministrator"],
+        "features": [
+          "Ubegrænsede opslag",
+          "Alle netværk",
+          "Flere brands",
+          "Teamsamarbejde",
+          "Analyse",
+          "Kontoadministrator"
+        ],
         "cta": "Kontakt os",
         "customPrice": true
       }
@@ -201,11 +219,11 @@
     "items": [
       {
         "q": "Hvilke AI-modeller bruger Loritalk?",
-        "a": "Loritalk forbinder til flere førende AI-udbydere, herunder Claude (Anthropic), GPT (OpenAI) og Gemini (Google). Du kan konfigurere, hvilke modeller der deltager i din genereringsproces."
+        "a": "Du kan konfigurere, hvilke modeller der deltager i din genereringsproces."
       },
       {
-        "q": "Hvordan adskiller det sig fra ChatGPT?",
-        "a": "ChatGPT giver dig ét output fra én model. Loritalk kører flere modeller parallelt og lader dem derefter forbedre hinandens arbejde — hvilket konsekvent producerer højere kvalitet. Desuden er hvert opslag automatisk optimeret til den specifikke platform."
+        "q": "Hvordan adskiller det sig fra other AI tools?",
+        "a": "Other AI tools giver dig ét output fra én model. Loritalk kører flere modeller parallelt og lader dem derefter forbedre hinandens arbejde — hvilket konsekvent producerer højere kvalitet. Desuden er hvert opslag automatisk optimeret til den specifikke platform."
       },
       {
         "q": "Hvilke sociale netværk understøttes?",

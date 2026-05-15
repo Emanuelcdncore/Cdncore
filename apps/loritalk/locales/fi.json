@@ -35,7 +35,7 @@
       },
       {
         "title": "AI, joka kuulostaa yleiseltä",
-        "description": "ChatGPT antaa sinulle yhden version, joka kuulostaa kaikilta muilta. Ei brändiääntä, ei alustatietoisuutta, ei todellista optimointia."
+        "description": "AI antaa sinulle yhden version, joka kuulostaa kaikilta muilta. Ei brändiääntä, ei alustatietoisuutta, ei todellista optimointia."
       },
       {
         "title": "Tiimin pullonkaulat",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Usean mallin AI-keskustelu",
-        "description": "Ei vain yksi AI — useat mallit luovat itsenäisesti, sitten parantavat toistensa työtä. Saat parhaat puolet Claude, GPT ja Gemini yhdistettynä."
+        "description": "Ei vain yksi AI — useat mallit luovat itsenäisesti, sitten parantavat toistensa työtä."
       },
       {
         "title": "Alustalle optimoitu sisältö",
@@ -132,7 +132,7 @@
     "publishAll": "Julkaise kaikki",
     "scheduled": "Ajastettu",
     "draft": "Luonnos",
-    "explanation": "Jokaisella AI-mallilla on erilaiset vahvuudet. Claude loistaa vivahteissa, GPT monipuolisuudessa, Gemini faktatarkkuudessa. Kun ne tekevät yhteistyötä ja haastavat toisiaan, jokainen lopullinen teksti on parempi kuin yksikään malli voisi tuottaa yksin."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Rakennettu julkaiseville tiimeille",
@@ -170,7 +170,12 @@
         "annualPrice": "€0",
         "period": "betan aikana",
         "description": "Kokeile kaikkea anteliailla rajoituksilla.",
-        "features": ["5 julkaisua / kuukausi", "3 verkostoa", "Perussävyn hallinta", "Aihetunnistesuositukset"],
+        "features": [
+          "5 julkaisua / kuukausi",
+          "3 verkostoa",
+          "Perussävyn hallinta",
+          "Aihetunnistesuositukset"
+        ],
         "cta": "Aloita ilmaiseksi"
       },
       {
@@ -180,7 +185,13 @@
         "annualMonthly": "€25",
         "period": "",
         "description": "Luojille ja brändeille, jotka julkaisevat säännöllisesti.",
-        "features": ["200 julkaisua / kuukausi", "Kaikki verkostot", "Edistynyt sävy ja persoonat", "Sisältökalenteri", "Ensisijainen tuki"],
+        "features": [
+          "200 julkaisua / kuukausi",
+          "Kaikki verkostot",
+          "Edistynyt sävy ja persoonat",
+          "Sisältökalenteri",
+          "Ensisijainen tuki"
+        ],
         "cta": "Aloita ilmainen kokeilu"
       },
       {
@@ -190,7 +201,14 @@
         "annualMonthly": "",
         "period": "",
         "description": "Tiimeille, jotka hallinnoivat useita brändejä.",
-        "features": ["Rajattomat julkaisut", "Kaikki verkostot", "Useita brändejä", "Tiimiyhteistyö", "Analytiikka", "Tilivastaava"],
+        "features": [
+          "Rajattomat julkaisut",
+          "Kaikki verkostot",
+          "Useita brändejä",
+          "Tiimiyhteistyö",
+          "Analytiikka",
+          "Tilivastaava"
+        ],
         "cta": "Ota meihin yhteyttä",
         "customPrice": true
       }
@@ -201,11 +219,11 @@
     "items": [
       {
         "q": "Mitä AI-malleja Loritalk käyttää?",
-        "a": "Loritalk yhdistää useisiin johtaviin AI-palveluntarjoajiin, mukaan lukien Claude (Anthropic), GPT (OpenAI) ja Gemini (Google). Voit määrittää mitkä mallit osallistuvat luontiputkeesi."
+        "a": "Voit määrittää mitkä mallit osallistuvat luontiputkeesi."
       },
       {
-        "q": "Miten tämä eroaa ChatGPT:stä?",
-        "a": "ChatGPT antaa sinulle yhden tuloksen yhdeltä mallilta. Loritalk ajaa useita malleja rinnakkain, sitten saa ne parantamaan toistensa työtä — tuottaen johdonmukaisesti korkeampaa laatua. Lisäksi jokainen julkaisu optimoidaan automaattisesti jokaiselle alustalle."
+        "q": "Miten tämä eroaa other AI tools:stä?",
+        "a": "Other AI tools antaa sinulle yhden tuloksen yhdeltä mallilta. Loritalk ajaa useita malleja rinnakkain, sitten saa ne parantamaan toistensa työtä — tuottaen johdonmukaisesti korkeampaa laatua. Lisäksi jokainen julkaisu optimoidaan automaattisesti jokaiselle alustalle."
       },
       {
         "q": "Mitä sosiaalisia verkostoja tuetaan?",

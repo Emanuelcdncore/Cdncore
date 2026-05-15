@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef } from "react";
@@ -225,13 +225,12 @@ export default function Differentiator() {
             <div data-node className="flex-shrink-0 flex flex-col gap-2 w-full md:w-[clamp(240px,22vw,340px)]" style={{ visibility: "hidden" }}>
               <span className="text-[10px] font-semibold px-3 py-1 rounded-full bg-black/5 text-black/30 self-center">{t("differentiator.round1")}</span>
               {[
-                { name: "Claude", logo: "claude", text: "Step into the future of fashion. Our sustainable sneakers prove eco-conscious choices don\u2019t mean compromising style. \ud83d\udc5f\u2728 #SustainableFashion", time: "1.2s" },
-                { name: "GPT-4o", logo: "openai", text: "We\u2019re proud to announce our most eco-friendly collection. Built from 80% recycled materials, designed for Gen Z streets.", time: "1.8s" },
-                { name: "Gemini", logo: "gemini", text: "Sustainability meets Gen Z style. Introducing sneakers crafted from ocean plastic and recycled rubber. The future is here.", time: "1.4s" },
+                { name: "Lori-Standard", text: "Step into the future of fashion. Our sustainable sneakers prove eco-conscious choices don\u2019t mean compromising style. \ud83d\udc5f\u2728 #SustainableFashion", time: "1.2s" },
+                { name: "Lori-DeepThink", text: "We\u2019re proud to announce our most eco-friendly collection. Built from 80% recycled materials, designed for Gen Z streets.", time: "1.8s" },
+                { name: "Lori-Professional", text: "Sustainability meets Gen Z style. Introducing sneakers crafted from ocean plastic and recycled rubber. The future is here.", time: "1.4s" },
               ].map((m) => (
                 <div key={m.name} className="bg-white rounded-xl border border-black/8 shadow-sm overflow-hidden">
                   <div className="px-3 py-1.5 border-b border-black/5 flex items-center gap-2">
-                    <img src={`${BP}/logos/${m.logo}.svg`} alt={m.name} className="w-4 h-4" />
                     <span className="text-[11px] font-semibold text-black/60">{m.name}</span>
                     <span data-inner className="ml-auto text-[10px] text-black/25 flex items-center gap-0.5" style={{ visibility: "hidden" }}>
                       <span className="material-icons-round text-[10px]">timer</span>
@@ -276,13 +275,12 @@ export default function Differentiator() {
                 <div className="p-4 flex flex-col gap-2.5">
                   <p data-inner className="text-[11px] text-black/40 leading-relaxed" style={{ visibility: "hidden" }}>{t("differentiator.round2Desc")}</p>
                   {[
-                    { name: "Claude", logo: "claude" },
-                    { name: "GPT-4o", logo: "openai" },
-                    { name: "Gemini", logo: "gemini" },
+                    { name: "Lori-Standard" },
+                    { name: "Lori-DeepThink" },
+                    { name: "Lori-Professional" },
                   ].map((m) => (
                     <div key={m.name} className="flex items-center gap-2 px-3 py-2 rounded-lg bg-black/[0.03]">
-                      <img src={`${BP}/logos/${m.logo}.svg`} alt={m.name} className="w-3.5 h-3.5" />
-                      <span className="text-[11px] font-medium text-black/55">{m.name} v2</span>
+                      <span className="text-[11px] font-medium text-black/55">{m.name}</span>
                       <div className="flex-1 h-1 rounded-full bg-black/5 overflow-hidden mx-1">
                         <div data-bar className="h-full rounded-full" style={{ backgroundColor: "#5D92E8", width: "100%" }} />
                       </div>
@@ -318,8 +316,7 @@ export default function Differentiator() {
                       {/* Selected */}
                       <div className="px-3 py-2 rounded-lg border-2 relative" style={{ borderColor: "#94BF5C", backgroundColor: "#94BF5C08" }}>
                         <div className="flex items-center gap-1 mb-1">
-                          <img src={`${BP}/logos/claude.svg`} alt="Claude" className="w-3 h-3" />
-                          <span className="text-[10px] font-medium text-black/40">Claude v2</span>
+                          <span className="text-[10px] font-medium text-black/40">Lori-Standard</span>
                           <span data-check className="material-icons-round text-xs ml-auto" style={{ color: "#94BF5C", visibility: "hidden" }}>check_circle</span>
                         </div>
                         <p className="text-[10px] text-black/60 leading-relaxed">Step into the future of fashion. Sustainable sneakers that prove eco-conscious choices don&apos;t compromise style. &#x1f45f;&#x2728;</p>
@@ -327,15 +324,13 @@ export default function Differentiator() {
                       {/* Not selected */}
                       <div className="px-3 py-2 rounded-lg border border-black/6 opacity-50">
                         <div className="flex items-center gap-1 mb-1">
-                          <img src={`${BP}/logos/openai.svg`} alt="GPT" className="w-3 h-3" />
-                          <span className="text-[10px] text-black/30">GPT-4o v2</span>
+                          <span className="text-[10px] text-black/30">Lori-DeepThink</span>
                         </div>
                         <p className="text-[10px] text-black/35 leading-relaxed line-clamp-2">We&apos;re proud to announce our most eco-friendly collection yet...</p>
                       </div>
                       <div className="px-3 py-2 rounded-lg border border-black/6 opacity-50">
                         <div className="flex items-center gap-1 mb-1">
-                          <img src={`${BP}/logos/gemini.svg`} alt="Gemini" className="w-3 h-3" />
-                          <span className="text-[10px] text-black/30">Gemini v2</span>
+                          <span className="text-[10px] text-black/30">Lori-Professional</span>
                         </div>
                         <p className="text-[10px] text-black/35 leading-relaxed line-clamp-2">Sustainability meets Gen Z style. Introducing sneakers crafted from ocean plastic...</p>
                       </div>
@@ -343,9 +338,9 @@ export default function Differentiator() {
                   </div>
                   {/* Other platforms — compact */}
                   {[
-                    { net: "LinkedIn", logo: "linkedin", model: "GPT-4o v2", selected: true },
-                    { net: "X", logo: "x", model: "Claude v2", selected: true },
-                    { net: "TikTok", logo: "tiktok", model: "Gemini v2", selected: false },
+                    { net: "LinkedIn", logo: "linkedin", model: "Lori-DeepThink", selected: true },
+                    { net: "X", logo: "x", model: "Lori-Standard", selected: true },
+                    { net: "TikTok", logo: "tiktok", model: "Lori-Professional", selected: false },
                   ].map((r) => (
                     <div
                       key={r.net}

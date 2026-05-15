@@ -27,7 +27,7 @@ export default function Image() {
           One idea. Every platform.
         </div>
         <div style={{ fontSize: 22, color: "rgba(0,0,0,0.55)", textAlign: "center", maxWidth: 800, display: "flex" }}>
-          AI content for Instagram, LinkedIn, X, TikTok &amp; Facebook — powered by Claude, GPT &amp; Gemini
+          AI content for Instagram, LinkedIn, X, TikTok &amp; Facebook — powered by multiple AI models
         </div>
         <div
           style={{

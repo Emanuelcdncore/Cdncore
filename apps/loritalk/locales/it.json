@@ -35,7 +35,7 @@
       },
       {
         "title": "IA che suona generica",
-        "description": "ChatGPT ti dà una versione che suona come tutti gli altri. Nessuna voce del brand, nessuna consapevolezza della piattaforma, nessuna vera ottimizzazione."
+        "description": "AI ti dà una versione che suona come tutti gli altri. Nessuna voce del brand, nessuna consapevolezza della piattaforma, nessuna vera ottimizzazione."
       },
       {
         "title": "Colli di bottiglia nel team",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Deliberazione IA Multi-Modello",
-        "description": "Non un'IA — più modelli generano indipendentemente, poi affinano il lavoro degli altri. Ottieni il meglio di Claude, GPT e Gemini combinati."
+        "description": "Non un'IA — più modelli generano indipendentemente, poi affinano il lavoro degli altri."
       },
       {
         "title": "Contenuti ottimizzati per piattaforma",
@@ -132,7 +132,7 @@
     "publishAll": "Pubblica tutto",
     "scheduled": "Programmato",
     "draft": "Bozza",
-    "explanation": "Ogni modello IA ha punti di forza diversi. Claude eccelle nelle sfumature, GPT nella versatilità, Gemini nella precisione fattuale. Facendoli collaborare e sfidarsi a vicenda, ogni testo finale è migliore di quello che qualsiasi singolo modello potrebbe produrre da solo."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Fatto per team che pubblicano",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Quali modelli IA usa Loritalk?",
-        "a": "Loritalk si connette a più fornitori IA leader, tra cui Claude (Anthropic), GPT (OpenAI) e Gemini (Google). Puoi configurare quali modelli partecipano alla tua pipeline di generazione."
+        "a": "Puoi configurare quali modelli partecipano alla tua pipeline di generazione."
       },
       {
-        "q": "In cosa è diverso da ChatGPT?",
-        "a": "ChatGPT ti dà un output da un modello. Loritalk esegue più modelli in parallelo e poi li fa affinare il lavoro degli altri — producendo costantemente qualità superiore. Inoltre, ogni post è automaticamente ottimizzato per la piattaforma specifica."
+        "q": "In cosa è diverso da other AI tools?",
+        "a": "Other AI tools ti dà un output da un modello. Loritalk esegue più modelli in parallelo e poi li fa affinare il lavoro degli altri — producendo costantemente qualità superiore. Inoltre, ogni post è automaticamente ottimizzato per la piattaforma specifica."
       },
       {
         "q": "Quali social network sono supportati?",

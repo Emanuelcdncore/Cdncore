@@ -6,6 +6,7 @@ import Solution from "@/components/Solution";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import Differentiator from "@/components/Differentiator";
+import Reviews from "@/components/Reviews";
 import UseCases from "@/components/UseCases";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
@@ -30,14 +31,14 @@ const structuredData = {
       url: "https://app.lori-talk.eu",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Any",
-      description: "AI-powered social media content generation platform that uses multiple AI models (Claude, GPT, Gemini) to create optimized posts for Instagram, LinkedIn, X, TikTok, and Facebook.",
+      description: "AI-powered social media content generation platform that uses multiple AI models to create optimized posts for Instagram, LinkedIn, X, TikTok, and Facebook.",
       offers: [
         { "@type": "Offer", name: "Free", price: "0", priceCurrency: "EUR", description: "5 posts/month, 3 networks. Free during Beta." },
         { "@type": "Offer", name: "Creator", price: "25", priceCurrency: "EUR", description: "200 posts/month, all networks, advanced personas, content calendar." },
       ],
       creator: { "@type": "Organization", name: "CDN Core Technologies" },
       featureList: [
-        "Multi-model AI deliberation (Claude, GPT, Gemini)",
+        "Multi-model AI deliberation",
         "Platform-optimized content for Instagram, LinkedIn, X, TikTok, Facebook",
         "Multilingual generation in 24+ languages",
         "Content scheduling and publishing",
@@ -49,8 +50,8 @@ const structuredData = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What AI models does Loritalk use?", acceptedAnswer: { "@type": "Answer", text: "Loritalk connects to multiple leading AI providers including Claude (Anthropic), GPT (OpenAI), and Gemini (Google). You can configure which models participate in your generation pipeline." } },
-        { "@type": "Question", name: "How is Loritalk different from ChatGPT?", acceptedAnswer: { "@type": "Answer", text: "ChatGPT gives you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other\u2019s work \u2014 producing consistently higher quality. Plus, every post is automatically optimized for each specific platform." } },
+        { "@type": "Question", name: "How does Loritalk's AI work?", acceptedAnswer: { "@type": "Answer", text: "Loritalk connects to multiple leading AI providers. You can configure which models participate in your generation pipeline." } },
+        { "@type": "Question", name: "How is Loritalk different from other AI tools?", acceptedAnswer: { "@type": "Answer", text: "Other AI tools give you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other\u2019s work \u2014 producing consistently higher quality. Plus, every post is automatically optimized for each specific platform." } },
         { "@type": "Question", name: "Which social networks are supported?", acceptedAnswer: { "@type": "Answer", text: "LinkedIn, Instagram, Facebook, X (Twitter), and TikTok." } },
         { "@type": "Question", name: "Is my content private?", acceptedAnswer: { "@type": "Answer", text: "Yes. Your content is never used to train AI models. All data is stored on servers in Europe and processed under GDPR compliance." } },
         { "@type": "Question", name: "Can I use Loritalk with my team?", acceptedAnswer: { "@type": "Answer", text: "Yes. Create workspaces for each brand, invite team members with admin or publisher roles, and set up approval workflows." } },
@@ -85,6 +86,7 @@ export default function Home() {
         <Differentiator />
         <UseCases />
         <Pricing />
+        <Reviews />
         <FAQ />
         <CTABanner />
       </main>

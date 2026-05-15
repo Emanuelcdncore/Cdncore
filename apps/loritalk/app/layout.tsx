@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Loritalk",
   },
   description:
-    "Loritalk uses multiple AI models (Claude, GPT, Gemini) to generate optimized posts for Instagram, LinkedIn, X, TikTok, and Facebook \u2014 in seconds. Free during Beta.",
+    "Loritalk uses multiple AI models to generate optimized posts for Instagram, LinkedIn, X, TikTok, and Facebook \u2014 in seconds. Free during Beta.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",

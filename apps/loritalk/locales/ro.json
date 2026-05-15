@@ -35,7 +35,7 @@
       },
       {
         "title": "AI care sună generic",
-        "description": "ChatGPT îți dă o versiune care sună ca toți ceilalți. Fără vocea brandului, fără conștientizarea platformei, fără optimizare reală."
+        "description": "AI îți dă o versiune care sună ca toți ceilalți. Fără vocea brandului, fără conștientizarea platformei, fără optimizare reală."
       },
       {
         "title": "Blocaje în echipă",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Deliberare AI Multi-Model",
-        "description": "Nu un singur AI — mai multe modele generează independent, apoi rafinează munca celorlalte. Obții ce e mai bun din Claude, GPT și Gemini combinate."
+        "description": "Nu un singur AI — mai multe modele generează independent, apoi rafinează munca celorlalte."
       },
       {
         "title": "Conținut optimizat pentru platformă",
@@ -132,7 +132,7 @@
     "publishAll": "Publică tot",
     "scheduled": "Programat",
     "draft": "Ciornă",
-    "explanation": "Fiecare model AI are puncte forte diferite. Claude excelează în nuance, GPT în versatilitate, Gemini în precizie factuală. Făcându-le să colaboreze și să se provoacxă reciproc, fiecare text final este mai bun decât ce ar putea produce un singur model."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Construit pentru echipe care publică",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Ce modele AI folosește Loritalk?",
-        "a": "Loritalk se conectează la mai mulți furnizori de AI de top, inclusiv Claude (Anthropic), GPT (OpenAI) și Gemini (Google). Poți configura ce modele participă în pipeline-ul tău de generare."
+        "a": "Poți configura ce modele participă în pipeline-ul tău de generare."
       },
       {
-        "q": "Cum este diferit de ChatGPT?",
-        "a": "ChatGPT îți dă un rezultat de la un model. Loritalk rulează mai multe modele în paralel și apoi le face să rafineze munca celorlalte — producând constant calitate mai ridicată. În plus, fiecare postare este optimizată automat pentru fiecare platformă specifică."
+        "q": "Cum este diferit de other AI tools?",
+        "a": "Other AI tools îți dă un rezultat de la un model. Loritalk rulează mai multe modele în paralel și apoi le face să rafineze munca celorlalte — producând constant calitate mai ridicată. În plus, fiecare postare este optimizată automat pentru fiecare platformă specifică."
       },
       {
         "q": "Ce rețele sociale sunt suportate?",

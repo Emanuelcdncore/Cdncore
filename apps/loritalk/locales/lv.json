@@ -35,7 +35,7 @@
       },
       {
         "title": "AI, kas skan vispārīgi",
-        "description": "ChatGPT sniedz vienu versiju, kas skan kā visi citi. Nav zīmola balss, nav platformas apziņas, nav īstas optimizācijas."
+        "description": "AI sniedz vienu versiju, kas skan kā visi citi. Nav zīmola balss, nav platformas apziņas, nav īstas optimizācijas."
       },
       {
         "title": "Komandas šaurās vietas",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Daudzmodeļu AI apspriešana",
-        "description": "Ne viens AI — vairāki modeļi ģenerē neatkarīgi, pēc tam uzlabo citu darbu. Jūs saņemat labāko no Claude, GPT un Gemini kopā."
+        "description": "Ne viens AI — vairāki modeļi ģenerē neatkarīgi, pēc tam uzlabo citu darbu."
       },
       {
         "title": "Platformai optimizēts saturs",
@@ -132,7 +132,7 @@
     "publishAll": "Publicēt visu",
     "scheduled": "Ieplānots",
     "draft": "Melnraksts",
-    "explanation": "Katram AI modelim ir dažādas stiprās puses. Claude izceļas niansēs, GPT daudzpusībā, Gemini faktu precizitātē. Liekot tiem sadarboties un izaicināt viens otru, katrs gala teksts ir labāks nekā jebkurš atsevišķs modelis varētu radīt viens pats."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Veidots komandām, kas publicē",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Kādus AI modeļus izmanto Loritalk?",
-        "a": "Loritalk savienojas ar vairākiem vadošajiem AI pakalpojumu sniedzējiem, tostarp Claude (Anthropic), GPT (OpenAI) un Gemini (Google). Jūs varat konfigurēt, kuri modeļi piedalās jūsu ģenerēšanas procesā."
+        "a": "Jūs varat konfigurēt, kuri modeļi piedalās jūsu ģenerēšanas procesā."
       },
       {
-        "q": "Kā tas atšķiras no ChatGPT?",
-        "a": "ChatGPT sniedz vienu rezultātu no viena modeļa. Loritalk darbina vairākus modeļus paralēli un liek tiem uzlabot citu darbu — pastāvīgi nodrošinot augstāku kvalitāti. Turklāt katra publikācija tiek automātiski optimizēta konkrētajai platformai."
+        "q": "Kā tas atšķiras no other AI tools?",
+        "a": "Other AI tools sniedz vienu rezultātu no viena modeļa. Loritalk darbina vairākus modeļus paralēli un liek tiem uzlabot citu darbu — pastāvīgi nodrošinot augstāku kvalitāti. Turklāt katra publikācija tiek automātiski optimizēta konkrētajai platformai."
       },
       {
         "q": "Kādi sociālie tīkli tiek atbalstīti?",

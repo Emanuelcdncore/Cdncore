@@ -35,7 +35,7 @@
       },
       {
         "title": "AI die generiek klinkt",
-        "description": "ChatGPT geeft je één versie die klinkt als iedereen. Geen merkstem, geen platformbewustzijn, geen echte optimalisatie."
+        "description": "AI geeft je één versie die klinkt als iedereen. Geen merkstem, geen platformbewustzijn, geen echte optimalisatie."
       },
       {
         "title": "Knelpunten in het team",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Multi-model AI-deliberatie",
-        "description": "Niet één AI — meerdere modellen genereren onafhankelijk en verfijnen vervolgens elkaars werk. Je krijgt het beste van Claude, GPT en Gemini gecombineerd."
+        "description": "Niet één AI — meerdere modellen genereren onafhankelijk en verfijnen vervolgens elkaars werk."
       },
       {
         "title": "Platformgeoptimaliseerde content",
@@ -132,7 +132,7 @@
     "publishAll": "Alles publiceren",
     "scheduled": "Gepland",
     "draft": "Concept",
-    "explanation": "Elk AI-model heeft verschillende sterke punten. Claude blinkt uit in nuance, GPT in veelzijdigheid, Gemini in feitelijke precisie. Door ze te laten samenwerken en elkaar uit te dagen, is elke definitieve tekst beter dan wat één enkel model alleen zou kunnen produceren."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Gebouwd voor teams die publiceren",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Welke AI-modellen gebruikt Loritalk?",
-        "a": "Loritalk verbindt met meerdere toonaangevende AI-providers, waaronder Claude (Anthropic), GPT (OpenAI) en Gemini (Google). Je kunt configureren welke modellen deelnemen aan je generatiepipeline."
+        "a": "Je kunt configureren welke modellen deelnemen aan je generatiepipeline."
       },
       {
-        "q": "Hoe verschilt dit van ChatGPT?",
-        "a": "ChatGPT geeft je één output van één model. Loritalk draait meerdere modellen parallel en laat ze vervolgens elkaars werk verfijnen — wat consistent hogere kwaliteit oplevert. Bovendien wordt elk bericht automatisch geoptimaliseerd voor elk specifiek platform."
+        "q": "Hoe verschilt dit van other AI tools?",
+        "a": "Other AI tools geeft je één output van één model. Loritalk draait meerdere modellen parallel en laat ze vervolgens elkaars werk verfijnen — wat consistent hogere kwaliteit oplevert. Bovendien wordt elk bericht automatisch geoptimaliseerd voor elk specifiek platform."
       },
       {
         "q": "Welke sociale netwerken worden ondersteund?",

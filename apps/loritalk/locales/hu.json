@@ -35,7 +35,7 @@
       },
       {
         "title": "AI, ami általánosan hangzik",
-        "description": "A ChatGPT ad egy verziót, ami úgy hangzik, mint mindenki más. Nincs márka hang, nincs platformtudatosság, nincs valódi optimalizálás."
+        "description": "A AI ad egy verziót, ami úgy hangzik, mint mindenki más. Nincs márka hang, nincs platformtudatosság, nincs valódi optimalizálás."
       },
       {
         "title": "Csapat szűk keresztmetszetek",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Több modelles AI deliberáció",
-        "description": "Nem egy AI — több modell generál függetlenül, majd finomítja egymás munkáját. Megkapod a Claude, GPT és Gemini legjavát együtt."
+        "description": "Nem egy AI — több modell generál függetlenül, majd finomítja egymás munkáját."
       },
       {
         "title": "Platformra optimalizált tartalom",
@@ -132,7 +132,7 @@
     "publishAll": "Összes publikálása",
     "scheduled": "Ütemezve",
     "draft": "Vázlat",
-    "explanation": "Minden AI modellnek más erősségei vannak. A Claude a árnyalatokban jeleskedik, a GPT a sokoldalúságban, a Gemini a ténybeli pontosságban. Azzal, hogy együttműködésre és egymás kihívására ösztönözzük őket, minden végleges szöveg jobb, mint amit bármelyik modell egyedül tudna előállítani."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Publikáló csapatok számára készült",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Milyen AI modelleket használ a Loritalk?",
-        "a": "A Loritalk több vezető AI szolgáltatóhoz csatlakozik, beleértve a Claude (Anthropic), GPT (OpenAI) és Gemini (Google) modelleket. Beállíthatod, melyik modellek vesznek részt a generálási folyamatodban."
+        "a": "Beállíthatod, melyik modellek vesznek részt a generálási folyamatodban."
       },
       {
-        "q": "Miben különbözik ez a ChatGPT-től?",
-        "a": "A ChatGPT egy kimenetet ad egy modellből. A Loritalk több modellt futtat párhuzamosan, majd ráveszi őket, hogy finomítsák egymás munkáját — következetesen magasabb minőséget produkálva. Ráadásul minden poszt automatikusan optimalizálódik az adott platformra."
+        "q": "Miben különbözik ez a other AI tools-től?",
+        "a": "A Other AI tools egy kimenetet ad egy modellből. A Loritalk több modellt futtat párhuzamosan, majd ráveszi őket, hogy finomítsák egymás munkáját — következetesen magasabb minőséget produkálva. Ráadásul minden poszt automatikusan optimalizálódik az adott platformra."
       },
       {
         "q": "Mely közösségi hálózatok támogatottak?",

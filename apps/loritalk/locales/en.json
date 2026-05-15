@@ -35,7 +35,7 @@
       },
       {
         "title": "AI that sounds generic",
-        "description": "ChatGPT gives you one version that sounds like everyone else. No brand voice, no platform awareness, no real optimization."
+        "description": "Single-model AI gives you one version that sounds like everyone else. No brand voice, no platform awareness, no real optimization."
       },
       {
         "title": "Team bottlenecks",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Multi-Model AI Deliberation",
-        "description": "Not one AI — multiple models generate independently, then refine each other's work. You get the best of Claude, GPT, and Gemini combined."
+        "description": "Not one AI — multiple models generate independently, then refine each other's work."
       },
       {
         "title": "Platform-optimized content",
@@ -132,7 +132,7 @@
     "publishAll": "Publish all",
     "scheduled": "Scheduled",
     "draft": "Draft",
-    "explanation": "Each AI model has different strengths. Claude excels at nuance, GPT at versatility, Gemini at factual precision. By making them collaborate and challenge each other, every final text is better than any single model could produce alone."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Built for teams that publish",
@@ -170,7 +170,12 @@
         "annualPrice": "€0",
         "period": "during Beta",
         "description": "Try everything with generous limits.",
-        "features": ["5 posts / month", "3 networks", "Basic tone controls", "Hashtag suggestions"],
+        "features": [
+          "5 posts / month",
+          "3 networks",
+          "Basic tone controls",
+          "Hashtag suggestions"
+        ],
         "cta": "Start for free"
       },
       {
@@ -180,7 +185,13 @@
         "annualMonthly": "€25",
         "period": "",
         "description": "For creators and brands that publish consistently.",
-        "features": ["200 posts / month", "All networks", "Advanced tone & personas", "Content calendar", "Priority support"],
+        "features": [
+          "200 posts / month",
+          "All networks",
+          "Advanced tone & personas",
+          "Content calendar",
+          "Priority support"
+        ],
         "cta": "Start free trial"
       },
       {
@@ -190,7 +201,14 @@
         "annualMonthly": "",
         "period": "",
         "description": "For teams managing multiple brands.",
-        "features": ["Unlimited posts", "All networks", "Multiple brands", "Team collaboration", "Analytics", "Account manager"],
+        "features": [
+          "Unlimited posts",
+          "All networks",
+          "Multiple brands",
+          "Team collaboration",
+          "Analytics",
+          "Account manager"
+        ],
         "cta": "Talk to us",
         "customPrice": true
       }
@@ -200,12 +218,12 @@
     "title": "Questions? We've got answers.",
     "items": [
       {
-        "q": "What AI models does Loritalk use?",
-        "a": "Loritalk connects to multiple leading AI providers including Claude (Anthropic), GPT (OpenAI), and Gemini (Google). You can configure which models participate in your generation pipeline."
+        "q": "What AI does Loritalk use?",
+        "a": "Loritalk connects to multiple leading AI providers. You can configure which models participate in your generation pipeline."
       },
       {
-        "q": "How is this different from ChatGPT?",
-        "a": "ChatGPT gives you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other's work — producing consistently higher quality. Plus, every post is automatically optimized for each specific platform."
+        "q": "How is this different from other AI tools?",
+        "a": "Other AI tools give you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other's work — producing consistently higher quality. Plus, every post is automatically optimized for each specific platform."
       },
       {
         "q": "Which social networks are supported?",
