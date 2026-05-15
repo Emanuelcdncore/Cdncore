@@ -8,21 +8,48 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 type TierAccent = "green" | "tangerine" | "cobalt" | "flame" | "neutral";
+type TierBadge = "most-popular" | "best-value" | null;
 
-const planMeta: { accent: TierAccent; ctaHref: string; badge: boolean }[] = [
-  { accent: "neutral", ctaHref: "https://app.lori-talk.eu", badge: false },
-  { accent: "tangerine", ctaHref: "https://app.lori-talk.eu", badge: true },
-  { accent: "cobalt", ctaHref: "mailto:info@lori-talk.eu", badge: false },
-];
+type Plan = {
+  code: string;
+  name: string;
+  description: string;
+  monthlyCents: number | null;
+  yearlyCents: number | null;
+  creditsPerMonth: number;
+  quotas: { workspaces: number; channels: number; personas: number; members: number; media: number };
+};
+
+function tierAccent(code: string): TierAccent {
+  switch (code.toUpperCase()) {
+    case "STARTER": return "green";
+    case "PLUS": return "tangerine";
+    case "ULTRA": return "cobalt";
+    case "BUSINESS": return "flame";
+    default: return "neutral";
+  }
+}
+
+function tierBadge(code: string): TierBadge {
+  switch (code.toUpperCase()) {
+    case "PLUS": return "most-popular";
+    case "ULTRA": return "best-value";
+    default: return null;
+  }
+}
+
+function formatCents(cents: number): string {
+  const value = cents / 100;
+  return Number.isInteger(value) ? String(value) : value.toFixed(2);
+}
 
 export default function Pricing() {
   const sectionRef = useRef<HTMLElement>(null);
-  const [annual, setAnnual] = useState(true);
+  const [yearly, setYearly] = useState(true);
   const { t } = useTranslation();
 
-  const plans = t("pricing.plans", { returnObjects: true }) as Array<{
-    name: string; monthlyPrice: string; annualPrice: string; annualMonthly?: string; period: string; description: string; features: string[]; cta: string; customPrice?: boolean;
-  }>;
+  const plans = t("pricing.plans", { returnObjects: true }) as Plan[];
+  const symbol = "€";
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -30,12 +57,12 @@ export default function Pricing() {
       mm.add("(prefers-reduced-motion: no-preference)", () => {
         gsap.from("[data-price-title]", { y: 30, autoAlpha: 0, duration: 0.7, ease: "power3.out", scrollTrigger: { trigger: "[data-price-heading]", start: "top 85%", once: true } });
         gsap.from("[data-price-sub]", { y: 20, autoAlpha: 0, duration: 0.6, delay: 0.15, scrollTrigger: { trigger: "[data-price-heading]", start: "top 85%", once: true } });
-        const cardTl = gsap.timeline({ scrollTrigger: { trigger: "[data-price-grid]", start: "top 78%", once: true } });
-        cardTl.from("[data-price-card-0]", { x: -80, autoAlpha: 0, duration: 0.7, ease: "power3.out" }, 0);
-        cardTl.from("[data-price-card-2]", { x: 80, autoAlpha: 0, duration: 0.7, ease: "power3.out" }, 0);
-        cardTl.from("[data-price-card-1]", { y: 80, scale: 0.9, autoAlpha: 0, duration: 0.8, ease: "back.out(1.7)" }, 0.15);
+        gsap.from("[data-price-toggle]", { y: 14, autoAlpha: 0, duration: 0.5, delay: 0.3, scrollTrigger: { trigger: "[data-price-heading]", start: "top 85%", once: true } });
+        gsap.from("[data-price-card]", { y: 40, autoAlpha: 0, scale: 0.96, duration: 0.7, stagger: 0.12, ease: "back.out(1.4)", scrollTrigger: { trigger: "[data-price-grid]", start: "top 80%", once: true } });
       });
-      mm.add("(prefers-reduced-motion: reduce)", () => { gsap.set("[data-price-title], [data-price-sub], [data-price-card-0], [data-price-card-1], [data-price-card-2]", { autoAlpha: 1, clearProps: "all" }); });
+      mm.add("(prefers-reduced-motion: reduce)", () => {
+        gsap.set("[data-price-title], [data-price-sub], [data-price-toggle], [data-price-card]", { autoAlpha: 1, clearProps: "all" });
+      });
     }, sectionRef);
     return () => ctx.revert();
   }, []);
@@ -48,21 +75,21 @@ export default function Pricing() {
           <p data-price-sub className="max-w-lg mx-auto" style={{ fontSize: 16, color: "var(--ink-3)", visibility: "hidden" }}>{t("pricing.subtitle")}</p>
         </div>
 
-        <div className="flex items-center justify-center mb-12">
+        <div data-price-toggle className="flex items-center justify-center mb-12" style={{ visibility: "hidden" }}>
           <div className="plan-billing-toggle" role="group" aria-label="Billing cycle">
             <button
               type="button"
-              className={`plan-billing-toggle-btn${!annual ? " plan-billing-toggle-btn--active" : ""}`}
-              onClick={() => setAnnual(false)}
-              aria-pressed={!annual}
+              className={`plan-billing-toggle-btn${!yearly ? " plan-billing-toggle-btn--active" : ""}`}
+              onClick={() => setYearly(false)}
+              aria-pressed={!yearly}
             >
               {t("pricing.monthly")}
             </button>
             <button
               type="button"
-              className={`plan-billing-toggle-btn${annual ? " plan-billing-toggle-btn--active" : ""}`}
-              onClick={() => setAnnual(true)}
-              aria-pressed={annual}
+              className={`plan-billing-toggle-btn${yearly ? " plan-billing-toggle-btn--active" : ""}`}
+              onClick={() => setYearly(true)}
+              aria-pressed={yearly}
             >
               {t("pricing.annual")}
               <span className="plan-billing-toggle-save">{t("pricing.save2Months")}</span>
@@ -70,63 +97,117 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div data-price-grid className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start max-w-5xl mx-auto" style={{ paddingTop: 14 }}>
-          {plans.map((plan, i) => {
-            const meta = planMeta[i];
-            const isFree = plan.monthlyPrice === "€0";
-            const isCustom = !!plan.customPrice;
-            const displayPrice = isCustom ? t("pricing.customPriceLabel") : isFree ? plan.monthlyPrice : (annual ? (plan.annualMonthly || plan.monthlyPrice) : plan.monthlyPrice);
-            const symbol = displayPrice.startsWith("€") ? "€" : "";
-            const priceNumber = displayPrice.replace(/^€/, "");
-            const periodLabel = isCustom ? "" : isFree ? plan.period : t("pricing.perMonth");
-            const showStrike = !isFree && !isCustom && annual && plan.annualMonthly && plan.monthlyPrice !== plan.annualMonthly;
-            const cardClass = `plan-card${meta.badge ? " plan-card--badged" : ""}`;
+        <div data-price-grid className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto" style={{ paddingTop: 14, alignItems: "stretch" }}>
+          {plans.map((plan) => {
+            const accent = tierAccent(plan.code);
+            const badge = tierBadge(plan.code);
+
+            const effectiveCents = yearly
+              ? plan.yearlyCents != null
+                ? Math.round(plan.yearlyCents / 12)
+                : null
+              : plan.monthlyCents;
+            const strikeCents =
+              yearly &&
+              plan.monthlyCents != null &&
+              plan.yearlyCents != null &&
+              plan.yearlyCents < plan.monthlyCents * 12
+                ? plan.monthlyCents
+                : null;
+            const savingCents =
+              yearly && plan.monthlyCents != null && plan.yearlyCents != null
+                ? plan.monthlyCents * 12 - plan.yearlyCents
+                : 0;
+
+            const textsPerMonth = Math.floor(plan.creditsPerMonth / 10);
+            const imagesPerMonth = Math.floor(plan.creditsPerMonth / 30);
+
+            const checkoutHref = `https://app.lori-talk.eu/signup?plan=${plan.code.toLowerCase()}&cycle=${yearly ? "yearly" : "monthly"}`;
 
             return (
               <div
-                key={i}
-                {...{ [`data-price-card-${i}`]: "" }}
-                data-accent={meta.accent}
-                className={cardClass}
+                key={plan.code}
+                data-price-card
+                data-accent={accent}
+                className={`plan-card${badge ? " plan-card--badged" : ""}`}
                 style={{ visibility: "hidden" }}
               >
-                {meta.badge && (
+                {badge && (
                   <div className="plan-card-badge">
-                    <span className="material-icons-round" style={{ fontSize: 12 }}>star</span>
-                    {t("pricing.mostPopular")}
+                    <span className="material-icons-round" style={{ fontSize: 12 }}>
+                      {badge === "most-popular" ? "star" : "workspace_premium"}
+                    </span>
+                    {badge === "most-popular" ? t("pricing.mostPopular") : t("pricing.bestValue")}
                   </div>
                 )}
 
                 <div className="plan-card-head">
                   <div className="plan-card-name">{plan.name}</div>
-                  <div className="plan-card-sub">{plan.description}</div>
+                  {plan.description && <div className="plan-card-sub">{plan.description}</div>}
                 </div>
+
+                {plan.creditsPerMonth > 0 && (
+                  <div className="plan-card-credits-hero">
+                    <div className="plan-card-credits-hero-top">
+                      <span className="material-icons-round plan-card-credits-hero-icon">auto_awesome</span>
+                      <span className="plan-card-credits-hero-number">{plan.creditsPerMonth.toLocaleString()}</span>
+                      <span className="plan-card-credits-hero-unit">{t("pricing.creditsUnit")}</span>
+                    </div>
+                    <div className="plan-card-credits-hero-conv">
+                      <div>{t("pricing.creditsTexts", { count: textsPerMonth })}</div>
+                      <div className="plan-card-credits-hero-or">{t("pricing.creditsOr")}</div>
+                      <div>{t("pricing.creditsImages", { count: imagesPerMonth })}</div>
+                    </div>
+                  </div>
+                )}
 
                 <div className="plan-card-price-block">
                   <div className="plan-card-price-wrap">
-                    {showStrike && (
-                      <span className="plan-card-price-strike">{plan.monthlyPrice}</span>
+                    {effectiveCents != null ? (
+                      <>
+                        {strikeCents != null && (
+                          <span className="plan-card-price-strike">{symbol}{formatCents(strikeCents)}</span>
+                        )}
+                        <span className="plan-card-currency">{symbol}</span>
+                        <span className="plan-card-price">{formatCents(effectiveCents)}</span>
+                        <span className="plan-card-period">
+                          {yearly ? t("pricing.perMonthBilledYearly") : t("pricing.perMonth")}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="plan-card-price">—</span>
                     )}
-                    {symbol && !isCustom && <span className="plan-card-currency">{symbol}</span>}
-                    <span className="plan-card-price">{isCustom ? displayPrice : priceNumber}</span>
-                    {periodLabel && <span className="plan-card-period">{periodLabel}</span>}
                   </div>
-                  {!isFree && !isCustom && annual && (
+                  {yearly && savingCents > 0 && (
                     <span className="plan-card-save">
-                      {plan.annualPrice} {t("pricing.perYear")} · {t("pricing.billedAnnually")}
+                      {t("pricing.saveYearly", { amount: `${symbol}${formatCents(savingCents)}` })}
                     </span>
                   )}
                 </div>
 
-                <a href={meta.ctaHref} className="plan-card-cta">{plan.cta}</a>
+                <a href={checkoutHref} className="plan-card-cta">{t("pricing.tierChoose")}</a>
 
                 <ul className="plan-card-features">
-                  {plan.features.map((f, fi) => (
-                    <li key={fi} className="plan-card-feat">
-                      <span className="material-icons-round plan-card-feat-icon">check_circle</span>
-                      <span>{f}</span>
-                    </li>
-                  ))}
+                  <li className="plan-card-feat">
+                    <span className="material-icons-round plan-card-feat-icon">check</span>
+                    <span>{t("pricing.features.workspaces", { count: plan.quotas.workspaces })}</span>
+                  </li>
+                  <li className="plan-card-feat">
+                    <span className="material-icons-round plan-card-feat-icon">check</span>
+                    <span>{t("pricing.features.channels", { count: plan.quotas.channels })}</span>
+                  </li>
+                  <li className="plan-card-feat">
+                    <span className="material-icons-round plan-card-feat-icon">check</span>
+                    <span>{t("pricing.features.personas", { count: plan.quotas.personas })}</span>
+                  </li>
+                  <li className="plan-card-feat">
+                    <span className="material-icons-round plan-card-feat-icon">check</span>
+                    <span>{t("pricing.features.members", { count: plan.quotas.members })}</span>
+                  </li>
+                  <li className="plan-card-feat">
+                    <span className="material-icons-round plan-card-feat-icon">check</span>
+                    <span>{t("pricing.features.media", { count: plan.quotas.media.toLocaleString() })}</span>
+                  </li>
                 </ul>
               </div>
             );

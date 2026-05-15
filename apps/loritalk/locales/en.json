@@ -246,63 +246,66 @@
   },
   "pricing": {
     "title": "Simple, transparent pricing",
-    "subtitle": "Free during Beta. Early users lock their rate forever when we launch.",
-    "mostPopular": "Most popular",
+    "subtitle": "Credit-based. Cancel anytime. Yearly saves you two months.",
     "monthly": "Monthly",
     "annual": "Annual",
     "save2Months": "-17%",
-    "perMonth": "/ month",
+    "perMonth": "/ mo",
+    "perMonthBilledYearly": "/ mo, billed yearly",
     "perYear": "/ year",
-    "billedAnnually": "Billed annually",
-    "customPriceLabel": "Custom",
+    "saveYearly": "Save {{amount}} / year",
+    "mostPopular": "Most popular",
+    "bestValue": "Best value",
+    "creditsUnit": "credits / month",
+    "creditsTexts": "~{{count}} text posts",
+    "creditsOr": "or",
+    "creditsImages": "~{{count}} on-brand images",
+    "tierChoose": "Choose plan",
+    "features": {
+      "workspaces_one": "{{count}} workspace",
+      "workspaces_other": "{{count}} workspaces",
+      "channels": "{{count}} social channels",
+      "personas": "{{count}} brand personas",
+      "members_one": "{{count}} team member",
+      "members_other": "{{count}} team members",
+      "media": "{{count}} media assets"
+    },
     "plans": [
       {
-        "name": "Free",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "during Beta",
-        "description": "Try everything with generous limits.",
-        "features": [
-          "5 posts / month",
-          "3 networks",
-          "Basic tone controls",
-          "Hashtag suggestions"
-        ],
-        "cta": "Start for free"
+        "code": "STARTER",
+        "name": "Starter",
+        "description": "For first-time AI content creators",
+        "monthlyCents": 1400,
+        "yearlyCents": 14000,
+        "creditsPerMonth": 600,
+        "quotas": { "workspaces": 1, "channels": 3, "personas": 4, "members": 3, "media": 100 }
       },
       {
-        "name": "Creator",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "For creators and brands that publish consistently.",
-        "features": [
-          "200 posts / month",
-          "All networks",
-          "Advanced tone & personas",
-          "Content calendar",
-          "Priority support"
-        ],
-        "cta": "Start free trial"
+        "code": "PLUS",
+        "name": "Plus",
+        "description": "For consistent and easy AI content creation",
+        "monthlyCents": 3700,
+        "yearlyCents": 37000,
+        "creditsPerMonth": 1700,
+        "quotas": { "workspaces": 2, "channels": 10, "personas": 15, "members": 10, "media": 600 }
       },
       {
-        "name": "Agency",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "For teams managing multiple brands.",
-        "features": [
-          "Unlimited posts",
-          "All networks",
-          "Multiple brands",
-          "Team collaboration",
-          "Analytics",
-          "Account manager"
-        ],
-        "cta": "Talk to us",
-        "customPrice": true
+        "code": "ULTRA",
+        "name": "Ultra",
+        "description": "For creators building AI projects",
+        "monthlyCents": 9700,
+        "yearlyCents": 97000,
+        "creditsPerMonth": 4600,
+        "quotas": { "workspaces": 5, "channels": 25, "personas": 40, "members": 25, "media": 2500 }
+      },
+      {
+        "code": "BUSINESS",
+        "name": "Business",
+        "description": "For agencies and small teams",
+        "monthlyCents": 20700,
+        "yearlyCents": 207000,
+        "creditsPerMonth": 9700,
+        "quotas": { "workspaces": 15, "channels": 75, "personas": 120, "members": 75, "media": 10000 }
       }
     ]
   },
