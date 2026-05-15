@@ -35,7 +35,7 @@
       },
       {
         "title": "AI li tidher ġenerika",
-        "description": "ChatGPT jagħtik verżjoni waħda li tidher bħal kulħadd. L-ebda vuċi tal-brand, l-ebda għarfien tal-pjattaforma, l-ebda ottimizzazzjoni vera."
+        "description": "AI jagħtik verżjoni waħda li tidher bħal kulħadd. L-ebda vuċi tal-brand, l-ebda għarfien tal-pjattaforma, l-ebda ottimizzazzjoni vera."
       },
       {
         "title": "Bottlenecks tat-tim",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Deliberazzjoni AI b'Ħafna Mudelli",
-        "description": "Mhux AI waħda — diversi mudelli jiġġeneraw indipendentement, imbagħad jirfinaw ix-xogħol ta' xulxin. Tikseb l-aħjar minn Claude, GPT u Gemini flimkien."
+        "description": "Mhux AI waħda — diversi mudelli jiġġeneraw indipendentement, imbagħad jirfinaw ix-xogħol ta' xulxin."
       },
       {
         "title": "Kontenut ottimizzat għall-pjattaforma",
@@ -132,7 +132,7 @@
     "publishAll": "Ippubblika kollox",
     "scheduled": "Skedat",
     "draft": "Abbozz",
-    "explanation": "Kull mudell AI għandu saħħiet differenti. Claude jeċċella fin-nuanzi, GPT fil-versatilità, Gemini fil-preċiżjoni fattwali. Billi nġagħluhom jikkollaboraw u jisfidaw lil xulxin, kull test finali huwa aħjar milli kwalunkwe mudell wieħed jista' jipproduċi waħdu."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Mibni għal timijiet li jippubblikaw",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Liema mudelli AI juża Loritalk?",
-        "a": "Loritalk jikkonnettja ma' diversi fornituri ewlenin ta' AI inkluż Claude (Anthropic), GPT (OpenAI), u Gemini (Google). Tista' tikkonfigura liema mudelli jipparteċipaw fil-pipeline ta' ġenerazzjoni tiegħek."
+        "a": "Tista' tikkonfigura liema mudelli jipparteċipaw fil-pipeline ta' ġenerazzjoni tiegħek."
       },
       {
-        "q": "Kif inhu differenti minn ChatGPT?",
-        "a": "ChatGPT jagħtik output wieħed minn mudell wieħed. Loritalk imexxi diversi mudelli b'mod parallel u mbagħad iġagħalhom jirfinaw ix-xogħol ta' xulxin — u jipproduċu kwalità ogħla b'mod konsistenti. Barra minn hekk, kull post huwa awtomatikament ottimizzat għal kull pjattaforma speċifika."
+        "q": "Kif inhu differenti minn other AI tools?",
+        "a": "Other AI tools jagħtik output wieħed minn mudell wieħed. Loritalk imexxi diversi mudelli b'mod parallel u mbagħad iġagħalhom jirfinaw ix-xogħol ta' xulxin — u jipproduċu kwalità ogħla b'mod konsistenti. Barra minn hekk, kull post huwa awtomatikament ottimizzat għal kull pjattaforma speċifika."
       },
       {
         "q": "Liema netwerks soċjali huma appoġġjati?",

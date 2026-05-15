@@ -35,7 +35,7 @@
       },
       {
         "title": "UI, ki zveni generično",
-        "description": "ChatGPT vam da eno različico, ki zveni kot vsi ostali. Brez glasu blagovne znamke, brez zavedanja o platformi, brez prave optimizacije."
+        "description": "AI vam da eno različico, ki zveni kot vsi ostali. Brez glasu blagovne znamke, brez zavedanja o platformi, brez prave optimizacije."
       },
       {
         "title": "Ozka grla v ekipi",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Večmodelna UI deliberacija",
-        "description": "Ne en UI — več modelov generira neodvisno, nato izboljšujejo delo drugih. Dobite najboljše iz Claude, GPT in Gemini skupaj."
+        "description": "Ne en UI — več modelov generira neodvisno, nato izboljšujejo delo drugih."
       },
       {
         "title": "Za platformo optimizirana vsebina",
@@ -132,7 +132,7 @@
     "publishAll": "Objavi vse",
     "scheduled": "Načrtovano",
     "draft": "Osnutek",
-    "explanation": "Vsak model UI ima različne prednosti. Claude se odlikuje v odtenkih, GPT v vsestranskosti, Gemini v dejanski natančnosti. S tem, ko jih prisilimo k sodelovanju in medsebojnemu izzivanju, je vsako končno besedilo boljše, kot bi ga lahko ustvaril kateri koli posamezni model."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Zgrajeno za ekipe, ki objavljajo",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Katere modele UI uporablja Loritalk?",
-        "a": "Loritalk se povezuje z več vodilnimi ponudniki UI, vključno s Claude (Anthropic), GPT (OpenAI) in Gemini (Google). Konfigurirate lahko, kateri modeli sodelujejo v vašem procesu generiranja."
+        "a": "Konfigurirate lahko, kateri modeli sodelujejo v vašem procesu generiranja."
       },
       {
-        "q": "Kako se to razlikuje od ChatGPT?",
-        "a": "ChatGPT vam da en rezultat iz enega modela. Loritalk poganja več modelov vzporedno in jih nato prisili, da izboljšujejo delo drugih — kar dosledno proizvaja višjo kakovost. Poleg tega je vsaka objava samodejno optimizirana za vsako specifično platformo."
+        "q": "Kako se to razlikuje od other AI tools?",
+        "a": "Other AI tools vam da en rezultat iz enega modela. Loritalk poganja več modelov vzporedno in jih nato prisili, da izboljšujejo delo drugih — kar dosledno proizvaja višjo kakovost. Poleg tega je vsaka objava samodejno optimizirana za vsako specifično platformo."
       },
       {
         "q": "Katera družabna omrežja so podprta?",

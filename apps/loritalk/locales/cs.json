@@ -35,7 +35,7 @@
       },
       {
         "title": "AI, která zní genericky",
-        "description": "ChatGPT vám dá jednu verzi, která zní jako od všech ostatních. Žádný hlas značky, žádné povědomí o platformě, žádná skutečná optimalizace."
+        "description": "AI vám dá jednu verzi, která zní jako od všech ostatních. Žádný hlas značky, žádné povědomí o platformě, žádná skutečná optimalizace."
       },
       {
         "title": "Úzká hrdla v týmu",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Multi-modelová AI diskuse",
-        "description": "Ne jeden AI — více modelů generuje nezávisle a pak vylepšuje práci ostatních. Získáte to nejlepší z Claude, GPT a Gemini dohromady."
+        "description": "Ne jeden AI — více modelů generuje nezávisle a pak vylepšuje práci ostatních."
       },
       {
         "title": "Obsah optimalizovaný pro platformu",
@@ -132,7 +132,7 @@
     "publishAll": "Publikovat vše",
     "scheduled": "Naplánováno",
     "draft": "Koncept",
-    "explanation": "Každý AI model má jiné silné stránky. Claude vyniká v nuancích, GPT ve všestrannosti, Gemini ve faktické přesnosti. Tím, že je necháme spolupracovat a vzájemně se vyzývat, je každý finální text lepší, než by dokázal kterýkoli model sám."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Vytvořeno pro týmy, které publikují",
@@ -170,7 +170,12 @@
         "annualPrice": "€0",
         "period": "během Beta",
         "description": "Vyzkoušejte vše se štědrými limity.",
-        "features": ["5 příspěvků / měsíc", "3 sítě", "Základní ovládání tónu", "Návrhy hashtagů"],
+        "features": [
+          "5 příspěvků / měsíc",
+          "3 sítě",
+          "Základní ovládání tónu",
+          "Návrhy hashtagů"
+        ],
         "cta": "Začněte zdarma"
       },
       {
@@ -180,7 +185,13 @@
         "annualMonthly": "€25",
         "period": "",
         "description": "Pro tvůrce a značky, které publikují pravidelně.",
-        "features": ["200 příspěvků / měsíc", "Všechny sítě", "Pokročilé tóny a persony", "Obsahový kalendář", "Prioritní podpora"],
+        "features": [
+          "200 příspěvků / měsíc",
+          "Všechny sítě",
+          "Pokročilé tóny a persony",
+          "Obsahový kalendář",
+          "Prioritní podpora"
+        ],
         "cta": "Začněte bezplatnou zkušební verzi"
       },
       {
@@ -190,7 +201,14 @@
         "annualMonthly": "",
         "period": "",
         "description": "Pro týmy spravující více značek.",
-        "features": ["Neomezené příspěvky", "Všechny sítě", "Více značek", "Týmová spolupráce", "Analytika", "Správce účtu"],
+        "features": [
+          "Neomezené příspěvky",
+          "Všechny sítě",
+          "Více značek",
+          "Týmová spolupráce",
+          "Analytika",
+          "Správce účtu"
+        ],
         "cta": "Kontaktujte nás",
         "customPrice": true
       }
@@ -201,11 +219,11 @@
     "items": [
       {
         "q": "Jaké AI modely Loritalk používá?",
-        "a": "Loritalk se připojuje k více předním poskytovatelům AI, včetně Claude (Anthropic), GPT (OpenAI) a Gemini (Google). Můžete nastavit, které modely se účastní vašeho generovacího procesu."
+        "a": "Můžete nastavit, které modely se účastní vašeho generovacího procesu."
       },
       {
-        "q": "Jak se to liší od ChatGPT?",
-        "a": "ChatGPT vám dá jeden výstup z jednoho modelu. Loritalk spouští více modelů paralelně a pak je nechá vzájemně vylepšovat práci ostatních — a tím produkuje konzistentně vyšší kvalitu. Navíc je každý příspěvek automaticky optimalizován pro konkrétní platformu."
+        "q": "Jak se to liší od other AI tools?",
+        "a": "Other AI tools vám dá jeden výstup z jednoho modelu. Loritalk spouští více modelů paralelně a pak je nechá vzájemně vylepšovat práci ostatních — a tím produkuje konzistentně vyšší kvalitu. Navíc je každý příspěvek automaticky optimalizován pro konkrétní platformu."
       },
       {
         "q": "Které sociální sítě jsou podporovány?",

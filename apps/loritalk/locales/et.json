@@ -35,7 +35,7 @@
       },
       {
         "title": "AI, mis kõlab üldiselt",
-        "description": "ChatGPT annab sulle ühe versiooni, mis kõlab nagu kõigil teistel. Puudub brändihääl, platvormiteadlikkus ja tõeline optimeerimine."
+        "description": "AI annab sulle ühe versiooni, mis kõlab nagu kõigil teistel. Puudub brändihääl, platvormiteadlikkus ja tõeline optimeerimine."
       },
       {
         "title": "Meeskonna kitsaskohad",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Mitme mudeli AI-arutelu",
-        "description": "Mitte üks AI — mitu mudelit genereerivad iseseisvalt, seejärel täiustavad üksteise tööd. Saad parima Claude, GPT ja Gemini kombinatsioonist."
+        "description": "Mitte üks AI — mitu mudelit genereerivad iseseisvalt, seejärel täiustavad üksteise tööd."
       },
       {
         "title": "Platvormile optimeeritud sisu",
@@ -132,7 +132,7 @@
     "publishAll": "Avalda kõik",
     "scheduled": "Ajastatud",
     "draft": "Mustand",
-    "explanation": "Igal AI-mudelil on erinevad tugevused. Claude paistab silma nüanssidega, GPT mitmekülgsusega, Gemini faktitäpsusega. Pannes nad koostööd tegema ja üksteist vaidlustama, on iga lõpptekst parem, kui ükski mudel suudaks üksi toota."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Loodud meeskondadele, kes avaldavad",
@@ -170,7 +170,12 @@
         "annualPrice": "€0",
         "period": "beetaversioonis",
         "description": "Proovi kõike heldete piirangutega.",
-        "features": ["5 postitust / kuus", "3 võrgustikku", "Põhilised tooni seaded", "Teemasildi soovitused"],
+        "features": [
+          "5 postitust / kuus",
+          "3 võrgustikku",
+          "Põhilised tooni seaded",
+          "Teemasildi soovitused"
+        ],
         "cta": "Alusta tasuta"
       },
       {
@@ -180,7 +185,13 @@
         "annualMonthly": "€25",
         "period": "",
         "description": "Loojatele ja brändidele, kes avaldavad järjepidevalt.",
-        "features": ["200 postitust / kuus", "Kõik võrgustikud", "Täiustatud toon ja persoonid", "Sisukalender", "Prioriteetne tugi"],
+        "features": [
+          "200 postitust / kuus",
+          "Kõik võrgustikud",
+          "Täiustatud toon ja persoonid",
+          "Sisukalender",
+          "Prioriteetne tugi"
+        ],
         "cta": "Alusta tasuta prooviperioodi"
       },
       {
@@ -190,7 +201,14 @@
         "annualMonthly": "",
         "period": "",
         "description": "Meeskondadele, kes haldavad mitut brändi.",
-        "features": ["Piiramatu arv postitusi", "Kõik võrgustikud", "Mitu brändi", "Meeskonna koostöö", "Analüütika", "Kontohaldur"],
+        "features": [
+          "Piiramatu arv postitusi",
+          "Kõik võrgustikud",
+          "Mitu brändi",
+          "Meeskonna koostöö",
+          "Analüütika",
+          "Kontohaldur"
+        ],
         "cta": "Võta meiega ühendust",
         "customPrice": true
       }
@@ -201,11 +219,11 @@
     "items": [
       {
         "q": "Milliseid AI-mudeleid Loritalk kasutab?",
-        "a": "Loritalk ühendub mitme juhtiva AI-pakkujaga, sealhulgas Claude (Anthropic), GPT (OpenAI) ja Gemini (Google). Saad seadistada, millised mudelid sinu genereerimistorustikus osalevad."
+        "a": "Saad seadistada, millised mudelid sinu genereerimistorustikus osalevad."
       },
       {
-        "q": "Kuidas erineb see ChatGPT-st?",
-        "a": "ChatGPT annab sulle ühe väljundi ühelt mudelilt. Loritalk käitab mitut mudelit paralleelselt, seejärel paneb nad üksteise tööd täiustama — tootes järjepidevalt kõrgemat kvaliteeti. Lisaks on iga postitus automaatselt optimeeritud iga konkreetse platvormi jaoks."
+        "q": "Kuidas erineb see other AI tools-st?",
+        "a": "Other AI tools annab sulle ühe väljundi ühelt mudelilt. Loritalk käitab mitut mudelit paralleelselt, seejärel paneb nad üksteise tööd täiustama — tootes järjepidevalt kõrgemat kvaliteeti. Lisaks on iga postitus automaatselt optimeeritud iga konkreetse platvormi jaoks."
       },
       {
         "q": "Milliseid sotsiaalvõrgustikke toetatakse?",

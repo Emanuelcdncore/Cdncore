@@ -35,7 +35,7 @@
       },
       {
         "title": "AI a fhuaimníonn ginearálta",
-        "description": "Tugann ChatGPT leagan amháin duit a fhuaimníonn cosúil le gach duine eile. Gan guth branda, gan feasacht ardáin, gan fíor-optamú."
+        "description": "Tugann AI leagan amháin duit a fhuaimníonn cosúil le gach duine eile. Gan guth branda, gan feasacht ardáin, gan fíor-optamú."
       },
       {
         "title": "Scrogaill fhoirne",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Díospóireacht AI Il-Mhúnla",
-        "description": "Ní AI amháin — gineann múnlaí iolracha go neamhspleách, ansin feabhsaíonn siad obair a chéile. Faigheann tú an chuid is fearr de Claude, GPT, agus Gemini le chéile."
+        "description": "Ní AI amháin — gineann múnlaí iolracha go neamhspleách, ansin feabhsaíonn siad obair a chéile."
       },
       {
         "title": "Ábhar optamaithe don ardán",
@@ -132,7 +132,7 @@
     "publishAll": "Foilsigh iad go léir",
     "scheduled": "Sceidealaithe",
     "draft": "Dréacht",
-    "explanation": "Tá láidreachtaí éagsúla ag gach múnla AI. Sáraíonn Claude ar nuáinsí, GPT ar iléagsúlacht, Gemini ar chruinneas fíorasach. Trí iad a chur ag comhoibriú agus ag dúshlán a chéile, bíonn gach téacs deiridh níos fearr ná mar a d'fhéadfadh aon mhúnla amháin a tháirgeadh leis féin."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Tógtha d'fhoirne a fhoilsíonn",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Cad iad na múnlaí AI a úsáideann Loritalk?",
-        "a": "Nascann Loritalk le soláthraithe AI ceannródaíocha iolracha lena n-áirítear Claude (Anthropic), GPT (OpenAI), agus Gemini (Google). Is féidir leat a chumrú cé na múnlaí a ghlacann páirt i do phíblíne giniúna."
+        "a": "Is féidir leat a chumrú cé na múnlaí a ghlacann páirt i do phíblíne giniúna."
       },
       {
-        "q": "Conas atá sé seo difriúil ó ChatGPT?",
-        "a": "Tugann ChatGPT aschur amháin ó mhúnla amháin duit. Ritheann Loritalk múnlaí iolracha go comhthreomhar agus ansin cuireann sé orthu obair a chéile a fheabhsú — ag táirgeadh cáilíochta níos airde go seasta. Ina theannta sin, déantar gach postáil a optamú go huathoibríoch do gach ardán ar leith."
+        "q": "Conas atá sé seo difriúil ó other AI tools?",
+        "a": "Tugann Other AI tools aschur amháin ó mhúnla amháin duit. Ritheann Loritalk múnlaí iolracha go comhthreomhar agus ansin cuireann sé orthu obair a chéile a fheabhsú — ag táirgeadh cáilíochta níos airde go seasta. Ina theannta sin, déantar gach postáil a optamú go huathoibríoch do gach ardán ar leith."
       },
       {
         "q": "Cé na líonraí sóisialta a thacaítear leo?",

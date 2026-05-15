@@ -35,7 +35,7 @@
       },
       {
         "title": "IA que suena genérica",
-        "description": "ChatGPT te da una versión que suena como la de todos los demás. Sin voz de marca, sin conocimiento de la plataforma, sin optimización real."
+        "description": "AI te da una versión que suena como la de todos los demás. Sin voz de marca, sin conocimiento de la plataforma, sin optimización real."
       },
       {
         "title": "Cuellos de botella en el equipo",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Deliberación multi-modelo de IA",
-        "description": "No una IA — múltiples modelos generan de forma independiente y luego refinan el trabajo de los demás. Obtienes lo mejor de Claude, GPT y Gemini combinados."
+        "description": "No una IA — múltiples modelos generan de forma independiente y luego refinan el trabajo de los demás."
       },
       {
         "title": "Contenido optimizado por plataforma",
@@ -132,7 +132,7 @@
     "publishAll": "Publicar todo",
     "scheduled": "Programado",
     "draft": "Borrador",
-    "explanation": "Cada modelo de IA tiene fortalezas diferentes. Claude destaca en los matices, GPT en la versatilidad, Gemini en la precisión factual. Al hacer que colaboren y se desafíen mutuamente, cada texto final es mejor de lo que cualquier modelo individual podría producir solo."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Hecho para equipos que publican",
@@ -170,7 +170,12 @@
         "annualPrice": "€0",
         "period": "durante la Beta",
         "description": "Prueba todo con límites generosos.",
-        "features": ["5 publicaciones / mes", "3 redes", "Controles de tono básicos", "Sugerencias de hashtags"],
+        "features": [
+          "5 publicaciones / mes",
+          "3 redes",
+          "Controles de tono básicos",
+          "Sugerencias de hashtags"
+        ],
         "cta": "Empieza gratis"
       },
       {
@@ -180,7 +185,13 @@
         "annualMonthly": "€25",
         "period": "",
         "description": "Para creadores y marcas que publican de forma constante.",
-        "features": ["200 publicaciones / mes", "Todas las redes", "Tonos y personas avanzados", "Calendario de contenido", "Soporte prioritario"],
+        "features": [
+          "200 publicaciones / mes",
+          "Todas las redes",
+          "Tonos y personas avanzados",
+          "Calendario de contenido",
+          "Soporte prioritario"
+        ],
         "cta": "Empieza la prueba gratuita"
       },
       {
@@ -190,7 +201,14 @@
         "annualMonthly": "",
         "period": "",
         "description": "Para equipos que gestionan múltiples marcas.",
-        "features": ["Publicaciones ilimitadas", "Todas las redes", "Múltiples marcas", "Colaboración en equipo", "Analítica", "Gestor de cuenta"],
+        "features": [
+          "Publicaciones ilimitadas",
+          "Todas las redes",
+          "Múltiples marcas",
+          "Colaboración en equipo",
+          "Analítica",
+          "Gestor de cuenta"
+        ],
         "cta": "Habla con nosotros",
         "customPrice": true
       }
@@ -201,11 +219,11 @@
     "items": [
       {
         "q": "¿Qué modelos de IA utiliza Loritalk?",
-        "a": "Loritalk se conecta con múltiples proveedores de IA líderes, incluyendo Claude (Anthropic), GPT (OpenAI) y Gemini (Google). Puedes configurar qué modelos participan en tu proceso de generación."
+        "a": "Puedes configurar qué modelos participan en tu proceso de generación."
       },
       {
-        "q": "¿En qué se diferencia de ChatGPT?",
-        "a": "ChatGPT te da un resultado de un solo modelo. Loritalk ejecuta múltiples modelos en paralelo y luego los hace refinar el trabajo de los demás — produciendo consistentemente mayor calidad. Además, cada publicación se optimiza automáticamente para cada plataforma específica."
+        "q": "¿En qué se diferencia de other AI tools?",
+        "a": "Other AI tools te da un resultado de un solo modelo. Loritalk ejecuta múltiples modelos en paralelo y luego los hace refinar el trabajo de los demás — produciendo consistentemente mayor calidad. Además, cada publicación se optimiza automáticamente para cada plataforma específica."
       },
       {
         "q": "¿Qué redes sociales son compatibles?",

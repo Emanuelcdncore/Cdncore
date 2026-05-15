@@ -35,7 +35,7 @@
       },
       {
         "title": "AI som låter generisk",
-        "description": "ChatGPT ger dig en version som låter som alla andra. Ingen varumärkesstämma, ingen plattformsmedvetenhet, ingen riktig optimering."
+        "description": "AI ger dig en version som låter som alla andra. Ingen varumärkesstämma, ingen plattformsmedvetenhet, ingen riktig optimering."
       },
       {
         "title": "Flaskhalsar i teamet",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Multimodell AI-deliberation",
-        "description": "Inte en AI — flera modeller genererar oberoende och förfinar sedan varandras arbete. Du får det bästa från Claude, GPT och Gemini kombinerat."
+        "description": "Inte en AI — flera modeller genererar oberoende och förfinar sedan varandras arbete."
       },
       {
         "title": "Plattformsoptimerat innehåll",
@@ -132,7 +132,7 @@
     "publishAll": "Publicera alla",
     "scheduled": "Schemalagd",
     "draft": "Utkast",
-    "explanation": "Varje AI-modell har olika styrkor. Claude utmerker sig i nyanser, GPT i mångsidighet, Gemini i faktaprecision. Genom att låta dem samarbeta och utmana varandra blir varje slutgiltig text bättre än vad någon enskild modell kunde producera ensam."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Byggt för team som publicerar",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Vilka AI-modeller använder Loritalk?",
-        "a": "Loritalk ansluter till flera ledande AI-leverantörer, inklusive Claude (Anthropic), GPT (OpenAI) och Gemini (Google). Du kan konfigurera vilka modeller som deltar i din genereringspipeline."
+        "a": "Du kan konfigurera vilka modeller som deltar i din genereringspipeline."
       },
       {
-        "q": "Hur är detta annorlunda än ChatGPT?",
-        "a": "ChatGPT ger dig en utdata från en modell. Loritalk kör flera modeller parallellt och låter dem sedan förfina varandras arbete — vilket konsekvent ger högre kvalitet. Dessutom optimeras varje inlägg automatiskt för varje specifik plattform."
+        "q": "Hur är detta annorlunda än other AI tools?",
+        "a": "Other AI tools ger dig en utdata från en modell. Loritalk kör flera modeller parallellt och låter dem sedan förfina varandras arbete — vilket konsekvent ger högre kvalitet. Dessutom optimeras varje inlägg automatiskt för varje specifik plattform."
       },
       {
         "q": "Vilka sociala nätverk stöds?",

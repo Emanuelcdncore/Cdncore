@@ -35,7 +35,7 @@
       },
       {
         "title": "AI, ktorá znie šablónovo",
-        "description": "ChatGPT vám dá jednu verziu, ktorá znie ako všetci ostatní. Žiadny hlas značky, žiadne povedomie o platforme, žiadna skutočná optimalizácia."
+        "description": "AI vám dá jednu verziu, ktorá znie ako všetci ostatní. Žiadny hlas značky, žiadne povedomie o platforme, žiadna skutočná optimalizácia."
       },
       {
         "title": "Úzke hrdlá v tíme",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Multi-modelová AI deliberácia",
-        "description": "Nie jeden AI — viacero modelov generuje nezávisle a potom zdokonaľuje prácu ostatných. Získate to najlepšie z Claude, GPT a Gemini dohromady."
+        "description": "Nie jeden AI — viacero modelov generuje nezávisle a potom zdokonaľuje prácu ostatných."
       },
       {
         "title": "Obsah optimalizovaný pre platformu",
@@ -132,7 +132,7 @@
     "publishAll": "Publikovať všetko",
     "scheduled": "Naplánované",
     "draft": "Koncept",
-    "explanation": "Každý AI model má iné silné stránky. Claude vyniká v nuansách, GPT vo všestrannosti, Gemini vo faktickej presnosti. Tým, že ich necháme spolupracovať a vzájomne sa vyzývať, je každý finálny text lepší, ako by akýkoľvek jednotlivý model dokázal vytvoriť sám."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Vytvorené pre tímy, ktoré publikujú",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Aké AI modely Loritalk používa?",
-        "a": "Loritalk sa pripoja k niekoľkým popredným poskytovateľom AI, vrátane Claude (Anthropic), GPT (OpenAI) a Gemini (Google). Môžete nakonfigurovať, ktoré modely sa zúčastňujú vášho generovacieho procesu."
+        "a": "Môžete nakonfigurovať, ktoré modely sa zúčastňujú vášho generovacieho procesu."
       },
       {
-        "q": "Čím sa to líši od ChatGPT?",
-        "a": "ChatGPT vám dá jeden výstup z jedného modelu. Loritalk spúšťa viacero modelov paralelne a potom ich nechá zdokonaľovať prácu ostatných — produkujúc trvalo vyššiu kvalitu. Navyše každý príspevok je automaticky optimalizovaný pre konkrétnu platformu."
+        "q": "Čím sa to líši od other AI tools?",
+        "a": "Other AI tools vám dá jeden výstup z jedného modelu. Loritalk spúšťa viacero modelov paralelne a potom ich nechá zdokonaľovať prácu ostatných — produkujúc trvalo vyššiu kvalitu. Navyše každý príspevok je automaticky optimalizovaný pre konkrétnu platformu."
       },
       {
         "q": "Ktoré sociálne siete sú podporované?",

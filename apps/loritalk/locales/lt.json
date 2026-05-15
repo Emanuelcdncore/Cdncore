@@ -35,7 +35,7 @@
       },
       {
         "title": "AI, kuris skamba generiškai",
-        "description": "ChatGPT duoda vieną versiją, kuri skamba kaip visi kiti. Jokio prekės ženklo balso, jokio platformos suvokimo, jokio tikro optimizavimo."
+        "description": "AI duoda vieną versiją, kuri skamba kaip visi kiti. Jokio prekės ženklo balso, jokio platformos suvokimo, jokio tikro optimizavimo."
       },
       {
         "title": "Komandos kliūtys",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Kelių modelių AI deliberacija",
-        "description": "Ne vienas AI — keli modeliai generuoja nepriklausomai, tada tobulina vieni kitų darbą. Gausite geriausią Claude, GPT ir Gemini kombinaciją."
+        "description": "Ne vienas AI — keli modeliai generuoja nepriklausomai, tada tobulina vieni kitų darbą."
       },
       {
         "title": "Platformai optimizuotas turinys",
@@ -132,7 +132,7 @@
     "publishAll": "Publikuoti viską",
     "scheduled": "Suplanuota",
     "draft": "Juodraštis",
-    "explanation": "Kiekvienas AI modelis turi skirtingas stiprybes. Claude puikiai tinka niuansams, GPT — universalumui, Gemini — faktiniam tikslumui. Verčiant juos bendradarbiauti ir mesti iššūkį vieni kitiems, kiekvienas galutinis tekstas yra geresnis, nei bet kuris vienas modelis galėtų sukurti pats."
+    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
   },
   "useCases": {
     "title": "Sukurta komandoms, kurios publikuoja",
@@ -219,11 +219,11 @@
     "items": [
       {
         "q": "Kokius AI modelius naudoja Loritalk?",
-        "a": "Loritalk jungiasi prie kelių pirmaujancių AI tiekėjų, įskaitant Claude (Anthropic), GPT (OpenAI) ir Gemini (Google). Galite konfigūruoti, kurie modeliai dalyvauja jūsų generavimo procese."
+        "a": "Galite konfigūruoti, kurie modeliai dalyvauja jūsų generavimo procese."
       },
       {
-        "q": "Kuo tai skiriasi nuo ChatGPT?",
-        "a": "ChatGPT duoda vieną rezultatą iš vieno modelio. Loritalk paleidžia kelis modelius lygiagrečiai ir verčia juos tobulinti vieni kitų darbą — nuosekliai gamindamas aukštesnę kokybę. Be to, kiekvienas įrašas automatiškai optimizuojamas konkrečiai platformai."
+        "q": "Kuo tai skiriasi nuo other AI tools?",
+        "a": "Other AI tools duoda vieną rezultatą iš vieno modelio. Loritalk paleidžia kelis modelius lygiagrečiai ir verčia juos tobulinti vieni kitų darbą — nuosekliai gamindamas aukštesnę kokybę. Be to, kiekvienas įrašas automatiškai optimizuojamas konkrečiai platformai."
       },
       {
         "q": "Kokie socialiniai tinklai palaikomi?",
