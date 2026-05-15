@@ -167,3 +167,199 @@ body {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
 }
+
+/* ──────────────────────────────────────────────────────────────────────
+   Plan / Pricing cards
+   Adapted from cortexhub/dashboard/src/features/settings/components/
+   PlanComparisonTable.css — per-tier accents + Higgsfield-style layout.
+   ────────────────────────────────────────────────────────────────────── */
+.plan-billing-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: var(--paper-3);
+  border: 1px solid var(--paper-4);
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+}
+.plan-billing-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: transparent;
+  color: var(--ink-3);
+  border: none;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 180ms cubic-bezier(0.2, 0.8, 0.2, 1), color 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.plan-billing-toggle-btn:hover { color: var(--ink-1); }
+.plan-billing-toggle-btn--active {
+  background: var(--paper-1);
+  color: var(--ink-1);
+  box-shadow: 0 1px 3px rgba(20, 22, 26, 0.10);
+}
+.plan-billing-toggle-save {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  background: var(--feather-green);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.plan-card {
+  position: relative;
+  padding: 24px 20px 20px;
+  background: var(--paper-1);
+  border: 1px solid var(--paper-4);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: visible;
+  transition: transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 180ms cubic-bezier(0.2, 0.8, 0.2, 1), border-color 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.plan-card:hover { box-shadow: var(--shadow-md); }
+
+.plan-card[data-accent="green"]     { --tier-color: var(--feather-green);     --tier-color-ink: var(--feather-green-ink);     --tier-tint: var(--tint-green); }
+.plan-card[data-accent="tangerine"] { --tier-color: var(--feather-tangerine); --tier-color-ink: var(--feather-tangerine-ink); --tier-tint: var(--tint-tangerine); }
+.plan-card[data-accent="cobalt"]    { --tier-color: var(--feather-cobalt);    --tier-color-ink: var(--feather-cobalt-hi);     --tier-tint: var(--tint-cobalt); }
+.plan-card[data-accent="flame"]     { --tier-color: var(--feather-flame);     --tier-color-ink: var(--feather-flame-hi);      --tier-tint: var(--tint-flame); }
+.plan-card[data-accent="neutral"]   { --tier-color: var(--ink-3);             --tier-color-ink: var(--ink-2);                  --tier-tint: var(--paper-3); }
+
+.plan-card--badged {
+  border-color: var(--tier-color);
+  box-shadow: 0 0 0 1px var(--tier-color) inset;
+}
+.plan-card--current {
+  border-color: var(--tier-color, var(--feather-green));
+  background: linear-gradient(180deg, var(--tier-tint, var(--tint-green)) 0%, var(--paper-1) 30%);
+}
+
+.plan-card-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  background: var(--tier-color);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(20, 22, 26, 0.18);
+  z-index: 1;
+}
+
+.plan-card-head { display: flex; flex-direction: column; gap: 4px; }
+.plan-card-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink-1);
+}
+.plan-card-sub {
+  font-size: 12.5px;
+  color: var(--ink-3);
+  line-height: 1.4;
+}
+
+.plan-card-price-block { display: flex; flex-direction: column; gap: 4px; }
+.plan-card-price-wrap {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+  color: var(--ink-1);
+}
+.plan-card-price-strike {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink-4);
+  text-decoration: line-through;
+  text-decoration-color: var(--feather-flame);
+  text-decoration-thickness: 2px;
+  margin-right: 4px;
+}
+.plan-card-currency {
+  font-size: 17px;
+  font-weight: 700;
+}
+.plan-card-price {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.plan-card-period {
+  font-size: 12px;
+  color: var(--ink-3);
+  margin-left: 4px;
+}
+.plan-card-save {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--tier-color-ink);
+  background: var(--tier-tint);
+  padding: 4px 8px;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+.plan-card-cta {
+  padding: 11px 14px;
+  background: var(--tier-color, var(--ink-1));
+  color: #fff;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 180ms cubic-bezier(0.2, 0.8, 0.2, 1), transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  border: none;
+  cursor: pointer;
+}
+.plan-card-cta:hover {
+  background: var(--tier-color-ink, var(--ink-2));
+  transform: translateY(-1px);
+}
+
+.plan-card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 4px;
+  border-top: 1px dashed var(--paper-4);
+  margin-top: 4px;
+  list-style: none;
+  padding-left: 0;
+}
+.plan-card-feat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+.plan-card-feat-icon {
+  color: var(--tier-color, var(--feather-green));
+  flex-shrink: 0;
+  font-size: 14px !important;
+}

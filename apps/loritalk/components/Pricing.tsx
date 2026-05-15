@@ -7,10 +7,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const planMeta = [
-  { color: "#94BF5C", ctaHref: "https://app.lori-talk.eu", highlight: false },
-  { color: "#5D92E8", ctaHref: "https://app.lori-talk.eu", highlight: true },
-  { color: "#FF9852", ctaHref: "mailto:info@lori-talk.eu", highlight: false },
+type TierAccent = "green" | "tangerine" | "cobalt" | "flame" | "neutral";
+
+const planMeta: { accent: TierAccent; ctaHref: string; badge: boolean }[] = [
+  { accent: "neutral", ctaHref: "https://app.lori-talk.eu", badge: false },
+  { accent: "tangerine", ctaHref: "https://app.lori-talk.eu", badge: true },
+  { accent: "cobalt", ctaHref: "mailto:info@lori-talk.eu", badge: false },
 ];
 
 export default function Pricing() {
@@ -31,7 +33,7 @@ export default function Pricing() {
         const cardTl = gsap.timeline({ scrollTrigger: { trigger: "[data-price-grid]", start: "top 78%", once: true } });
         cardTl.from("[data-price-card-0]", { x: -80, autoAlpha: 0, duration: 0.7, ease: "power3.out" }, 0);
         cardTl.from("[data-price-card-2]", { x: 80, autoAlpha: 0, duration: 0.7, ease: "power3.out" }, 0);
-        cardTl.from("[data-price-card-1]", { y: 80, scale: 0.85, autoAlpha: 0, duration: 0.8, ease: "back.out(1.7)" }, 0.15);
+        cardTl.from("[data-price-card-1]", { y: 80, scale: 0.9, autoAlpha: 0, duration: 0.8, ease: "back.out(1.7)" }, 0.15);
       });
       mm.add("(prefers-reduced-motion: reduce)", () => { gsap.set("[data-price-title], [data-price-sub], [data-price-card-0], [data-price-card-1], [data-price-card-2]", { autoAlpha: 1, clearProps: "all" }); });
     }, sectionRef);
@@ -39,72 +41,93 @@ export default function Pricing() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="pricing" className="py-24 bg-white">
+    <section ref={sectionRef} id="pricing" className="py-24 md:py-32" style={{ background: "var(--paper-2)" }}>
       <div className="max-w-6xl mx-auto px-6">
         <div data-price-heading className="text-center mb-10">
-          <h2 data-price-title className="text-3xl md:text-4xl font-bold mb-4" style={{ visibility: "hidden" }}>{t("pricing.title")}</h2>
-          <p data-price-sub className="text-lg text-black/55 font-normal max-w-lg mx-auto" style={{ visibility: "hidden" }}>{t("pricing.subtitle")}</p>
+          <h2 data-price-title className="font-extrabold mb-4" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.6vw, 44px)", letterSpacing: "-0.02em", color: "var(--ink-1)", visibility: "hidden" }}>{t("pricing.title")}</h2>
+          <p data-price-sub className="max-w-lg mx-auto" style={{ fontSize: 16, color: "var(--ink-3)", visibility: "hidden" }}>{t("pricing.subtitle")}</p>
         </div>
 
-        {/* Billing toggle */}
-        <div className="flex items-center justify-center gap-4 mb-12">
-          <button
-            onClick={() => setAnnual(false)}
-            className={`text-sm font-medium px-4 py-2 rounded-full transition-all ${!annual ? "bg-black text-white" : "text-black/40 hover:text-black/60"}`}
-          >
-            {t("pricing.monthly")}
-          </button>
-          <button
-            onClick={() => setAnnual(true)}
-            className={`text-sm font-medium px-4 py-2 rounded-full transition-all flex items-center gap-2 ${annual ? "bg-black text-white" : "text-black/40 hover:text-black/60"}`}
-          >
-            {t("pricing.annual")}
-            {annual && <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: "#94BF5C", color: "white" }}>{t("pricing.save2Months")}</span>}
-          </button>
+        <div className="flex items-center justify-center mb-12">
+          <div className="plan-billing-toggle" role="group" aria-label="Billing cycle">
+            <button
+              type="button"
+              className={`plan-billing-toggle-btn${!annual ? " plan-billing-toggle-btn--active" : ""}`}
+              onClick={() => setAnnual(false)}
+              aria-pressed={!annual}
+            >
+              {t("pricing.monthly")}
+            </button>
+            <button
+              type="button"
+              className={`plan-billing-toggle-btn${annual ? " plan-billing-toggle-btn--active" : ""}`}
+              onClick={() => setAnnual(true)}
+              aria-pressed={annual}
+            >
+              {t("pricing.annual")}
+              <span className="plan-billing-toggle-save">{t("pricing.save2Months")}</span>
+            </button>
+          </div>
         </div>
 
-        <div data-price-grid className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div data-price-grid className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start max-w-5xl mx-auto" style={{ paddingTop: 14 }}>
           {plans.map((plan, i) => {
             const meta = planMeta[i];
             const isFree = plan.monthlyPrice === "€0";
             const isCustom = !!plan.customPrice;
-            const price = isCustom ? t("pricing.customPriceLabel") : isFree ? plan.monthlyPrice : (annual ? (plan.annualMonthly || plan.monthlyPrice) : plan.monthlyPrice);
+            const displayPrice = isCustom ? t("pricing.customPriceLabel") : isFree ? plan.monthlyPrice : (annual ? (plan.annualMonthly || plan.monthlyPrice) : plan.monthlyPrice);
+            const symbol = displayPrice.startsWith("€") ? "€" : "";
+            const priceNumber = displayPrice.replace(/^€/, "");
             const periodLabel = isCustom ? "" : isFree ? plan.period : t("pricing.perMonth");
+            const showStrike = !isFree && !isCustom && annual && plan.annualMonthly && plan.monthlyPrice !== plan.annualMonthly;
+            const cardClass = `plan-card${meta.badge ? " plan-card--badged" : ""}`;
 
             return (
               <div
                 key={i}
                 {...{ [`data-price-card-${i}`]: "" }}
-                className={`rounded-2xl p-8 flex flex-col gap-6 ${meta.highlight ? "border-2 shadow-lg md:-mt-4 md:mb-4" : "border border-black/8"}`}
-                style={{ visibility: "hidden", ...(meta.highlight ? { borderColor: meta.color, backgroundColor: "white" } : { backgroundColor: "white" }) }}
+                data-accent={meta.accent}
+                className={cardClass}
+                style={{ visibility: "hidden" }}
               >
-                {meta.highlight && (
-                  <div className="self-start text-xs font-semibold px-3 py-1 rounded-full text-white" style={{ backgroundColor: meta.color }}>{t("pricing.mostPopular")}</div>
+                {meta.badge && (
+                  <div className="plan-card-badge">
+                    <span className="material-icons-round" style={{ fontSize: 12 }}>star</span>
+                    {t("pricing.mostPopular")}
+                  </div>
                 )}
-                <div>
-                  <p className="text-sm font-semibold text-black/50 mb-1">{plan.name}</p>
-                  <div className="flex items-end gap-1 mb-1">
-                    <span className="text-4xl font-bold">{price}</span>
-                    <span className="text-sm text-black/40 pb-1">{periodLabel}</span>
+
+                <div className="plan-card-head">
+                  <div className="plan-card-name">{plan.name}</div>
+                  <div className="plan-card-sub">{plan.description}</div>
+                </div>
+
+                <div className="plan-card-price-block">
+                  <div className="plan-card-price-wrap">
+                    {showStrike && (
+                      <span className="plan-card-price-strike">{plan.monthlyPrice}</span>
+                    )}
+                    {symbol && !isCustom && <span className="plan-card-currency">{symbol}</span>}
+                    <span className="plan-card-price">{isCustom ? displayPrice : priceNumber}</span>
+                    {periodLabel && <span className="plan-card-period">{periodLabel}</span>}
                   </div>
                   {!isFree && !isCustom && annual && (
-                    <p className="text-xs text-black/35 mb-2">
+                    <span className="plan-card-save">
                       {plan.annualPrice} {t("pricing.perYear")} · {t("pricing.billedAnnually")}
-                    </p>
+                    </span>
                   )}
-                  <p className="text-sm text-black/55">{plan.description}</p>
                 </div>
-                <ul className="flex flex-col gap-2.5 flex-1">
+
+                <a href={meta.ctaHref} className="plan-card-cta">{plan.cta}</a>
+
+                <ul className="plan-card-features">
                   {plan.features.map((f, fi) => (
-                    <li key={fi} className="flex items-center gap-2 text-sm text-black/70">
-                      <span className="material-icons-round text-base" style={{ color: meta.color }}>check_circle</span>
-                      {f}
+                    <li key={fi} className="plan-card-feat">
+                      <span className="material-icons-round plan-card-feat-icon">check_circle</span>
+                      <span>{f}</span>
                     </li>
                   ))}
                 </ul>
-                <a href={meta.ctaHref} className="w-full py-3 rounded-full font-semibold text-sm text-center transition-opacity hover:opacity-85 block" style={meta.highlight ? { backgroundColor: meta.color, color: "white" } : { border: `1.5px solid ${meta.color}`, color: meta.color }}>
-                  {plan.cta}
-                </a>
               </div>
             );
           })}
