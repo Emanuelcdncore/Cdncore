@@ -58,26 +58,29 @@ const PlatformIcon = ({ id, size = 18 }: { id: MarqueeKey; size?: number }) => (
 type PlatformCard = {
   id: MarqueeKey;
   pos: { top?: string; bottom?: string; left?: string; right?: string };
-  delay: number;
   body: string;
   audit: string;
   hasImg?: boolean;
 };
 
 const PLATFORM_CARDS: PlatformCard[] = [
-  { id: "instagram", pos: { top: "4%", left: "-4%" }, delay: 0, body: "Step into the future of running. Our lightest shoe — built from #80%recycled ocean plastic 🌊", audit: "9.4/10", hasImg: true },
-  { id: "linkedin", pos: { top: "0%", right: "2%" }, delay: 0.15, body: "After 18 months of R&D, we're launching our most ambitious sneaker — engineered from 80% post-consumer plastic.", audit: "9.7/10" },
-  { id: "x", pos: { top: "32%", right: "-6%" }, delay: 0.3, body: "we made a sneaker out of ocean plastic. it's faster than the last one. 🔥", audit: "9.1/10" },
-  { id: "youtube", pos: { bottom: "4%", right: "0%" }, delay: 0.45, body: "Hook: \"What if your shoes were made of trash?\" · 0:08 reveal · 100s cut", audit: "8.9/10" },
-  { id: "threads", pos: { bottom: "-2%", left: "6%" }, delay: 0.6, body: "running shoes, but make them out of the ocean. drop's at noon.", audit: "9.0/10" },
-  { id: "facebook", pos: { top: "34%", left: "-7%" }, delay: 0.75, body: "Big news from our team — meet the shoe we've been working on for 18 months.", audit: "9.2/10" },
-  { id: "telegram", pos: { top: "62%", left: "12%" }, delay: 0.9, body: "📣 New drop · sustainable runners · link in next message", audit: "9.3/10" },
+  { id: "instagram", pos: { top: "4%", left: "-4%" }, body: "Step into the future of running. Our lightest shoe — built from #80%recycled ocean plastic 🌊", audit: "9.4/10", hasImg: true },
+  { id: "facebook", pos: { top: "34%", left: "-7%" }, body: "Big news from our team — meet the shoe we've been working on for 18 months.", audit: "9.2/10" },
+  { id: "linkedin", pos: { top: "0%", right: "2%" }, body: "After 18 months of R&D, we're launching our most ambitious sneaker — engineered from 80% post-consumer plastic.", audit: "9.7/10" },
+  { id: "x", pos: { top: "32%", right: "-6%" }, body: "we made a sneaker out of ocean plastic. it's faster than the last one. 🔥", audit: "9.1/10" },
+  { id: "threads", pos: { bottom: "-2%", left: "6%" }, body: "running shoes, but make them out of the ocean. drop's at noon.", audit: "9.0/10" },
+  { id: "youtube", pos: { bottom: "4%", right: "0%" }, body: "Hook: \"What if your shoes were made of trash?\" · 0:08 reveal · 100s cut", audit: "8.9/10" },
+  { id: "telegram", pos: { top: "62%", left: "12%" }, body: "📣 New drop · sustainable runners · link in next message", audit: "9.3/10" },
 ];
 
 const MARQUEE_KEYS: MarqueeKey[] = ["instagram", "linkedin", "x", "youtube", "threads", "facebook", "telegram"];
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const briefRef = useRef<HTMLDivElement>(null);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const svgRef = useRef<SVGSVGElement>(null);
   const { t } = useTranslation();
   const [typed, setTyped] = useState("");
 
@@ -85,38 +88,111 @@ export default function Hero() {
   const target = t("hero.briefCard.typed") as string;
 
   useEffect(() => {
-    let i = 0;
-    let timeoutId: ReturnType<typeof setTimeout>;
-    const tick = () => {
-      i += Math.ceil(Math.random() * 2) + 1;
-      setTyped(target.slice(0, i));
-      if (i < target.length) {
-        timeoutId = setTimeout(tick, 28);
-      }
-    };
-    timeoutId = setTimeout(tick, 600);
-    return () => clearTimeout(timeoutId);
-  }, [target]);
+    let cancelled = false;
+    const reduced = typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  useEffect(() => {
     const ctx = gsap.context(() => {
-      const mm = gsap.matchMedia();
-      mm.add("(prefers-reduced-motion: no-preference)", () => {
-        const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-        tl.from("[data-hero-badge]", { y: -30, autoAlpha: 0, duration: 0.6, ease: "back.out(2)" });
-        tl.from("[data-hero-line]", { y: 30, autoAlpha: 0, duration: 0.7, stagger: 0.12 }, "-=0.25");
-        tl.from("[data-hero-lead]", { y: 20, autoAlpha: 0, duration: 0.5 }, "-=0.3");
-        tl.from("[data-hero-cta]", { scale: 0.9, autoAlpha: 0, duration: 0.5, stagger: 0.08, ease: "back.out(2)" }, "-=0.2");
-        tl.from("[data-hero-trust]", { y: 12, autoAlpha: 0, duration: 0.5, stagger: 0.06 }, "-=0.2");
-        tl.from("[data-hero-brief]", { scale: 0.92, autoAlpha: 0, duration: 0.7, ease: "power2.out" }, "-=0.5");
-        tl.from("[data-hero-pcard]", { y: 24, autoAlpha: 0, scale: 0.94, duration: 0.55, stagger: 0.08, ease: "back.out(1.6)" }, "-=0.4");
-      });
-      mm.add("(prefers-reduced-motion: reduce)", () => {
-        gsap.set("[data-hero-badge], [data-hero-line], [data-hero-lead], [data-hero-cta], [data-hero-trust], [data-hero-brief], [data-hero-pcard]", { autoAlpha: 1, clearProps: "all" });
-      });
+      const cards = cardRefs.current.filter(Boolean) as HTMLDivElement[];
+
+      if (reduced) {
+        gsap.set("[data-hero-badge], [data-hero-line], [data-hero-lead], [data-hero-cta], [data-hero-trust], [data-hero-brief]", { autoAlpha: 1, clearProps: "all" });
+        gsap.set(cards, { opacity: 1, scale: 1, clearProps: "transform,opacity" });
+        setTyped(target);
+        return;
+      }
+
+      const entry = gsap.timeline({ defaults: { ease: "power3.out" } });
+      entry.from("[data-hero-badge]", { y: -30, autoAlpha: 0, duration: 0.6, ease: "back.out(2)" });
+      entry.from("[data-hero-line]", { y: 30, autoAlpha: 0, duration: 0.7, stagger: 0.12 }, "-=0.25");
+      entry.from("[data-hero-lead]", { y: 20, autoAlpha: 0, duration: 0.5 }, "-=0.3");
+      entry.from("[data-hero-cta]", { scale: 0.9, autoAlpha: 0, duration: 0.5, stagger: 0.08, ease: "back.out(2)" }, "-=0.2");
+      entry.from("[data-hero-trust]", { y: 12, autoAlpha: 0, duration: 0.5, stagger: 0.06 }, "-=0.2");
+      entry.from(briefRef.current, { scale: 0.92, autoAlpha: 0, duration: 0.7, ease: "power2.out" }, "-=0.5");
+
+      let charI = 0;
+      const typeChar = () => {
+        if (cancelled) return;
+        if (charI <= target.length) {
+          setTyped(target.slice(0, charI));
+          charI++;
+          setTimeout(typeChar, 22 + Math.random() * 30);
+        } else {
+          setTimeout(fanOut, 500);
+        }
+      };
+      const startTyping = setTimeout(typeChar, 800);
+
+      const fanOut = () => {
+        if (cancelled || !briefRef.current) return;
+        const tl = gsap.timeline({
+          onComplete: () => {
+            if (cancelled) return;
+            drawConnectors();
+            const paths = svgRef.current?.querySelectorAll("path");
+            if (paths && paths.length) {
+              gsap.fromTo(
+                paths,
+                { strokeDashoffset: 300 },
+                { strokeDashoffset: 0, duration: 1.1, ease: "power2.out", stagger: 0.05 }
+              );
+            }
+          },
+        });
+        tl.to(briefRef.current, { scale: 0.94, duration: 0.25, ease: "power2.out" })
+          .to(briefRef.current, { scale: 1, duration: 0.4, ease: "back.out(1.6)" })
+          .to(cards, { opacity: 1, scale: 1, duration: 0.85, ease: "back.out(1.4)", stagger: 0.07 }, "-=0.2")
+          .from(
+            cards.map((c) => c.querySelector("[data-card-audit]")).filter(Boolean) as Element[],
+            { opacity: 0, y: 6, duration: 0.4, stagger: 0.06 },
+            "-=0.4"
+          );
+      };
+
+      const onResize = () => {
+        if (svgRef.current?.querySelectorAll("path").length) drawConnectors();
+      };
+      window.addEventListener("resize", onResize);
+
+      return () => {
+        clearTimeout(startTyping);
+        window.removeEventListener("resize", onResize);
+      };
     }, sectionRef);
-    return () => ctx.revert();
+
+    return () => {
+      cancelled = true;
+      ctx.revert();
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const drawConnectors = () => {
+    const svg = svgRef.current;
+    const stage = stageRef.current;
+    const brief = briefRef.current;
+    if (!svg || !stage || !brief) return;
+    svg.innerHTML = "";
+    const sRect = stage.getBoundingClientRect();
+    const bRect = brief.getBoundingClientRect();
+    const bx = bRect.left - sRect.left + bRect.width / 2;
+    const by = bRect.top - sRect.top + bRect.height / 2;
+    cardRefs.current.forEach((card) => {
+      if (!card) return;
+      const c = card.getBoundingClientRect();
+      const cx = c.left - sRect.left + c.width / 2;
+      const cy = c.top - sRect.top + c.height / 2;
+      const mx = (bx + cx) / 2;
+      const my = (by + cy) / 2 + (cy > by ? -30 : 30);
+      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path.setAttribute("d", `M${bx},${by} Q${mx},${my} ${cx},${cy}`);
+      path.setAttribute("stroke", "#94bf5c");
+      path.setAttribute("stroke-width", "1.4");
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke-dasharray", "4 5");
+      path.setAttribute("opacity", "0.5");
+      svg.appendChild(path);
+    });
+  };
 
   return (
     <section ref={sectionRef} className="relative overflow-hidden pt-28 pb-16 md:pb-24" style={{ background: "var(--paper-2)" }}>
@@ -171,8 +247,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative hidden lg:block" style={{ height: 600 }}>
-          <div data-hero-brief className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-[18px] z-10" style={{ width: 340, border: "1px solid var(--border-default)", borderRadius: "var(--r-lg)", boxShadow: "var(--shadow-pop)", visibility: "hidden" }}>
+        <div ref={stageRef} className="relative hidden lg:block" style={{ height: 600 }}>
+          <svg ref={svgRef} className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }} />
+
+          <div ref={briefRef} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-[18px]" style={{ width: 340, border: "1px solid var(--border-default)", borderRadius: "var(--r-lg)", boxShadow: "var(--shadow-pop)", zIndex: 5, visibility: "hidden" }}>
             <div className="flex items-center gap-2 mb-2.5 uppercase font-semibold" style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--fg-tertiary)", letterSpacing: "0.06em" }}>
               <span className="grid place-items-center" style={{ width: 18, height: 18, borderRadius: 6, background: "var(--tint-green)", color: "var(--feather-green-ink)" }}>✎</span>
               {t("hero.briefCard.label")}
@@ -187,10 +265,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {PLATFORM_CARDS.map((card) => (
+          {PLATFORM_CARDS.map((card, i) => (
             <div
               key={card.id}
-              data-hero-pcard
+              ref={(el) => { cardRefs.current[i] = el; }}
               className="absolute bg-white p-3"
               style={{
                 width: 210,
@@ -198,8 +276,10 @@ export default function Hero() {
                 border: "1px solid var(--border-default)",
                 borderRadius: "var(--r-md)",
                 boxShadow: "var(--shadow-lg)",
-                animation: `platformFloat 6s ease-in-out ${card.delay}s infinite`,
-                visibility: "hidden",
+                opacity: 0,
+                transform: "scale(0.4)",
+                transformOrigin: "50% 50%",
+                zIndex: 2,
               }}
             >
               <div className="flex items-center gap-2 mb-2 font-bold" style={{ fontSize: 12, color: "var(--ink-1)" }}>
@@ -210,7 +290,7 @@ export default function Hero() {
               {card.hasImg && (
                 <div className="mt-2 rounded-md" style={{ height: 60, background: "linear-gradient(135deg, var(--tint-green), var(--feather-green))" }} />
               )}
-              <div className="mt-2 flex items-center gap-1.5 font-semibold" style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--feather-green-ink)" }}>
+              <div data-card-audit className="mt-2 flex items-center gap-1.5 font-semibold" style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--feather-green-ink)" }}>
                 <span className="grid place-items-center text-white font-extrabold" style={{ width: 12, height: 12, fontSize: 7, borderRadius: 999, background: "var(--feather-green)" }}>✓</span>
                 Audited · {card.audit}
               </div>
