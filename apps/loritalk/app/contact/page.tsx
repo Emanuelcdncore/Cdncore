@@ -7,22 +7,25 @@ import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   const [form, setForm] = useState({ firstName: "", lastName: "", email: "", company: "", subject: "", message: "" });
+  const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   const update = (field: string, value: string) => setForm((f) => ({ ...f, [field]: value }));
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!consent) return;
     setStatus("sending");
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, consent: true, consentTimestamp: new Date().toISOString() }),
       });
       if (!res.ok) throw new Error();
       setStatus("success");
       setForm({ firstName: "", lastName: "", email: "", company: "", subject: "", message: "" });
+      setConsent(false);
       setTimeout(() => setStatus("idle"), 4000);
     } catch {
       setStatus("error");
@@ -77,10 +80,28 @@ export default function ContactPage() {
               <textarea id="message" required rows={5} value={form.message} onChange={(e) => update("message", e.target.value)} placeholder="How can we help?" className="w-full px-4 py-3 rounded-xl border border-black/10 text-sm focus:outline-none focus:border-black/30 transition-colors resize-none" />
             </div>
 
+            <label htmlFor="consent" className="flex items-start gap-3 cursor-pointer select-none">
+              <input
+                id="consent"
+                type="checkbox"
+                required
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                className="mt-1 h-4 w-4 shrink-0 rounded border-black/20 text-black focus:ring-black/30"
+              />
+              <span className="text-xs text-black/55 leading-relaxed">
+                I have read and accept the{" "}
+                <Link href="/privacy-policy" className="underline hover:text-black">Privacy Policy</Link>{" "}
+                and the{" "}
+                <Link href="/terms-of-service" className="underline hover:text-black">Terms of Service</Link>.
+                I consent to CDN Core Technologies processing the personal data submitted above (name, email, company, message) to respond to my enquiry, in accordance with GDPR (Art. 6(1)(a)) and LGPD (Art. 7, I). I understand I can withdraw this consent at any time by emailing info@lori-talk.eu, without affecting the lawfulness of prior processing.
+              </span>
+            </label>
+
             <button
               type="submit"
-              disabled={status === "sending"}
-              className="w-full py-3.5 rounded-full font-semibold text-sm text-white transition-opacity hover:opacity-90 disabled:opacity-60 flex items-center justify-center gap-2"
+              disabled={status === "sending" || !consent}
+              className="w-full py-3.5 rounded-full font-semibold text-sm text-white transition-opacity hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               style={{ backgroundColor: status === "success" ? "#94BF5C" : status === "error" ? "#E54013" : "#5D92E8" }}
             >
               {status === "sending" && <><span className="material-icons-round text-base animate-spin">autorenew</span> Sending...</>}
@@ -89,11 +110,8 @@ export default function ContactPage() {
               {status === "idle" && "Send message"}
             </button>
 
-            <p className="text-xs text-black/30 text-center">
-              By submitting, you agree to our{" "}
-              <Link href="/terms-of-service" className="underline hover:text-black/50">Terms of Service</Link>{" "}
-              and{" "}
-              <Link href="/privacy-policy" className="underline hover:text-black/50">Privacy Policy</Link>.
+            <p className="text-xs text-black/35 text-center">
+              Data retention: 24 months after last interaction. You can request access, correction or deletion at any time via info@lori-talk.eu.
             </p>
           </form>
 

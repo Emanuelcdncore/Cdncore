@@ -360,6 +360,16 @@
     "privacyPolicy": "Privacy policy",
     "termsOfService": "Terms of service",
     "cookiePolicy": "Cookie policy",
+    "legalNotice": "Legal notice",
     "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  },
+  "cookieBanner": {
+    "aria": "Cookie notice",
+    "title": "Cookies on this site",
+    "body": "We only use the strictly necessary local storage to remember your language and that you saw this notice. No analytics, no advertising, no third-party trackers.",
+    "policyLink": "Cookie Policy",
+    "privacyLink": "Privacy Policy",
+    "learnMore": "Read the Cookie Policy",
+    "acknowledge": "Got it"
   }
 }

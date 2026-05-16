@@ -21,7 +21,7 @@ export default function TermsOfServicePage() {
           </Link>
 
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Terms of Service</h1>
-          <p className="text-sm text-black/35 mb-10">Last updated: April 2026</p>
+          <p className="text-sm text-black/35 mb-10">Last updated: May 2026</p>
 
           <div className="flex flex-col gap-8 text-sm text-black/70 leading-relaxed">
             <section>
@@ -57,11 +57,19 @@ export default function TermsOfServicePage() {
               <p>During the Beta period, services are provided free of charge. We may modify, suspend, or discontinue Beta features at any time without prior notice. Beta users who transition to paid plans will have their Beta rate locked as advertised.</p>
             </section>
             <section>
-              <h2 className="text-lg font-bold mb-3 text-black">9. Governing Law</h2>
-              <p>These Terms shall be governed by and construed in accordance with the laws of Portugal, without regard to its conflict of law provisions.</p>
+              <h2 className="text-lg font-bold mb-3 text-black">9. Account Deletion &amp; Data Export</h2>
+              <p>You can delete your Loritalk account at any time from your account settings, or by emailing info@lori-talk.eu. On deletion, personal data is erased within 30 days, subject to legal retention obligations (for example, tax and accounting records under Portuguese law). You can also request a machine-readable export of your data at any time. Contact-form submissions are retained for 24 months after the last interaction and can be deleted earlier on request.</p>
             </section>
             <section>
-              <h2 className="text-lg font-bold mb-3 text-black">10. Contact</h2>
+              <h2 className="text-lg font-bold mb-3 text-black">10. Data Protection</h2>
+              <p>Processing of personal data is governed by our <Link href="/privacy-policy" className="underline">Privacy Policy</Link> and <Link href="/cookie-policy" className="underline">Cookie Policy</Link>, issued under GDPR (Regulation (EU) 2016/679) and the Brazilian LGPD (Lei 13.709/2018). You retain all rights described in those documents, including access, rectification, erasure, portability, and the right to lodge a complaint with a supervisory authority.</p>
+            </section>
+            <section>
+              <h2 className="text-lg font-bold mb-3 text-black">11. Governing Law</h2>
+              <p>These Terms shall be governed by and construed in accordance with the laws of Portugal, without regard to its conflict of law provisions. Mandatory consumer-protection rights granted by the law of your habitual residence remain unaffected.</p>
+            </section>
+            <section>
+              <h2 className="text-lg font-bold mb-3 text-black">12. Contact</h2>
               <div className="rounded-xl bg-black/[0.03] p-5">
                 <p className="mb-2">For questions about these Terms, contact us at:</p>
                 <p><strong>Email:</strong> info@lori-talk.eu</p>

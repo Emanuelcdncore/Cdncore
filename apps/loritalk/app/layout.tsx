@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Readex_Pro, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
+import CookieBanner from "@/components/CookieBanner";
 
 const readexPro = Readex_Pro({
   variable: "--font-readex",
@@ -64,7 +65,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
       </head>
       <body className="min-h-screen" suppressHydrationWarning>
-        <I18nProvider>{children}</I18nProvider>
+        <I18nProvider>
+          {children}
+          <CookieBanner />
+        </I18nProvider>
       </body>
     </html>
   );

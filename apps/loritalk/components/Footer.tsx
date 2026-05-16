@@ -20,6 +20,8 @@ export default function Footer() {
     [t("footer.legal")]: [
       { label: t("footer.privacyPolicy"), href: "/privacy-policy" },
       { label: t("footer.termsOfService"), href: "/terms-of-service" },
+      { label: t("footer.cookiePolicy"), href: "/cookie-policy" },
+      { label: t("footer.legalNotice"), href: "/legal-notice" },
     ],
   };
 
