@@ -50,7 +50,6 @@ export const metadata: Metadata = {
     description: "Write one idea, get optimized posts for every platform. Multiple AI models compete to give you the best result.",
     images: ["/og-default.png"],
   },
-  icons: { icon: [{ url: "/favicon.ico" }] },
 };
 
 export default function RootLayout({
