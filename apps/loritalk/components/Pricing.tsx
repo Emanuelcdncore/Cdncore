@@ -11,17 +11,22 @@ type TierAccent = "green" | "tangerine" | "cobalt" | "flame" | "neutral";
 type TierBadge = "most-popular" | "best-value" | null;
 
 type Plan = {
-  code: string;
-  name: string;
-  description: string;
+  code: "STARTER" | "PLUS" | "ULTRA" | "BUSINESS";
   monthlyCents: number | null;
   yearlyCents: number | null;
   creditsPerMonth: number;
   quotas: { workspaces: number; channels: number; personas: number; members: number; media: number };
 };
 
-function tierAccent(code: string): TierAccent {
-  switch (code.toUpperCase()) {
+const PLANS: Plan[] = [
+  { code: "STARTER",  monthlyCents: 1400,  yearlyCents: 14000,  creditsPerMonth: 600,  quotas: { workspaces: 1,  channels: 3,  personas: 4,   members: 3,  media: 100 } },
+  { code: "PLUS",     monthlyCents: 3700,  yearlyCents: 37000,  creditsPerMonth: 1700, quotas: { workspaces: 2,  channels: 10, personas: 15,  members: 10, media: 600 } },
+  { code: "ULTRA",    monthlyCents: 9700,  yearlyCents: 97000,  creditsPerMonth: 4600, quotas: { workspaces: 5,  channels: 25, personas: 40,  members: 25, media: 2500 } },
+  { code: "BUSINESS", monthlyCents: 20700, yearlyCents: 207000, creditsPerMonth: 9700, quotas: { workspaces: 15, channels: 75, personas: 120, members: 75, media: 10000 } },
+];
+
+function tierAccent(code: Plan["code"]): TierAccent {
+  switch (code) {
     case "STARTER": return "green";
     case "PLUS": return "tangerine";
     case "ULTRA": return "cobalt";
@@ -30,8 +35,8 @@ function tierAccent(code: string): TierAccent {
   }
 }
 
-function tierBadge(code: string): TierBadge {
-  switch (code.toUpperCase()) {
+function tierBadge(code: Plan["code"]): TierBadge {
+  switch (code) {
     case "PLUS": return "most-popular";
     case "ULTRA": return "best-value";
     default: return null;
@@ -48,7 +53,6 @@ export default function Pricing() {
   const [yearly, setYearly] = useState(true);
   const { t } = useTranslation();
 
-  const plans = t("pricing.plans", { returnObjects: true }) as Plan[];
   const symbol = "€";
 
   useEffect(() => {
@@ -98,9 +102,11 @@ export default function Pricing() {
         </div>
 
         <div data-price-grid className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto" style={{ paddingTop: 14, alignItems: "stretch" }}>
-          {plans.map((plan) => {
+          {PLANS.map((plan) => {
             const accent = tierAccent(plan.code);
             const badge = tierBadge(plan.code);
+            const name = t(`pricing.tiers.${plan.code}.name`, plan.code);
+            const description = t(`pricing.tiers.${plan.code}.description`, "");
 
             const effectiveCents = yearly
               ? plan.yearlyCents != null
@@ -142,8 +148,8 @@ export default function Pricing() {
                 )}
 
                 <div className="plan-card-head">
-                  <div className="plan-card-name">{plan.name}</div>
-                  {plan.description && <div className="plan-card-sub">{plan.description}</div>}
+                  <div className="plan-card-name">{name}</div>
+                  {description && <div className="plan-card-sub">{description}</div>}
                 </div>
 
                 {plan.creditsPerMonth > 0 && (

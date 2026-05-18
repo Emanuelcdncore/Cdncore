@@ -270,44 +270,12 @@
       "members_other": "{{count}} membros de equipa",
       "media": "{{count}} ficheiros de média"
     },
-    "plans": [
-      {
-        "code": "STARTER",
-        "name": "Starter",
-        "description": "Para quem começa a criar conteúdo com IA",
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600,
-        "quotas": { "workspaces": 1, "channels": 3, "personas": 4, "members": 3, "media": 100 }
-      },
-      {
-        "code": "PLUS",
-        "name": "Plus",
-        "description": "Para criação de conteúdo IA consistente e fácil",
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700,
-        "quotas": { "workspaces": 2, "channels": 10, "personas": 15, "members": 10, "media": 600 }
-      },
-      {
-        "code": "ULTRA",
-        "name": "Ultra",
-        "description": "Para criadores que constroem projectos de IA",
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600,
-        "quotas": { "workspaces": 5, "channels": 25, "personas": 40, "members": 25, "media": 2500 }
-      },
-      {
-        "code": "BUSINESS",
-        "name": "Business",
-        "description": "Para agências e equipas pequenas",
-        "monthlyCents": 20700,
-        "yearlyCents": 207000,
-        "creditsPerMonth": 9700,
-        "quotas": { "workspaces": 15, "channels": 75, "personas": 120, "members": 75, "media": 10000 }
-      }
-    ]
+    "tiers": {
+      "STARTER":  { "name": "Starter",  "description": "Para quem começa a criar conteúdo com IA" },
+      "PLUS":     { "name": "Plus",     "description": "Para criação de conteúdo IA consistente e fácil" },
+      "ULTRA":    { "name": "Ultra",    "description": "Para criadores que constroem produtos de IA" },
+      "BUSINESS": { "name": "Business", "description": "Para agências e equipas pequenas" }
+    }
   },
   "faq": {
     "title": "Perguntas? Temos respostas.",
