@@ -60,7 +60,7 @@ i18n
   .init({
     resources,
     fallbackLng: "en",
-    supportedLngs: Object.keys(resources),
+    supportedLngs: ["en", "pt"],
     load: "languageOnly",
     interpolation: { escapeValue: false },
     detection: {
