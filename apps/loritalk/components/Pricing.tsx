@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { savePlanIntent } from "@/lib/planIntent";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -205,7 +206,13 @@ export default function Pricing() {
                   )}
                 </div>
 
-                <a href={checkoutHref} className="plan-card-cta">{t("pricing.tierChoose")}</a>
+                <a
+                  href={checkoutHref}
+                  className="plan-card-cta"
+                  onClick={() => savePlanIntent(plan.code.toLowerCase(), yearly ? "yearly" : "monthly")}
+                >
+                  {t("pricing.tierChoose")}
+                </a>
 
                 <ul className="plan-card-features">
                   <li className="plan-card-feat">
