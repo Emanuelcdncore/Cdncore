@@ -260,6 +260,8 @@
     "creditsTexts": "~{{count}} posts de texto",
     "creditsOr": "ou",
     "creditsImages": "~{{count}} imagens on-brand",
+    "promoExplainer": "Promo de 1º ano: recebes 2× créditos TODOS os meses durante o teu primeiro ano ao escolheres Anual — isto é, {{count}} créditos bónus por mês.",
+    "promoHeroExtra": "(+{{count}} créditos bónus todos os meses por 12 meses)",
     "tierChoose": "Escolher plano",
     "features": {
       "workspaces_one": "{{count}} workspace",

@@ -260,6 +260,8 @@
     "creditsTexts": "~{{count}} text posts",
     "creditsOr": "or",
     "creditsImages": "~{{count}} on-brand images",
+    "promoExplainer": "First-year promo: receive 2× credits EVERY month for your entire first year when you choose Annual — that's {{count}} bonus credits each month.",
+    "promoHeroExtra": "(+{{count}} bonus credits every month for 12 months)",
     "tierChoose": "Choose plan",
     "features": {
       "workspaces_one": "{{count}} workspace",

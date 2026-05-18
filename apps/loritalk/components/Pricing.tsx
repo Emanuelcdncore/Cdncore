@@ -79,7 +79,7 @@ export default function Pricing() {
           <p data-price-sub className="max-w-lg mx-auto" style={{ fontSize: 16, color: "var(--ink-3)", visibility: "hidden" }}>{t("pricing.subtitle")}</p>
         </div>
 
-        <div data-price-toggle className="flex items-center justify-center mb-12" style={{ visibility: "hidden" }}>
+        <div data-price-toggle className="flex items-center justify-center mb-8" style={{ visibility: "hidden" }}>
           <div className="plan-billing-toggle" role="group" aria-label="Billing cycle">
             <button
               type="button"
@@ -100,6 +100,13 @@ export default function Pricing() {
             </button>
           </div>
         </div>
+
+        {yearly && (
+          <div className="plan-promo-banner" role="status">
+            <span className="material-icons-round plan-promo-banner-icon">card_giftcard</span>
+            <span>{t("pricing.promoExplainer", { count: "2×" })}</span>
+          </div>
+        )}
 
         <div data-price-grid className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto" style={{ paddingTop: 14, alignItems: "stretch" }}>
           {PLANS.map((plan) => {
@@ -125,8 +132,10 @@ export default function Pricing() {
                 ? plan.monthlyCents * 12 - plan.yearlyCents
                 : 0;
 
-            const textsPerMonth = Math.floor(plan.creditsPerMonth / 10);
-            const imagesPerMonth = Math.floor(plan.creditsPerMonth / 30);
+            const promoEligible = yearly;
+            const effectiveCredits = promoEligible ? plan.creditsPerMonth * 2 : plan.creditsPerMonth;
+            const textsPerMonth = Math.floor(effectiveCredits / 10);
+            const imagesPerMonth = Math.floor(effectiveCredits / 30);
 
             const checkoutHref = `https://app.lori-talk.eu/signup?plan=${plan.code.toLowerCase()}&cycle=${yearly ? "yearly" : "monthly"}`;
 
@@ -159,6 +168,11 @@ export default function Pricing() {
                       <span className="plan-card-credits-hero-number">{plan.creditsPerMonth.toLocaleString()}</span>
                       <span className="plan-card-credits-hero-unit">{t("pricing.creditsUnit")}</span>
                     </div>
+                    {promoEligible && (
+                      <div className="plan-card-credits-hero-promo">
+                        {t("pricing.promoHeroExtra", { count: plan.creditsPerMonth.toLocaleString() })}
+                      </div>
+                    )}
                     <div className="plan-card-credits-hero-conv">
                       <div>{t("pricing.creditsTexts", { count: textsPerMonth })}</div>
                       <div className="plan-card-credits-hero-or">{t("pricing.creditsOr")}</div>
