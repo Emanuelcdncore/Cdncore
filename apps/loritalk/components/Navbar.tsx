@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-3">
           <LanguageSwitcher />
-          <a href="https://app.lori-talk.eu" className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-opacity hover:opacity-90" style={{ backgroundColor: "#94BF5C" }}>
+          <a href="https://app.lori-talk.eu/register" className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-opacity hover:opacity-90" style={{ backgroundColor: "#94BF5C" }}>
             {t("navbar.startForFree")}
           </a>
         </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
           <a href="/#pricing" className="text-sm font-medium" onClick={() => setOpen(false)}>{t("navbar.pricing")}</a>
           <LanguageSwitcher className="self-start" />
           <div className="flex flex-col gap-2 pt-2 border-t border-black/8">
-            <a href="https://app.lori-talk.eu" className="text-sm font-semibold py-2 rounded-full text-white text-center hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C" }}>
+            <a href="https://app.lori-talk.eu/register" className="text-sm font-semibold py-2 rounded-full text-white text-center hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C" }}>
               {t("navbar.startForFree")}
             </a>
           </div>

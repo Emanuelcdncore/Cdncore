@@ -137,7 +137,7 @@ export default function Pricing() {
             const textsPerMonth = Math.floor(effectiveCredits / 10);
             const imagesPerMonth = Math.floor(effectiveCredits / 30);
 
-            const checkoutHref = `https://app.lori-talk.eu/signup?plan=${plan.code.toLowerCase()}&cycle=${yearly ? "yearly" : "monthly"}`;
+            const checkoutHref = `https://app.lori-talk.eu/register?plan=${plan.code.toLowerCase()}&cycle=${yearly ? "yearly" : "monthly"}`;
 
             return (
               <div

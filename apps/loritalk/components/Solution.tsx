@@ -59,7 +59,7 @@ export default function Solution() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <a href="https://app.lori-talk.eu" className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold text-white text-sm hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C" }}>
+          <a href="https://app.lori-talk.eu/register" className="inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold text-white text-sm hover:opacity-90 transition-opacity" style={{ backgroundColor: "#94BF5C" }}>
             <span className="material-icons-round text-base">rocket_launch</span>
             {t("solution.ctaPrimary")}
           </a>

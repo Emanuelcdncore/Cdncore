@@ -228,7 +228,7 @@ export default function Hero() {
           <p data-hero-lead className="text-lg leading-relaxed max-w-[540px] mb-8" style={{ color: "var(--fg-secondary)", visibility: "hidden" }} dangerouslySetInnerHTML={{ __html: t("hero.lead") }} />
 
           <div className="flex flex-wrap items-center gap-3">
-            <a data-hero-cta href="https://app.lori-talk.eu" className="inline-flex items-center gap-2 rounded-full font-semibold text-sm text-white transition-transform" style={{ padding: "14px 24px", background: "var(--feather-green)", visibility: "hidden" }}>
+            <a data-hero-cta href="https://app.lori-talk.eu/register" className="inline-flex items-center gap-2 rounded-full font-semibold text-sm text-white transition-transform" style={{ padding: "14px 24px", background: "var(--feather-green)", visibility: "hidden" }}>
               {t("hero.ctaPrimary")}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
