@@ -365,11 +365,17 @@
   },
   "cookieBanner": {
     "aria": "Aviso de cookies",
-    "title": "Cookies neste site",
-    "body": "Usamos apenas o armazenamento local estritamente necessário para lembrar o seu idioma e que viu este aviso. Sem analítica, sem publicidade, sem trackers de terceiros.",
+    "title": "Usamos cookies",
+    "body": "Os cookies estritamente necessários mantêm o site a funcionar. Com o seu consentimento carregamos também o Meta Pixel para medir a nossa publicidade. Pode aceitar, recusar ou escolher categoria a categoria — e mudar de ideias a qualquer momento.",
     "policyLink": "Política de Cookies",
     "privacyLink": "Política de Privacidade",
-    "learnMore": "Ler a Política de Cookies",
-    "acknowledge": "Compreendi"
+    "acceptAll": "Aceitar tudo",
+    "rejectOptional": "Recusar opcionais",
+    "customize": "Personalizar",
+    "save": "Guardar preferências",
+    "necessaryLabel": "Estritamente necessários",
+    "necessaryDesc": "Indispensáveis ao funcionamento do site (idioma e a sua escolha de consentimento). Não podem ser desactivados.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Carrega o Meta Pixel (Facebook / Instagram) para medirmos as campanhas de anúncios. Define os cookies _fbp e _fbc e envia dados de visualização de página para a Meta."
   }
 }

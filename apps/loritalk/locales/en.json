@@ -365,11 +365,17 @@
   },
   "cookieBanner": {
     "aria": "Cookie notice",
-    "title": "Cookies on this site",
-    "body": "We only use the strictly necessary local storage to remember your language and that you saw this notice. No analytics, no advertising, no third-party trackers.",
+    "title": "We use cookies",
+    "body": "Strictly necessary cookies keep the site working. With your consent we also load the Meta Pixel to measure our advertising. You can accept, refuse, or pick category by category — and change your mind at any time.",
     "policyLink": "Cookie Policy",
     "privacyLink": "Privacy Policy",
-    "learnMore": "Read the Cookie Policy",
-    "acknowledge": "Got it"
+    "acceptAll": "Accept all",
+    "rejectOptional": "Reject optional",
+    "customize": "Customise",
+    "save": "Save preferences",
+    "necessaryLabel": "Strictly necessary",
+    "necessaryDesc": "Required for the site to work (language and your consent choice). Cannot be disabled.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Loads the Meta Pixel (Facebook / Instagram) so we can measure ad campaigns. Sets _fbp and _fbc cookies and transmits page-view data to Meta."
   }
 }

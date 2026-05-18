@@ -3,6 +3,7 @@ import { Readex_Pro, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google"
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
 import CookieBanner from "@/components/CookieBanner";
+import MetaPixel from "@/components/MetaPixel";
 
 const readexPro = Readex_Pro({
   variable: "--font-readex",
@@ -68,6 +69,7 @@ export default function RootLayout({
         <I18nProvider>
           {children}
           <CookieBanner />
+          <MetaPixel />
         </I18nProvider>
       </body>
     </html>

@@ -21,12 +21,12 @@ export default function PrivacyPolicyPage() {
           </Link>
 
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Privacy Policy</h1>
-          <p className="text-sm text-black/35 mb-10">Last updated: May 2026 · Version 2.0</p>
+          <p className="text-sm text-black/35 mb-10">Last updated: May 2026 · Version 2.1</p>
 
           <div className="flex flex-col gap-8 text-sm text-black/70 leading-relaxed">
             <section>
               <p>This Privacy Policy describes how <strong>CDN Core Technologies</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;) collects and processes personal data through the Loritalk website (<strong>lori-talk.eu</strong>) and related services. It is issued under Regulation (EU) 2016/679 (GDPR), Directive 2002/58/EC (ePrivacy), Portuguese Law 58/2019, and the Brazilian General Data Protection Law &mdash; Lei n.&ordm; 13.709/2018 (LGPD).</p>
-              <p className="mt-3">If you only want to know the essentials: we collect what you give us through the contact form, we keep server logs for security, we do <strong>not</strong> use analytics or advertising trackers on this site, and your content inside the Loritalk product is never used to train AI models.</p>
+              <p className="mt-3">If you only want to know the essentials: we collect what you give us through the contact form, we keep server logs for security, we load the <strong>Meta Pixel only if you opt in</strong> via the cookie banner, and your content inside the Loritalk product is never used to train AI models.</p>
             </section>
 
             <section>
@@ -72,11 +72,18 @@ export default function PrivacyPolicyPage() {
                       <td className="p-3">30 days, then deleted or pseudonymised</td>
                     </tr>
                     <tr className="border-t border-black/10">
-                      <td className="p-3">Browser <code className="text-xs">localStorage</code> entries (<code className="text-xs">loritalk-lang</code>, <code className="text-xs">loritalk-cookie-ack</code>)</td>
-                      <td className="p-3">You change language or dismiss the cookie notice</td>
-                      <td className="p-3">Remember your language choice and that you acknowledged the cookie notice</td>
+                      <td className="p-3">Browser <code className="text-xs">localStorage</code> entries (<code className="text-xs">loritalk-lang</code>, <code className="text-xs">loritalk-consent</code>)</td>
+                      <td className="p-3">You change language or record a cookie preference</td>
+                      <td className="p-3">Remember your language choice and your granular cookie consent (necessary / marketing)</td>
                       <td className="p-3">Strictly necessary (Art. 5(3) ePrivacy exemption &mdash; explicitly requested by user)</td>
                       <td className="p-3">Until you clear your browser storage</td>
+                    </tr>
+                    <tr className="border-t border-black/10">
+                      <td className="p-3">Browser and device identifiers via Meta Pixel (<code className="text-xs">_fbp</code>, <code className="text-xs">_fbc</code>, IP address, User-Agent, browser fingerprint signals, current URL, referrer)</td>
+                      <td className="p-3">You opt in to marketing cookies and then load a page</td>
+                      <td className="p-3">Measure Meta (Facebook / Instagram) advertising campaigns, attribute conversions, build look-alike and re-marketing audiences</td>
+                      <td className="p-3">Your prior, freely given, informed and granular consent (Art. 6(1)(a) GDPR; Art. 5(3) ePrivacy / Portuguese Law 41/2004; Art. 7, I LGPD)</td>
+                      <td className="p-3">Up to 90 days in your browser (<code className="text-xs">_fbp</code> / <code className="text-xs">_fbc</code>); retained by Meta according to its own policies. You can withdraw consent at any time &mdash; see the <Link href="/cookie-policy" className="underline">Cookie Policy</Link>.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -86,7 +93,7 @@ export default function PrivacyPolicyPage() {
 
             <section>
               <h2 className="text-lg font-bold mb-3 text-black">3. Cookies and similar technologies</h2>
-              <p>This website does <strong>not</strong> set advertising, profiling, analytics, social-media, or third-party tracking cookies. Full details about the few strictly necessary local-storage entries we use and the third-party requests that load Google Fonts are in the <Link href="/cookie-policy" className="underline">Cookie Policy</Link>.</p>
+              <p>By default this website only sets the strictly necessary local-storage entries described above. The <strong>Meta Pixel</strong> &mdash; an advertising-measurement tracker that sets the <code className="text-xs">_fbp</code> and <code className="text-xs">_fbc</code> cookies and transmits page-view data to Meta &mdash; is only loaded after you give prior, freely given, granular, opt-in consent through the cookie banner. You can withdraw that consent at any time without affecting the lawfulness of processing already performed. Full details, including how to refuse or withdraw consent, are in the <Link href="/cookie-policy" className="underline">Cookie Policy</Link>.</p>
             </section>
 
             <section>
@@ -95,16 +102,18 @@ export default function PrivacyPolicyPage() {
               <ul className="list-disc pl-5 flex flex-col gap-1">
                 <li><strong>Hosting and infrastructure providers</strong> located in the European Union, which run the servers that deliver this website and store contact-form submissions.</li>
                 <li><strong>Transactional email provider</strong> used to relay contact-form messages to our team mailbox.</li>
+                <li><strong>Meta Platforms Ireland Limited</strong> (4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland) and its US affiliate Meta Platforms, Inc. &mdash; acting as independent controller for advertising-measurement data collected through the Meta Pixel. Only triggered if you opt in to marketing cookies.</li>
                 <li><strong>Professional advisers</strong> (lawyers, accountants) when strictly necessary to defend a legal claim or comply with a legal obligation.</li>
                 <li><strong>Competent public authorities</strong> when legally compelled (court order, formal request from a supervisory authority).</li>
               </ul>
-              <p className="mt-3">We do not sell, rent, or otherwise commercially share your personal data with third parties. We do not use your contact-form data for advertising or for AI training.</p>
+              <p className="mt-3">We do not sell, rent, or otherwise commercially share your personal data with third parties beyond the recipients listed above. We do not use your contact-form data for advertising or for AI training.</p>
               <p className="mt-3">An up-to-date list of sub-processors is available on request via info@lori-talk.eu.</p>
             </section>
 
             <section>
               <h2 className="text-lg font-bold mb-3 text-black">5. International transfers</h2>
               <p>Personal data collected through this website is stored on servers located in the European Union. If, in the future, any sub-processor is located outside the European Economic Area, transfers will be carried out under one of the safeguards permitted by Chapter V GDPR &mdash; typically Standard Contractual Clauses (Commission Decision (EU) 2021/914) supplemented by appropriate technical and organisational measures. For LGPD purposes, transfers will rely on the mechanisms set out in Articles 33&ndash;35 LGPD.</p>
+              <p className="mt-3"><strong>Meta Pixel data:</strong> when you opt in to marketing cookies, Meta Platforms Ireland transfers the data it receives to Meta Platforms, Inc. in the United States. These transfers rely on (i) the <a href="https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en" target="_blank" rel="noopener noreferrer" className="underline">EU-US Data Privacy Framework</a> adequacy decision of 10 July 2023 (Meta Platforms, Inc. is a certified participant) and (ii) the Standard Contractual Clauses of Commission Decision (EU) 2021/914 as a fallback safeguard. For LGPD-covered transfers, Meta relies on the mechanisms set out in Articles 33&ndash;35 LGPD. You can review Meta&apos;s data policy at <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener noreferrer" className="underline">facebook.com/privacy/policy</a>.</p>
             </section>
 
             <section>
