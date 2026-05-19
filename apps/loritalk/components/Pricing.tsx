@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { savePlanIntent } from "@/lib/planIntent";
+import { onCtaClick } from "@/lib/fbAttribution";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -209,7 +210,9 @@ export default function Pricing() {
                 <a
                   href={checkoutHref}
                   className="plan-card-cta"
-                  onClick={() => savePlanIntent(plan.code.toLowerCase(), yearly ? "yearly" : "monthly")}
+                  onClick={onCtaClick(() =>
+                    savePlanIntent(plan.code.toLowerCase(), yearly ? "yearly" : "monthly"),
+                  )}
                 >
                   {t("pricing.tierChoose")}
                 </a>
