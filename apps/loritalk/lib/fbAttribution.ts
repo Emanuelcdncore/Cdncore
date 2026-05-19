@@ -120,7 +120,7 @@ export async function captureAndForwardAttribution(): Promise<string | null> {
 
   const payload: AttributionPayload = { eventId, fbp, fbc, fbclid };
   try {
-    await fetch(`${BACKEND}/attribution`, {
+    await fetch(`${BACKEND}/api/attribution`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
