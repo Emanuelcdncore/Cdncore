@@ -3,11 +3,12 @@
 import { useSyncExternalStore } from "react";
 
 export const CONSENT_STORAGE_KEY = "loritalk-consent";
-export const CONSENT_VERSION = "2";
+export const CONSENT_VERSION = "3";
 
 export type ConsentState = {
   version: string;
   necessary: true;
+  analytics: boolean;
   marketing: boolean;
   timestamp: string;
 };
@@ -15,6 +16,7 @@ export type ConsentState = {
 const EMPTY: ConsentState = {
   version: CONSENT_VERSION,
   necessary: true,
+  analytics: false,
   marketing: false,
   timestamp: "",
 };
@@ -50,6 +52,7 @@ const parse = (raw: string): ConsentState | null => {
     return {
       version: CONSENT_VERSION,
       necessary: true,
+      analytics: parsed.analytics === true,
       marketing: parsed.marketing === true,
       timestamp: typeof parsed.timestamp === "string" ? parsed.timestamp : "",
     };
@@ -62,11 +65,12 @@ export function readConsent(): ConsentState | null {
   return parse(readSnapshot());
 }
 
-export function writeConsent(marketing: boolean): ConsentState {
+export function writeConsent(prefs: { analytics: boolean; marketing: boolean }): ConsentState {
   const next: ConsentState = {
     version: CONSENT_VERSION,
     necessary: true,
-    marketing,
+    analytics: prefs.analytics,
+    marketing: prefs.marketing,
     timestamp: new Date().toISOString(),
   };
   try {

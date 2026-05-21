@@ -162,18 +162,47 @@
       "personaLabel": "Persona",
       "languageLabel": "Language",
       "personas": [
-        { "name": "Lori", "desc": "Neutral — Lori's house voice" },
-        { "name": "Rupert", "desc": "Relaxed, funny, conversational" },
-        { "name": "Core", "desc": "Bold, optimistic, brand-led" }
+        {
+          "name": "Lori",
+          "desc": "Neutral — Lori's house voice"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Relaxed, funny, conversational"
+        },
+        {
+          "name": "Core",
+          "desc": "Bold, optimistic, brand-led"
+        }
       ]
     },
     "pubViz": {
       "items": [
-        { "platform": "Instagram", "kind": "carousel", "when": "Today 14:00" },
-        { "platform": "LinkedIn", "kind": "long-form", "when": "Today 15:30" },
-        { "platform": "X", "kind": "thread", "when": "Today 16:00" },
-        { "platform": "YouTube", "kind": "short 0:54", "when": "Tomorrow 09:00" },
-        { "platform": "Facebook", "kind": "post", "when": "Tomorrow 12:00" }
+        {
+          "platform": "Instagram",
+          "kind": "carousel",
+          "when": "Today 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "long-form",
+          "when": "Today 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "thread",
+          "when": "Today 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Tomorrow 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "post",
+          "when": "Tomorrow 12:00"
+        }
       ],
       "cta": "▶ Publish all · ⏱ Schedule"
     }
@@ -273,10 +302,22 @@
       "media": "{{count}} media assets"
     },
     "tiers": {
-      "STARTER":  { "name": "Starter",  "description": "For first-time AI content creators" },
-      "PLUS":     { "name": "Plus",     "description": "For consistent and easy AI content creation" },
-      "ULTRA":    { "name": "Ultra",    "description": "For creators building AI products" },
-      "BUSINESS": { "name": "Business", "description": "For agencies and small teams" }
+      "STARTER": {
+        "name": "Starter",
+        "description": "For first-time AI content creators"
+      },
+      "PLUS": {
+        "name": "Plus",
+        "description": "For consistent and easy AI content creation"
+      },
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "For creators building AI products"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "For agencies and small teams"
+      }
     }
   },
   "faq": {
@@ -336,7 +377,7 @@
   "cookieBanner": {
     "aria": "Cookie notice",
     "title": "We use cookies",
-    "body": "Strictly necessary cookies keep the site working. With your consent we also load the Meta Pixel to measure our advertising. You can accept, refuse, or pick category by category — and change your mind at any time.",
+    "body": "Strictly necessary cookies keep the site working. With your consent we also load Google Analytics to measure traffic and the Meta Pixel to measure our advertising. You can accept, refuse, or pick category by category — and change your mind at any time.",
     "policyLink": "Cookie Policy",
     "privacyLink": "Privacy Policy",
     "acceptAll": "Accept all",
@@ -345,6 +386,8 @@
     "save": "Save preferences",
     "necessaryLabel": "Strictly necessary",
     "necessaryDesc": "Required for the site to work (language and your consent choice). Cannot be disabled.",
+    "analyticsLabel": "Analytics — Google Analytics",
+    "analyticsDesc": "Loads Google Analytics 4 to measure traffic and improve the site. Sets _ga and _ga_* cookies and transmits page-view data to Google.",
     "marketingLabel": "Marketing — Meta Pixel",
     "marketingDesc": "Loads the Meta Pixel (Facebook / Instagram) so we can measure ad campaigns. Sets _fbp and _fbc cookies and transmits page-view data to Meta."
   }

@@ -21,7 +21,7 @@ export default function CookiePolicyPage() {
           </Link>
 
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Cookie Policy</h1>
-          <p className="text-sm text-black/35 mb-10">Last updated: May 2026 · Version 1.1</p>
+          <p className="text-sm text-black/35 mb-10">Last updated: May 2026 · Version 1.2</p>
 
           <div className="flex flex-col gap-8 text-sm text-black/70 leading-relaxed">
             <section>
@@ -35,7 +35,7 @@ export default function CookiePolicyPage() {
 
             <section>
               <h2 className="text-lg font-bold mb-3 text-black">2. Categories we use</h2>
-              <p className="mb-4">We classify storage by purpose, following European Data Protection Board (EDPB) Guidelines 2/2023 on Article 5(3) of the ePrivacy Directive.</p>
+              <p className="mb-4">We classify storage by purpose, following European Data Protection Board (EDPB) Guidelines 2/2023 on Article 5(3) of the ePrivacy Directive. Optional cookies are split into two opt-in categories — <strong>Analytics</strong> (Google Analytics) and <strong>Marketing</strong> (Meta Pixel) — which you accept or refuse independently in the consent banner.</p>
 
               <div className="overflow-x-auto">
                 <table className="w-full text-xs border border-black/10 rounded-xl overflow-hidden">
@@ -64,6 +64,27 @@ export default function CookiePolicyPage() {
                       <td className="p-3">Strictly necessary</td>
                     </tr>
                     <tr className="border-t border-black/10">
+                      <td className="p-3"><code className="text-xs">_ga</code></td>
+                      <td className="p-3">First-party cookie (set via Google Analytics 4)</td>
+                      <td className="p-3">Distinguishes unique users to Google Analytics so we can measure traffic, audience, and product trends.</td>
+                      <td className="p-3">2 years</td>
+                      <td className="p-3">Analytics &mdash; opt-in (Art. 5(3) ePrivacy / Art. 6(1)(a) GDPR / Art. 7, I LGPD)</td>
+                    </tr>
+                    <tr className="border-t border-black/10">
+                      <td className="p-3"><code className="text-xs">_ga_VF8DMSWWJB</code></td>
+                      <td className="p-3">First-party cookie (set via Google Analytics 4)</td>
+                      <td className="p-3">Maintains the GA4 session state for the Loritalk property.</td>
+                      <td className="p-3">2 years</td>
+                      <td className="p-3">Analytics &mdash; opt-in</td>
+                    </tr>
+                    <tr className="border-t border-black/10">
+                      <td className="p-3"><code className="text-xs">gtag/js</code> (script)</td>
+                      <td className="p-3">Third-party script loaded from <code className="text-xs">www.googletagmanager.com</code></td>
+                      <td className="p-3">Runtime library that sends GA4 events (page_view, etc.) to Google. Only loaded after you opt in to analytics cookies. IP anonymisation is enabled.</td>
+                      <td className="p-3">Session</td>
+                      <td className="p-3">Analytics &mdash; opt-in</td>
+                    </tr>
+                    <tr className="border-t border-black/10">
                       <td className="p-3"><code className="text-xs">_fbp</code></td>
                       <td className="p-3">First-party cookie (set via Meta Pixel)</td>
                       <td className="p-3">Identifies the browser for the Meta (Facebook / Instagram) advertising platform &mdash; measures campaign performance and audiences.</td>
@@ -88,7 +109,7 @@ export default function CookiePolicyPage() {
                 </table>
               </div>
 
-              <p className="mt-4">Marketing cookies and the Meta Pixel are <strong>only loaded after you explicitly opt in</strong> via the consent banner. By default they are blocked. You can withdraw consent at any time &mdash; see &ldquo;Your choices&rdquo; below.</p>
+              <p className="mt-4">Analytics cookies (Google Analytics) and marketing cookies (Meta Pixel) are <strong>only loaded after you explicitly opt in</strong> via the consent banner. By default they are blocked. Each category can be accepted or refused independently. You can withdraw consent at any time &mdash; see &ldquo;Your choices&rdquo; below.</p>
             </section>
 
             <section>
@@ -96,6 +117,7 @@ export default function CookiePolicyPage() {
               <p>The website may load the following third-party resources:</p>
               <ul className="list-disc pl-5 mt-2 flex flex-col gap-1">
                 <li><strong>Google Fonts</strong> (<code className="text-xs">fonts.googleapis.com</code>, <code className="text-xs">fonts.gstatic.com</code>) &mdash; loads the Readex Pro, Plus Jakarta Sans, JetBrains Mono, and Material Icons typefaces. No cookies are set by these endpoints; only your IP address and User-Agent are transmitted to Google as part of the HTTP request. Legal basis: legitimate interest (Art. 6(1)(f) GDPR) in delivering the page.</li>
+                <li><strong>Google Analytics 4</strong> (<code className="text-xs">www.googletagmanager.com</code>, <code className="text-xs">www.google-analytics.com</code>) &mdash; <em>only loaded if you opt in to analytics cookies</em>. Operated by Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Ireland). Property ID: <code className="text-xs">G-VF8DMSWWJB</code>. Sends a <code className="text-xs">page_view</code> event on each navigation so we can measure traffic and product trends. IP anonymisation (<code className="text-xs">anonymize_ip</code>) is enabled. Data may be transferred to the United States &mdash; Google relies on the EU-US Data Privacy Framework and EU Standard Contractual Clauses; see the <Link href="/privacy-policy" className="underline">Privacy Policy</Link> section on international transfers. Legal basis: your prior, freely given consent (Art. 6(1)(a) GDPR / Art. 7, I LGPD / Art. 5(3) ePrivacy).</li>
                 <li><strong>Meta Pixel</strong> (<code className="text-xs">connect.facebook.net</code>, <code className="text-xs">www.facebook.com</code>) &mdash; <em>only loaded if you opt in to marketing cookies</em>. Operated by Meta Platforms Ireland Limited (4 Grand Canal Square, Dublin, Ireland). Sends a <code className="text-xs">PageView</code> event when you load a page so we can measure the performance of our Meta advertising campaigns and build audiences. Data is transmitted to Meta servers, which may include transfers to the United States &mdash; see the <Link href="/privacy-policy" className="underline">Privacy Policy</Link> section on international transfers. Legal basis: your prior, freely given consent (Art. 6(1)(a) GDPR / Art. 7, I LGPD / Art. 5(3) ePrivacy).</li>
               </ul>
               <p className="mt-3">If you wish to block Google Fonts, you can self-host the fonts or use a browser extension. We are evaluating moving fonts to self-hosted assets to remove the third-party request entirely.</p>
@@ -112,7 +134,7 @@ export default function CookiePolicyPage() {
                 <li><strong>Consent banner.</strong> The first time you visit, you can accept all cookies, reject the optional ones, or open &ldquo;Customise&rdquo; to choose category by category. Your choice is recorded in <code className="text-xs">loritalk-consent</code>.</li>
                 <li><strong>Change your mind.</strong> To withdraw or update your consent, delete the <code className="text-xs">loritalk-consent</code> entry from your browser&apos;s local storage (DevTools &rarr; Application &rarr; Local Storage). The banner will appear again on your next visit so you can re-decide. We are working on an in-page &ldquo;Cookie settings&rdquo; link to make this one click.</li>
                 <li><strong>Browser controls.</strong> All major browsers let you view, block, or delete cookies and local storage on a per-site basis. See your browser&apos;s documentation.</li>
-                <li><strong>Effect of refusal.</strong> Refusing marketing cookies has no effect on access to the site or its content. We will simply not be able to measure how well our Meta advertising campaigns work.</li>
+                <li><strong>Effect of refusal.</strong> Refusing analytics or marketing cookies has no effect on access to the site or its content. We will simply lose visibility into traffic trends and the performance of our Meta advertising campaigns.</li>
                 <li><strong>Do Not Track / Global Privacy Control.</strong> If your browser sends a GPC or DNT signal, we treat it as a refusal of optional cookies in addition to your banner choice.</li>
               </ul>
             </section>

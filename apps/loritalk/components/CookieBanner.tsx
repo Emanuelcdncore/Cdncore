@@ -10,12 +10,13 @@ export default function CookieBanner() {
   const { recorded, state } = useConsent();
   const [dismissed, setDismissed] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [analyticsDraft, setAnalyticsDraft] = useState(state.analytics);
   const [marketingDraft, setMarketingDraft] = useState(state.marketing);
 
   const visible = !recorded && !dismissed;
 
-  const persist = (marketing: boolean) => {
-    writeConsent(marketing);
+  const persist = (prefs: { analytics: boolean; marketing: boolean }) => {
+    writeConsent(prefs);
     setDismissed(true);
   };
 
@@ -64,6 +65,19 @@ export default function CookieBanner() {
             <label className="flex items-start gap-3 text-xs cursor-pointer">
               <input
                 type="checkbox"
+                checked={analyticsDraft}
+                onChange={(e) => setAnalyticsDraft(e.target.checked)}
+                aria-label={t("cookieBanner.analyticsLabel")}
+                className="mt-0.5 h-3.5 w-3.5 accent-black"
+              />
+              <span className="flex-1">
+                <span className="block font-semibold text-black">{t("cookieBanner.analyticsLabel")}</span>
+                <span className="block text-black/55">{t("cookieBanner.analyticsDesc")}</span>
+              </span>
+            </label>
+            <label className="flex items-start gap-3 text-xs cursor-pointer">
+              <input
+                type="checkbox"
                 checked={marketingDraft}
                 onChange={(e) => setMarketingDraft(e.target.checked)}
                 aria-label={t("cookieBanner.marketingLabel")}
@@ -81,7 +95,7 @@ export default function CookieBanner() {
           {expanded ? (
             <button
               type="button"
-              onClick={() => persist(marketingDraft)}
+              onClick={() => persist({ analytics: analyticsDraft, marketing: marketingDraft })}
               className="px-4 py-2 rounded-full text-xs font-semibold text-white bg-black hover:opacity-90"
             >
               {t("cookieBanner.save")}
@@ -97,14 +111,14 @@ export default function CookieBanner() {
               </button>
               <button
                 type="button"
-                onClick={() => persist(false)}
+                onClick={() => persist({ analytics: false, marketing: false })}
                 className="px-4 py-2 rounded-full text-xs font-semibold text-black/70 border border-black/15 hover:bg-black/[0.03]"
               >
                 {t("cookieBanner.rejectOptional")}
               </button>
               <button
                 type="button"
-                onClick={() => persist(true)}
+                onClick={() => persist({ analytics: true, marketing: true })}
                 className="px-4 py-2 rounded-full text-xs font-semibold text-white bg-black hover:opacity-90"
               >
                 {t("cookieBanner.acceptAll")}

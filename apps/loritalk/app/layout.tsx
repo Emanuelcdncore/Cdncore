@@ -4,6 +4,7 @@ import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
 import CookieBanner from "@/components/CookieBanner";
 import MetaPixel from "@/components/MetaPixel";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const readexPro = Readex_Pro({
   variable: "--font-readex",
@@ -74,6 +75,7 @@ export default function RootLayout({
           {children}
           <CookieBanner />
           <MetaPixel />
+          <GoogleAnalytics />
         </I18nProvider>
       </body>
     </html>

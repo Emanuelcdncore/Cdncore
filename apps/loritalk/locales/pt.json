@@ -162,18 +162,47 @@
       "personaLabel": "Persona",
       "languageLabel": "Idioma",
       "personas": [
-        { "name": "Lori", "desc": "Neutra — a voz da casa" },
-        { "name": "Rupert", "desc": "Descontraído, divertido, conversacional" },
-        { "name": "Core", "desc": "Ousado, otimista, focado na marca" }
+        {
+          "name": "Lori",
+          "desc": "Neutra — a voz da casa"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Descontraído, divertido, conversacional"
+        },
+        {
+          "name": "Core",
+          "desc": "Ousado, otimista, focado na marca"
+        }
       ]
     },
     "pubViz": {
       "items": [
-        { "platform": "Instagram", "kind": "carrossel", "when": "Hoje 14:00" },
-        { "platform": "LinkedIn", "kind": "long-form", "when": "Hoje 15:30" },
-        { "platform": "X", "kind": "thread", "when": "Hoje 16:00" },
-        { "platform": "YouTube", "kind": "short 0:54", "when": "Amanhã 09:00" },
-        { "platform": "Facebook", "kind": "post", "when": "Amanhã 12:00" }
+        {
+          "platform": "Instagram",
+          "kind": "carrossel",
+          "when": "Hoje 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "long-form",
+          "when": "Hoje 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "thread",
+          "when": "Hoje 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Amanhã 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "post",
+          "when": "Amanhã 12:00"
+        }
       ],
       "cta": "▶ Publicar tudo · ⏱ Agendar"
     }
@@ -273,10 +302,22 @@
       "media": "{{count}} ficheiros de média"
     },
     "tiers": {
-      "STARTER":  { "name": "Starter",  "description": "Para quem começa a criar conteúdo com IA" },
-      "PLUS":     { "name": "Plus",     "description": "Para criação de conteúdo IA consistente e fácil" },
-      "ULTRA":    { "name": "Ultra",    "description": "Para criadores que constroem produtos de IA" },
-      "BUSINESS": { "name": "Business", "description": "Para agências e equipas pequenas" }
+      "STARTER": {
+        "name": "Starter",
+        "description": "Para quem começa a criar conteúdo com IA"
+      },
+      "PLUS": {
+        "name": "Plus",
+        "description": "Para criação de conteúdo IA consistente e fácil"
+      },
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Para criadores que constroem produtos de IA"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Para agências e equipas pequenas"
+      }
     }
   },
   "faq": {
@@ -336,7 +377,7 @@
   "cookieBanner": {
     "aria": "Aviso de cookies",
     "title": "Usamos cookies",
-    "body": "Os cookies estritamente necessários mantêm o site a funcionar. Com o seu consentimento carregamos também o Meta Pixel para medir a nossa publicidade. Pode aceitar, recusar ou escolher categoria a categoria — e mudar de ideias a qualquer momento.",
+    "body": "Os cookies estritamente necessários mantêm o site a funcionar. Com o seu consentimento carregamos também o Google Analytics para medir o tráfego e o Meta Pixel para medir a nossa publicidade. Pode aceitar, recusar ou escolher categoria a categoria — e mudar de ideias a qualquer momento.",
     "policyLink": "Política de Cookies",
     "privacyLink": "Política de Privacidade",
     "acceptAll": "Aceitar tudo",
@@ -345,6 +386,8 @@
     "save": "Guardar preferências",
     "necessaryLabel": "Estritamente necessários",
     "necessaryDesc": "Indispensáveis ao funcionamento do site (idioma e a sua escolha de consentimento). Não podem ser desactivados.",
+    "analyticsLabel": "Análise — Google Analytics",
+    "analyticsDesc": "Carrega o Google Analytics 4 para medir o tráfego e melhorar o site. Define os cookies _ga e _ga_* e envia dados de visualização de página para a Google.",
     "marketingLabel": "Marketing — Meta Pixel",
     "marketingDesc": "Carrega o Meta Pixel (Facebook / Instagram) para medirmos as campanhas de anúncios. Define os cookies _fbp e _fbc e envia dados de visualização de página para a Meta."
   }
