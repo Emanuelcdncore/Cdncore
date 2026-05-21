@@ -13,7 +13,7 @@ import AgencyCTA from "@/components/agency/AgencyCTA";
 export const metadata: Metadata = {
   title: "Loritalk for Agencies — AI Content for Every Client, Every Network",
   description:
-    "Run dozens of brands from one workspace. Brand-voice personas, approval workflows, multi-client calendar, native publishing across 7 social networks.",
+    "One workspace per brand. Brand-voice personas, per-workspace calendar and analytics, native publishing across 8 social networks.",
   alternates: { canonical: "/agency" },
   openGraph: {
     type: "website",
@@ -21,15 +21,13 @@ export const metadata: Metadata = {
     siteName: "Loritalk",
     title: "Loritalk for Agencies — AI Content for Every Client, Every Network",
     description:
-      "Run dozens of brands from one workspace. Brand-voice personas, approval workflows, multi-client calendar, native publishing.",
+      "One workspace per brand. Brand-voice personas, per-workspace calendar and analytics, native publishing across 8 networks.",
     url: "https://lori-talk.eu/agency",
-    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Loritalk for Agencies" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Loritalk for Agencies — AI Content for Every Client",
-    description: "Run dozens of brands from one workspace.",
-    images: ["/og-default.png"],
+    description: "One workspace per brand, eight networks via native APIs.",
   },
 };
 
@@ -41,8 +39,16 @@ const structuredData = {
       name: "Loritalk for Agencies",
       url: "https://lori-talk.eu/agency",
       description:
-        "AI-powered social media content for marketing agencies: multi-brand workspaces, brand-voice personas, approval workflows, multi-client calendar.",
+        "AI-powered social media content for marketing agencies: one workspace per client brand, brand-voice personas, per-workspace calendar and analytics, native publishing across 8 networks.",
       audience: { "@type": "Audience", audienceType: "Marketing Agencies" },
+      dateModified: new Date().toISOString(),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://lori-talk.eu" },
+        { "@type": "ListItem", position: 2, name: "For Agencies", item: "https://lori-talk.eu/agency" },
+      ],
     },
     {
       "@type": "Product",

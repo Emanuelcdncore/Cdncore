@@ -25,6 +25,10 @@ const structuredData = {
       foundingDate: "2008",
       address: { "@type": "PostalAddress", streetAddress: "Parkurbis - Parque de Ciencia e Tecnologia da Covilha", addressLocality: "Covilha", postalCode: "6200-865", addressCountry: "PT" },
       contactPoint: { "@type": "ContactPoint", telephone: "+351-275-959-168", contactType: "customer service", email: "info@lori-talk.eu" },
+      sameAs: [
+        "https://www.instagram.com/loritalk.eu/",
+        "https://www.linkedin.com/company/lori-talk/",
+      ],
     },
     {
       "@type": "WebApplication",
@@ -34,9 +38,13 @@ const structuredData = {
       operatingSystem: "Any",
       description: "AI-powered social media content platform that generates platform-native posts for Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads and Telegram — with brand-voice personas, on-brand image generation, scheduling and analytics.",
       offers: [
-        { "@type": "Offer", name: "Free", price: "0", priceCurrency: "EUR", description: "5 posts/month, 3 networks. Free during Beta." },
-        { "@type": "Offer", name: "Creator", price: "25", priceCurrency: "EUR", description: "200 posts/month, all networks, advanced personas, content calendar." },
+        { "@type": "Offer", name: "Free", price: "0", priceCurrency: "EUR", description: "100 credits/month (~10 text posts or ~3 AI images), 3 channels, 1 workspace. Free during Beta." },
+        { "@type": "Offer", name: "Starter", price: "14", priceCurrency: "EUR", description: "600 credits/month, 3 channels, 4 personas, 1 workspace." },
+        { "@type": "Offer", name: "Plus", price: "37", priceCurrency: "EUR", description: "1,700 credits/month, 10 channels, 15 personas, 2 workspaces." },
+        { "@type": "Offer", name: "Ultra", price: "97", priceCurrency: "EUR", description: "4,600 credits/month, 25 channels, 40 personas, 5 workspaces." },
+        { "@type": "Offer", name: "Business", price: "207", priceCurrency: "EUR", description: "9,700 credits/month, 75 channels, 120 personas, 15 workspaces." },
       ],
+      dateModified: new Date().toISOString(),
       creator: { "@type": "Organization", name: "CDN Core Technologies" },
       featureList: [
         "Platform-native content for Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads, Telegram",
@@ -62,7 +70,7 @@ const structuredData = {
     {
       "@type": "HowTo",
       name: "How to create AI-optimized social media content with Loritalk",
-      description: "Generate optimized content for multiple social networks from a single briefing using multiple AI models.",
+      description: "Generate platform-native content for every connected social network from a single briefing.",
       step: [
         { "@type": "HowToStep", position: 1, name: "Write your briefing", text: "Describe what you want to communicate. Pick your channels, language, persona and tone." },
         { "@type": "HowToStep", position: 2, name: "Generate native versions", text: "Loritalk produces a version of the post adapted to each platform \u2014 length, hashtags, emoji and tone \u2014 plus on-brand images rendered in parallel." },

@@ -23,13 +23,11 @@ export const metadata: Metadata = {
     description:
       "One brief, eight native posts. Keep your voice consistent across every social network and get your weekends back.",
     url: "https://lori-talk.eu/influencer",
-    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Loritalk for Creators" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Loritalk for Creators — One Idea, Every Platform",
     description: "One brief, eight native posts. Built for solo creators.",
-    images: ["/og-default.png"],
   },
 };
 
@@ -43,6 +41,14 @@ const structuredData = {
       description:
         "AI-powered social media content for solo creators and influencers: persona-driven generation, native publishing across 8 networks, scheduling and analytics.",
       audience: { "@type": "Audience", audienceType: "Content Creators" },
+      dateModified: new Date().toISOString(),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://lori-talk.eu" },
+        { "@type": "ListItem", position: 2, name: "For Creators", item: "https://lori-talk.eu/influencer" },
+      ],
     },
     {
       "@type": "Product",

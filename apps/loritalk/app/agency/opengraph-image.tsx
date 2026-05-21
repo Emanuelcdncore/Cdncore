@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "nodejs";
-export const alt = "Loritalk \u2014 AI Content for Every Social Network";
+export const alt = "Loritalk for Agencies — AI Content for Every Client, Every Network";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -10,7 +10,7 @@ export default function Image() {
     (
       <div
         style={{
-          background: "linear-gradient(135deg, #f0f7e6 0%, #e8f0fd 60%, #fff5ee 100%)",
+          background: "linear-gradient(135deg, #e8f0fd 0%, #fff5ee 60%, #fdeee9 100%)",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -20,18 +20,18 @@ export default function Image() {
           padding: "60px",
         }}
       >
-        <div style={{ fontSize: 72, fontWeight: 700, color: "#000", marginBottom: 16, display: "flex" }}>
-          Loritalk
+        <div style={{ fontSize: 26, fontWeight: 700, color: "#5D92E8", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: 16, display: "flex" }}>
+          Loritalk · For Agencies
         </div>
-        <div style={{ fontSize: 32, color: "#94BF5C", fontWeight: 600, marginBottom: 24, display: "flex" }}>
-          One idea. Every platform.
+        <div style={{ fontSize: 64, fontWeight: 800, color: "#000", marginBottom: 24, textAlign: "center", lineHeight: 1.05, display: "flex", maxWidth: 980 }}>
+          One workspace per brand.
         </div>
-        <div style={{ fontSize: 22, color: "rgba(0,0,0,0.55)", textAlign: "center", maxWidth: 900, display: "flex" }}>
-          Native posts for Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads &amp; Telegram
+        <div style={{ fontSize: 26, color: "rgba(0,0,0,0.6)", textAlign: "center", maxWidth: 900, display: "flex" }}>
+          Brand-voice personas · Per-workspace calendar &amp; analytics · 8 networks via native APIs
         </div>
         <div
           style={{
-            marginTop: 40,
+            marginTop: 48,
             padding: "14px 40px",
             borderRadius: 999,
             backgroundColor: "#94BF5C",
@@ -41,7 +41,7 @@ export default function Image() {
             display: "flex",
           }}
         >
-          Start creating for free
+          Start with the Ultra plan
         </div>
       </div>
     ),
