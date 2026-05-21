@@ -7,21 +7,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CTAButton from "./CTAButton";
 import { onCtaClick } from "@/lib/fbAttribution";
 
-<<<<<<< HEAD
 gsap.registerPlugin(ScrollTrigger);
 
-type MarqueeKey = "instagram" | "linkedin" | "x" | "youtube" | "threads" | "facebook" | "telegram";
-=======
-type MarqueeKey =
-  | "instagram"
-  | "linkedin"
-  | "x"
-  | "tiktok"
-  | "youtube"
-  | "threads"
-  | "facebook"
-  | "telegram";
->>>>>>> 4541f5293edd2328f32715928ad719e9254a42ed
+type MarqueeKey = "instagram" | "linkedin" | "x" | "tiktok" | "youtube" | "threads" | "facebook" | "telegram";
 
 const PLATFORM_ICONS: Record<MarqueeKey, { bg: string; path: string }> = {
   instagram: {
@@ -81,12 +69,8 @@ const PLATFORM_CARDS: PlatformCard[] = [
   { id: "youtube", body: "Hook: \"What if your shoes were made of trash?\" · 0:08 reveal · 100s cut", audit: "8.9/10" },
 ];
 
-<<<<<<< HEAD
 // Fluid vertical offsets so cards don't sit on the same baseline
 const CARD_TOP_OFFSETS = [0, 32, 14, 48, 8, 28, 42];
-=======
-const MARQUEE_KEYS: MarqueeKey[] = ["instagram", "linkedin", "x", "tiktok", "youtube", "threads", "facebook", "telegram"];
->>>>>>> 4541f5293edd2328f32715928ad719e9254a42ed
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);

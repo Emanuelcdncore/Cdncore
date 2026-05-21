@@ -77,7 +77,6 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Navbar />
-<<<<<<< HEAD
       <SmoothScroller>
         <main>
           <Hero />
@@ -87,9 +86,8 @@ export default function Home() {
           <Features />
           <HowItWorks />
           <Imagery />
-          <Differentiator />
           <UseCases />
-          <Pricing />
+          <Plans />
           <Reviews />
           <FAQ />
           <CTABanner />
@@ -97,23 +95,5 @@ export default function Home() {
         <Footer />
       </SmoothScroller>
     </>
-=======
-      <main className="flex-1">
-        <Hero />
-        <Stats />
-        <Problem />
-        <Solution />
-        <Features />
-        <HowItWorks />
-        <Imagery />
-        <UseCases />
-        <Plans />
-        <Reviews />
-        <FAQ />
-        <CTABanner />
-      </main>
-      <Footer />
-    </div>
->>>>>>> 4541f5293edd2328f32715928ad719e9254a42ed
   );
 }
