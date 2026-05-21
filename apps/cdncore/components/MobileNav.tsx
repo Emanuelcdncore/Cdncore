@@ -3,12 +3,13 @@
 import React, { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { IconHome, IconBulb, IconHeart, IconNews, IconMessage, IconMenu2, IconX } from '@tabler/icons-react';
+import { IconHome, IconBulb, IconHeart, IconNews, IconMessage, IconMenu2, IconX, IconPackage } from '@tabler/icons-react';
 import './css/MobileNav.css';
 
 const navItems = [
   { icon: IconHome, label: 'Home', href: '/' },
   { icon: IconBulb, label: 'Capabilities', href: '/#capabilities' },
+  { icon: IconPackage, label: 'Products', href: '/products' },
   { icon: IconHeart, label: 'Commitments', href: '/commitments' },
   { icon: IconNews, label: 'News', href: '/news' },
   { icon: IconMessage, label: 'Contact', href: '/contact' },

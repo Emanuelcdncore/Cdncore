@@ -1,11 +1,39 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@import "tw-animate-css";
 
 @theme inline {
   --color-background: #0a0a0f;
   --color-foreground: #ffffff;
   --font-sans: var(--font-inter);
   --font-depot: var(--font-depot);
+  --color-card: oklch(0.17 0.025 310);
+  --color-card-foreground: oklch(0.98 0 0);
+  --color-popover: oklch(0.17 0.025 310);
+  --color-popover-foreground: oklch(0.98 0 0);
+  --color-primary: oklch(0.68 0.22 305);
+  --color-primary-foreground: oklch(0.13 0.02 310);
+  --color-secondary: oklch(0.22 0.03 310);
+  --color-secondary-foreground: oklch(0.98 0 0);
+  --color-muted: oklch(0.22 0.03 310);
+  --color-muted-foreground: oklch(0.72 0.02 310);
+  --color-accent: oklch(0.28 0.06 305);
+  --color-accent-foreground: oklch(0.98 0 0);
+  --color-destructive: oklch(0.65 0.22 27);
+  --color-destructive-foreground: oklch(0.98 0 0);
+  --color-border: oklch(0.28 0.03 310);
+  --color-input: oklch(0.28 0.03 310);
+  --color-ring: oklch(0.68 0.22 305);
+  --color-success: oklch(0.65 0.17 150);
+  --color-success-foreground: oklch(0.13 0.02 310);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
 }
 
 /* ========== GLOBAL STYLES ========== */
