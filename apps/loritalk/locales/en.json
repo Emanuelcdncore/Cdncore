@@ -3,6 +3,7 @@
     "features": "Features",
     "howItWorks": "How it works",
     "pricing": "Pricing",
+    "forAgencies": "For agencies",
     "beta": "Beta",
     "startForFree": "Start for free"
   },
@@ -13,12 +14,12 @@
     "headlineTwoTail": "channel.",
     "headlineStrike": "Rewritten.",
     "headlineThree": "Audited.",
-    "lead": "Describe your post once. Loritalk writes <strong>seven platform-native versions</strong>, generates on-brand images, audits every word, and schedules them — in under five seconds.",
+    "lead": "Describe your post once. Loritalk writes <strong>a native version for every connected platform</strong>, generates on-brand images, runs every word through automated moderation, and schedules them — in seconds.",
     "ctaPrimary": "Start free — no card",
     "ctaSecondary": "See it work · 90s",
     "trust": [
-      "7 native integrations",
-      "Auto-audited",
+      "8 native integrations",
+      "Auto-moderated",
       "Workspace-isolated"
     ],
     "briefCard": {
@@ -34,6 +35,8 @@
       "linkedinTag": "profile · pages",
       "x": "X / Twitter",
       "xTag": "threads · single",
+      "tiktok": "TikTok",
+      "tiktokTag": "scripts · captions",
       "youtube": "YouTube",
       "youtubeTag": "shorts ≤ 100s",
       "threads": "Threads",
@@ -45,12 +48,12 @@
     }
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Social networks supported",
-    "languagesValue": "3",
-    "languagesLabel": "Languages at launch",
-    "generationValue": "<5s",
-    "generationLabel": "Average generation time",
+    "languagesValue": "24+",
+    "languagesLabel": "Languages supported",
+    "generationValue": "Seconds",
+    "generationLabel": "From brief to publish-ready",
     "freeValue": "Free",
     "freeLabel": "During Beta — no limits"
   },
@@ -74,7 +77,7 @@
   },
   "solution": {
     "title": "Loritalk fixes all of that",
-    "subtitle": "One briefing. Every platform. Multiple AIs competing for your best post.",
+    "subtitle": "One briefing. A native version for every platform. On-brand images rendered in parallel.",
     "ctaPrimary": "Start creating for free",
     "rows": [
       {
@@ -82,8 +85,8 @@
         "after": "1 briefing = all platforms in <5 seconds"
       },
       {
-        "before": "1 AI model = generic, one-size-fits-all text",
-        "after": "Multiple AI models deliberate and refine each other"
+        "before": "Generic AI text reused across every network",
+        "after": "A native version per channel — length, hashtags and tone adapted"
       },
       {
         "before": "Content scattered across tools and threads",
@@ -96,12 +99,12 @@
     "subtitle": "From idea to published post — Loritalk handles the entire workflow.",
     "items": [
       {
-        "title": "Multi-Model AI Deliberation",
-        "description": "Not one AI — multiple models generate independently, then refine each other's work."
+        "title": "Platform-native content",
+        "description": "One brief becomes a native version for each platform — length, hashtags, emoji and tone adapted to Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads and Telegram."
       },
       {
-        "title": "Platform-optimized content",
-        "description": "Each post is tailored for its platform — right tone, length, hashtags, emojis, and format. Instagram captions, LinkedIn articles, X threads, TikTok scripts."
+        "title": "On-brand image generation",
+        "description": "Images rendered per platform with the right aspect ratio and your persona's visual rules — feed posts, stories, hero crops. No more manual resizing."
       },
       {
         "title": "Multilingual generation",
@@ -117,7 +120,7 @@
       },
       {
         "title": "Analytics dashboard",
-        "description": "Track impressions, engagement, clicks, and growth across all channels. Know what content works and double down."
+        "description": "Track reach, engagement, clicks and growth per channel. KPI cards, top posts and Lori Insights surface what's working."
       }
     ]
   },
@@ -140,7 +143,7 @@
         "badge": "02",
         "eyebrow": "Generation",
         "title": "AI tailors it per channel",
-        "description": "Top AI models read your brief, your persona, and each platform's native rules — then craft a version made for each channel. Auto-audited before you see it.",
+        "description": "Loritalk reads your brief, your persona and each platform's native rules — then crafts a version made for each channel. Automated moderation runs before you see it.",
         "footLeft": "~ 3 sec per channel",
         "footRight": "7 versions"
       },
@@ -231,30 +234,6 @@
       "ytMeta": "Loritalk · Ep. 14 · 32 min"
     }
   },
-  "differentiator": {
-    "title": "Why multiple AIs beat a single one",
-    "subtitle": "Other tools use one model. Loritalk uses several — and makes them improve each other.",
-    "briefLabel": "Your Brief",
-    "channels": "Channels",
-    "language": "Language:",
-    "languages": "English, Portuguese",
-    "submitted": "Submitted 2s ago",
-    "round1": "ROUND 1 — INDEPENDENT GENERATION",
-    "generated": "Generated",
-    "round2": "Round 2 — Cross-Refinement",
-    "round2Desc": "Each model reads all outputs and improves its own version",
-    "qualityNote": "Quality improved by ~40% vs Round 1",
-    "pickEdit": "Pick & Edit",
-    "addMedia": "Add Media",
-    "uploading": "Uploading image...",
-    "imageAttached": "Image uploaded successfully",
-    "generateAI": "Generate with AI",
-    "readyPublish": "Ready to Publish",
-    "publishAll": "Publish all",
-    "scheduled": "Scheduled",
-    "draft": "Draft",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
-  },
   "useCases": {
     "title": "Built for teams that publish",
     "subtitle": "Whether you're a solo creator or a 50-person agency.",
@@ -265,11 +244,11 @@
       },
       {
         "title": "Marketing teams",
-        "description": "One workspace per brand. Approval workflows. Calendar view. Everyone knows what's publishing and when."
+        "description": "One workspace per brand. Calendar view per workspace. Everyone knows what's publishing and when."
       },
       {
         "title": "Agencies",
-        "description": "Manage multiple brands from one account. Assign roles, control access, track performance across all clients. Unlimited posts on Agency plan."
+        "description": "Manage multiple brands from one account. Workspace per client with isolated channels, personas and calendar. Per-channel analytics for every brand."
       }
     ]
   },
@@ -324,24 +303,24 @@
     "title": "Questions? We've got answers.",
     "items": [
       {
-        "q": "What AI does Loritalk use?",
-        "a": "Loritalk connects to multiple leading AI providers. You can configure which models participate in your generation pipeline."
+        "q": "How does Loritalk's AI work?",
+        "a": "Loritalk produces a native version of your brief for each connected channel and renders on-brand images in parallel. Everything passes through an automated moderation layer before reaching your dashboard."
       },
       {
         "q": "How is this different from other AI tools?",
-        "a": "Other AI tools give you one output from one model. Loritalk runs multiple models in parallel, then makes them refine each other's work — producing consistently higher quality. Plus, every post is automatically optimized for each specific platform."
+        "a": "Other tools give you one block of text to copy-paste everywhere. Loritalk produces native versions per platform — length, hashtags, emoji and tone adapted to each network — and publishes through each platform's official API."
       },
       {
         "q": "Which social networks are supported?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter), and TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads and Telegram — eight networks via native APIs."
       },
       {
-        "q": "Is my content private?",
-        "a": "Yes. Your content is never used to train AI models. All data is stored on our servers in Europe and processed under GDPR compliance."
+        "q": "Where is my data stored?",
+        "a": "Your data is stored on servers in the European Union. The AI providers we use (OpenAI for text, Google for images) operate under their enterprise API terms — content sent to the API is not used to train their general-purpose models."
       },
       {
         "q": "Can I use it with my team?",
-        "a": "Absolutely. Create workspaces for each brand, invite team members with admin or publisher roles, and set up approval workflows so nothing goes live without review."
+        "a": "Yes. Create workspaces for each brand and invite team members with admin or publisher roles. Each workspace has its own connected channels, personas and calendar."
       },
       {
         "q": "What happens after Beta?",
@@ -390,5 +369,150 @@
     "analyticsDesc": "Loads Google Analytics 4 to measure traffic and improve the site. Sets _ga and _ga_* cookies and transmits page-view data to Google.",
     "marketingLabel": "Marketing — Meta Pixel",
     "marketingDesc": "Loads the Meta Pixel (Facebook / Instagram) so we can measure ad campaigns. Sets _fbp and _fbc cookies and transmits page-view data to Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "For marketing agencies & creative studios",
+      "headlineOne": "Struggling to ship posts",
+      "headlineTwo": "for every client",
+      "headlineThree": "on every platform?",
+      "lead": "Loritalk gives your agency <strong>one workspace per brand</strong>, a dedicated persona per client and native publishing across 8 networks — so your team writes once and publishes everywhere, on every account.",
+      "ctaPrimary": "Start with the Ultra plan",
+      "ctaSecondary": "See agency pricing",
+      "trust": [
+        "One workspace per brand",
+        "Admin + publisher roles",
+        "8 networks via native APIs"
+      ],
+      "hubLabel": "Agency HQ",
+      "hubTitle": "5 brands. 5 workspaces.",
+      "hubBody": "Each client gets its own workspace, personas, channels and analytics. Switch context in one click.",
+      "hubMeta": "5 workspaces · isolated",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "Recognise your week?",
+      "subtitle": "The same content rewritten 7 times for 5 clients. Every week. We've been there.",
+      "items": [
+        {
+          "title": "Juggling 5+ clients at once",
+          "description": "Each brand wants a different tone, different platforms, different deadlines. Spreadsheets and Slack threads aren't a workflow."
+        },
+        {
+          "title": "Brand voice drifts every post",
+          "description": "Different copywriters, different tabs, different ChatGPT prompts. The voice your client signed off on six months ago is gone."
+        },
+        {
+          "title": "Friday-night reschedules",
+          "description": "Client asks for last-minute changes across Instagram, LinkedIn and TikTok. You rewrite the same idea three times — and miss the slot anyway."
+        },
+        {
+          "title": "Reporting takes a full day",
+          "description": "Copying impressions, engagement and clicks from five dashboards into a deck. Manually. Every month."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Everything your agency needs in one place",
+      "subtitle": "From the brief to the report — Loritalk runs the whole content pipeline for every brand you manage.",
+      "items": [
+        {
+          "title": "One workspace per client",
+          "description": "Isolated workspaces with their own connected channels, personas, members and calendar. Spin up a new client in minutes."
+        },
+        {
+          "title": "Brand-voice personas",
+          "description": "Define a persona per client — voice, tone, specific instructions. Every generation for that workspace respects the brief, every time."
+        },
+        {
+          "title": "8 networks, one brief",
+          "description": "Write the brief once and receive native versions for Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads and Telegram — all in seconds, all via official APIs."
+        },
+        {
+          "title": "Per-workspace calendar",
+          "description": "Each client has its own week / month / queue view. Schedule posts per channel and see the full pipeline for that brand at a glance."
+        },
+        {
+          "title": "Admin + publisher roles",
+          "description": "Invite team members per workspace as admin (full management) or publisher (create and publish). Workspaces are fully isolated from each other."
+        },
+        {
+          "title": "Per-workspace analytics",
+          "description": "Reach, engagement, clicks and growth per channel inside every client's workspace. KPI cards, top posts and Lori Insights — without jumping between dashboards."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "How an agency week looks on Loritalk",
+      "subtitle": "Onboard a brand, brief the AI, get sign-off, ship. Repeat for every client.",
+      "steps": [
+        {
+          "badge": "01 · ONBOARD",
+          "title": "Spin up the client workspace",
+          "description": "Create a workspace, connect the brand's social accounts and configure the persona — voice, tone, specific instructions. Ready to use in minutes."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Write one brief per campaign",
+          "description": "Pick the persona, channels and language. Loritalk generates a native version per platform in seconds."
+        },
+        {
+          "badge": "03 · REFINE",
+          "title": "Edit in your team",
+          "description": "Your team reviews the drafts inside the workspace — tweak copy, swap images, pick the strongest variant per channel before it goes out."
+        },
+        {
+          "badge": "04 · SHIP",
+          "title": "Publish & track",
+          "description": "Native APIs push to every channel. Performance flows back into the per-workspace dashboard — KPIs, top posts and growth by channel."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plans built for agencies",
+      "subtitle": "Run a handful of brands or a whole client roster. Pick the volume that matches your retainer.",
+      "customPrice": "Let's talk",
+      "customCredits": "Unlimited credits",
+      "customCreditsDetail": "Volume agreed per contract — no surprise overage.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Custom",
+          "description": "For networks and large agencies that need bespoke volumes and onboarding.",
+          "cta": "Talk to sales"
+        }
+      },
+      "features": {
+        "customVolumes": "Custom credit volumes",
+        "priorityEmail": "Priority email support",
+        "euData": "EU data residency"
+      }
+    },
+    "faq": {
+      "title": "Agency questions, answered.",
+      "items": [
+        {
+          "q": "How are credits shared across clients?",
+          "a": "Credits live at the agency account level — any workspace can consume from the same pool. Track usage in the billing dashboard."
+        },
+        {
+          "q": "What happens when we onboard or off-board a client?",
+          "a": "Spin up a new workspace in seconds. Archiving a workspace removes it from the active view; full account deletion respects GDPR retention rules."
+        },
+        {
+          "q": "Which social networks can we publish to?",
+          "a": "Native publishing covers LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads and Telegram — eight networks, each via the official platform API, so failures stay isolated per channel."
+        },
+        {
+          "q": "Can clients log in to see their workspace?",
+          "a": "Not today. Workspaces are agency-team only — admin and publisher roles. Client access is on the roadmap."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Ready to scale content across every client?",
+      "subtitle": "Start with the Ultra plan today or book a 20-minute demo with the agency team to see Loritalk on your own brands.",
+      "ctaPrimary": "Start with Ultra",
+      "ctaSecondary": "Book a demo"
+    }
   }
 }

@@ -3,6 +3,7 @@
     "features": "Funcionalidades",
     "howItWorks": "Como funciona",
     "pricing": "Preços",
+    "forAgencies": "Para agências",
     "beta": "Beta",
     "startForFree": "Começar gratuitamente"
   },
@@ -13,12 +14,12 @@
     "headlineTwoTail": "canal.",
     "headlineStrike": "Reescrito.",
     "headlineThree": "Auditado.",
-    "lead": "Descreva a sua publicação uma vez. O Loritalk escreve <strong>sete versões nativas por plataforma</strong>, gera imagens on-brand, audita cada palavra e agenda tudo — em menos de cinco segundos.",
+    "lead": "Descreva a sua publicação uma vez. O Loritalk escreve <strong>uma versão nativa para cada plataforma ligada</strong>, gera imagens on-brand, corre cada palavra por moderação automática e agenda tudo — em segundos.",
     "ctaPrimary": "Começar grátis — sem cartão",
     "ctaSecondary": "Ver em acção · 90s",
     "trust": [
-      "7 integrações nativas",
-      "Auto-auditado",
+      "8 integrações nativas",
+      "Auto-moderado",
       "Isolado por workspace"
     ],
     "briefCard": {
@@ -34,6 +35,8 @@
       "linkedinTag": "perfil · páginas",
       "x": "X / Twitter",
       "xTag": "threads · single",
+      "tiktok": "TikTok",
+      "tiktokTag": "scripts · captions",
       "youtube": "YouTube",
       "youtubeTag": "shorts ≤ 100s",
       "threads": "Threads",
@@ -45,12 +48,12 @@
     }
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Redes sociais suportadas",
-    "languagesValue": "3",
-    "languagesLabel": "Idiomas no lançamento",
-    "generationValue": "<5s",
-    "generationLabel": "Tempo médio de geração",
+    "languagesValue": "24+",
+    "languagesLabel": "Idiomas suportados",
+    "generationValue": "Segundos",
+    "generationLabel": "Do briefing ao pronto-a-publicar",
     "freeValue": "Gratuito",
     "freeLabel": "Durante a Beta — sem limites"
   },
@@ -74,20 +77,20 @@
   },
   "solution": {
     "title": "O Loritalk resolve tudo isso",
-    "subtitle": "Um briefing. Todas as plataformas. Várias IAs a competir pela sua melhor publicação.",
+    "subtitle": "Um briefing. Uma versão nativa para cada plataforma. Imagens on-brand renderizadas em paralelo.",
     "ctaPrimary": "Começar a criar gratuitamente",
     "rows": [
       {
         "before": "1 publicação = 45 min a adaptar para cada plataforma",
-        "after": "1 briefing = todas as plataformas em <5 segundos"
+        "after": "1 briefing = todas as plataformas em segundos"
       },
       {
-        "before": "1 modelo de IA = texto genérico, igual para todos",
-        "after": "Vários modelos de IA deliberam e refinam entre si"
+        "before": "Texto IA genérico reutilizado em todas as redes",
+        "after": "Uma versão nativa por canal — comprimento, hashtags e tom adaptados"
       },
       {
         "before": "Conteúdo disperso entre ferramentas e threads",
-        "after": "Um painel: criar, aprovar, agendar, publicar, monitorizar"
+        "after": "Um painel: criar, agendar, publicar, monitorizar"
       }
     ]
   },
@@ -96,12 +99,12 @@
     "subtitle": "Da ideia à publicação — o Loritalk gere todo o fluxo de trabalho.",
     "items": [
       {
-        "title": "Deliberação IA Multi-Modelo",
-        "description": "Não uma IA — vários modelos geram de forma independente e depois refinam o trabalho uns dos outros."
+        "title": "Conteúdo nativo por plataforma",
+        "description": "Um briefing torna-se uma versão nativa para cada plataforma — comprimento, hashtags, emoji e tom adaptados a Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads e Telegram."
       },
       {
-        "title": "Conteúdo otimizado por plataforma",
-        "description": "Cada publicação é adaptada à sua plataforma — tom, comprimento, hashtags, emojis e formato corretos. Legendas de Instagram, artigos de LinkedIn, threads de X, scripts de TikTok."
+        "title": "Geração de imagens on-brand",
+        "description": "Imagens renderizadas por plataforma com o aspect ratio correto e as regras visuais da persona — posts de feed, stories, hero crops. Sem redimensionar à mão."
       },
       {
         "title": "Geração multilíngue",
@@ -117,7 +120,7 @@
       },
       {
         "title": "Painel de análise",
-        "description": "Monitorize impressões, envolvimento, cliques e crescimento em todos os canais. Saiba que conteúdo funciona e duplique o esforço."
+        "description": "Monitorize alcance, envolvimento, cliques e crescimento por canal. KPI cards, top posts e Lori Insights mostram o que está a funcionar."
       }
     ]
   },
@@ -140,7 +143,7 @@
         "badge": "02",
         "eyebrow": "Geração",
         "title": "A IA adapta por canal",
-        "description": "Os principais modelos de IA leem o seu briefing, a sua persona e as regras nativas de cada plataforma — depois criam uma versão feita para cada canal. Auto-auditado antes de o ver.",
+        "description": "O Loritalk lê o seu briefing, a sua persona e as regras nativas de cada plataforma — depois cria uma versão feita para cada canal. Moderação automática corre antes de o ver.",
         "footLeft": "~ 3 seg por canal",
         "footRight": "7 versões"
       },
@@ -231,30 +234,6 @@
       "ytMeta": "Loritalk · Ep. 14 · 32 min"
     }
   },
-  "differentiator": {
-    "title": "Porque é que várias IAs vencem uma só",
-    "subtitle": "Outras ferramentas usam um modelo. O Loritalk usa vários — e fá-los melhorar entre si.",
-    "briefLabel": "O seu briefing",
-    "channels": "Canais",
-    "language": "Idioma:",
-    "languages": "Inglês, Português",
-    "submitted": "Submetido há 2s",
-    "round1": "RONDA 1 — GERAÇÃO INDEPENDENTE",
-    "generated": "Gerado",
-    "round2": "Ronda 2 — Refinamento cruzado",
-    "round2Desc": "Cada modelo lê todos os resultados e melhora a sua própria versão",
-    "qualityNote": "Qualidade melhorada em ~40% vs Ronda 1",
-    "pickEdit": "Escolha e edite",
-    "addMedia": "Adicionar média",
-    "uploading": "A carregar imagem...",
-    "imageAttached": "Imagem carregada com sucesso",
-    "generateAI": "Gerar com IA",
-    "readyPublish": "Pronto para publicar",
-    "publishAll": "Publicar tudo",
-    "scheduled": "Agendado",
-    "draft": "Rascunho",
-    "explanation": "Cada versão de IA traz forças diferentes — amplitude criativa, profundidade analítica e precisão factual. Ao fazê-las colaborar e refinar os resultados umas das outras, cada texto final atinge uma qualidade que nenhum modelo individual conseguiria alcançar sozinho."
-  },
   "useCases": {
     "title": "Feito para equipas que publicam",
     "subtitle": "Quer seja um criador a solo ou uma agência de 50 pessoas.",
@@ -265,11 +244,11 @@
       },
       {
         "title": "Equipas de marketing",
-        "description": "Um workspace por marca. Fluxos de aprovação. Vista de calendário. Todos sabem o que é publicado e quando."
+        "description": "Um workspace por marca. Calendário por workspace. Todos sabem o que é publicado e quando."
       },
       {
         "title": "Agências",
-        "description": "Gira várias marcas a partir de uma conta. Atribua funções, controle acessos, monitorize o desempenho em todos os clientes. Publicações ilimitadas no plano Agência."
+        "description": "Gere várias marcas a partir de uma conta. Workspace por cliente com canais, personas e calendário isolados. Analítica por canal para cada marca."
       }
     ]
   },
@@ -324,24 +303,24 @@
     "title": "Perguntas? Temos respostas.",
     "items": [
       {
-        "q": "Que IA usa o Loritalk?",
-        "a": "O Loritalk liga-se a vários fornecedores líderes de IA. Pode configurar quais os modelos que participam no seu processo de geração."
+        "q": "Como funciona a IA do Loritalk?",
+        "a": "O Loritalk produz uma versão nativa do seu briefing para cada canal ligado e gera imagens on-brand em paralelo. Tudo passa por uma camada de moderação automática antes de chegar ao seu painel."
       },
       {
         "q": "Em que é diferente de outras ferramentas de IA?",
-        "a": "Outras ferramentas de IA dão-lhe um resultado de um único modelo. O Loritalk executa vários modelos em paralelo e depois fá-los refinar o trabalho uns dos outros — produzindo consistentemente maior qualidade. Além disso, cada publicação é automaticamente otimizada para cada plataforma específica."
+        "a": "Outras ferramentas dão-lhe um bloco de texto para copiar e colar em todo o lado. O Loritalk produz versões nativas por plataforma — comprimento, hashtags, emoji e tom adaptados a cada rede — e publica através da API oficial de cada plataforma."
       },
       {
         "q": "Quais redes sociais são suportadas?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) e TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads e Telegram — oito redes via APIs nativas."
       },
       {
-        "q": "O meu conteúdo é privado?",
-        "a": "Sim. O seu conteúdo nunca é utilizado para treinar modelos de IA. Todos os dados são armazenados nos nossos servidores na Europa e processados em conformidade com o RGPD."
+        "q": "Onde são guardados os meus dados?",
+        "a": "Os seus dados são armazenados em servidores na União Europeia. Os fornecedores de IA que usamos (OpenAI para texto, Google para imagem) operam ao abrigo dos seus termos enterprise — o conteúdo enviado para a API não é usado para treinar modelos de uso geral."
       },
       {
         "q": "Posso usá-lo com a minha equipa?",
-        "a": "Sem dúvida. Crie workspaces para cada marca, convide membros da equipa com funções de administrador ou editor e configure fluxos de aprovação para que nada seja publicado sem revisão."
+        "a": "Sim. Crie workspaces para cada marca e convide membros com funções de admin ou publisher. Cada workspace tem os seus próprios canais ligados, personas e calendário."
       },
       {
         "q": "O que acontece após a Beta?",
@@ -390,5 +369,150 @@
     "analyticsDesc": "Carrega o Google Analytics 4 para medir o tráfego e melhorar o site. Define os cookies _ga e _ga_* e envia dados de visualização de página para a Google.",
     "marketingLabel": "Marketing — Meta Pixel",
     "marketingDesc": "Carrega o Meta Pixel (Facebook / Instagram) para medirmos as campanhas de anúncios. Define os cookies _fbp e _fbc e envia dados de visualização de página para a Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Para agências de marketing e estúdios criativos",
+      "headlineOne": "Dificuldade em publicar",
+      "headlineTwo": "para cada cliente",
+      "headlineThree": "em todas as plataformas?",
+      "lead": "O Loritalk dá à sua agência <strong>um workspace por marca</strong>, uma persona dedicada por cliente e publicação nativa em 8 redes — a sua equipa escreve uma vez e publica em todas as contas.",
+      "ctaPrimary": "Começar com o plano Ultra",
+      "ctaSecondary": "Ver planos de agência",
+      "trust": [
+        "Um workspace por marca",
+        "Funções admin + publisher",
+        "8 redes via APIs nativas"
+      ],
+      "hubLabel": "HQ da Agência",
+      "hubTitle": "5 marcas. 5 workspaces.",
+      "hubBody": "Cada cliente tem o seu workspace, personas, canais e analítica. Mude de contexto num clique.",
+      "hubMeta": "5 workspaces · isolados",
+      "hubBadge": "Ao vivo"
+    },
+    "pains": {
+      "title": "Reconhece a sua semana?",
+      "subtitle": "O mesmo conteúdo reescrito 7 vezes para 5 clientes. Todas as semanas. Já passámos por isto.",
+      "items": [
+        {
+          "title": "5+ clientes ao mesmo tempo",
+          "description": "Cada marca quer um tom diferente, plataformas diferentes, prazos diferentes. Spreadsheets e threads de Slack não são um workflow."
+        },
+        {
+          "title": "Voz da marca perde-se a cada post",
+          "description": "Vários copywriters, vários separadores, vários prompts de ChatGPT. A voz que o cliente aprovou há seis meses desapareceu."
+        },
+        {
+          "title": "Re-agendamentos à sexta-feira à noite",
+          "description": "O cliente pede alterações de última hora no Instagram, LinkedIn e TikTok. Reescreve a mesma ideia três vezes — e perde o horário na mesma."
+        },
+        {
+          "title": "Relatórios levam um dia inteiro",
+          "description": "Copiar impressões, engagement e cliques de cinco dashboards para uma apresentação. À mão. Todos os meses."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Tudo o que a sua agência precisa num só lugar",
+      "subtitle": "Do briefing ao relatório — o Loritalk gere todo o pipeline de conteúdo para cada marca que gere.",
+      "items": [
+        {
+          "title": "Um workspace por cliente",
+          "description": "Workspaces isolados com canais próprios, personas, membros e calendário. Crie um novo cliente em minutos."
+        },
+        {
+          "title": "Personas com voz de marca",
+          "description": "Defina uma persona por cliente — voz, tom, instruções específicas. Toda a geração nesse workspace respeita o briefing, sempre."
+        },
+        {
+          "title": "8 redes, um briefing",
+          "description": "Escreva o briefing uma vez e receba versões nativas para Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads e Telegram — em segundos, todas via APIs oficiais."
+        },
+        {
+          "title": "Calendário por workspace",
+          "description": "Cada cliente tem a sua vista semanal / mensal / fila. Agende posts por canal e veja a fila completa de cada marca de relance."
+        },
+        {
+          "title": "Funções admin + publisher",
+          "description": "Convide membros por workspace como admin (gestão completa) ou publisher (criar e publicar). Workspaces totalmente isolados entre si."
+        },
+        {
+          "title": "Analítica por workspace",
+          "description": "Alcance, engagement, cliques e crescimento por canal dentro do workspace de cada cliente. KPI cards, top posts e Lori Insights — sem saltar entre dashboards."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Como é uma semana de agência no Loritalk",
+      "subtitle": "Onboard uma marca, briefing, refinar, publicar. Repita para cada cliente.",
+      "steps": [
+        {
+          "badge": "01 · ONBOARD",
+          "title": "Criar o workspace do cliente",
+          "description": "Crie um workspace, ligue as contas sociais da marca e configure a persona — voz, tom, instruções específicas. Pronto a usar em minutos."
+        },
+        {
+          "badge": "02 · BRIEFING",
+          "title": "Um briefing por campanha",
+          "description": "Escolha a persona, canais e idioma. O Loritalk gera uma versão nativa por plataforma em segundos."
+        },
+        {
+          "badge": "03 · REFINAR",
+          "title": "Editar na equipa",
+          "description": "A sua equipa revê os rascunhos dentro do workspace — ajusta copy, troca imagens, escolhe a versão mais forte por canal antes de sair."
+        },
+        {
+          "badge": "04 · PUBLICAR",
+          "title": "Publicar e acompanhar",
+          "description": "APIs nativas distribuem em todos os canais. Performance regressa ao dashboard por workspace — KPIs, top posts e crescimento por canal."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planos feitos para agências",
+      "subtitle": "Gere algumas marcas ou todo o seu roster de clientes. Escolha o volume que encaixa com o seu retainer.",
+      "customPrice": "Vamos falar",
+      "customCredits": "Créditos ilimitados",
+      "customCreditsDetail": "Volume acordado por contrato — sem overage surpresa.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Custom",
+          "description": "Para networks e grandes agências que precisam de volumes e onboarding à medida.",
+          "cta": "Falar com vendas"
+        }
+      },
+      "features": {
+        "customVolumes": "Volumes de créditos à medida",
+        "priorityEmail": "Suporte prioritário por email",
+        "euData": "Residência de dados na UE"
+      }
+    },
+    "faq": {
+      "title": "Perguntas de agência, respondidas.",
+      "items": [
+        {
+          "q": "Como são partilhados os créditos entre clientes?",
+          "a": "Os créditos vivem ao nível da conta da agência — qualquer workspace pode consumir do mesmo pool. Acompanhe o uso no dashboard de billing."
+        },
+        {
+          "q": "O que acontece ao fazer onboarding ou off-boarding de um cliente?",
+          "a": "Crie um novo workspace em segundos. Arquivar um workspace remove-o da vista activa; eliminação total da conta respeita as regras de retenção do RGPD."
+        },
+        {
+          "q": "Em que redes sociais conseguimos publicar?",
+          "a": "Publicação nativa cobre LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads e Telegram — oito redes, cada uma através da API oficial da plataforma, para que falhas fiquem isoladas por canal."
+        },
+        {
+          "q": "Os clientes podem entrar para ver o workspace?",
+          "a": "Hoje não. Os workspaces são para a equipa da agência — funções admin e publisher. Acesso de cliente está no roadmap."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Pronto para escalar conteúdo em cada cliente?",
+      "subtitle": "Comece hoje com o plano Ultra ou marque uma demo de 20 minutos com a equipa de agências para ver o Loritalk nas suas próprias marcas.",
+      "ctaPrimary": "Começar com Ultra",
+      "ctaSecondary": "Marcar demo"
+    }
   }
 }

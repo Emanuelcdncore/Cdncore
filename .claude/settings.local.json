@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(git --version)",
+      "Bash(npm ci *)",
+      "Bash(npm run *)",
+      "WebFetch(domain:shop.officelan.pt)",
+      "Bash(git pull *)",
+      "Read(//mnt/c/Users/JoãoGarcia/Downloads/**)",
+      "Read(//c/Users/JoãoGarcia/Downloads/CDNCORE_MikrotikV2-main/**)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\JoãoGarcia\\\\Desktop\\\\cdn-landings\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "Bash(mkdir -p \"/c/Users/JoãoGarcia/Desktop/cdn-landings/apps/cdncore/app/mikrotik\")",
+      "Bash(mkdir -p \"/c/Users/JoãoGarcia/Desktop/cdn-landings/apps/cdncore/components/Mikrotik\")",
+      "WebFetch(domain:mikrotik.com)",
+      "WebSearch",
+      "Bash(Get-Content \"C:\\\\Users\\\\JOOGAR~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Jo-oGarcia-Desktop-cdn-landings\\\\c39c7bfb-81d1-40fc-a3ec-715c1dc008c8\\\\tasks\\\\b6xvsuimi.output\" -Tail 10)",
+      "Bash(node *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

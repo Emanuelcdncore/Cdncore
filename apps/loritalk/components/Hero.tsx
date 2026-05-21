@@ -7,9 +7,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CTAButton from "./CTAButton";
 import { onCtaClick } from "@/lib/fbAttribution";
 
+<<<<<<< HEAD
 gsap.registerPlugin(ScrollTrigger);
 
 type MarqueeKey = "instagram" | "linkedin" | "x" | "youtube" | "threads" | "facebook" | "telegram";
+=======
+type MarqueeKey =
+  | "instagram"
+  | "linkedin"
+  | "x"
+  | "tiktok"
+  | "youtube"
+  | "threads"
+  | "facebook"
+  | "telegram";
+>>>>>>> 4541f5293edd2328f32715928ad719e9254a42ed
 
 const PLATFORM_ICONS: Record<MarqueeKey, { bg: string; path: string }> = {
   instagram: {
@@ -40,6 +52,10 @@ const PLATFORM_ICONS: Record<MarqueeKey, { bg: string; path: string }> = {
     bg: "#26a5e4",
     path: "M12 0a12 12 0 100 24 12 12 0 000-24zm5.6 8.2L15.7 17c-.1.6-.5.8-1 .5l-2.8-2-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.8 5.2-4.7c.2-.2 0-.3-.3-.1l-6.4 4-2.8-.9c-.6-.2-.6-.6.1-.9l11-4.3c.5-.2 1 .1.8.9z",
   },
+  tiktok: {
+    bg: "#000",
+    path: "M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-6.99 6.84 6.84 6.84 0 0011.64 4.84 6.84 6.84 0 002-4.84V8.21a8.16 8.16 0 004.77 1.52V6.31a4.85 4.85 0 01-2.19-.38z",
+  },
 };
 
 const PlatformIcon = ({ id, size = 18 }: { id: MarqueeKey; size?: number }) => (
@@ -65,8 +81,12 @@ const PLATFORM_CARDS: PlatformCard[] = [
   { id: "youtube", body: "Hook: \"What if your shoes were made of trash?\" · 0:08 reveal · 100s cut", audit: "8.9/10" },
 ];
 
+<<<<<<< HEAD
 // Fluid vertical offsets so cards don't sit on the same baseline
 const CARD_TOP_OFFSETS = [0, 32, 14, 48, 8, 28, 42];
+=======
+const MARQUEE_KEYS: MarqueeKey[] = ["instagram", "linkedin", "x", "tiktok", "youtube", "threads", "facebook", "telegram"];
+>>>>>>> 4541f5293edd2328f32715928ad719e9254a42ed
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);

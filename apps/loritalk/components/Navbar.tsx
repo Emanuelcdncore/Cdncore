@@ -80,9 +80,16 @@ export default function Navbar() {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
+<<<<<<< HEAD
           <a href="#features" onClick={(e) => { e.preventDefault(); scrollToSection("#features"); }} className="nav-link text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.features")}</a>
           <a href="#how-it-works" onClick={(e) => { e.preventDefault(); scrollToSection("#how-it-works"); }} className="nav-link text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.howItWorks")}</a>
           <a href="#pricing" onClick={(e) => { e.preventDefault(); scrollToSection("#pricing"); }} className="nav-link text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.pricing")}</a>
+=======
+          <a href="/#features" className="text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.features")}</a>
+          <a href="/#how-it-works" className="text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.howItWorks")}</a>
+          <a href="/#pricing" className="text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.pricing")}</a>
+          <a href="/agency" className="text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.forAgencies")}</a>
+>>>>>>> 4541f5293edd2328f32715928ad719e9254a42ed
           <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: "#5D92E8" }}>{t("navbar.beta")}</span>
         </div>
 
@@ -104,9 +111,16 @@ export default function Navbar() {
 
       {open && (
         <div className="md:hidden border-t border-black/8 bg-white px-6 py-4 flex flex-col gap-4">
+<<<<<<< HEAD
           <a href="#features" onClick={(e) => { e.preventDefault(); setOpen(false); scrollToSection("#features"); }} className="text-sm font-medium">{t("navbar.features")}</a>
           <a href="#how-it-works" onClick={(e) => { e.preventDefault(); setOpen(false); scrollToSection("#how-it-works"); }} className="text-sm font-medium">{t("navbar.howItWorks")}</a>
           <a href="#pricing" onClick={(e) => { e.preventDefault(); setOpen(false); scrollToSection("#pricing"); }} className="text-sm font-medium">{t("navbar.pricing")}</a>
+=======
+          <a href="/#features" className="text-sm font-medium" onClick={() => setOpen(false)}>{t("navbar.features")}</a>
+          <a href="/#how-it-works" className="text-sm font-medium" onClick={() => setOpen(false)}>{t("navbar.howItWorks")}</a>
+          <a href="/#pricing" className="text-sm font-medium" onClick={() => setOpen(false)}>{t("navbar.pricing")}</a>
+          <a href="/agency" className="text-sm font-medium" onClick={() => setOpen(false)}>{t("navbar.forAgencies")}</a>
+>>>>>>> 4541f5293edd2328f32715928ad719e9254a42ed
           <LanguageSwitcher className="self-start" />
           <div className="flex flex-col gap-2 pt-2 border-t border-black/8">
             <CTAButton href="https://app.lori-talk.eu" className="text-sm font-semibold py-2 rounded-full text-white text-center" style={{ backgroundColor: "#94BF5C" }}>

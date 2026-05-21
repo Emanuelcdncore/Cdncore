@@ -29,7 +29,7 @@ export default function Differentiator() {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: "[data-pipeline]",
-            start: "top 10%",
+            start: "top top",
             end: "+=3030",
             scrub: 0.8,
             pin: true,
@@ -39,13 +39,13 @@ export default function Differentiator() {
         });
 
         // Heading
-        tl.from("[data-diff-title]", { y: 30, autoAlpha: 0, duration: 1.5, ease: "power3.out" });
-        tl.from("[data-diff-sub]", { y: 20, autoAlpha: 0, duration: 1, ease: "power3.out" }, "-=0.5");
+        tl.from("[data-diff-title]", { autoAlpha: 0, duration: 1.5, ease: "power3.out" });
+        tl.from("[data-diff-sub]", { autoAlpha: 0, duration: 1, ease: "power3.out" }, "-=0.5");
 
         // Each node pops in → inner elements animate → connector draws → next
         nodes.forEach((node, i) => {
           // Node entrance
-          tl.from(node, { scale: 0.6, y: 40, autoAlpha: 0, duration: 2, ease: "back.out(2)" });
+          tl.from(node, { scale: 0.6, autoAlpha: 0, duration: 2, ease: "back.out(2)" });
 
           // Auto-scroll to center on this node
           tl.to(container, {
