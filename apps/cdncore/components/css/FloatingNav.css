@@ -20,6 +20,14 @@
   justify-content: center;
   gap: 0.8rem;
   margin: 0 auto;
+  transition: transform 0.35s cubic-bezier(.2,.8,.2,1), opacity 0.25s ease;
+  will-change: transform;
+}
+
+.floating-nav-hidden {
+  transform: translateY(calc(-100% - 3rem));
+  opacity: 0;
+  pointer-events: none;
 }
 
 .floating-nav-item {
@@ -79,6 +87,9 @@
     left: 50%; right: auto; transform: translateX(-50%);
     width: calc(100% - 2rem); max-width: 400px;
     padding: 0.6rem 0.8rem; gap: 0.6rem; margin: 0; top: 2rem;
+  }
+  .floating-nav.floating-nav-hidden {
+    transform: translateX(-50%) translateY(calc(-100% - 3rem));
   }
   .floating-nav-item { font-size: 0.85rem; padding: 0.25rem 0.4rem; }
   .floating-nav-item-text { display: none; }

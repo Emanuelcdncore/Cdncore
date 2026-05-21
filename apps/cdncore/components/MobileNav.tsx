@@ -15,7 +15,7 @@ const navItems = [
   { icon: IconMessage, label: 'Contact', href: '/contact' },
 ];
 
-const MobileNav: React.FC = () => {
+const MobileNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
@@ -35,7 +35,7 @@ const MobileNav: React.FC = () => {
 
   return (
     <>
-      <button className="hamburger-btn" onClick={() => setIsOpen(!isOpen)}>
+      <button className={`hamburger-btn ${hidden && !isOpen ? 'hamburger-btn-hidden' : ''}`} onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <IconX size={24} /> : <IconMenu2 size={24} />}
       </button>
 
