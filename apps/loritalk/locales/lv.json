@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Tagad Beta — bezmaksas agrīnā piekļuve",
-    "headlineOne": "Viena ideja.",
-    "headlineTwo": "Katra platforma.",
+    "headlineOne": "Raksti mazāk.",
+    "headlineTwo": "Publicē vairāk.",
     "description": "Ievadiet tēmu vai ideju. Loritalk AI raksta optimizētas publikācijas Instagram, LinkedIn, X, TikTok un citām platformām — dažu sekunžu laikā. Vairāki AI modeļi sacenšas, lai sniegtu jums labāko rezultātu.",
     "ctaPrimary": "Sāciet veidot bez maksas",
     "ctaSecondary": "Skatiet, kā tas darbojas",
-    "note": "Nav nepieciešama kredītkarte · Bez maksas Beta laikā"
+    "note": "Nav nepieciešama kredītkarte · Bez maksas Beta laikā",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

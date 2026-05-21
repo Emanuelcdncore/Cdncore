@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Most Bétában — ingyenes korai hozzáférés",
-    "headlineOne": "Egy ötlet.",
-    "headlineTwo": "Minden platform.",
+    "headlineOne": "Írj kevesebbet.",
+    "headlineTwo": "Tegyél közzé többet.",
     "description": "Írj be egy témát vagy ötletet. A Loritalk AI optimalizált posztokat ír Instagram, LinkedIn, X, TikTok és más platformokra — másodpercek alatt. Több AI modell versenyez, hogy a legjobb eredményt adja.",
     "ctaPrimary": "Kezdj el ingyen alkotni",
     "ctaSecondary": "Nézd meg, hogyan működik",
-    "note": "Nincs szükség bankkártyára · Ingyenes a Béta alatt"
+    "note": "Nincs szükség bankkártyára · Ingyenes a Béta alatt",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

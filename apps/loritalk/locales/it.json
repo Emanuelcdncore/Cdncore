@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Ora in Beta — accesso anticipato gratuito",
-    "headlineOne": "Un'idea.",
-    "headlineTwo": "Ogni piattaforma.",
+    "headlineOne": "Scrivi meno.",
+    "headlineTwo": "Pubblica di più.",
     "description": "Scrivi un tema o un'idea. L'IA di Loritalk scrive post ottimizzati per Instagram, LinkedIn, X, TikTok e altro — in pochi secondi. Più modelli IA competono per darti il miglior risultato.",
     "ctaPrimary": "Inizia a creare gratis",
     "ctaSecondary": "Scopri come funziona",
-    "note": "Nessuna carta di credito richiesta · Gratuito durante la Beta"
+    "note": "Nessuna carta di credito richiesta · Gratuito durante la Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

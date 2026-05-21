@@ -125,6 +125,12 @@ body {
   hyphens: none;
 }
 
+/* Hero lead body — highlight strong phrases */
+[data-hero-sub] strong {
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
 /* Nav link — sliding underline on hover */
 .nav-link {
   position: relative;
@@ -210,6 +216,7 @@ body {
    PlanComparisonTable.css — per-tier accents + Higgsfield-style layout.
    ────────────────────────────────────────────────────────────────────── */
 .plan-billing-toggle {
+  position: relative;
   display: inline-flex;
   align-items: center;
   background: var(--paper-3);
@@ -218,7 +225,21 @@ body {
   padding: 4px;
   gap: 4px;
 }
+.plan-billing-toggle-pill {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: calc(100% - 8px);
+  background: var(--paper-1);
+  border-radius: 999px;
+  box-shadow: 0 1px 3px rgba(20, 22, 26, 0.10);
+  pointer-events: none;
+  will-change: transform, width;
+  z-index: 0;
+}
 .plan-billing-toggle-btn {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -230,13 +251,11 @@ body {
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 180ms cubic-bezier(0.2, 0.8, 0.2, 1), color 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: color 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .plan-billing-toggle-btn:hover { color: var(--ink-1); }
 .plan-billing-toggle-btn--active {
-  background: var(--paper-1);
   color: var(--ink-1);
-  box-shadow: 0 1px 3px rgba(20, 22, 26, 0.10);
 }
 .plan-billing-toggle-save {
   display: inline-flex;
@@ -535,4 +554,115 @@ body {
   border-radius: 6px;
   padding: 3px 7px;
   align-self: flex-start;
+}
+
+/* ── Lori Animated Logo ───────────────────────────────────────────────── */
+.lori-anim {
+  --lori-fall-dur: 1100ms;
+  --lori-fall-ease: cubic-bezier(.55,.05,.85,.4);
+  --lori-fall-delay: 350ms;
+  --lori-c1: #5d92e8;
+  --lori-c2: #ff6903;
+  --lori-c3: #2267b2;
+  --lori-c4: #94bf5c;
+  --lori-c5: #e54013;
+  --lori-c6: #ff9852;
+  --lori-c7: transparent;
+  --lori-iris: #000000;
+  --lori-r: #000000;
+  display: inline-block;
+  width: 100%;
+  line-height: 0;
+}
+.lori-anim svg {
+  width: 100%; height: auto; overflow: visible; display: block;
+}
+.lori-anim .lp {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(.86);
+  animation: lori-assemble 720ms cubic-bezier(.2,.7,.2,1) forwards;
+}
+.lori-anim .lp-c1 { fill: var(--lori-c1) }
+.lori-anim .lp-c2 { fill: var(--lori-c2) }
+.lori-anim .lp-c3 { fill: var(--lori-c3) }
+.lori-anim .lp-c4 { fill: var(--lori-c4) }
+.lori-anim .lp-c5 { fill: var(--lori-c5) }
+.lori-anim .lp-c6 { fill: var(--lori-c6) }
+.lori-anim .lp-c7 { fill: var(--lori-c7) }
+.lori-anim .lori-r-mark { fill: var(--lori-r) }
+
+.lori-anim .lp-1 { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 80ms)  }
+.lori-anim .lp-2 { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 180ms) }
+.lori-anim .lp-3 { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 260ms) }
+.lori-anim .lp-4 { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 320ms) }
+.lori-anim .lp-5 { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 400ms) }
+.lori-anim .lp-6 { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 480ms) }
+.lori-anim .lp-7 { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 560ms) }
+.lori-anim .lp-r  { animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 700ms) }
+
+@keyframes lori-assemble {
+  0%   { opacity: 0; transform: scale(.86) }
+  60%  { opacity: 1 }
+  100% { opacity: 1; transform: scale(1)   }
+}
+
+.lori-anim .lori-iris {
+  fill: var(--lori-iris);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation:
+    lori-fall   var(--lori-fall-dur) var(--lori-fall-ease)        forwards,
+    lori-squash 280ms                cubic-bezier(.2,.8,.3,1)     forwards;
+  animation-delay: var(--lori-fall-delay),
+                   calc(var(--lori-fall-delay) + var(--lori-fall-dur));
+}
+@keyframes lori-fall {
+  0%   { transform: translateY(-520px) scale(1); }
+  85%  { transform: translateY(8px)    scale(1); }
+  100% { transform: translateY(0)      scale(1); }
+}
+@keyframes lori-squash {
+  0%   { transform: translateY(0)    scaleX(1)    scaleY(1)    }
+  30%  { transform: translateY(2px)  scaleX(1.18) scaleY(.84)  }
+  70%  { transform: translateY(-1px) scaleX(.96)  scaleY(1.04) }
+  100% { transform: translateY(0)    scaleX(1)    scaleY(1)    }
+}
+
+.lori-anim .lori-pupil {
+  fill: #ffffff;
+  opacity: 0;
+  transform-box: fill-box; transform-origin: center;
+  transform: scale(0);
+  animation: lori-pop 420ms cubic-bezier(.2,.9,.3,1.4) forwards;
+  animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) + 320ms);
+}
+@keyframes lori-pop {
+  0%   { opacity: 0; transform: scale(0)    }
+  60%  { opacity: 1; transform: scale(1.25) }
+  100% { opacity: 1; transform: scale(1)    }
+}
+
+.lori-anim .lori-impact {
+  fill: none; stroke: var(--lori-iris); stroke-width: 1;
+  opacity: 0;
+  transform-box: fill-box; transform-origin: center;
+  animation: lori-impact 700ms cubic-bezier(.2,.8,.2,1) forwards;
+  animation-delay: calc(var(--lori-fall-delay) + var(--lori-fall-dur) - 40ms);
+}
+@keyframes lori-impact {
+  0%   { opacity: .55; transform: scale(.4);  stroke-width: 1.4 }
+  100% { opacity: 0;   transform: scale(2.6); stroke-width: .2  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lori-anim .lp,
+  .lori-anim .lori-iris,
+  .lori-anim .lori-pupil,
+  .lori-anim .lori-impact {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

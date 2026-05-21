@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Nyt betassa — ilmainen varhainen pääsy",
-    "headlineOne": "Yksi idea.",
-    "headlineTwo": "Joka alusta.",
+    "headlineOne": "Kirjoita vähemmän.",
+    "headlineTwo": "Julkaise enemmän.",
     "description": "Kirjoita aihe tai idea. Loritalk tekoäly kirjoittaa optimoidut julkaisut Instagram, LinkedIn, X, TikTok ja muille alustoille — sekunneissa. Useat AI-mallit kilpailevat antaakseen sinulle parhaan tuloksen.",
     "ctaPrimary": "Aloita luominen ilmaiseksi",
     "ctaSecondary": "Katso miten se toimii",
-    "note": "Luottokorttia ei tarvita · Ilmainen betan aikana"
+    "note": "Luottokorttia ei tarvita · Ilmainen betan aikana",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

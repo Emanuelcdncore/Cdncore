@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Nu i Beta — gratis tidig åtkomst",
-    "headlineOne": "En idé.",
-    "headlineTwo": "Varje plattform.",
+    "headlineOne": "Skriv mindre.",
+    "headlineTwo": "Publicera mer.",
     "description": "Skriv in ett ämne eller en idé. Loritalk's AI skriver optimerade inlägg för Instagram, LinkedIn, X, TikTok och mer — på sekunder. Flera AI-modeller tävlar för att ge dig bästa resultat.",
     "ctaPrimary": "Börja skapa gratis",
     "ctaSecondary": "Se hur det fungerar",
-    "note": "Inget kreditkort krävs · Gratis under Beta"
+    "note": "Inget kreditkort krävs · Gratis under Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

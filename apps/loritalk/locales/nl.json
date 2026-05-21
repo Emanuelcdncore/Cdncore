@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Nu in Beta — gratis vroege toegang",
-    "headlineOne": "Eén idee.",
-    "headlineTwo": "Elk platform.",
+    "headlineOne": "Schrijf minder.",
+    "headlineTwo": "Publiceer meer.",
     "description": "Typ een thema of idee. De AI van Loritalk schrijft geoptimaliseerde berichten voor Instagram, LinkedIn, X, TikTok en meer — in seconden. Meerdere AI-modellen concurreren om je het beste resultaat te geven.",
     "ctaPrimary": "Begin gratis te creëren",
     "ctaSecondary": "Bekijk hoe het werkt",
-    "note": "Geen creditcard nodig · Gratis tijdens de Beta"
+    "note": "Geen creditcard nodig · Gratis tijdens de Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

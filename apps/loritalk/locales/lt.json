@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Dabar Beta — nemokama ankstyvoji prieiga",
-    "headlineOne": "Viena idėja.",
-    "headlineTwo": "Kiekviena platforma.",
+    "headlineOne": "Rašyk mažiau.",
+    "headlineTwo": "Skelbk daugiau.",
     "description": "Įveskite temą ar idėją. Loritalk AI rašo optimizuotus įrašus Instagram, LinkedIn, X, TikTok ir kitiems — per sekundes. Keli AI modeliai varžosi, kad duotų jums geriausią rezultatą.",
     "ctaPrimary": "Pradėkite kurti nemokamai",
     "ctaSecondary": "Pažiūrėkite, kaip tai veikia",
-    "note": "Kredito kortelė nereikalinga · Nemokamai Beta metu"
+    "note": "Kredito kortelė nereikalinga · Nemokamai Beta metu",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

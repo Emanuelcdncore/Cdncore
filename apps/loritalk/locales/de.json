@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Jetzt in der Beta — kostenloser Frühzugang",
-    "headlineOne": "Eine Idee.",
-    "headlineTwo": "Jede Plattform.",
+    "headlineOne": "Schreib weniger.",
+    "headlineTwo": "Veröffentliche mehr.",
     "description": "Geben Sie ein Thema oder eine Idee ein. Die KI von Loritalk schreibt optimierte Beiträge für Instagram, LinkedIn, X, TikTok und mehr — in Sekunden. Mehrere KI-Modelle konkurrieren, um Ihnen das beste Ergebnis zu liefern.",
     "ctaPrimary": "Jetzt kostenlos loslegen",
     "ctaSecondary": "So funktioniert's",
-    "note": "Keine Kreditkarte erforderlich · Kostenlos während der Beta"
+    "note": "Keine Kreditkarte erforderlich · Kostenlos während der Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CTAButton from "./CTAButton";
+import LoriAnimLogo from "./LoriAnimLogo";
 import { onCtaClick } from "@/lib/fbAttribution";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -81,6 +82,18 @@ export default function Hero() {
   const { t }     = useTranslation();
   const [typed, setTyped] = useState("");
   const target = t("hero.briefCard.typed") as string;
+  const leadHook = t("hero.leadHook");
+  const hasSplitLead = leadHook !== "hero.leadHook";
+  const line1Ref = useRef<HTMLSpanElement>(null);
+  const [titleWidth, setTitleWidth] = useState<number | undefined>(undefined);
+
+  useEffect(() => {
+    const el = line1Ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setTitleWidth(el.offsetWidth));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -278,37 +291,43 @@ export default function Hero() {
         <div data-hero-shape className="absolute top-1/2 left-[10%] w-24 h-24 rotate-45 rounded-lg opacity-[0.06]" style={{ backgroundColor: "#E54013" }} />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 py-14 md:py-20 flex flex-col items-center text-center gap-6">
+      <div className="relative max-w-6xl mx-auto px-6 py-14 md:py-20 flex flex-col gap-6">
 
-        {/* Badge */}
-        <div
-          data-hero-badge
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-white"
-          style={{ backgroundColor: "#5D92E8", visibility: "hidden" }}
-        >
-          <span className="material-icons-round text-sm">science</span>
-          {t("hero.badge")}
-        </div>
+        {/* Two-column row: text left, animated logo right */}
+        <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
 
-        {/* Logo + Title + Description */}
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-          <img src="/logo-loritalk.svg" alt="Loritalk" className="w-24 md:w-32" />
-          <div className="flex flex-col gap-4 max-w-xl md:text-left text-center">
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+          {/* Left: Badge + Title + Description + CTA */}
+          <div className="flex flex-col gap-4 text-left lg:flex-1">
+            <div
+              data-hero-badge
+              className="self-start inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-white"
+              style={{ backgroundColor: "#5D92E8", visibility: "hidden" }}
+            >
+              <span className="material-icons-round text-sm">science</span>
+              {t("hero.badge")}
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight w-fit">
               <span data-hero-line className="block" style={{ clipPath: "inset(0 0 0 0)" }}>
-                {t("hero.headlineOne")}
+                <span ref={line1Ref}>{t("hero.headlineOne")}</span>
               </span>
               <span data-hero-line className="block" style={{ color: "#94BF5C", clipPath: "inset(0 0 0 0)" }}>
                 {t("hero.headlineTwo")} {t("hero.headlineTwoTail")}
               </span>
             </h1>
-            <p
-              data-hero-sub
-              className="text-base md:text-lg text-black/60 font-normal"
-              style={{ visibility: "hidden" }}
-              dangerouslySetInnerHTML={{ __html: t("hero.lead") }}
-            />
-            <div className="flex items-center md:items-start mt-1">
+
+            {hasSplitLead ? (
+              <>
+                <p data-hero-sub className="text-lg md:text-2xl font-semibold leading-snug" style={{ color: "var(--ink-1)", maxWidth: titleWidth, visibility: "hidden" }}>
+                  {leadHook}
+                </p>
+                <p data-hero-sub className="text-sm md:text-base font-normal leading-relaxed" style={{ color: "var(--ink-3)", maxWidth: titleWidth, visibility: "hidden" }} dangerouslySetInnerHTML={{ __html: t("hero.leadBody") }} />
+              </>
+            ) : (
+              <p data-hero-sub className="text-base md:text-lg text-black/60 font-normal" style={{ maxWidth: titleWidth, visibility: "hidden" }} dangerouslySetInnerHTML={{ __html: t("hero.lead") }} />
+            )}
+
+            <div className="flex items-start mt-1">
               <CTAButton
                 data-hero-cta=""
                 href="https://app.lori-talk.eu"
@@ -320,6 +339,12 @@ export default function Hero() {
               </CTAButton>
             </div>
           </div>
+
+          {/* Right: Animated logo — desktop only */}
+          <div className="hidden lg:flex lg:flex-shrink-0 lg:items-center lg:justify-center" style={{ width: "48%" }}>
+            <LoriAnimLogo style={{ width: "min(560px, 100%)" }} />
+          </div>
+
         </div>
 
         {/* ── Cards stage (desktop only) ─────────────────────────────────── */}

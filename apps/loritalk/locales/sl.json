@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Zdaj v Beta — brezplačen zgodnji dostop",
-    "headlineOne": "Ena ideja.",
-    "headlineTwo": "Vsaka platforma.",
+    "headlineOne": "Piši manj.",
+    "headlineTwo": "Objavi več.",
     "description": "Vnesite temo ali idejo. UI Loritalk piše optimizirane objave za Instagram, LinkedIn, X, TikTok in več — v sekundah. Več modelov UI tekmuje, da vam ponudi najboljši rezultat.",
     "ctaPrimary": "Začnite ustvarjati brezplačno",
     "ctaSecondary": "Poglejte, kako deluje",
-    "note": "Kreditna kartica ni potrebna · Brezplačno med Beta"
+    "note": "Kreditna kartica ni potrebna · Brezplačno med Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

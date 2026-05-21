@@ -9,9 +9,9 @@
   },
   "hero": {
     "badge": "Em Beta · Preço de acesso antecipado fixo para sempre",
-    "headlineOne": "Um briefing.",
-    "headlineTwo": "Cada",
-    "headlineTwoTail": "canal.",
+    "headlineOne": "Escreva menos.",
+    "headlineTwo": "Publique mais.",
+    "headlineTwoTail": "",
     "headlineStrike": "Reescrito.",
     "headlineThree": "Auditado.",
     "lead": "Descreva a sua publicação uma vez. O Loritalk escreve <strong>uma versão nativa para cada plataforma ligada</strong>, gera imagens on-brand, corre cada palavra por moderação automática e agenda tudo — em segundos.",
@@ -45,7 +45,9 @@
       "facebookTag": "páginas",
       "telegram": "Telegram",
       "telegramTag": "canais · grupos"
-    }
+    },
+    "leadHook": "Descreva a sua publicação uma vez.",
+    "leadBody": "O Loritalk escreve <strong>uma versão nativa para cada plataforma ligada</strong>, gera imagens on-brand, corre cada palavra por moderação automática e agenda tudo — em segundos."
   },
   "stats": {
     "networksValue": "8",

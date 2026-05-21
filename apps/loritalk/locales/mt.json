@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Issa f'Beta — aċċess bikri b'xejn",
-    "headlineOne": "Idea waħda.",
-    "headlineTwo": "Kull pjattaforma.",
+    "headlineOne": "Ikteb inqas.",
+    "headlineTwo": "Ippubblika aktar.",
     "description": "Ikteb tema jew idea. L-AI ta' Loritalk tikteb posts ottimizzati għal Instagram, LinkedIn, X, TikTok, u aktar — fi ftit sekondi. Diversi mudelli ta' AI jikkompetu biex jagħtuk l-aħjar riżultat.",
     "ctaPrimary": "Ibda oħloq b'xejn",
     "ctaSecondary": "Ara kif jaħdem",
-    "note": "L-ebda karta ta' kreditu meħtieġa · B'xejn waqt il-Beta"
+    "note": "L-ebda karta ta' kreditu meħtieġa · B'xejn waqt il-Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

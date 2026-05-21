@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Nyní v Beta — bezplatný předběžný přístup",
-    "headlineOne": "Jeden nápad.",
-    "headlineTwo": "Každá platforma.",
+    "headlineOne": "Piš méně.",
+    "headlineTwo": "Publikuj více.",
     "description": "Napište téma nebo nápad. AI od Loritalk vytvoří optimalizované příspěvky pro Instagram, LinkedIn, X, TikTok a další — během sekund. Více AI modelů soutěží, aby vám daly nejlepší výsledek.",
     "ctaPrimary": "Začněte tvořit zdarma",
     "ctaSecondary": "Podívejte se, jak to funguje",
-    "note": "Kreditní karta není vyžadována · Zdarma během Beta"
+    "note": "Kreditní karta není vyžadována · Zdarma během Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

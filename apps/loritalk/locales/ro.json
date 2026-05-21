@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Acum în Beta — acces anticipat gratuit",
-    "headlineOne": "O idee.",
-    "headlineTwo": "Fiecare platformă.",
+    "headlineOne": "Scrie mai puțin.",
+    "headlineTwo": "Publică mai mult.",
     "description": "Scrie o temă sau o idee. AI-ul Loritalk scrie postări optimizate pentru Instagram, LinkedIn, X, TikTok și altele — în secunde. Mai multe modele AI concurează pentru a-ți oferi cel mai bun rezultat.",
     "ctaPrimary": "Începe să creezi gratuit",
     "ctaSecondary": "Vezi cum funcționează",
-    "note": "Nu este nevoie de card de credit · Gratuit în timpul Beta"
+    "note": "Nu este nevoie de card de credit · Gratuit în timpul Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

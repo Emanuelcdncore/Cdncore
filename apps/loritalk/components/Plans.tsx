@@ -55,6 +55,10 @@ type Variant = "default" | "agency";
 
 export default function Plans({ variant = "default" }: { variant?: Variant }) {
   const sectionRef = useRef<HTMLElement>(null);
+  const pillRef = useRef<HTMLSpanElement>(null);
+  const monthlyBtnRef = useRef<HTMLButtonElement>(null);
+  const yearlyBtnRef = useRef<HTMLButtonElement>(null);
+  const firstRender = useRef(true);
   const [yearly, setYearly] = useState(true);
   const { t } = useTranslation();
 
@@ -65,6 +69,36 @@ export default function Plans({ variant = "default" }: { variant?: Variant }) {
   const titleKey = isAgency ? "agency.plans.title" : "pricing.title";
   const subtitleKey = isAgency ? "agency.plans.subtitle" : "pricing.subtitle";
   const sectionId = isAgency ? "agency-plans" : "pricing";
+
+  useEffect(() => {
+    const pill = pillRef.current;
+    const btn = yearly ? yearlyBtnRef.current : monthlyBtnRef.current;
+    if (pill && btn) gsap.set(pill, { x: btn.offsetLeft, width: btn.offsetWidth });
+  }, []);
+
+  useEffect(() => {
+    if (firstRender.current) { firstRender.current = false; return; }
+    const pill = pillRef.current;
+    const btn = yearly ? yearlyBtnRef.current : monthlyBtnRef.current;
+    if (!pill || !btn) return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    gsap.to(pill, {
+      x: btn.offsetLeft,
+      width: btn.offsetWidth,
+      duration: reduced ? 0 : 0.55,
+      ease: "elastic.out(1, 0.75)",
+    });
+    if (!reduced) {
+      gsap.from("[data-price-val]", {
+        y: 6,
+        autoAlpha: 0,
+        duration: 0.28,
+        stagger: 0.05,
+        ease: "power3.out",
+        overwrite: "auto",
+      });
+    }
+  }, [yearly]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -92,10 +126,11 @@ export default function Plans({ variant = "default" }: { variant?: Variant }) {
 
         <div data-plans-toggle className="flex items-center justify-center mb-8" style={{ visibility: "hidden" }}>
           <div className="plan-billing-toggle" role="group" aria-label="Billing cycle">
-            <button type="button" className={`plan-billing-toggle-btn${!yearly ? " plan-billing-toggle-btn--active" : ""}`} onClick={() => setYearly(false)} aria-pressed={!yearly}>
+            <span ref={pillRef} className="plan-billing-toggle-pill" aria-hidden="true" />
+            <button ref={monthlyBtnRef} type="button" className={`plan-billing-toggle-btn${!yearly ? " plan-billing-toggle-btn--active" : ""}`} onClick={() => setYearly(false)} aria-pressed={!yearly}>
               {t("pricing.monthly")}
             </button>
-            <button type="button" className={`plan-billing-toggle-btn${yearly ? " plan-billing-toggle-btn--active" : ""}`} onClick={() => setYearly(true)} aria-pressed={yearly}>
+            <button ref={yearlyBtnRef} type="button" className={`plan-billing-toggle-btn${yearly ? " plan-billing-toggle-btn--active" : ""}`} onClick={() => setYearly(true)} aria-pressed={yearly}>
               {t("pricing.annual")}
               <span className="plan-billing-toggle-save">{t("pricing.save2Months")}</span>
             </button>
@@ -211,7 +246,7 @@ export default function Plans({ variant = "default" }: { variant?: Variant }) {
                           <span className="plan-card-price-strike">{symbol}{formatCents(strikeCents)}</span>
                         )}
                         <span className="plan-card-currency">{symbol}</span>
-                        <span className="plan-card-price">{formatCents(effectiveCents)}</span>
+                        <span className="plan-card-price" data-price-val>{formatCents(effectiveCents)}</span>
                         <span className="plan-card-period">{yearly ? t("pricing.perMonthBilledYearly") : t("pricing.perMonth")}</span>
                       </>
                     ) : (

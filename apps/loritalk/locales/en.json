@@ -9,9 +9,9 @@
   },
   "hero": {
     "badge": "In Beta · Early-access pricing locked forever",
-    "headlineOne": "One brief.",
-    "headlineTwo": "Every",
-    "headlineTwoTail": "channel.",
+    "headlineOne": "Write less.",
+    "headlineTwo": "Publish more.",
+    "headlineTwoTail": "",
     "headlineStrike": "Rewritten.",
     "headlineThree": "Audited.",
     "lead": "Describe your post once. Loritalk writes <strong>a native version for every connected platform</strong>, generates on-brand images, runs every word through automated moderation, and schedules them — in seconds.",
@@ -45,7 +45,9 @@
       "facebookTag": "pages",
       "telegram": "Telegram",
       "telegramTag": "channels · groups"
-    }
+    },
+    "leadHook": "Describe your post once.",
+    "leadBody": "Loritalk writes <strong>a native version for every connected platform</strong>, generates on-brand images, runs every word through automated moderation, and schedules them — in seconds."
   },
   "stats": {
     "networksValue": "8",

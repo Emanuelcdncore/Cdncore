@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Nüüd beetaversioonis — tasuta varajane juurdepääs",
-    "headlineOne": "Üks idee.",
-    "headlineTwo": "Iga platvorm.",
+    "headlineOne": "Kirjuta vähem.",
+    "headlineTwo": "Avalda rohkem.",
     "description": "Sisesta teema või idee. Loritalk tehisintellekt kirjutab optimeeritud postitused Instagram, LinkedIn, X, TikTok ja teiste jaoks — sekunditega. Mitu AI-mudelit võistlevad, et anda sulle parim tulemus.",
     "ctaPrimary": "Alusta tasuta loomist",
     "ctaSecondary": "Vaata, kuidas see toimib",
-    "note": "Krediitkaarti pole vaja · Beetaversioonis tasuta"
+    "note": "Krediitkaarti pole vaja · Beetaversioonis tasuta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",

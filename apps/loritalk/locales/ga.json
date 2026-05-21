@@ -8,12 +8,13 @@
   },
   "hero": {
     "badge": "Anois i mBeta — rochtain luath saor in aisce",
-    "headlineOne": "Smaoineamh amháin.",
-    "headlineTwo": "Gach ardán.",
+    "headlineOne": "Scríobh níos lú.",
+    "headlineTwo": "Foilsigh níos mó.",
     "description": "Clóscríobh téama nó smaoineamh. Scríobhann AI Loritalk postálacha optamaithe d'Instagram, LinkedIn, X, TikTok, agus tuilleadh — i soicindí. Bíonn múnlaí AI éagsúla san iomaíocht chun an toradh is fearr a thabhairt duit.",
     "ctaPrimary": "Tosaigh ag cruthú saor in aisce",
     "ctaSecondary": "Féach conas a oibríonn sé",
-    "note": "Níl cárta creidmheasa ag teastáil · Saor in aisce le linn Beta"
+    "note": "Níl cárta creidmheasa ag teastáil · Saor in aisce le linn Beta",
+    "headlineTwoTail": ""
   },
   "stats": {
     "networksValue": "6+",
