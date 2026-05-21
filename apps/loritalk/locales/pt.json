@@ -26,7 +26,7 @@
     "briefCard": {
       "label": "O seu briefing · 1 de 1",
       "typed": "Lançar o novo ténis sustentável. Feito de 80% plástico oceânico reciclado. Para corredores Gen Z.",
-      "meta": "pt · 7 canais · Voz da casa",
+      "meta": "pt · 8 canais · Voz da casa",
       "send": "Gerar ↗"
     },
     "marquee": {
@@ -52,7 +52,7 @@
     "networksValue": "8",
     "networksLabel": "Redes sociais suportadas",
     "languagesValue": "24+",
-    "languagesLabel": "Idiomas suportados",
+    "languagesLabel": "Idiomas da UI",
     "generationValue": "Segundos",
     "generationLabel": "Do briefing ao pronto-a-publicar",
     "freeValue": "Gratuito",
@@ -129,7 +129,7 @@
     "eyebrow": "05 · Fluxo",
     "title": "Briefing → pré-visualizar → publicar.",
     "titleAccent": "Três passos.",
-    "titleTail": "Cinco segundos.",
+    "titleTail": "Em segundos.",
     "subtitle": "Nunca escolhe um modelo. Nunca redimensiona uma imagem. Nunca copia e cola entre separadores.",
     "steps": [
       {
@@ -146,7 +146,7 @@
         "title": "A IA adapta por canal",
         "description": "O Loritalk lê o seu briefing, a sua persona e as regras nativas de cada plataforma — depois cria uma versão feita para cada canal. Moderação automática corre antes de o ver.",
         "footLeft": "~ 3 seg por canal",
-        "footRight": "7 versões"
+        "footRight": "Por canal ligado"
       },
       {
         "badge": "03",
@@ -154,7 +154,7 @@
         "title": "Publicar ou agendar",
         "description": "Envie agora ou coloque no calendário com timing por plataforma. Cada canal usa a sua API nativa; falhas ficam isoladas — o Instagram envia mesmo que o Facebook falhe.",
         "footLeft": "APIs nativas · OAuth",
-        "footRight": "7 canais"
+        "footRight": "8 canais"
       }
     ],
     "briefViz": {
@@ -565,7 +565,7 @@
       "items": [
         {
           "title": "A tua voz, fixada",
-          "description": "Treina uma persona com os teus posts antigos, as tuas expressões favoritas, os teus do's and don'ts. Cada geração soa a ti — não a uma ferramenta de IA."
+          "description": "Define uma persona com a tua voz, tom e instruções específicas em texto livre. Cada geração passa por essa lente — soa a ti, não a uma ferramenta de IA."
         },
         {
           "title": "Um briefing, oito posts nativos",
@@ -596,7 +596,7 @@
         {
           "badge": "01 · VOZ",
           "title": "Define a tua persona",
-          "description": "Carrega posts de referência, define tom e regras da casa. A tua persona torna-se a lente por onde cada post futuro passa."
+          "description": "Escreve a tua voz, tom e regras da casa numa persona. Torna-se a lente por onde cada post futuro passa."
         },
         {
           "badge": "02 · BRIEFING",
@@ -624,7 +624,7 @@
       "items": [
         {
           "q": "Vai soar a mim?",
-          "a": "É exatamente para isso que servem as personas. Carrega os teus posts antigos, define regras de tom e expressões da casa — cada geração passa por essa lente. Quanto mais afinares a persona, mais perto fica."
+          "a": "Descreves a tua voz, tom e regras da casa numa persona. Cada geração passa por essa lente. Quanto mais detalhada, mais perto da tua voz."
         },
         {
           "q": "Em que plataformas publica mesmo?",
@@ -635,8 +635,8 @@
           "a": "Sempre. O Loritalk produz um rascunho por canal — escolhes, ajustas e publicas. Nada sai sem carregares no botão (a não ser que tenhas agendado)."
         },
         {
-          "q": "E imagens e scripts de vídeo curto?",
-          "a": "Imagens on-brand são geradas por plataforma com o aspect ratio certo (quadrado, vertical 9:16, hero). Para vídeo curto recebes script, hook, texto on-screen e legenda — gravas o vídeo, o Loritalk trata do resto."
+          "q": "E imagens e vídeo curto?",
+          "a": "Imagens on-brand são geradas por plataforma com o aspect ratio certo (quadrado, vertical 9:16, hero). Para vídeo curto recebes uma legenda nativa com hook nos primeiros segundos e CTA — cola direto no TikTok ou YouTube Shorts."
         },
         {
           "q": "O Loritalk é grátis durante a Beta?",

@@ -26,7 +26,7 @@
     "briefCard": {
       "label": "Your brief · 1 of 1",
       "typed": "Launch our new sustainable sneaker. Made from 80% recycled ocean plastic. Targeting Gen Z runners.",
-      "meta": "en · 7 channels · House Voice",
+      "meta": "en · 8 channels · House Voice",
       "send": "Generate ↗"
     },
     "marquee": {
@@ -52,7 +52,7 @@
     "networksValue": "8",
     "networksLabel": "Social networks supported",
     "languagesValue": "24+",
-    "languagesLabel": "Languages supported",
+    "languagesLabel": "UI languages",
     "generationValue": "Seconds",
     "generationLabel": "From brief to publish-ready",
     "freeValue": "Free",
@@ -129,7 +129,7 @@
     "eyebrow": "05 · Workflow",
     "title": "Brief → preview → publish.",
     "titleAccent": "Three moves.",
-    "titleTail": "Five seconds.",
+    "titleTail": "In seconds.",
     "subtitle": "You never pick a model. You never resize an image. You never copy-paste between tabs.",
     "steps": [
       {
@@ -146,7 +146,7 @@
         "title": "AI tailors it per channel",
         "description": "Loritalk reads your brief, your persona and each platform's native rules — then crafts a version made for each channel. Automated moderation runs before you see it.",
         "footLeft": "~ 3 sec per channel",
-        "footRight": "7 versions"
+        "footRight": "Per connected channel"
       },
       {
         "badge": "03",
@@ -154,7 +154,7 @@
         "title": "Publish or schedule",
         "description": "Send now or drop into the calendar with per-platform timing. Each channel ships through its native API; failures are isolated — Instagram still goes even if Facebook hiccups.",
         "footLeft": "Native APIs · OAuth",
-        "footRight": "7 channels"
+        "footRight": "8 channels"
       }
     ],
     "briefViz": {
@@ -565,7 +565,7 @@
       "items": [
         {
           "title": "Your voice, locked in",
-          "description": "Train a persona on your past posts, your favourite phrases, your do's and don'ts. Every generation sounds like you — not like an AI tool."
+          "description": "Define a persona with your voice, tone and specific instructions in plain text. Every generation passes through that lens — sounds like you, not like an AI tool."
         },
         {
           "title": "One brief, eight native posts",
@@ -596,7 +596,7 @@
         {
           "badge": "01 · VOICE",
           "title": "Define your persona",
-          "description": "Drop reference posts, set tone and house rules. Your persona becomes the lens every future post passes through."
+          "description": "Write your voice, tone and house rules into a persona. It becomes the lens every future post passes through."
         },
         {
           "badge": "02 · BRIEF",
@@ -624,7 +624,7 @@
       "items": [
         {
           "q": "Will it sound like me?",
-          "a": "That's the whole point of personas. Drop your past posts, set tone rules and house phrases — every generation passes through that lens. The more you tune the persona, the closer it gets."
+          "a": "Describe your voice, tone and house rules in a persona. Every generation passes through that lens. The more detailed the persona, the closer to your voice."
         },
         {
           "q": "Which platforms do you actually publish to?",
@@ -635,8 +635,8 @@
           "a": "Always. Loritalk produces a draft per channel — you pick, tweak and publish. Nothing goes live without you hitting the button (unless you've scheduled it)."
         },
         {
-          "q": "What about images and short-form video scripts?",
-          "a": "On-brand images are generated per platform with the right aspect ratio (square, vertical 9:16, hero). For short-form video you get the script, hook, on-screen text and caption — record the video, Loritalk handles the rest."
+          "q": "What about images and short-form video?",
+          "a": "On-brand images are generated per platform with the right aspect ratio (square, vertical 9:16, hero). For short-form video you get a native caption with a hook in the first seconds and a CTA — paste straight into TikTok or YouTube Shorts."
         },
         {
           "q": "Is Loritalk free during Beta?",
