@@ -45,7 +45,7 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
   }
 
   return (
-    <div className="bg-[#0a0a0a] min-h-screen pt-24 pb-12">
+    <div className="products-page min-h-screen pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 py-6">
         <nav className="flex items-center gap-1.5 text-xs text-zinc-400 mb-6">
           <Link href="/" className="hover:text-purple-400">Início</Link>

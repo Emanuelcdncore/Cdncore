@@ -14,7 +14,7 @@ const navItems = [
   { icon: IconMessage, label: 'Contact', href: '/contact' },
 ];
 
-const FinalFloatingNav: React.FC = () => {
+const FinalFloatingNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -44,7 +44,7 @@ const FinalFloatingNav: React.FC = () => {
   }, [pathname, router]);
 
   return (
-    <nav className="floating-nav">
+    <nav className={`floating-nav ${hidden ? 'floating-nav-hidden' : ''}`}>
       {navItems.map((item, i) => (
         <a
           key={item.label}

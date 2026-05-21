@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import SmoothScroller from "@/components/SmoothScroller";
 import Footer from "@/components/Footer";
 import AgencyHero from "@/components/agency/AgencyHero";
 import AgencyPains from "@/components/agency/AgencyPains";
@@ -12,7 +13,7 @@ import AgencyCTA from "@/components/agency/AgencyCTA";
 export const metadata: Metadata = {
   title: "Loritalk for Agencies — AI Content for Every Client, Every Network",
   description:
-    "Run dozens of brands from one workspace. Brand-voice personas, approval workflows, multi-client calendar, native publishing across 7 social networks.",
+    "One workspace per brand. Brand-voice personas, per-workspace calendar and analytics, native publishing across 8 social networks.",
   alternates: { canonical: "/agency" },
   openGraph: {
     type: "website",
@@ -20,15 +21,13 @@ export const metadata: Metadata = {
     siteName: "Loritalk",
     title: "Loritalk for Agencies — AI Content for Every Client, Every Network",
     description:
-      "Run dozens of brands from one workspace. Brand-voice personas, approval workflows, multi-client calendar, native publishing.",
+      "One workspace per brand. Brand-voice personas, per-workspace calendar and analytics, native publishing across 8 networks.",
     url: "https://lori-talk.eu/agency",
-    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Loritalk for Agencies" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Loritalk for Agencies — AI Content for Every Client",
-    description: "Run dozens of brands from one workspace.",
-    images: ["/og-default.png"],
+    description: "One workspace per brand, eight networks via native APIs.",
   },
 };
 
@@ -40,8 +39,16 @@ const structuredData = {
       name: "Loritalk for Agencies",
       url: "https://lori-talk.eu/agency",
       description:
-        "AI-powered social media content for marketing agencies: multi-brand workspaces, brand-voice personas, approval workflows, multi-client calendar.",
+        "AI-powered social media content for marketing agencies: one workspace per client brand, brand-voice personas, per-workspace calendar and analytics, native publishing across 8 networks.",
       audience: { "@type": "Audience", audienceType: "Marketing Agencies" },
+      dateModified: new Date().toISOString(),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://lori-talk.eu" },
+        { "@type": "ListItem", position: 2, name: "For Agencies", item: "https://lori-talk.eu/agency" },
+      ],
     },
     {
       "@type": "Product",
@@ -51,7 +58,7 @@ const structuredData = {
       offers: [
         { "@type": "Offer", name: "Ultra",    price: "97",  priceCurrency: "EUR", description: "5 workspaces, 25 channels, 40 personas, 25 team members, 4,600 credits/month." },
         { "@type": "Offer", name: "Business", price: "207", priceCurrency: "EUR", description: "15 workspaces, 75 channels, 120 personas, 75 team members, 9,700 credits/month." },
-        { "@type": "Offer", name: "Custom",   priceCurrency: "EUR", description: "Custom limits, SSO, DPA and dedicated CSM. Contact sales." },
+        { "@type": "Offer", name: "Custom",   priceCurrency: "EUR", description: "Bespoke volumes, priority email support and EU data residency. Contact sales." },
       ],
     },
   ],
@@ -59,19 +66,21 @@ const structuredData = {
 
 export default function AgencyPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Navbar />
-      <main className="flex-1">
-        <AgencyHero />
-        <AgencyPains />
-        <AgencyBenefits />
-        <AgencyWorkflow />
-        <Plans variant="agency" />
-        <AgencyFAQ />
-        <AgencyCTA />
-      </main>
-      <Footer />
-    </div>
+      <SmoothScroller>
+        <main>
+          <AgencyHero />
+          <AgencyPains />
+          <AgencyBenefits />
+          <AgencyWorkflow />
+          <Plans variant="agency" />
+          <AgencyFAQ />
+          <AgencyCTA />
+        </main>
+        <Footer />
+      </SmoothScroller>
+    </>
   );
 }

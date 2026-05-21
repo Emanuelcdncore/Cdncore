@@ -51,7 +51,7 @@ function formatCents(cents: number): string {
   return Number.isInteger(value) ? String(value) : value.toFixed(2);
 }
 
-type Variant = "default" | "agency";
+type Variant = "default" | "agency" | "influencer";
 
 export default function Plans({ variant = "default" }: { variant?: Variant }) {
   const sectionRef = useRef<HTMLElement>(null);
@@ -64,11 +64,12 @@ export default function Plans({ variant = "default" }: { variant?: Variant }) {
 
   const symbol = "€";
   const isAgency = variant === "agency";
-  const plans = [...BASE_PLANS, CUSTOM_PLAN];
+  const isInfluencer = variant === "influencer";
+  const plans = isInfluencer ? BASE_PLANS : [...BASE_PLANS, CUSTOM_PLAN];
 
-  const titleKey = isAgency ? "agency.plans.title" : "pricing.title";
-  const subtitleKey = isAgency ? "agency.plans.subtitle" : "pricing.subtitle";
-  const sectionId = isAgency ? "agency-plans" : "pricing";
+  const titleKey = isAgency ? "agency.plans.title" : isInfluencer ? "influencer.plans.title" : "pricing.title";
+  const subtitleKey = isAgency ? "agency.plans.subtitle" : isInfluencer ? "influencer.plans.subtitle" : "pricing.subtitle";
+  const sectionId = isAgency ? "agency-plans" : isInfluencer ? "influencer-plans" : "pricing";
 
   useEffect(() => {
     const pill = pillRef.current;

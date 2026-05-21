@@ -139,72 +139,74 @@ export default function ProductCatalog({ products }: { products: ProductListItem
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 pt-28">
-      <div className="mb-10">
-        <h1 className="products-depot-font text-4xl md:text-5xl font-semibold text-white mt-3 tracking-tight">Produtos</h1>
-        <p className="text-zinc-400 mt-2 text-sm">{items.length} produtos</p>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10">
-        <aside className="hidden lg:block">{sidebar}</aside>
-        <div>
-          <div className="flex flex-col md:flex-row gap-3 mb-8">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="outline" className="lg:hidden">
-                  <SlidersHorizontal className="h-4 w-4 mr-2" /> Filtros
-                  {activeFilterCount > 0 && (
-                    <span className="ml-2 bg-primary text-primary-foreground rounded-full text-xs px-2 py-0.5">
-                      {activeFilterCount}
-                    </span>
-                  )}
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] overflow-y-auto">
-                <SheetHeader>
-                  <SheetTitle>Filtros</SheetTitle>
-                </SheetHeader>
-                <div className="mt-4">{sidebar}</div>
-              </SheetContent>
-            </Sheet>
-            <Input
-              placeholder="Pesquisar produtos..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="md:max-w-sm bg-white/[0.03] border-white/10"
-            />
-            <div className="md:ml-auto">
-              <Select value={sort} onValueChange={setSort}>
-                <SelectTrigger className="md:w-56 bg-white/[0.03] border-white/10">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="title-asc">Nome A-Z</SelectItem>
-                  <SelectItem value="title-desc">Nome Z-A</SelectItem>
-                  <SelectItem value="price-asc">Preço crescente</SelectItem>
-                  <SelectItem value="price-desc">Preço decrescente</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-          {items.length === 0 ? (
-            <div className="text-center py-16 border border-white/10 rounded-xl bg-white/[0.02]">
-              <p className="text-zinc-400">Nenhum produto encontrado.</p>
-              <Button variant="link" onClick={clearAll}>Limpar filtros</Button>
-            </div>
-          ) : (
-            <>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
-                {items.slice(0, limit).map((p, i) => <ProductCard key={p.id} p={p} index={i} />)}
+    <div className="products-page min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 py-12 pt-28">
+        <div className="mb-10">
+          <h1 className="products-depot-font text-4xl md:text-5xl font-semibold text-white mt-3 tracking-tight">Produtos</h1>
+          <p className="text-muted-foreground mt-2 text-sm">{items.length} produtos</p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10">
+          <aside className="hidden lg:block">{sidebar}</aside>
+          <div>
+            <div className="flex flex-col md:flex-row gap-3 mb-8">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="outline" className="lg:hidden">
+                    <SlidersHorizontal className="h-4 w-4 mr-2" /> Filtros
+                    {activeFilterCount > 0 && (
+                      <span className="ml-2 bg-primary text-primary-foreground rounded-full text-xs px-2 py-0.5">
+                        {activeFilterCount}
+                      </span>
+                    )}
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="left" className="w-[300px] overflow-y-auto">
+                  <SheetHeader>
+                    <SheetTitle>Filtros</SheetTitle>
+                  </SheetHeader>
+                  <div className="mt-4">{sidebar}</div>
+                </SheetContent>
+              </Sheet>
+              <Input
+                placeholder="Pesquisar produtos..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="md:max-w-sm bg-white/[0.03] border-white/10"
+              />
+              <div className="md:ml-auto">
+                <Select value={sort} onValueChange={setSort}>
+                  <SelectTrigger className="md:w-56 bg-white/[0.03] border-white/10">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="title-asc">Nome A-Z</SelectItem>
+                    <SelectItem value="title-desc">Nome Z-A</SelectItem>
+                    <SelectItem value="price-asc">Preço crescente</SelectItem>
+                    <SelectItem value="price-desc">Preço decrescente</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
-              {limit < items.length && (
-                <div className="mt-14 flex justify-center">
-                  <button onClick={() => setLimit(limit + 20)} className="btn-violet">
-                    Carregar mais
-                  </button>
+            </div>
+            {items.length === 0 ? (
+              <div className="text-center py-16 border border-white/10 rounded-xl bg-white/[0.02]">
+                <p className="text-muted-foreground">Nenhum produto encontrado.</p>
+                <Button variant="link" onClick={clearAll}>Limpar filtros</Button>
+              </div>
+            ) : (
+              <>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+                  {items.slice(0, limit).map((p, i) => <ProductCard key={p.id} p={p} index={i} />)}
                 </div>
-              )}
-            </>
-          )}
+                {limit < items.length && (
+                  <div className="mt-14 flex justify-center">
+                    <button onClick={() => setLimit(limit + 20)} className="btn-violet">
+                      Carregar mais
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>
@@ -241,8 +243,8 @@ function FilterSidebar(props: {
   return (
     <div className="text-sm">
       {activeFilterCount > 0 && (
-        <div className="flex items-center justify-between mb-3 pb-3 border-b border-white/10">
-          <span className="text-xs text-zinc-400">{activeFilterCount} filtros ativos</span>
+        <div className="flex items-center justify-between mb-3 pb-3 border-b">
+          <span className="text-xs text-muted-foreground">{activeFilterCount} filtros ativos</span>
           <Button variant="ghost" size="sm" onClick={clearAll} className="h-7 text-xs">
             <X className="h-3 w-3 mr-1" /> Limpar
           </Button>
@@ -271,11 +273,11 @@ function FilterSidebar(props: {
                 value={priceRange}
                 onValueChange={(val) => setPriceRange(val as [number, number])}
               />
-              <div className="flex justify-between text-xs text-zinc-400 mt-4">
+              <div className="flex justify-between text-xs text-muted-foreground mt-4">
                 <span>{formatEUR(priceRange[0])}</span>
                 <span>{formatEUR(priceRange[1])}</span>
               </div>
-              <p className="text-[10px] text-zinc-500 mt-2">Preço máximo: {formatEUR(maxPrice)}</p>
+              <p className="text-[10px] text-muted-foreground mt-2">Preço máximo: {formatEUR(maxPrice)}</p>
             </div>
           </AccordionContent>
         </AccordionItem>
@@ -328,9 +330,12 @@ function FacetList({
       {entries.map(([value, count]) => (
         <li key={value}>
           <label className="flex items-center gap-2 cursor-pointer hover:text-primary">
-            <Checkbox checked={selected.has(value)} onCheckedChange={() => onToggle(value)} />
+            <Checkbox
+              checked={selected.has(value)}
+              onCheckedChange={() => onToggle(value)}
+            />
             <span className="flex-1 truncate">{value}</span>
-            <span className="text-xs text-zinc-500">({count})</span>
+            <span className="text-xs text-muted-foreground">({count})</span>
           </label>
         </li>
       ))}

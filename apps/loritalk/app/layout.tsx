@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Readex_Pro, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
@@ -34,21 +34,23 @@ export const metadata: Metadata = {
     template: "%s | Loritalk",
   },
   description:
-    "Loritalk uses multiple AI models to generate optimized posts for Instagram, LinkedIn, X, TikTok, and Facebook \u2014 in seconds. Free during Beta.",
+    "Loritalk turns one brief into native posts for Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads and Telegram. Free during Beta.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Loritalk",
     title: "Loritalk \u2014 AI Content for Every Social Network",
-    description: "Write one idea, get optimized posts for every platform. Multiple AI models compete to give you the best result.",
+    description:
+      "Write one idea, get a native post for every platform. Brand-voice personas, on-brand images, native publishing across 8 networks.",
     url: "https://lori-talk.eu",
     images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Loritalk \u2014 AI Content for Every Social Network" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Loritalk \u2014 AI Content for Every Social Network",
-    description: "Write one idea, get optimized posts for every platform. Multiple AI models compete to give you the best result.",
+    description:
+      "One brief, eight native posts. Brand-voice personas and on-brand images across every social network.",
     images: ["/og-default.png"],
   },
   verification: {
@@ -56,6 +58,12 @@ export const metadata: Metadata = {
       "facebook-domain-verification": "hvk4falnb1lku5r77jxnhaib78ymdx",
     },
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#94BF5C",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
