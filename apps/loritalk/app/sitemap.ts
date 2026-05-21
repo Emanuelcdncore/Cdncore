@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+// Sitemap entries are regenerated at build time.
 const SITE = "https://lori-talk.eu";
 
 export default function sitemap(): MetadataRoute.Sitemap {
