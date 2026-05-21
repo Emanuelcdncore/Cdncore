@@ -1,5 +1,40 @@
-/* Product page styles (MikroTik theme) */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+/* ─── Page wrapper ──────────────────────────────────────────────────────── */
+.products-page {
+  background-color: #0a0610;
+  background:
+    radial-gradient(1200px 700px at 50% -10%, rgba(139, 92, 246, 0.18), transparent 60%),
+    radial-gradient(900px 600px at 90% 30%, rgba(168, 85, 247, 0.10), transparent 60%),
+    radial-gradient(900px 700px at 10% 80%, rgba(91, 33, 182, 0.12), transparent 60%),
+    #0a0610;
+  background-attachment: fixed;
+}
+
+/* ─── Override CDNCore global resets for shadcn/ui ──────────────────────── */
+.products-page * {
+  border-color: oklch(0.28 0.03 310);
+}
+
+.products-page button {
+  border-style: solid;
+  border-width: 0;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+
+.products-page input {
+  border-style: solid;
+}
+
+/* ─── Fonts ─────────────────────────────────────────────────────────────── */
+.products-depot-font {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Premium product card ──────────────────────────────────────────────── */
 .product-card {
   position: relative;
   display: flex;
@@ -29,6 +64,7 @@
 }
 .product-card:hover::before { opacity: 1; }
 
+/* ─── Violet CTA button ─────────────────────────────────────────────────── */
 .btn-violet {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   padding: 0.875rem 1.75rem;
@@ -43,11 +79,7 @@
 }
 .btn-violet:hover { transform: translateY(-2px); filter: brightness(1.08); box-shadow: 0 16px 40px -10px rgba(124,58,237,0.8); }
 
-.products-depot-font {
-  font-family: 'Space Grotesk', 'Inter', var(--font-depot), sans-serif;
-  letter-spacing: -0.02em;
-}
-
+/* ─── Eyebrow label ─────────────────────────────────────────────────────── */
 .eyebrow {
   display: inline-flex; align-items: center; gap: 0.5rem;
   font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.25em;
@@ -55,6 +87,7 @@
 }
 .eyebrow::before { content: ""; width: 28px; height: 1px; background: linear-gradient(90deg, transparent, #a855f7); }
 
+/* ─── Rich product description HTML (from Shopify) ──────────────────────── */
 .prose-product {
   font-size: 0.925rem;
   line-height: 1.75;
