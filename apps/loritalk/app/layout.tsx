@@ -3,6 +3,8 @@ import { Readex_Pro, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google"
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
 import CookieBanner from "@/components/CookieBanner";
+import MetaPixel from "@/components/MetaPixel";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const readexPro = Readex_Pro({
   variable: "--font-readex",
@@ -49,7 +51,11 @@ export const metadata: Metadata = {
     description: "Write one idea, get optimized posts for every platform. Multiple AI models compete to give you the best result.",
     images: ["/og-default.png"],
   },
-  icons: { icon: [{ url: "/favicon.ico" }] },
+  verification: {
+    other: {
+      "facebook-domain-verification": "hvk4falnb1lku5r77jxnhaib78ymdx",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -68,6 +74,8 @@ export default function RootLayout({
         <I18nProvider>
           {children}
           <CookieBanner />
+          <MetaPixel />
+          <GoogleAnalytics />
         </I18nProvider>
       </body>
     </html>

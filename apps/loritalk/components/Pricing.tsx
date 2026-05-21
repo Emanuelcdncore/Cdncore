@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { savePlanIntent } from "@/lib/planIntent";
+import { onCtaClick } from "@/lib/fbAttribution";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,14 +13,19 @@ type TierAccent = "green" | "tangerine" | "cobalt" | "flame" | "neutral";
 type TierBadge = "most-popular" | "best-value" | null;
 
 type Plan = {
-  code: string;
-  name: string;
-  description: string;
+  code: "STARTER" | "PLUS" | "ULTRA" | "BUSINESS";
   monthlyCents: number | null;
   yearlyCents: number | null;
   creditsPerMonth: number;
   quotas: { workspaces: number; channels: number; personas: number; members: number; media: number };
 };
+
+const PLANS: Plan[] = [
+  { code: "STARTER",  monthlyCents: 1400,  yearlyCents: 14000,  creditsPerMonth: 600,  quotas: { workspaces: 1,  channels: 3,  personas: 4,   members: 3,  media: 100 } },
+  { code: "PLUS",     monthlyCents: 3700,  yearlyCents: 37000,  creditsPerMonth: 1700, quotas: { workspaces: 2,  channels: 10, personas: 15,  members: 10, media: 600 } },
+  { code: "ULTRA",    monthlyCents: 9700,  yearlyCents: 97000,  creditsPerMonth: 4600, quotas: { workspaces: 5,  channels: 25, personas: 40,  members: 25, media: 2500 } },
+  { code: "BUSINESS", monthlyCents: 20700, yearlyCents: 207000, creditsPerMonth: 9700, quotas: { workspaces: 15, channels: 75, personas: 120, members: 75, media: 10000 } },
+];
 
 function tierAccent(code: string | undefined): TierAccent {
   switch ((code ?? "").toUpperCase()) {
@@ -48,10 +55,9 @@ export default function Pricing() {
   const [yearly, setYearly] = useState(true);
   const { t } = useTranslation();
 
-  const plans = t("pricing.plans", { returnObjects: true }) as Plan[];
   const symbol = "€";
 
-  if (!Array.isArray(plans)) return null;
+  if (!Array.isArray(PLANS)) return null;
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -89,7 +95,7 @@ export default function Pricing() {
           <p data-price-sub className="max-w-lg mx-auto" style={{ fontSize: 16, color: "var(--ink-3)", visibility: "hidden" }}>{t("pricing.subtitle")}</p>
         </div>
 
-        <div data-price-toggle className="flex items-center justify-center mb-12" style={{ visibility: "hidden" }}>
+        <div data-price-toggle className="flex items-center justify-center mb-8" style={{ visibility: "hidden" }}>
           <div className="plan-billing-toggle" role="group" aria-label="Billing cycle">
             <button
               type="button"
@@ -111,10 +117,19 @@ export default function Pricing() {
           </div>
         </div>
 
+        {yearly && (
+          <div className="plan-promo-banner" role="status">
+            <span className="material-icons-round plan-promo-banner-icon">card_giftcard</span>
+            <span>{t("pricing.promoExplainer", { count: "2×" })}</span>
+          </div>
+        )}
+
         <div data-price-grid className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto" style={{ paddingTop: 14, alignItems: "stretch" }}>
-          {plans.map((plan) => {
+          {PLANS.map((plan) => {
             const accent = tierAccent(plan.code);
             const badge = tierBadge(plan.code);
+            const name = t(`pricing.tiers.${plan.code}.name`, plan.code);
+            const description = t(`pricing.tiers.${plan.code}.description`, "");
 
             const effectiveCents = yearly
               ? plan.yearlyCents != null
@@ -133,8 +148,10 @@ export default function Pricing() {
                 ? plan.monthlyCents * 12 - plan.yearlyCents
                 : 0;
 
-            const textsPerMonth = Math.floor(plan.creditsPerMonth / 10);
-            const imagesPerMonth = Math.floor(plan.creditsPerMonth / 30);
+            const promoEligible = yearly;
+            const effectiveCredits = promoEligible ? plan.creditsPerMonth * 2 : plan.creditsPerMonth;
+            const textsPerMonth = Math.floor(effectiveCredits / 10);
+            const imagesPerMonth = Math.floor(effectiveCredits / 30);
 
             const checkoutHref = `https://app.lori-talk.eu/signup?plan=${(plan.code ?? "").toLowerCase()}&cycle=${yearly ? "yearly" : "monthly"}`;
 
@@ -156,8 +173,8 @@ export default function Pricing() {
                 )}
 
                 <div className="plan-card-head">
-                  <div className="plan-card-name">{plan.name}</div>
-                  {plan.description && <div className="plan-card-sub">{plan.description}</div>}
+                  <div className="plan-card-name">{name}</div>
+                  {description && <div className="plan-card-sub">{description}</div>}
                 </div>
 
                 {plan.creditsPerMonth > 0 && (
@@ -167,6 +184,11 @@ export default function Pricing() {
                       <span className="plan-card-credits-hero-number">{plan.creditsPerMonth.toLocaleString()}</span>
                       <span className="plan-card-credits-hero-unit">{t("pricing.creditsUnit")}</span>
                     </div>
+                    {promoEligible && (
+                      <div className="plan-card-credits-hero-promo">
+                        {t("pricing.promoHeroExtra", { count: plan.creditsPerMonth.toLocaleString() })}
+                      </div>
+                    )}
                     <div className="plan-card-credits-hero-conv">
                       <div>{t("pricing.creditsTexts", { count: textsPerMonth })}</div>
                       <div className="plan-card-credits-hero-or">{t("pricing.creditsOr")}</div>
@@ -199,7 +221,13 @@ export default function Pricing() {
                   )}
                 </div>
 
-                <a href={checkoutHref} className="plan-card-cta">
+                <a
+                  href={checkoutHref}
+                  className="plan-card-cta"
+                  onClick={onCtaClick(() =>
+                    savePlanIntent((plan.code ?? "").toLowerCase(), yearly ? "yearly" : "monthly"),
+                  )}
+                >
                   <span className="scribble-wrapper">
                     {t("pricing.tierChoose")}
                     <svg className="scribble-line" aria-hidden="true" viewBox="0 0 80 7" preserveAspectRatio="none">

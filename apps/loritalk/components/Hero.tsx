@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CTAButton from "./CTAButton";
+import { onCtaClick } from "@/lib/fbAttribution";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -307,6 +308,7 @@ export default function Hero() {
               <CTAButton
                 data-hero-cta=""
                 href="https://app.lori-talk.eu"
+                onClick={onCtaClick()}
                 className="px-7 py-3 rounded-full font-semibold text-white text-sm hover:opacity-90 transition-opacity"
                 style={{ backgroundColor: "#94BF5C", visibility: "hidden" }}
               >

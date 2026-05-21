@@ -162,18 +162,47 @@
       "personaLabel": "Persona",
       "languageLabel": "Language",
       "personas": [
-        { "name": "Lori", "desc": "Neutral — Lori's house voice" },
-        { "name": "Rupert", "desc": "Relaxed, funny, conversational" },
-        { "name": "Core", "desc": "Bold, optimistic, brand-led" }
+        {
+          "name": "Lori",
+          "desc": "Neutral — Lori's house voice"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Relaxed, funny, conversational"
+        },
+        {
+          "name": "Core",
+          "desc": "Bold, optimistic, brand-led"
+        }
       ]
     },
     "pubViz": {
       "items": [
-        { "platform": "Instagram", "kind": "carousel", "when": "Today 14:00" },
-        { "platform": "LinkedIn", "kind": "long-form", "when": "Today 15:30" },
-        { "platform": "X", "kind": "thread", "when": "Today 16:00" },
-        { "platform": "YouTube", "kind": "short 0:54", "when": "Tomorrow 09:00" },
-        { "platform": "Facebook", "kind": "post", "when": "Tomorrow 12:00" }
+        {
+          "platform": "Instagram",
+          "kind": "carousel",
+          "when": "Today 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "long-form",
+          "when": "Today 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "thread",
+          "when": "Today 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Tomorrow 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "post",
+          "when": "Tomorrow 12:00"
+        }
       ],
       "cta": "▶ Publish all · ⏱ Schedule"
     }
@@ -260,6 +289,8 @@
     "creditsTexts": "~{{count}} text posts",
     "creditsOr": "or",
     "creditsImages": "~{{count}} on-brand images",
+    "promoExplainer": "First-year promo: receive 2× credits EVERY month for your entire first year when you choose Annual — that's {{count}} bonus credits each month.",
+    "promoHeroExtra": "(+{{count}} bonus credits every month for 12 months)",
     "tierChoose": "Choose plan",
     "features": {
       "workspaces_one": "{{count}} workspace",
@@ -270,44 +301,24 @@
       "members_other": "{{count}} team members",
       "media": "{{count}} media assets"
     },
-    "plans": [
-      {
-        "code": "STARTER",
+    "tiers": {
+      "STARTER": {
         "name": "Starter",
-        "description": "For first-time AI content creators",
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600,
-        "quotas": { "workspaces": 1, "channels": 3, "personas": 4, "members": 3, "media": 100 }
+        "description": "For first-time AI content creators"
       },
-      {
-        "code": "PLUS",
+      "PLUS": {
         "name": "Plus",
-        "description": "For consistent and easy AI content creation",
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700,
-        "quotas": { "workspaces": 2, "channels": 10, "personas": 15, "members": 10, "media": 600 }
+        "description": "For consistent and easy AI content creation"
       },
-      {
-        "code": "ULTRA",
+      "ULTRA": {
         "name": "Ultra",
-        "description": "For creators building AI projects",
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600,
-        "quotas": { "workspaces": 5, "channels": 25, "personas": 40, "members": 25, "media": 2500 }
+        "description": "For creators building AI products"
       },
-      {
-        "code": "BUSINESS",
+      "BUSINESS": {
         "name": "Business",
-        "description": "For agencies and small teams",
-        "monthlyCents": 20700,
-        "yearlyCents": 207000,
-        "creditsPerMonth": 9700,
-        "quotas": { "workspaces": 15, "channels": 75, "personas": 120, "members": 75, "media": 10000 }
+        "description": "For agencies and small teams"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Questions? We've got answers.",
@@ -365,11 +376,19 @@
   },
   "cookieBanner": {
     "aria": "Cookie notice",
-    "title": "Cookies on this site",
-    "body": "We only use the strictly necessary local storage to remember your language and that you saw this notice. No analytics, no advertising, no third-party trackers.",
+    "title": "We use cookies",
+    "body": "Strictly necessary cookies keep the site working. With your consent we also load Google Analytics to measure traffic and the Meta Pixel to measure our advertising. You can accept, refuse, or pick category by category — and change your mind at any time.",
     "policyLink": "Cookie Policy",
     "privacyLink": "Privacy Policy",
-    "learnMore": "Read the Cookie Policy",
-    "acknowledge": "Got it"
+    "acceptAll": "Accept all",
+    "rejectOptional": "Reject optional",
+    "customize": "Customise",
+    "save": "Save preferences",
+    "necessaryLabel": "Strictly necessary",
+    "necessaryDesc": "Required for the site to work (language and your consent choice). Cannot be disabled.",
+    "analyticsLabel": "Analytics — Google Analytics",
+    "analyticsDesc": "Loads Google Analytics 4 to measure traffic and improve the site. Sets _ga and _ga_* cookies and transmits page-view data to Google.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Loads the Meta Pixel (Facebook / Instagram) so we can measure ad campaigns. Sets _fbp and _fbc cookies and transmits page-view data to Meta."
   }
 }

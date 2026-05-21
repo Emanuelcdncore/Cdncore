@@ -2,12 +2,13 @@
 
 import React, { useCallback } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { IconHome, IconCode, IconNews, IconHeart, IconMessage } from '@tabler/icons-react';
+import { IconHome, IconCode, IconNews, IconHeart, IconMessage, IconPackage } from '@tabler/icons-react';
 import './css/FloatingNav.css';
 
 const navItems = [
   { icon: IconHome, label: 'Home', href: '/', section: 'hero' },
   { icon: IconCode, label: 'Services', href: '/#capabilities', section: 'capabilities' },
+  { icon: IconPackage, label: 'Products', href: '/products' },
   { icon: IconNews, label: 'News', href: '/news' },
   { icon: IconHeart, label: 'Commitments', href: '/commitments' },
   { icon: IconMessage, label: 'Contact', href: '/contact' },
