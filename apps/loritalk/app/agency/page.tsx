@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import SmoothScroller from "@/components/SmoothScroller";
 import Footer from "@/components/Footer";
 import AgencyHero from "@/components/agency/AgencyHero";
 import AgencyPains from "@/components/agency/AgencyPains";
@@ -51,7 +52,7 @@ const structuredData = {
       offers: [
         { "@type": "Offer", name: "Ultra",    price: "97",  priceCurrency: "EUR", description: "5 workspaces, 25 channels, 40 personas, 25 team members, 4,600 credits/month." },
         { "@type": "Offer", name: "Business", price: "207", priceCurrency: "EUR", description: "15 workspaces, 75 channels, 120 personas, 75 team members, 9,700 credits/month." },
-        { "@type": "Offer", name: "Custom",   priceCurrency: "EUR", description: "Custom limits, SSO, DPA and dedicated CSM. Contact sales." },
+        { "@type": "Offer", name: "Custom",   priceCurrency: "EUR", description: "Bespoke volumes, priority email support and EU data residency. Contact sales." },
       ],
     },
   ],
@@ -59,19 +60,21 @@ const structuredData = {
 
 export default function AgencyPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Navbar />
-      <main className="flex-1">
-        <AgencyHero />
-        <AgencyPains />
-        <AgencyBenefits />
-        <AgencyWorkflow />
-        <Plans variant="agency" />
-        <AgencyFAQ />
-        <AgencyCTA />
-      </main>
-      <Footer />
-    </div>
+      <SmoothScroller>
+        <main>
+          <AgencyHero />
+          <AgencyPains />
+          <AgencyBenefits />
+          <AgencyWorkflow />
+          <Plans variant="agency" />
+          <AgencyFAQ />
+          <AgencyCTA />
+        </main>
+        <Footer />
+      </SmoothScroller>
+    </>
   );
 }

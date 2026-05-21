@@ -84,6 +84,7 @@ export default function Navbar() {
           <a href="#how-it-works" onClick={(e) => { e.preventDefault(); scrollToSection("#how-it-works"); }} className="nav-link text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.howItWorks")}</a>
           <a href="#pricing" onClick={(e) => { e.preventDefault(); scrollToSection("#pricing"); }} className="nav-link text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.pricing")}</a>
           <a href="/agency" className="text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.forAgencies")}</a>
+          <a href="/influencer" className="text-sm font-medium text-black/70 hover:text-black transition-colors">{t("navbar.forCreators")}</a>
           <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: "#5D92E8" }}>{t("navbar.beta")}</span>
         </div>
 
@@ -109,6 +110,7 @@ export default function Navbar() {
           <a href="#how-it-works" onClick={(e) => { e.preventDefault(); setOpen(false); scrollToSection("#how-it-works"); }} className="text-sm font-medium">{t("navbar.howItWorks")}</a>
           <a href="#pricing" onClick={(e) => { e.preventDefault(); setOpen(false); scrollToSection("#pricing"); }} className="text-sm font-medium">{t("navbar.pricing")}</a>
           <a href="/agency" className="text-sm font-medium" onClick={() => setOpen(false)}>{t("navbar.forAgencies")}</a>
+          <a href="/influencer" className="text-sm font-medium" onClick={() => setOpen(false)}>{t("navbar.forCreators")}</a>
           <LanguageSwitcher className="self-start" />
           <div className="flex flex-col gap-2 pt-2 border-t border-black/8">
             <CTAButton href="https://app.lori-talk.eu" className="text-sm font-semibold py-2 rounded-full text-white text-center" style={{ backgroundColor: "#94BF5C" }}>

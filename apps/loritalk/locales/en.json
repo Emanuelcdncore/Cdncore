@@ -4,6 +4,7 @@
     "howItWorks": "How it works",
     "pricing": "Pricing",
     "forAgencies": "For agencies",
+    "forCreators": "For creators",
     "beta": "Beta",
     "startForFree": "Start for free"
   },
@@ -513,6 +514,141 @@
       "subtitle": "Start with the Ultra plan today or book a 20-minute demo with the agency team to see Loritalk on your own brands.",
       "ctaPrimary": "Start with Ultra",
       "ctaSecondary": "Book a demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "For solo creators & influencers",
+      "headlineOne": "One idea.",
+      "headlineTwo": "Every platform.",
+      "headlineThree": "Without losing your weekend.",
+      "lead": "Loritalk turns one brief into <strong>native posts for Instagram, TikTok, YouTube Shorts, X, Threads</strong> and more — keeping your voice consistent across every account.",
+      "ctaPrimary": "Start free with Starter",
+      "ctaSecondary": "See creator plans",
+      "trust": [
+        "Your voice on every channel",
+        "8 networks via native APIs",
+        "Schedule weeks in one go"
+      ],
+      "hubLabel": "Your studio",
+      "hubTitle": "1 brief. 8 native posts.",
+      "hubBody": "Define your persona once. Loritalk adapts every post to each platform — length, hashtags, emoji, tone, image format.",
+      "hubMeta": "1 persona · 8 channels",
+      "hubBadge": "Live",
+      "cardTag": "Native format"
+    },
+    "pains": {
+      "title": "Sound like your week?",
+      "subtitle": "Posting every day on every platform shouldn't cost you a Sunday afternoon. We've been there.",
+      "items": [
+        {
+          "title": "Same idea, rewritten 8 times",
+          "description": "Caption for Instagram, script for TikTok, hook for YouTube, thread for X… every platform needs a different shape. You burn an afternoon on one post."
+        },
+        {
+          "title": "Algorithms punish gaps",
+          "description": "Miss two days and the reach drops. Stay consistent across every platform and you barely have time to film, let alone live your life."
+        },
+        {
+          "title": "Brand deals demand multi-platform",
+          "description": "Sponsors want Reels + Shorts + TikTok + post. Same campaign, four formats. You charge for one and deliver four."
+        },
+        {
+          "title": "Voice gets diluted",
+          "description": "By post fifteen, the captions sound like a stranger wrote them. The audience can tell. Engagement drops."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Everything a creator needs in one place",
+      "subtitle": "Brief once, ship everywhere — without losing the voice your audience follows.",
+      "items": [
+        {
+          "title": "Your voice, locked in",
+          "description": "Train a persona on your past posts, your favourite phrases, your do's and don'ts. Every generation sounds like you — not like an AI tool."
+        },
+        {
+          "title": "One brief, eight native posts",
+          "description": "Write the idea once. Loritalk produces a version optimized for Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn and Telegram in seconds."
+        },
+        {
+          "title": "On-brand images per format",
+          "description": "Feed posts, stories, hero crops, vertical for Reels and Shorts. Images are rendered with the right aspect ratio and your persona's visual rules."
+        },
+        {
+          "title": "Schedule a week in one sitting",
+          "description": "Plan Monday-to-Sunday across every platform inside one calendar. Native APIs push automatically — even when you're filming the next batch."
+        },
+        {
+          "title": "See what's growing",
+          "description": "Reach, engagement, clicks and follower growth per channel. KPI cards and Lori Insights surface what's working — double down on it."
+        },
+        {
+          "title": "Moderated before it ships",
+          "description": "Every draft passes through automated moderation, so brand-safe content reaches your audience and your sponsors stay happy."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "How a creator week looks on Loritalk",
+      "subtitle": "Capture your voice once, brief one idea, ship across every platform, watch what grows.",
+      "steps": [
+        {
+          "badge": "01 · VOICE",
+          "title": "Define your persona",
+          "description": "Drop reference posts, set tone and house rules. Your persona becomes the lens every future post passes through."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Brief one idea",
+          "description": "Type the concept, pick channels and language. Loritalk produces a native version per platform in seconds — captions, scripts, threads, hooks."
+        },
+        {
+          "badge": "03 · SHIP",
+          "title": "Edit & schedule",
+          "description": "Polish the strongest variant per channel, queue everything in the calendar, walk away. APIs publish at the right time, in the right format."
+        },
+        {
+          "badge": "04 · TRACK",
+          "title": "Watch what's working",
+          "description": "Per-channel analytics show what's pulling in reach and engagement. Iterate the angle, not the workflow."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plans built for creators",
+      "subtitle": "Start free during Beta. Pick the volume that matches how often you post."
+    },
+    "faq": {
+      "title": "Creator questions, answered.",
+      "items": [
+        {
+          "q": "Will it sound like me?",
+          "a": "That's the whole point of personas. Drop your past posts, set tone rules and house phrases — every generation passes through that lens. The more you tune the persona, the closer it gets."
+        },
+        {
+          "q": "Which platforms do you actually publish to?",
+          "a": "Native publishing covers Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn and Telegram — eight networks via official APIs. Failures on one channel never block the others."
+        },
+        {
+          "q": "Can I edit before posting?",
+          "a": "Always. Loritalk produces a draft per channel — you pick, tweak and publish. Nothing goes live without you hitting the button (unless you've scheduled it)."
+        },
+        {
+          "q": "What about images and short-form video scripts?",
+          "a": "On-brand images are generated per platform with the right aspect ratio (square, vertical 9:16, hero). For short-form video you get the script, hook, on-screen text and caption — record the video, Loritalk handles the rest."
+        },
+        {
+          "q": "Is Loritalk free during Beta?",
+          "a": "Yes. Beta access is free with generous limits. Every Beta user keeps their current rate locked forever when paid plans launch."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Stop rewriting. Start shipping.",
+      "subtitle": "Join the Beta — free, no credit card, your rate is locked forever when we launch.",
+      "ctaPrimary": "Start free with Starter",
+      "ctaSecondary": "See creator plans"
     }
   }
 }
