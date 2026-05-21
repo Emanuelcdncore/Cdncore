@@ -1,12 +1,15 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import { loadScript, loadStyle } from '@/lib/load-external';
 
 declare global {
   interface Window { L: any; }
 }
 
 const bp = process.env.BASE_PATH || '';
+const LEAFLET_CSS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+const LEAFLET_JS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
 
 const CustomMap: React.FC = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -52,36 +55,20 @@ const CustomMap: React.FC = () => {
       }
     };
 
-    const loadLeaflet = () => {
-      if (!document.querySelector('link[href*="leaflet@1.9.4"]')) {
-        const css = document.createElement('link');
-        css.rel = 'stylesheet';
-        css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-        document.head.appendChild(css);
-      }
-
-      if (!window.L) {
-        const script = document.createElement('script');
-        script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-        script.onload = () => setTimeout(loadLeafletMap, 100);
-        script.onerror = () => {
-          if (mapRef.current) {
-            mapRef.current.innerHTML = `
-              <div style="width:100%;height:100%;background:#1a1a2e;display:flex;align-items:center;justify-content:center;color:#8B5CF6;font-family:Arial,sans-serif;">
-                <div style="text-align:center;">
-                  <div>CDNCORE</div>
-                  <div style="font-size:12px;color:#ccc;">Rua G 60, 6200-823 Covilhã, Portugal</div>
-                </div>
-              </div>`;
-          }
-        };
-        document.head.appendChild(script);
-      } else {
-        loadLeafletMap();
-      }
-    };
-
-    loadLeaflet();
+    loadStyle(LEAFLET_CSS).catch(() => {});
+    loadScript(LEAFLET_JS)
+      .then(() => setTimeout(loadLeafletMap, 50))
+      .catch(() => {
+        if (mapRef.current) {
+          mapRef.current.innerHTML = `
+            <div style="width:100%;height:100%;background:#1a1a2e;display:flex;align-items:center;justify-content:center;color:#8B5CF6;font-family:Arial,sans-serif;">
+              <div style="text-align:center;">
+                <div>CDNCORE</div>
+                <div style="font-size:12px;color:#ccc;">Rua G 60, 6200-823 Covilhã, Portugal</div>
+              </div>
+            </div>`;
+        }
+      });
 
     return () => {
       if (mapInstanceRef.current) {

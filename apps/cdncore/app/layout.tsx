@@ -72,16 +72,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Three.js r134 for VANTA */}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
-        {/* VANTA FOG */}
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js" defer></script>
-        {/* VANTA DOTS */}
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js" defer></script>
-        {/* Leaflet CSS */}
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-        {/* Leaflet JS */}
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+        {/*
+          Three.js / VANTA / Leaflet are loaded on demand by the components that
+          use them (VantaFog, VantaDots, CustomMap) via lib/load-external.ts.
+          Keeping them out of <head> avoids ~800KB of JS executing on routes that
+          do not render any WebGL background or map.
+        */}
       </head>
       <body className={`${inter.variable} ${depot.variable} antialiased`}>
         <I18nProvider>
