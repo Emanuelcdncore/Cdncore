@@ -34,6 +34,7 @@ export default function Differentiator() {
             scrub: 0.8,
             pin: true,
             pinSpacing: true,
+            pinType: "transform",
           },
         });
 

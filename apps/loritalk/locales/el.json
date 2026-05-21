@@ -176,7 +176,18 @@
           "Βασικοί έλεγχοι τόνου",
           "Προτάσεις hashtag"
         ],
-        "cta": "Ξεκινήστε δωρεάν"
+        "cta": "Ξεκινήστε δωρεάν",
+        "code": "STARTER",
+        "quotas": {
+          "workspaces": 1,
+          "channels": 3,
+          "personas": 4,
+          "members": 3,
+          "media": 100
+        },
+        "monthlyCents": 1400,
+        "yearlyCents": 14000,
+        "creditsPerMonth": 600
       },
       {
         "name": "Creator",
@@ -192,7 +203,18 @@
           "Ημερολόγιο περιεχομένου",
           "Υποστήριξη προτεραιότητας"
         ],
-        "cta": "Ξεκινήστε δωρεάν δοκιμή"
+        "cta": "Ξεκινήστε δωρεάν δοκιμή",
+        "code": "PLUS",
+        "quotas": {
+          "workspaces": 2,
+          "channels": 10,
+          "personas": 15,
+          "members": 10,
+          "media": 600
+        },
+        "monthlyCents": 3700,
+        "yearlyCents": 37000,
+        "creditsPerMonth": 1700
       },
       {
         "name": "Agency",
@@ -210,7 +232,18 @@
           "Υπεύθυνος λογαριασμού"
         ],
         "cta": "Επικοινωνήστε μαζί μας",
-        "customPrice": true
+        "customPrice": true,
+        "code": "ULTRA",
+        "quotas": {
+          "workspaces": 5,
+          "channels": 25,
+          "personas": 40,
+          "members": 25,
+          "media": 2500
+        },
+        "monthlyCents": 9700,
+        "yearlyCents": 97000,
+        "creditsPerMonth": 4600
       }
     ]
   },

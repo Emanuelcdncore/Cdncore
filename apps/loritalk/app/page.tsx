@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import SmoothScroller from "@/components/SmoothScroller";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Problem from "@/components/Problem";
@@ -74,25 +75,27 @@ const structuredData = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Navbar />
-      <main className="flex-1">
-        <Hero />
-        <Stats />
-        <Problem />
-        <Solution />
-        <Features />
-        <HowItWorks />
-        <Imagery />
-        <Differentiator />
-        <UseCases />
-        <Pricing />
-        <Reviews />
-        <FAQ />
-        <CTABanner />
-      </main>
-      <Footer />
-    </div>
+      <SmoothScroller>
+        <main>
+          <Hero />
+          <Stats />
+          <Problem />
+          <Solution />
+          <Features />
+          <HowItWorks />
+          <Imagery />
+          <Differentiator />
+          <UseCases />
+          <Pricing />
+          <Reviews />
+          <FAQ />
+          <CTABanner />
+        </main>
+        <Footer />
+      </SmoothScroller>
+    </>
   );
 }

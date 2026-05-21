@@ -1,5 +1,11 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const reviews = [
   {
     name: "Sofia Ribeiro",
@@ -52,10 +58,27 @@ const reviews = [
 ];
 
 export default function Reviews() {
+  const sectionRef = useRef<HTMLElement>(null);
   const track = [...reviews, ...reviews];
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const mm = gsap.matchMedia();
+      mm.add("(prefers-reduced-motion: no-preference)", () => {
+        gsap.from(sectionRef.current, {
+          y: 30, autoAlpha: 0, duration: 0.7, ease: "power3.out",
+          scrollTrigger: { trigger: sectionRef.current, start: "top 88%", once: true },
+        });
+      });
+      mm.add("(prefers-reduced-motion: reduce)", () => {
+        gsap.set(sectionRef.current, { autoAlpha: 1, clearProps: "all" });
+      });
+    }, sectionRef);
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="py-14 bg-white overflow-hidden">
+    <section ref={sectionRef} className="py-14 bg-white overflow-hidden">
       <style>{`
         @keyframes lori-marquee {
           0%   { transform: translateX(0); }

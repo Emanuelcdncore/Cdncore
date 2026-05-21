@@ -161,13 +161,24 @@ export default function HowItWorks() {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
       mm.add("(prefers-reduced-motion: no-preference)", () => {
-        gsap.from("[data-hiw-eyebrow]", { y: 20, autoAlpha: 0, duration: 0.6, scrollTrigger: { trigger: "[data-hiw-head]", start: "top 85%", once: true } });
-        gsap.from("[data-hiw-title]", { y: 30, autoAlpha: 0, duration: 0.7, delay: 0.1, scrollTrigger: { trigger: "[data-hiw-head]", start: "top 85%", once: true } });
-        gsap.from("[data-hiw-sub]", { y: 20, autoAlpha: 0, duration: 0.5, delay: 0.2, scrollTrigger: { trigger: "[data-hiw-head]", start: "top 85%", once: true } });
-        gsap.from("[data-hiw-step]", { y: 40, autoAlpha: 0, duration: 0.7, stagger: 0.15, ease: "power3.out", scrollTrigger: { trigger: "[data-hiw-grid]", start: "top 80%", once: true } });
+        const headTl = gsap.timeline({
+          scrollTrigger: { trigger: "[data-hiw-head]", start: "top 85%", once: true },
+        });
+        headTl
+          .from("[data-hiw-title]", { y: 40, autoAlpha: 0, duration: 0.8, ease: "power4.out" })
+          .from("[data-hiw-sub]", { y: 24, autoAlpha: 0, duration: 0.65, ease: "power3.out" }, "-=0.45");
+
+        gsap.set("[data-hiw-step]", { y: 55, autoAlpha: 0, scale: 0.95 });
+        ScrollTrigger.batch("[data-hiw-step]", {
+          onEnter: (els) => gsap.to(els, {
+            autoAlpha: 1, y: 0, scale: 1, duration: 0.8, stagger: 0.15, ease: "back.out(1.4)",
+          }),
+          start: "top 82%",
+          once: true,
+        });
       });
       mm.add("(prefers-reduced-motion: reduce)", () => {
-        gsap.set("[data-hiw-eyebrow], [data-hiw-title], [data-hiw-sub], [data-hiw-step]", { autoAlpha: 1, clearProps: "all" });
+        gsap.set("[data-hiw-title], [data-hiw-sub], [data-hiw-step]", { autoAlpha: 1, clearProps: "all" });
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -177,10 +188,7 @@ export default function HowItWorks() {
     <section ref={sectionRef} id="how-it-works" className="py-24 md:py-32 relative" style={{ background: "var(--paper-2)" }}>
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         <div data-hiw-head className="max-w-[820px] mb-16">
-          <div data-hiw-eyebrow className="inline-flex items-center gap-2.5 uppercase mb-5" style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.18em", color: "var(--fg-tertiary)", visibility: "hidden" }}>
-            <span style={{ width: 24, height: 1, background: "var(--ink-1)" }} />
-            {t("howItWorks.eyebrow")}
-          </div>
+
           <h2 data-hiw-title className="font-extrabold" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(36px, 4.6vw, 64px)", lineHeight: 1.05, letterSpacing: "-0.025em", color: "var(--ink-1)", visibility: "hidden" }}>
             {t("howItWorks.title")}
             <br />

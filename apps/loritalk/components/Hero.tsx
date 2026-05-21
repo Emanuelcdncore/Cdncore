@@ -3,15 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CTAButton from "./CTAButton";
 
-type MarqueeKey =
-  | "instagram"
-  | "linkedin"
-  | "x"
-  | "youtube"
-  | "threads"
-  | "facebook"
-  | "telegram";
+gsap.registerPlugin(ScrollTrigger);
+
+type MarqueeKey = "instagram" | "linkedin" | "x" | "youtube" | "threads" | "facebook" | "telegram";
 
 const PLATFORM_ICONS: Record<MarqueeKey, { bg: string; path: string }> = {
   instagram: {
@@ -55,60 +52,182 @@ const PlatformIcon = ({ id, size = 18 }: { id: MarqueeKey; size?: number }) => (
   </span>
 );
 
-type PlatformCard = {
-  id: MarqueeKey;
-  pos: { top?: string; bottom?: string; left?: string; right?: string };
-  body: string;
-  audit: string;
-  hasImg?: boolean;
-};
+type PlatformCard = { id: MarqueeKey; body: string; audit: string; hasImg?: boolean };
 
 const PLATFORM_CARDS: PlatformCard[] = [
-  { id: "instagram", pos: { top: "4%", left: "-4%" }, body: "Step into the future of running. Our lightest shoe — built from #80%recycled ocean plastic 🌊", audit: "9.4/10", hasImg: true },
-  { id: "facebook", pos: { top: "34%", left: "-7%" }, body: "Big news from our team — meet the shoe we've been working on for 18 months.", audit: "9.2/10" },
-  { id: "linkedin", pos: { top: "0%", right: "2%" }, body: "After 18 months of R&D, we're launching our most ambitious sneaker — engineered from 80% post-consumer plastic.", audit: "9.7/10" },
-  { id: "x", pos: { top: "32%", right: "-6%" }, body: "we made a sneaker out of ocean plastic. it's faster than the last one. 🔥", audit: "9.1/10" },
-  { id: "threads", pos: { bottom: "-2%", left: "6%" }, body: "running shoes, but make them out of the ocean. drop's at noon.", audit: "9.0/10" },
-  { id: "youtube", pos: { bottom: "4%", right: "0%" }, body: "Hook: \"What if your shoes were made of trash?\" · 0:08 reveal · 100s cut", audit: "8.9/10" },
-  { id: "telegram", pos: { top: "62%", left: "12%" }, body: "📣 New drop · sustainable runners · link in next message", audit: "9.3/10" },
+  { id: "instagram", body: "Step into the future of running. Our lightest shoe — built from 80% recycled ocean plastic 🌊", audit: "9.4/10", hasImg: true },
+  { id: "linkedin", body: "After 18 months of R&D, we're launching our most ambitious sneaker — engineered from 80% post-consumer plastic.", audit: "9.7/10" },
+  { id: "facebook", body: "Big news from our team — meet the shoe we've been working on for 18 months.", audit: "9.2/10" },
+  { id: "x", body: "we made a sneaker out of ocean plastic. it's faster than the last one. 🔥", audit: "9.1/10" },
+  { id: "telegram", body: "📣 New drop · sustainable runners · link in next message", audit: "9.3/10" },
+  { id: "threads", body: "running shoes, but make them out of the ocean. drop's at noon.", audit: "9.0/10" },
+  { id: "youtube", body: "Hook: \"What if your shoes were made of trash?\" · 0:08 reveal · 100s cut", audit: "8.9/10" },
 ];
 
-const MARQUEE_KEYS: MarqueeKey[] = ["instagram", "linkedin", "x", "youtube", "threads", "facebook", "telegram"];
+// Fluid vertical offsets so cards don't sit on the same baseline
+const CARD_TOP_OFFSETS = [0, 32, 14, 48, 8, 28, 42];
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
-  const stageRef = useRef<HTMLDivElement>(null);
-  const briefRef = useRef<HTMLDivElement>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const svgRef = useRef<SVGSVGElement>(null);
-  const { t } = useTranslation();
+  const stageRef  = useRef<HTMLDivElement>(null);
+  const briefRef  = useRef<HTMLDivElement>(null);
+  const cardRefs  = useRef<(HTMLDivElement | null)[]>([]);
+  const svgRef    = useRef<SVGSVGElement>(null);
+  const { t }     = useTranslation();
   const [typed, setTyped] = useState("");
-
-  const trustItems = t("hero.trust", { returnObjects: true }) as string[];
   const target = t("hero.briefCard.typed") as string;
 
   useEffect(() => {
     let cancelled = false;
-    const reduced = typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const ctx = gsap.context(() => {
-      const cards = cardRefs.current.filter(Boolean) as HTMLDivElement[];
+      // Parallax background shapes
+      if (!reduced) {
+        gsap.utils.toArray<HTMLElement>("[data-hero-shape]").forEach((shape, i) => {
+          gsap.to(shape, {
+            y: (i + 1) * -40,
+            ease: "none",
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: "top top",
+              end: "bottom top",
+              scrub: 1,
+            },
+          });
+        });
+      }
 
+      // Reduced motion — reveal everything immediately
       if (reduced) {
-        gsap.set("[data-hero-badge], [data-hero-line], [data-hero-lead], [data-hero-cta], [data-hero-trust], [data-hero-brief]", { autoAlpha: 1, clearProps: "all" });
+        gsap.set(
+          "[data-hero-badge], [data-hero-line], [data-hero-sub], [data-hero-cta]",
+          { autoAlpha: 1, clearProps: "all" }
+        );
+        if (briefRef.current) gsap.set(briefRef.current, { autoAlpha: 1, clearProps: "all" });
+        const cards = cardRefs.current.filter(Boolean) as HTMLDivElement[];
         gsap.set(cards, { opacity: 1, scale: 1, clearProps: "transform,opacity" });
+        cards.forEach((card) => {
+          gsap.set(
+            card.querySelectorAll("[data-card-body],[data-card-img],[data-card-audit]"),
+            { autoAlpha: 1, clearProps: "all" }
+          );
+        });
         setTyped(target);
         return;
       }
 
-      const entry = gsap.timeline({ defaults: { ease: "power3.out" } });
-      entry.from("[data-hero-badge]", { y: -30, autoAlpha: 0, duration: 0.6, ease: "back.out(2)" });
-      entry.from("[data-hero-line]", { y: 30, autoAlpha: 0, duration: 0.7, stagger: 0.12 }, "-=0.25");
-      entry.from("[data-hero-lead]", { y: 20, autoAlpha: 0, duration: 0.5 }, "-=0.3");
-      entry.from("[data-hero-cta]", { scale: 0.9, autoAlpha: 0, duration: 0.5, stagger: 0.08, ease: "back.out(2)" }, "-=0.2");
-      entry.from("[data-hero-trust]", { y: 12, autoAlpha: 0, duration: 0.5, stagger: 0.06 }, "-=0.2");
-      entry.from(briefRef.current, { scale: 0.92, autoAlpha: 0, duration: 0.7, ease: "power2.out" }, "-=0.5");
+      // Entry animation
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      tl.from("[data-hero-badge]", { y: -40, autoAlpha: 0, duration: 0.7, ease: "back.out(2)" });
+      tl.from("[data-hero-line]",  { clipPath: "inset(0 0 100% 0)", y: 40, duration: 0.8, stagger: 0.15, ease: "power4.out" }, "-=0.3");
+      tl.from("[data-hero-sub]",   { y: 30, autoAlpha: 0, duration: 0.6 }, "-=0.3");
+      tl.from("[data-hero-cta]",   { scale: 0, autoAlpha: 0, duration: 0.6, stagger: 0.1, ease: "back.out(3)" }, "-=0.2");
+      tl.from(briefRef.current,    { scale: 0.92, autoAlpha: 0, duration: 0.75, ease: "power3.out" }, "-=0.2");
 
+      // SVG connector helpers
+      const buildConnectorPath = (card: HTMLDivElement): SVGPathElement | null => {
+        const svg   = svgRef.current;
+        const stage = stageRef.current;
+        const brief = briefRef.current;
+        if (!svg || !stage || !brief) return null;
+        const sRect = stage.getBoundingClientRect();
+        const bRect = brief.getBoundingClientRect();
+        const bx = bRect.left - sRect.left + bRect.width / 2;
+        const by = bRect.top  - sRect.top  + bRect.height / 2;
+        const c  = card.getBoundingClientRect();
+        const cx = c.left - sRect.left + c.width  / 2;
+        const cy = c.top  - sRect.top  + c.height / 2;
+        // Control point: bow slightly upward between the two centres
+        const mx = (bx + cx) / 2;
+        const my = (by + cy) / 2 - 24;
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", `M${bx},${by} Q${mx},${my} ${cx},${cy}`);
+        path.setAttribute("stroke", "#94bf5c");
+        path.setAttribute("stroke-width", "1.4");
+        path.setAttribute("fill", "none");
+        path.setAttribute("stroke-dasharray", "4 5");
+        return path;
+      };
+
+      const addConnectorAnimated = (i: number) => {
+        const card = cardRefs.current[i];
+        if (!card || cancelled) return;
+        const path = buildConnectorPath(card);
+        if (!path) return;
+        path.setAttribute("opacity", "0");
+        svgRef.current?.appendChild(path);
+        gsap.to(path, { opacity: 0.55, duration: 0.55, ease: "power2.out" });
+      };
+
+      const redrawConnectorsStatic = () => {
+        const svg = svgRef.current;
+        if (!svg) return;
+        svg.innerHTML = "";
+        cardRefs.current.forEach((card, i) => {
+          if (!card) return;
+          if (parseFloat(window.getComputedStyle(card).opacity) < 0.5) return;
+          const path = buildConnectorPath(card);
+          if (!path) return;
+          path.setAttribute("opacity", "0.55");
+          svg.appendChild(path);
+          void i;
+        });
+      };
+
+      // Fan-out sequence (triggered after typing completes)
+      const fanOut = () => {
+        if (cancelled || !briefRef.current) return;
+        const cards = cardRefs.current.filter(Boolean) as HTMLDivElement[];
+        if (svgRef.current) svgRef.current.innerHTML = "";
+
+        const masterTl = gsap.timeline();
+
+        // Brief card "send" pulse
+        masterTl
+          .to(briefRef.current, { scale: 0.94, duration: 0.2, ease: "power2.in" })
+          .to(briefRef.current, {
+            scale: 1.04,
+            boxShadow: "0 0 0 4px rgba(148,191,92,0.55), 0 16px 48px rgba(148,191,92,0.26)",
+            duration: 0.42,
+            ease: "back.out(2.5)",
+          })
+          .to(briefRef.current, {
+            scale: 1,
+            boxShadow: "0 8px 32px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.04)",
+            duration: 0.6,
+            ease: "power3.out",
+          });
+
+        const sendEl = briefRef.current.querySelector("[data-brief-send]");
+        if (sendEl) {
+          masterTl.to(sendEl, { scale: 1.18, duration: 0.14, ease: "power2.out", yoyo: true, repeat: 1 }, "<0.08");
+        }
+
+        const BASE = 0.5;
+        const STEP = 0.28;
+
+        cards.forEach((card, i) => {
+          const t0 = BASE + i * STEP;
+          masterTl.fromTo(
+            card,
+            { autoAlpha: 0, scale: 0.2, transformOrigin: "50% 50%" },
+            { autoAlpha: 1, scale: 1, duration: 0.7, ease: "back.out(2.2)" },
+            t0
+          );
+          const bodyEl  = card.querySelector("[data-card-body]");
+          const imgEl   = card.querySelector("[data-card-img]");
+          const auditEl = card.querySelector("[data-card-audit]");
+          if (bodyEl)  masterTl.from(bodyEl,  { autoAlpha: 0, y: 9, duration: 0.42, ease: "power3.out" }, t0 + 0.32);
+          if (imgEl)   masterTl.from(imgEl,   { scaleY: 0, autoAlpha: 0, transformOrigin: "top center", duration: 0.38, ease: "power2.out" }, t0 + 0.4);
+          if (auditEl) masterTl.from(auditEl, { autoAlpha: 0, scale: 0.3, duration: 0.34, ease: "back.out(3.5)" }, t0 + 0.48);
+          masterTl.call(() => { if (!cancelled) addConnectorAnimated(i); }, undefined, t0 + 0.2);
+        });
+      };
+
+      // Typewriter
       let charI = 0;
       const typeChar = () => {
         if (cancelled) return;
@@ -117,39 +236,13 @@ export default function Hero() {
           charI++;
           setTimeout(typeChar, 22 + Math.random() * 30);
         } else {
-          setTimeout(fanOut, 500);
+          setTimeout(fanOut, 480);
         }
       };
       const startTyping = setTimeout(typeChar, 800);
 
-      const fanOut = () => {
-        if (cancelled || !briefRef.current) return;
-        const tl = gsap.timeline({
-          onComplete: () => {
-            if (cancelled) return;
-            drawConnectors();
-            const paths = svgRef.current?.querySelectorAll("path");
-            if (paths && paths.length) {
-              gsap.fromTo(
-                paths,
-                { strokeDashoffset: 300 },
-                { strokeDashoffset: 0, duration: 1.1, ease: "power2.out", stagger: 0.05 }
-              );
-            }
-          },
-        });
-        tl.to(briefRef.current, { scale: 0.94, duration: 0.25, ease: "power2.out" })
-          .to(briefRef.current, { scale: 1, duration: 0.4, ease: "back.out(1.6)" })
-          .to(cards, { opacity: 1, scale: 1, duration: 0.85, ease: "back.out(1.4)", stagger: 0.07 }, "-=0.2")
-          .from(
-            cards.map((c) => c.querySelector("[data-card-audit]")).filter(Boolean) as Element[],
-            { opacity: 0, y: 6, duration: 0.4, stagger: 0.06 },
-            "-=0.4"
-          );
-      };
-
       const onResize = () => {
-        if (svgRef.current?.querySelectorAll("path").length) drawConnectors();
+        if (svgRef.current?.querySelector("path")) redrawConnectorsStatic();
       };
       window.addEventListener("resize", onResize);
 
@@ -163,154 +256,176 @@ export default function Hero() {
       cancelled = true;
       ctx.revert();
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const drawConnectors = () => {
-    const svg = svgRef.current;
-    const stage = stageRef.current;
-    const brief = briefRef.current;
-    if (!svg || !stage || !brief) return;
-    svg.innerHTML = "";
-    const sRect = stage.getBoundingClientRect();
-    const bRect = brief.getBoundingClientRect();
-    const bx = bRect.left - sRect.left + bRect.width / 2;
-    const by = bRect.top - sRect.top + bRect.height / 2;
-    cardRefs.current.forEach((card) => {
-      if (!card) return;
-      const c = card.getBoundingClientRect();
-      const cx = c.left - sRect.left + c.width / 2;
-      const cy = c.top - sRect.top + c.height / 2;
-      const mx = (bx + cx) / 2;
-      const my = (by + cy) / 2 + (cy > by ? -30 : 30);
-      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      path.setAttribute("d", `M${bx},${by} Q${mx},${my} ${cx},${cy}`);
-      path.setAttribute("stroke", "#94bf5c");
-      path.setAttribute("stroke-width", "1.4");
-      path.setAttribute("fill", "none");
-      path.setAttribute("stroke-dasharray", "4 5");
-      path.setAttribute("opacity", "0.5");
-      svg.appendChild(path);
-    });
-  };
-
   return (
-    <section ref={sectionRef} className="relative overflow-hidden pt-28 pb-16 md:pb-24" style={{ background: "var(--paper-2)" }}>
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div className="absolute rounded-full blur-3xl opacity-35" style={{ width: 600, height: 600, top: -200, left: -200, background: "var(--feather-green)", mixBlendMode: "multiply", animation: "floatBlob 16s ease-in-out infinite" }} />
-        <div className="absolute rounded-full blur-3xl opacity-30" style={{ width: 500, height: 500, top: -100, right: -100, background: "var(--feather-sky)", mixBlendMode: "multiply", animation: "floatBlob 16s ease-in-out -4s infinite" }} />
-        <div className="absolute rounded-full blur-3xl opacity-25" style={{ width: 400, height: 400, bottom: -100, right: "20%", background: "var(--feather-tangerine)", mixBlendMode: "multiply", animation: "floatBlob 16s ease-in-out -8s infinite" }} />
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden bg-white"
+      style={{ perspective: "1200px" }}
+    >
+      {/* Background shapes with parallax */}
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div data-hero-shape className="absolute -top-32 -right-32 w-96 h-96 rounded-full opacity-10"        style={{ backgroundColor: "#5D92E8" }} />
+        <div data-hero-shape className="absolute top-10 -left-20 w-72 h-72 rounded-full opacity-[0.08]"      style={{ backgroundColor: "#94BF5C" }} />
+        <div data-hero-shape className="absolute top-1/3 -right-16 w-48 h-48 rounded-full opacity-10"        style={{ backgroundColor: "#FF9852" }} />
+        <div data-hero-shape className="absolute top-1/2 left-[10%] w-24 h-24 rotate-45 rounded-lg opacity-[0.06]" style={{ backgroundColor: "#E54013" }} />
       </div>
 
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-8 grid lg:grid-cols-[1.05fr_1fr] gap-12 lg:gap-20 items-center">
-        <div>
-          <div data-hero-badge className="inline-flex items-center gap-3 pl-2 pr-4 py-1.5 rounded-full text-xs font-semibold bg-white border" style={{ borderColor: "var(--border-default)", color: "var(--fg-secondary)", boxShadow: "var(--shadow-sm)", visibility: "hidden" }}>
-            <span className="relative w-[18px] h-[18px] grid place-items-center rounded-full" style={{ background: "var(--feather-green)" }}>
-              <span className="w-[7px] h-[7px] rounded-full bg-white" />
-              <span className="absolute inset-0 rounded-full" style={{ background: "var(--feather-green)", animation: "pulseRing 2s ease-out infinite", opacity: 0.6 }} />
-            </span>
-            {t("hero.badge")}
-          </div>
+      <div className="relative max-w-6xl mx-auto px-6 py-14 md:py-20 flex flex-col items-center text-center gap-6">
 
-          <h1 className="mt-6 mb-7 font-extrabold" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(48px, 6.6vw, 96px)", lineHeight: 0.98, letterSpacing: "-0.035em", color: "var(--ink-1)" }}>
-            <span data-hero-line className="block">{t("hero.headlineOne")}</span>
-            <span data-hero-line className="block">
-              <span style={{ background: "var(--feather-gradient)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", display: "inline-block" }}>{t("hero.headlineTwo")}</span>{" "}{t("hero.headlineTwoTail")}
-            </span>
-            <span data-hero-line className="block">
-              <span className="relative inline-block" style={{ color: "var(--ink-3)" }}>
-                {t("hero.headlineStrike")}
-                <span className="absolute left-[-2%] right-[-2%] h-[5px] rounded" style={{ top: "55%", background: "var(--feather-flame)", transform: "scaleX(0)", transformOrigin: "left", animation: "strikeIn 1s 1.4s cubic-bezier(0.2,0.8,0.2,1) forwards" }} />
-              </span>{" "}{t("hero.headlineThree")}
-            </span>
-          </h1>
+        {/* Badge */}
+        <div
+          data-hero-badge
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-white"
+          style={{ backgroundColor: "#5D92E8", visibility: "hidden" }}
+        >
+          <span className="material-icons-round text-sm">science</span>
+          {t("hero.badge")}
+        </div>
 
-          <p data-hero-lead className="text-lg leading-relaxed max-w-[540px] mb-8" style={{ color: "var(--fg-secondary)", visibility: "hidden" }} dangerouslySetInnerHTML={{ __html: t("hero.lead") }} />
-
-          <div className="flex flex-wrap items-center gap-3">
-            <a data-hero-cta href="https://app.lori-talk.eu" className="inline-flex items-center gap-2 rounded-full font-semibold text-sm text-white transition-transform" style={{ padding: "14px 24px", background: "var(--feather-green)", visibility: "hidden" }}>
-              {t("hero.ctaPrimary")}
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-            </a>
-            <a data-hero-cta href="#how-it-works" className="inline-flex items-center gap-2 rounded-full font-semibold text-sm transition-colors" style={{ padding: "14px 22px", border: "1px solid var(--border-default)", color: "var(--ink-1)", visibility: "hidden" }}>
-              ▷ {t("hero.ctaSecondary")}
-            </a>
-          </div>
-
-          <div className="mt-7 flex flex-wrap items-center gap-5 text-sm" style={{ color: "var(--fg-tertiary)" }}>
-            {trustItems.map((item, i) => (
-              <span key={i} data-hero-trust className="inline-flex items-center gap-1.5" style={{ visibility: "hidden" }}>
-                <span className="inline-grid place-items-center text-white font-extrabold" style={{ width: 16, height: 16, fontSize: 9, borderRadius: 999, background: "var(--feather-green)" }}>✓</span>
-                {item}
+        {/* Logo + Title + Description */}
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+          <img src="/logo-loritalk.svg" alt="Loritalk" className="w-24 md:w-32" />
+          <div className="flex flex-col gap-4 max-w-xl md:text-left text-center">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+              <span data-hero-line className="block" style={{ clipPath: "inset(0 0 0 0)" }}>
+                {t("hero.headlineOne")}
               </span>
+              <span data-hero-line className="block" style={{ color: "#94BF5C", clipPath: "inset(0 0 0 0)" }}>
+                {t("hero.headlineTwo")} {t("hero.headlineTwoTail")}
+              </span>
+            </h1>
+            <p
+              data-hero-sub
+              className="text-base md:text-lg text-black/60 font-normal"
+              style={{ visibility: "hidden" }}
+              dangerouslySetInnerHTML={{ __html: t("hero.lead") }}
+            />
+            <div className="flex items-center md:items-start mt-1">
+              <CTAButton
+                data-hero-cta=""
+                href="https://app.lori-talk.eu"
+                className="px-7 py-3 rounded-full font-semibold text-white text-sm hover:opacity-90 transition-opacity"
+                style={{ backgroundColor: "#94BF5C", visibility: "hidden" }}
+              >
+                {t("hero.ctaPrimary")}
+              </CTAButton>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Cards stage (desktop only) ─────────────────────────────────── */}
+        <div ref={stageRef} className="relative hidden lg:block w-full pb-12">
+          {/* SVG connector lines — absolutely overlaid on the whole stage */}
+          <svg
+            ref={svgRef}
+            className="absolute inset-0 w-full h-full pointer-events-none"
+            style={{ zIndex: 1 }}
+          />
+
+          {/* Brief card — centred */}
+          <div className="flex justify-center">
+            <div
+              ref={briefRef}
+              className="relative bg-white p-[18px]"
+              style={{
+                width: 340,
+                border: "1px solid var(--border-default)",
+                borderRadius: "var(--r-lg)",
+                boxShadow: "var(--shadow-pop)",
+                zIndex: 5,
+                visibility: "hidden",
+              }}
+            >
+              <div
+                className="flex items-center gap-2 mb-2.5 uppercase font-semibold"
+                style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--fg-tertiary)", letterSpacing: "0.06em" }}
+              >
+                <span
+                  className="grid place-items-center"
+                  style={{ width: 18, height: 18, borderRadius: 6, background: "var(--tint-green)", color: "var(--feather-green-ink)" }}
+                >✎</span>
+                {t("hero.briefCard.label")}
+              </div>
+              <div style={{ fontSize: 15, lineHeight: 1.5, color: "var(--ink-1)", minHeight: 60 }}>
+                {typed}
+                <span
+                  className="inline-block align-text-bottom ml-px"
+                  style={{ width: 2, height: "1em", background: "var(--feather-green-ink)", animation: "blink 1s steps(2) infinite" }}
+                />
+              </div>
+              <div
+                className="mt-3.5 pt-3 flex justify-between items-center"
+                style={{ borderTop: "1px dashed var(--border-default)", fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--fg-tertiary)" }}
+              >
+                <span>{t("hero.briefCard.meta")}</span>
+                <span
+                  data-brief-send
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 font-semibold text-white rounded-full"
+                  style={{ background: "var(--feather-flame)", fontSize: 11 }}
+                >
+                  {t("hero.briefCard.send")}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Platform cards — horizontal row with fluid vertical offsets */}
+          <div
+            className="relative flex items-start justify-center gap-3 mt-10"
+            style={{ zIndex: 2 }}
+          >
+            {PLATFORM_CARDS.map((card, i) => (
+              <div
+                key={card.id}
+                ref={(el) => { cardRefs.current[i] = el; }}
+                className="flex-shrink-0 bg-white p-3"
+                style={{
+                  width: 145,
+                  marginTop: CARD_TOP_OFFSETS[i],
+                  border: "1px solid var(--border-default)",
+                  borderRadius: "var(--r-md)",
+                  boxShadow: "var(--shadow-lg)",
+                  opacity: 0,
+                  transform: "scale(0.2)",
+                  transformOrigin: "50% 50%",
+                }}
+              >
+                <div className="flex items-center gap-2 mb-2 font-bold" style={{ fontSize: 12, color: "var(--ink-1)" }}>
+                  <PlatformIcon id={card.id} size={14} />
+                  <span className="capitalize">{card.id}</span>
+                </div>
+                <div data-card-body style={{ fontSize: 11.5, lineHeight: 1.45, color: "var(--fg-secondary)" }}>
+                  {card.body}
+                </div>
+                {card.hasImg && (
+                  <div data-card-img className="mt-2 rounded-md overflow-hidden" style={{ height: 64 }}>
+                    <img
+                      src="/images/rshoes.png"
+                      alt="Ocean Rewind running shoe"
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%", display: "block" }}
+                    />
+                  </div>
+                )}
+                <div
+                  data-card-audit
+                  className="mt-2 flex items-center gap-1.5 font-semibold"
+                  style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--feather-green-ink)" }}
+                >
+                  <span
+                    className="grid place-items-center text-white font-extrabold"
+                    style={{ width: 12, height: 12, fontSize: 7, borderRadius: 999, background: "var(--feather-green)" }}
+                  >✓</span>
+                  Audited · {card.audit}
+                </div>
+              </div>
             ))}
           </div>
         </div>
+        {/* ──────────────────────────────────────────────────────────────── */}
 
-        <div ref={stageRef} className="relative hidden lg:block" style={{ height: 600 }}>
-          <svg ref={svgRef} className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }} />
-
-          <div ref={briefRef} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-[18px]" style={{ width: 340, border: "1px solid var(--border-default)", borderRadius: "var(--r-lg)", boxShadow: "var(--shadow-pop)", zIndex: 5, visibility: "hidden" }}>
-            <div className="flex items-center gap-2 mb-2.5 uppercase font-semibold" style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--fg-tertiary)", letterSpacing: "0.06em" }}>
-              <span className="grid place-items-center" style={{ width: 18, height: 18, borderRadius: 6, background: "var(--tint-green)", color: "var(--feather-green-ink)" }}>✎</span>
-              {t("hero.briefCard.label")}
-            </div>
-            <div style={{ fontSize: 15, lineHeight: 1.5, color: "var(--ink-1)", minHeight: 60 }}>
-              {typed}
-              <span className="inline-block align-text-bottom ml-px" style={{ width: 2, height: "1em", background: "var(--feather-green-ink)", animation: "blink 1s steps(2) infinite" }} />
-            </div>
-            <div className="mt-3.5 pt-3 flex justify-between items-center" style={{ borderTop: "1px dashed var(--border-default)", fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--fg-tertiary)" }}>
-              <span>{t("hero.briefCard.meta")}</span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 font-semibold text-white rounded-full" style={{ background: "var(--feather-flame)", fontSize: 11 }}>{t("hero.briefCard.send")}</span>
-            </div>
-          </div>
-
-          {PLATFORM_CARDS.map((card, i) => (
-            <div
-              key={card.id}
-              ref={(el) => { cardRefs.current[i] = el; }}
-              className="absolute bg-white p-3"
-              style={{
-                width: 210,
-                ...card.pos,
-                border: "1px solid var(--border-default)",
-                borderRadius: "var(--r-md)",
-                boxShadow: "var(--shadow-lg)",
-                opacity: 0,
-                transform: "scale(0.4)",
-                transformOrigin: "50% 50%",
-                zIndex: 2,
-              }}
-            >
-              <div className="flex items-center gap-2 mb-2 font-bold" style={{ fontSize: 12, color: "var(--ink-1)" }}>
-                <PlatformIcon id={card.id} size={14} />
-                <span className="capitalize">{card.id}</span>
-              </div>
-              <div style={{ fontSize: 11.5, lineHeight: 1.45, color: "var(--fg-secondary)" }}>{card.body}</div>
-              {card.hasImg && (
-                <div className="mt-2 rounded-md" style={{ height: 60, background: "linear-gradient(135deg, var(--tint-green), var(--feather-green))" }} />
-              )}
-              <div data-card-audit className="mt-2 flex items-center gap-1.5 font-semibold" style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--feather-green-ink)" }}>
-                <span className="grid place-items-center text-white font-extrabold" style={{ width: 12, height: 12, fontSize: 7, borderRadius: 999, background: "var(--feather-green)" }}>✓</span>
-                Audited · {card.audit}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="relative z-10 mt-16 lg:mt-24 overflow-hidden border-y bg-white" style={{ borderColor: "var(--border-default)", padding: "22px 0" }}>
-        <div className="flex gap-12 whitespace-nowrap" style={{ animation: "scrollMarquee 30s linear infinite", width: "max-content" }}>
-          {[...MARQUEE_KEYS, ...MARQUEE_KEYS].map((id, i) => (
-            <span key={`${id}-${i}`} className="inline-flex items-center gap-2.5 font-semibold" style={{ fontSize: 14, color: "var(--ink-2)" }}>
-              <PlatformIcon id={id} size={14} />
-              {t(`hero.marquee.${id}`)}
-              <span className="uppercase font-medium" style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--fg-tertiary)", letterSpacing: "0.1em" }}>
-                {t(`hero.marquee.${id}Tag`)}
-              </span>
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   );

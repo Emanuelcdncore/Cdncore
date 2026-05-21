@@ -90,13 +90,20 @@ export default function Imagery() {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
       mm.add("(prefers-reduced-motion: no-preference)", () => {
-        gsap.from("[data-img-eyebrow]", { y: 20, autoAlpha: 0, duration: 0.6, scrollTrigger: { trigger: "[data-img-head]", start: "top 85%", once: true } });
-        gsap.from("[data-img-title]", { y: 30, autoAlpha: 0, duration: 0.7, delay: 0.1, scrollTrigger: { trigger: "[data-img-head]", start: "top 85%", once: true } });
-        gsap.from("[data-img-sub]", { y: 20, autoAlpha: 0, duration: 0.5, delay: 0.2, scrollTrigger: { trigger: "[data-img-head]", start: "top 85%", once: true } });
-        gsap.from("[data-img-tile]", { y: 30, autoAlpha: 0, scale: 0.96, duration: 0.6, stagger: 0.08, ease: "power3.out", scrollTrigger: { trigger: "[data-img-grid]", start: "top 80%", once: true } });
+        const headTl = gsap.timeline({
+          scrollTrigger: { trigger: "[data-img-head]", start: "top 85%", once: true },
+        });
+        headTl
+          .from("[data-img-title]", { y: 40, autoAlpha: 0, duration: 0.8, ease: "power4.out" })
+          .from("[data-img-sub]", { y: 24, autoAlpha: 0, duration: 0.65, ease: "power3.out" }, "-=0.45");
+
+        gsap.from("[data-img-tile]", {
+          y: 35, autoAlpha: 0, scale: 0.96, duration: 0.7, stagger: 0.09, ease: "back.out(1.4)",
+          scrollTrigger: { trigger: "[data-img-grid]", start: "top 80%", once: true },
+        });
       });
       mm.add("(prefers-reduced-motion: reduce)", () => {
-        gsap.set("[data-img-eyebrow], [data-img-title], [data-img-sub], [data-img-tile]", { autoAlpha: 1, clearProps: "all" });
+        gsap.set("[data-img-title], [data-img-sub], [data-img-tile]", { autoAlpha: 1, clearProps: "all" });
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -222,10 +229,7 @@ export default function Imagery() {
           </div>
 
           <div data-img-head>
-            <div data-img-eyebrow className="inline-flex items-center gap-2.5 uppercase mb-5" style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.18em", color: "var(--fg-tertiary)", visibility: "hidden" }}>
-              <span style={{ width: 24, height: 1, background: "var(--ink-1)" }} />
-              {t("imagery.eyebrow")}
-            </div>
+
             <h2 data-img-title className="font-extrabold mb-4" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(36px, 4.6vw, 64px)", lineHeight: 1.05, letterSpacing: "-0.025em", color: "var(--ink-1)", visibility: "hidden" }}>
               {t("imagery.title")} <span style={{ color: "var(--feather-flame)" }}>{t("imagery.titleAccent")}</span><br />
               {t("imagery.titleTail")}

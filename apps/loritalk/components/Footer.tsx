@@ -34,7 +34,7 @@ export default function Footer() {
             <p className="text-sm text-white/50 font-light leading-relaxed">
               {t("footer.description")}<br />
               CDN Core Technologies<br />
-              Parkurbis, Covilh&atilde; · Portugal
+              Parkurbis, Covilhã · Portugal
             </p>
             <div className="flex flex-col gap-1 text-xs text-white/35 font-light">
               <span>+351 275 959 168</span>

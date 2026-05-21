@@ -18,8 +18,19 @@ export default function FAQ() {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
       mm.add("(prefers-reduced-motion: no-preference)", () => {
-        gsap.from("[data-faq-title]", { y: 30, autoAlpha: 0, duration: 0.7, ease: "power3.out", scrollTrigger: { trigger: "[data-faq-heading]", start: "top 85%", once: true } });
-        gsap.from("[data-faq-item]", { y: 30, autoAlpha: 0, duration: 0.5, stagger: 0.08, ease: "power2.out", scrollTrigger: { trigger: "[data-faq-list]", start: "top 80%", once: true } });
+        const headTl = gsap.timeline({
+          scrollTrigger: { trigger: "[data-faq-heading]", start: "top 85%", once: true },
+        });
+        headTl.from("[data-faq-title]", { y: 40, autoAlpha: 0, duration: 0.8, ease: "power4.out" });
+
+        gsap.set("[data-faq-item]", { y: 28, autoAlpha: 0 });
+        ScrollTrigger.batch("[data-faq-item]", {
+          onEnter: (els) => gsap.to(els, {
+            autoAlpha: 1, y: 0, duration: 0.55, stagger: 0.09, ease: "power3.out",
+          }),
+          start: "top 82%",
+          once: true,
+        });
       });
       mm.add("(prefers-reduced-motion: reduce)", () => { gsap.set("[data-faq-title], [data-faq-item]", { autoAlpha: 1, clearProps: "all" }); });
     }, sectionRef);
@@ -43,7 +54,7 @@ export default function FAQ() {
     <section ref={sectionRef} className="py-24" style={{ backgroundColor: "#f7f9fc" }}>
       <div className="max-w-3xl mx-auto px-6">
         <div data-faq-heading className="text-center mb-16">
-          <h2 data-faq-title className="text-3xl md:text-4xl font-bold" style={{ visibility: "hidden" }}>{t("faq.title")}</h2>
+          <h2 data-faq-title className="font-extrabold" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(28px, 3.6vw, 44px)", letterSpacing: "-0.02em", color: "var(--ink-1)", visibility: "hidden" }}>{t("faq.title")}</h2>
         </div>
         <div data-faq-list className="flex flex-col gap-3">
           {faqs.map((faq, i) => (

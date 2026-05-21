@@ -20,8 +20,8 @@ type Plan = {
   quotas: { workspaces: number; channels: number; personas: number; members: number; media: number };
 };
 
-function tierAccent(code: string): TierAccent {
-  switch (code.toUpperCase()) {
+function tierAccent(code: string | undefined): TierAccent {
+  switch ((code ?? "").toUpperCase()) {
     case "STARTER": return "green";
     case "PLUS": return "tangerine";
     case "ULTRA": return "cobalt";
@@ -30,8 +30,8 @@ function tierAccent(code: string): TierAccent {
   }
 }
 
-function tierBadge(code: string): TierBadge {
-  switch (code.toUpperCase()) {
+function tierBadge(code: string | undefined): TierBadge {
+  switch ((code ?? "").toUpperCase()) {
     case "PLUS": return "most-popular";
     case "ULTRA": return "best-value";
     default: return null;
@@ -51,14 +51,28 @@ export default function Pricing() {
   const plans = t("pricing.plans", { returnObjects: true }) as Plan[];
   const symbol = "€";
 
+  if (!Array.isArray(plans)) return null;
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
       mm.add("(prefers-reduced-motion: no-preference)", () => {
-        gsap.from("[data-price-title]", { y: 30, autoAlpha: 0, duration: 0.7, ease: "power3.out", scrollTrigger: { trigger: "[data-price-heading]", start: "top 85%", once: true } });
-        gsap.from("[data-price-sub]", { y: 20, autoAlpha: 0, duration: 0.6, delay: 0.15, scrollTrigger: { trigger: "[data-price-heading]", start: "top 85%", once: true } });
-        gsap.from("[data-price-toggle]", { y: 14, autoAlpha: 0, duration: 0.5, delay: 0.3, scrollTrigger: { trigger: "[data-price-heading]", start: "top 85%", once: true } });
-        gsap.from("[data-price-card]", { y: 40, autoAlpha: 0, scale: 0.96, duration: 0.7, stagger: 0.12, ease: "back.out(1.4)", scrollTrigger: { trigger: "[data-price-grid]", start: "top 80%", once: true } });
+        const headTl = gsap.timeline({
+          scrollTrigger: { trigger: "[data-price-heading]", start: "top 85%", once: true },
+        });
+        headTl
+          .from("[data-price-title]", { y: 40, autoAlpha: 0, duration: 0.8, ease: "power4.out" })
+          .from("[data-price-sub]", { y: 24, autoAlpha: 0, duration: 0.65, ease: "power3.out" }, "-=0.45")
+          .from("[data-price-toggle]", { y: 16, autoAlpha: 0, duration: 0.5, ease: "power3.out" }, "-=0.35");
+
+        gsap.set("[data-price-card]", { y: 45, autoAlpha: 0, scale: 0.96 });
+        ScrollTrigger.batch("[data-price-card]", {
+          onEnter: (els) => gsap.to(els, {
+            autoAlpha: 1, y: 0, scale: 1, duration: 0.75, stagger: 0.14, ease: "back.out(1.6)",
+          }),
+          start: "top 82%",
+          once: true,
+        });
       });
       mm.add("(prefers-reduced-motion: reduce)", () => {
         gsap.set("[data-price-title], [data-price-sub], [data-price-toggle], [data-price-card]", { autoAlpha: 1, clearProps: "all" });
@@ -122,7 +136,7 @@ export default function Pricing() {
             const textsPerMonth = Math.floor(plan.creditsPerMonth / 10);
             const imagesPerMonth = Math.floor(plan.creditsPerMonth / 30);
 
-            const checkoutHref = `https://app.lori-talk.eu/signup?plan=${plan.code.toLowerCase()}&cycle=${yearly ? "yearly" : "monthly"}`;
+            const checkoutHref = `https://app.lori-talk.eu/signup?plan=${(plan.code ?? "").toLowerCase()}&cycle=${yearly ? "yearly" : "monthly"}`;
 
             return (
               <div
@@ -185,28 +199,35 @@ export default function Pricing() {
                   )}
                 </div>
 
-                <a href={checkoutHref} className="plan-card-cta">{t("pricing.tierChoose")}</a>
+                <a href={checkoutHref} className="plan-card-cta">
+                  <span className="scribble-wrapper">
+                    {t("pricing.tierChoose")}
+                    <svg className="scribble-line" aria-hidden="true" viewBox="0 0 80 7" preserveAspectRatio="none">
+                      <path pathLength="1" d="M1,4 C15,1.5 35,6 55,2 C65,0.5 75,5.5 79,4" />
+                    </svg>
+                  </span>
+                </a>
 
                 <ul className="plan-card-features">
                   <li className="plan-card-feat">
                     <span className="material-icons-round plan-card-feat-icon">check</span>
-                    <span>{t("pricing.features.workspaces", { count: plan.quotas.workspaces })}</span>
+                    <span>{t("pricing.features.workspaces", { count: plan.quotas?.workspaces ?? 0 })}</span>
                   </li>
                   <li className="plan-card-feat">
                     <span className="material-icons-round plan-card-feat-icon">check</span>
-                    <span>{t("pricing.features.channels", { count: plan.quotas.channels })}</span>
+                    <span>{t("pricing.features.channels", { count: plan.quotas?.channels ?? 0 })}</span>
                   </li>
                   <li className="plan-card-feat">
                     <span className="material-icons-round plan-card-feat-icon">check</span>
-                    <span>{t("pricing.features.personas", { count: plan.quotas.personas })}</span>
+                    <span>{t("pricing.features.personas", { count: plan.quotas?.personas ?? 0 })}</span>
                   </li>
                   <li className="plan-card-feat">
                     <span className="material-icons-round plan-card-feat-icon">check</span>
-                    <span>{t("pricing.features.members", { count: plan.quotas.members })}</span>
+                    <span>{t("pricing.features.members", { count: plan.quotas?.members ?? 0 })}</span>
                   </li>
                   <li className="plan-card-feat">
                     <span className="material-icons-round plan-card-feat-icon">check</span>
-                    <span>{t("pricing.features.media", { count: plan.quotas.media.toLocaleString() })}</span>
+                    <span>{t("pricing.features.media", { count: (plan.quotas?.media ?? 0).toLocaleString() })}</span>
                   </li>
                 </ul>
               </div>
