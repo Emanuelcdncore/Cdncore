@@ -309,10 +309,10 @@ export default function Hero() {
 
             <h1 className="text-4xl md:text-6xl font-bold leading-tight w-fit">
               <span data-hero-line className="block" style={{ clipPath: "inset(0 0 0 0)" }}>
-                <span ref={line1Ref}>{t("hero.headlineOne")}</span>
+                {t("hero.headlineOne")}
               </span>
               <span data-hero-line className="block" style={{ color: "#94BF5C", clipPath: "inset(0 0 0 0)" }}>
-                {t("hero.headlineTwo")} {t("hero.headlineTwoTail")}
+                <span ref={line1Ref}>{t("hero.headlineTwo")} {t("hero.headlineTwoTail")}</span>
               </span>
             </h1>
 
