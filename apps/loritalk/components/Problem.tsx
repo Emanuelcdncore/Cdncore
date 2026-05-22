@@ -30,10 +30,10 @@ export default function Problem() {
         ScrollTrigger.batch("[data-pain-card]", {
           onEnter: (els) => gsap.to(els, {
             autoAlpha: 1, y: 0, scale: 1, duration: 0.75, stagger: 0.12, ease: "power3.out",
-            onComplete: () => gsap.fromTo("[data-pain-icon]",
+            onComplete: () => { gsap.fromTo("[data-pain-icon]",
               { scale: 1 },
               { scale: 1.18, duration: 0.28, stagger: 0.12, yoyo: true, repeat: 1, ease: "power2.inOut" }
-            ),
+            ); },
           }),
           start: "top 88%",
           once: true,
