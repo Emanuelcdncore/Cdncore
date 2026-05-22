@@ -3,289 +3,345 @@
     "features": "Funkcijas",
     "howItWorks": "Kā tas darbojas",
     "pricing": "Cenas",
+    "forAgencies": "Aģentūrām",
+    "forCreators": "Satura veidotājiem",
     "beta": "Beta",
-    "startForFree": "Sāciet bez maksas"
+    "startForFree": "Sākt bez maksas"
   },
   "hero": {
-    "badge": "Tagad Beta — bezmaksas agrīnā piekļuve",
+    "badge": "Beta versijā · Agrīnās piekļuves cenas fiksētas uz visiem laikiem",
     "headlineOne": "Raksti mazāk.",
     "headlineTwo": "Publicē vairāk.",
-    "description": "Ievadiet tēmu vai ideju. Loritalk AI raksta optimizētas publikācijas Instagram, LinkedIn, X, TikTok un citām platformām — dažu sekunžu laikā. Vairāki AI modeļi sacenšas, lai sniegtu jums labāko rezultātu.",
-    "ctaPrimary": "Sāciet veidot bez maksas",
-    "ctaSecondary": "Skatiet, kā tas darbojas",
-    "note": "Nav nepieciešama kredītkarte · Bez maksas Beta laikā",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Pārrakstīts.",
+    "headlineThree": "Pārbaudīts.",
+    "lead": "Aprakstiet savu ierakstu vienreiz. LoriTalk uzraksta <strong>vietējo versiju katrai pievienotajai platformai</strong>, ģenerē zīmolam atbilstošus attēlus, izlaiž katru vārdu cauri automātiskai moderācijai un saplāno tos — dažu sekunžu laikā.",
+    "ctaPrimary": "Sākt bez maksas — bez kartes",
+    "ctaSecondary": "Skatīt darbībā · 90 s",
+    "trust": [
+      "8 vietējās integrācijas",
+      "Automātiski moderēts",
+      "Izolēts pa darbvietām"
+    ],
+    "briefCard": {
+      "label": "Jūsu uzdevums · 1 no 1",
+      "typed": "Palaidiet mūsu jaunās ilgtspējīgās sporta kurpes. Izgatavotas no 80% pārstrādātas okeāna plastmasas. Mērķauditorija — Z paaudzes skrējēji.",
+      "meta": "lv · 8 kanāli · Zīmola balss",
+      "send": "Ģenerēt ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "ieraksti · reels · stāsti",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profili · lapas",
+      "x": "X / Twitter",
+      "xTag": "pavedieni · atsevišķi",
+      "tiktok": "TikTok",
+      "tiktokTag": "scenāriji · paraksti",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100 s",
+      "threads": "Threads",
+      "threadsTag": "vietējie",
+      "facebook": "Facebook",
+      "facebookTag": "lapas",
+      "telegram": "Telegram",
+      "telegramTag": "kanāli · grupas"
+    },
+    "leadHook": "Aprakstiet savu ierakstu vienreiz.",
+    "leadBody": "LoriTalk uzraksta <strong>vietējo versiju katrai pievienotajai platformai</strong>, ģenerē zīmolam atbilstošus attēlus, izlaiž katru vārdu cauri automātiskai moderācijai un saplāno tos — dažu sekunžu laikā."
   },
   "stats": {
-    "networksValue": "6+",
-    "networksLabel": "Atbalstīti sociālie tīkli",
-    "languagesValue": "3",
-    "languagesLabel": "Valodas palaišanas brīdī",
-    "generationValue": "<5s",
-    "generationLabel": "Vidējais ģenerēšanas laiks",
+    "networksValue": "8",
+    "networksLabel": "Atbalstītie sociālie tīkli",
+    "languagesValue": "24+",
+    "languagesLabel": "Saskarnes valodas",
+    "generationValue": "Sekundes",
+    "generationLabel": "No uzdevuma līdz publicēšanai gatavam saturam",
     "freeValue": "Bez maksas",
     "freeLabel": "Beta laikā — bez ierobežojumiem"
   },
   "problem": {
-    "title": "Jūsu satura darba plūsma ir bojāta",
-    "subtitle": "Izklausās pazīstami?",
+    "title": "Jūsu satura darbplūsma ir salauzta",
+    "subtitle": "Pazīstami?",
     "items": [
       {
-        "title": "Stundas izšķērdētas pielāgošanai",
-        "description": "Jūs rakstāt publikāciju Instagram, tad pārrakstāt to LinkedIn, tad atkal X. Katrai platformai nepieciešams cits tonis, garums un tēmturi."
+        "title": "Stundas, kas izniekotas pielāgošanai",
+        "description": "Jūs uzrakstāt ierakstu Instagram, tad pārrakstāt to LinkedIn, tad vēlreiz X. Katra platforma prasa atšķirīgu toni, garumu un tēmturus."
       },
       {
-        "title": "AI, kas skan vispārīgi",
-        "description": "AI sniedz vienu versiju, kas skan kā visi citi. Nav zīmola balss, nav platformas apziņas, nav īstas optimizācijas."
+        "title": "MI, kas skan vispārīgi",
+        "description": "Viena modeļa MI sniedz vienu versiju, kas skan tāpat kā visiem citiem. Nav zīmola balss, nav platformas izpratnes, nav īstas optimizācijas."
       },
       {
         "title": "Komandas šaurās vietas",
-        "description": "Saturs gaida apstiprinājumu, pazūd Slack pavedienos un neviens nezina, kas ir ieplānots nākamajai nedēļai."
+        "description": "Saturs gaida apstiprinājumu, pazūd Slack pavedienos, un neviens nezina, kas saplānots nākamajai nedēļai."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk to visu atrisina",
-    "subtitle": "Viens brīfings. Katra platforma. Vairāki AI sacenšas par jūsu labāko publikāciju.",
-    "ctaPrimary": "Sāciet veidot bez maksas",
+    "title": "LoriTalk to visu atrisina",
+    "subtitle": "Viens uzdevums. Vietējā versija katrai platformai. Zīmolam atbilstoši attēli, renderēti paralēli.",
+    "ctaPrimary": "Sākt veidot saturu bez maksas",
     "rows": [
       {
-        "before": "1 publikācija = 45 min pielāgošana katrai platformai",
-        "after": "1 brīfings = visas platformas <5 sekundēs"
+        "before": "1 ieraksts = 45 min pielāgošanas katrai platformai",
+        "after": "1 uzdevums = visas platformas mazāk nekā 5 sekundēs"
       },
       {
-        "before": "1 AI modelis = vispārīgs, universāls teksts",
-        "after": "Vairāki AI modeļi apspriežas un uzlabo viens otru"
+        "before": "Vispārīgs MI teksts, ko atkārto visos tīklos",
+        "after": "Vietējā versija katram kanālam — pielāgots garums, tēmturi un tonis"
       },
       {
-        "before": "Saturs izkaisīts starp rīkiem un pavedieniem",
-        "after": "Viens panelis: veidojiet, apstipriniet, plānojiet, publicējiet, izsekojiet"
+        "before": "Saturs izkaisīts pa rīkiem un pavedieniem",
+        "after": "Viena vadības panelis: veidot, apstiprināt, plānot, publicēt, sekot līdzi"
       }
     ]
   },
   "features": {
     "title": "Viss, kas nepieciešams jūsu satura komandai",
-    "subtitle": "No idejas līdz publicētai publikācijai — Loritalk pārvalda visu darba plūsmu.",
+    "subtitle": "No idejas līdz publicētam ierakstam — LoriTalk pārvalda visu darbplūsmu.",
     "items": [
       {
-        "title": "Daudzmodeļu AI apspriešana",
-        "description": "Ne viens AI — vairāki modeļi ģenerē neatkarīgi, pēc tam uzlabo citu darbu."
+        "title": "Platformai pielāgots saturs",
+        "description": "Viens uzdevums kļūst par vietējo versiju katrai platformai — garums, tēmturi, emocijzīmes un tonis, kas pielāgoti Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads un Telegram."
       },
       {
-        "title": "Platformai optimizēts saturs",
-        "description": "Katra publikācija ir pielāgota savai platformai — pareizs tonis, garums, tēmturi, emocijzīmes un formāts. Instagram apraksti, LinkedIn raksti, X pavedieni, TikTok skripti."
+        "title": "Zīmolam atbilstoša attēlu ģenerēšana",
+        "description": "Attēli, renderēti katrai platformai ar pareizo malu attiecību un jūsu personas vizuālajiem noteikumiem — plūsmas ieraksti, stāsti, galvenie kadri. Vairs nav jāmaina izmērs ar rokām."
       },
       {
         "title": "Daudzvalodu ģenerēšana",
-        "description": "Ģenerējiet portugāļu, angļu, spāņu un citās valodās. Dzimtās valodas līmeņa plūdums ar kultūras niansēm — ne tikai tulkojums."
+        "description": "Ģenerējiet portugāļu, angļu, spāņu un citās valodās. Dzimtās valodas brīvums ar kultūras niansēm — ne tikai tulkojums."
       },
       {
-        "title": "Plānojiet un publicējiet",
-        "description": "Kalendāra skats, plānota publicēšana un tieša publicēšana visos savienotajos kanālos. Dažādi laiki katrai platformai."
+        "title": "Plānošana un publicēšana",
+        "description": "Kalendāra skats, plānota publicēšana un tieša ievietošana visos pievienotajos kanālos. Atšķirīgi laiki katrai platformai."
       },
       {
         "title": "Zīmola balss un personas",
-        "description": "Izveidojiet AI personas, kas raksta kā jūsu zīmols. Kontrolējiet toni no profesionāla līdz rotaļīgam. Katra publikācija skan kā jūs, nevis kā robots."
+        "description": "Izveidojiet MI personas, kas raksta kā jūsu zīmols. Kontrolējiet toni no profesionāla līdz rotaļīgam. Katrs ieraksts skan kā jūs, nevis robots."
       },
       {
         "title": "Analītikas panelis",
-        "description": "Izsekojiet skatījumus, iesaisti, klikšķus un izaugsmi visos kanālos. Ziniet, kāds saturs darbojas, un dubultojiet piepūli."
+        "description": "Sekojiet sasniedzamībai, iesaistei, klikšķiem un izaugsmei katrā kanālā. KPI kartītes, populārākie ieraksti un Lori ieskati atklāj, kas darbojas."
       }
     ]
   },
   "howItWorks": {
-    "title": "No idejas līdz publikācijai 3 soļos",
-    "subtitle": "Vairāk nekādu tukšu ekrānu. Vairāk nekādas kopēšanas starp platformām.",
+    "eyebrow": "05 · Darbplūsma",
+    "title": "Uzdevums → priekšskatījums → publicēšana.",
+    "titleAccent": "Trīs soļi.",
+    "titleTail": "Dažu sekunžu laikā.",
+    "subtitle": "Jums nekad nav jāizvēlas modelis. Jums nekad nav jāmaina attēla izmērs. Jums nekad nav jākopē un jāielīmē starp cilnēm.",
     "steps": [
       {
-        "title": "Uzrakstiet savu brīfingu",
-        "description": "Aprakstiet, ko vēlaties paziņot — tik vienkārši kā \"jauna produkta palaišana\" vai tik detalīzēti kā pilns brīfings. Izvēlieties savus kanālus, valodu un toni."
+        "badge": "01",
+        "eyebrow": "Ievade",
+        "title": "Uzrakstiet savu uzdevumu",
+        "description": "Viens teikums vai trīs rindkopas. Izvēlieties kanālus, personu un valodu. Tas ir vienīgais, ko šodien uzrakstāt.",
+        "footLeft": "~ 5 sek, lai uzrakstītu",
+        "footRight": "1 uzdevums"
       },
       {
-        "title": "AI modeļi sacenšas jūsu labā",
-        "description": "Vairāki AI modeļi ģenerē saturu neatkarīgi, pēc tam pārskata un uzlabo citu rezultātus. Jūs saņemat N noslīpētas versijas katrai platformai."
+        "badge": "02",
+        "eyebrow": "Ģenerēšana",
+        "title": "MI to pielāgo katram kanālam",
+        "description": "LoriTalk izlasa jūsu uzdevumu, jūsu personu un katras platformas vietējos noteikumus — tad izveido versiju, kas radīta katram kanālam. Automātiskā moderācija notiek, pirms jūs to redzat.",
+        "footLeft": "~ 3 sek katram kanālam",
+        "footRight": "Katram pievienotajam kanālam"
       },
       {
-        "title": "Izvēlieties, rediģējiet un publicējiet",
-        "description": "Izvēlieties savu iecienītāko versiju katram kanālam. Pielāgojiet jebko ar vienu klikšķi. Publicējiet tagad vai plānojiet vēlāk."
+        "badge": "03",
+        "eyebrow": "Izplatīšana",
+        "title": "Publicējiet vai plānojiet",
+        "description": "Sūtiet tagad vai ievietojiet kalendārā ar katrai platformai pielāgotu laiku. Katrs kanāls tiek nosūtīts caur savu vietējo API; kļūmes ir izolētas — Instagram joprojām publicē, pat ja Facebook iestreba.",
+        "footLeft": "Vietējie API · OAuth",
+        "footRight": "8 kanāli"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Palaidiet mūsu jaunās ilgtspējīgās sporta kurpes. Izgatavotas no 80% pārstrādātas okeāna plastmasas. Mērķauditorija — Z paaudzes skrējēji.\"",
+      "channelsComment": "// kanāli:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Valoda",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neitrāla — Lori zīmola balss"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Atslābinošs, jautrs, sarunvalodas"
+        },
+        {
+          "name": "Core",
+          "desc": "Drosmīgs, optimistisks, zīmola virzīts"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karuselis",
+          "when": "Šodien 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "garš teksts",
+          "when": "Šodien 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "pavediens",
+          "when": "Šodien 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Rīt 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "ieraksts",
+          "when": "Rīt 12:00"
+        }
+      ],
+      "cta": "▶ Publicēt visu · ⏱ Plānot"
+    }
   },
-  "differentiator": {
-    "title": "Kāpēc vairāki AI pārspēj vienu",
-    "subtitle": "Citi rīki izmanto vienu modeli. Loritalk izmanto vairākus — un liek tiem uzlabot viens otru.",
-    "briefLabel": "Jūsu brīfings",
-    "channels": "Kanāli",
-    "language": "Valoda:",
-    "languages": "Angļu, Portugāļu",
-    "submitted": "Iesniegts pirms 2s",
-    "round1": "1. RAUNDS — NEATKARĪGA ĢENERĒŠANA",
-    "generated": "Ģenerēts",
-    "round2": "2. raunds — Savstarpēja uzlabošana",
-    "round2Desc": "Katrs modelis lasa visus rezultātus un uzlabo savu versiju",
-    "qualityNote": "Kvalitāte uzlabojās par ~40% salīdzinājumā ar 1. raundu",
-    "pickEdit": "Izvēlieties un rediģējiet",
-    "addMedia": "Pievienot mediju",
-    "uploading": "Augšupielādē attēlu...",
-    "imageAttached": "Attēls veiksmīgi augšupielādēts",
-    "generateAI": "Ģenerēt ar AI",
-    "readyPublish": "Gatavs publicēšanai",
-    "publishAll": "Publicēt visu",
-    "scheduled": "Ieplānots",
-    "draft": "Melnraksts",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Attēli",
+    "title": "Zīmolam atbilstoši",
+    "titleAccent": "attēli",
+    "titleTail": "pielāgoti katrai platformai.",
+    "subtitle": "Attēlu ģenerēšana notiek asinhroni un katrai platformai — bez izmēru maiņas ar rokām, bez zīmolam neatbilstošiem fotoattēliem. Atsevišķi ieraksti, karuseļi, stāstu formāti, galvenie kadri. Katrs renderējums atsaucas uz aktīvās personas vizuālajiem noteikumiem.",
+    "tiles": {
+      "instagramCaption": "5 no rīta. Kafija, divas cilnes, viens lēmums.\nUzbūvēju v2, pirms komanda pieslēdzās.",
+      "storyQuote": "mēs sasniedzām 1 milj. MRR tajā pašā nedēļā, kad noņēmām pusi no ceļa kartes.",
+      "storySwipe": "↑ velc",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Mēs nolīgām 3 līgumdarbiniekus pirms pirmā pilnas slodzes darbinieka. Lūk, tabula.",
+      "linkedinCta": "Lasīt vairāk →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "lielākā daļa \"dibinātāju satura\" ir preses relīze kapucē. raksti kā cilvēks. #shipping",
+      "generatingLabel": "Renderē · TikTok",
+      "generatingSub": "9:16 · ~12 s",
+      "ytTitleLineOne": "PIRMAIS",
+      "ytTitleLineTwo": "DARBINIEKS.",
+      "ytSubtitle": "Kāpēc gaidījām 18 mēnešus.",
+      "ytMeta": "LoriTalk · 14. ep. · 32 min"
+    }
   },
   "useCases": {
-    "title": "Veidots komandām, kas publicē",
-    "subtitle": "Neatkarīgi no tā, vai esat solo veidotājs vai 50 cilvēku aģentūra.",
+    "title": "Radīts komandām, kas publicē",
+    "subtitle": "Neatkarīgi no tā, vai esat individuāls satura veidotājs vai 50 cilvēku aģentūra.",
     "items": [
       {
-        "title": "Solo veidotāji un brīvmākslinieki",
-        "description": "Pārtrauciet tērēt stundas satura pielāgošanai. Rakstiet vienreiz, publicējiet visur. Koncentrējieties uz stratēģiju, nevis kopēšanu."
+        "title": "Individuālie satura veidotāji un ārštata darbinieki",
+        "description": "Beidziet tērēt stundas satura pielāgošanai. Uzrakstiet vienreiz, publicējiet visur. Koncentrējieties uz stratēģiju, nevis kopēšanu un ielīmēšanu."
       },
       {
         "title": "Mārketinga komandas",
-        "description": "Viena darba telpa katram zīmolam. Apstiprināšanas darba plūsmas. Kalendāra skats. Visi zina, kas tiek publicēts un kad."
+        "description": "Viena darbvieta katram zīmolam. Kalendāra skats katrai darbvietai. Visi zina, kas tiek publicēts un kad."
       },
       {
         "title": "Aģentūras",
-        "description": "Pārvaldiet vairākus zīmolus no viena konta. Piešķiriet lomas, kontrolējiet piekļuvi, izsekojiet veiktspēju visos klientos. Neierobežotas publikācijas Aģentūras plānā."
+        "description": "Pārvaldiet vairākus zīmolus no viena konta. Darbvieta katram klientam ar izolētiem kanāliem, personām un kalendāru. Katra kanāla analītika katram zīmolam."
       }
     ]
   },
   "pricing": {
-    "title": "Vienkāršas, caurspoīdīgas cenas",
-    "subtitle": "Bez maksas Beta laikā. Agrīnie lietotāji fiksē savu cenu uz mūžu palaišanas brīdī.",
-    "mostPopular": "Populārākais",
-    "monthly": "Mēnesī",
-    "annual": "Gadā",
+    "title": "Vienkāršas, caurspīdīgas cenas",
+    "subtitle": "Balstītas uz kredītiem. Atceliet jebkurā laikā. Gada plāns ietaupa divus mēnešus.",
+    "monthly": "Ikmēneša",
+    "annual": "Gada",
     "save2Months": "-17%",
-    "perMonth": "/ mēnesī",
+    "perMonth": "/ mēn.",
+    "perMonthBilledYearly": "/ mēn., norēķins reizi gadā",
     "perYear": "/ gadā",
-    "billedAnnually": "Maksājams reizi gadā",
-    "customPriceLabel": "Pielāgots",
-    "plans": [
-      {
-        "name": "Bez maksas",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "Beta laikā",
-        "description": "Izmēģiniet visu ar dāsniem ierobežojumiem.",
-        "features": [
-          "5 publikācijas / mēn.",
-          "3 tīkli",
-          "Pamata toņa kontrole",
-          "Tēmturu ieteikumi"
-        ],
-        "cta": "Sāciet bez maksas",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Ietaupiet {{amount}} / gadā",
+    "mostPopular": "Populārākais",
+    "bestValue": "Labākā vērtība",
+    "creditsUnit": "kredīti / mēnesī",
+    "creditsTexts": "~{{count}} teksta ieraksti",
+    "creditsOr": "vai",
+    "creditsImages": "~{{count}} zīmolam atbilstoši attēli",
+    "promoExplainer": "Pirmā gada akcija: saņemiet 2× kredītu KATRU mēnesi visu pirmo gadu, izvēloties gada plānu — tas ir {{count}} bonusa kredīti katru mēnesi.",
+    "promoHeroExtra": "(+{{count}} bonusa kredīti katru mēnesi 12 mēnešus)",
+    "tierChoose": "Izvēlēties plānu",
+    "features": {
+      "workspaces_zero": "{{count}} darbvietu",
+      "workspaces_one": "{{count}} darbvieta",
+      "workspaces_other": "{{count}} darbvietas",
+      "channels": "{{count}} sociālie kanāli",
+      "personas": "{{count}} zīmola personas",
+      "members_zero": "{{count}} komandas dalībnieku",
+      "members_one": "{{count}} komandas dalībnieks",
+      "members_other": "{{count}} komandas dalībnieki",
+      "media": "{{count}} multivides resursi"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Tiem, kas pirmo reizi veido MI saturu"
       },
-      {
-        "name": "Veidotājs",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Veidotājiem un zīmoliem, kas publicē regulāri.",
-        "features": [
-          "200 publikācijas / mēn.",
-          "Visi tīkli",
-          "Uzlabots tonis un personas",
-          "Satura kalendārs",
-          "Prioritārs atbalsts"
-        ],
-        "cta": "Sākt bezmaksas izmēģinājumu",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Konsekventai un vienkāršai MI satura veidošanai"
       },
-      {
-        "name": "Aģentūra",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Komandām, kas pārvalda vairākus zīmolus.",
-        "features": [
-          "Neierobežotas publikācijas",
-          "Visi tīkli",
-          "Vairāki zīmoli",
-          "Komandas sadarbība",
-          "Analītika",
-          "Konta pārvaldnieks"
-        ],
-        "cta": "Sazinieties ar mums",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Satura veidotājiem, kas būvē MI produktus"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Aģentūrām un mazām komandām"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Jautājumi? Mums ir atbildes.",
     "items": [
       {
-        "q": "Kādus AI modeļus izmanto Loritalk?",
-        "a": "Jūs varat konfigurēt, kuri modeļi piedalās jūsu ģenerēšanas procesā."
+        "q": "Kā darbojas LoriTalk MI?",
+        "a": "LoriTalk izveido vietējo versiju jūsu uzdevumam katram pievienotajam kanālam un renderē zīmolam atbilstošus attēlus paralēli. Viss iziet cauri automātiskās moderācijas slānim, pirms sasniedz jūsu vadības paneli."
       },
       {
-        "q": "Kā tas atšķiras no other AI tools?",
-        "a": "Other AI tools sniedz vienu rezultātu no viena modeļa. Loritalk darbina vairākus modeļus paralēli un liek tiem uzlabot citu darbu — pastāvīgi nodrošinot augstāku kvalitāti. Turklāt katra publikācija tiek automātiski optimizēta konkrētajai platformai."
+        "q": "Ar ko tas atšķiras no citiem MI rīkiem?",
+        "a": "Citi rīki sniedz jums vienu teksta bloku, ko visur kopēt un ielīmēt. LoriTalk izveido vietējās versijas katrai platformai — garums, tēmturi, emocijzīmes un tonis pielāgoti katram tīklam — un publicē caur katras platformas oficiālo API."
       },
       {
-        "q": "Kādi sociālie tīkli tiek atbalstīti?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) un TikTok."
+        "q": "Kuri sociālie tīkli tiek atbalstīti?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads un Telegram — astoņi tīkli, izmantojot vietējos API."
       },
       {
-        "q": "Vai mans saturs ir privāts?",
-        "a": "Jā. Jūsu saturs nekad netiek izmantots AI modeļu apmācībai. Visi dati tiek glabāti mūsu serveros Eiropā un apstrādāti saskaņā ar GDPR."
+        "q": "Kur tiek glabāti mani dati?",
+        "a": "Jūsu dati tiek glabāti serveros Eiropas Savienībā. MI pakalpojumu sniedzēji, ko izmantojam (OpenAI tekstam, Google attēliem), darbojas saskaņā ar saviem uzņēmuma API noteikumiem — API nosūtītais saturs netiek izmantots vispārējas nozīmes modeļu apmācībai."
       },
       {
         "q": "Vai varu to izmantot ar savu komandu?",
-        "a": "Noteikti. Izveidojiet darba telpas katram zīmolam, uzaiciniet komandas locekļus ar administrātora vai publicētāja lomām un iestatiet apstiprināšanas darba plūsmas, lai nekas netiktu publicēts bez pārskatīšanas."
+        "a": "Jā. Izveidojiet darbvietas katram zīmolam un uzaiciniet komandas dalībniekus ar administratora vai publicētāja lomām. Katrai darbvietai ir savi pievienotie kanāli, personas un kalendārs."
       },
       {
         "q": "Kas notiek pēc Beta?",
-        "a": "Stājas spēkā maksas plāni, bet katrs Beta lietotājs saglabā savu pašreizējo cenu fiksētu uz mūžu. Bez pārsteigumiem."
+        "a": "Stājas spēkā maksas plāni, taču katrs Beta lietotājs saglabā savu pašreizējo cenu fiksētu uz visiem laikiem. Bez pārsteigumiem."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Pārtrauciet rakstīt. Sāciet publicēt.",
-    "subtitle": "Pievienojieties Beta — bezmaksas piekļuve, bez kredītkartes, un jūsu cena ir fiksēta uz mūžu palaišanas brīdī.",
-    "ctaPrimary": "Sāciet veidot bez maksas",
-    "ctaSecondary": "Skatiet, kā tas darbojas"
+    "headline": "Beidziet rakstīt. Sāciet publicēt.",
+    "subtitle": "Pievienojieties Beta — bezmaksas piekļuve, bez kredītkartes, un jūsu cena tiek fiksēta uz visiem laikiem, kad palaižam.",
+    "ctaPrimary": "Sākt veidot saturu bez maksas",
+    "ctaSecondary": "Skatīt, kā tas darbojas"
   },
   "footer": {
-    "description": "AI saturs katram sociālajam tīklam.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "description": "MI saturs katram sociālajam tīklam.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugāle",
     "product": "Produkts",
     "resources": "Resursi",
     "legal": "Juridiskā informācija",
@@ -297,8 +353,306 @@
     "betaFeedback": "Beta atsauksmes",
     "apiDocs": "API dokumentācija",
     "privacyPolicy": "Privātuma politika",
-    "termsOfService": "Pakalpojumu noteikumi",
-    "cookiePolicy": "Sīkdatnu politika",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "termsOfService": "Pakalpojumu sniegšanas noteikumi",
+    "cookiePolicy": "Sīkdatņu politika",
+    "legalNotice": "Juridiskais paziņojums",
+    "copyright": "© 2026 LoriTalk® no CDN Core Technologies. Covilhã, Portugāle."
+  },
+  "cookieBanner": {
+    "aria": "Sīkdatņu paziņojums",
+    "title": "Mēs izmantojam sīkdatnes",
+    "body": "Stingri nepieciešamās sīkdatnes nodrošina vietnes darbību. Ar jūsu piekrišanu mēs ielādējam arī Google Analytics, lai mērītu datplūsmu, un Meta Pixel, lai mērītu mūsu reklāmu. Jūs varat piekrist, atteikties vai izvēlēties pa kategorijām — un jebkurā laikā mainīt savu lēmumu.",
+    "policyLink": "Sīkdatņu politika",
+    "privacyLink": "Privātuma politika",
+    "acceptAll": "Pieņemt visu",
+    "rejectOptional": "Noraidīt neobligātās",
+    "customize": "Pielāgot",
+    "save": "Saglabāt iestatījumus",
+    "necessaryLabel": "Stingri nepieciešamās",
+    "necessaryDesc": "Nepieciešamas vietnes darbībai (valoda un jūsu piekrišanas izvēle). Nevar atspējot.",
+    "analyticsLabel": "Analītika — Google Analytics",
+    "analyticsDesc": "Ielādē Google Analytics 4, lai mērītu datplūsmu un uzlabotu vietni. Iestata _ga un _ga_* sīkdatnes un nosūta lapas skatījumu datus Google.",
+    "marketingLabel": "Mārketings — Meta Pixel",
+    "marketingDesc": "Ielādē Meta Pixel (Facebook / Instagram), lai mēs varētu mērīt reklāmas kampaņas. Iestata _fbp un _fbc sīkdatnes un nosūta lapas skatījumu datus Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Mārketinga aģentūrām un radošajām studijām",
+      "headlineOne": "Grūti publicēt ierakstus",
+      "headlineTwo": "katram klientam",
+      "headlineThree": "katrā platformā?",
+      "lead": "LoriTalk sniedz jūsu aģentūrai <strong>vienu darbvietu katram zīmolam</strong>, atsevišķu personu katram klientam un vietējo publicēšanu 8 tīklos — lai jūsu komanda raksta vienreiz un publicē visur, katrā kontā.",
+      "ctaPrimary": "Sākt ar Ultra plānu",
+      "ctaSecondary": "Skatīt aģentūru cenas",
+      "trust": [
+        "Viena darbvieta katram zīmolam",
+        "Administratora un publicētāja lomas",
+        "8 tīkli, izmantojot vietējos API"
+      ],
+      "hubLabel": "Aģentūras galvenā mītne",
+      "hubTitle": "5 zīmoli. 5 darbvietas.",
+      "hubBody": "Katrs klients saņem savu darbvietu, personas, kanālus un analītiku. Mainiet kontekstu ar vienu klikšķi.",
+      "hubMeta": "5 darbvietas · izolētas",
+      "hubBadge": "Tiešraidē"
+    },
+    "pains": {
+      "title": "Atpazīstat savu nedēļu?",
+      "subtitle": "Viens un tas pats saturs pārrakstīts 7 reizes 5 klientiem. Katru nedēļu. Mēs to esam piedzīvojuši.",
+      "items": [
+        {
+          "title": "Žonglēšana ar 5+ klientiem vienlaikus",
+          "description": "Katrs zīmols vēlas atšķirīgu toni, atšķirīgas platformas, atšķirīgus termiņus. Izklājlapas un Slack pavedieni nav darbplūsma."
+        },
+        {
+          "title": "Zīmola balss novirzās ar katru ierakstu",
+          "description": "Dažādi tekstu autori, dažādas cilnes, dažādas ChatGPT uzvednes. Balss, ko jūsu klients apstiprināja pirms sešiem mēnešiem, ir pazudusi."
+        },
+        {
+          "title": "Pārplānošana piektdienas vakarā",
+          "description": "Klients pieprasa pēdējā brīža izmaiņas Instagram, LinkedIn un TikTok. Jūs pārrakstāt vienu un to pašu ideju trīs reizes — un tomēr nokavējat laiku."
+        },
+        {
+          "title": "Atskaišu sagatavošana aizņem visu dienu",
+          "description": "Skatījumu, iesaistes un klikšķu kopēšana no piecām vadības panelēm prezentācijā. Ar rokām. Katru mēnesi."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Viss, kas vajadzīgs jūsu aģentūrai, vienuviet",
+      "subtitle": "No uzdevuma līdz atskaitei — LoriTalk vada visu satura konveijeru katram zīmolam, ko pārvaldāt.",
+      "items": [
+        {
+          "title": "Viena darbvieta katram klientam",
+          "description": "Izolētas darbvietas ar saviem pievienotajiem kanāliem, personām, dalībniekiem un kalendāru. Izveidojiet jaunu klientu dažu minūšu laikā."
+        },
+        {
+          "title": "Zīmola balss personas",
+          "description": "Definējiet personu katram klientam — balss, tonis, konkrētas instrukcijas. Katra ģenerēšana šajā darbvietā ievēro uzdevumu, katru reizi."
+        },
+        {
+          "title": "8 tīkli, viens uzdevums",
+          "description": "Uzrakstiet uzdevumu vienreiz un saņemiet vietējās versijas Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads un Telegram — visu dažu sekunžu laikā, visu caur oficiālajiem API."
+        },
+        {
+          "title": "Kalendārs katrai darbvietai",
+          "description": "Katram klientam ir savs nedēļas / mēneša / rindas skats. Plānojiet ierakstus katram kanālam un redziet visu konveijeru šim zīmolam vienā mirklī."
+        },
+        {
+          "title": "Administratora un publicētāja lomas",
+          "description": "Uzaiciniet komandas dalībniekus katrai darbvietai kā administratorus (pilna pārvaldība) vai publicētājus (veidot un publicēt). Darbvietas ir pilnībā izolētas viena no otras."
+        },
+        {
+          "title": "Analītika katrai darbvietai",
+          "description": "Sasniedzamība, iesaiste, klikšķi un izaugsme katram kanālam katra klienta darbvietā. KPI kartītes, populārākie ieraksti un Lori ieskati — bez pārlēkšanas starp vadības panelēm."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kā aģentūras nedēļa izskatās LoriTalk",
+      "subtitle": "Iekļaujiet zīmolu, instruējiet MI, saņemiet apstiprinājumu, publicējiet. Atkārtojiet katram klientam.",
+      "steps": [
+        {
+          "badge": "01 · IEKĻAUŠANA",
+          "title": "Izveidojiet klienta darbvietu",
+          "description": "Izveidojiet darbvietu, pievienojiet zīmola sociālos kontus un konfigurējiet personu — balss, tonis, konkrētas instrukcijas. Gatavs lietošanai dažu minūšu laikā."
+        },
+        {
+          "badge": "02 · UZDEVUMS",
+          "title": "Uzrakstiet vienu uzdevumu katrai kampaņai",
+          "description": "Izvēlieties personu, kanālus un valodu. LoriTalk ģenerē vietējo versiju katrai platformai dažu sekunžu laikā."
+        },
+        {
+          "badge": "03 · PILNVEIDE",
+          "title": "Rediģējiet savā komandā",
+          "description": "Jūsu komanda pārskata melnrakstus darbvietā — pielāgojiet tekstu, mainiet attēlus, izvēlieties spēcīgāko variantu katram kanālam, pirms tas tiek publicēts."
+        },
+        {
+          "badge": "04 · PUBLICĒŠANA",
+          "title": "Publicējiet un sekojiet līdzi",
+          "description": "Vietējie API nosūta uz katru kanālu. Veiktspēja atgriežas katras darbvietas vadības panelī — KPI, populārākie ieraksti un izaugsme pa kanāliem."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plāni, kas radīti aģentūrām",
+      "subtitle": "Vadiet dažus zīmolus vai veselu klientu sarakstu. Izvēlieties apjomu, kas atbilst jūsu līgumam.",
+      "customPrice": "Parunāsim",
+      "customCredits": "Neierobežoti kredīti",
+      "customCreditsDetail": "Apjoms saskaņots līgumā — bez pārsteiguma pārtēriņa.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Pielāgots",
+          "description": "Tīkliem un lielām aģentūrām, kam nepieciešami individuāli apjomi un iekļaušana.",
+          "cta": "Sazināties ar pārdošanu"
+        }
+      },
+      "features": {
+        "customVolumes": "Pielāgoti kredītu apjomi",
+        "priorityEmail": "Prioritārs e-pasta atbalsts",
+        "euData": "ES datu glabāšana"
+      }
+    },
+    "faq": {
+      "title": "Atbildes uz aģentūru jautājumiem.",
+      "items": [
+        {
+          "q": "Kā kredīti tiek koplietoti starp klientiem?",
+          "a": "Kredīti atrodas aģentūras konta līmenī — jebkura darbvieta var patērēt no viena un tā paša krājuma. Sekojiet izlietojumam norēķinu vadības panelī."
+        },
+        {
+          "q": "Kas notiek, kad iekļaujam vai atvienojam klientu?",
+          "a": "Izveidojiet jaunu darbvietu dažu sekunžu laikā. Darbvietas arhivēšana to noņem no aktīvā skata; pilnīga konta dzēšana ievēro VDAR datu glabāšanas noteikumus."
+        },
+        {
+          "q": "Kuros sociālajos tīklos varam publicēt?",
+          "a": "Vietējā publicēšana aptver LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads un Telegram — astoņi tīkli, katrs caur oficiālo platformas API, tāpēc kļūmes paliek izolētas katram kanālam."
+        },
+        {
+          "q": "Vai klienti var pieteikties, lai redzētu savu darbvietu?",
+          "a": "Pašlaik nē. Darbvietas ir paredzētas tikai aģentūras komandai — administratora un publicētāja lomas. Klientu piekļuve ir ceļa kartē."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Gatavi paplašināt saturu visiem klientiem?",
+      "subtitle": "Sāciet ar Ultra plānu jau šodien vai rezervējiet 20 minūšu demonstrāciju ar aģentūru komandu, lai redzētu LoriTalk uz saviem zīmoliem.",
+      "ctaPrimary": "Sākt ar Ultra",
+      "ctaSecondary": "Rezervēt demonstrāciju"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Individuālajiem satura veidotājiem un ietekmētājiem",
+      "headlineOne": "Viena ideja.",
+      "headlineTwo": "Katra platforma.",
+      "headlineThree": "Nezaudējot savu nedēļas nogali.",
+      "lead": "LoriTalk pārvērš vienu uzdevumu par <strong>vietējiem ierakstiem Instagram, TikTok, YouTube Shorts, X, Threads</strong> un citur — saglabājot jūsu balsi konsekventu visos kontos.",
+      "ctaPrimary": "Sākt bez maksas ar Starter",
+      "ctaSecondary": "Skatīt satura veidotāju plānus",
+      "trust": [
+        "Jūsu balss katrā kanālā",
+        "8 tīkli, izmantojot vietējos API",
+        "Plānojiet nedēļas vienā piegājienā"
+      ],
+      "hubLabel": "Jūsu studija",
+      "hubTitle": "1 uzdevums. 8 vietējie ieraksti.",
+      "hubBody": "Definējiet savu personu vienreiz. LoriTalk pielāgo katru ierakstu katrai platformai — garums, tēmturi, emocijzīmes, tonis, attēla formāts.",
+      "hubMeta": "1 persona · 8 kanāli",
+      "hubBadge": "Tiešraidē",
+      "cardTag": "Vietējais formāts"
+    },
+    "pains": {
+      "title": "Izklausās pēc jūsu nedēļas?",
+      "subtitle": "Ikdienas publicēšana katrā platformā nedrīkstētu maksāt jums svētdienas pēcpusdienu. Mēs to esam piedzīvojuši.",
+      "items": [
+        {
+          "title": "Viena un tā pati ideja, pārrakstīta 8 reizes",
+          "description": "Paraksts Instagram, scenārijs TikTok, āķis YouTube, pavediens X… katra platforma prasa atšķirīgu formu. Jūs iztērējat pēcpusdienu vienam ierakstam."
+        },
+        {
+          "title": "Algoritmi soda par pārtraukumiem",
+          "description": "Izlaidiet divas dienas, un sasniedzamība krītas. Saglabājiet konsekvenci katrā platformā, un jums tik tikko atliek laika filmēt, nemaz nerunājot par savu dzīvi."
+        },
+        {
+          "title": "Zīmolu darījumi prasa vairākas platformas",
+          "description": "Sponsori vēlas Reels + Shorts + TikTok + ierakstu. Viena kampaņa, četri formāti. Jūs ņemat maksu par vienu un piegādājat četrus."
+        },
+        {
+          "title": "Balss kļūst atšķaidīta",
+          "description": "Līdz piecpadsmitajam ierakstam paraksti izklausās tā, it kā tos būtu rakstījis svešinieks. Auditorija to jūt. Iesaiste krītas."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Viss, kas vajadzīgs satura veidotājam, vienuviet",
+      "subtitle": "Instruējiet vienreiz, publicējiet visur — nezaudējot balsi, kurai seko jūsu auditorija.",
+      "items": [
+        {
+          "title": "Jūsu balss, fiksēta",
+          "description": "Definējiet personu ar savu balsi, toni un konkrētām instrukcijām vienkāršā tekstā. Katra ģenerēšana iziet cauri šim filtram — izklausās kā jūs, nevis kā MI rīks."
+        },
+        {
+          "title": "Viens uzdevums, astoņi vietējie ieraksti",
+          "description": "Uzrakstiet ideju vienreiz. LoriTalk izveido versiju, kas optimizēta Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn un Telegram, dažu sekunžu laikā."
+        },
+        {
+          "title": "Zīmolam atbilstoši attēli katram formātam",
+          "description": "Plūsmas ieraksti, stāsti, galvenie kadri, vertikāli Reels un Shorts. Attēli tiek renderēti ar pareizo malu attiecību un jūsu personas vizuālajiem noteikumiem."
+        },
+        {
+          "title": "Saplānojiet nedēļu vienā piegājienā",
+          "description": "Plānojiet no pirmdienas līdz svētdienai visās platformās vienā kalendārā. Vietējie API publicē automātiski — pat tad, kad filmējat nākamo partiju."
+        },
+        {
+          "title": "Redziet, kas aug",
+          "description": "Sasniedzamība, iesaiste, klikšķi un sekotāju pieaugums katram kanālam. KPI kartītes un Lori ieskati atklāj, kas darbojas — koncentrējieties uz to."
+        },
+        {
+          "title": "Moderēts, pirms tiek publicēts",
+          "description": "Katrs melnraksts iziet cauri automātiskai moderācijai, tāpēc zīmolam drošs saturs sasniedz jūsu auditoriju un jūsu sponsori paliek apmierināti."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kā satura veidotāja nedēļa izskatās LoriTalk",
+      "subtitle": "Tveriet savu balsi vienreiz, instruējiet vienu ideju, publicējiet katrā platformā, vērojiet, kas aug.",
+      "steps": [
+        {
+          "badge": "01 · BALSS",
+          "title": "Definējiet savu personu",
+          "description": "Ierakstiet savu balsi, toni un zīmola noteikumus personā. Tā kļūst par filtru, caur kuru iziet katrs nākamais ieraksts."
+        },
+        {
+          "badge": "02 · UZDEVUMS",
+          "title": "Instruējiet vienu ideju",
+          "description": "Ievadiet koncepciju, izvēlieties kanālus un valodu. LoriTalk izveido vietējo versiju katrai platformai dažu sekunžu laikā — paraksti, scenāriji, pavedieni, āķi."
+        },
+        {
+          "badge": "03 · PUBLICĒŠANA",
+          "title": "Rediģējiet un plānojiet",
+          "description": "Noslīpējiet spēcīgāko variantu katram kanālam, ievietojiet visu rindā kalendārā, ejiet prom. API publicē īstajā laikā, pareizajā formātā."
+        },
+        {
+          "badge": "04 · IZSEKOŠANA",
+          "title": "Vērojiet, kas darbojas",
+          "description": "Katra kanāla analītika rāda, kas piesaista sasniedzamību un iesaisti. Mainiet leņķi, nevis darbplūsmu."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plāni, kas radīti satura veidotājiem",
+      "subtitle": "Sāciet bez maksas Beta laikā. Izvēlieties apjomu, kas atbilst tam, cik bieži publicējat."
+    },
+    "faq": {
+      "title": "Atbildes uz satura veidotāju jautājumiem.",
+      "items": [
+        {
+          "q": "Vai tas izklausīsies kā es?",
+          "a": "Aprakstiet savu balsi, toni un zīmola noteikumus personā. Katra ģenerēšana iziet cauri šim filtram. Jo detalizētāka persona, jo tuvāk jūsu balsij."
+        },
+        {
+          "q": "Kurās platformās jūs patiešām publicējat?",
+          "a": "Vietējā publicēšana aptver Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn un Telegram — astoņi tīkli, izmantojot oficiālos API. Kļūmes vienā kanālā nekad nebloķē pārējos."
+        },
+        {
+          "q": "Vai varu rediģēt pirms publicēšanas?",
+          "a": "Vienmēr. LoriTalk izveido melnrakstu katram kanālam — jūs izvēlaties, pielāgojat un publicējat. Nekas netiek publicēts bez jūsu pogas nospiešanas (ja vien neesat to saplānojis)."
+        },
+        {
+          "q": "Kā ar attēliem un īsformāta video?",
+          "a": "Zīmolam atbilstoši attēli tiek ģenerēti katrai platformai ar pareizo malu attiecību (kvadrāts, vertikāls 9:16, galvenais kadrs). Īsformāta video saņemat vietējo parakstu ar āķi pirmajās sekundēs un aicinājumu rīkoties — ielīmējiet tieši TikTok vai YouTube Shorts."
+        },
+        {
+          "q": "Vai LoriTalk Beta laikā ir bez maksas?",
+          "a": "Jā. Beta piekļuve ir bez maksas ar dāsniem ierobežojumiem. Katrs Beta lietotājs saglabā savu pašreizējo cenu fiksētu uz visiem laikiem, kad tiek palaisti maksas plāni."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Beidziet pārrakstīt. Sāciet publicēt.",
+      "subtitle": "Pievienojieties Beta — bez maksas, bez kredītkartes, jūsu cena tiek fiksēta uz visiem laikiem, kad palaižam.",
+      "ctaPrimary": "Sākt bez maksas ar Starter",
+      "ctaSecondary": "Skatīt satura veidotāju plānus"
+    }
   }
 }

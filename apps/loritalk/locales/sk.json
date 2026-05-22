@@ -3,289 +3,347 @@
     "features": "Funkcie",
     "howItWorks": "Ako to funguje",
     "pricing": "Cenník",
+    "forAgencies": "Pre agentúry",
+    "forCreators": "Pre tvorcov",
     "beta": "Beta",
     "startForFree": "Začnite zadarmo"
   },
   "hero": {
-    "badge": "Teraz v Beta — bezplatný skorový prístup",
-    "headlineOne": "Píš menej.",
-    "headlineTwo": "Publikuj viac.",
-    "description": "Zadajte tému alebo nápad. AI od Loritalk napíše optimalizované príspevky pre Instagram, LinkedIn, X, TikTok a ďalšie — za pár sekúnd. Viacero AI modelov súťaží, aby vám dali najlepší výsledok.",
-    "ctaPrimary": "Začnite tvoriť zadarmo",
-    "ctaSecondary": "Pozrite sa, ako to funguje",
-    "note": "Bez kreditnej karty · Zadarmo počas Beta",
-    "headlineTwoTail": ""
+    "badge": "V Beta verzii · Cena pre skorý prístup uzamknutá navždy",
+    "headlineOne": "Píšte menej.",
+    "headlineTwo": "Publikujte viac.",
+    "headlineTwoTail": "",
+    "headlineStrike": "Prepísané.",
+    "headlineThree": "Skontrolované.",
+    "lead": "Opíšte svoj príspevok raz. Loritalk napíše <strong>natívnu verziu pre každú pripojenú platformu</strong>, vygeneruje obrázky verné značke, prepustí každé slovo automatizovanou moderáciou a naplánuje ich — za pár sekúnd.",
+    "ctaPrimary": "Začnite zadarmo — bez karty",
+    "ctaSecondary": "Pozrite, ako to funguje · 90 s",
+    "trust": [
+      "8 natívnych integrácií",
+      "Automaticky moderované",
+      "Izolované podľa pracovného priestoru"
+    ],
+    "briefCard": {
+      "label": "Vaše zadanie · 1 z 1",
+      "typed": "Uvedieme našu novú udržateľnú tenisku. Vyrobená z 80 % recyklovaného oceánskeho plastu. Cieľom sú bežci generácie Z.",
+      "meta": "sk · 8 kanálov · Hlas značky",
+      "send": "Generovať ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "príspevky · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · stránky",
+      "x": "X / Twitter",
+      "xTag": "vlákna · samostatné",
+      "tiktok": "TikTok",
+      "tiktokTag": "scenáre · popisy",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100 s",
+      "threads": "Threads",
+      "threadsTag": "natívne",
+      "facebook": "Facebook",
+      "facebookTag": "stránky",
+      "telegram": "Telegram",
+      "telegramTag": "kanály · skupiny"
+    },
+    "leadHook": "Opíšte svoj príspevok raz.",
+    "leadBody": "Loritalk napíše <strong>natívnu verziu pre každú pripojenú platformu</strong>, vygeneruje obrázky verné značke, prepustí každé slovo automatizovanou moderáciou a naplánuje ich — za pár sekúnd."
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Podporovaných sociálnych sietí",
-    "languagesValue": "3",
-    "languagesLabel": "Jazyky pri spustení",
-    "generationValue": "<5s",
-    "generationLabel": "Priemerný čas generovania",
+    "languagesValue": "24+",
+    "languagesLabel": "Jazykov rozhrania",
+    "generationValue": "Sekundy",
+    "generationLabel": "Od zadania k pripravenému príspevku",
     "freeValue": "Zadarmo",
-    "freeLabel": "Počas Beta — bez obmedzenia"
+    "freeLabel": "Počas Beta verzie — bez obmedzení"
   },
   "problem": {
-    "title": "Váš pracovný postup pre obsah je rozbitý",
-    "subtitle": "Znie to povedomé?",
+    "title": "Váš pracovný postup s obsahom je nefunkčný",
+    "subtitle": "Znie to povedome?",
     "items": [
       {
         "title": "Hodiny strávené prispôsobovaním",
-        "description": "Napíšete príspevok pre Instagram, potom ho prepíšete pre LinkedIn, potom znova pre X. Každá platforma vyžaduje iný tón, dĺžku a hashtagy."
+        "description": "Napíšete príspevok pre Instagram, potom ho prepíšete pre LinkedIn a znova pre X. Každá platforma potrebuje iný tón, dĺžku a hashtagy."
       },
       {
-        "title": "AI, ktorá znie šablónovo",
-        "description": "AI vám dá jednu verziu, ktorá znie ako všetci ostatní. Žiadny hlas značky, žiadne povedomie o platforme, žiadna skutočná optimalizácia."
+        "title": "AI, ktorá znie všeobecne",
+        "description": "AI s jediným modelom vám dá jednu verziu, ktorá znie ako od všetkých ostatných. Žiadny hlas značky, žiadne povedomie o platforme, žiadna skutočná optimalizácia."
       },
       {
-        "title": "Úzke hrdlá v tíme",
-        "description": "Obsah čaká na schválenie, stráca sa v Slack vláknach a nikto nevie, čo je naplánované na budúci týždeň."
+        "title": "Tímové úzke miesta",
+        "description": "Obsah čaká na schválenie, stratí sa vo vláknach na Slacku a nikto nevie, čo je naplánované na budúci týždeň."
       }
     ]
   },
   "solution": {
     "title": "Loritalk to všetko vyrieši",
-    "subtitle": "Jeden brief. Každá platforma. Viacero AI súťaží o váš najlepší príspevok.",
+    "subtitle": "Jedno zadanie. Natívna verzia pre každú platformu. Obrázky verné značke vykreslené súbežne.",
     "ctaPrimary": "Začnite tvoriť zadarmo",
     "rows": [
       {
-        "before": "1 príspevok = 45 min prispôsobovania pre každú platformu",
-        "after": "1 brief = všetky platformy za <5 sekúnd"
+        "before": "1 príspevok = 45 min prispôsobovania každej platforme",
+        "after": "1 zadanie = všetky platformy za <5 sekúnd"
       },
       {
-        "before": "1 AI model = generický, univerzálny text",
-        "after": "Viacero AI modelov diskutuje a vzájomne sa zdokonaľuje"
+        "before": "Všeobecný AI text opakovane použitý naprieč každou sieťou",
+        "after": "Natívna verzia pre každý kanál — dĺžka, hashtagy a tón prispôsobené"
       },
       {
-        "before": "Obsah rozptýlený medzi nástrojmi a vláknami",
-        "after": "Jeden dashboard: vytvorte, schváľte, naplánujte, publikujte, sledujte"
+        "before": "Obsah roztrúsený naprieč nástrojmi a vláknami",
+        "after": "Jeden panel: tvorte, schvaľujte, plánujte, publikujte, sledujte"
       }
     ]
   },
   "features": {
-    "title": "Všetko, čo váš tím pre obsah potrebuje",
-    "subtitle": "Od nápadu po publikovaný príspevok — Loritalk zvládne celý pracovný postup.",
+    "title": "Všetko, čo váš obsahový tím potrebuje",
+    "subtitle": "Od nápadu k publikovanému príspevku — Loritalk zvládne celý pracovný postup.",
     "items": [
       {
-        "title": "Multi-modelová AI deliberácia",
-        "description": "Nie jeden AI — viacero modelov generuje nezávisle a potom zdokonaľuje prácu ostatných."
+        "title": "Obsah natívny pre platformu",
+        "description": "Jedno zadanie sa stane natívnou verziou pre každú platformu — dĺžka, hashtagy, emoji a tón prispôsobené pre Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads a Telegram."
       },
       {
-        "title": "Obsah optimalizovaný pre platformu",
-        "description": "Každý príspevok je prispôsobený svojej platforme — správny tón, dĺžka, hashtagy, emotikony a formát. Popisky na Instagram, články na LinkedIn, vlákna na X, scenáre pre TikTok."
+        "title": "Generovanie obrázkov verných značke",
+        "description": "Obrázky vykreslené pre každú platformu so správnym pomerom strán a vizuálnymi pravidlami vašej persóny — príspevky do feedu, stories, hero výrezy. Žiadne ručné zmenšovanie."
       },
       {
         "title": "Viacjazyčné generovanie",
-        "description": "Generujte v portugalčine, angličtine, španielčine a ďalších jazykoch. Plynulosť na úrovni rodilého hovoriaceho s kultúrnymi nuansami — nielen preklad."
+        "description": "Generujte v portugalčine, angličtine, španielčine a ďalších jazykoch. Plynulosť na úrovni rodeného hovorcu s kultúrnymi nuansami — nielen preklad."
       },
       {
-        "title": "Naplánujte a publikujte",
-        "description": "Zobrazenie kalendára, plánované publikovánie a priame zverejnenie na všetkých pripojených kanáloch. Rôzne časy pre každú platformu."
+        "title": "Plánovanie a publikovanie",
+        "description": "Zobrazenie kalendára, naplánované publikovanie a priame zverejňovanie do všetkých pripojených kanálov. Rôzne časy pre každú platformu."
       },
       {
         "title": "Hlas značky a persóny",
         "description": "Vytvorte AI persóny, ktoré píšu ako vaša značka. Ovládajte tón od profesionálneho po hravý. Každý príspevok znie ako vy, nie ako robot."
       },
       {
-        "title": "Analytický dashboard",
-        "description": "Sledujte zobrazenia, zapojenie, kliknutia a rast napriec všetkými kanálmi. Zistite, aký obsah funguje, a zdvojnásobte úsilie."
+        "title": "Analytický panel",
+        "description": "Sledujte dosah, interakcie, kliknutia a rast pre každý kanál. KPI karty, najlepšie príspevky a Lori Insights ukážu, čo funguje."
       }
     ]
   },
   "howItWorks": {
-    "title": "Od nápadu k príspevku v 3 krokoch",
-    "subtitle": "Žiadne prázdne obrazovky. Žiadne kopírovanie medzi platformami.",
+    "eyebrow": "05 · Pracovný postup",
+    "title": "Zadanie → náhľad → publikovanie.",
+    "titleAccent": "Tri kroky.",
+    "titleTail": "Za pár sekúnd.",
+    "subtitle": "Nikdy nevyberáte model. Nikdy nemeníte veľkosť obrázka. Nikdy nekopírujete medzi kartami.",
     "steps": [
       {
-        "title": "Napíšte svoj brief",
-        "description": "Popíšte, čo chcete komunikovať — tak jednoduché ako \"uvedenie nového produktu\" alebo tak podrobné ako kompletný brief. Vyberte si kanály, jazyk a tón."
+        "badge": "01",
+        "eyebrow": "Vstup",
+        "title": "Napíšte svoje zadanie",
+        "description": "Jedna veta alebo tri odseky. Vyberte kanály, persónu a jazyk. To je jediná vec, ktorú dnes napíšete.",
+        "footLeft": "~ 5 s na napísanie",
+        "footRight": "1 zadanie"
       },
       {
-        "title": "AI modely súťažia za vás",
-        "description": "Viacero AI modelov generuje obsah nezávisle, potom vzájomne preskúmajú a zdokonalia výstupy ostatných. Dostanete N dopracovaných verzií pre každú platformu."
+        "badge": "02",
+        "eyebrow": "Generovanie",
+        "title": "AI to prispôsobí každému kanálu",
+        "description": "Loritalk si prečíta vaše zadanie, vašu persónu a natívne pravidlá každej platformy — potom vytvorí verziu pre každý kanál. Pred tým, než ju uvidíte, prebehne automatizovaná moderácia.",
+        "footLeft": "~ 3 s na kanál",
+        "footRight": "Na pripojený kanál"
       },
       {
-        "title": "Vyberte, upravte a publikujte",
-        "description": "Vyberte si svoju obľúbenú verziu pre každý kanál. Upravte čokoľvek jedným kliknutím. Publikujte ihneď alebo naplánujte na neskôr."
+        "badge": "03",
+        "eyebrow": "Distribúcia",
+        "title": "Publikujte alebo naplánujte",
+        "description": "Odošlite hneď alebo vložte do kalendára s časovaním pre každú platformu. Každý kanál odosiela cez svoje natívne API; zlyhania sú izolované — Instagram vyjde, aj keď Facebook zaváha.",
+        "footLeft": "Natívne API · OAuth",
+        "footRight": "8 kanálov"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Uvedieme našu novú udržateľnú tenisku. Vyrobená z 80 % recyklovaného oceánskeho plastu. Cieľom sú bežci generácie Z.\"",
+      "channelsComment": "// kanály:"
+    },
+    "personasViz": {
+      "personaLabel": "Persóna",
+      "languageLabel": "Jazyk",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutrálny — domáci hlas Lori"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Uvoľnený, vtipný, konverzačný"
+        },
+        {
+          "name": "Core",
+          "desc": "Odvážny, optimistický, vedený značkou"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "carousel",
+          "when": "Dnes 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "dlhý formát",
+          "when": "Dnes 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "vlákno",
+          "when": "Dnes 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Zajtra 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "príspevok",
+          "when": "Zajtra 12:00"
+        }
+      ],
+      "cta": "▶ Publikovať všetko · ⏱ Naplánovať"
+    }
   },
-  "differentiator": {
-    "title": "Prečo viacero AI porazí jednu",
-    "subtitle": "Iné nástroje používajú jeden model. Loritalk používa viacero — a nechá ich vzájomne sa zlepšovať.",
-    "briefLabel": "Váš brief",
-    "channels": "Kanály",
-    "language": "Jazyk:",
-    "languages": "Angličtina, Portugalčtina",
-    "submitted": "Odoslané pred 2 s",
-    "round1": "KOLO 1 — NEZÁVISLÉ GENEROVANIE",
-    "generated": "Vygenerované",
-    "round2": "Kolo 2 — Krížové zdokonalenie",
-    "round2Desc": "Každý model číta všetky výstupy a vylepšuje svoju vlastnú verziu",
-    "qualityNote": "Kvalita sa zlepšila o ~40 % oproti Kolu 1",
-    "pickEdit": "Vyberte a upravte",
-    "addMedia": "Pridať médiá",
-    "uploading": "Nahrávanie obrázka...",
-    "imageAttached": "Obrázok úspešne nahráný",
-    "generateAI": "Generovať pomocou AI",
-    "readyPublish": "Pripravené na publikovánie",
-    "publishAll": "Publikovať všetko",
-    "scheduled": "Naplánované",
-    "draft": "Koncept",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Obrazový obsah",
+    "title": "Verné značke",
+    "titleAccent": "obrázky",
+    "titleTail": "vo veľkosti pre každú platformu.",
+    "subtitle": "Generovanie obrázkov beží asynchrónne a pre každú platformu — žiadne ručné zmenšovanie, žiadne fotobanky mimo značky. Samostatné príspevky, carousely, formáty stories, hero výrezy. Každé vykreslenie sa riadi vizuálnymi pravidlami aktívnej persóny.",
+    "tiles": {
+      "instagramCaption": "5:00 ráno. Káva, dve karty, jedno rozhodnutie.\nVytvoril v2 ešte predtým, než sa tím prihlásil.",
+      "storyQuote": "dosiahli sme 1M MRR v tom istom týždni, keď sme odstránili polovicu roadmapy.",
+      "storySwipe": "↑ potiahnuť",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Najali sme 3 externistov ešte pred prvým zamestnancom na plný úväzok. Tu je tabuľka.",
+      "linkedinCta": "Čítať viac →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "väčšina „obsahu zakladateľov\" je tlačová správa v mikine. píš ako človek. #shipping",
+      "generatingLabel": "Vykresľovanie · TikTok",
+      "generatingSub": "9:16 · ~12 s",
+      "ytTitleLineOne": "PRVÝ",
+      "ytTitleLineTwo": "NÁBOR.",
+      "ytSubtitle": "Prečo sme čakali 18 mesiacov.",
+      "ytMeta": "Loritalk · Ep. 14 · 32 min"
+    }
   },
   "useCases": {
     "title": "Vytvorené pre tímy, ktoré publikujú",
-    "subtitle": "Či už ste samostatný tvorca alebo 50členná agentúra.",
+    "subtitle": "Či už ste sólo tvorca alebo 50-členná agentúra.",
     "items": [
       {
-        "title": "Samostatní tvorcovia a freelanceri",
-        "description": "Prestaňte tráviť hodiny prispôsobovaním obsahu. Píšte raz, publikujte všade. Sústreďte sa na stratégiu, nie na kopírovanie."
+        "title": "Sólo tvorcovia a freelanceri",
+        "description": "Prestaňte tráviť hodiny prispôsobovaním obsahu. Napíšte raz, publikujte všade. Sústreďte sa na stratégiu, nie na kopírovanie."
       },
       {
         "title": "Marketingové tímy",
-        "description": "Jeden pracovný priestor na značku. Schvaľovacie procesy. Zobrazenie kalendára. Každý vie, čo sa publikuje a kedy."
+        "description": "Jeden pracovný priestor pre každú značku. Zobrazenie kalendára pre každý pracovný priestor. Každý vie, čo a kedy sa publikuje."
       },
       {
         "title": "Agentúry",
-        "description": "Spravujte viac značiek z jedného účtu. Priradeťe role, kontrolujte prístup, sledujte výkonnosť napriec všetkými klientmi. Neobmedzené príspevky v pláne pre agentúry."
+        "description": "Spravujte viacero značiek z jedného účtu. Pracovný priestor pre každého klienta s izolovanými kanálmi, persónami a kalendárom. Analytika pre každý kanál každej značky."
       }
     ]
   },
   "pricing": {
-    "title": "Jednoduchý a transparentný cenník",
-    "subtitle": "Zadarmo počas Beta. Skorí používatelia si navždy uzamknú svoju sadzbu po spustení.",
-    "mostPopular": "Najobľúbenejšie",
+    "title": "Jednoduché, transparentné ceny",
+    "subtitle": "Na báze kreditov. Zrušenie kedykoľvek. Ročné predplatné vám ušetrí dva mesiace.",
     "monthly": "Mesačne",
     "annual": "Ročne",
-    "save2Months": "-17%",
-    "perMonth": "/ mesiac",
+    "save2Months": "-17 %",
+    "perMonth": "/ mes.",
+    "perMonthBilledYearly": "/ mes., účtované ročne",
     "perYear": "/ rok",
-    "billedAnnually": "Fakturované ročne",
-    "customPriceLabel": "Na mieru",
-    "plans": [
-      {
-        "name": "Zadarmo",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "počas Beta",
-        "description": "Vyskúšajte všetko s štedrými limitmi.",
-        "features": [
-          "5 príspevkov / mesiac",
-          "3 siete",
-          "Základné ovládanie tónu",
-          "Návrhy hashtagov"
-        ],
-        "cta": "Začnite zadarmo",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Ušetríte {{amount}} / rok",
+    "mostPopular": "Najobľúbenejšie",
+    "bestValue": "Najlepšia hodnota",
+    "creditsUnit": "kreditov / mesiac",
+    "creditsTexts": "~{{count}} textových príspevkov",
+    "creditsOr": "alebo",
+    "creditsImages": "~{{count}} obrázkov verných značke",
+    "promoExplainer": "Promo na prvý rok: počas celého prvého roka získate KAŽDÝ mesiac 2× kreditov, keď zvolíte Ročné predplatné — to je {{count}} bonusových kreditov každý mesiac.",
+    "promoHeroExtra": "(+{{count}} bonusových kreditov každý mesiac počas 12 mesiacov)",
+    "tierChoose": "Vybrať plán",
+    "features": {
+      "workspaces_one": "{{count}} pracovný priestor",
+      "workspaces_few": "{{count}} pracovné priestory",
+      "workspaces_many": "{{count}} pracovného priestoru",
+      "workspaces_other": "{{count}} pracovných priestorov",
+      "channels": "{{count}} sociálnych kanálov",
+      "personas": "{{count}} persón značky",
+      "members_one": "{{count}} člen tímu",
+      "members_few": "{{count}} členovia tímu",
+      "members_many": "{{count}} člena tímu",
+      "members_other": "{{count}} členov tímu",
+      "media": "{{count}} mediálnych súborov"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Pre tých, čo s AI obsahom začínajú"
       },
-      {
-        "name": "Tvorca",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Pre tvorcov a značky, ktoré publikujú pravidelne.",
-        "features": [
-          "200 príspevkov / mesiac",
-          "Všetky siete",
-          "Pokročilý tón a persóny",
-          "Kalendár obsahu",
-          "Prioritná podpora"
-        ],
-        "cta": "Začať bezplatnú skúšobnú verziu",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Pre konzistentnú a jednoduchú tvorbu AI obsahu"
       },
-      {
-        "name": "Agentúra",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Pre tímy spravujúce viac značiek.",
-        "features": [
-          "Neobmedzené príspevky",
-          "Všetky siete",
-          "Viac značiek",
-          "Tímová spolupráca",
-          "Analytika",
-          "Správca účtu"
-        ],
-        "cta": "Kontaktujte nás",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Pre tvorcov, ktorí budujú AI produkty"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Pre agentúry a malé tímy"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Otázky? Máme odpovede.",
     "items": [
       {
-        "q": "Aké AI modely Loritalk používa?",
-        "a": "Môžete nakonfigurovať, ktoré modely sa zúčastňujú vášho generovacieho procesu."
+        "q": "Ako funguje AI od Loritalk?",
+        "a": "Loritalk vytvorí natívnu verziu vášho zadania pre každý pripojený kanál a súbežne vykreslí obrázky verné značke. Všetko prejde vrstvou automatizovanej moderácie ešte predtým, než sa dostane na váš panel."
       },
       {
-        "q": "Čím sa to líši od other AI tools?",
-        "a": "Other AI tools vám dá jeden výstup z jedného modelu. Loritalk spúšťa viacero modelov paralelne a potom ich nechá zdokonaľovať prácu ostatných — produkujúc trvalo vyššiu kvalitu. Navyše každý príspevok je automaticky optimalizovaný pre konkrétnu platformu."
+        "q": "Čím sa to líši od iných AI nástrojov?",
+        "a": "Iné nástroje vám dajú jeden blok textu na kopírovanie všade. Loritalk vytvorí natívne verzie pre každú platformu — dĺžka, hashtagy, emoji a tón prispôsobené každej sieti — a publikuje cez oficiálne API každej platformy."
       },
       {
         "q": "Ktoré sociálne siete sú podporované?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) a TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads a Telegram — osem sietí cez natívne API."
       },
       {
-        "q": "Je môj obsah súkromný?",
-        "a": "Áno. Váš obsah sa nikdy nepoužíva na trénovanie AI modelov. Všetky údaje sú uložené na našich serveroch v Európe a spracované v súlade s GDPR."
+        "q": "Kde sú uložené moje dáta?",
+        "a": "Vaše dáta sú uložené na serveroch v Európskej únii. Poskytovatelia AI, ktorých používame (OpenAI pre text, Google pre obrázky), fungujú podľa svojich podmienok pre podnikové API — obsah odoslaný do API sa nepoužíva na trénovanie ich univerzálnych modelov."
       },
       {
-        "q": "Môžem to používať so svojím tímom?",
-        "a": "Samozrejme. Vytvorte pracovné priestory pre každú značku, pozvite členov tímu s rolami administrátora alebo publikanteho a nastavte schvaľovacie procesy, aby nič nešlo live bez kontroly."
+        "q": "Môžem to používať s tímom?",
+        "a": "Áno. Vytvorte pracovné priestory pre každú značku a pozvite členov tímu s rolou administrátora alebo publikujúceho. Každý pracovný priestor má vlastné pripojené kanály, persóny a kalendár."
       },
       {
-        "q": "Čo sa stane po Beta?",
-        "a": "Nabĕhnú platené plány, ale každý používateľ Beta si navždy zachová svoju aktuálnu sadzbu. Žiadne prekvapenia."
+        "q": "Čo sa stane po Beta verzii?",
+        "a": "Platené plány vstúpia do platnosti, no každý používateľ Beta verzie si svoju aktuálnu cenu uzamkne navždy. Žiadne prekvapenia."
       }
     ]
   },
   "ctaBanner": {
     "headline": "Prestaňte písať. Začnite publikovať.",
-    "subtitle": "Pripojte sa k Beta — bezplatný prístup, bez kreditnej karty a vaša sadzba je navždy uzamknutá po spustení.",
+    "subtitle": "Pripojte sa k Beta verzii — bezplatný prístup, bez platobnej karty a vaša cena bude pri spustení uzamknutá navždy.",
     "ctaPrimary": "Začnite tvoriť zadarmo",
-    "ctaSecondary": "Pozrite sa, ako to funguje"
+    "ctaSecondary": "Pozrite, ako to funguje"
   },
   "footer": {
     "description": "AI obsah pre každú sociálnu sieť.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugalsko",
     "product": "Produkt",
     "resources": "Zdroje",
     "legal": "Právne",
@@ -294,11 +352,309 @@
     "supportedNetworks": "Podporované siete",
     "helpCenter": "Centrum pomoci",
     "contactUs": "Kontaktujte nás",
-    "betaFeedback": "Spätná väzba k Beta",
-    "apiDocs": "API dokumentácia",
-    "privacyPolicy": "Zásady ochrany osobných údajov",
-    "termsOfService": "Podmienky služby",
-    "cookiePolicy": "Zásady cookies",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "betaFeedback": "Spätná väzba k Beta verzii",
+    "apiDocs": "Dokumentácia API",
+    "privacyPolicy": "Zásady ochrany súkromia",
+    "termsOfService": "Podmienky používania",
+    "cookiePolicy": "Zásady používania súborov cookie",
+    "legalNotice": "Právne informácie",
+    "copyright": "© 2026 Loritalk® od CDN Core Technologies. Covilhã, Portugalsko."
+  },
+  "cookieBanner": {
+    "aria": "Oznámenie o súboroch cookie",
+    "title": "Používame súbory cookie",
+    "body": "Nevyhnutne potrebné súbory cookie udržiavajú stránku v chode. S vaším súhlasom načítame aj Google Analytics na meranie návštevnosti a Meta Pixel na meranie našej reklamy. Môžete prijať, odmietnuť alebo vybrať kategóriu po kategórii — a kedykoľvek si to rozmyslieť.",
+    "policyLink": "Zásady používania súborov cookie",
+    "privacyLink": "Zásady ochrany súkromia",
+    "acceptAll": "Prijať všetko",
+    "rejectOptional": "Odmietnuť voliteľné",
+    "customize": "Prispôsobiť",
+    "save": "Uložiť predvoľby",
+    "necessaryLabel": "Nevyhnutne potrebné",
+    "necessaryDesc": "Potrebné pre fungovanie stránky (jazyk a vaša voľba súhlasu). Nedajú sa vypnúť.",
+    "analyticsLabel": "Analytika — Google Analytics",
+    "analyticsDesc": "Načítava Google Analytics 4 na meranie návštevnosti a zlepšovanie stránky. Nastavuje súbory cookie _ga a _ga_* a prenáša údaje o zobrazení stránok do Google.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Načítava Meta Pixel (Facebook / Instagram), aby sme mohli merať reklamné kampane. Nastavuje súbory cookie _fbp a _fbc a prenáša údaje o zobrazení stránok do Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Pre marketingové agentúry a kreatívne štúdiá",
+      "headlineOne": "Bojujete s vydávaním príspevkov",
+      "headlineTwo": "pre každého klienta",
+      "headlineThree": "na každej platforme?",
+      "lead": "Loritalk dáva vašej agentúre <strong>jeden pracovný priestor pre každú značku</strong>, vyhradenú persónu pre každého klienta a natívne publikovanie naprieč 8 sieťami — takže váš tím napíše raz a publikuje všade, na každom účte.",
+      "ctaPrimary": "Začnite s plánom Ultra",
+      "ctaSecondary": "Pozrite ceny pre agentúry",
+      "trust": [
+        "Jeden pracovný priestor pre každú značku",
+        "Roly administrátora + publikujúceho",
+        "8 sietí cez natívne API"
+      ],
+      "hubLabel": "Centrála agentúry",
+      "hubTitle": "5 značiek. 5 pracovných priestorov.",
+      "hubBody": "Každý klient má vlastný pracovný priestor, persóny, kanály a analytiku. Prepnite kontext jedným kliknutím.",
+      "hubMeta": "5 pracovných priestorov · izolovaných",
+      "hubBadge": "Naživo"
+    },
+    "pains": {
+      "title": "Spoznávate svoj týždeň?",
+      "subtitle": "Ten istý obsah prepísaný 7-krát pre 5 klientov. Každý týždeň. Boli sme tam.",
+      "items": [
+        {
+          "title": "Žonglovanie s 5+ klientmi naraz",
+          "description": "Každá značka chce iný tón, iné platformy, iné termíny. Tabuľky a vlákna na Slacku nie sú pracovný postup."
+        },
+        {
+          "title": "Hlas značky sa pri každom príspevku posúva",
+          "description": "Iní copywriteri, iné karty, iné ChatGPT prompty. Hlas, ktorý váš klient pred šiestimi mesiacmi schválil, je preč."
+        },
+        {
+          "title": "Piatkové nočné presuny",
+          "description": "Klient žiada zmeny na poslednú chvíľu naprieč Instagramom, LinkedInom a TikTokom. Ten istý nápad prepíšete trikrát — a aj tak zmeškáte slot."
+        },
+        {
+          "title": "Reporting trvá celý deň",
+          "description": "Kopírovanie zobrazení, interakcií a kliknutí z piatich panelov do prezentácie. Ručne. Každý mesiac."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Všetko, čo vaša agentúra potrebuje, na jednom mieste",
+      "subtitle": "Od zadania k reportu — Loritalk riadi celý obsahový proces pre každú značku, ktorú spravujete.",
+      "items": [
+        {
+          "title": "Jeden pracovný priestor pre každého klienta",
+          "description": "Izolované pracovné priestory s vlastnými pripojenými kanálmi, persónami, členmi a kalendárom. Nového klienta spustíte za pár minút."
+        },
+        {
+          "title": "Persóny s hlasom značky",
+          "description": "Definujte persónu pre každého klienta — hlas, tón, konkrétne pokyny. Každé generovanie pre daný pracovný priestor rešpektuje zadanie, vždy."
+        },
+        {
+          "title": "8 sietí, jedno zadanie",
+          "description": "Napíšte zadanie raz a získajte natívne verzie pre Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads a Telegram — všetko za pár sekúnd, všetko cez oficiálne API."
+        },
+        {
+          "title": "Kalendár pre každý pracovný priestor",
+          "description": "Každý klient má vlastné zobrazenie týždňa / mesiaca / fronty. Naplánujte príspevky pre každý kanál a uvidíte celý proces danej značky na prvý pohľad."
+        },
+        {
+          "title": "Roly administrátora + publikujúceho",
+          "description": "Pozvite členov tímu do každého pracovného priestoru ako administrátora (úplná správa) alebo publikujúceho (tvorba a publikovanie). Pracovné priestory sú navzájom úplne izolované."
+        },
+        {
+          "title": "Analytika pre každý pracovný priestor",
+          "description": "Dosah, interakcie, kliknutia a rast pre každý kanál v rámci pracovného priestoru každého klienta. KPI karty, najlepšie príspevky a Lori Insights — bez prepínania medzi panelmi."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Ako vyzerá agentúrny týždeň v Loritalk",
+      "subtitle": "Onboardujte značku, zadajte AI, získajte schválenie, vydajte. Opakujte pre každého klienta.",
+      "steps": [
+        {
+          "badge": "01 · ONBOARDING",
+          "title": "Spustite pracovný priestor klienta",
+          "description": "Vytvorte pracovný priestor, pripojte sociálne účty značky a nakonfigurujte persónu — hlas, tón, konkrétne pokyny. Pripravené na použitie za pár minút."
+        },
+        {
+          "badge": "02 · ZADANIE",
+          "title": "Napíšte jedno zadanie na kampaň",
+          "description": "Vyberte persónu, kanály a jazyk. Loritalk vygeneruje natívnu verziu pre každú platformu za pár sekúnd."
+        },
+        {
+          "badge": "03 · DOLAĎOVANIE",
+          "title": "Upravte vo svojom tíme",
+          "description": "Váš tím skontroluje koncepty v rámci pracovného priestoru — upravte text, vymeňte obrázky, vyberte najsilnejší variant pre každý kanál, než sa zverejní."
+        },
+        {
+          "badge": "04 · VYDANIE",
+          "title": "Publikujte a sledujte",
+          "description": "Natívne API odosielajú do každého kanála. Výkonnosť sa vracia späť do panela pre daný pracovný priestor — KPI, najlepšie príspevky a rast podľa kanála."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plány vytvorené pre agentúry",
+      "subtitle": "Spravujte hŕstku značiek alebo celé portfólio klientov. Vyberte objem, ktorý zodpovedá vášmu retaineru.",
+      "customPrice": "Poďme sa porozprávať",
+      "customCredits": "Neobmedzené kredity",
+      "customCreditsDetail": "Objem dohodnutý zmluvou — žiadne prekvapivé prečerpanie.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Na mieru",
+          "description": "Pre siete a veľké agentúry, ktoré potrebujú objemy a onboarding na mieru.",
+          "cta": "Porozprávajte sa s obchodom"
+        }
+      },
+      "features": {
+        "customVolumes": "Objemy kreditov na mieru",
+        "priorityEmail": "Prioritná e-mailová podpora",
+        "euData": "Uchovávanie dát v EÚ"
+      }
+    },
+    "faq": {
+      "title": "Otázky agentúr, zodpovedané.",
+      "items": [
+        {
+          "q": "Ako sa kredity zdieľajú medzi klientmi?",
+          "a": "Kredity sú na úrovni účtu agentúry — z rovnakého fondu môže čerpať ktorýkoľvek pracovný priestor. Spotrebu sledujte vo fakturačnom paneli."
+        },
+        {
+          "q": "Čo sa stane, keď klienta onboardujeme alebo odpojíme?",
+          "a": "Nový pracovný priestor spustíte za pár sekúnd. Archivovanie pracovného priestoru ho odstráni z aktívneho zobrazenia; úplné zmazanie účtu rešpektuje pravidlá uchovávania podľa GDPR."
+        },
+        {
+          "q": "Do ktorých sociálnych sietí môžeme publikovať?",
+          "a": "Natívne publikovanie pokrýva LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads a Telegram — osem sietí, každú cez oficiálne API platformy, takže zlyhania zostávajú izolované pre každý kanál."
+        },
+        {
+          "q": "Môžu sa klienti prihlásiť a vidieť svoj pracovný priestor?",
+          "a": "Zatiaľ nie. Pracovné priestory sú len pre tím agentúry — roly administrátora a publikujúceho. Prístup pre klientov je v pláne."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Pripravení škálovať obsah naprieč každým klientom?",
+      "subtitle": "Začnite ešte dnes s plánom Ultra alebo si rezervujte 20-minútovú ukážku s tímom pre agentúry a pozrite si Loritalk na vašich vlastných značkách.",
+      "ctaPrimary": "Začnite s plánom Ultra",
+      "ctaSecondary": "Rezervovať ukážku"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Pre sólo tvorcov a influencerov",
+      "headlineOne": "Jeden nápad.",
+      "headlineTwo": "Každá platforma.",
+      "headlineThree": "Bez straty víkendu.",
+      "lead": "Loritalk premení jedno zadanie na <strong>natívne príspevky pre Instagram, TikTok, YouTube Shorts, X, Threads</strong> a ďalšie — pričom zachová váš hlas konzistentný naprieč každým účtom.",
+      "ctaPrimary": "Začnite zadarmo s plánom Starter",
+      "ctaSecondary": "Pozrite plány pre tvorcov",
+      "trust": [
+        "Váš hlas na každom kanáli",
+        "8 sietí cez natívne API",
+        "Naplánujte týždne naraz"
+      ],
+      "hubLabel": "Vaše štúdio",
+      "hubTitle": "1 zadanie. 8 natívnych príspevkov.",
+      "hubBody": "Definujte svoju persónu raz. Loritalk prispôsobí každý príspevok každej platforme — dĺžka, hashtagy, emoji, tón, formát obrázka.",
+      "hubMeta": "1 persóna · 8 kanálov",
+      "hubBadge": "Naživo",
+      "cardTag": "Natívny formát"
+    },
+    "pains": {
+      "title": "Znie to ako váš týždeň?",
+      "subtitle": "Publikovanie každý deň na každej platforme by vás nemalo stáť nedeľné popoludnie. Boli sme tam.",
+      "items": [
+        {
+          "title": "Ten istý nápad, prepísaný 8-krát",
+          "description": "Popis pre Instagram, scenár pre TikTok, hook pre YouTube, vlákno pre X… každá platforma potrebuje iný tvar. Na jednom príspevku spálite celé popoludnie."
+        },
+        {
+          "title": "Algoritmy trestajú medzery",
+          "description": "Vynechajte dva dni a dosah klesne. Buďte konzistentní naprieč každou platformou a sotva máte čas natáčať, nieto ešte žiť svoj život."
+        },
+        {
+          "title": "Spolupráce so značkami vyžadujú viac platforiem",
+          "description": "Sponzori chcú Reels + Shorts + TikTok + príspevok. Tá istá kampaň, štyri formáty. Účtujete za jeden a dodáte štyri."
+        },
+        {
+          "title": "Hlas sa rozriedi",
+          "description": "Pri pätnástom príspevku znejú popisy, akoby ich napísal cudzí človek. Publikum to spozná. Interakcie klesnú."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Všetko, čo tvorca potrebuje, na jednom mieste",
+      "subtitle": "Zadajte raz, vydajte všade — bez straty hlasu, ktorý vaše publikum sleduje.",
+      "items": [
+        {
+          "title": "Váš hlas, pevne uchytený",
+          "description": "Definujte persónu so svojím hlasom, tónom a konkrétnymi pokynmi obyčajným textom. Každé generovanie prejde cez túto optiku — znie ako vy, nie ako AI nástroj."
+        },
+        {
+          "title": "Jedno zadanie, osem natívnych príspevkov",
+          "description": "Napíšte nápad raz. Loritalk vytvorí verziu optimalizovanú pre Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn a Telegram za pár sekúnd."
+        },
+        {
+          "title": "Obrázky verné značke pre každý formát",
+          "description": "Príspevky do feedu, stories, hero výrezy, vertikálne pre Reels a Shorts. Obrázky sú vykreslené so správnym pomerom strán a vizuálnymi pravidlami vašej persóny."
+        },
+        {
+          "title": "Naplánujte týždeň na jedno posedenie",
+          "description": "Naplánujte pondelok až nedeľu naprieč každou platformou v jednom kalendári. Natívne API odosielajú automaticky — aj keď natáčate ďalšiu sériu."
+        },
+        {
+          "title": "Sledujte, čo rastie",
+          "description": "Dosah, interakcie, kliknutia a rast sledovateľov pre každý kanál. KPI karty a Lori Insights ukážu, čo funguje — naplno na to vsaďte."
+        },
+        {
+          "title": "Moderované pred vydaním",
+          "description": "Každý koncept prejde automatizovanou moderáciou, takže obsah bezpečný pre značku sa dostane k vášmu publiku a vaši sponzori zostanú spokojní."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Ako vyzerá týždeň tvorcu v Loritalk",
+      "subtitle": "Zachyťte svoj hlas raz, zadajte jeden nápad, vydajte naprieč každou platformou, sledujte, čo rastie.",
+      "steps": [
+        {
+          "badge": "01 · HLAS",
+          "title": "Definujte svoju persónu",
+          "description": "Napíšte svoj hlas, tón a domáce pravidlá do persóny. Stane sa optikou, cez ktorú prejde každý budúci príspevok."
+        },
+        {
+          "badge": "02 · ZADANIE",
+          "title": "Zadajte jeden nápad",
+          "description": "Napíšte koncept, vyberte kanály a jazyk. Loritalk vytvorí natívnu verziu pre každú platformu za pár sekúnd — popisy, scenáre, vlákna, hooky."
+        },
+        {
+          "badge": "03 · VYDANIE",
+          "title": "Upravte a naplánujte",
+          "description": "Vyleštite najsilnejší variant pre každý kanál, zaraďte všetko do kalendára a odíďte. API publikujú v správny čas, v správnom formáte."
+        },
+        {
+          "badge": "04 · SLEDOVANIE",
+          "title": "Sledujte, čo funguje",
+          "description": "Analytika pre každý kanál ukáže, čo prináša dosah a interakcie. Iterujte uhol pohľadu, nie pracovný postup."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plány vytvorené pre tvorcov",
+      "subtitle": "Začnite zadarmo počas Beta verzie. Vyberte objem, ktorý zodpovedá tomu, ako často publikujete."
+    },
+    "faq": {
+      "title": "Otázky tvorcov, zodpovedané.",
+      "items": [
+        {
+          "q": "Bude to znieť ako ja?",
+          "a": "Opíšte svoj hlas, tón a domáce pravidlá v persóne. Každé generovanie prejde cez túto optiku. Čím detailnejšia persóna, tým bližšie k vášmu hlasu."
+        },
+        {
+          "q": "Do ktorých platforiem skutočne publikujete?",
+          "a": "Natívne publikovanie pokrýva Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn a Telegram — osem sietí cez oficiálne API. Zlyhania na jednom kanáli nikdy neblokujú ostatné."
+        },
+        {
+          "q": "Môžem upraviť pred zverejnením?",
+          "a": "Vždy. Loritalk vytvorí koncept pre každý kanál — vy vyberiete, upravíte a publikujete. Nič nejde naživo bez toho, aby ste stlačili tlačidlo (pokiaľ ste to nenaplánovali)."
+        },
+        {
+          "q": "Čo s obrázkami a krátkym videom?",
+          "a": "Obrázky verné značke sa generujú pre každú platformu so správnym pomerom strán (štvorec, vertikálny 9:16, hero). Pre krátke video získate natívny popis s hookom v prvých sekundách a CTA — vložte priamo do TikToku alebo YouTube Shorts."
+        },
+        {
+          "q": "Je Loritalk počas Beta verzie zadarmo?",
+          "a": "Áno. Prístup k Beta verzii je zadarmo so štedrými limitmi. Každý používateľ Beta verzie si pri spustení platených plánov uzamkne svoju aktuálnu cenu navždy."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Prestaňte prepisovať. Začnite vydávať.",
+      "subtitle": "Pripojte sa k Beta verzii — zadarmo, bez platobnej karty, vaša cena bude pri spustení uzamknutá navždy.",
+      "ctaPrimary": "Začnite zadarmo s plánom Starter",
+      "ctaSecondary": "Pozrite plány pre tvorcov"
+    }
   }
 }

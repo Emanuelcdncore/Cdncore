@@ -3,63 +3,97 @@
     "features": "Gnéithe",
     "howItWorks": "Conas a oibríonn sé",
     "pricing": "Praghsáil",
-    "beta": "Beta",
+    "forAgencies": "Do ghníomhaireachtaí",
+    "forCreators": "Do chruthaitheoirí",
+    "beta": "Béite",
     "startForFree": "Tosaigh saor in aisce"
   },
   "hero": {
-    "badge": "Anois i mBeta — rochtain luath saor in aisce",
+    "badge": "I mBéite · Praghsáil luath-rochtana faoi ghlas go deo",
     "headlineOne": "Scríobh níos lú.",
     "headlineTwo": "Foilsigh níos mó.",
-    "description": "Clóscríobh téama nó smaoineamh. Scríobhann AI Loritalk postálacha optamaithe d'Instagram, LinkedIn, X, TikTok, agus tuilleadh — i soicindí. Bíonn múnlaí AI éagsúla san iomaíocht chun an toradh is fearr a thabhairt duit.",
-    "ctaPrimary": "Tosaigh ag cruthú saor in aisce",
-    "ctaSecondary": "Féach conas a oibríonn sé",
-    "note": "Níl cárta creidmheasa ag teastáil · Saor in aisce le linn Beta",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Athscríofa.",
+    "headlineThree": "Iniúchta.",
+    "lead": "Déan cur síos ar do phostáil aon uair amháin. Scríobhann Loritalk <strong>leagan dúchasach do gach ardán ceangailte</strong>, gineann sé íomhánna ar aon dul le do bhranda, ritheann sé gach focal trí mhodhnóireacht uathoibrithe, agus sceidealaíonn sé iad — i soicindí.",
+    "ctaPrimary": "Tosaigh saor in aisce — gan chárta",
+    "ctaSecondary": "Féach é ag obair · 90s",
+    "trust": [
+      "8 gcomhtháthú dúchasach",
+      "Modhnaithe go huathoibríoch",
+      "Spás oibre scartha"
+    ],
+    "briefCard": {
+      "label": "Do bhrífeáil · 1 as 1",
+      "typed": "Seol ár mbróg reatha inbhuanaithe nua. Déanta as 80% plaisteach aigéin athchúrsáilte. Dírithe ar reathaithe Glúin Z.",
+      "meta": "ga · 8 gcainéal · Guth an Tí",
+      "send": "Gin ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "postálacha · reels · scéalta",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "próifíl · leathanaigh",
+      "x": "X / Twitter",
+      "xTag": "snáitheanna · aonair",
+      "tiktok": "TikTok",
+      "tiktokTag": "scripteanna · fotheidil",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "dúchasach",
+      "facebook": "Facebook",
+      "facebookTag": "leathanaigh",
+      "telegram": "Telegram",
+      "telegramTag": "cainéil · grúpaí"
+    },
+    "leadHook": "Déan cur síos ar do phostáil aon uair amháin.",
+    "leadBody": "Scríobhann Loritalk <strong>leagan dúchasach do gach ardán ceangailte</strong>, gineann sé íomhánna ar aon dul le do bhranda, ritheann sé gach focal trí mhodhnóireacht uathoibrithe, agus sceidealaíonn sé iad — i soicindí."
   },
   "stats": {
-    "networksValue": "6+",
-    "networksLabel": "Líonraí sóisialta tacaithe",
-    "languagesValue": "3",
-    "languagesLabel": "Teangacha ag an seoladh",
-    "generationValue": "<5s",
-    "generationLabel": "Meánam giniúna",
-    "freeValue": "Saor in aisce",
-    "freeLabel": "Le linn Beta — gan teorainneacha"
+    "networksValue": "8",
+    "networksLabel": "Líonraí sóisialta a dtacaítear leo",
+    "languagesValue": "24+",
+    "languagesLabel": "Teangacha comhéadain",
+    "generationValue": "Soicindí",
+    "generationLabel": "Ó bhrífeáil go réidh le foilsiú",
+    "freeValue": "Saor",
+    "freeLabel": "Le linn na Béite — gan teorainneacha"
   },
   "problem": {
     "title": "Tá do shreabhadh oibre ábhair briste",
-    "subtitle": "An bhfuil sé sin aitheanta?",
+    "subtitle": "An bhfuil cuma eolach air seo?",
     "items": [
       {
-        "title": "Uaireanta curtha amú ag oiriúnú",
-        "description": "Scríobhann tú postáil d'Instagram, ansin athscríobhann tú é do LinkedIn, ansin arís do X. Teastaíonn ton, fad agus haischlibeanna éagsúla ó gach ardán."
+        "title": "Uaireanta caite á oiriúnú",
+        "description": "Scríobhann tú postáil d'Instagram, ansin athscríobhann tú í do LinkedIn, ansin arís do X. Teastaíonn ton, fad agus haischlibeanna éagsúla ó gach ardán."
       },
       {
-        "title": "AI a fhuaimníonn ginearálta",
-        "description": "Tugann AI leagan amháin duit a fhuaimníonn cosúil le gach duine eile. Gan guth branda, gan feasacht ardáin, gan fíor-optamú."
+        "title": "IS a bhfuil cuma ghinearálta air",
+        "description": "Tugann IS aon mhúnla amháin leagan amháin duit a bhfuil cuma air mar a bheadh ag gach duine eile. Gan guth branda, gan feasacht ardáin, gan fíor-optamú."
       },
       {
-        "title": "Scrogaill fhoirne",
-        "description": "Bíonn ábhar ag fanacht le ceadú, cailltear i snáitheanna Slack é agus ní fhios d'aon duine cad atá sceidealaithe don tseachtain seo chugainn."
+        "title": "Scrogaill foirne",
+        "description": "Fanann ábhar le ceadú, cailltear é i snáitheanna Slack, agus níl a fhios ag aon duine cad atá sceidealta don tseachtain seo chugainn."
       }
     ]
   },
   "solution": {
-    "title": "Réitíonn Loritalk é seo go léir",
-    "subtitle": "Achoimre amháin. Gach ardán. AIanna iolracha ag iomaíocht ar son do phostáil is fearr.",
+    "title": "Réitíonn Loritalk é sin ar fad",
+    "subtitle": "Aon bhrífeáil amháin. Leagan dúchasach do gach ardán. Íomhánna ar aon dul le do bhranda á rindreáil go comhthreomhar.",
     "ctaPrimary": "Tosaigh ag cruthú saor in aisce",
     "rows": [
       {
-        "before": "1 postáil = 45 nóim ag oiriúnú do gach ardán",
-        "after": "1 achoimre = gach ardán i <5 soicind"
+        "before": "1 phostáil = 45 nóim á oiriúnú do gach ardán",
+        "after": "1 bhrífeáil = gach ardán in <5 soicind"
       },
       {
-        "before": "1 múnla AI = téacs ginearálta, oiriúnach do chách",
-        "after": "Múnlaí AI iolracha ag plé agus ag feabhsú a chéile"
+        "before": "Téacs ginearálta IS athúsáidte ar fud gach líonra",
+        "after": "Leagan dúchasach in aghaidh an chainéil — fad, haischlibeanna agus ton oiriúnaithe"
       },
       {
-        "before": "Ábhar scaipthe trasna uirlisí agus snáitheanna",
-        "after": "Painéal amháin: cruthaigh, ceadaigh, sceidealáil, foilsigh, rianáil"
+        "before": "Ábhar scaipthe ar fud uirlisí agus snáitheanna",
+        "after": "Aon deais amháin: cruthaigh, ceadaigh, sceidealaigh, foilsigh, rianaigh"
       }
     ]
   },
@@ -68,237 +102,561 @@
     "subtitle": "Ó smaoineamh go postáil fhoilsithe — láimhseálann Loritalk an sreabhadh oibre iomlán.",
     "items": [
       {
-        "title": "Díospóireacht AI Il-Mhúnla",
-        "description": "Ní AI amháin — gineann múnlaí iolracha go neamhspleách, ansin feabhsaíonn siad obair a chéile."
+        "title": "Ábhar dúchasach ardáin",
+        "description": "Déantar leagan dúchasach do gach ardán as aon bhrífeáil amháin — fad, haischlibeanna, emoji agus ton oiriúnaithe d'Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads agus Telegram."
       },
       {
-        "title": "Ábhar optamaithe don ardán",
-        "description": "Tá gach postáil saincheaptha dá ardán féin — ton, fad, haischlibeanna, straoiseoga agus formáid chearta. Fotheidil Instagram, ailt LinkedIn, snáitheanna X, scripteanna TikTok."
+        "title": "Giniúint íomhánna ar aon dul le do bhranda",
+        "description": "Íomhánna rindreáilte in aghaidh an ardáin leis an gcóimheas gné ceart agus rialacha amhairc do phearsanra — postálacha fotha, scéalta, barrghearrthacha laoich. Gan athmhéadú láimhe níos mó."
       },
       {
         "title": "Giniúint ilteangach",
-        "description": "Gin i bPortaingéilis, Béarla, Spáinnis agus tuilleadh. Líofacht ar leibhéal dúchais le nuáinsí cultúrtha — ní aistriúchán amháin."
+        "description": "Gin i nGaeilge, i mBéarla, i Spáinnis agus níos mó. Líofacht ar leibhéal dúchasach le nuances cultúrtha — ní hé díreach aistriúchán."
       },
       {
-        "title": "Sceidealáil agus foilsigh",
-        "description": "Amharc féilire, foilsiú sceidealaithe agus postáil dhíreach chuig gach cainéal nasctha. Amanna éagsúla in aghaidh an ardáin."
+        "title": "Sceidealaigh agus foilsigh",
+        "description": "Amharc féilire, foilsiú sceidealta, agus postáil dhíreach chuig gach cainéal ceangailte. Amanna éagsúla in aghaidh an ardáin."
       },
       {
-        "title": "Guth branda agus pearsa",
-        "description": "Cruthaigh pearsana AI a scríobhann cosúil le do bhranda. Rialú toin ó ghairmiúil go spraíúil. Fuaimníonn gach postáil cosúil leat féin, ní cosúil le róbat."
+        "title": "Guth branda agus pearsanraí",
+        "description": "Cruthaigh pearsanraí IS a scríobhann cosúil le do bhranda. Rialaigh an ton ó ghairmiúil go spraíúil. Tá cuma ortsa ar gach postáil, ní ar róbat."
       },
       {
-        "title": "Painéal anailísíochta",
-        "description": "Rianáil tuairimí, rannpháirtíocht, cliceálacha agus fás trasna gach cainéal. Bíodh a fhios agat cén ábhar a oibríonn agus méadaigh an iarracht."
+        "title": "Deais anailísíochta",
+        "description": "Rianaigh raon, rannpháirtíocht, cliceálacha agus fás in aghaidh an chainéil. Tugann cártaí KPI, barrphostálacha agus Léargais Lori le feiceáil cad atá ag obair."
       }
     ]
   },
   "howItWorks": {
-    "title": "Ó smaoineamh go postáil i 3 chéim",
-    "subtitle": "Níl scáileáin fholmha ann a thuilleadh. Níl cóipeáil idir ardáin ann a thuilleadh.",
+    "eyebrow": "05 · Sreabhadh oibre",
+    "title": "Brífeáil → réamhamharc → foilsiú.",
+    "titleAccent": "Trí ghluaiseacht.",
+    "titleTail": "I soicindí.",
+    "subtitle": "Ní roghnaíonn tú múnla riamh. Ní athmhéadaíonn tú íomhá riamh. Ní dhéanann tú cóipeáil-greamú idir cluaisíní riamh.",
     "steps": [
       {
-        "title": "Scríobh d'achoimre",
-        "description": "Cuir síos ar cad ba mhaith leat a chur in iúl — chomh simplí le \"seoladh táirge nua\" nó chomh mionsonraithe le hachoimre iomlán. Roghnaigh do chainéil, teanga agus ton."
+        "badge": "01",
+        "eyebrow": "Ionchur",
+        "title": "Scríobh do bhrífeáil",
+        "description": "Aon abairt amháin nó trí alt. Roghnaigh na cainéil, an pearsanra, agus an teanga. Sin an t-aon rud a scríobhann tú inniu.",
+        "footLeft": "~ 5 sn le scríobh",
+        "footRight": "1 bhrífeáil"
       },
       {
-        "title": "Bíonn múnlaí AI ag iomaíocht ar do shon",
-        "description": "Gineann múnlaí AI iolracha ábhar go neamhspleách, ansin déanann siad athbhreithniú agus feabhsú ar aschur a chéile. Faigheann tú N leagan snasta in aghaidh an ardáin."
+        "badge": "02",
+        "eyebrow": "Giniúint",
+        "title": "Oiriúnaíonn an IS in aghaidh an chainéil é",
+        "description": "Léann Loritalk do bhrífeáil, do phearsanra agus rialacha dúchasacha gach ardáin — ansin ceardaíonn sé leagan déanta do gach cainéal. Ritheann modhnóireacht uathoibrithe sula bhfeiceann tú é.",
+        "footLeft": "~ 3 sn in aghaidh an chainéil",
+        "footRight": "In aghaidh an chainéil cheangailte"
       },
       {
-        "title": "Roghnaigh, cuir in eagar agus foilsigh",
-        "description": "Roghnaigh do leagan is fearr leat do gach cainéal. Coigeartaigh rud ar bith le cliceáil amháin. Foilsigh anois nó sceidealáil do níos déanaí."
+        "badge": "03",
+        "eyebrow": "Dáileadh",
+        "title": "Foilsigh nó sceidealaigh",
+        "description": "Seol anois nó cuir san fhéilire le hamú in aghaidh an ardáin. Seoltar gach cainéal trína API dhúchasach; tá teipeanna scartha — téann Instagram fós fiú má bhíonn fadhb ag Facebook.",
+        "footLeft": "APInna dúchasacha · OAuth",
+        "footRight": "8 gcainéal"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Seol ár mbróg reatha inbhuanaithe nua. Déanta as 80% plaisteach aigéin athchúrsáilte. Dírithe ar reathaithe Glúin Z.\"",
+      "channelsComment": "// cainéil:"
+    },
+    "personasViz": {
+      "personaLabel": "Pearsanra",
+      "languageLabel": "Teanga",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neodrach — guth tí Lori"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Réchúiseach, greannmhar, comhráiteach"
+        },
+        {
+          "name": "Core",
+          "desc": "Dána, dóchasach, branda-threoraithe"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "carasal",
+          "when": "Inniu 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "fadfhoirme",
+          "when": "Inniu 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "snáithe",
+          "when": "Inniu 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "gearr 0:54",
+          "when": "Amárach 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "postáil",
+          "when": "Amárach 12:00"
+        }
+      ],
+      "cta": "▶ Foilsigh uile · ⏱ Sceidealaigh"
+    }
   },
-  "differentiator": {
-    "title": "Cén fáth a mbuaileann AIanna iolracha ceann amháin",
-    "subtitle": "Úsáideann uirlisí eile múnla amháin. Úsáideann Loritalk roinnt — agus cuireann sé orthu a chéile a fheabhsú.",
-    "briefLabel": "D'achoimre",
-    "channels": "Cainéil",
-    "language": "Teanga:",
-    "languages": "Béarla, Portaingéilis",
-    "submitted": "Curtha isteach 2s ó shin",
-    "round1": "BABHTA 1 — GINIÚINT NEAMHSPLEÁCH",
-    "generated": "Ginte",
-    "round2": "Babhta 2 — Tras-fheabhsú",
-    "round2Desc": "Léann gach múnla gach aschur agus feabhsaíonn a leagan féin",
-    "qualityNote": "Feabhsaíodh cáilíocht ~40% i gcomparáid le Babhta 1",
-    "pickEdit": "Roghnaigh agus cuir in eagar",
-    "addMedia": "Cuir meán leis",
-    "uploading": "Íomhá á huaslódáil...",
-    "imageAttached": "Íomhá uaslódáilte go rathúil",
-    "generateAI": "Gin le AI",
-    "readyPublish": "Réidh le foilsiú",
-    "publishAll": "Foilsigh iad go léir",
-    "scheduled": "Sceidealaithe",
-    "draft": "Dréacht",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Íomháineachas",
+    "title": "Íomhánna",
+    "titleAccent": "ar aon dul le do bhranda",
+    "titleTail": "méadaithe in aghaidh an ardáin.",
+    "subtitle": "Ritheann giniúint íomhánna go haisioncronach agus in aghaidh an ardáin — gan athmhéadú láimhe, gan stoc lasmuigh den bhranda. Postálacha aonair, carasail, formáidí scéil, barrghearrthacha laoich. Tagraíonn gach rindreáil do rialacha amhairc an phearsanra ghníomhaigh.",
+    "tiles": {
+      "instagramCaption": "5 r.n. Caife, dhá chluaisín, aon chinneadh amháin.\nThóg mé v2 sular logáil an fhoireann isteach.",
+      "storyQuote": "shroicheamar 1M MRR an tseachtain chéanna ar bhaineamar leath den treochlár.",
+      "storySwipe": "↑ svaidhpeáil",
+      "linkedinAuthor": "Marlow Studio · 12 nóim",
+      "linkedinTitle": "D'fhostaíomar 3 chonraitheoir sula raibh ár gcéad bhall lánaimseartha againn. Seo an scarbhileog.",
+      "linkedinCta": "Léigh tuilleadh →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "is preasráiteas i húdaí an chuid is mó de \"ábhar bunaitheora\". scríobh mar dhuine. #seoladh",
+      "generatingLabel": "Á rindreáil · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "AN CHÉAD",
+      "ytTitleLineTwo": "FHOSTÚ.",
+      "ytSubtitle": "Cén fáth ar fhanamar 18 mí.",
+      "ytMeta": "Loritalk · Eag. 14 · 32 nóim"
+    }
   },
   "useCases": {
     "title": "Tógtha d'fhoirne a fhoilsíonn",
-    "subtitle": "Cibé an cruthaitheoir aonair thú nó gníomhaireacht 50 duine.",
+    "subtitle": "Bíodh tú i d'aonarchruthaitheoir nó i do ghníomhaireacht 50 duine.",
     "items": [
       {
-        "title": "Cruthaitheoirí aonair agus saoroibrithe",
-        "description": "Stad de bheith ag caitheamh uaireanta ag oiriúnú ábhair. Scríobh uair amháin, foilsigh i ngach áit. Dírigh ar straitéis, ní ar chóipeáil."
+        "title": "Aonarchruthaitheoirí agus saorghníomhaithe",
+        "description": "Stop ag caitheamh uaireanta ag oiriúnú ábhair. Scríobh aon uair amháin, foilsigh i ngach áit. Dírigh ar straitéis, ní ar chóipeáil-greamú."
       },
       {
         "title": "Foirne margaíochta",
-        "description": "Spás oibre amháin in aghaidh an bhranda. Sreabhanna oibre ceadaithe. Amharc féilire. Tá a fhios ag gach duine cad atá á fhoilsiú agus cathain."
+        "description": "Aon spás oibre amháin in aghaidh an bhranda. Amharc féilire in aghaidh an spáis oibre. Tá a fhios ag gach duine cad atá á fhoilsiú agus cathain."
       },
       {
         "title": "Gníomhaireachtaí",
-        "description": "Bainistigh brandaí iolracha ó chuntas amháin. Sann róil, rialú rochtain, rianáil feidhmíochta trasna gach cliant. Postálacha gan teorainn ar phlean Gníomhaireachta."
+        "description": "Bainistigh brandaí iolracha ó aon chuntas amháin. Spás oibre in aghaidh an chliaint le cainéil, pearsanraí agus féilire scartha. Anailísíocht in aghaidh an chainéil do gach branda."
       }
     ]
   },
   "pricing": {
     "title": "Praghsáil shimplí, thrédhearcach",
-    "subtitle": "Saor in aisce le linn Beta. Glasálann luathúsáideoirí a ráta go deo nuair a sheolaim.",
-    "mostPopular": "Is coitianta",
+    "subtitle": "Bunaithe ar chreidmheasanna. Cealaigh am ar bith. Sábhálann an phlean bhliantúil dhá mhí duit.",
     "monthly": "Míosúil",
     "annual": "Bliantúil",
     "save2Months": "-17%",
     "perMonth": "/ mí",
+    "perMonthBilledYearly": "/ mí, billeáilte go bliantúil",
     "perYear": "/ bliain",
-    "billedAnnually": "Billeáilte go bliantúil",
-    "customPriceLabel": "Saincheaptha",
-    "plans": [
-      {
-        "name": "Saor in aisce",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "le linn Beta",
-        "description": "Bain triail as gach rud le teorainneacha flaithiúla.",
-        "features": [
-          "5 postáil / mí",
-          "3 líonra",
-          "Rialuithe toin bunúsacha",
-          "Moltaí haischlib"
-        ],
-        "cta": "Tosaigh saor in aisce",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Sábháil {{amount}} / bliain",
+    "mostPopular": "Is coitianta",
+    "bestValue": "Luach is fearr",
+    "creditsUnit": "creidmheasanna / mí",
+    "creditsTexts": "~{{count}} postáil téacs",
+    "creditsOr": "nó",
+    "creditsImages": "~{{count}} íomhá ar aon dul le do bhranda",
+    "promoExplainer": "Tairiscint na chéad bhliana: faigh 2× creidmheas GACH mí ar feadh do chéad bhliana iomláine nuair a roghnaíonn tú Bliantúil — sin {{count}} creidmheas bónais gach mí.",
+    "promoHeroExtra": "(+{{count}} creidmheas bónais gach mí ar feadh 12 mhí)",
+    "tierChoose": "Roghnaigh plean",
+    "features": {
+      "workspaces_one": "{{count}} spás oibre",
+      "workspaces_two": "{{count}} spás oibre",
+      "workspaces_few": "{{count}} spás oibre",
+      "workspaces_many": "{{count}} spás oibre",
+      "workspaces_other": "{{count}} spás oibre",
+      "channels": "{{count}} cainéal sóisialta",
+      "personas": "{{count}} pearsanra branda",
+      "members_one": "{{count}} ball foirne",
+      "members_two": "{{count}} bhall foirne",
+      "members_few": "{{count}} bhall foirne",
+      "members_many": "{{count}} mball foirne",
+      "members_other": "{{count}} ball foirne",
+      "media": "{{count}} sócmhainn meán"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Tosaitheoir",
+        "description": "Don chéad chruthaitheoir ábhair IS"
       },
-      {
-        "name": "Cruthaitheoir",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Do chruthaitheoirí agus brandaí a fhoilsíonn go seasta.",
-        "features": [
-          "200 postáil / mí",
-          "Gach líonra",
-          "Ton ardleibhéil agus pearsana",
-          "Féilire ábhair",
-          "Tacaíocht tosaíochta"
-        ],
-        "cta": "Tosaigh triail saor in aisce",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Do chruthú ábhair IS comhsheasmhach agus éasca"
       },
-      {
-        "name": "Gníomhaireacht",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "D'fhoirne a bhainistíonn brandaí iolracha.",
-        "features": [
-          "Postálacha gan teorainn",
-          "Gach líonra",
-          "Brandaí iolracha",
-          "Comhoibriú foirne",
-          "Anailísíocht",
-          "Bainisteoir cuntais"
-        ],
-        "cta": "Labhair linn",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Do chruthaitheoirí a thógann táirgí IS"
+      },
+      "BUSINESS": {
+        "name": "Gnó",
+        "description": "Do ghníomhaireachtaí agus foirne beaga"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Ceisteanna? Tá freagraí againn.",
     "items": [
       {
-        "q": "Cad iad na múnlaí AI a úsáideann Loritalk?",
-        "a": "Is féidir leat a chumrú cé na múnlaí a ghlacann páirt i do phíblíne giniúna."
+        "q": "Conas a oibríonn IS Loritalk?",
+        "a": "Cruthaíonn Loritalk leagan dúchasach de do bhrífeáil do gach cainéal ceangailte agus rindreálann sé íomhánna ar aon dul le do bhranda go comhthreomhar. Téann gach rud trí shraith mhodhnóireachta uathoibrithe sula sroicheann sé do dheais."
       },
       {
-        "q": "Conas atá sé seo difriúil ó other AI tools?",
-        "a": "Tugann Other AI tools aschur amháin ó mhúnla amháin duit. Ritheann Loritalk múnlaí iolracha go comhthreomhar agus ansin cuireann sé orthu obair a chéile a fheabhsú — ag táirgeadh cáilíochta níos airde go seasta. Ina theannta sin, déantar gach postáil a optamú go huathoibríoch do gach ardán ar leith."
+        "q": "Conas atá sé seo difriúil ó uirlisí IS eile?",
+        "a": "Tugann uirlisí eile aon bhloc téacs amháin duit le cóipeáil-greamú i ngach áit. Cruthaíonn Loritalk leaganacha dúchasacha in aghaidh an ardáin — fad, haischlibeanna, emoji agus ton oiriúnaithe do gach líonra — agus foilsíonn sé trí API oifigiúil gach ardáin."
       },
       {
-        "q": "Cé na líonraí sóisialta a thacaítear leo?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) agus TikTok."
+        "q": "Cé na líonraí sóisialta a dtacaítear leo?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads agus Telegram — ocht líonra trí APInna dúchasacha."
       },
       {
-        "q": "An bhfuil m'ábhar príobháideach?",
-        "a": "Tá. Ní úsáidtear d'ábhar riamh chun múnlaí AI a thraenáil. Stóráltar gach sonra ar ár bhfreastalaithe san Eoraip agus próiseáiltear iad faoi chomhlíonadh GDPR."
+        "q": "Cá stóráiltear mo chuid sonraí?",
+        "a": "Stóráiltear do chuid sonraí ar fhreastalaithe san Aontas Eorpach. Oibríonn na soláthraithe IS a úsáidimid (OpenAI le haghaidh téacs, Google le haghaidh íomhánna) faoina dtéarmaí API fiontair — ní úsáidtear ábhar a sheoltar chuig an API chun a múnlaí ginearálta a oiliúint."
       },
       {
         "q": "An féidir liom é a úsáid le m'fhoireann?",
-        "a": "Cinnte. Cruthaigh spásanna oibre do gach branda, tabhair cuireadh do bhaill foirne le róil riarthóra nó foilsitheora agus socraigh sreabhanna oibre ceadaithe ionas nach rachaidh rud ar bith beo gan athbhreithniú."
+        "a": "Is féidir. Cruthaigh spásanna oibre do gach branda agus tabhair cuireadh do bhaill foirne le róil riarthóra nó foilsitheora. Tá a chainéil cheangailte, a phearsanraí agus a fhéilire féin ag gach spás oibre."
       },
       {
-        "q": "Cad a tharlóidh tar éis Beta?",
-        "a": "Tagann pleananna íoctha i bhfeidhm, ach coimeádann gach úsáideoir Beta a ráta reatha glasáilte go deo. Gan iontas."
+        "q": "Cad a tharlaíonn tar éis na Béite?",
+        "a": "Tagann pleananna íoctha i bhfeidhm, ach coinníonn gach úsáideoir Béite a ráta reatha faoi ghlas go deo. Gan aon iontas."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Stad de scríobh. Tosaigh ag foilsiú.",
-    "subtitle": "Bí páirteach sa Beta — rochtain saor in aisce, gan cárta creidmheasa, agus tá do ráta glasáilte go deo nuair a sheolaim.",
+    "headline": "Stop ag scríobh. Tosaigh ag foilsiú.",
+    "subtitle": "Bí páirteach sa Bhéite — rochtain shaor, gan chárta creidmheasa, agus tá do ráta faoi ghlas go deo nuair a sheolaimid.",
     "ctaPrimary": "Tosaigh ag cruthú saor in aisce",
     "ctaSecondary": "Féach conas a oibríonn sé"
   },
   "footer": {
-    "description": "Ábhar AI do gach líonra sóisialta.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "description": "Ábhar IS do gach líonra sóisialta.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · An Phortaingéil",
     "product": "Táirge",
     "resources": "Acmhainní",
     "legal": "Dlí",
     "features": "Gnéithe",
-    "changelog": "Loga athruithe",
-    "supportedNetworks": "Líonraí tacaithe",
-    "helpCenter": "Ionad cabhrach",
+    "changelog": "Logleabhar athruithe",
+    "supportedNetworks": "Líonraí a dtacaítear leo",
+    "helpCenter": "Lárionad cabhrach",
     "contactUs": "Déan teagmháil linn",
-    "betaFeedback": "Aiseolas Beta",
-    "apiDocs": "Doiciméadú API",
-    "privacyPolicy": "Beartas príobháideachta",
+    "betaFeedback": "Aiseolas Béite",
+    "apiDocs": "Doiciméid API",
+    "privacyPolicy": "Polasaí príobháideachais",
     "termsOfService": "Téarmaí seirbhíse",
-    "cookiePolicy": "Beartas fianáin",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "cookiePolicy": "Polasaí fianán",
+    "legalNotice": "Fógra dlí",
+    "copyright": "© 2026 Loritalk® le CDN Core Technologies. Covilhã, An Phortaingéil."
+  },
+  "cookieBanner": {
+    "aria": "Fógra fianán",
+    "title": "Úsáidimid fianáin",
+    "body": "Coinníonn fianáin atá fíor-riachtanach an suíomh ag obair. Le do thoiliú, lódáilimid Google Analytics freisin chun trácht a thomhas agus Méid Meta chun ár bhfógraíocht a thomhas. Is féidir leat glacadh leo, iad a dhiúltú, nó rogha a dhéanamh catagóir ar chatagóir — agus d'intinn a athrú am ar bith.",
+    "policyLink": "Polasaí Fianán",
+    "privacyLink": "Polasaí Príobháideachais",
+    "acceptAll": "Glac le gach ceann",
+    "rejectOptional": "Diúltaigh roghnach",
+    "customize": "Saincheap",
+    "save": "Sábháil roghanna",
+    "necessaryLabel": "Fíor-riachtanach",
+    "necessaryDesc": "Riachtanach chun go n-oibreoidh an suíomh (teanga agus do rogha toilithe). Ní féidir é a dhíchumasú.",
+    "analyticsLabel": "Anailísíocht — Google Analytics",
+    "analyticsDesc": "Lódálann sé Google Analytics 4 chun trácht a thomhas agus an suíomh a fheabhsú. Socraíonn sé fianáin _ga agus _ga_* agus seolann sé sonraí leathanach-amhairc chuig Google.",
+    "marketingLabel": "Margaíocht — Méid Meta",
+    "marketingDesc": "Lódálann sé an Méid Meta (Facebook / Instagram) ionas gur féidir linn feachtais fhógraíochta a thomhas. Socraíonn sé fianáin _fbp agus _fbc agus seolann sé sonraí leathanach-amhairc chuig Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Do ghníomhaireachtaí margaíochta agus stiúideonna cruthaitheacha",
+      "headlineOne": "Ag streachailt le postálacha a sheoladh",
+      "headlineTwo": "do gach cliant",
+      "headlineThree": "ar gach ardán?",
+      "lead": "Tugann Loritalk do do ghníomhaireacht <strong>aon spás oibre amháin in aghaidh an bhranda</strong>, pearsanra tiomnaithe in aghaidh an chliaint agus foilsiú dúchasach ar 8 líonra — ionas go scríobhann d'fhoireann aon uair amháin agus go bhfoilsíonn sí i ngach áit, ar gach cuntas.",
+      "ctaPrimary": "Tosaigh leis an bplean Ultra",
+      "ctaSecondary": "Féach praghsáil ghníomhaireachta",
+      "trust": [
+        "Aon spás oibre amháin in aghaidh an bhranda",
+        "Róil riarthóra + foilsitheora",
+        "8 líonra trí APInna dúchasacha"
+      ],
+      "hubLabel": "Ceanncheathrú Ghníomhaireachta",
+      "hubTitle": "5 bhranda. 5 spás oibre.",
+      "hubBody": "Faigheann gach cliant a spás oibre, a phearsanraí, a chainéil agus a anailísíocht féin. Athraigh comhthéacs in aon chliceáil amháin.",
+      "hubMeta": "5 spás oibre · scartha",
+      "hubBadge": "Beo"
+    },
+    "pains": {
+      "title": "An n-aithníonn tú do sheachtain?",
+      "subtitle": "An t-ábhar céanna athscríofa 7 n-uaire do 5 chliant. Gach seachtain. Bhíomar ann.",
+      "items": [
+        {
+          "title": "Ag bainistiú 5+ cliant ag an am céanna",
+          "description": "Teastaíonn ton difriúil, ardáin dhifriúla, spriocdhátaí difriúla ó gach branda. Ní sreabhadh oibre iad scarbhileoga agus snáitheanna Slack."
+        },
+        {
+          "title": "Téann guth an bhranda ar strae le gach postáil",
+          "description": "Cóipscríbhneoirí éagsúla, cluaisíní éagsúla, leideanna ChatGPT éagsúla. Tá an guth ar aontaigh do chliant leis sé mhí ó shin imithe."
+        },
+        {
+          "title": "Athsceidealú oíche Aoine",
+          "description": "Iarrann an cliant athruithe ag an nóiméad deireanach ar fud Instagram, LinkedIn agus TikTok. Athscríobhann tú an smaoineamh céanna trí huaire — agus caillteann tú an sliotán ar aon nós."
+        },
+        {
+          "title": "Tógann tuairisciú lá iomlán",
+          "description": "Ag cóipeáil tuairimí, rannpháirtíochta agus cliceálacha ó chúig dheais isteach i gcur i láthair. De láimh. Gach mí."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Gach rud a theastaíonn ó do ghníomhaireacht in aon áit amháin",
+      "subtitle": "Ón mbrífeáil go dtí an tuairisc — ritheann Loritalk an phíblíne ábhair iomlán do gach branda a bhainistíonn tú.",
+      "items": [
+        {
+          "title": "Aon spás oibre amháin in aghaidh an chliaint",
+          "description": "Spásanna oibre scartha lena gcainéil cheangailte, a bpearsanraí, a mbaill agus a bhféilire féin. Cuir cliant nua ar bun i mbomaite."
+        },
+        {
+          "title": "Pearsanraí guth-branda",
+          "description": "Sainmhínigh pearsanra in aghaidh an chliaint — guth, ton, treoracha sonracha. Urramaíonn gach giniúint don spás oibre sin an bhrífeáil, gach uair."
+        },
+        {
+          "title": "8 líonra, aon bhrífeáil amháin",
+          "description": "Scríobh an bhrífeáil aon uair amháin agus faigh leaganacha dúchasacha d'Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads agus Telegram — uile i soicindí, uile trí APInna oifigiúla."
+        },
+        {
+          "title": "Féilire in aghaidh an spáis oibre",
+          "description": "Tá a amharc seachtaine / míosa / scuaine féin ag gach cliant. Sceidealaigh postálacha in aghaidh an chainéil agus féach an phíblíne iomlán don bhranda sin de léargas amháin."
+        },
+        {
+          "title": "Róil riarthóra + foilsitheora",
+          "description": "Tabhair cuireadh do bhaill foirne in aghaidh an spáis oibre mar riarthóir (bainistíocht iomlán) nó foilsitheoir (cruthú agus foilsiú). Tá spásanna oibre scartha go hiomlán óna chéile."
+        },
+        {
+          "title": "Anailísíocht in aghaidh an spáis oibre",
+          "description": "Raon, rannpháirtíocht, cliceálacha agus fás in aghaidh an chainéil laistigh de spás oibre gach cliaint. Cártaí KPI, barrphostálacha agus Léargais Lori — gan léim idir deaiseanna."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Conas a fhéachann seachtain ghníomhaireachta ar Loritalk",
+      "subtitle": "Cuir branda ar bord, déan brífeáil don IS, faigh ceadú, seol. Athdhéan do gach cliant.",
+      "steps": [
+        {
+          "badge": "01 · CUR AR BORD",
+          "title": "Cuir spás oibre an chliaint ar bun",
+          "description": "Cruthaigh spás oibre, ceangail cuntais shóisialta an bhranda agus cumraigh an pearsanra — guth, ton, treoracha sonracha. Réidh le húsáid i mbomaite."
+        },
+        {
+          "badge": "02 · BRÍFEÁIL",
+          "title": "Scríobh aon bhrífeáil amháin in aghaidh an fheachtais",
+          "description": "Roghnaigh an pearsanra, na cainéil agus an teanga. Gineann Loritalk leagan dúchasach in aghaidh an ardáin i soicindí."
+        },
+        {
+          "badge": "03 · MIONCHOIGEARTÚ",
+          "title": "Cuir in eagar i d'fhoireann",
+          "description": "Déanann d'fhoireann athbhreithniú ar na dréachtaí laistigh den spás oibre — coigeartaigh cóip, malartaigh íomhánna, roghnaigh an leagan is láidre in aghaidh an chainéil sula seoltar amach é."
+        },
+        {
+          "badge": "04 · SEOL",
+          "title": "Foilsigh agus rianaigh",
+          "description": "Brúnn APInna dúchasacha chuig gach cainéal. Sreabhann feidhmíocht ar ais isteach sa deais in aghaidh an spáis oibre — KPInna, barrphostálacha agus fás in aghaidh an chainéil."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Pleananna tógtha do ghníomhaireachtaí",
+      "subtitle": "Rith dornán brandaí nó liosta cliant iomlán. Roghnaigh an méid a oireann do do choinneálaí.",
+      "customPrice": "Déanaimis caint",
+      "customCredits": "Creidmheasanna gan teorainn",
+      "customCreditsDetail": "Méid comhaontaithe in aghaidh an chonartha — gan barraíocht iontais.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Saincheaptha",
+          "description": "Do líonraí agus gníomhaireachtaí móra a bhfuil méideanna saincheaptha agus cur ar bord de dhíth orthu.",
+          "cta": "Labhair le díolacháin"
+        }
+      },
+      "features": {
+        "customVolumes": "Méideanna creidmheasa saincheaptha",
+        "priorityEmail": "Tacaíocht ríomhphoist tosaíochta",
+        "euData": "Cónaitheacht sonraí AE"
+      }
+    },
+    "faq": {
+      "title": "Ceisteanna gníomhaireachta, freagartha.",
+      "items": [
+        {
+          "q": "Conas a roinntear creidmheasanna ar fud cliant?",
+          "a": "Tá creidmheasanna ag leibhéal an chuntais ghníomhaireachta — is féidir le haon spás oibre tarraingt ón linn chéanna. Rianaigh úsáid sa deais billeála."
+        },
+        {
+          "q": "Cad a tharlaíonn nuair a chuirimid cliant ar bord nó dá bharr?",
+          "a": "Cuir spás oibre nua ar bun i soicindí. Baineann cartlannú spáis oibre é den amharc gníomhach; urramaíonn scriosadh iomlán an chuntais rialacha coimeádta GDPR."
+        },
+        {
+          "q": "Cé na líonraí sóisialta inar féidir linn foilsiú?",
+          "a": "Clúdaíonn foilsiú dúchasach LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads agus Telegram — ocht líonra, gach ceann trí API oifigiúil an ardáin, ionas go bhfanann teipeanna scartha in aghaidh an chainéil."
+        },
+        {
+          "q": "An féidir le cliaint logáil isteach chun a spás oibre a fheiceáil?",
+          "a": "Ní féidir inniu. Tá spásanna oibre d'fhoireann na gníomhaireachta amháin — róil riarthóra agus foilsitheora. Tá rochtain chliaint ar an treochlár."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Réidh chun ábhar a scálú ar fud gach cliaint?",
+      "subtitle": "Tosaigh leis an bplean Ultra inniu nó cuir taispeántas 20 nóiméad in áirithe leis an bhfoireann ghníomhaireachta chun Loritalk a fheiceáil ar do bhrandaí féin.",
+      "ctaPrimary": "Tosaigh le Ultra",
+      "ctaSecondary": "Cuir taispeántas in áirithe"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "D'aonarchruthaitheoirí agus tionchairí",
+      "headlineOne": "Aon smaoineamh amháin.",
+      "headlineTwo": "Gach ardán.",
+      "headlineThree": "Gan do dheireadh seachtaine a chailleadh.",
+      "lead": "Iompaíonn Loritalk aon bhrífeáil amháin ina <strong>phostálacha dúchasacha d'Instagram, TikTok, YouTube Shorts, X, Threads</strong> agus níos mó — ag coinneáil do ghuth comhsheasmhach ar fud gach cuntais.",
+      "ctaPrimary": "Tosaigh saor in aisce le Tosaitheoir",
+      "ctaSecondary": "Féach pleananna cruthaitheora",
+      "trust": [
+        "Do ghuth ar gach cainéal",
+        "8 líonra trí APInna dúchasacha",
+        "Sceidealaigh seachtainí in aon iarracht amháin"
+      ],
+      "hubLabel": "Do stiúideo",
+      "hubTitle": "1 bhrífeáil. 8 bpostáil dhúchasacha.",
+      "hubBody": "Sainmhínigh do phearsanra aon uair amháin. Oiriúnaíonn Loritalk gach postáil do gach ardán — fad, haischlibeanna, emoji, ton, formáid íomhá.",
+      "hubMeta": "1 phearsanra · 8 gcainéal",
+      "hubBadge": "Beo",
+      "cardTag": "Formáid dhúchasach"
+    },
+    "pains": {
+      "title": "An bhfuil cuma do sheachtaine air seo?",
+      "subtitle": "Níor cheart go gcosnódh postáil gach lá ar gach ardán tráthnóna Domhnaigh ort. Bhíomar ann.",
+      "items": [
+        {
+          "title": "An smaoineamh céanna, athscríofa 8 n-uaire",
+          "description": "Fotheideal d'Instagram, script do TikTok, dorú do YouTube, snáithe do X… teastaíonn cruth difriúil ó gach ardán. Dóitear tráthnóna ar aon phostáil amháin."
+        },
+        {
+          "title": "Gearrann algartaim pionós ar bhearnaí",
+          "description": "Caill dhá lá agus titeann an raon. Fan comhsheasmhach ar gach ardán agus ar éigean atá am agat le scannánú, gan trácht ar do shaol a chaitheamh."
+        },
+        {
+          "title": "Éilíonn margaí branda il-ardán",
+          "description": "Iarrann urraitheoirí Reels + Shorts + TikTok + postáil. An feachtas céanna, ceithre fhormáid. Gearrann tú ar cheann amháin agus seachadann tú ceithre cinn."
+        },
+        {
+          "title": "Lagaítear an guth",
+          "description": "Faoin gcúigiú postáil déag, tá cuma ar na fotheidil gur strainséir a scríobh iad. Aithníonn an lucht féachana é. Titeann an rannpháirtíocht."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Gach rud a theastaíonn ó chruthaitheoir in aon áit amháin",
+      "subtitle": "Déan brífeáil aon uair amháin, seol i ngach áit — gan an guth a leanann do lucht féachana a chailleadh.",
+      "items": [
+        {
+          "title": "Do ghuth, faoi ghlas",
+          "description": "Sainmhínigh pearsanra le do ghuth, do thon agus do threoracha sonracha i ngnáth-théacs. Téann gach giniúint tríd an lionsa sin — tá cuma ortsa air, ní ar uirlis IS."
+        },
+        {
+          "title": "Aon bhrífeáil amháin, ocht bpostáil dhúchasacha",
+          "description": "Scríobh an smaoineamh aon uair amháin. Cruthaíonn Loritalk leagan optamaithe d'Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn agus Telegram i soicindí."
+        },
+        {
+          "title": "Íomhánna ar aon dul le do bhranda in aghaidh na formáide",
+          "description": "Postálacha fotha, scéalta, barrghearrthacha laoich, ingearach do Reels agus Shorts. Rindreáiltear íomhánna leis an gcóimheas gné ceart agus rialacha amhairc do phearsanra."
+        },
+        {
+          "title": "Sceidealaigh seachtain in aon suí amháin",
+          "description": "Pleanáil ón Luan go Domhnach ar gach ardán laistigh d'aon fhéilire amháin. Brúnn APInna dúchasacha go huathoibríoch — fiú agus tú ag scannánú an chéad bhaisce eile."
+        },
+        {
+          "title": "Féach cad atá ag fás",
+          "description": "Raon, rannpháirtíocht, cliceálacha agus fás leantóirí in aghaidh an chainéil. Tugann cártaí KPI agus Léargais Lori le feiceáil cad atá ag obair — déan a thuilleadh de."
+        },
+        {
+          "title": "Modhnaithe sula seoltar é",
+          "description": "Téann gach dréacht trí mhodhnóireacht uathoibrithe, ionas go sroicheann ábhar branda-shábháilte do lucht féachana agus go bhfanann d'urraitheoirí sásta."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Conas a fhéachann seachtain chruthaitheora ar Loritalk",
+      "subtitle": "Gabh do ghuth aon uair amháin, déan brífeáil ar aon smaoineamh, seol ar fud gach ardáin, féach cad a fhásann.",
+      "steps": [
+        {
+          "badge": "01 · GUTH",
+          "title": "Sainmhínigh do phearsanra",
+          "description": "Scríobh do ghuth, do thon agus rialacha an tí isteach i bpearsanra. Éiríonn sé ina lionsa a dtéann gach postáil amach anseo tríd."
+        },
+        {
+          "badge": "02 · BRÍFEÁIL",
+          "title": "Déan brífeáil ar aon smaoineamh",
+          "description": "Clóscríobh an coincheap, roghnaigh cainéil agus teanga. Cruthaíonn Loritalk leagan dúchasach in aghaidh an ardáin i soicindí — fotheidil, scripteanna, snáitheanna, dorúnna."
+        },
+        {
+          "badge": "03 · SEOL",
+          "title": "Cuir in eagar agus sceidealaigh",
+          "description": "Snasaigh an leagan is láidre in aghaidh an chainéil, cuir gach rud sa scuaine san fhéilire, siúl ar shiúl. Foilsíonn APInna ag an am ceart, san fhormáid cheart."
+        },
+        {
+          "badge": "04 · RIANAIGH",
+          "title": "Féach cad atá ag obair",
+          "description": "Taispeánann anailísíocht in aghaidh an chainéil cad atá ag mealladh raoin agus rannpháirtíochta. Athraigh an dearcadh, ní an sreabhadh oibre."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Pleananna tógtha do chruthaitheoirí",
+      "subtitle": "Tosaigh saor in aisce le linn na Béite. Roghnaigh an méid a oireann don mhinicíocht a phostálann tú."
+    },
+    "faq": {
+      "title": "Ceisteanna cruthaitheora, freagartha.",
+      "items": [
+        {
+          "q": "An mbeidh cuma orm air?",
+          "a": "Déan cur síos ar do ghuth, do thon agus rialacha an tí i bpearsanra. Téann gach giniúint tríd an lionsa sin. Dá mhionsonraithe an pearsanra, is amhlaidh is gaire do do ghuth é."
+        },
+        {
+          "q": "Cé na hardáin a bhfoilsíonn sibh chucu i ndáiríre?",
+          "a": "Clúdaíonn foilsiú dúchasach Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn agus Telegram — ocht líonra trí APInna oifigiúla. Ní chuireann teipeanna ar aon chainéal amháin bac riamh ar na cinn eile."
+        },
+        {
+          "q": "An féidir liom cur in eagar sula bpostálaim?",
+          "a": "I gcónaí. Cruthaíonn Loritalk dréacht in aghaidh an chainéil — roghnaíonn tú, coigeartaíonn tú agus foilsíonn tú. Ní théann aon rud beo gan tú an cnaipe a bhrú (mura bhfuil sé sceidealta agat)."
+        },
+        {
+          "q": "Cad faoi íomhánna agus físeáin ghearrfhoirme?",
+          "a": "Gintear íomhánna ar aon dul le do bhranda in aghaidh an ardáin leis an gcóimheas gné ceart (cearnóg, ingearach 9:16, laoch). Maidir le físeáin ghearrfhoirme faigheann tú fotheideal dúchasach le dorú sna chéad soicindí agus CTA — greamaigh díreach isteach in TikTok nó YouTube Shorts."
+        },
+        {
+          "q": "An bhfuil Loritalk saor in aisce le linn na Béite?",
+          "a": "Tá. Tá rochtain Béite saor in aisce le teorainneacha flaithiúla. Coinníonn gach úsáideoir Béite a ráta reatha faoi ghlas go deo nuair a sheoltar pleananna íoctha."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Stop ag athscríobh. Tosaigh ag seoladh.",
+      "subtitle": "Bí páirteach sa Bhéite — saor in aisce, gan chárta creidmheasa, tá do ráta faoi ghlas go deo nuair a sheolaimid.",
+      "ctaPrimary": "Tosaigh saor in aisce le Tosaitheoir",
+      "ctaSecondary": "Féach pleananna cruthaitheora"
+    }
   }
 }

@@ -2,290 +2,348 @@
   "navbar": {
     "features": "Funkcije",
     "howItWorks": "Kako deluje",
-    "pricing": "Cene",
+    "pricing": "Cenik",
+    "forAgencies": "Za agencije",
+    "forCreators": "Za ustvarjalce",
     "beta": "Beta",
-    "startForFree": "Začnite brezplačno"
+    "startForFree": "Začni brezplačno"
   },
   "hero": {
-    "badge": "Zdaj v Beta — brezplačen zgodnji dostop",
+    "badge": "V beta različici · Cene zgodnjega dostopa zaklenjene za vedno",
     "headlineOne": "Piši manj.",
     "headlineTwo": "Objavi več.",
-    "description": "Vnesite temo ali idejo. UI Loritalk piše optimizirane objave za Instagram, LinkedIn, X, TikTok in več — v sekundah. Več modelov UI tekmuje, da vam ponudi najboljši rezultat.",
-    "ctaPrimary": "Začnite ustvarjati brezplačno",
-    "ctaSecondary": "Poglejte, kako deluje",
-    "note": "Kreditna kartica ni potrebna · Brezplačno med Beta",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Na novo napisano.",
+    "headlineThree": "Pregledano.",
+    "lead": "Svojo objavo opišeš samo enkrat. Loritalk napiše <strong>domačo različico za vsako povezano platformo</strong>, ustvari slike v skladu z znamko, vsako besedo preveri skozi samodejno moderiranje in vse skupaj razporedi — v nekaj sekundah.",
+    "ctaPrimary": "Začni brezplačno — brez kartice",
+    "ctaSecondary": "Poglej v akciji · 90 s",
+    "trust": [
+      "8 domačih integracij",
+      "Samodejno moderirano",
+      "Ločeno po delovnih prostorih"
+    ],
+    "briefCard": {
+      "label": "Tvoj brief · 1 od 1",
+      "typed": "Predstavimo naše nove trajnostne superge. Izdelane iz 80 % recikliranega oceanskega plastika. Namenjene tekačem generacije Z.",
+      "meta": "sl · 8 kanalov · Glas znamke",
+      "send": "Ustvari ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "objave · reli · zgodbe",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · strani",
+      "x": "X / Twitter",
+      "xTag": "niti · posamično",
+      "tiktok": "TikTok",
+      "tiktokTag": "scenariji · napisi",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100 s",
+      "threads": "Threads",
+      "threadsTag": "domače",
+      "facebook": "Facebook",
+      "facebookTag": "strani",
+      "telegram": "Telegram",
+      "telegramTag": "kanali · skupine"
+    },
+    "leadHook": "Svojo objavo opišeš samo enkrat.",
+    "leadBody": "Loritalk napiše <strong>domačo različico za vsako povezano platformo</strong>, ustvari slike v skladu z znamko, vsako besedo preveri skozi samodejno moderiranje in vse skupaj razporedi — v nekaj sekundah."
   },
   "stats": {
-    "networksValue": "6+",
-    "networksLabel": "Podprtih družabnih omrežij",
-    "languagesValue": "3",
-    "languagesLabel": "Jezikov ob zagonu",
-    "generationValue": "<5s",
-    "generationLabel": "Povprečen čas generiranja",
+    "networksValue": "8",
+    "networksLabel": "Podprtih družbenih omrežij",
+    "languagesValue": "24+",
+    "languagesLabel": "Jezikov vmesnika",
+    "generationValue": "Sekunde",
+    "generationLabel": "Od briefa do pripravljenega za objavo",
     "freeValue": "Brezplačno",
-    "freeLabel": "Med Beta — brez omejitev"
+    "freeLabel": "Med beta različico — brez omejitev"
   },
   "problem": {
-    "title": "Vaš delovni tok za vsebino je pokvarjen",
-    "subtitle": "Zdi se znano?",
+    "title": "Tvoj potek dela z vsebino je pokvarjen",
+    "subtitle": "Ti zveni znano?",
     "items": [
       {
-        "title": "Ure zapravljene za prilagajanje",
-        "description": "Napišete objavo za Instagram, nato jo prepišete za LinkedIn, nato spet za X. Vsaka platforma zahteva drugačen ton, dolžino in označbe."
+        "title": "Ure izgubljene s prilagajanjem",
+        "description": "Napišeš objavo za Instagram, nato jo na novo napišeš za LinkedIn in nato še enkrat za X. Vsaka platforma zahteva drugačen ton, dolžino in ključnike."
       },
       {
-        "title": "UI, ki zveni generično",
-        "description": "AI vam da eno različico, ki zveni kot vsi ostali. Brez glasu blagovne znamke, brez zavedanja o platformi, brez prave optimizacije."
+        "title": "Umetna inteligenca, ki zveni splošno",
+        "description": "Umetna inteligenca z enim samim modelom ti da eno različico, ki zveni kot vse druge. Brez glasu znamke, brez upoštevanja platforme, brez prave optimizacije."
       },
       {
         "title": "Ozka grla v ekipi",
-        "description": "Vsebina čaka na odobritev, se izgubi v Slack nitih in nihče ne ve, kaj je načrtovano za naslednji teden."
+        "description": "Vsebina čaka na odobritev, se izgubi v Slack nitih in nihče ne ve, kaj je razporejeno za naslednji teden."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk to vse reši",
-    "subtitle": "En brief. Vsaka platforma. Več UI tekmuje za vašo najboljšo objavo.",
-    "ctaPrimary": "Začnite ustvarjati brezplačno",
+    "title": "Loritalk vse to popravi",
+    "subtitle": "En brief. Domača različica za vsako platformo. Slike v skladu z znamko, izrisane vzporedno.",
+    "ctaPrimary": "Začni ustvarjati brezplačno",
     "rows": [
       {
-        "before": "1 objava = 45 min prilagajanja za vsako platformo",
-        "after": "1 brief = vse platforme v <5 sekundah"
+        "before": "1 objava = 45 min prilagajanja vsaki platformi",
+        "after": "1 brief = vse platforme v manj kot 5 sekundah"
       },
       {
-        "before": "1 model UI = generično besedilo za vse",
-        "after": "Več modelov UI razpravlja in izboljšuje drug drugega"
+        "before": "Splošno besedilo umetne inteligence, ponovno uporabljeno na vseh omrežjih",
+        "after": "Domača različica za vsak kanal — prilagojena dolžina, ključniki in ton"
       },
       {
-        "before": "Vsebina razpršena med orodji in nitmi",
-        "after": "Ena nadzorna plošča: ustvarite, odobrite, načrtujte, objavite, spremljajte"
+        "before": "Vsebina raztresena po orodjih in nitih",
+        "after": "Ena nadzorna plošča: ustvari, odobri, razporedi, objavi, spremljaj"
       }
     ]
   },
   "features": {
-    "title": "Vse, kar vaša ekipa za vsebino potrebuje",
-    "subtitle": "Od ideje do objavljene objave — Loritalk upravlja celoten delovni tok.",
+    "title": "Vse, kar tvoja ekipa za vsebino potrebuje",
+    "subtitle": "Od ideje do objavljene objave — Loritalk poskrbi za celoten potek dela.",
     "items": [
       {
-        "title": "Večmodelna UI deliberacija",
-        "description": "Ne en UI — več modelov generira neodvisno, nato izboljšujejo delo drugih."
+        "title": "Vsebina, prilagojena platformi",
+        "description": "En brief postane domača različica za vsako platformo — dolžina, ključniki, emodžiji in ton, prilagojeni Instagramu, LinkedInu, X-u, TikToku, Facebooku, YouTube Shorts, Threads in Telegramu."
       },
       {
-        "title": "Za platformo optimizirana vsebina",
-        "description": "Vsaka objava je prilagojena svoji platformi — pravi ton, dolžina, označbe, emojiji in format. Instagram opisi, LinkedIn članki, X niti, TikTok scenariji."
+        "title": "Ustvarjanje slik v skladu z znamko",
+        "description": "Slike, izrisane za vsako platformo s pravim razmerjem stranic in vizualnimi pravili tvoje osebnosti — objave v viru, zgodbe, izrezi za naslovnice. Konec ročnega spreminjanja velikosti."
       },
       {
-        "title": "Večjezično generiranje",
-        "description": "Generirajte v portugalščini, angleščini, španščini in več. Tekočnost na ravni maternega govorca s kulturnimi odtenki — ne le prevod."
+        "title": "Večjezično ustvarjanje",
+        "description": "Ustvarjaj v slovenščini, angleščini, španščini in več jezikih. Tekoče na ravni domačega govorca s kulturnimi odtenki — ne le prevod."
       },
       {
-        "title": "Načrtujte in objavite",
-        "description": "Pogled koledarja, načrtovano objavljanje in neposredno objavljanje na vseh povezanih kanalih. Različni časi za vsako platformo."
+        "title": "Razporedi in objavi",
+        "description": "Koledarski pogled, razporejeno objavljanje in neposredno objavljanje na vse povezane kanale. Različni časi za vsako platformo."
       },
       {
-        "title": "Glas blagovne znamke in persone",
-        "description": "Ustvarite UI persone, ki pišejo kot vaša blagovna znamka. Nadzirajte ton od profesionalnega do igrivega. Vsaka objava zveni kot vi, ne kot robot."
+        "title": "Glas znamke in osebnosti",
+        "description": "Ustvari osebnosti umetne inteligence, ki pišejo kot tvoja znamka. Nadzoruj ton od profesionalnega do igrivega. Vsaka objava zveni kot ti, ne kot robot."
       },
       {
         "title": "Analitična nadzorna plošča",
-        "description": "Spremljajte prikaze, vključenost, klike in rast na vseh kanalih. Vedite, katera vsebina deluje, in podvojite trud."
+        "description": "Spremljaj doseg, vključenost, klike in rast za vsak kanal. Kartice s ključnimi kazalniki, najboljše objave in Lori Insights pokažejo, kaj deluje."
       }
     ]
   },
   "howItWorks": {
-    "title": "Od ideje do objave v 3 korakih",
-    "subtitle": "Brez praznih zaslonov. Brez kopiranja med platformami.",
+    "eyebrow": "05 · Potek dela",
+    "title": "Brief → predogled → objava.",
+    "titleAccent": "Trije koraki.",
+    "titleTail": "V nekaj sekundah.",
+    "subtitle": "Nikoli ne izbiraš modela. Nikoli ne spreminjaš velikosti slike. Nikoli ne kopiraš in lepiš med zavihki.",
     "steps": [
       {
-        "title": "Napišite svoj brief",
-        "description": "Opišite, kaj želite sporočiti — tako preprosto kot \"zagon novega izdelka\" ali tako podrobno kot celoten brief. Izberite kanale, jezik in ton."
+        "badge": "01",
+        "eyebrow": "Vnos",
+        "title": "Napiši svoj brief",
+        "description": "En stavek ali trije odstavki. Izberi kanale, osebnost in jezik. To je edino, kar danes napišeš.",
+        "footLeft": "~ 5 s za zapis",
+        "footRight": "1 brief"
       },
       {
-        "title": "Modeli UI tekmujejo za vas",
-        "description": "Več modelov UI generira vsebino neodvisno, nato pregledujejo in izboljšujejo rezultate drugih. Prejmete N izpiljenih različic za vsako platformo."
+        "badge": "02",
+        "eyebrow": "Ustvarjanje",
+        "title": "Umetna inteligenca ga prilagodi vsakemu kanalu",
+        "description": "Loritalk prebere tvoj brief, tvojo osebnost in domača pravila vsake platforme — nato izdela različico, narejeno za vsak kanal. Samodejno moderiranje steče, preden jo vidiš.",
+        "footLeft": "~ 3 s na kanal",
+        "footRight": "Na vsak povezan kanal"
       },
       {
-        "title": "Izberite, uredite in objavite",
-        "description": "Izberite svojo najljubšo različico za vsak kanal. Prilagodite karkoli z enim klikom. Objavite zdaj ali načrtujte za pozneje."
+        "badge": "03",
+        "eyebrow": "Distribucija",
+        "title": "Objavi ali razporedi",
+        "description": "Pošlji takoj ali umesti v koledar s časovnico za vsako platformo. Vsak kanal odpošlje prek svojega domačega API-ja; napake so izolirane — Instagram gre vseeno, tudi če se Facebook zatakne.",
+        "footLeft": "Domači API-ji · OAuth",
+        "footRight": "8 kanalov"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Predstavimo naše nove trajnostne superge. Izdelane iz 80 % recikliranega oceanskega plastika. Namenjene tekačem generacije Z.\"",
+      "channelsComment": "// kanali:"
+    },
+    "personasViz": {
+      "personaLabel": "Osebnost",
+      "languageLabel": "Jezik",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Nevtralno — Lorijin glas znamke"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Sproščen, zabaven, pogovoren"
+        },
+        {
+          "name": "Core",
+          "desc": "Drzen, optimističen, voden z znamko"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "vrtiljak",
+          "when": "Danes 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "dolga oblika",
+          "when": "Danes 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "nit",
+          "when": "Danes 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Jutri 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "objava",
+          "when": "Jutri 12:00"
+        }
+      ],
+      "cta": "▶ Objavi vse · ⏱ Razporedi"
+    }
   },
-  "differentiator": {
-    "title": "Zakaj več UI premaga enega",
-    "subtitle": "Druga orodja uporabljajo en model. Loritalk uporablja več — in jih prisili, da izboljšujejo drug drugega.",
-    "briefLabel": "Vaš brief",
-    "channels": "Kanali",
-    "language": "Jezik:",
-    "languages": "Angleščina, Portugalščina",
-    "submitted": "Poslano pred 2 s",
-    "round1": "KROG 1 — NEODVISNO GENERIRANJE",
-    "generated": "Generirano",
-    "round2": "Krog 2 — Križno izboljšanje",
-    "round2Desc": "Vsak model prebere vse rezultate in izboljša svojo različico",
-    "qualityNote": "Kakovost se je izboljšala za ~40% v primerjavi s Krogom 1",
-    "pickEdit": "Izberite in uredite",
-    "addMedia": "Dodajte medij",
-    "uploading": "Nalaganje slike...",
-    "imageAttached": "Slika uspešno naložena",
-    "generateAI": "Generiraj z UI",
-    "readyPublish": "Pripravljeno za objavo",
-    "publishAll": "Objavi vse",
-    "scheduled": "Načrtovano",
-    "draft": "Osnutek",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Slike",
+    "title": "Slike v skladu",
+    "titleAccent": "z znamko",
+    "titleTail": "v velikosti za vsako platformo.",
+    "subtitle": "Ustvarjanje slik teče asinhrono in za vsako platformo posebej — brez ročnega spreminjanja velikosti, brez fotografij, ki ne ustrezajo znamki. Posamezne objave, vrtiljaki, oblike zgodb, izrezi za naslovnice. Vsak izris upošteva vizualna pravila aktivne osebnosti.",
+    "tiles": {
+      "instagramCaption": "5. ura zjutraj. Kava, dva zavihka, ena odločitev.\nv2 zgrajen, preden se je ekipa prijavila.",
+      "storyQuote": "dosegli smo 1 mio. MRR isti teden, ko smo odstranili polovico načrta.",
+      "storySwipe": "↑ podrsaj",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Pred prvo redno zaposlitvijo smo najeli 3 zunanje sodelavce. Tukaj je preglednica.",
+      "linkedinCta": "Preberi več →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "večina »vsebine ustanoviteljev« je sporočilo za javnost v puloverju s kapuco. piši kot človek. #shipping",
+      "generatingLabel": "Izrisovanje · TikTok",
+      "generatingSub": "9:16 · ~12 s",
+      "ytTitleLineOne": "PRVA",
+      "ytTitleLineTwo": "ZAPOSLITEV.",
+      "ytSubtitle": "Zakaj smo čakali 18 mesecev.",
+      "ytMeta": "Loritalk · ep. 14 · 32 min"
+    }
   },
   "useCases": {
-    "title": "Zgrajeno za ekipe, ki objavljajo",
-    "subtitle": "Ne glede na to, ali ste samostojni ustvarjalec ali agencija 50 ljudi.",
+    "title": "Narejeno za ekipe, ki objavljajo",
+    "subtitle": "Pa naj boš samostojni ustvarjalec ali agencija s 50 ljudmi.",
     "items": [
       {
-        "title": "Samostojni ustvarjalci in samostojni podjetniki",
-        "description": "Nehajte trošiti ure za prilagajanje vsebine. Pišite enkrat, objavljajte povsod. Osredotočite se na strategijo, ne na kopiranje."
+        "title": "Samostojni ustvarjalci in svobodnjaki",
+        "description": "Nehaj porabljati ure za prilagajanje vsebine. Napiši enkrat, objavi povsod. Osredotoči se na strategijo, ne na kopiranje in lepljenje."
       },
       {
         "title": "Marketinške ekipe",
-        "description": "En delovni prostor na blagovno znamko. Delovni tokovi odobritve. Pogled koledarja. Vsi vedo, kaj se objavlja in kdaj."
+        "description": "En delovni prostor za vsako znamko. Koledarski pogled za vsak delovni prostor. Vsi vedo, kaj se objavlja in kdaj."
       },
       {
         "title": "Agencije",
-        "description": "Upravljajte več blagovnih znamk iz enega računa. Dodelite vloge, nadzirajte dostop, spremljajte učinkovitost vseh strank. Neomejene objave v načrtu Agencija."
+        "description": "Upravljaj več znamk z enega računa. Delovni prostor za vsako stranko z ločenimi kanali, osebnostmi in koledarjem. Analitika po kanalih za vsako znamko."
       }
     ]
   },
   "pricing": {
-    "title": "Preproste, pregledne cene",
-    "subtitle": "Brezplačno med Beta. Zgodnji uporabniki si zaklenejo svojo ceno za vedno ob zagonu.",
-    "mostPopular": "Najbolj priljubljeno",
+    "title": "Preprost, pregleden cenik",
+    "subtitle": "Na podlagi kreditov. Prekličeš lahko kadar koli. Letni paket ti prihrani dva meseca.",
     "monthly": "Mesečno",
     "annual": "Letno",
-    "save2Months": "-17%",
-    "perMonth": "/ mesec",
+    "save2Months": "-17 %",
+    "perMonth": "/ mes.",
+    "perMonthBilledYearly": "/ mes., zaračunano letno",
     "perYear": "/ leto",
-    "billedAnnually": "Zaračunano letno",
-    "customPriceLabel": "Po meri",
-    "plans": [
-      {
-        "name": "Brezplačno",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "med Beta",
-        "description": "Preizkusite vse z radodarnimi omejitvami.",
-        "features": [
-          "5 objav / mesec",
-          "3 omrežja",
-          "Osnovno upravljanje tona",
-          "Predlogi označb"
-        ],
-        "cta": "Začnite brezplačno",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Prihrani {{amount}} / leto",
+    "mostPopular": "Najbolj priljubljeno",
+    "bestValue": "Najboljša vrednost",
+    "creditsUnit": "kreditov / mesec",
+    "creditsTexts": "~{{count}} besedilnih objav",
+    "creditsOr": "ali",
+    "creditsImages": "~{{count}} slik v skladu z znamko",
+    "promoExplainer": "Akcija prvega leta: ob izbiri letnega paketa prejmeš 2× kredite VSAK mesec celotno prvo leto — to je {{count}} dodatnih kreditov vsak mesec.",
+    "promoHeroExtra": "(+{{count}} dodatnih kreditov vsak mesec 12 mesecev)",
+    "tierChoose": "Izberi paket",
+    "features": {
+      "workspaces_one": "{{count}} delovni prostor",
+      "workspaces_two": "{{count}} delovna prostora",
+      "workspaces_few": "{{count}} delovni prostori",
+      "workspaces_other": "{{count}} delovnih prostorov",
+      "channels": "{{count}} družbenih kanalov",
+      "personas": "{{count}} osebnosti znamke",
+      "members_one": "{{count}} član ekipe",
+      "members_two": "{{count}} člana ekipe",
+      "members_few": "{{count}} člani ekipe",
+      "members_other": "{{count}} članov ekipe",
+      "media": "{{count}} medijskih sredstev"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Za prve ustvarjalce vsebine z umetno inteligenco"
       },
-      {
-        "name": "Ustvarjalec",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Za ustvarjalce in blagovne znamke, ki objavljajo redno.",
-        "features": [
-          "200 objav / mesec",
-          "Vsa omrežja",
-          "Napreden ton in persone",
-          "Vsebinski koledar",
-          "Prednostna podpora"
-        ],
-        "cta": "Začnite brezplačen preizkus",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Za dosledno in preprosto ustvarjanje vsebine z umetno inteligenco"
       },
-      {
-        "name": "Agencija",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Za ekipe, ki upravljajo več blagovnih znamk.",
-        "features": [
-          "Neomejene objave",
-          "Vsa omrežja",
-          "Več blagovnih znamk",
-          "Ekipno sodelovanje",
-          "Analitika",
-          "Skrbnik računa"
-        ],
-        "cta": "Pogovorite se z nami",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Za ustvarjalce, ki gradijo izdelke z umetno inteligenco"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Za agencije in majhne ekipe"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Vprašanja? Imamo odgovore.",
     "items": [
       {
-        "q": "Katere modele UI uporablja Loritalk?",
-        "a": "Konfigurirate lahko, kateri modeli sodelujejo v vašem procesu generiranja."
+        "q": "Kako deluje umetna inteligenca Loritalk?",
+        "a": "Loritalk za vsak povezan kanal izdela domačo različico tvojega briefa in vzporedno izriše slike v skladu z znamko. Vse gre skozi samodejni sloj moderiranja, preden doseže tvojo nadzorno ploščo."
       },
       {
-        "q": "Kako se to razlikuje od other AI tools?",
-        "a": "Other AI tools vam da en rezultat iz enega modela. Loritalk poganja več modelov vzporedno in jih nato prisili, da izboljšujejo delo drugih — kar dosledno proizvaja višjo kakovost. Poleg tega je vsaka objava samodejno optimizirana za vsako specifično platformo."
+        "q": "V čem se to razlikuje od drugih orodij z umetno inteligenco?",
+        "a": "Druga orodja ti dajo en blok besedila, ki ga kopiraš in lepiš povsod. Loritalk izdela domače različice za vsako platformo — dolžino, ključnike, emodžije in ton, prilagojene vsakemu omrežju — in objavlja prek uradnega API-ja vsake platforme."
       },
       {
-        "q": "Katera družabna omrežja so podprta?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) in TikTok."
+        "q": "Katera družbena omrežja so podprta?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads in Telegram — osem omrežij prek domačih API-jev."
       },
       {
-        "q": "Je moja vsebina zasebna?",
-        "a": "Da. Vaša vsebina se nikoli ne uporablja za usposabljanje modelov UI. Vsi podatki so shranjeni na naših strežnikih v Evropi in obdelani v skladu z GDPR."
+        "q": "Kje so shranjeni moji podatki?",
+        "a": "Tvoji podatki so shranjeni na strežnikih v Evropski uniji. Ponudniki umetne inteligence, ki jih uporabljamo (OpenAI za besedilo, Google za slike), delujejo pod svojimi pogoji za poslovni API — vsebina, poslana API-ju, se ne uporablja za učenje njihovih splošnonamenskih modelov."
       },
       {
         "q": "Ali ga lahko uporabljam s svojo ekipo?",
-        "a": "Seveda. Ustvarite delovne prostore za vsako blagovno znamko, povabite člane ekipe z vlogami skrbnika ali založnika in nastavite delovne tokove odobritve, da nič ne gre v živo brez pregleda."
+        "a": "Da. Ustvari delovne prostore za vsako znamko in povabi člane ekipe z vlogo skrbnika ali objavljavca. Vsak delovni prostor ima svoje povezane kanale, osebnosti in koledar."
       },
       {
-        "q": "Kaj se zgodi po Beta?",
-        "a": "Začnejo veljati plačljivi načrti, vendar vsak uporabnik Beta obdrži svojo trenutno ceno zaklenjeno za vedno. Brez presenečenj."
+        "q": "Kaj se zgodi po beta različici?",
+        "a": "Začnejo veljati plačljivi paketi, a vsak beta uporabnik za vedno ohrani svojo trenutno ceno. Brez presenečenj."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Nehajte pisati. Začnite objavljati.",
-    "subtitle": "Pridružite se Beta — brezplačen dostop, brez kreditne kartice in vaša cena je za vedno zaklenjena ob zagonu.",
-    "ctaPrimary": "Začnite ustvarjati brezplačno",
-    "ctaSecondary": "Poglejte, kako deluje"
+    "headline": "Nehaj pisati. Začni objavljati.",
+    "subtitle": "Pridruži se beta različici — brezplačen dostop, brez kreditne kartice, in ob zagonu je tvoja cena za vedno zaklenjena.",
+    "ctaPrimary": "Začni ustvarjati brezplačno",
+    "ctaSecondary": "Poglej, kako deluje"
   },
   "footer": {
-    "description": "UI vsebina za vsako družabno omrežje.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "description": "Vsebina z umetno inteligenco za vsako družbeno omrežje.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugalska",
     "product": "Izdelek",
     "resources": "Viri",
     "legal": "Pravno",
@@ -293,12 +351,310 @@
     "changelog": "Dnevnik sprememb",
     "supportedNetworks": "Podprta omrežja",
     "helpCenter": "Center za pomoč",
-    "contactUs": "Kontaktirajte nas",
-    "betaFeedback": "Beta povratne informacije",
-    "apiDocs": "API dokumentacija",
-    "privacyPolicy": "Politika zasebnosti",
-    "termsOfService": "Pogoji storitve",
-    "cookiePolicy": "Politika piškotkov",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "contactUs": "Stopi v stik",
+    "betaFeedback": "Povratne informacije o beta različici",
+    "apiDocs": "Dokumentacija API",
+    "privacyPolicy": "Pravilnik o zasebnosti",
+    "termsOfService": "Pogoji uporabe",
+    "cookiePolicy": "Pravilnik o piškotkih",
+    "legalNotice": "Pravno obvestilo",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugalska."
+  },
+  "cookieBanner": {
+    "aria": "Obvestilo o piškotkih",
+    "title": "Uporabljamo piškotke",
+    "body": "Nujno potrebni piškotki skrbijo, da spletno mesto deluje. Z vašim soglasjem naložimo tudi Google Analytics za merjenje prometa in Meta Pixel za merjenje našega oglaševanja. Lahko sprejmete, zavrnete ali izberete kategorijo za kategorijo — in si kadar koli premislite.",
+    "policyLink": "Pravilnik o piškotkih",
+    "privacyLink": "Pravilnik o zasebnosti",
+    "acceptAll": "Sprejmi vse",
+    "rejectOptional": "Zavrni neobvezne",
+    "customize": "Prilagodi",
+    "save": "Shrani nastavitve",
+    "necessaryLabel": "Nujno potrebni",
+    "necessaryDesc": "Potrebni za delovanje spletnega mesta (jezik in vaša izbira soglasja). Ni mogoče onemogočiti.",
+    "analyticsLabel": "Analitika — Google Analytics",
+    "analyticsDesc": "Naloži Google Analytics 4 za merjenje prometa in izboljšanje spletnega mesta. Nastavi piškotka _ga in _ga_* ter Googlu posreduje podatke o ogledih strani.",
+    "marketingLabel": "Trženje — Meta Pixel",
+    "marketingDesc": "Naloži Meta Pixel (Facebook / Instagram), da lahko merimo oglaševalske kampanje. Nastavi piškotka _fbp in _fbc ter Meti posreduje podatke o ogledih strani."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Za marketinške agencije in kreativne studie",
+      "headlineOne": "Se mučiš z objavami",
+      "headlineTwo": "za vsako stranko",
+      "headlineThree": "na vsaki platformi?",
+      "lead": "Loritalk tvoji agenciji ponudi <strong>en delovni prostor za vsako znamko</strong>, namensko osebnost za vsako stranko in domače objavljanje na 8 omrežjih — tako tvoja ekipa napiše enkrat in objavlja povsod, na vsakem računu.",
+      "ctaPrimary": "Začni s paketom Ultra",
+      "ctaSecondary": "Poglej cene za agencije",
+      "trust": [
+        "En delovni prostor za vsako znamko",
+        "Vlogi skrbnika in objavljavca",
+        "8 omrežij prek domačih API-jev"
+      ],
+      "hubLabel": "Štab agencije",
+      "hubTitle": "5 znamk. 5 delovnih prostorov.",
+      "hubBody": "Vsaka stranka dobi svoj delovni prostor, osebnosti, kanale in analitiko. Kontekst preklopiš z enim klikom.",
+      "hubMeta": "5 delovnih prostorov · ločeni",
+      "hubBadge": "V živo"
+    },
+    "pains": {
+      "title": "Prepoznaš svoj teden?",
+      "subtitle": "Ista vsebina, prepisana 7-krat za 5 strank. Vsak teden. To smo doživeli.",
+      "items": [
+        {
+          "title": "Žongliranje s 5+ strankami hkrati",
+          "description": "Vsaka znamka želi drugačen ton, drugačne platforme, drugačne roke. Preglednice in Slack niti niso potek dela."
+        },
+        {
+          "title": "Glas znamke se izgublja z vsako objavo",
+          "description": "Različni pisci, različni zavihki, različni pozivi ChatGPT. Glasu, ki ga je tvoja stranka potrdila pred šestimi meseci, ni več."
+        },
+        {
+          "title": "Petkove večerne preložitve",
+          "description": "Stranka prosi za spremembe v zadnjem trenutku na Instagramu, LinkedInu in TikToku. Isto idejo prepišeš trikrat — pa vseeno zamudiš termin."
+        },
+        {
+          "title": "Poročanje vzame cel dan",
+          "description": "Kopiranje prikazov, vključenosti in klikov iz petih nadzornih plošč v predstavitev. Ročno. Vsak mesec."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Vse, kar tvoja agencija potrebuje, na enem mestu",
+      "subtitle": "Od briefa do poročila — Loritalk vodi celoten potek vsebine za vsako znamko, ki jo upravljaš.",
+      "items": [
+        {
+          "title": "En delovni prostor za vsako stranko",
+          "description": "Ločeni delovni prostori s svojimi povezanimi kanali, osebnostmi, člani in koledarjem. Novo stranko zaženeš v nekaj minutah."
+        },
+        {
+          "title": "Osebnosti z glasom znamke",
+          "description": "Določi osebnost za vsako stranko — glas, ton, posebna navodila. Vsako ustvarjanje za ta delovni prostor vsakič upošteva brief."
+        },
+        {
+          "title": "8 omrežij, en brief",
+          "description": "Brief napiši enkrat in prejmi domače različice za Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads in Telegram — vse v nekaj sekundah, vse prek uradnih API-jev."
+        },
+        {
+          "title": "Koledar za vsak delovni prostor",
+          "description": "Vsaka stranka ima svoj tedenski / mesečni pogled in pogled čakalne vrste. Razporedi objave po kanalih in na prvi pogled poglej celoten potek za to znamko."
+        },
+        {
+          "title": "Vlogi skrbnika in objavljavca",
+          "description": "Povabi člane ekipe za vsak delovni prostor kot skrbnika (popolno upravljanje) ali objavljavca (ustvarjanje in objavljanje). Delovni prostori so med seboj popolnoma ločeni."
+        },
+        {
+          "title": "Analitika za vsak delovni prostor",
+          "description": "Doseg, vključenost, kliki in rast po kanalih v delovnem prostoru vsake stranke. Kartice s ključnimi kazalniki, najboljše objave in Lori Insights — brez preskakovanja med nadzornimi ploščami."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kako izgleda agencijski teden na Loritalk",
+      "subtitle": "Vključi znamko, podaj brief umetni inteligenci, pridobi odobritev, odpošlji. Ponovi za vsako stranko.",
+      "steps": [
+        {
+          "badge": "01 · VKLJUČITEV",
+          "title": "Zaženi delovni prostor stranke",
+          "description": "Ustvari delovni prostor, poveži družbene račune znamke in nastavi osebnost — glas, ton, posebna navodila. Pripravljeno za uporabo v nekaj minutah."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Napiši en brief na kampanjo",
+          "description": "Izberi osebnost, kanale in jezik. Loritalk v nekaj sekundah ustvari domačo različico za vsako platformo."
+        },
+        {
+          "badge": "03 · IZPOPOLNI",
+          "title": "Uredi v svoji ekipi",
+          "description": "Tvoja ekipa pregleda osnutke v delovnem prostoru — popravi besedilo, zamenjaj slike, izberi najmočnejšo različico za vsak kanal, preden gre v objavo."
+        },
+        {
+          "badge": "04 · OBJAVI",
+          "title": "Objavi in spremljaj",
+          "description": "Domači API-ji potisnejo na vsak kanal. Uspešnost se vrne v nadzorno ploščo delovnega prostora — ključni kazalniki, najboljše objave in rast po kanalih."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Paketi, narejeni za agencije",
+      "subtitle": "Vodi peščico znamk ali cel nabor strank. Izberi obseg, ki ustreza tvoji pogodbi.",
+      "customPrice": "Pogovorimo se",
+      "customCredits": "Neomejeni krediti",
+      "customCreditsDetail": "Obseg dogovorjen po pogodbi — brez presenetljivih doplačil.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Po meri",
+          "description": "Za omrežja in velike agencije, ki potrebujejo prilagojene obsege in uvajanje.",
+          "cta": "Pogovori se s prodajo"
+        }
+      },
+      "features": {
+        "customVolumes": "Prilagojeni obsegi kreditov",
+        "priorityEmail": "Prednostna podpora po e-pošti",
+        "euData": "Hramba podatkov v EU"
+      }
+    },
+    "faq": {
+      "title": "Vprašanja agencij, odgovorjena.",
+      "items": [
+        {
+          "q": "Kako se krediti delijo med strankami?",
+          "a": "Krediti so na ravni računa agencije — vsak delovni prostor lahko črpa iz iste zaloge. Porabo spremljaj v nadzorni plošči za obračun."
+        },
+        {
+          "q": "Kaj se zgodi, ko vključimo ali izključimo stranko?",
+          "a": "Nov delovni prostor zaženeš v nekaj sekundah. Arhiviranje delovnega prostora ga odstrani iz aktivnega pogleda; popoln izbris računa upošteva pravila hrambe po GDPR."
+        },
+        {
+          "q": "Na katera družbena omrežja lahko objavljamo?",
+          "a": "Domače objavljanje pokriva LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads in Telegram — osem omrežij, vsako prek uradnega API-ja platforme, tako da napake ostanejo izolirane po kanalih."
+        },
+        {
+          "q": "Ali se lahko stranke prijavijo, da vidijo svoj delovni prostor?",
+          "a": "Danes še ne. Delovni prostori so namenjeni samo ekipi agencije — vlogi skrbnika in objavljavca. Dostop za stranke je na načrtu."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Pripravljen razširiti vsebino na vse stranke?",
+      "subtitle": "Začni s paketom Ultra še danes ali rezerviraj 20-minutni demo z agencijsko ekipo in poglej Loritalk na svojih lastnih znamkah.",
+      "ctaPrimary": "Začni z Ultra",
+      "ctaSecondary": "Rezerviraj demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Za samostojne ustvarjalce in vplivneže",
+      "headlineOne": "Ena ideja.",
+      "headlineTwo": "Vsaka platforma.",
+      "headlineThree": "Brez izgube vikenda.",
+      "lead": "Loritalk en brief spremeni v <strong>domače objave za Instagram, TikTok, YouTube Shorts, X, Threads</strong> in več — in tvoj glas ohrani dosleden na vsakem računu.",
+      "ctaPrimary": "Začni brezplačno s paketom Starter",
+      "ctaSecondary": "Poglej pakete za ustvarjalce",
+      "trust": [
+        "Tvoj glas na vsakem kanalu",
+        "8 omrežij prek domačih API-jev",
+        "Razporedi tedne naenkrat"
+      ],
+      "hubLabel": "Tvoj studio",
+      "hubTitle": "1 brief. 8 domačih objav.",
+      "hubBody": "Svojo osebnost določiš enkrat. Loritalk vsako objavo prilagodi vsaki platformi — dolžina, ključniki, emodžiji, ton, oblika slike.",
+      "hubMeta": "1 osebnost · 8 kanalov",
+      "hubBadge": "V živo",
+      "cardTag": "Domača oblika"
+    },
+    "pains": {
+      "title": "Ti zveni kot tvoj teden?",
+      "subtitle": "Vsakodnevno objavljanje na vsaki platformi te ne bi smelo stati nedeljskega popoldneva. To smo doživeli.",
+      "items": [
+        {
+          "title": "Ista ideja, prepisana 8-krat",
+          "description": "Napis za Instagram, scenarij za TikTok, kljuka za YouTube, nit za X … vsaka platforma potrebuje drugačno obliko. Za eno objavo zapraviš popoldne."
+        },
+        {
+          "title": "Algoritmi kaznujejo vrzeli",
+          "description": "Izpusti dva dni in doseg pade. Ostani dosleden na vseh platformah in komaj imaš čas za snemanje, kaj šele za življenje."
+        },
+        {
+          "title": "Sodelovanja z znamkami zahtevajo več platform",
+          "description": "Sponzorji želijo Reli + Shorts + TikTok + objavo. Ista kampanja, štiri oblike. Zaračunaš za eno in dostaviš štiri."
+        },
+        {
+          "title": "Glas se razvodeni",
+          "description": "Pri petnajsti objavi napisi zvenijo, kot da jih je napisal tujec. Občinstvo to opazi. Vključenost pade."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Vse, kar ustvarjalec potrebuje, na enem mestu",
+      "subtitle": "Podaj brief enkrat, odpošlji povsod — brez izgube glasu, ki mu tvoje občinstvo sledi.",
+      "items": [
+        {
+          "title": "Tvoj glas, zaklenjen",
+          "description": "Določi osebnost s svojim glasom, tonom in posebnimi navodili v navadnem besedilu. Vsako ustvarjanje gre skozi to lečo — zveni kot ti, ne kot orodje z umetno inteligenco."
+        },
+        {
+          "title": "En brief, osem domačih objav",
+          "description": "Idejo napiši enkrat. Loritalk v nekaj sekundah izdela različico, optimizirano za Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn in Telegram."
+        },
+        {
+          "title": "Slike v skladu z znamko za vsako obliko",
+          "description": "Objave v viru, zgodbe, izrezi za naslovnice, navpično za Reli in Shorts. Slike so izrisane s pravim razmerjem stranic in vizualnimi pravili tvoje osebnosti."
+        },
+        {
+          "title": "Razporedi teden v enem zamahu",
+          "description": "Načrtuj od ponedeljka do nedelje na vseh platformah v enem koledarju. Domači API-ji samodejno potisnejo — tudi ko snemaš naslednji sklop."
+        },
+        {
+          "title": "Poglej, kaj raste",
+          "description": "Doseg, vključenost, kliki in rast sledilcev po kanalih. Kartice s ključnimi kazalniki in Lori Insights pokažejo, kaj deluje — udari na to."
+        },
+        {
+          "title": "Moderirano, preden gre v objavo",
+          "description": "Vsak osnutek gre skozi samodejno moderiranje, tako da tvoje občinstvo doseže vsebina, varna za znamko, in tvoji sponzorji ostanejo zadovoljni."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kako izgleda ustvarjalčev teden na Loritalk",
+      "subtitle": "Zajemi svoj glas enkrat, podaj brief za eno idejo, odpošlji na vsako platformo, opazuj, kaj raste.",
+      "steps": [
+        {
+          "badge": "01 · GLAS",
+          "title": "Določi svojo osebnost",
+          "description": "Zapiši svoj glas, ton in hišna pravila v osebnost. Postane leča, skozi katero gre vsaka prihodnja objava."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Podaj brief za eno idejo",
+          "description": "Vtipkaj koncept, izberi kanale in jezik. Loritalk v nekaj sekundah izdela domačo različico za vsako platformo — napise, scenarije, niti, kljuke."
+        },
+        {
+          "badge": "03 · ODPOŠLJI",
+          "title": "Uredi in razporedi",
+          "description": "Izpopolni najmočnejšo različico za vsak kanal, vse uvrsti v čakalno vrsto v koledarju in odidi. API-ji objavijo ob pravem času, v pravi obliki."
+        },
+        {
+          "badge": "04 · SPREMLJAJ",
+          "title": "Opazuj, kaj deluje",
+          "description": "Analitika po kanalih pokaže, kaj prinaša doseg in vključenost. Spreminjaj kot, ne poteka dela."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Paketi, narejeni za ustvarjalce",
+      "subtitle": "Začni brezplačno med beta različico. Izberi obseg, ki ustreza temu, kako pogosto objavljaš."
+    },
+    "faq": {
+      "title": "Vprašanja ustvarjalcev, odgovorjena.",
+      "items": [
+        {
+          "q": "Ali bo zvenelo kot jaz?",
+          "a": "Opiši svoj glas, ton in hišna pravila v osebnosti. Vsako ustvarjanje gre skozi to lečo. Bolj podrobna kot je osebnost, bližje tvojemu glasu."
+        },
+        {
+          "q": "Na katere platforme dejansko objavljate?",
+          "a": "Domače objavljanje pokriva Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn in Telegram — osem omrežij prek uradnih API-jev. Napake na enem kanalu nikoli ne blokirajo drugih."
+        },
+        {
+          "q": "Ali lahko uredim pred objavo?",
+          "a": "Vedno. Loritalk izdela osnutek za vsak kanal — ti izbereš, popraviš in objaviš. Nič ne gre v živo brez tvojega klika na gumb (razen če si to razporedil)."
+        },
+        {
+          "q": "Kaj pa slike in kratki videoposnetki?",
+          "a": "Slike v skladu z znamko se ustvarijo za vsako platformo s pravim razmerjem stranic (kvadrat, navpično 9:16, naslovnica). Za kratke videoposnetke dobiš domač napis s kljuko v prvih sekundah in poziv k dejanju — prilepi naravnost v TikTok ali YouTube Shorts."
+        },
+        {
+          "q": "Ali je Loritalk med beta različico brezplačen?",
+          "a": "Da. Beta dostop je brezplačen z velikodušnimi omejitvami. Vsak beta uporabnik ob zagonu plačljivih paketov za vedno ohrani svojo trenutno ceno."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Nehaj prepisovati. Začni objavljati.",
+      "subtitle": "Pridruži se beta različici — brezplačno, brez kreditne kartice, tvoja cena je ob zagonu za vedno zaklenjena.",
+      "ctaPrimary": "Začni brezplačno s paketom Starter",
+      "ctaSecondary": "Poglej pakete za ustvarjalce"
+    }
   }
 }

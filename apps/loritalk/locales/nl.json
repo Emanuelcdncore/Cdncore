@@ -3,28 +3,62 @@
     "features": "Functies",
     "howItWorks": "Hoe het werkt",
     "pricing": "Prijzen",
-    "beta": "Beta",
+    "forAgencies": "Voor bureaus",
+    "forCreators": "Voor creators",
+    "beta": "Bèta",
     "startForFree": "Gratis beginnen"
   },
   "hero": {
-    "badge": "Nu in Beta — gratis vroege toegang",
+    "badge": "In bèta · Vroege-toegangsprijs voor altijd vastgezet",
     "headlineOne": "Schrijf minder.",
     "headlineTwo": "Publiceer meer.",
-    "description": "Typ een thema of idee. De AI van Loritalk schrijft geoptimaliseerde berichten voor Instagram, LinkedIn, X, TikTok en meer — in seconden. Meerdere AI-modellen concurreren om je het beste resultaat te geven.",
-    "ctaPrimary": "Begin gratis te creëren",
-    "ctaSecondary": "Bekijk hoe het werkt",
-    "note": "Geen creditcard nodig · Gratis tijdens de Beta",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Herschreven.",
+    "headlineThree": "Gecontroleerd.",
+    "lead": "Beschrijf je post één keer. Loritalk schrijft <strong>een native versie voor elk gekoppeld platform</strong>, genereert beeld dat bij je merk past, haalt elk woord door automatische moderatie en plant alles in — in seconden.",
+    "ctaPrimary": "Gratis beginnen — geen kaart",
+    "ctaSecondary": "Bekijk het in actie · 90s",
+    "trust": [
+      "8 native integraties",
+      "Automatisch gemodereerd",
+      "Per workspace afgeschermd"
+    ],
+    "briefCard": {
+      "label": "Jouw briefing · 1 van 1",
+      "typed": "Lanceer onze nieuwe duurzame sneaker. Gemaakt van 80% gerecycled oceaanplastic. Gericht op Gen Z-hardlopers.",
+      "meta": "en · 8 kanalen · House Voice",
+      "send": "Genereren ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "posts · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profiel · pagina's",
+      "x": "X / Twitter",
+      "xTag": "threads · los",
+      "tiktok": "TikTok",
+      "tiktokTag": "scripts · bijschriften",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "native",
+      "facebook": "Facebook",
+      "facebookTag": "pagina's",
+      "telegram": "Telegram",
+      "telegramTag": "kanalen · groepen"
+    },
+    "leadHook": "Beschrijf je post één keer.",
+    "leadBody": "Loritalk schrijft <strong>een native versie voor elk gekoppeld platform</strong>, genereert beeld dat bij je merk past, haalt elk woord door automatische moderatie en plant alles in — in seconden."
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Ondersteunde sociale netwerken",
-    "languagesValue": "3",
-    "languagesLabel": "Talen bij lancering",
-    "generationValue": "<5s",
-    "generationLabel": "Gemiddelde generatietijd",
+    "languagesValue": "24+",
+    "languagesLabel": "Interfacetalen",
+    "generationValue": "Seconden",
+    "generationLabel": "Van briefing tot klaar om te publiceren",
     "freeValue": "Gratis",
-    "freeLabel": "Tijdens de Beta — zonder beperkingen"
+    "freeLabel": "Tijdens de bèta — geen limieten"
   },
   "problem": {
     "title": "Je contentworkflow is kapot",
@@ -32,255 +66,275 @@
     "items": [
       {
         "title": "Uren verspild aan aanpassen",
-        "description": "Je schrijft een bericht voor Instagram, herschrijft het voor LinkedIn, dan weer voor X. Elk platform vereist een andere toon, lengte en hashtags."
+        "description": "Je schrijft een post voor Instagram, herschrijft hem voor LinkedIn en daarna nog eens voor X. Elk platform vraagt om een andere toon, lengte en hashtags."
       },
       {
         "title": "AI die generiek klinkt",
-        "description": "AI geeft je één versie die klinkt als iedereen. Geen merkstem, geen platformbewustzijn, geen echte optimalisatie."
+        "description": "AI met één model geeft je één versie die klinkt als ieder ander. Geen merkstem, geen platformbesef, geen echte optimalisatie."
       },
       {
-        "title": "Knelpunten in het team",
-        "description": "Content wacht op goedkeuring, raakt verloren in Slack-threads en niemand weet wat er gepland staat voor volgende week."
+        "title": "Knelpunten in je team",
+        "description": "Content wacht op goedkeuring, raakt verloren in Slack-threads en niemand weet wat er voor volgende week gepland staat."
       }
     ]
   },
   "solution": {
     "title": "Loritalk lost dat allemaal op",
-    "subtitle": "Eén briefing. Elk platform. Meerdere AI's concurreren om je beste bericht.",
-    "ctaPrimary": "Begin gratis te creëren",
+    "subtitle": "Eén briefing. Een native versie voor elk platform. Beeld dat bij je merk past, parallel gegenereerd.",
+    "ctaPrimary": "Begin gratis met creëren",
     "rows": [
       {
-        "before": "1 bericht = 45 min aanpassen per platform",
+        "before": "1 post = 45 min aanpassen aan elk platform",
         "after": "1 briefing = alle platforms in <5 seconden"
       },
       {
-        "before": "1 AI-model = generieke, one-size-fits-all tekst",
-        "after": "Meerdere AI-modellen overleggen en verfijnen elkaar"
+        "before": "Generieke AI-tekst overal opnieuw gebruikt",
+        "after": "Een native versie per kanaal — lengte, hashtags en toon aangepast"
       },
       {
         "before": "Content verspreid over tools en threads",
-        "after": "Eén dashboard: maak, keur goed, plan, publiceer, volg"
+        "after": "Eén dashboard: creëren, goedkeuren, plannen, publiceren, volgen"
       }
     ]
   },
   "features": {
     "title": "Alles wat je contentteam nodig heeft",
-    "subtitle": "Van idee tot gepubliceerd bericht — Loritalk beheert de volledige workflow.",
+    "subtitle": "Van idee tot gepubliceerde post — Loritalk regelt de hele workflow.",
     "items": [
       {
-        "title": "Multi-model AI-deliberatie",
-        "description": "Niet één AI — meerdere modellen genereren onafhankelijk en verfijnen vervolgens elkaars werk."
+        "title": "Platform-native content",
+        "description": "Eén briefing wordt een native versie voor elk platform — lengte, hashtags, emoji en toon aangepast aan Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads en Telegram."
       },
       {
-        "title": "Platformgeoptimaliseerde content",
-        "description": "Elk bericht is op maat gemaakt voor zijn platform — juiste toon, lengte, hashtags, emoji's en format. Instagram-bijschriften, LinkedIn-artikelen, X-threads, TikTok-scripts."
+        "title": "Beeldgeneratie die bij je merk past",
+        "description": "Beeld per platform gegenereerd met de juiste beeldverhouding en de visuele regels van je persona — feedposts, stories, hero-crops. Geen handmatig formaat aanpassen meer."
       },
       {
         "title": "Meertalige generatie",
-        "description": "Genereer in het Portugees, Engels, Spaans en meer. Vloeiendheid op moedertaalniveau met culturele nuances — niet zomaar een vertaling."
+        "description": "Genereer in het Portugees, Engels, Spaans en meer. Vloeiend op moedertaalniveau, met culturele nuance — niet zomaar een vertaling."
       },
       {
-        "title": "Plan en publiceer",
-        "description": "Kalenderweergave, geplande publicatie en direct posten naar alle verbonden kanalen. Verschillende tijden per platform."
+        "title": "Plannen & publiceren",
+        "description": "Kalenderweergave, geplande publicatie en direct posten naar alle gekoppelde kanalen. Verschillende tijden per platform."
       },
       {
-        "title": "Merkstem en persona's",
-        "description": "Maak AI-persona's die schrijven zoals jouw merk. Beheer de toon van professioneel tot speels. Elk bericht klinkt als jij, niet als een robot."
+        "title": "Merkstem & persona's",
+        "description": "Creëer AI-persona's die schrijven zoals jouw merk. Stel de toon in van professioneel tot speels. Elke post klinkt als jou, niet als een robot."
       },
       {
-        "title": "Analytisch dashboard",
-        "description": "Volg impressies, betrokkenheid, klikken en groei over alle kanalen. Weet welke content werkt en verdubbel je inzet."
+        "title": "Analytics-dashboard",
+        "description": "Volg bereik, betrokkenheid, kliks en groei per kanaal. KPI-kaarten, topposts en Lori Insights tonen wat werkt."
       }
     ]
   },
   "howItWorks": {
-    "title": "Van idee tot bericht in 3 stappen",
-    "subtitle": "Geen lege schermen meer. Geen copy-paste meer tussen platforms.",
+    "eyebrow": "05 · Workflow",
+    "title": "Briefing → preview → publiceren.",
+    "titleAccent": "Drie stappen.",
+    "titleTail": "In seconden.",
+    "subtitle": "Je kiest nooit een model. Je past nooit een afbeelding aan. Je kopieert en plakt nooit tussen tabbladen.",
     "steps": [
       {
+        "badge": "01",
+        "eyebrow": "Invoer",
         "title": "Schrijf je briefing",
-        "description": "Beschrijf wat je wilt communiceren — zo eenvoudig als \"nieuwe productlancering\" of zo gedetailleerd als een volledige brief. Kies je kanalen, taal en toon."
+        "description": "Eén zin of drie alinea's. Kies de kanalen, de persona en de taal. Dat is het enige wat je vandaag schrijft.",
+        "footLeft": "~ 5 sec om te schrijven",
+        "footRight": "1 briefing"
       },
       {
-        "title": "AI-modellen concurreren voor jou",
-        "description": "Meerdere AI-modellen genereren content onafhankelijk, beoordelen en verfijnen vervolgens elkaars output. Je ontvangt N gepolijste versies per platform."
+        "badge": "02",
+        "eyebrow": "Generatie",
+        "title": "AI past het aan per kanaal",
+        "description": "Loritalk leest je briefing, je persona en de native regels van elk platform — en maakt dan een versie die op maat is voor elk kanaal. Automatische moderatie draait voordat jij het ziet.",
+        "footLeft": "~ 3 sec per kanaal",
+        "footRight": "Per gekoppeld kanaal"
       },
       {
-        "title": "Kies, bewerk en publiceer",
-        "description": "Kies je favoriete versie voor elk kanaal. Pas alles aan met één klik. Publiceer nu of plan voor later."
+        "badge": "03",
+        "eyebrow": "Distributie",
+        "title": "Publiceren of plannen",
+        "description": "Verstuur nu of zet het in de kalender met timing per platform. Elk kanaal verloopt via zijn eigen native API; storingen blijven geïsoleerd — Instagram gaat gewoon door, zelfs als Facebook hapert.",
+        "footLeft": "Native API's · OAuth",
+        "footRight": "8 kanalen"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Lanceer onze nieuwe duurzame sneaker. Gemaakt van 80% gerecycled oceaanplastic. Gericht op Gen Z-hardlopers.\"",
+      "channelsComment": "// kanalen:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Taal",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutraal — de house voice van Lori"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Ontspannen, grappig, spreektaal"
+        },
+        {
+          "name": "Core",
+          "desc": "Gedurfd, optimistisch, merkgedreven"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "carrousel",
+          "when": "Vandaag 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "lang formaat",
+          "when": "Vandaag 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "thread",
+          "when": "Vandaag 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Morgen 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "post",
+          "when": "Morgen 12:00"
+        }
+      ],
+      "cta": "▶ Alles publiceren · ⏱ Plannen"
+    }
   },
-  "differentiator": {
-    "title": "Waarom meerdere AI's één verslaan",
-    "subtitle": "Andere tools gebruiken één model. Loritalk gebruikt er meerdere — en laat ze elkaar verbeteren.",
-    "briefLabel": "Je briefing",
-    "channels": "Kanalen",
-    "language": "Taal:",
-    "languages": "Engels, Portugees",
-    "submitted": "Ingediend 2s geleden",
-    "round1": "RONDE 1 — ONAFHANKELIJKE GENERATIE",
-    "generated": "Gegenereerd",
-    "round2": "Ronde 2 — Kruisverfijning",
-    "round2Desc": "Elk model leest alle outputs en verbetert zijn eigen versie",
-    "qualityNote": "Kwaliteit verbeterd met ~40% t.o.v. Ronde 1",
-    "pickEdit": "Kies en bewerk",
-    "addMedia": "Media toevoegen",
-    "uploading": "Afbeelding uploaden...",
-    "imageAttached": "Afbeelding succesvol geüpload",
-    "generateAI": "Genereer met AI",
-    "readyPublish": "Klaar om te publiceren",
-    "publishAll": "Alles publiceren",
-    "scheduled": "Gepland",
-    "draft": "Concept",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Beeld",
+    "title": "Beeld dat bij je merk past,",
+    "titleAccent": "afbeeldingen",
+    "titleTail": "op maat per platform.",
+    "subtitle": "Beeldgeneratie draait asynchroon en per platform — geen handmatig formaat aanpassen, geen stockbeeld dat niet bij je merk past. Losse posts, carrousels, story-formaten, hero-crops. Elke render volgt de visuele regels van de actieve persona.",
+    "tiles": {
+      "instagramCaption": "5 uur 's ochtends. Koffie, twee tabbladen, één beslissing.\nv2 gebouwd voordat het team inlogde.",
+      "storyQuote": "we haalden 1M MRR in dezelfde week dat we de helft van de roadmap schrapten.",
+      "storySwipe": "↑ swipe",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "We huurden 3 freelancers in vóór onze eerste vaste kracht. Hier is de spreadsheet.",
+      "linkedinCta": "Lees meer →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "de meeste \"oprichterscontent\" is een persbericht in een hoodie. schrijf als een mens. #shipping",
+      "generatingLabel": "Renderen · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "EERSTE",
+      "ytTitleLineTwo": "AANNAME.",
+      "ytSubtitle": "Waarom we 18 maanden wachtten.",
+      "ytMeta": "Loritalk · Afl. 14 · 32 min"
+    }
   },
   "useCases": {
     "title": "Gebouwd voor teams die publiceren",
-    "subtitle": "Of je nu een solocreator bent of een bureau van 50 personen.",
+    "subtitle": "Of je nu een solocreator bent of een bureau met 50 mensen.",
     "items": [
       {
-        "title": "Solocreators en freelancers",
-        "description": "Stop met uren besteden aan het aanpassen van content. Schrijf één keer, publiceer overal. Focus op strategie, niet op copy-paste."
+        "title": "Solocreators & freelancers",
+        "description": "Stop met uren besteden aan het aanpassen van content. Schrijf één keer, publiceer overal. Focus op strategie, niet op kopiëren en plakken."
       },
       {
         "title": "Marketingteams",
-        "description": "Eén workspace per merk. Goedkeuringsworkflows. Kalenderweergave. Iedereen weet wat er gepubliceerd wordt en wanneer."
+        "description": "Eén workspace per merk. Kalenderweergave per workspace. Iedereen weet wat er gepubliceerd wordt en wanneer."
       },
       {
         "title": "Bureaus",
-        "description": "Beheer meerdere merken vanuit één account. Wijs rollen toe, beheer toegang, volg prestaties over alle klanten. Onbeperkte berichten op het Bureau-plan."
+        "description": "Beheer meerdere merken vanuit één account. Een workspace per klant met afgeschermde kanalen, persona's en kalender. Analytics per kanaal voor elk merk."
       }
     ]
   },
   "pricing": {
     "title": "Eenvoudige, transparante prijzen",
-    "subtitle": "Gratis tijdens de Beta. Vroege gebruikers vergrendelen hun tarief voor altijd bij lancering.",
-    "mostPopular": "Meest populair",
+    "subtitle": "Op basis van credits. Altijd opzegbaar. Jaarlijks bespaart je twee maanden.",
     "monthly": "Maandelijks",
     "annual": "Jaarlijks",
     "save2Months": "-17%",
-    "perMonth": "/ maand",
+    "perMonth": "/ mnd",
+    "perMonthBilledYearly": "/ mnd, jaarlijks gefactureerd",
     "perYear": "/ jaar",
-    "billedAnnually": "Jaarlijks gefactureerd",
-    "customPriceLabel": "Op maat",
-    "plans": [
-      {
-        "name": "Gratis",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "tijdens de Beta",
-        "description": "Probeer alles met ruime limieten.",
-        "features": [
-          "5 berichten / maand",
-          "3 netwerken",
-          "Basis toonbesturing",
-          "Hashtag-suggesties"
-        ],
-        "cta": "Gratis beginnen",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Bespaar {{amount}} / jaar",
+    "mostPopular": "Populairst",
+    "bestValue": "Beste keuze",
+    "creditsUnit": "credits / maand",
+    "creditsTexts": "~{{count}} tekstposts",
+    "creditsOr": "of",
+    "creditsImages": "~{{count}} afbeeldingen die bij je merk passen",
+    "promoExplainer": "Promotie eerste jaar: ontvang ELKE maand 2× credits gedurende je hele eerste jaar wanneer je voor Jaarlijks kiest — dat zijn {{count}} bonuscredits per maand.",
+    "promoHeroExtra": "(+{{count}} bonuscredits elke maand, 12 maanden lang)",
+    "tierChoose": "Kies abonnement",
+    "features": {
+      "workspaces_one": "{{count}} workspace",
+      "workspaces_other": "{{count}} workspaces",
+      "channels": "{{count}} sociale kanalen",
+      "personas": "{{count}} merkpersona's",
+      "members_one": "{{count}} teamlid",
+      "members_other": "{{count}} teamleden",
+      "media": "{{count}} media-assets"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Voor wie voor het eerst AI-content maakt"
       },
-      {
-        "name": "Creator",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Voor creators en merken die consistent publiceren.",
-        "features": [
-          "200 berichten / maand",
-          "Alle netwerken",
-          "Geavanceerde toon en persona's",
-          "Contentkalender",
-          "Prioriteitsondersteuning"
-        ],
-        "cta": "Gratis proefperiode starten",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Voor consistente en eenvoudige AI-contentcreatie"
       },
-      {
-        "name": "Bureau",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Voor teams die meerdere merken beheren.",
-        "features": [
-          "Onbeperkte berichten",
-          "Alle netwerken",
-          "Meerdere merken",
-          "Teamsamenwerking",
-          "Analytics",
-          "Accountmanager"
-        ],
-        "cta": "Neem contact op",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Voor creators die AI-producten bouwen"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Voor bureaus en kleine teams"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Vragen? Wij hebben antwoorden.",
     "items": [
       {
-        "q": "Welke AI-modellen gebruikt Loritalk?",
-        "a": "Je kunt configureren welke modellen deelnemen aan je generatiepipeline."
+        "q": "Hoe werkt de AI van Loritalk?",
+        "a": "Loritalk maakt een native versie van je briefing voor elk gekoppeld kanaal en genereert parallel beeld dat bij je merk past. Alles passeert een automatische moderatielaag voordat het je dashboard bereikt."
       },
       {
-        "q": "Hoe verschilt dit van other AI tools?",
-        "a": "Other AI tools geeft je één output van één model. Loritalk draait meerdere modellen parallel en laat ze vervolgens elkaars werk verfijnen — wat consistent hogere kwaliteit oplevert. Bovendien wordt elk bericht automatisch geoptimaliseerd voor elk specifiek platform."
+        "q": "Hoe verschilt dit van andere AI-tools?",
+        "a": "Andere tools geven je één blok tekst om overal te kopiëren en plakken. Loritalk maakt native versies per platform — lengte, hashtags, emoji en toon aangepast aan elk netwerk — en publiceert via de officiële API van elk platform."
       },
       {
         "q": "Welke sociale netwerken worden ondersteund?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) en TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads en Telegram — acht netwerken via native API's."
       },
       {
-        "q": "Is mijn content privé?",
-        "a": "Ja. Je content wordt nooit gebruikt om AI-modellen te trainen. Alle data wordt opgeslagen op onze servers in Europa en verwerkt conform de AVG."
+        "q": "Waar worden mijn gegevens opgeslagen?",
+        "a": "Je gegevens worden opgeslagen op servers in de Europese Unie. De AI-aanbieders die we gebruiken (OpenAI voor tekst, Google voor beeld) werken onder hun zakelijke API-voorwaarden — content die naar de API wordt gestuurd, wordt niet gebruikt om hun algemene modellen te trainen."
       },
       {
-        "q": "Kan ik het gebruiken met mijn team?",
-        "a": "Absoluut. Maak workspaces voor elk merk, nodig teamleden uit met admin- of publisher-rollen en stel goedkeuringsworkflows in zodat niets live gaat zonder beoordeling."
+        "q": "Kan ik het met mijn team gebruiken?",
+        "a": "Ja. Maak workspaces voor elk merk en nodig teamleden uit met de rol van admin of publisher. Elke workspace heeft zijn eigen gekoppelde kanalen, persona's en kalender."
       },
       {
-        "q": "Wat gebeurt er na de Beta?",
-        "a": "Betaalde plannen gaan in, maar elke Beta-gebruiker behoudt zijn huidige tarief voor altijd vergrendeld. Geen verrassingen."
+        "q": "Wat gebeurt er na de bèta?",
+        "a": "Betaalde abonnementen gaan in, maar elke bètagebruiker houdt zijn huidige tarief voor altijd vastgezet. Geen verrassingen."
       }
     ]
   },
   "ctaBanner": {
     "headline": "Stop met schrijven. Begin met publiceren.",
-    "subtitle": "Doe mee met de Beta — gratis toegang, geen creditcard, en je tarief is voor altijd vergrendeld bij lancering.",
-    "ctaPrimary": "Begin gratis te creëren",
+    "subtitle": "Doe mee met de bèta — gratis toegang, geen creditcard, en je tarief staat voor altijd vast wanneer we live gaan.",
+    "ctaPrimary": "Begin gratis met creëren",
     "ctaSecondary": "Bekijk hoe het werkt"
   },
   "footer": {
@@ -290,15 +344,313 @@
     "resources": "Bronnen",
     "legal": "Juridisch",
     "features": "Functies",
-    "changelog": "Wijzigingslogboek",
+    "changelog": "Changelog",
     "supportedNetworks": "Ondersteunde netwerken",
     "helpCenter": "Helpcentrum",
     "contactUs": "Neem contact op",
-    "betaFeedback": "Beta-feedback",
+    "betaFeedback": "Bètafeedback",
     "apiDocs": "API-documentatie",
     "privacyPolicy": "Privacybeleid",
     "termsOfService": "Servicevoorwaarden",
     "cookiePolicy": "Cookiebeleid",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "legalNotice": "Juridische kennisgeving",
+    "copyright": "© 2026 Loritalk® door CDN Core Technologies. Covilhã, Portugal."
+  },
+  "cookieBanner": {
+    "aria": "Cookiemelding",
+    "title": "We gebruiken cookies",
+    "body": "Strikt noodzakelijke cookies houden de site werkend. Met jouw toestemming laden we ook Google Analytics om verkeer te meten en de Meta Pixel om onze advertenties te meten. Je kunt accepteren, weigeren of per categorie kiezen — en je mening op elk moment wijzigen.",
+    "policyLink": "Cookiebeleid",
+    "privacyLink": "Privacybeleid",
+    "acceptAll": "Alles accepteren",
+    "rejectOptional": "Optionele weigeren",
+    "customize": "Aanpassen",
+    "save": "Voorkeuren opslaan",
+    "necessaryLabel": "Strikt noodzakelijk",
+    "necessaryDesc": "Vereist om de site te laten werken (taal en je toestemmingskeuze). Kan niet worden uitgeschakeld.",
+    "analyticsLabel": "Analytics — Google Analytics",
+    "analyticsDesc": "Laadt Google Analytics 4 om verkeer te meten en de site te verbeteren. Plaatst _ga- en _ga_*-cookies en stuurt paginaweergavegegevens naar Google.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Laadt de Meta Pixel (Facebook / Instagram) zodat we advertentiecampagnes kunnen meten. Plaatst _fbp- en _fbc-cookies en stuurt paginaweergavegegevens naar Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Voor marketingbureaus & creatieve studio's",
+      "headlineOne": "Moeite om posts te leveren",
+      "headlineTwo": "voor elke klant",
+      "headlineThree": "op elk platform?",
+      "lead": "Loritalk geeft je bureau <strong>één workspace per merk</strong>, een toegewijde persona per klant en native publiceren op 8 netwerken — zodat je team één keer schrijft en overal publiceert, op elk account.",
+      "ctaPrimary": "Begin met het Ultra-abonnement",
+      "ctaSecondary": "Bekijk bureauprijzen",
+      "trust": [
+        "Eén workspace per merk",
+        "Rollen admin + publisher",
+        "8 netwerken via native API's"
+      ],
+      "hubLabel": "Bureau-HQ",
+      "hubTitle": "5 merken. 5 workspaces.",
+      "hubBody": "Elke klant krijgt zijn eigen workspace, persona's, kanalen en analytics. Wissel van context met één klik.",
+      "hubMeta": "5 workspaces · afgeschermd",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "Herken je je week?",
+      "subtitle": "Dezelfde content 7 keer herschreven voor 5 klanten. Elke week. We hebben het meegemaakt.",
+      "items": [
+        {
+          "title": "5+ klanten tegelijk jongleren",
+          "description": "Elk merk wil een andere toon, andere platforms, andere deadlines. Spreadsheets en Slack-threads zijn geen workflow."
+        },
+        {
+          "title": "Merkstem verschuift bij elke post",
+          "description": "Andere copywriters, andere tabbladen, andere ChatGPT-prompts. De stem waar je klant zes maanden geleden mee akkoord ging, is verdwenen."
+        },
+        {
+          "title": "Herplannen op vrijdagavond",
+          "description": "Klant vraagt om last-minute wijzigingen op Instagram, LinkedIn en TikTok. Je herschrijft hetzelfde idee drie keer — en mist de slot alsnog."
+        },
+        {
+          "title": "Rapporteren kost een hele dag",
+          "description": "Impressies, betrokkenheid en kliks uit vijf dashboards in een deck kopiëren. Handmatig. Elke maand."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Alles wat je bureau nodig heeft op één plek",
+      "subtitle": "Van de briefing tot het rapport — Loritalk draait de hele contentpijplijn voor elk merk dat je beheert.",
+      "items": [
+        {
+          "title": "Eén workspace per klant",
+          "description": "Afgeschermde workspaces met hun eigen gekoppelde kanalen, persona's, leden en kalender. Zet een nieuwe klant op in minuten."
+        },
+        {
+          "title": "Persona's met merkstem",
+          "description": "Definieer een persona per klant — stem, toon, specifieke instructies. Elke generatie voor die workspace respecteert de briefing, elke keer."
+        },
+        {
+          "title": "8 netwerken, één briefing",
+          "description": "Schrijf de briefing één keer en ontvang native versies voor Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads en Telegram — allemaal in seconden, allemaal via officiële API's."
+        },
+        {
+          "title": "Kalender per workspace",
+          "description": "Elke klant heeft zijn eigen week- / maand- / wachtrijweergave. Plan posts per kanaal en zie in één oogopslag de volledige pijplijn voor dat merk."
+        },
+        {
+          "title": "Rollen admin + publisher",
+          "description": "Nodig teamleden per workspace uit als admin (volledig beheer) of publisher (creëren en publiceren). Workspaces zijn volledig van elkaar afgeschermd."
+        },
+        {
+          "title": "Analytics per workspace",
+          "description": "Bereik, betrokkenheid, kliks en groei per kanaal binnen de workspace van elke klant. KPI-kaarten, topposts en Lori Insights — zonder tussen dashboards te springen."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Hoe een bureauweek eruitziet op Loritalk",
+      "subtitle": "Onboard een merk, brief de AI, krijg goedkeuring, lever. Herhaal voor elke klant.",
+      "steps": [
+        {
+          "badge": "01 · ONBOARDEN",
+          "title": "Zet de klant-workspace op",
+          "description": "Maak een workspace, koppel de sociale accounts van het merk en configureer de persona — stem, toon, specifieke instructies. Klaar voor gebruik in minuten."
+        },
+        {
+          "badge": "02 · BRIEFEN",
+          "title": "Schrijf één briefing per campagne",
+          "description": "Kies de persona, kanalen en taal. Loritalk genereert in seconden een native versie per platform."
+        },
+        {
+          "badge": "03 · VERFIJNEN",
+          "title": "Bewerk in je team",
+          "description": "Je team bekijkt de concepten in de workspace — tekst aanpassen, beeld vervangen, de sterkste variant per kanaal kiezen voordat het de deur uitgaat."
+        },
+        {
+          "badge": "04 · LEVEREN",
+          "title": "Publiceren & volgen",
+          "description": "Native API's pushen naar elk kanaal. De prestaties stromen terug in het dashboard per workspace — KPI's, topposts en groei per kanaal."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Abonnementen gebouwd voor bureaus",
+      "subtitle": "Beheer een handvol merken of een hele klantenportefeuille. Kies het volume dat past bij je retainer.",
+      "customPrice": "Laten we praten",
+      "customCredits": "Onbeperkte credits",
+      "customCreditsDetail": "Volume per contract afgesproken — geen verrassende overschrijdingen.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Custom",
+          "description": "Voor netwerken en grote bureaus die maatwerkvolumes en onboarding nodig hebben.",
+          "cta": "Praat met sales"
+        }
+      },
+      "features": {
+        "customVolumes": "Aangepaste creditvolumes",
+        "priorityEmail": "Prioriteit e-mailondersteuning",
+        "euData": "Gegevensopslag in de EU"
+      }
+    },
+    "faq": {
+      "title": "Bureauvragen, beantwoord.",
+      "items": [
+        {
+          "q": "Hoe worden credits gedeeld tussen klanten?",
+          "a": "Credits staan op het niveau van het bureau-account — elke workspace kan uit dezelfde pool putten. Volg het gebruik in het facturatiedashboard."
+        },
+        {
+          "q": "Wat gebeurt er als we een klant onboarden of offboarden?",
+          "a": "Zet in seconden een nieuwe workspace op. Een workspace archiveren haalt hem uit de actieve weergave; volledige accountverwijdering respecteert de AVG-bewaarregels."
+        },
+        {
+          "q": "Naar welke sociale netwerken kunnen we publiceren?",
+          "a": "Native publiceren omvat LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads en Telegram — acht netwerken, elk via de officiële platform-API, zodat storingen per kanaal geïsoleerd blijven."
+        },
+        {
+          "q": "Kunnen klanten inloggen om hun workspace te zien?",
+          "a": "Nu nog niet. Workspaces zijn alleen voor het bureauteam — de rollen admin en publisher. Klanttoegang staat op de roadmap."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Klaar om content op te schalen voor elke klant?",
+      "subtitle": "Begin vandaag met het Ultra-abonnement of boek een demo van 20 minuten met het bureauteam om Loritalk op je eigen merken te zien.",
+      "ctaPrimary": "Begin met Ultra",
+      "ctaSecondary": "Boek een demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Voor solocreators & influencers",
+      "headlineOne": "Eén idee.",
+      "headlineTwo": "Elk platform.",
+      "headlineThree": "Zonder je weekend te verliezen.",
+      "lead": "Loritalk maakt van één briefing <strong>native posts voor Instagram, TikTok, YouTube Shorts, X, Threads</strong> en meer — terwijl je stem consistent blijft op elk account.",
+      "ctaPrimary": "Begin gratis met Starter",
+      "ctaSecondary": "Bekijk creator-abonnementen",
+      "trust": [
+        "Jouw stem op elk kanaal",
+        "8 netwerken via native API's",
+        "Plan weken in één keer"
+      ],
+      "hubLabel": "Jouw studio",
+      "hubTitle": "1 briefing. 8 native posts.",
+      "hubBody": "Definieer je persona één keer. Loritalk past elke post aan op elk platform — lengte, hashtags, emoji, toon, beeldformaat.",
+      "hubMeta": "1 persona · 8 kanalen",
+      "hubBadge": "Live",
+      "cardTag": "Native formaat"
+    },
+    "pains": {
+      "title": "Klinkt dit als jouw week?",
+      "subtitle": "Elke dag posten op elk platform zou je geen zondagmiddag mogen kosten. We hebben het meegemaakt.",
+      "items": [
+        {
+          "title": "Hetzelfde idee, 8 keer herschreven",
+          "description": "Bijschrift voor Instagram, script voor TikTok, hook voor YouTube, thread voor X… elk platform vraagt om een andere vorm. Je verbrandt een middag aan één post."
+        },
+        {
+          "title": "Algoritmes straffen gaten af",
+          "description": "Mis twee dagen en je bereik daalt. Blijf consistent op elk platform en je hebt amper tijd om te filmen, laat staan om te leven."
+        },
+        {
+          "title": "Merkdeals eisen multiplatform",
+          "description": "Sponsors willen Reels + Shorts + TikTok + post. Dezelfde campagne, vier formaten. Je rekent voor één en levert vier."
+        },
+        {
+          "title": "Je stem verwatert",
+          "description": "Bij post vijftien klinken de bijschriften alsof een vreemde ze schreef. Je publiek merkt het. De betrokkenheid daalt."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Alles wat een creator nodig heeft op één plek",
+      "subtitle": "Brief één keer, lever overal — zonder de stem te verliezen die je publiek volgt.",
+      "items": [
+        {
+          "title": "Jouw stem, vastgezet",
+          "description": "Definieer een persona met je stem, toon en specifieke instructies in gewone tekst. Elke generatie passeert die lens — klinkt als jou, niet als een AI-tool."
+        },
+        {
+          "title": "Eén briefing, acht native posts",
+          "description": "Schrijf het idee één keer. Loritalk maakt in seconden een versie die is geoptimaliseerd voor Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn en Telegram."
+        },
+        {
+          "title": "Beeld dat bij je merk past, per formaat",
+          "description": "Feedposts, stories, hero-crops, verticaal voor Reels en Shorts. Beeld wordt gegenereerd met de juiste beeldverhouding en de visuele regels van je persona."
+        },
+        {
+          "title": "Plan een week in één sessie",
+          "description": "Plan maandag tot en met zondag op elk platform in één kalender. Native API's pushen automatisch — zelfs als je de volgende batch aan het filmen bent."
+        },
+        {
+          "title": "Zie wat groeit",
+          "description": "Bereik, betrokkenheid, kliks en volgersgroei per kanaal. KPI-kaarten en Lori Insights tonen wat werkt — zet daar extra op in."
+        },
+        {
+          "title": "Gemodereerd voordat het de deur uitgaat",
+          "description": "Elk concept passeert automatische moderatie, zodat merkveilige content je publiek bereikt en je sponsors tevreden blijven."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Hoe een creatorweek eruitziet op Loritalk",
+      "subtitle": "Leg je stem één keer vast, brief één idee, lever op elk platform, kijk wat groeit.",
+      "steps": [
+        {
+          "badge": "01 · STEM",
+          "title": "Definieer je persona",
+          "description": "Zet je stem, toon en huisregels in een persona. Het wordt de lens waar elke toekomstige post doorheen gaat."
+        },
+        {
+          "badge": "02 · BRIEFEN",
+          "title": "Brief één idee",
+          "description": "Typ het concept, kies kanalen en taal. Loritalk maakt in seconden een native versie per platform — bijschriften, scripts, threads, hooks."
+        },
+        {
+          "badge": "03 · LEVEREN",
+          "title": "Bewerken & plannen",
+          "description": "Werk de sterkste variant per kanaal bij, zet alles in de wachtrij in de kalender en loop weg. API's publiceren op het juiste moment, in het juiste formaat."
+        },
+        {
+          "badge": "04 · VOLGEN",
+          "title": "Kijk wat werkt",
+          "description": "Analytics per kanaal laten zien wat bereik en betrokkenheid binnenhaalt. Pas de invalshoek aan, niet de workflow."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Abonnementen gebouwd voor creators",
+      "subtitle": "Begin gratis tijdens de bèta. Kies het volume dat past bij hoe vaak je post."
+    },
+    "faq": {
+      "title": "Creatorvragen, beantwoord.",
+      "items": [
+        {
+          "q": "Gaat het klinken als ik?",
+          "a": "Beschrijf je stem, toon en huisregels in een persona. Elke generatie passeert die lens. Hoe gedetailleerder de persona, hoe dichter bij je stem."
+        },
+        {
+          "q": "Naar welke platforms publiceer je echt?",
+          "a": "Native publiceren omvat Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn en Telegram — acht netwerken via officiële API's. Storingen op één kanaal blokkeren nooit de andere."
+        },
+        {
+          "q": "Kan ik bewerken voordat ik post?",
+          "a": "Altijd. Loritalk maakt een concept per kanaal — jij kiest, past aan en publiceert. Niets gaat live zonder dat jij op de knop drukt (tenzij je het hebt ingepland)."
+        },
+        {
+          "q": "Hoe zit het met beeld en korte video's?",
+          "a": "Beeld dat bij je merk past, wordt per platform gegenereerd met de juiste beeldverhouding (vierkant, verticaal 9:16, hero). Voor korte video's krijg je een native bijschrift met een hook in de eerste seconden en een CTA — plak het direct in TikTok of YouTube Shorts."
+        },
+        {
+          "q": "Is Loritalk gratis tijdens de bèta?",
+          "a": "Ja. Bètatoegang is gratis met royale limieten. Elke bètagebruiker houdt zijn huidige tarief voor altijd vastgezet wanneer de betaalde abonnementen live gaan."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Stop met herschrijven. Begin met leveren.",
+      "subtitle": "Doe mee met de bèta — gratis, geen creditcard, je tarief staat voor altijd vast wanneer we live gaan.",
+      "ctaPrimary": "Begin gratis met Starter",
+      "ctaSecondary": "Bekijk creator-abonnementen"
+    }
   }
 }

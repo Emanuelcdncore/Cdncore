@@ -3,302 +3,654 @@
     "features": "Funkciók",
     "howItWorks": "Hogyan működik",
     "pricing": "Árazás",
+    "forAgencies": "Ügynökségeknek",
+    "forCreators": "Alkotóknak",
     "beta": "Béta",
-    "startForFree": "Kezdd ingyen"
+    "startForFree": "Kezdés ingyen"
   },
   "hero": {
-    "badge": "Most Bétában — ingyenes korai hozzáférés",
+    "badge": "Bétában · A korai hozzáférés ára örökre rögzítve",
     "headlineOne": "Írj kevesebbet.",
     "headlineTwo": "Tegyél közzé többet.",
-    "description": "Írj be egy témát vagy ötletet. A Loritalk AI optimalizált posztokat ír Instagram, LinkedIn, X, TikTok és más platformokra — másodpercek alatt. Több AI modell versenyez, hogy a legjobb eredményt adja.",
-    "ctaPrimary": "Kezdj el ingyen alkotni",
-    "ctaSecondary": "Nézd meg, hogyan működik",
-    "note": "Nincs szükség bankkártyára · Ingyenes a Béta alatt",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Átírva.",
+    "headlineThree": "Auditálva.",
+    "lead": "Írd le egyszer a posztodat. A Loritalk <strong>natív verziót ír minden csatlakoztatott platformra</strong>, márkahű képeket generál, minden szót átfuttat az automata moderáción, és ütemezi őket — másodpercek alatt.",
+    "ctaPrimary": "Kezdés ingyen — kártya nélkül",
+    "ctaSecondary": "Nézd meg működés közben · 90 mp",
+    "trust": [
+      "8 natív integráció",
+      "Automatikusan moderálva",
+      "Munkaterületenként elkülönítve"
+    ],
+    "briefCard": {
+      "label": "A briefed · 1 / 1",
+      "typed": "Dobjuk piacra az új fenntartható sportcipőnket. 80%-ban újrahasznosított óceáni műanyagból készült. A Z generációs futókat célozzuk.",
+      "meta": "hu · 8 csatorna · Házi hangnem",
+      "send": "Generálás ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "posztok · reelek · sztorik",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · oldalak",
+      "x": "X / Twitter",
+      "xTag": "szálak · önálló",
+      "tiktok": "TikTok",
+      "tiktokTag": "forgatókönyvek · feliratok",
+      "youtube": "YouTube",
+      "youtubeTag": "shortok ≤ 100 mp",
+      "threads": "Threads",
+      "threadsTag": "natív",
+      "facebook": "Facebook",
+      "facebookTag": "oldalak",
+      "telegram": "Telegram",
+      "telegramTag": "csatornák · csoportok"
+    },
+    "leadHook": "Írd le egyszer a posztodat.",
+    "leadBody": "A Loritalk <strong>natív verziót ír minden csatlakoztatott platformra</strong>, márkahű képeket generál, minden szót átfuttat az automata moderáción, és ütemezi őket — másodpercek alatt."
   },
   "stats": {
-    "networksValue": "6+",
-    "networksLabel": "Támogatott közösségi hálózat",
-    "languagesValue": "3",
-    "languagesLabel": "Nyelv induláskor",
-    "generationValue": "<5s",
-    "generationLabel": "Átlagos generálási idő",
+    "networksValue": "8",
+    "networksLabel": "Támogatott közösségi háló",
+    "languagesValue": "24+",
+    "languagesLabel": "Felületi nyelv",
+    "generationValue": "Másodpercek",
+    "generationLabel": "A brieftől a közzétételre kész posztig",
     "freeValue": "Ingyenes",
-    "freeLabel": "A Béta alatt — korlátok nélkül"
+    "freeLabel": "A béta alatt — korlátok nélkül"
   },
   "problem": {
-    "title": "A tartalmi munkafolyamatod elromlott",
-    "subtitle": "Ismerősen hangzik?",
+    "title": "A tartalomkészítési folyamatod elromlott",
+    "subtitle": "Ismerős?",
     "items": [
       {
-        "title": "Órák elvesztegetése adaptálással",
-        "description": "Írsz egy posztot Instagramra, majd átírod LinkedInre, aztán megint X-re. Minden platform más hangnemet, hosszt és hashtageket igényel."
+        "title": "Órák kárba az átdolgozással",
+        "description": "Megírsz egy posztot Instagramra, aztán átírod LinkedInre, majd újra X-re. Minden platform más hangnemet, hosszúságot és hashtageket kíván."
       },
       {
-        "title": "AI, ami általánosan hangzik",
-        "description": "A AI ad egy verziót, ami úgy hangzik, mint mindenki más. Nincs márka hang, nincs platformtudatosság, nincs valódi optimalizálás."
+        "title": "Sablonos hangú MI",
+        "description": "Az egymodelles MI egyetlen verziót ad, ami pont úgy hangzik, mint mindenki másé. Nincs márkahang, nincs platformtudatosság, nincs valódi optimalizálás."
       },
       {
-        "title": "Csapat szűk keresztmetszetek",
-        "description": "A tartalom jóváhagyásra vár, elvész a Slack szálakban, és senki sem tudja, mi van tervezve a következő hétre."
+        "title": "Csapatszintű szűk keresztmetszetek",
+        "description": "A tartalom jóváhagyásra vár, elveszik a Slack-szálakban, és senki sem tudja, mi van beütemezve a jövő hétre."
       }
     ]
   },
   "solution": {
     "title": "A Loritalk mindezt megoldja",
-    "subtitle": "Egy brief. Minden platform. Több AI versenyez a legjobb posztodért.",
+    "subtitle": "Egy brief. Natív verzió minden platformra. Márkahű képek párhuzamosan renderelve.",
     "ctaPrimary": "Kezdj el ingyen alkotni",
     "rows": [
       {
-        "before": "1 poszt = 45 perc adaptálás minden platformra",
-        "after": "1 brief = minden platform <5 másodperc alatt"
+        "before": "1 poszt = 45 perc átdolgozás minden platformra",
+        "after": "1 brief = minden platform 5 másodperc alatt"
       },
       {
-        "before": "1 AI modell = általános, mindenkire ugyanolyan szöveg",
-        "after": "Több AI modell tanácskozik és finomítja egymást"
+        "before": "Sablonos MI-szöveg minden hálón újrahasznosítva",
+        "after": "Natív verzió csatornánként — hossz, hashtagek és hangnem testreszabva"
       },
       {
-        "before": "Tartalom szétszórva eszközök és szálak között",
-        "after": "Egy vezérlőpult: hozz létre, hagyj jóvá, ütemezz, publikálj, kövess nyomon"
+        "before": "A tartalom eszközök és szálak közt szétszórva",
+        "after": "Egyetlen vezérlőpult: létrehozás, jóváhagyás, ütemezés, közzététel, követés"
       }
     ]
   },
   "features": {
-    "title": "Minden, amire a tartalmi csapatodnak szüksége van",
-    "subtitle": "Az ötlettől a publikált posztig — a Loritalk kezeli a teljes munkafolyamatot.",
+    "title": "Minden, amire a tartalomcsapatodnak szüksége van",
+    "subtitle": "Az ötlettől a közzétett posztig — a Loritalk kezeli az egész folyamatot.",
     "items": [
       {
-        "title": "Több modelles AI deliberáció",
-        "description": "Nem egy AI — több modell generál függetlenül, majd finomítja egymás munkáját."
+        "title": "Platformnatív tartalom",
+        "description": "Egy briefből natív verzió lesz minden platformra — a hossz, a hashtagek, az emojik és a hangnem az Instagramhoz, LinkedInhez, X-hez, TikTokhoz, Facebookhoz, YouTube Shortshoz, Threadshez és Telegramhoz igazítva."
       },
       {
-        "title": "Platformra optimalizált tartalom",
-        "description": "Minden poszt a platformjára szabott — megfelelő hangnem, hossz, hashtagek, emojik és formátum. Instagram képaláírások, LinkedIn cikkek, X szálak, TikTok szkriptek."
+        "title": "Márkahű képgenerálás",
+        "description": "A képek platformonként renderelve a megfelelő képaránnyal és a personád vizuális szabályaival — feedposztok, sztorik, hero kivágások. Nincs több kézi átméretezés."
       },
       {
         "title": "Többnyelvű generálás",
-        "description": "Generálj portugálul, angolul, spanyolul és más nyelveken. Anyanyelvi szintű folyékonyság kulturális árnyalatokkal — nem csak fordítás."
+        "description": "Generálj magyarul, angolul, spanyolul és még többön. Anyanyelvi szintű folyékonyság kulturális árnyalatokkal — nem csupán fordítás."
       },
       {
-        "title": "Ütemezés és publikálás",
-        "description": "Naptárnézet, ütemezett publikálás és közvetlen posztolás minden csatlakoztatott csatornára. Különböző időpontok platformonként."
+        "title": "Ütemezés és közzététel",
+        "description": "Naptárnézet, ütemezett közzététel és közvetlen posztolás minden csatlakoztatott csatornára. Platformonként eltérő időpontokkal."
       },
       {
-        "title": "Márka hang és személyiségek",
-        "description": "Hozz létre AI személyiségeket, amelyek úgy írnak, mint a márkád. Irányítsd a hangnemet a professzionálistól a játékosig. Minden poszt úgy hangzik, mint te, nem mint egy robot."
+        "title": "Márkahang és personák",
+        "description": "Hozz létre MI-personákat, amelyek úgy írnak, mint a márkád. Szabályozd a hangnemet a profitól a játékosig. Minden poszt úgy hangzik, mint te, nem mint egy robot."
       },
       {
         "title": "Analitikai vezérlőpult",
-        "description": "Kövesd nyomon a megjelenéseket, elköteleződést, kattintásokat és növekedést minden csatornán. Tudd, melyik tartalom működik, és duplázd meg az erőfeszítést."
+        "description": "Kövesd az elérést, az interakciókat, a kattintásokat és a növekedést csatornánként. A KPI-kártyák, a top posztok és a Lori Insights kiemelik, mi működik."
       }
     ]
   },
   "howItWorks": {
-    "title": "Az ötlettől a posztig 3 lépésben",
-    "subtitle": "Nincs több üres képernyő. Nincs több másolgatás platformok között.",
+    "eyebrow": "05 · Folyamat",
+    "title": "Brief → előnézet → közzététel.",
+    "titleAccent": "Három lépés.",
+    "titleTail": "Másodpercek alatt.",
+    "subtitle": "Sosem választasz modellt. Sosem méretezel át képet. Sosem másolsz-illesztesz fülek között.",
     "steps": [
       {
+        "badge": "01",
+        "eyebrow": "Bevitel",
         "title": "Írd meg a briefedet",
-        "description": "Írd le, mit szeretnél közölni — olyan egyszerűen, mint \"új termék bevezetése\" vagy olyan részletesen, mint egy teljes brief. Válaszd ki a csatornáidat, nyelvet és hangnemet."
+        "description": "Egy mondat vagy három bekezdés. Válaszd ki a csatornákat, a personát és a nyelvet. Ma csak ennyit kell megírnod.",
+        "footLeft": "~ 5 mp megírni",
+        "footRight": "1 brief"
       },
       {
-        "title": "AI modellek versenyeznek érted",
-        "description": "Több AI modell generál tartalmat függetlenül, majd átnézi és finomítja egymás kimenetét. N csiszolt verziót kapsz platformonként."
+        "badge": "02",
+        "eyebrow": "Generálás",
+        "title": "Az MI csatornánként szabja testre",
+        "description": "A Loritalk elolvassa a briefedet, a personádat és minden platform natív szabályait — majd csatornánként egyedi verziót készít. Az automata moderáció lefut, mielőtt te látnád.",
+        "footLeft": "~ 3 mp csatornánként",
+        "footRight": "Csatlakoztatott csatornánként"
       },
       {
-        "title": "Válassz, szerkessz és publikálj",
-        "description": "Válaszd ki a kedvenc verziódat minden csatornához. Módosíts bármit egyetlen kattintással. Publikálj most vagy ütemezz későbbre."
+        "badge": "03",
+        "eyebrow": "Terjesztés",
+        "title": "Tedd közzé vagy ütemezd",
+        "description": "Küldd most, vagy dobd a naptárba platformonkénti időzítéssel. Minden csatorna a saját natív API-ján keresztül megy ki; a hibák elkülönülnek — az Instagram akkor is megy, ha a Facebook akadozik.",
+        "footLeft": "Natív API-k · OAuth",
+        "footRight": "8 csatorna"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Dobjuk piacra az új fenntartható sportcipőnket. 80%-ban újrahasznosított óceáni műanyagból készült. A Z generációs futókat célozzuk.\"",
+      "channelsComment": "// csatornák:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Nyelv",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Semleges — a Lori házi hangja"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Laza, vicces, társalgós"
+        },
+        {
+          "name": "Core",
+          "desc": "Merész, optimista, márkavezérelt"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "körhinta",
+          "when": "Ma 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "hosszú forma",
+          "when": "Ma 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "szál",
+          "when": "Ma 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Holnap 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "poszt",
+          "when": "Holnap 12:00"
+        }
+      ],
+      "cta": "▶ Összes közzététele · ⏱ Ütemezés"
+    }
   },
-  "differentiator": {
-    "title": "Miért ver meg több AI egyet",
-    "subtitle": "Más eszközök egy modellt használnak. A Loritalk többet használ — és ráveszi őket, hogy javítsák egymást.",
-    "briefLabel": "A briefed",
-    "channels": "Csatornák",
-    "language": "Nyelv:",
-    "languages": "Angol, Portugál",
-    "submitted": "Beküldve 2 mp-cel ezelőtt",
-    "round1": "1. KÖR — FÜGGETLEN GENERÁLÁS",
-    "generated": "Generálva",
-    "round2": "2. kör — Keresztfinomítás",
-    "round2Desc": "Minden modell olvassa az összes kimenetet és javítja a saját verzióját",
-    "qualityNote": "A minőség ~40%-kal javult az 1. körhöz képest",
-    "pickEdit": "Válassz és szerkessz",
-    "addMedia": "Média hozzáadása",
-    "uploading": "Kép feltöltése...",
-    "imageAttached": "Kép sikeresen feltöltve",
-    "generateAI": "Generálás AI-val",
-    "readyPublish": "Kész a publikálásra",
-    "publishAll": "Összes publikálása",
-    "scheduled": "Ütemezve",
-    "draft": "Vázlat",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Vizuális tartalom",
+    "title": "Márkahű",
+    "titleAccent": "képek",
+    "titleTail": "platformonként méretezve.",
+    "subtitle": "A képgenerálás aszinkron és platformonként fut — nincs kézi átméretezés, nincs márkaidegen stockfotó. Önálló posztok, körhinták, sztoriformátumok, hero kivágások. Minden render az aktív persona vizuális szabályaira hivatkozik.",
+    "tiles": {
+      "instagramCaption": "Hajnali 5. Kávé, két fül, egy döntés.\nMegépítettem a v2-t, mielőtt a csapat belépett.",
+      "storyQuote": "ugyanazon a héten értük el az 1M MRR-t, amikor kihúztuk a roadmap felét.",
+      "storySwipe": "↑ pöccintés",
+      "linkedinAuthor": "Marlow Studio · 12 perc",
+      "linkedinTitle": "Három alvállalkozót vettünk fel, mielőtt az első főállásút. Itt a táblázat.",
+      "linkedinCta": "Tovább →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "a legtöbb \"alapítói tartalom\" egy sajtóközlemény kapucnis pulcsiban. írj úgy, mint egy ember. #shipping",
+      "generatingLabel": "Renderelés · TikTok",
+      "generatingSub": "9:16 · ~12 mp",
+      "ytTitleLineOne": "ELSŐ",
+      "ytTitleLineTwo": "FELVÉTEL.",
+      "ytSubtitle": "Miért vártunk 18 hónapot.",
+      "ytMeta": "Loritalk · 14. ep. · 32 perc"
+    }
   },
   "useCases": {
-    "title": "Publikáló csapatok számára készült",
-    "subtitle": "Akár egyéni alkotó vagy, akár 50 fős ügynökség.",
+    "title": "Csapatoknak, akik közzétesznek",
+    "subtitle": "Akár szóló alkotó vagy, akár egy 50 fős ügynökség.",
     "items": [
       {
-        "title": "Egyéni alkotók és szabadúszók",
-        "description": "Ne vesztegesd az órákat tartalom adaptálásra. Írj egyszer, publikálj mindenhol. Összpontosíts a stratégiára, ne a másolgatásra."
+        "title": "Szóló alkotók és szabadúszók",
+        "description": "Ne tölts órákat tartalom átdolgozásával. Írd meg egyszer, tedd közzé mindenhol. A stratégiára koncentrálj, ne a másolásra-beillesztésre."
       },
       {
-        "title": "Marketing csapatok",
-        "description": "Egy munkaterület márkánként. Jóváhagyási munkafolyamatok. Naptárnézet. Mindenki tudja, mi jelenik meg és mikor."
+        "title": "Marketingcsapatok",
+        "description": "Egy munkaterület márkánként. Naptárnézet munkaterületenként. Mindenki tudja, mi és mikor jelenik meg."
       },
       {
         "title": "Ügynökségek",
-        "description": "Kezelj több márkát egy fiókból. Oszd ki a szerepeket, irányítsd a hozzáférést, kövesd nyomon a teljesítményt minden ügyfélnél. Korlátlan posztok az Ügynökség csomagban."
+        "description": "Több márka kezelése egyetlen fiókból. Munkaterület ügyfelenként, elkülönített csatornákkal, personákkal és naptárral. Csatornánkénti analitika minden márkához."
       }
     ]
   },
   "pricing": {
     "title": "Egyszerű, átlátható árazás",
-    "subtitle": "Ingyenes a Béta alatt. A korai felhasználók örökre rögzítik az árukat az induláskor.",
-    "mostPopular": "Legnépszerűbb",
+    "subtitle": "Kreditalapú. Bármikor lemondható. Az éves díjjal két hónapot megspórolsz.",
     "monthly": "Havi",
     "annual": "Éves",
     "save2Months": "-17%",
     "perMonth": "/ hó",
+    "perMonthBilledYearly": "/ hó, évente számlázva",
     "perYear": "/ év",
-    "billedAnnually": "Évente számlázva",
-    "customPriceLabel": "Egyedi",
-    "plans": [
-      {
-        "name": "Ingyenes",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "a Béta alatt",
-        "description": "Próbálj ki mindent bőkezű korlátokkal.",
-        "features": [
-          "5 poszt / hó",
-          "3 hálózat",
-          "Alap hangnem vezérlés",
-          "Hashtag javaslatok"
-        ],
-        "cta": "Kezdd ingyen",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Spórolj {{amount}} / év",
+    "mostPopular": "Legnépszerűbb",
+    "bestValue": "Legjobb ár-érték",
+    "creditsUnit": "kredit / hó",
+    "creditsTexts": "~{{count}} szöveges poszt",
+    "creditsOr": "vagy",
+    "creditsImages": "~{{count}} márkahű kép",
+    "promoExplainer": "Első éves promóció: kapj 2× kreditet MINDEN hónapban a teljes első évedben, ha az Éves csomagot választod — ez havonta {{count}} bónuszkredit.",
+    "promoHeroExtra": "(+{{count}} bónuszkredit minden hónapban 12 hónapon át)",
+    "tierChoose": "Csomag választása",
+    "features": {
+      "workspaces_one": "{{count}} munkaterület",
+      "workspaces_other": "{{count}} munkaterület",
+      "channels": "{{count}} közösségi csatorna",
+      "personas": "{{count}} márkapersona",
+      "members_one": "{{count}} csapattag",
+      "members_other": "{{count}} csapattag",
+      "media": "{{count}} médiaelem"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Először MI-tartalmat készítőknek"
       },
-      {
-        "name": "Alkotó",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Alkotók és márkák számára, akik rendszeresen publikálnak.",
-        "features": [
-          "200 poszt / hó",
-          "Minden hálózat",
-          "Haladó hangnem és személyiségek",
-          "Tartalom naptár",
-          "Kiemelt támogatás"
-        ],
-        "cta": "Ingyenes próba indítása",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Következetes és egyszerű MI-tartalomkészítéshez"
       },
-      {
-        "name": "Ügynökség",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Több márkát kezelő csapatok számára.",
-        "features": [
-          "Korlátlan posztok",
-          "Minden hálózat",
-          "Több márka",
-          "Csapat együttműködés",
-          "Analitika",
-          "Fiókkezelő"
-        ],
-        "cta": "Beszéljünk",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "MI-termékeket építő alkotóknak"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Ügynökségeknek és kis csapatoknak"
       }
-    ]
+    }
   },
   "faq": {
-    "title": "Kérdések? Vannak válaszaink.",
+    "title": "Kérdések? Van rá válaszunk.",
     "items": [
       {
-        "q": "Milyen AI modelleket használ a Loritalk?",
-        "a": "Beállíthatod, melyik modellek vesznek részt a generálási folyamatodban."
+        "q": "Hogyan működik a Loritalk MI-je?",
+        "a": "A Loritalk a briefedből natív verziót készít minden csatlakoztatott csatornára, és párhuzamosan márkahű képeket renderel. Minden átmegy egy automata moderációs rétegen, mielőtt elérné a vezérlőpultodat."
       },
       {
-        "q": "Miben különbözik ez a other AI tools-től?",
-        "a": "A Other AI tools egy kimenetet ad egy modellből. A Loritalk több modellt futtat párhuzamosan, majd ráveszi őket, hogy finomítsák egymás munkáját — következetesen magasabb minőséget produkálva. Ráadásul minden poszt automatikusan optimalizálódik az adott platformra."
+        "q": "Miben más ez, mint a többi MI-eszköz?",
+        "a": "A többi eszköz egyetlen szövegblokkot ad, amit mindenhová bemásolsz. A Loritalk platformonként natív verziókat készít — a hossz, a hashtagek, az emojik és a hangnem minden hálóhoz igazítva —, és minden platform hivatalos API-ján keresztül tesz közzé."
       },
       {
-        "q": "Mely közösségi hálózatok támogatottak?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) és TikTok."
+        "q": "Mely közösségi hálók támogatottak?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads és Telegram — nyolc háló natív API-kon keresztül."
       },
       {
-        "q": "Privát a tartalmam?",
-        "a": "Igen. A tartalmad soha nem használjuk AI modellek betanítására. Minden adat az európai szervereinken van tárolva és GDPR-nak megfelelően dolgozzuk fel."
+        "q": "Hol tárolódnak az adataim?",
+        "a": "Az adataidat az Európai Unióban lévő szervereken tároljuk. Az általunk használt MI-szolgáltatók (OpenAI a szöveghez, Google a képekhez) a vállalati API-feltételeik szerint működnek — az API-nak küldött tartalmat nem használják fel az általános célú modelljeik betanítására."
       },
       {
         "q": "Használhatom a csapatommal?",
-        "a": "Természetesen. Hozz létre munkaterületeket minden márkához, hívj meg csapattagokat admin vagy publikáló szerepkörökkel, és állíts be jóváhagyási munkafolyamatokat, hogy semmi ne menjen élesbe ellenőrzés nélkül."
+        "a": "Igen. Hozz létre munkaterületeket minden márkához, és hívd meg a csapattagokat adminisztrátor vagy közzétevő szerepkörrel. Minden munkaterületnek saját csatlakoztatott csatornái, personái és naptára van."
       },
       {
-        "q": "Mi történik a Béta után?",
-        "a": "A fizetős csomagok lépnek életbe, de minden Béta felhasználó örökre megtartja a jelenlegi árát. Nincsenek meglepetések."
+        "q": "Mi történik a béta után?",
+        "a": "A fizetős csomagok életbe lépnek, de minden bétafelhasználó örökre megtartja a jelenlegi árát. Nincs meglepetés."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Hagyd abba az írást. Kezdj el publikálni.",
-    "subtitle": "Csatlakozz a Bétához — ingyenes hozzáférés, nincs bankkártya, és az árad örökre rögzítve van az induláskor.",
+    "headline": "Hagyd abba az írást. Kezdj el közzétenni.",
+    "subtitle": "Csatlakozz a bétához — ingyenes hozzáférés, bankkártya nélkül, és az árad örökre rögzül, amikor elindulunk.",
     "ctaPrimary": "Kezdj el ingyen alkotni",
     "ctaSecondary": "Nézd meg, hogyan működik"
   },
   "footer": {
-    "description": "AI tartalom minden közösségi hálózatra.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "description": "MI-tartalom minden közösségi hálóra.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugália",
     "product": "Termék",
-    "resources": "Erőforrások",
+    "resources": "Források",
     "legal": "Jogi",
     "features": "Funkciók",
     "changelog": "Változásnapló",
-    "supportedNetworks": "Támogatott hálózatok",
+    "supportedNetworks": "Támogatott hálók",
     "helpCenter": "Súgóközpont",
     "contactUs": "Kapcsolat",
     "betaFeedback": "Béta visszajelzés",
-    "apiDocs": "API dokumentáció",
+    "apiDocs": "API-dokumentáció",
     "privacyPolicy": "Adatvédelmi szabályzat",
-    "termsOfService": "Szolgáltatási feltételek",
-    "cookiePolicy": "Cookie szabályzat",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "termsOfService": "Felhasználási feltételek",
+    "cookiePolicy": "Cookie-szabályzat",
+    "legalNotice": "Jogi nyilatkozat",
+    "copyright": "© 2026 Loritalk® a CDN Core Technologies által. Covilhã, Portugália."
+  },
+  "cookieBanner": {
+    "aria": "Cookie-tájékoztató",
+    "title": "Cookie-kat használunk",
+    "body": "A feltétlenül szükséges cookie-k biztosítják az oldal működését. A hozzájárulásoddal betöltjük a Google Analyticset is a forgalom mérésére, valamint a Meta Pixelt a hirdetéseink mérésére. Elfogadhatod, elutasíthatod, vagy kategóriánként kiválaszthatod — és bármikor meggondolhatod magad.",
+    "policyLink": "Cookie-szabályzat",
+    "privacyLink": "Adatvédelmi szabályzat",
+    "acceptAll": "Összes elfogadása",
+    "rejectOptional": "Választhatók elutasítása",
+    "customize": "Testreszabás",
+    "save": "Beállítások mentése",
+    "necessaryLabel": "Feltétlenül szükséges",
+    "necessaryDesc": "Az oldal működéséhez szükséges (nyelv és a hozzájárulási döntésed). Nem kapcsolható ki.",
+    "analyticsLabel": "Analitika — Google Analytics",
+    "analyticsDesc": "Betölti a Google Analytics 4-et a forgalom mérésére és az oldal fejlesztésére. _ga és _ga_* cookie-kat állít be, és oldalmegtekintési adatokat továbbít a Google-nek.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Betölti a Meta Pixelt (Facebook / Instagram), hogy mérni tudjuk a hirdetési kampányokat. _fbp és _fbc cookie-kat állít be, és oldalmegtekintési adatokat továbbít a Metának."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Marketingügynökségeknek és kreatív stúdióknak",
+      "headlineOne": "Nehéz posztokat kiadni",
+      "headlineTwo": "minden ügyfélnek",
+      "headlineThree": "minden platformon?",
+      "lead": "A Loritalk az ügynökségednek <strong>egy munkaterületet ad márkánként</strong>, dedikált personát ügyfelenként, és natív közzétételt 8 hálón — így a csapatod egyszer ír, és mindenhol, minden fiókban közzétesz.",
+      "ctaPrimary": "Kezdés az Ultra csomaggal",
+      "ctaSecondary": "Nézd meg az ügynökségi árakat",
+      "trust": [
+        "Egy munkaterület márkánként",
+        "Admin + közzétevő szerepkörök",
+        "8 háló natív API-kon át"
+      ],
+      "hubLabel": "Ügynökségi központ",
+      "hubTitle": "5 márka. 5 munkaterület.",
+      "hubBody": "Minden ügyfél saját munkaterületet, personákat, csatornákat és analitikát kap. Válts kontextust egyetlen kattintással.",
+      "hubMeta": "5 munkaterület · elkülönítve",
+      "hubBadge": "Élő"
+    },
+    "pains": {
+      "title": "Felismered a heted?",
+      "subtitle": "Ugyanaz a tartalom 7-szer átírva 5 ügyfélnek. Minden héten. Ismerjük ezt.",
+      "items": [
+        {
+          "title": "5+ ügyfél zsonglőrködése egyszerre",
+          "description": "Minden márka más hangnemet, más platformokat, más határidőket akar. A táblázatok és Slack-szálak nem munkafolyamatok."
+        },
+        {
+          "title": "A márkahang minden posztnál elcsúszik",
+          "description": "Más szövegírók, más fülek, más ChatGPT-promptok. Az a hang, amit az ügyfeled hat hónapja jóváhagyott, eltűnt."
+        },
+        {
+          "title": "Péntek esti átütemezések",
+          "description": "Az ügyfél utolsó pillanatos változtatásokat kér Instagramon, LinkedInen és TikTokon. Háromszor írod át ugyanazt az ötletet — és így is lemaradsz az időpontról."
+        },
+        {
+          "title": "A riportolás egy teljes napot elvisz",
+          "description": "Megjelenések, interakciók és kattintások másolása öt vezérlőpultról egy prezentációba. Kézzel. Minden hónapban."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Minden, amire az ügynökségednek szüksége van, egy helyen",
+      "subtitle": "A brieftől a riportig — a Loritalk vezeti a teljes tartalmi folyamatot minden kezelt márkádhoz.",
+      "items": [
+        {
+          "title": "Egy munkaterület ügyfelenként",
+          "description": "Elkülönített munkaterületek saját csatlakoztatott csatornákkal, personákkal, tagokkal és naptárral. Indíts el egy új ügyfelet percek alatt."
+        },
+        {
+          "title": "Márkahang-personák",
+          "description": "Határozz meg egy personát ügyfelenként — hang, hangnem, konkrét utasítások. Az adott munkaterület minden generálása tiszteletben tartja a briefet, minden alkalommal."
+        },
+        {
+          "title": "8 háló, egy brief",
+          "description": "Írd meg egyszer a briefet, és kapj natív verziókat Instagramra, LinkedInre, X-re, TikTokra, Facebookra, YouTube Shortsra, Threadsre és Telegramra — mind másodpercek alatt, mind hivatalos API-kon át."
+        },
+        {
+          "title": "Munkaterületenkénti naptár",
+          "description": "Minden ügyfélnek saját heti / havi / sorban álló nézete van. Ütemezz posztokat csatornánként, és lásd az adott márka teljes folyamatát egy pillantással."
+        },
+        {
+          "title": "Admin + közzétevő szerepkörök",
+          "description": "Hívd meg a csapattagokat munkaterületenként adminként (teljes kezelés) vagy közzétevőként (létrehozás és közzététel). A munkaterületek teljesen elkülönülnek egymástól."
+        },
+        {
+          "title": "Munkaterületenkénti analitika",
+          "description": "Elérés, interakciók, kattintások és növekedés csatornánként minden ügyfél munkaterületén belül. KPI-kártyák, top posztok és Lori Insights — vezérlőpultok közti ugrálás nélkül."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Hogyan néz ki egy ügynökségi hét a Loritalkon",
+      "subtitle": "Vezess be egy márkát, briefeld az MI-t, kérj jóváhagyást, add ki. Ismételd minden ügyfélnél.",
+      "steps": [
+        {
+          "badge": "01 · BEVEZETÉS",
+          "title": "Indítsd el az ügyfél munkaterületét",
+          "description": "Hozz létre egy munkaterületet, csatlakoztasd a márka közösségi fiókjait, és állítsd be a personát — hang, hangnem, konkrét utasítások. Percek alatt használatra kész."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Írj egy briefet kampányonként",
+          "description": "Válaszd ki a personát, a csatornákat és a nyelvet. A Loritalk másodpercek alatt platformonkénti natív verziót generál."
+        },
+        {
+          "badge": "03 · FINOMÍTÁS",
+          "title": "Szerkessz a csapatodban",
+          "description": "A csapatod átnézi a vázlatokat a munkaterületen belül — finomítja a szöveget, képeket cserél, kiválasztja a legerősebb verziót csatornánként, mielőtt kimegy."
+        },
+        {
+          "badge": "04 · KIADÁS",
+          "title": "Közzététel és követés",
+          "description": "A natív API-k minden csatornára kiküldenek. A teljesítmény visszaáramlik a munkaterületenkénti vezérlőpultba — KPI-k, top posztok és csatornánkénti növekedés."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Ügynökségeknek tervezett csomagok",
+      "subtitle": "Kezelj néhány márkát vagy egy teljes ügyfélkört. Válaszd a megbízásodhoz illő mennyiséget.",
+      "customPrice": "Beszéljünk",
+      "customCredits": "Korlátlan kredit",
+      "customCreditsDetail": "A mennyiség szerződésenként megállapodva — nincs meglepetésszerű túllépés.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Egyedi",
+          "description": "Hálózatoknak és nagy ügynökségeknek, amelyeknek egyedi mennyiségre és bevezetésre van szükségük.",
+          "cta": "Beszélj az értékesítéssel"
+        }
+      },
+      "features": {
+        "customVolumes": "Egyedi kreditmennyiségek",
+        "priorityEmail": "Elsőbbségi e-mail-támogatás",
+        "euData": "EU-s adattárolás"
+      }
+    },
+    "faq": {
+      "title": "Ügynökségi kérdések, megválaszolva.",
+      "items": [
+        {
+          "q": "Hogyan oszlanak meg a kreditek az ügyfelek között?",
+          "a": "A kreditek az ügynökségi fiók szintjén élnek — bármelyik munkaterület felhasználhatja ugyanabból a közös készletből. Kövesd a felhasználást a számlázási vezérlőpulton."
+        },
+        {
+          "q": "Mi történik, amikor bevezetünk vagy lezárunk egy ügyfelet?",
+          "a": "Indíts el egy új munkaterületet másodpercek alatt. Egy munkaterület archiválása eltávolítja az aktív nézetből; a teljes fióktörlés tiszteletben tartja a GDPR megőrzési szabályait."
+        },
+        {
+          "q": "Mely közösségi hálókra tehetünk közzé?",
+          "a": "A natív közzététel lefedi a LinkedInt, Instagramot, Facebookot, X-et, TikTokot, YouTube Shortsot, Threadset és Telegramot — nyolc háló, mindegyik a hivatalos platform-API-n át, így a hibák csatornánként elkülönülnek."
+        },
+        {
+          "q": "Beléphetnek az ügyfelek, hogy lássák a munkaterületüket?",
+          "a": "Ma még nem. A munkaterületek csak az ügynökségi csapaté — admin és közzétevő szerepkörök. Az ügyfélhozzáférés a roadmapen szerepel."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Készen állsz a tartalom skálázására minden ügyfélnél?",
+      "subtitle": "Kezdj el még ma az Ultra csomaggal, vagy foglalj egy 20 perces demót az ügynökségi csapattal, hogy lásd a Loritalkot a saját márkáidon.",
+      "ctaPrimary": "Kezdés az Ultrával",
+      "ctaSecondary": "Demó foglalása"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Szóló alkotóknak és influenszereknek",
+      "headlineOne": "Egy ötlet.",
+      "headlineTwo": "Minden platform.",
+      "headlineThree": "A hétvégéd feláldozása nélkül.",
+      "lead": "A Loritalk egy briefből <strong>natív posztokat készít Instagramra, TikTokra, YouTube Shortsra, X-re, Threadsre</strong> és még többre — miközben a hangod minden fiókban következetes marad.",
+      "ctaPrimary": "Kezdés ingyen a Starterrel",
+      "ctaSecondary": "Nézd meg az alkotói csomagokat",
+      "trust": [
+        "A te hangod minden csatornán",
+        "8 háló natív API-kon át",
+        "Heteket ütemezz egy menetben"
+      ],
+      "hubLabel": "A stúdiód",
+      "hubTitle": "1 brief. 8 natív poszt.",
+      "hubBody": "Határozd meg egyszer a personádat. A Loritalk minden posztot az adott platformhoz igazít — hossz, hashtagek, emojik, hangnem, képformátum.",
+      "hubMeta": "1 persona · 8 csatorna",
+      "hubBadge": "Élő",
+      "cardTag": "Natív formátum"
+    },
+    "pains": {
+      "title": "Ismerős a heted?",
+      "subtitle": "Az, hogy minden nap, minden platformon posztolj, nem kerülhet egy vasárnap délutánodba. Ismerjük ezt.",
+      "items": [
+        {
+          "title": "Ugyanaz az ötlet, 8-szor átírva",
+          "description": "Felirat Instagramra, forgatókönyv TikTokra, hook YouTube-ra, szál X-re… minden platform más formát kíván. Egy poszton ráversz egy délutánt."
+        },
+        {
+          "title": "Az algoritmusok büntetik a kihagyásokat",
+          "description": "Hagyj ki két napot, és lezuhan az elérés. Maradj következetes minden platformon, és alig marad időd forgatni, nemhogy élni az életed."
+        },
+        {
+          "title": "A márkamegállapodások több platformot követelnek",
+          "description": "A szponzorok Reelt + Shortot + TikTokot + posztot akarnak. Ugyanaz a kampány, négy formátum. Egyért számlázol, és négyet szállítasz."
+        },
+        {
+          "title": "A hang felhígul",
+          "description": "A tizenötödik posztra a feliratok úgy hangzanak, mintha egy idegen írta volna. A közönség megérzi. Az interakció csökken."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Minden, amire egy alkotónak szüksége van, egy helyen",
+      "subtitle": "Briefelj egyszer, adj ki mindenhol — anélkül, hogy elveszítenéd a hangot, amit a közönséged követ.",
+      "items": [
+        {
+          "title": "A hangod, rögzítve",
+          "description": "Határozz meg egy personát a hangoddal, hangnemeddel és konkrét utasításaiddal egyszerű szövegben. Minden generálás átmegy ezen a lencsén — úgy hangzik, mint te, nem mint egy MI-eszköz."
+        },
+        {
+          "title": "Egy brief, nyolc natív poszt",
+          "description": "Írd meg egyszer az ötletet. A Loritalk másodpercek alatt Instagramra, TikTokra, YouTube Shortsra, X-re, Threadsre, Facebookra, LinkedInre és Telegramra optimalizált verziót készít."
+        },
+        {
+          "title": "Márkahű képek formátumonként",
+          "description": "Feedposztok, sztorik, hero kivágások, függőleges Reelekhez és Shortokhoz. A képek a megfelelő képaránnyal és a personád vizuális szabályaival renderelődnek."
+        },
+        {
+          "title": "Ütemezz egy hetet egy ültő helyedben",
+          "description": "Tervezd meg a hétfőtől vasárnapig terjedő hetet minden platformon egyetlen naptáron belül. A natív API-k automatikusan kiküldenek — még akkor is, amikor a következő adagot forgatod."
+        },
+        {
+          "title": "Lásd, mi növekszik",
+          "description": "Elérés, interakciók, kattintások és követőnövekedés csatornánként. A KPI-kártyák és a Lori Insights kiemelik, mi működik — fokozd azt."
+        },
+        {
+          "title": "Moderálva, mielőtt kimegy",
+          "description": "Minden vázlat átmegy az automata moderáción, így márkabiztos tartalom jut el a közönségedhez, és a szponzoraid elégedettek maradnak."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Hogyan néz ki egy alkotói hét a Loritalkon",
+      "subtitle": "Rögzítsd egyszer a hangod, briefelj egy ötletet, adj ki minden platformon, figyeld, mi növekszik.",
+      "steps": [
+        {
+          "badge": "01 · HANG",
+          "title": "Határozd meg a personádat",
+          "description": "Írd bele a hangod, a hangnemed és a házi szabályaidat egy personába. Ez lesz a lencse, amelyen minden jövőbeli poszt átmegy."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Briefelj egy ötletet",
+          "description": "Írd be a koncepciót, válaszd ki a csatornákat és a nyelvet. A Loritalk másodpercek alatt platformonkénti natív verziót készít — feliratok, forgatókönyvek, szálak, hookok."
+        },
+        {
+          "badge": "03 · KIADÁS",
+          "title": "Szerkessz és ütemezz",
+          "description": "Csiszold a legerősebb verziót csatornánként, sorolj be mindent a naptárba, és lépj odébb. Az API-k a megfelelő időben, a megfelelő formátumban tesznek közzé."
+        },
+        {
+          "badge": "04 · KÖVETÉS",
+          "title": "Figyeld, mi működik",
+          "description": "A csatornánkénti analitika megmutatja, mi hozza az elérést és az interakciót. Az irányt iteráld, ne a munkafolyamatot."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Alkotóknak tervezett csomagok",
+      "subtitle": "Kezdj ingyen a béta alatt. Válaszd a posztolási gyakoriságodhoz illő mennyiséget."
+    },
+    "faq": {
+      "title": "Alkotói kérdések, megválaszolva.",
+      "items": [
+        {
+          "q": "Úgy fog hangzani, mint én?",
+          "a": "Írd le a hangod, a hangnemed és a házi szabályaidat egy personában. Minden generálás átmegy ezen a lencsén. Minél részletesebb a persona, annál közelebb áll a hangodhoz."
+        },
+        {
+          "q": "Mely platformokra tesztek közzé valójában?",
+          "a": "A natív közzététel lefedi az Instagramot, TikTokot, YouTube Shortsot, X-et, Threadset, Facebookot, LinkedInt és Telegramot — nyolc háló hivatalos API-kon át. Az egyik csatorna hibája sosem blokkolja a többit."
+        },
+        {
+          "q": "Szerkeszthetek a posztolás előtt?",
+          "a": "Mindig. A Loritalk csatornánként vázlatot készít — te választasz, finomítasz és teszel közzé. Semmi sem megy élesbe nélküled (hacsak nem ütemezted be)."
+        },
+        {
+          "q": "Mi a helyzet a képekkel és a rövid videókkal?",
+          "a": "A márkahű képek platformonként generálódnak a megfelelő képaránnyal (négyzet, függőleges 9:16, hero). A rövid videókhoz natív feliratot kapsz hookkal az első másodpercekben és egy CTA-val — illeszd be egyenesen a TikTokba vagy a YouTube Shortsba."
+        },
+        {
+          "q": "Ingyenes a Loritalk a béta alatt?",
+          "a": "Igen. A bétahozzáférés ingyenes, bőséges korlátokkal. Minden bétafelhasználó örökre megtartja a jelenlegi árát, amikor a fizetős csomagok elindulnak."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Hagyd abba az átírást. Kezdj el kiadni.",
+      "subtitle": "Csatlakozz a bétához — ingyen, bankkártya nélkül, az árad örökre rögzül, amikor elindulunk.",
+      "ctaPrimary": "Kezdés ingyen a Starterrel",
+      "ctaSecondary": "Nézd meg az alkotói csomagokat"
+    }
   }
 }

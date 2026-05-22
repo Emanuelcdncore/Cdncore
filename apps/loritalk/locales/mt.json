@@ -3,289 +3,349 @@
     "features": "Karatteristiċi",
     "howItWorks": "Kif jaħdem",
     "pricing": "Prezzijiet",
+    "forAgencies": "Għall-aġenziji",
+    "forCreators": "Għall-kreaturi",
     "beta": "Beta",
     "startForFree": "Ibda b'xejn"
   },
   "hero": {
-    "badge": "Issa f'Beta — aċċess bikri b'xejn",
+    "badge": "F'Beta · Prezzijiet ta' aċċess bikri msakkrin għal dejjem",
     "headlineOne": "Ikteb inqas.",
     "headlineTwo": "Ippubblika aktar.",
-    "description": "Ikteb tema jew idea. L-AI ta' Loritalk tikteb posts ottimizzati għal Instagram, LinkedIn, X, TikTok, u aktar — fi ftit sekondi. Diversi mudelli ta' AI jikkompetu biex jagħtuk l-aħjar riżultat.",
-    "ctaPrimary": "Ibda oħloq b'xejn",
-    "ctaSecondary": "Ara kif jaħdem",
-    "note": "L-ebda karta ta' kreditu meħtieġa · B'xejn waqt il-Beta",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Miktub mill-ġdid.",
+    "headlineThree": "Awditjat.",
+    "lead": "Iddeskrivi l-post tiegħek darba. Loritalk jikteb <strong>verżjoni nattiva għal kull pjattaforma konnessa</strong>, jiġġenera stampi fil-linja mal-marka, jgħaddi kull kelma minn moderazzjoni awtomatika, u jiskedahom — fi ftit sekondi.",
+    "ctaPrimary": "Ibda b'xejn — bla karta",
+    "ctaSecondary": "Arah jaħdem · 90s",
+    "trust": [
+      "8 integrazzjonijiet nattivi",
+      "Moderat awtomatikament",
+      "Iżolat skont l-ispazju tax-xogħol"
+    ],
+    "briefCard": {
+      "label": "Il-brief tiegħek · 1 minn 1",
+      "typed": "Niedu ż-żarbun sportiv sostenibbli ġdid tagħna. Magħmul minn 80% plastik tal-oċean riċiklat. Immirat lejn il-ġellieda taġ-ġenerazzjoni Z li jiġru.",
+      "meta": "en · 8 kanali · Vuċi tad-Dar",
+      "send": "Iġġenera ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "posts · reels · stejjer",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · paġni",
+      "x": "X / Twitter",
+      "xTag": "threads · singlu",
+      "tiktok": "TikTok",
+      "tiktokTag": "skripts · kaptions",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "nattiv",
+      "facebook": "Facebook",
+      "facebookTag": "paġni",
+      "telegram": "Telegram",
+      "telegramTag": "kanali · gruppi"
+    },
+    "leadHook": "Iddeskrivi l-post tiegħek darba.",
+    "leadBody": "Loritalk jikteb <strong>verżjoni nattiva għal kull pjattaforma konnessa</strong>, jiġġenera stampi fil-linja mal-marka, jgħaddi kull kelma minn moderazzjoni awtomatika, u jiskedahom — fi ftit sekondi."
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Netwerks soċjali appoġġjati",
-    "languagesValue": "3",
-    "languagesLabel": "Lingwi fit-tnedija",
-    "generationValue": "<5s",
-    "generationLabel": "Ħin medju ta' ġenerazzjoni",
+    "languagesValue": "24+",
+    "languagesLabel": "Lingwi tal-interfaċċa",
+    "generationValue": "Sekondi",
+    "generationLabel": "Mill-brief sa lest għall-pubblikazzjoni",
     "freeValue": "B'xejn",
-    "freeLabel": "Waqt il-Beta — mingħajr limiti"
+    "freeLabel": "Matul il-Beta — bla limiti"
   },
   "problem": {
-    "title": "Il-flusso tax-xogħol tal-kontenut tiegħek huwa mkisser",
-    "subtitle": "Jidher familjari?",
+    "title": "Il-fluss tax-xogħol tal-kontenut tiegħek huwa miksur",
+    "subtitle": "Jinstema' familjari?",
     "items": [
       {
-        "title": "Sigħat moħlijin fl-adattament",
+        "title": "Sigħat moħlija fl-adattament",
         "description": "Tikteb post għal Instagram, imbagħad terġa' tiktbu għal LinkedIn, imbagħad għal X. Kull pjattaforma teħtieġ ton, tul u hashtags differenti."
       },
       {
-        "title": "AI li tidher ġenerika",
-        "description": "AI jagħtik verżjoni waħda li tidher bħal kulħadd. L-ebda vuċi tal-brand, l-ebda għarfien tal-pjattaforma, l-ebda ottimizzazzjoni vera."
+        "title": "AI li jinstema' ġeneriku",
+        "description": "AI b'mudell wieħed jagħtik verżjoni waħda li tinstema' bħal ta' kulħadd. Bla vuċi tal-marka, bla għarfien tal-pjattaforma, bla ottimizzazzjoni reali."
       },
       {
-        "title": "Bottlenecks tat-tim",
-        "description": "Il-kontenut jistenna l-approvazzjoni, jintilef fi threads ta' Slack u ħadd ma jaf x'hemm skedat għall-ġimgħa d-dieħla."
+        "title": "Tfixkil fit-tim",
+        "description": "Il-kontenut jistenna għall-approvazzjoni, jintilef fi threads ta' Slack, u ħadd ma jaf x'inhu skedat għall-ġimgħa d-dieħla."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk issolvi dan kollu",
-    "subtitle": "Briefing waħda. Kull pjattaforma. Diversi AIs jikkompetu għall-aħjar post tiegħek.",
-    "ctaPrimary": "Ibda oħloq b'xejn",
+    "title": "Loritalk isewwi dan kollu",
+    "subtitle": "Brief wieħed. Verżjoni nattiva għal kull pjattaforma. Stampi fil-linja mal-marka renderizzati b'mod parallel.",
+    "ctaPrimary": "Ibda toħloq b'xejn",
     "rows": [
       {
         "before": "1 post = 45 min adattament għal kull pjattaforma",
-        "after": "1 briefing = il-pjattaformi kollha f'<5 sekondi"
+        "after": "1 brief = il-pjattaformi kollha f'<5 sekondi"
       },
       {
-        "before": "1 mudell AI = test ġeneriku, wieħed għal kulħadd",
-        "after": "Diversi mudelli AI jiddiskutu u jirfinaw lil xulxin"
+        "before": "Test AI ġeneriku użat mill-ġdid fuq kull netwerk",
+        "after": "Verżjoni nattiva għal kull kanal — tul, hashtags u ton adattati"
       },
       {
-        "before": "Kontenut imxerred bejn għodod u threads",
-        "after": "Dashboard waħda: oħloq, approva, skedula, ippubblika, segwi"
+        "before": "Kontenut imxerred fuq għodod u threads",
+        "after": "Dashboard waħda: oħloq, approva, skeda, ippubblika, segwi"
       }
     ]
   },
   "features": {
-    "title": "Kollox li t-tim tal-kontenut tiegħek għandu bżonn",
-    "subtitle": "Minn idea għal post ippubblikat — Loritalk jimmanigġja l-flusso tax-xogħol kollu.",
+    "title": "Kulma jeħtieġ it-tim tal-kontenut tiegħek",
+    "subtitle": "Mill-idea sal-post ippubblikat — Loritalk jieħu ħsieb il-fluss tax-xogħol kollu.",
     "items": [
       {
-        "title": "Deliberazzjoni AI b'Ħafna Mudelli",
-        "description": "Mhux AI waħda — diversi mudelli jiġġeneraw indipendentement, imbagħad jirfinaw ix-xogħol ta' xulxin."
+        "title": "Kontenut nattiv għall-pjattaforma",
+        "description": "Brief wieħed isir verżjoni nattiva għal kull pjattaforma — tul, hashtags, emoji u ton adattati għal Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads u Telegram."
       },
       {
-        "title": "Kontenut ottimizzat għall-pjattaforma",
-        "description": "Kull post huwa adattat għall-pjattaforma tiegħu — ton, tul, hashtags, emojis u format korrett. Captions ta' Instagram, artikli ta' LinkedIn, threads ta' X, scripts ta' TikTok."
+        "title": "Ġenerazzjoni ta' stampi fil-linja mal-marka",
+        "description": "Stampi renderizzati skont il-pjattaforma bil-proporzjon tad-dimensjonijiet it-tajjeb u r-regoli viżwali tal-persona tiegħek — posts tal-feed, stejjer, qtugħ hero. Bla aktar tibdil tad-daqs manwali."
       },
       {
         "title": "Ġenerazzjoni multilingwi",
-        "description": "Iġġenera bil-Portogiż, Ingliż, Spanjol u aktar. Fluwenza fil-livell tan-nattiv b'nuanzi kulturali — mhux sempliċement traduzzjoni."
+        "description": "Iġġenera bil-Portugiż, l-Ingliż, l-Ispanjol u aktar. Fluwenza fil-livell nattiv b'sfumaturi kulturali — mhux sempliċi traduzzjoni."
       },
       {
-        "title": "Skedula u ppubblika",
-        "description": "Vista tal-kalendarju, pubblikazzjoni skedata u posting dirett fuq il-kanali kollha konnessi. Ħinijiet differenti għal kull pjattaforma."
+        "title": "Skeda u ppubblika",
+        "description": "Veduta tal-kalendarju, pubblikazzjoni skedata, u pubblikazzjoni diretta fil-kanali konnessi kollha. Ħinijiet differenti għal kull pjattaforma."
       },
       {
-        "title": "Vuċi tal-brand u personas",
-        "description": "Oħloq personas AI li jiktbu bħall-brand tiegħek. Ikkontrolla t-ton minn professjonali għal playful. Kull post jidher bħalek, mhux bħal robot."
+        "title": "Vuċi tal-marka u personae",
+        "description": "Oħloq personae tal-AI li jiktbu bħall-marka tiegħek. Ikkontrolla t-ton minn professjonali sa ġoki. Kull post jinstema' bħalek, mhux bħal robot."
       },
       {
         "title": "Dashboard tal-analitika",
-        "description": "Segwi impressjonijiet, engagement, clicks u tkabbir fuq il-kanali kollha. Kun af liema kontenut jaħdem u rdoppja l-isforz."
+        "description": "Segwi l-portata, l-impenn, il-klikks u t-tkabbir għal kull kanal. Kards KPI, l-aqwa posts u Lori Insights juru x'qed jaħdem."
       }
     ]
   },
   "howItWorks": {
-    "title": "Minn idea għal post fi 3 passi",
-    "subtitle": "M'hemmx aktar screens vojta. M'hemmx aktar copy-paste bejn pjattaformi.",
+    "eyebrow": "05 · Fluss tax-xogħol",
+    "title": "Brief → previżjoni → ippubblika.",
+    "titleAccent": "Tliet mossi.",
+    "titleTail": "Fi ftit sekondi.",
+    "subtitle": "Qatt ma tagħżel mudell. Qatt ma tbiddel id-daqs ta' stampa. Qatt ma tikkopja-twaħħal bejn it-tabs.",
     "steps": [
       {
-        "title": "Ikteb il-briefing tiegħek",
-        "description": "Iddeskrivi x'tixtieq tikkomunika — sempliċi bħal \"tnedija ta' prodott ġdid\" jew dettaljat bħal brief sħiħ. Agħżel il-kanali, il-lingwa u t-ton tiegħek."
+        "badge": "01",
+        "eyebrow": "Input",
+        "title": "Ikteb il-brief tiegħek",
+        "description": "Sentenza waħda jew tliet paragrafi. Agħżel il-kanali, il-persona, u l-lingwa. Dik hija l-unika ħaġa li tikteb illum.",
+        "footLeft": "~ 5 sek biex tikteb",
+        "footRight": "1 brief"
       },
       {
-        "title": "Il-mudelli AI jikkompetu għalik",
-        "description": "Diversi mudelli AI jiġġeneraw kontenut indipendentement, imbagħad jirrevedjaw u jirfinaw l-output ta' xulxin. Tirċievi N verżjonijiet ibbrillaw għal kull pjattaforma."
+        "badge": "02",
+        "eyebrow": "Ġenerazzjoni",
+        "title": "L-AI jaddattah skont kull kanal",
+        "description": "Loritalk jaqra l-brief tiegħek, il-persona tiegħek u r-regoli nattivi ta' kull pjattaforma — imbagħad isawwar verżjoni magħmula għal kull kanal. Il-moderazzjoni awtomatika taħdem qabel ma taraha.",
+        "footLeft": "~ 3 sek għal kull kanal",
+        "footRight": "Għal kull kanal konness"
       },
       {
-        "title": "Agħżel, editja u ppubblika",
-        "description": "Agħżel il-verżjoni favorita tiegħek għal kull kanal. Ibdel kwalunkwe ħaġa b'click waħda. Ippubblika issa jew skedula għal aktar tard."
+        "badge": "03",
+        "eyebrow": "Distribuzzjoni",
+        "title": "Ippubblika jew skeda",
+        "description": "Ibgħat issa jew daħħal fil-kalendarju b'ħin għal kull pjattaforma. Kull kanal jintbagħat permezz tal-API nattiva tiegħu; il-falliment huwa iżolat — Instagram xorta jitla' anki jekk Facebook iħabbat.",
+        "footLeft": "API nattivi · OAuth",
+        "footRight": "8 kanali"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Niedu ż-żarbun sportiv sostenibbli ġdid tagħna. Magħmul minn 80% plastik tal-oċean riċiklat. Immirat lejn il-ġellieda taġ-ġenerazzjoni Z li jiġru.\"",
+      "channelsComment": "// kanali:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Lingwa",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Newtrali — il-vuċi tad-dar ta' Lori"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Rilassat, ġoki, konversazzjonali"
+        },
+        {
+          "name": "Core",
+          "desc": "Qawwi, ottimist, immexxi mill-marka"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "carousel",
+          "when": "Illum 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "forma twila",
+          "when": "Illum 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "thread",
+          "when": "Illum 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Għada 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "post",
+          "when": "Għada 12:00"
+        }
+      ],
+      "cta": "▶ Ippubblika kollox · ⏱ Skeda"
+    }
   },
-  "differentiator": {
-    "title": "Għaliex diversi AIs jegħlbu waħda",
-    "subtitle": "Għodod oħra jużaw mudell wieħed. Loritalk juża diversi — u jġagħalhom itejbu lil xulxin.",
-    "briefLabel": "Il-briefing tiegħek",
-    "channels": "Kanali",
-    "language": "Lingwa:",
-    "languages": "Ingliż, Portogiż",
-    "submitted": "Sottomess 2s ilu",
-    "round1": "RAWND 1 — ĠENERAZZJONI INDIPENDENTI",
-    "generated": "Iġġenerat",
-    "round2": "Rawnd 2 — Raffinament inkroċjat",
-    "round2Desc": "Kull mudell jaqra l-outputs kollha u jtejjeb il-verżjoni tiegħu",
-    "qualityNote": "Il-kwalità tjiebet b'~40% vs Rawnd 1",
-    "pickEdit": "Agħżel u editja",
-    "addMedia": "Żid midja",
-    "uploading": "Qed jittella' l-immaġni...",
-    "imageAttached": "L-immaġni ttellgħet b'suċċess",
-    "generateAI": "Iġġenera bl-AI",
-    "readyPublish": "Lest għall-pubblikazzjoni",
-    "publishAll": "Ippubblika kollox",
-    "scheduled": "Skedat",
-    "draft": "Abbozz",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Stampi",
+    "title": "Fil-linja mal-marka",
+    "titleAccent": "stampi",
+    "titleTail": "iddaqqsati skont il-pjattaforma.",
+    "subtitle": "Il-ġenerazzjoni tal-istampi taħdem b'mod asinkroniku u skont kull pjattaforma — bla tibdil tad-daqs manwali, bla stock barra l-marka. Posts singli, carousels, formati tal-istejjer, qtugħ hero. Kull rendering jirreferi għar-regoli viżwali tal-persona attiva.",
+    "tiles": {
+      "instagramCaption": "5 ta' filgħodu. Kafè, żewġ tabs, deċiżjoni waħda.\nBnejna l-v2 qabel ma t-tim daħal online.",
+      "storyQuote": "lħaqna 1M MRR fl-istess ġimgħa li neħħejna nofs ir-roadmap.",
+      "storySwipe": "↑ swipe",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Ħajjarna 3 kuntratturi qabel l-ewwel impjegat full-time tagħna. Hawn l-ispreadsheet.",
+      "linkedinCta": "Aqra aktar →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "ħafna mill-\"kontenut tal-fundaturi\" huwa stqarrija għall-istampa f'hoodie. ikteb bħal persuna. #shipping",
+      "generatingLabel": "Qed jirrendi · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "L-EWWEL",
+      "ytTitleLineTwo": "IMPJEGAT.",
+      "ytSubtitle": "Għaliex stennejna 18-il xahar.",
+      "ytMeta": "Loritalk · Ep. 14 · 32 min"
+    }
   },
   "useCases": {
     "title": "Mibni għal timijiet li jippubblikaw",
-    "subtitle": "Kemm jekk int kreatur waħdek jew aġenzija ta' 50 persuna.",
+    "subtitle": "Kemm jekk inti kreatur waħdek jew aġenzija ta' 50 persuna.",
     "items": [
       {
         "title": "Kreaturi waħedhom u freelancers",
-        "description": "Ieqaf toqgħod tħalli s-sigħat jadattaw il-kontenut. Ikteb darba, ippubblika kullimkien. Ikkonċentra fuq l-istrateġija, mhux fuq il-copy-paste."
+        "description": "Ieqaf taħli sigħat tadatta l-kontenut. Ikteb darba, ippubblika kullimkien. Iffoka fuq l-istrateġija, mhux fuq il-kopja-twaħħil."
       },
       {
         "title": "Timijiet tal-marketing",
-        "description": "Workspace waħda għal kull brand. Flussi tax-xogħol ta' approvazzjoni. Vista tal-kalendarju. Kulħadd jaf x'qed jiġi ppubblikat u meta."
+        "description": "Spazju tax-xogħol wieħed għal kull marka. Veduta tal-kalendarju għal kull spazju tax-xogħol. Kulħadd jaf x'qed jiġi ppubblikat u meta."
       },
       {
         "title": "Aġenziji",
-        "description": "Immanigġja diversi brands minn kont wieħed. Assenja rwoli, ikkontrolla l-aċċess, segwi l-prestazzjoni ta' kull klijent. Posts illimitati fuq il-pjan tal-Aġenzija."
+        "description": "Immaniġġja diversi marki minn kont wieħed. Spazju tax-xogħol għal kull klijent b'kanali, personae u kalendarju iżolati. Analitika għal kull kanal għal kull marka."
       }
     ]
   },
   "pricing": {
     "title": "Prezzijiet sempliċi u trasparenti",
-    "subtitle": "B'xejn waqt il-Beta. L-utenti bikrija jiffissaw ir-rata tagħhom għal dejjem meta nniedu.",
-    "mostPopular": "L-aktar popolari",
+    "subtitle": "Ibbażati fuq il-krediti. Ikkanċella meta trid. Kull sena tiffrankalek xahrejn.",
     "monthly": "Kull xahar",
     "annual": "Kull sena",
     "save2Months": "-17%",
     "perMonth": "/ xahar",
+    "perMonthBilledYearly": "/ xahar, iffatturat kull sena",
     "perYear": "/ sena",
-    "billedAnnually": "Fatturati annwalment",
-    "customPriceLabel": "Personalizzat",
-    "plans": [
-      {
-        "name": "B'xejn",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "waqt il-Beta",
-        "description": "Ipprova kollox b'limiti ġerużi.",
-        "features": [
-          "5 post / xahar",
-          "3 netwerks",
-          "Kontrolli bażiċi tat-ton",
-          "Suġġerimenti ta' hashtags"
-        ],
-        "cta": "Ibda b'xejn",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Iffranka {{amount}} / sena",
+    "mostPopular": "L-aktar popolari",
+    "bestValue": "L-aħjar valur",
+    "creditsUnit": "krediti / xahar",
+    "creditsTexts": "~{{count}} posts ta' test",
+    "creditsOr": "jew",
+    "creditsImages": "~{{count}} stampi fil-linja mal-marka",
+    "promoExplainer": "Promozzjoni tal-ewwel sena: irċievi 2× krediti KULL xahar għall-ewwel sena sħiħa tiegħek meta tagħżel il-pjan Annwali — dawk huma {{count}} krediti bonus kull xahar.",
+    "promoHeroExtra": "(+{{count}} krediti bonus kull xahar għal 12-il xahar)",
+    "tierChoose": "Agħżel il-pjan",
+    "features": {
+      "workspaces_one": "{{count}} spazju tax-xogħol",
+      "workspaces_two": "{{count}} spazji tax-xogħol",
+      "workspaces_few": "{{count}} spazji tax-xogħol",
+      "workspaces_many": "{{count}} spazju tax-xogħol",
+      "workspaces_other": "{{count}} spazju tax-xogħol",
+      "channels": "{{count}} kanali soċjali",
+      "personas": "{{count}} personae tal-marka",
+      "members_one": "{{count}} membru tat-tim",
+      "members_two": "{{count}} membri tat-tim",
+      "members_few": "{{count}} membri tat-tim",
+      "members_many": "{{count}} membru tat-tim",
+      "members_other": "{{count}} membru tat-tim",
+      "media": "{{count}} assi tal-media"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Għall-kreaturi tal-kontenut bl-AI għall-ewwel darba"
       },
-      {
-        "name": "Kreatur",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Għal kreaturi u brands li jippubblikaw b'mod konsistenti.",
-        "features": [
-          "200 post / xahar",
-          "In-netwerks kollha",
-          "Ton avvanzat u personas",
-          "Kalendarju tal-kontenut",
-          "Appoġġ ta' prijorità"
-        ],
-        "cta": "Ibda prova b'xejn",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Għal ħolqien ta' kontenut bl-AI konsistenti u faċli"
       },
-      {
-        "name": "Aġenzija",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Għal timijiet li jimmanigġjaw diversi brands.",
-        "features": [
-          "Posts illimitati",
-          "In-netwerks kollha",
-          "Diversi brands",
-          "Kollaborazzjoni tat-tim",
-          "Analitika",
-          "Account manager"
-        ],
-        "cta": "Kellem lilna",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Għall-kreaturi li jibnu prodotti bl-AI"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Għall-aġenziji u t-timijiet żgħar"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Mistoqsijiet? Għandna t-tweġibiet.",
     "items": [
       {
-        "q": "Liema mudelli AI juża Loritalk?",
-        "a": "Tista' tikkonfigura liema mudelli jipparteċipaw fil-pipeline ta' ġenerazzjoni tiegħek."
+        "q": "Kif jaħdem l-AI ta' Loritalk?",
+        "a": "Loritalk jipproduċi verżjoni nattiva tal-brief tiegħek għal kull kanal konness u jirrendi stampi fil-linja mal-marka b'mod parallel. Kollox jgħaddi minn saff ta' moderazzjoni awtomatika qabel ma jasal fid-dashboard tiegħek."
       },
       {
-        "q": "Kif inhu differenti minn other AI tools?",
-        "a": "Other AI tools jagħtik output wieħed minn mudell wieħed. Loritalk imexxi diversi mudelli b'mod parallel u mbagħad iġagħalhom jirfinaw ix-xogħol ta' xulxin — u jipproduċu kwalità ogħla b'mod konsistenti. Barra minn hekk, kull post huwa awtomatikament ottimizzat għal kull pjattaforma speċifika."
+        "q": "Kif huwa differenti minn għodod oħra tal-AI?",
+        "a": "Għodod oħra jagħtuk blokk wieħed ta' test biex tikkopja-twaħħal kullimkien. Loritalk jipproduċi verżjonijiet nattivi għal kull pjattaforma — tul, hashtags, emoji u ton adattati għal kull netwerk — u jippubblika permezz tal-API uffiċjali ta' kull pjattaforma."
       },
       {
         "q": "Liema netwerks soċjali huma appoġġjati?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) u TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads u Telegram — tmien netwerks permezz ta' API nattivi."
       },
       {
-        "q": "Il-kontenut tiegħi huwa privat?",
-        "a": "Iva. Il-kontenut tiegħek qatt ma jintuża biex iħarreġ mudelli AI. Id-data kollha hija maħżuna fuq is-servers tagħna fl-Ewropa u proċessata skont il-GDPR."
+        "q": "Fejn tinħażen id-data tiegħi?",
+        "a": "Id-data tiegħek tinħażen fuq servers fl-Unjoni Ewropea. Il-fornituri tal-AI li nużaw (OpenAI għat-test, Google għall-istampi) joperaw taħt it-termini tal-API tal-intrapriża tagħhom — il-kontenut mibgħut lill-API ma jintużax biex iħarreġ il-mudelli ġenerali tagħhom."
       },
       {
         "q": "Nista' nużah mat-tim tiegħi?",
-        "a": "Assolutament. Oħloq workspaces għal kull brand, stieden membri tat-tim b'rwoli ta' admin jew publisher u waqqaf flussi tax-xogħol ta' approvazzjoni biex xejn ma jmur live mingħajr reviżjoni."
+        "a": "Iva. Oħloq spazji tax-xogħol għal kull marka u stieden membri tat-tim bir-rwoli ta' amministratur jew pubblikatur. Kull spazju tax-xogħol għandu l-kanali konnessi, il-personae u l-kalendarju tiegħu stess."
       },
       {
         "q": "X'jiġri wara l-Beta?",
-        "a": "Il-pjanijiet imħallsa jidħlu fis-seħħ, iżda kull utent tal-Beta jżomm ir-rata attwali tiegħu ffissat għal dejjem. Bla sorpriżi."
+        "a": "Il-pjani mħallsa jidħlu fis-seħħ, imma kull utent tal-Beta jżomm ir-rata attwali tiegħu msakkra għal dejjem. Bla sorpriżi."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Ieqaf tikteb. Ibda ppubblika.",
-    "subtitle": "Ingħaqad mal-Beta — aċċess b'xejn, l-ebda karta ta' kreditu, u r-rata tiegħek hija ffissata għal dejjem meta nniedu.",
-    "ctaPrimary": "Ibda oħloq b'xejn",
+    "headline": "Ieqaf tikteb. Ibda tippubblika.",
+    "subtitle": "Ingħaqad mal-Beta — aċċess b'xejn, bla karta tal-kreditu, u r-rata tiegħek tibqa' msakkra għal dejjem meta nniedu.",
+    "ctaPrimary": "Ibda toħloq b'xejn",
     "ctaSecondary": "Ara kif jaħdem"
   },
   "footer": {
-    "description": "Kontenut AI għal kull netwerk soċjali.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "description": "Kontenut bl-AI għal kull netwerk soċjali.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugall",
     "product": "Prodott",
     "resources": "Riżorsi",
     "legal": "Legali",
@@ -294,11 +354,309 @@
     "supportedNetworks": "Netwerks appoġġjati",
     "helpCenter": "Ċentru tal-għajnuna",
     "contactUs": "Ikkuntattjana",
-    "betaFeedback": "Feedback tal-Beta",
-    "apiDocs": "Dokumentazzjoni API",
+    "betaFeedback": "Feedback dwar il-Beta",
+    "apiDocs": "Dokumentazzjoni tal-API",
     "privacyPolicy": "Politika tal-privatezza",
     "termsOfService": "Termini tas-servizz",
     "cookiePolicy": "Politika tal-cookies",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "legalNotice": "Avviż legali",
+    "copyright": "© 2026 Loritalk® minn CDN Core Technologies. Covilhã, Portugall."
+  },
+  "cookieBanner": {
+    "aria": "Avviż dwar il-cookies",
+    "title": "Aħna nużaw il-cookies",
+    "body": "Il-cookies strettament neċessarji jżommu s-sit jaħdem. Bil-kunsens tiegħek aħna ntellgħu wkoll Google Analytics biex inkejlu t-traffiku u l-Meta Pixel biex inkejlu r-reklamar tagħna. Tista' taċċetta, tirrifjuta, jew tagħżel kategorija b'kategorija — u tbiddel fehmtek f'kull ħin.",
+    "policyLink": "Politika tal-Cookies",
+    "privacyLink": "Politika tal-Privatezza",
+    "acceptAll": "Aċċetta kollox",
+    "rejectOptional": "Irrifjuta l-fakultattivi",
+    "customize": "Personalizza",
+    "save": "Issejvja l-preferenzi",
+    "necessaryLabel": "Strettament neċessarji",
+    "necessaryDesc": "Meħtieġa biex is-sit jaħdem (il-lingwa u l-għażla tal-kunsens tiegħek). Ma jistgħux jiġu diżattivati.",
+    "analyticsLabel": "Analitika — Google Analytics",
+    "analyticsDesc": "Ittella' Google Analytics 4 biex tkejjel it-traffiku u ttejjeb is-sit. Tissettja l-cookies _ga u _ga_* u tittrażmetti data tal-views tal-paġni lil Google.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Ittella' l-Meta Pixel (Facebook / Instagram) biex inkunu nistgħu nkejlu l-kampanji tar-reklamar. Tissettja l-cookies _fbp u _fbc u tittrażmetti data tal-views tal-paġni lil Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Għall-aġenziji tal-marketing u l-istudios kreattivi",
+      "headlineOne": "Qed tbati biex tibgħat il-posts",
+      "headlineTwo": "għal kull klijent",
+      "headlineThree": "fuq kull pjattaforma?",
+      "lead": "Loritalk jagħti lill-aġenzija tiegħek <strong>spazju tax-xogħol wieħed għal kull marka</strong>, persona dedikata għal kull klijent u pubblikazzjoni nattiva fuq 8 netwerks — biex it-tim tiegħek jikteb darba u jippubblika kullimkien, fuq kull kont.",
+      "ctaPrimary": "Ibda bil-pjan Ultra",
+      "ctaSecondary": "Ara l-prezzijiet għall-aġenziji",
+      "trust": [
+        "Spazju tax-xogħol wieħed għal kull marka",
+        "Rwoli ta' amministratur + pubblikatur",
+        "8 netwerks permezz ta' API nattivi"
+      ],
+      "hubLabel": "Kwartieri tal-aġenzija",
+      "hubTitle": "5 marki. 5 spazji tax-xogħol.",
+      "hubBody": "Kull klijent jingħata l-ispazju tax-xogħol, il-personae, il-kanali u l-analitika tiegħu stess. Aqleb il-kuntest bi klikk waħda.",
+      "hubMeta": "5 spazji tax-xogħol · iżolati",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "Tagħraf il-ġimgħa tiegħek?",
+      "subtitle": "L-istess kontenut miktub mill-ġdid 7 darbiet għal 5 klijenti. Kull ġimgħa. Aħna għaddejna minnha.",
+      "items": [
+        {
+          "title": "Tlaqlaq bejn 5+ klijenti f'daqqa",
+          "description": "Kull marka trid ton differenti, pjattaformi differenti, skadenzi differenti. L-ispreadsheets u t-threads ta' Slack mhumiex fluss tax-xogħol."
+        },
+        {
+          "title": "Il-vuċi tal-marka tinbidel f'kull post",
+          "description": "Kittieba differenti, tabs differenti, prompts differenti ta' ChatGPT. Il-vuċi li l-klijent tiegħek approva sitt xhur ilu għabet."
+        },
+        {
+          "title": "Tibdil fl-iskeda l-Ġimgħa filgħaxija",
+          "description": "Il-klijent jitlob bidliet tal-aħħar minuta fuq Instagram, LinkedIn u TikTok. Tikteb l-istess idea tliet darbiet — u xorta titlef il-ħin."
+        },
+        {
+          "title": "Ir-rappurtar jieħu ġurnata sħiħa",
+          "description": "Tikkopja l-impressjonijiet, l-impenn u l-klikks minn ħames dashboards f'deck. Manwalment. Kull xahar."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Kulma teħtieġ l-aġenzija tiegħek f'post wieħed",
+      "subtitle": "Mill-brief sar-rapport — Loritalk imexxi l-pipeline kollu tal-kontenut għal kull marka li timmaniġġja.",
+      "items": [
+        {
+          "title": "Spazju tax-xogħol wieħed għal kull klijent",
+          "description": "Spazji tax-xogħol iżolati bil-kanali konnessi, il-personae, il-membri u l-kalendarju tagħhom stess. Ibda klijent ġdid fi ftit minuti."
+        },
+        {
+          "title": "Personae tal-vuċi tal-marka",
+          "description": "Iddefinixxi persona għal kull klijent — vuċi, ton, istruzzjonijiet speċifiċi. Kull ġenerazzjoni għal dak l-ispazju tax-xogħol tirrispetta l-brief, kull darba."
+        },
+        {
+          "title": "8 netwerks, brief wieħed",
+          "description": "Ikteb il-brief darba u rċievi verżjonijiet nattivi għal Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads u Telegram — kollha fi ftit sekondi, kollha permezz ta' API uffiċjali."
+        },
+        {
+          "title": "Kalendarju għal kull spazju tax-xogħol",
+          "description": "Kull klijent għandu l-veduta tal-ġimgħa / xahar / kju tiegħu stess. Skeda l-posts għal kull kanal u ara l-pipeline sħiħ ta' dik il-marka f'daqqa t'għajn."
+        },
+        {
+          "title": "Rwoli ta' amministratur + pubblikatur",
+          "description": "Stieden membri tat-tim għal kull spazju tax-xogħol bħala amministratur (maniġġjar sħiħ) jew pubblikatur (oħloq u ppubblika). L-ispazji tax-xogħol huma kompletament iżolati minn xulxin."
+        },
+        {
+          "title": "Analitika għal kull spazju tax-xogħol",
+          "description": "Portata, impenn, klikks u tkabbir għal kull kanal ġewwa l-ispazju tax-xogħol ta' kull klijent. Kards KPI, l-aqwa posts u Lori Insights — bla ma taqbeż bejn id-dashboards."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kif tidher ġimgħa ta' aġenzija fuq Loritalk",
+      "subtitle": "Ibda marka, agħti brief lill-AI, ikseb l-approvazzjoni, ibgħat. Erġa' agħmel għal kull klijent.",
+      "steps": [
+        {
+          "badge": "01 · BIDU",
+          "title": "Ibda l-ispazju tax-xogħol tal-klijent",
+          "description": "Oħloq spazju tax-xogħol, qabbad il-kontijiet soċjali tal-marka u kkonfigura l-persona — vuċi, ton, istruzzjonijiet speċifiċi. Lest biex jintuża fi ftit minuti."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Ikteb brief wieħed għal kull kampanja",
+          "description": "Agħżel il-persona, il-kanali u l-lingwa. Loritalk jiġġenera verżjoni nattiva għal kull pjattaforma fi ftit sekondi."
+        },
+        {
+          "badge": "03 · IRFINI",
+          "title": "Editja fit-tim tiegħek",
+          "description": "It-tim tiegħek jirrevedi l-abbozzi ġewwa l-ispazju tax-xogħol — irranġa l-kopja, ibdel l-istampi, agħżel l-aqwa varjant għal kull kanal qabel ma joħroġ."
+        },
+        {
+          "badge": "04 · IBGĦAT",
+          "title": "Ippubblika u segwi",
+          "description": "L-API nattivi jimbuttaw lejn kull kanal. Il-prestazzjoni terġa' lura fid-dashboard għal kull spazju tax-xogħol — KPIs, l-aqwa posts u tkabbir skont il-kanal."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Pjani mibnijin għall-aġenziji",
+      "subtitle": "Mexxi ftit marki jew lista sħiħa ta' klijenti. Agħżel il-volum li jaqbel mal-kuntratt tiegħek.",
+      "customPrice": "Ejja nitkellmu",
+      "customCredits": "Krediti bla limitu",
+      "customCreditsDetail": "Volum miftiehem skont il-kuntratt — bla spejjeż żejda għal għarrieda.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Personalizzat",
+          "description": "Għan-netwerks u l-aġenziji kbar li jeħtieġu volumi u bidu apposta.",
+          "cta": "Kellem lil tal-bejgħ"
+        }
+      },
+      "features": {
+        "customVolumes": "Volumi ta' krediti personalizzati",
+        "priorityEmail": "Appoġġ bl-email bi prijorità",
+        "euData": "Residenza tad-data fl-UE"
+      }
+    },
+    "faq": {
+      "title": "Mistoqsijiet dwar l-aġenziji, imwieġba.",
+      "items": [
+        {
+          "q": "Kif jinqasmu l-krediti bejn il-klijenti?",
+          "a": "Il-krediti jinsabu fil-livell tal-kont tal-aġenzija — kwalunkwe spazju tax-xogħol jista' juża mill-istess pool. Segwi l-użu fid-dashboard tal-fatturazzjoni."
+        },
+        {
+          "q": "X'jiġri meta nibdew jew nieqfu naħdmu ma' klijent?",
+          "a": "Ibda spazju tax-xogħol ġdid fi ftit sekondi. L-arkivjar ta' spazju tax-xogħol ineħħih mill-veduta attiva; it-tħassir sħiħ tal-kont jirrispetta r-regoli taż-żamma tal-GDPR."
+        },
+        {
+          "q": "Liema netwerks soċjali nistgħu nippubblikaw fihom?",
+          "a": "Il-pubblikazzjoni nattiva tkopri LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads u Telegram — tmien netwerks, kull wieħed permezz tal-API uffiċjali tal-pjattaforma, biex il-falliment jibqa' iżolat għal kull kanal."
+        },
+        {
+          "q": "Jistgħu l-klijenti jidħlu biex jaraw l-ispazju tax-xogħol tagħhom?",
+          "a": "Mhux illum. L-ispazji tax-xogħol huma biss għat-tim tal-aġenzija — rwoli ta' amministratur u pubblikatur. L-aċċess tal-klijent jinsab fir-roadmap."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Lest biex tkabbar il-kontenut fuq kull klijent?",
+      "subtitle": "Ibda bil-pjan Ultra llum jew ibbukkja demo ta' 20 minuta mat-tim tal-aġenziji biex tara Loritalk fuq il-marki tiegħek stess.",
+      "ctaPrimary": "Ibda bl-Ultra",
+      "ctaSecondary": "Ibbukkja demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Għall-kreaturi waħedhom u l-influencers",
+      "headlineOne": "Idea waħda.",
+      "headlineTwo": "Kull pjattaforma.",
+      "headlineThree": "Bla ma titlef il-weekend tiegħek.",
+      "lead": "Loritalk idawwar brief wieħed f'<strong>posts nattivi għal Instagram, TikTok, YouTube Shorts, X, Threads</strong> u aktar — billi jżomm il-vuċi tiegħek konsistenti fuq kull kont.",
+      "ctaPrimary": "Ibda b'xejn bl-Starter",
+      "ctaSecondary": "Ara l-pjani għall-kreaturi",
+      "trust": [
+        "Il-vuċi tiegħek fuq kull kanal",
+        "8 netwerks permezz ta' API nattivi",
+        "Skeda ġimgħat f'daqqa"
+      ],
+      "hubLabel": "L-istudjo tiegħek",
+      "hubTitle": "1 brief. 8 posts nattivi.",
+      "hubBody": "Iddefinixxi l-persona tiegħek darba. Loritalk jaddatta kull post għal kull pjattaforma — tul, hashtags, emoji, ton, format tal-istampa.",
+      "hubMeta": "1 persona · 8 kanali",
+      "hubBadge": "Live",
+      "cardTag": "Format nattiv"
+    },
+    "pains": {
+      "title": "Tinstema' bħall-ġimgħa tiegħek?",
+      "subtitle": "Li tippubblika kuljum fuq kull pjattaforma m'għandux jiswielek wara nofsinhar tal-Ħadd. Aħna għaddejna minnha.",
+      "items": [
+        {
+          "title": "L-istess idea, miktuba mill-ġdid 8 darbiet",
+          "description": "Kaption għal Instagram, skript għal TikTok, hook għal YouTube, thread għal X… kull pjattaforma teħtieġ forma differenti. Taħraq wara nofsinhar fuq post wieħed."
+        },
+        {
+          "title": "L-algoritmi jikkastigaw il-vojt",
+          "description": "Itlef jumejn u l-portata taqa'. Ibqa' konsistenti fuq kull pjattaforma u bilkemm ikollok ħin tiffilmja, aħseb u ara tgħix ħajtek."
+        },
+        {
+          "title": "Il-ftehimiet tal-marki jeħtieġu diversi pjattaformi",
+          "description": "L-isponsors iridu Reels + Shorts + TikTok + post. L-istess kampanja, erba' formati. Tiċċarġja għal wieħed u twassal erbgħa."
+        },
+        {
+          "title": "Il-vuċi tiddgħajjef",
+          "description": "Sal-post ħmistax, il-kaptions jinstemgħu bħallikieku kitibhom barrani. L-udjenza tinduna. L-impenn jaqa'."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Kulma jeħtieġ kreatur f'post wieħed",
+      "subtitle": "Agħti brief darba, ibgħat kullimkien — bla ma titlef il-vuċi li l-udjenza tiegħek issegwi.",
+      "items": [
+        {
+          "title": "Il-vuċi tiegħek, imsakkra",
+          "description": "Iddefinixxi persona bil-vuċi, it-ton u l-istruzzjonijiet speċifiċi tiegħek f'test sempliċi. Kull ġenerazzjoni tgħaddi minn dik il-lenti — tinstema' bħalek, mhux bħal għodda tal-AI."
+        },
+        {
+          "title": "Brief wieħed, tmien posts nattivi",
+          "description": "Ikteb l-idea darba. Loritalk jipproduċi verżjoni ottimizzata għal Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn u Telegram fi ftit sekondi."
+        },
+        {
+          "title": "Stampi fil-linja mal-marka għal kull format",
+          "description": "Posts tal-feed, stejjer, qtugħ hero, vertikali għal Reels u Shorts. L-istampi jiġu renderizzati bil-proporzjon tad-dimensjonijiet it-tajjeb u r-regoli viżwali tal-persona tiegħek."
+        },
+        {
+          "title": "Skeda ġimgħa f'qagħda waħda",
+          "description": "Ippjana mit-Tnejn sal-Ħadd fuq kull pjattaforma ġewwa kalendarju wieħed. L-API nattivi jimbuttaw awtomatikament — anki meta tkun qed tiffilmja l-batch li jmiss."
+        },
+        {
+          "title": "Ara x'qed jikber",
+          "description": "Portata, impenn, klikks u tkabbir tas-segwaċi għal kull kanal. Kards KPI u Lori Insights juru x'qed jaħdem — iffoka aktar fuqu."
+        },
+        {
+          "title": "Moderat qabel ma joħroġ",
+          "description": "Kull abbozz jgħaddi minn moderazzjoni awtomatika, biex kontenut sigur għall-marka jasal għand l-udjenza tiegħek u l-isponsors tiegħek jibqgħu kuntenti."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kif tidher ġimgħa ta' kreatur fuq Loritalk",
+      "subtitle": "Aqbad il-vuċi tiegħek darba, agħti brief ta' idea waħda, ibgħat fuq kull pjattaforma, ara x'jikber.",
+      "steps": [
+        {
+          "badge": "01 · VUĊI",
+          "title": "Iddefinixxi l-persona tiegħek",
+          "description": "Ikteb il-vuċi, it-ton u r-regoli tad-dar tiegħek f'persona. Issir il-lenti li kull post futur jgħaddi minnha."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Agħti brief ta' idea waħda",
+          "description": "Ittajpja l-kunċett, agħżel il-kanali u l-lingwa. Loritalk jipproduċi verżjoni nattiva għal kull pjattaforma fi ftit sekondi — kaptions, skripts, threads, hooks."
+        },
+        {
+          "badge": "03 · IBGĦAT",
+          "title": "Editja u skeda",
+          "description": "Illostra l-aqwa varjant għal kull kanal, daħħal kollox fil-kalendarju, itlaq. L-API jippubblikaw fil-ħin it-tajjeb, fil-format it-tajjeb."
+        },
+        {
+          "badge": "04 · SEGWI",
+          "title": "Ara x'qed jaħdem",
+          "description": "L-analitika għal kull kanal turi x'qed iġib il-portata u l-impenn. Ittejjeb l-angolu, mhux il-fluss tax-xogħol."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Pjani mibnijin għall-kreaturi",
+      "subtitle": "Ibda b'xejn matul il-Beta. Agħżel il-volum li jaqbel ma' kemm-il darba tippubblika."
+    },
+    "faq": {
+      "title": "Mistoqsijiet dwar il-kreaturi, imwieġba.",
+      "items": [
+        {
+          "q": "Se tinstema' bħali?",
+          "a": "Iddeskrivi l-vuċi, it-ton u r-regoli tad-dar tiegħek f'persona. Kull ġenerazzjoni tgħaddi minn dik il-lenti. Aktar ma tkun dettaljata l-persona, aktar tkun qrib il-vuċi tiegħek."
+        },
+        {
+          "q": "F'liema pjattaformi tippubblika tabilħaqq?",
+          "a": "Il-pubblikazzjoni nattiva tkopri Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn u Telegram — tmien netwerks permezz ta' API uffiċjali. Il-falliment fuq kanal wieħed qatt ma jimblokka l-oħrajn."
+        },
+        {
+          "q": "Nista' neditja qabel ma nippubblika?",
+          "a": "Dejjem. Loritalk jipproduċi abbozz għal kull kanal — int tagħżel, tirranġa u tippubblika. Xejn ma jmur live mingħajrek tagħfas il-buttuna (sakemm ma tkunx skedajtu)."
+        },
+        {
+          "q": "X'jiġri bl-istampi u l-vidjos qosra?",
+          "a": "L-istampi fil-linja mal-marka jiġu ġġenerati għal kull pjattaforma bil-proporzjon tad-dimensjonijiet it-tajjeb (kwadru, vertikali 9:16, hero). Għall-vidjos qosra tikseb kaption nattiv b'hook fl-ewwel sekondi u CTA — waħħal direttament f'TikTok jew YouTube Shorts."
+        },
+        {
+          "q": "Loritalk huwa b'xejn matul il-Beta?",
+          "a": "Iva. L-aċċess tal-Beta huwa b'xejn b'limiti ġenerużi. Kull utent tal-Beta jżomm ir-rata attwali tiegħu msakkra għal dejjem meta jniedu l-pjani mħallsa."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Ieqaf tikteb mill-ġdid. Ibda tibgħat.",
+      "subtitle": "Ingħaqad mal-Beta — b'xejn, bla karta tal-kreditu, ir-rata tiegħek tibqa' msakkra għal dejjem meta nniedu.",
+      "ctaPrimary": "Ibda b'xejn bl-Starter",
+      "ctaSecondary": "Ara l-pjani għall-kreaturi"
+    }
   }
 }

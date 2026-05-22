@@ -3,62 +3,96 @@
     "features": "Ominaisuudet",
     "howItWorks": "Miten se toimii",
     "pricing": "Hinnoittelu",
+    "forAgencies": "Toimistoille",
+    "forCreators": "Sisällöntuottajille",
     "beta": "Beta",
     "startForFree": "Aloita ilmaiseksi"
   },
   "hero": {
-    "badge": "Nyt betassa — ilmainen varhainen pääsy",
+    "badge": "Betassa · Varhaisen pääsyn hinta lukittu ikuisesti",
     "headlineOne": "Kirjoita vähemmän.",
     "headlineTwo": "Julkaise enemmän.",
-    "description": "Kirjoita aihe tai idea. Loritalk tekoäly kirjoittaa optimoidut julkaisut Instagram, LinkedIn, X, TikTok ja muille alustoille — sekunneissa. Useat AI-mallit kilpailevat antaakseen sinulle parhaan tuloksen.",
-    "ctaPrimary": "Aloita luominen ilmaiseksi",
-    "ctaSecondary": "Katso miten se toimii",
-    "note": "Luottokorttia ei tarvita · Ilmainen betan aikana",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Uudelleenkirjoitettu.",
+    "headlineThree": "Tarkastettu.",
+    "lead": "Kuvaile julkaisusi kerran. Loritalk kirjoittaa <strong>oman natiivin version jokaiselle yhdistetylle alustalle</strong>, luo brändinmukaiset kuvat, ajaa jokaisen sanan automaattisen moderoinnin läpi ja aikatauluttaa ne — sekunneissa.",
+    "ctaPrimary": "Aloita ilmaiseksi — ei korttia",
+    "ctaSecondary": "Katso se toiminnassa · 90s",
+    "trust": [
+      "8 natiivia integraatiota",
+      "Automaattisesti moderoitu",
+      "Työtilakohtainen eristys"
+    ],
+    "briefCard": {
+      "label": "Toimeksiantosi · 1 / 1",
+      "typed": "Lanseerataan uusi kestävän kehityksen lenkkari. Valmistettu 80-prosenttisesti kierrätetystä merimuovista. Kohderyhmänä Z-sukupolven juoksijat.",
+      "meta": "en · 8 kanavaa · House Voice",
+      "send": "Luo ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "julkaisut · reelsit · tarinat",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profiili · sivut",
+      "x": "X / Twitter",
+      "xTag": "ketjut · yksittäiset",
+      "tiktok": "TikTok",
+      "tiktokTag": "käsikirjoitukset · tekstit",
+      "youtube": "YouTube",
+      "youtubeTag": "shortsit ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "natiivi",
+      "facebook": "Facebook",
+      "facebookTag": "sivut",
+      "telegram": "Telegram",
+      "telegramTag": "kanavat · ryhmät"
+    },
+    "leadHook": "Kuvaile julkaisusi kerran.",
+    "leadBody": "Loritalk kirjoittaa <strong>oman natiivin version jokaiselle yhdistetylle alustalle</strong>, luo brändinmukaiset kuvat, ajaa jokaisen sanan automaattisen moderoinnin läpi ja aikatauluttaa ne — sekunneissa."
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Tuettua sosiaalista verkostoa",
-    "languagesValue": "3",
-    "languagesLabel": "Kieltä julkaisussa",
-    "generationValue": "<5s",
-    "generationLabel": "Keskimääräinen luontiaika",
+    "languagesValue": "24+",
+    "languagesLabel": "Käyttöliittymäkieltä",
+    "generationValue": "Sekunteja",
+    "generationLabel": "Toimeksiannosta julkaisuvalmiiksi",
     "freeValue": "Ilmainen",
     "freeLabel": "Betan aikana — ei rajoituksia"
   },
   "problem": {
-    "title": "Sisällöntuotantoprosessisi on rikki",
+    "title": "Sisältöprosessisi on rikki",
     "subtitle": "Kuulostaako tutulta?",
     "items": [
       {
-        "title": "Tunteja kuluu mukauttamiseen",
-        "description": "Kirjoitat julkaisun Instagram varten, sitten kirjoitat sen uudelleen LinkedIn varten, sitten taas X varten. Jokainen alusta vaatii erilaisen sävyn, pituuden ja aihetunnisteet."
+        "title": "Tunteja hukkaan mukauttamiseen",
+        "description": "Kirjoitat julkaisun Instagramiin, sitten kirjoitat sen uudelleen LinkedIniin ja vielä kerran X:ään. Jokainen alusta vaatii eri sävyn, pituuden ja aihetunnisteet."
       },
       {
-        "title": "AI, joka kuulostaa yleiseltä",
-        "description": "AI antaa sinulle yhden version, joka kuulostaa kaikilta muilta. Ei brändiääntä, ei alustatietoisuutta, ei todellista optimointia."
+        "title": "Tekoäly, joka kuulostaa geneeriseltä",
+        "description": "Yksittäinen tekoälymalli antaa sinulle yhden version, joka kuulostaa samalta kuin kaikilla muillakin. Ei brändiääntä, ei alustatietoutta, ei aitoa optimointia."
       },
       {
         "title": "Tiimin pullonkaulat",
-        "description": "Sisältö odottaa hyväksyntää, katoaa Slack-viestiketjuihin, eikä kukaan tiedä mitä on aikataulutettu ensi viikolle."
+        "description": "Sisältö odottaa hyväksyntää, hukkuu Slack-ketjuihin, eikä kukaan tiedä mitä ensi viikolle on aikataulutettu."
       }
     ]
   },
   "solution": {
     "title": "Loritalk korjaa kaiken tämän",
-    "subtitle": "Yksi toimeksianto. Joka alusta. Useat tekoälyt kilpailevat parhaasta julkaisustasi.",
+    "subtitle": "Yksi toimeksianto. Natiivi versio jokaiselle alustalle. Brändinmukaiset kuvat renderöidään rinnakkain.",
     "ctaPrimary": "Aloita luominen ilmaiseksi",
     "rows": [
       {
-        "before": "1 julkaisu = 45 min mukauttamista jokaiselle alustalle",
-        "after": "1 toimeksianto = kaikki alustat <5 sekunnissa"
+        "before": "1 julkaisu = 45 min mukauttamista kullekin alustalle",
+        "after": "1 toimeksianto = kaikki alustat alle 5 sekunnissa"
       },
       {
-        "before": "1 AI-malli = yleinen, kaikille sama teksti",
-        "after": "Useat AI-mallit keskustelevat ja parantavat toisiaan"
+        "before": "Geneerinen tekoälyteksti kierrätettynä joka verkostossa",
+        "after": "Natiivi versio kanavakohtaisesti — pituus, aihetunnisteet ja sävy mukautettuina"
       },
       {
-        "before": "Sisältö hajallaan eri työkaluissa ja viestiketjuissa",
+        "before": "Sisältö hajallaan työkalujen ja viestiketjujen seassa",
         "after": "Yksi hallintapaneeli: luo, hyväksy, aikatauluta, julkaise, seuraa"
       }
     ]
@@ -68,224 +102,244 @@
     "subtitle": "Ideasta julkaistuun postaukseen — Loritalk hoitaa koko työnkulun.",
     "items": [
       {
-        "title": "Usean mallin AI-keskustelu",
-        "description": "Ei vain yksi AI — useat mallit luovat itsenäisesti, sitten parantavat toistensa työtä."
+        "title": "Alustanatiivi sisältö",
+        "description": "Yhdestä toimeksiannosta syntyy natiivi versio kullekin alustalle — pituus, aihetunnisteet, emojit ja sävy mukautettuina Instagramille, LinkedInille, X:lle, TikTokille, Facebookille, YouTube Shortsille, Threadsille ja Telegramille."
       },
       {
-        "title": "Alustalle optimoitu sisältö",
-        "description": "Jokainen julkaisu on räätälöity alustalleen — oikea sävy, pituus, aihetunnisteet, emojit ja muotoilu. Instagram kuvatekstit, LinkedIn artikkelit, X ketjut, TikTok käsikirjoitukset."
+        "title": "Brändinmukainen kuvien luonti",
+        "description": "Kuvat renderöidään alustakohtaisesti oikealla kuvasuhteella ja persoonasi visuaalisten sääntöjen mukaan — feed-julkaisut, tarinat, hero-rajaukset. Ei enää manuaalista koon muuttamista."
       },
       {
         "title": "Monikielinen luonti",
-        "description": "Luo sisältöä portugaliksi, englanniksi, espanjaksi ja muilla kielillä. Äidinkielen tasoista sujuvuutta kulttuurisilla vivahteilla — ei pelkkää käännöstä."
+        "description": "Luo sisältöä portugaliksi, englanniksi, espanjaksi ja monella muulla kielellä. Äidinkielen tasoista sujuvuutta kulttuurisilla vivahteilla — ei pelkkää käännöstä."
       },
       {
         "title": "Aikatauluta ja julkaise",
-        "description": "Kalenterinäkymä, ajastettu julkaisu ja suora postaus kaikkiin yhdistettyihin kanaviin. Eri ajat jokaiselle alustalle."
+        "description": "Kalenterinäkymä, ajastettu julkaisu ja suora postaus kaikkiin yhdistettyihin kanaviin. Eri ajat kullekin alustalle."
       },
       {
         "title": "Brändiääni ja persoonat",
-        "description": "Luo AI-persoonat, jotka kirjoittavat kuten brändisi. Hallitse sävyä ammattimaisesta leikkisään. Jokainen julkaisu kuulostaa sinulta, ei robotilta."
+        "description": "Luo tekoälypersoonia, jotka kirjoittavat kuten brändisi. Säädä sävy ammattimaisesta leikkisään. Jokainen julkaisu kuulostaa sinulta, ei robotilta."
       },
       {
         "title": "Analytiikkapaneeli",
-        "description": "Seuraa näyttökertoja, sitoutumista, klikkauksia ja kasvua kaikissa kanavissa. Tiedä mikä sisältö toimii ja panosta siihen."
+        "description": "Seuraa kattavuutta, sitoutumista, klikkauksia ja kasvua kanavakohtaisesti. KPI-kortit, parhaat julkaisut ja Lori Insights nostavat esiin sen, mikä toimii."
       }
     ]
   },
   "howItWorks": {
-    "title": "Ideasta julkaisuun 3 askeleessa",
-    "subtitle": "Ei enää tyhjiä näyttöjä. Ei enää kopioi-liitä alustojen välillä.",
+    "eyebrow": "05 · Työnkulku",
+    "title": "Toimeksianto → esikatselu → julkaisu.",
+    "titleAccent": "Kolme liikettä.",
+    "titleTail": "Sekunneissa.",
+    "subtitle": "Et koskaan valitse mallia. Et koskaan muuta kuvan kokoa. Et koskaan kopioi-liitä välilehtien välillä.",
     "steps": [
       {
-        "title": "Kirjoita toimeksianto",
-        "description": "Kuvaile mitä haluat viestiä — niin yksinkertaisesti kuin \"uuden tuotteen lanseeraus\" tai niin yksityiskohtaisesti kuin täydellinen toimeksianto. Valitse kanavat, kieli ja sävy."
+        "badge": "01",
+        "eyebrow": "Syöte",
+        "title": "Kirjoita toimeksiantosi",
+        "description": "Yksi lause tai kolme kappaletta. Valitse kanavat, persoona ja kieli. Se on ainoa asia, jonka tänään kirjoitat.",
+        "footLeft": "~ 5 s kirjoittaa",
+        "footRight": "1 toimeksianto"
       },
       {
-        "title": "AI-mallit kilpailevat puolestasi",
-        "description": "Useat AI-mallit luovat sisältöä itsenäisesti, sitten tarkastavat ja parantavat toistensa tuloksia. Saat N viimeisteltyä versiota per alusta."
+        "badge": "02",
+        "eyebrow": "Luonti",
+        "title": "Tekoäly räätälöi sen kanavakohtaisesti",
+        "description": "Loritalk lukee toimeksiantosi, persoonasi ja kunkin alustan natiivit säännöt — ja muotoilee sitten kullekin kanavalle tehdyn version. Automaattinen moderointi tehdään ennen kuin näet sen.",
+        "footLeft": "~ 3 s kanavaa kohti",
+        "footRight": "Yhdistettyä kanavaa kohti"
       },
       {
-        "title": "Valitse, muokkaa ja julkaise",
-        "description": "Valitse suosikkiversiosi jokaiselle kanavalle. Säädä mitä tahansa yhdellä napsautuksella. Julkaise heti tai aikatauluta myöhemmäksi."
+        "badge": "03",
+        "eyebrow": "Jakelu",
+        "title": "Julkaise tai aikatauluta",
+        "description": "Lähetä heti tai pudota kalenteriin alustakohtaisilla ajoituksilla. Jokainen kanava lähtee oman natiivin API:nsa kautta; virheet eristetään — Instagram lähtee silti, vaikka Facebookilla nikottaisi.",
+        "footLeft": "Natiivit API:t · OAuth",
+        "footRight": "8 kanavaa"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Lanseerataan uusi kestävän kehityksen lenkkari. Valmistettu 80-prosenttisesti kierrätetystä merimuovista. Kohderyhmänä Z-sukupolven juoksijat.\"",
+      "channelsComment": "// kanavat:"
+    },
+    "personasViz": {
+      "personaLabel": "Persoona",
+      "languageLabel": "Kieli",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutraali — Lorin house voice"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Rento, hauska, jutusteleva"
+        },
+        {
+          "name": "Core",
+          "desc": "Rohkea, optimistinen, brändivetoinen"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karuselli",
+          "when": "Tänään 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "pitkä muoto",
+          "when": "Tänään 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "ketju",
+          "when": "Tänään 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Huomenna 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "julkaisu",
+          "when": "Huomenna 12:00"
+        }
+      ],
+      "cta": "▶ Julkaise kaikki · ⏱ Aikatauluta"
+    }
   },
-  "differentiator": {
-    "title": "Miksi useat tekoälyt voittavat yhden",
-    "subtitle": "Muut työkalut käyttävät yhtä mallia. Loritalk käyttää useita — ja saa ne parantamaan toisiaan.",
-    "briefLabel": "Toimeksiantosi",
-    "channels": "Kanavat",
-    "language": "Kieli:",
-    "languages": "englanti, portugali",
-    "submitted": "Lähetetty 2s sitten",
-    "round1": "KIERROS 1 — ITSENÄINEN LUONTI",
-    "generated": "Luotu",
-    "round2": "Kierros 2 — Ristiinjalostus",
-    "round2Desc": "Jokainen malli lukee kaikki tulokset ja parantaa omaa versiotaan",
-    "qualityNote": "Laatu parani ~40% verrattuna kierrokseen 1",
-    "pickEdit": "Valitse ja muokkaa",
-    "addMedia": "Lisää media",
-    "uploading": "Ladataan kuvaa...",
-    "imageAttached": "Kuva ladattu onnistuneesti",
-    "generateAI": "Luo tekoälyllä",
-    "readyPublish": "Valmis julkaistavaksi",
-    "publishAll": "Julkaise kaikki",
-    "scheduled": "Ajastettu",
-    "draft": "Luonnos",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Kuvat",
+    "title": "Brändinmukaiset",
+    "titleAccent": "kuvat",
+    "titleTail": "alustakohtaisesti mitoitettuna.",
+    "subtitle": "Kuvien luonti tapahtuu asynkronisesti ja alustakohtaisesti — ei manuaalista koon muuttamista, ei brändiin sopimatonta kuvapankkimateriaalia. Yksittäiset julkaisut, karusellit, tarinamuodot, hero-rajaukset. Jokainen renderöinti viittaa aktiivisen persoonan visuaalisiin sääntöihin.",
+    "tiles": {
+      "instagramCaption": "Klo 5 aamulla. Kahvi, kaksi välilehteä, yksi päätös.\nRakensin v2:n ennen kuin tiimi kirjautui sisään.",
+      "storyQuote": "saavutimme miljoonan MRR:n samalla viikolla, kun poistimme puolet roadmapista.",
+      "storySwipe": "↑ pyyhkäise",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Palkkasimme 3 alihankkijaa ennen ensimmäistä vakituista. Tässä on taulukko.",
+      "linkedinCta": "Lue lisää →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "useimmat \"perustajasisällöt\" ovat lehdistötiedote hupparissa. kirjoita kuin ihminen. #shipping",
+      "generatingLabel": "Renderöidään · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "ENSIMMÄINEN",
+      "ytTitleLineTwo": "PALKKAUS.",
+      "ytSubtitle": "Miksi odotimme 18 kuukautta.",
+      "ytMeta": "Loritalk · Jakso 14 · 32 min"
+    }
   },
   "useCases": {
     "title": "Rakennettu julkaiseville tiimeille",
-    "subtitle": "Olitpa yksintekijä tai 50 hengen toimisto.",
+    "subtitle": "Olitpa yksin toimiva sisällöntuottaja tai 50 hengen toimisto.",
     "items": [
       {
-        "title": "Yksintekijät ja freelancerit",
-        "description": "Lopeta tuntien tuhlaaminen sisällön mukauttamiseen. Kirjoita kerran, julkaise kaikkialla. Keskity strategiaan, älä kopioi-liitä."
+        "title": "Yksintoimijat ja freelancerit",
+        "description": "Lopeta tuntien tuhlaaminen sisällön mukauttamiseen. Kirjoita kerran, julkaise kaikkialla. Keskity strategiaan, älä kopioi-liittämiseen."
       },
       {
         "title": "Markkinointitiimit",
-        "description": "Yksi työtila per brändi. Hyväksyntäprosessit. Kalenterinäkymä. Jokainen tietää mitä julkaistaan ja milloin."
+        "description": "Yksi työtila per brändi. Kalenterinäkymä työtilakohtaisesti. Kaikki tietävät, mitä julkaistaan ja milloin."
       },
       {
         "title": "Toimistot",
-        "description": "Hallitse useita brändejä yhdeltä tililtä. Määritä roolit, hallitse pääsyoikeuksia, seuraa suorituskykyä kaikkien asiakkaiden osalta. Rajattomat julkaisut Toimisto-paketissa."
+        "description": "Hallitse useita brändejä yhdeltä tililtä. Työtila asiakasta kohti, jossa on eristetyt kanavat, persoonat ja kalenteri. Kanavakohtainen analytiikka jokaiselle brändille."
       }
     ]
   },
   "pricing": {
     "title": "Yksinkertainen, läpinäkyvä hinnoittelu",
-    "subtitle": "Ilmainen betan aikana. Varhaiset käyttäjät lukitsevat hintansa ikuisesti julkaisun yhteydessä.",
-    "mostPopular": "Suosituin",
+    "subtitle": "Krediittipohjainen. Peruuta milloin tahansa. Vuosimaksulla säästät kaksi kuukautta.",
     "monthly": "Kuukausittain",
     "annual": "Vuosittain",
-    "save2Months": "-17%",
-    "perMonth": "/ kuukausi",
+    "save2Months": "-17 %",
+    "perMonth": "/ kk",
+    "perMonthBilledYearly": "/ kk, laskutetaan vuosittain",
     "perYear": "/ vuosi",
-    "billedAnnually": "Laskutetaan vuosittain",
-    "customPriceLabel": "Räätälöity",
-    "plans": [
-      {
-        "name": "Ilmainen",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "betan aikana",
-        "description": "Kokeile kaikkea anteliailla rajoituksilla.",
-        "features": [
-          "5 julkaisua / kuukausi",
-          "3 verkostoa",
-          "Perussävyn hallinta",
-          "Aihetunnistesuositukset"
-        ],
-        "cta": "Aloita ilmaiseksi",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Säästä {{amount}} / vuosi",
+    "mostPopular": "Suosituin",
+    "bestValue": "Paras hinta-laatusuhde",
+    "creditsUnit": "krediittiä / kuukausi",
+    "creditsTexts": "~{{count}} tekstijulkaisua",
+    "creditsOr": "tai",
+    "creditsImages": "~{{count}} brändinmukaista kuvaa",
+    "promoExplainer": "Ensimmäisen vuoden tarjous: saat 2× krediittiä JOKA kuukausi koko ensimmäisen vuotesi ajan, kun valitset vuosimaksun — se on {{count}} bonuskrediittiä joka kuukausi.",
+    "promoHeroExtra": "(+{{count}} bonuskrediittiä joka kuukausi 12 kuukauden ajan)",
+    "tierChoose": "Valitse paketti",
+    "features": {
+      "workspaces_one": "{{count}} työtila",
+      "workspaces_other": "{{count}} työtilaa",
+      "channels": "{{count}} sosiaalista kanavaa",
+      "personas": "{{count}} brändipersoonaa",
+      "members_one": "{{count}} tiimin jäsen",
+      "members_other": "{{count}} tiimin jäsentä",
+      "media": "{{count}} mediatiedostoa"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Ensimmäistä kertaa tekoälysisältöä luoville"
       },
-      {
-        "name": "Luoja",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Luojille ja brändeille, jotka julkaisevat säännöllisesti.",
-        "features": [
-          "200 julkaisua / kuukausi",
-          "Kaikki verkostot",
-          "Edistynyt sävy ja persoonat",
-          "Sisältökalenteri",
-          "Ensisijainen tuki"
-        ],
-        "cta": "Aloita ilmainen kokeilu",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Johdonmukaiseen ja vaivattomaan tekoälysisällön luontiin"
       },
-      {
-        "name": "Toimisto",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Tiimeille, jotka hallinnoivat useita brändejä.",
-        "features": [
-          "Rajattomat julkaisut",
-          "Kaikki verkostot",
-          "Useita brändejä",
-          "Tiimiyhteistyö",
-          "Analytiikka",
-          "Tilivastaava"
-        ],
-        "cta": "Ota meihin yhteyttä",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Sisällöntuottajille, jotka rakentavat tekoälytuotteita"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Toimistoille ja pienille tiimeille"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Kysymyksiä? Meillä on vastaukset.",
     "items": [
       {
-        "q": "Mitä AI-malleja Loritalk käyttää?",
-        "a": "Voit määrittää mitkä mallit osallistuvat luontiputkeesi."
+        "q": "Miten Loritalkin tekoäly toimii?",
+        "a": "Loritalk tuottaa toimeksiannostasi natiivin version jokaiselle yhdistetylle kanavalle ja renderöi brändinmukaiset kuvat rinnakkain. Kaikki kulkee automaattisen moderointikerroksen läpi ennen kuin se saapuu hallintapaneeliisi."
       },
       {
-        "q": "Miten tämä eroaa other AI tools:stä?",
-        "a": "Other AI tools antaa sinulle yhden tuloksen yhdeltä mallilta. Loritalk ajaa useita malleja rinnakkain, sitten saa ne parantamaan toistensa työtä — tuottaen johdonmukaisesti korkeampaa laatua. Lisäksi jokainen julkaisu optimoidaan automaattisesti jokaiselle alustalle."
+        "q": "Miten tämä eroaa muista tekoälytyökaluista?",
+        "a": "Muut työkalut antavat sinulle yhden tekstipätkän, jonka kopioit-liität kaikkialle. Loritalk tuottaa natiivit versiot alustakohtaisesti — pituus, aihetunnisteet, emojit ja sävy kullekin verkostolle mukautettuina — ja julkaisee jokaisen alustan virallisen API:n kautta."
       },
       {
         "q": "Mitä sosiaalisia verkostoja tuetaan?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) ja TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads ja Telegram — kahdeksan verkostoa natiivien API:en kautta."
       },
       {
-        "q": "Onko sisältöni yksityistä?",
-        "a": "Kyllä. Sisältöäsi ei koskaan käytetä AI-mallien kouluttamiseen. Kaikki data tallennetaan palvelimillemme Euroopassa ja käsitellään GDPR-vaatimusten mukaisesti."
+        "q": "Missä tietoni säilytetään?",
+        "a": "Tietosi säilytetään Euroopan unionin alueella sijaitsevilla palvelimilla. Käyttämämme tekoälypalveluntarjoajat (OpenAI tekstiä varten, Google kuvia varten) toimivat yritystason API-ehtojensa mukaisesti — API:lle lähetettyä sisältöä ei käytetä heidän yleiskäyttöisten malliensa kouluttamiseen."
       },
       {
         "q": "Voinko käyttää sitä tiimini kanssa?",
-        "a": "Ehdottomasti. Luo työtilat jokaiselle brändille, kutsu tiimin jäsenet järjestelmänvalvojan tai julkaisijan roolilla ja määritä hyväksyntäprosessit, jotta mikään ei mene julki ilman tarkistusta."
+        "a": "Kyllä. Luo työtilat jokaiselle brändille ja kutsu tiimin jäsenet järjestelmänvalvojan tai julkaisijan roolilla. Jokaisella työtilalla on omat yhdistetyt kanavansa, persoonansa ja kalenterinsa."
       },
       {
         "q": "Mitä tapahtuu betan jälkeen?",
-        "a": "Maksulliset paketit astuvat voimaan, mutta jokainen beta-käyttäjä säilyttää nykyisen hintansa ikuisesti. Ei yllätyksiä."
+        "a": "Maksulliset paketit astuvat voimaan, mutta jokainen beta-käyttäjä säilyttää nykyisen hintansa lukittuna ikuisesti. Ei yllätyksiä."
       }
     ]
   },
   "ctaBanner": {
     "headline": "Lopeta kirjoittaminen. Aloita julkaiseminen.",
-    "subtitle": "Liity betaan — ilmainen pääsy, ei luottokorttia, ja hintasi lukitaan ikuisesti julkaisun yhteydessä.",
+    "subtitle": "Liity betaan — ilmainen pääsy, ei luottokorttia, ja hintasi lukitaan ikuisesti, kun lanseeraamme.",
     "ctaPrimary": "Aloita luominen ilmaiseksi",
     "ctaSecondary": "Katso miten se toimii"
   },
   "footer": {
-    "description": "AI-sisältöä jokaiselle sosiaaliselle verkostolle.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "description": "Tekoälysisältöä jokaiselle sosiaaliselle verkostolle.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugali",
     "product": "Tuote",
     "resources": "Resurssit",
     "legal": "Juridiset",
@@ -299,6 +353,304 @@
     "privacyPolicy": "Tietosuojakäytäntö",
     "termsOfService": "Käyttöehdot",
     "cookiePolicy": "Evästekäytäntö",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "legalNotice": "Oikeudellinen huomautus",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugali."
+  },
+  "cookieBanner": {
+    "aria": "Evästeilmoitus",
+    "title": "Käytämme evästeitä",
+    "body": "Ehdottoman välttämättömät evästeet pitävät sivuston toiminnassa. Suostumuksellasi lataamme myös Google Analyticsin liikenteen mittaamiseksi ja Meta-pikselin mainontamme mittaamiseksi. Voit hyväksyä, hylätä tai valita kategoria kerrallaan — ja muuttaa mieltäsi milloin tahansa.",
+    "policyLink": "Evästekäytäntö",
+    "privacyLink": "Tietosuojakäytäntö",
+    "acceptAll": "Hyväksy kaikki",
+    "rejectOptional": "Hylkää valinnaiset",
+    "customize": "Mukauta",
+    "save": "Tallenna asetukset",
+    "necessaryLabel": "Ehdottoman välttämättömät",
+    "necessaryDesc": "Vaaditaan sivuston toimintaan (kieli ja suostumusvalintasi). Ei voi poistaa käytöstä.",
+    "analyticsLabel": "Analytiikka — Google Analytics",
+    "analyticsDesc": "Lataa Google Analytics 4:n liikenteen mittaamiseksi ja sivuston parantamiseksi. Asettaa _ga- ja _ga_*-evästeet ja lähettää sivunäyttötietoja Googlelle.",
+    "marketingLabel": "Markkinointi — Meta-pikseli",
+    "marketingDesc": "Lataa Meta-pikselin (Facebook / Instagram), jotta voimme mitata mainoskampanjoita. Asettaa _fbp- ja _fbc-evästeet ja lähettää sivunäyttötietoja Metalle."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Markkinointitoimistoille ja luoville studioille",
+      "headlineOne": "Vaikeaa saada julkaisuja ulos",
+      "headlineTwo": "jokaiselle asiakkaalle",
+      "headlineThree": "jokaisella alustalla?",
+      "lead": "Loritalk antaa toimistollesi <strong>yhden työtilan per brändi</strong>, oman persoonan kullekin asiakkaalle ja natiivin julkaisun kahdeksassa verkostossa — niin että tiimisi kirjoittaa kerran ja julkaisee kaikkialle, jokaiselle tilille.",
+      "ctaPrimary": "Aloita Ultra-paketilla",
+      "ctaSecondary": "Katso toimistohinnoittelu",
+      "trust": [
+        "Yksi työtila per brändi",
+        "Järjestelmänvalvojan + julkaisijan roolit",
+        "8 verkostoa natiivien API:en kautta"
+      ],
+      "hubLabel": "Toimiston päämaja",
+      "hubTitle": "5 brändiä. 5 työtilaa.",
+      "hubBody": "Jokainen asiakas saa oman työtilansa, persoonansa, kanavansa ja analytiikkansa. Vaihda kontekstia yhdellä napsautuksella.",
+      "hubMeta": "5 työtilaa · eristetty",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "Tunnistatko viikkosi?",
+      "subtitle": "Sama sisältö uudelleenkirjoitettuna 7 kertaa 5 asiakkaalle. Joka viikko. Olemme olleet siinä tilanteessa.",
+      "items": [
+        {
+          "title": "5+ asiakkaan jonglöörausta yhtä aikaa",
+          "description": "Jokainen brändi haluaa eri sävyn, eri alustat, eri aikataulut. Taulukot ja Slack-ketjut eivät ole työnkulku."
+        },
+        {
+          "title": "Brändiääni harhautuu joka julkaisussa",
+          "description": "Eri tekstintekijöitä, eri välilehtiä, eri ChatGPT-kehotteita. Ääni, jonka asiakkaasi hyväksyi puoli vuotta sitten, on poissa."
+        },
+        {
+          "title": "Perjantai-illan uudelleenaikataulutukset",
+          "description": "Asiakas pyytää viime hetken muutoksia Instagramiin, LinkedIniin ja TikTokiin. Kirjoitat saman idean kolmasti — ja menetät silti aikaikkunan."
+        },
+        {
+          "title": "Raportointi vie koko päivän",
+          "description": "Näyttökertojen, sitoutumisen ja klikkausten kopiointia viidestä paneelista yhteen esitykseen. Käsin. Joka kuukausi."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Kaikki mitä toimistosi tarvitsee yhdessä paikassa",
+      "subtitle": "Toimeksiannosta raporttiin — Loritalk pyörittää koko sisältöputken jokaiselle hallinnoimallesi brändille.",
+      "items": [
+        {
+          "title": "Yksi työtila per asiakas",
+          "description": "Eristetyt työtilat, joilla on omat yhdistetyt kanavansa, persoonansa, jäsenensä ja kalenterinsa. Pystytä uusi asiakas minuuteissa."
+        },
+        {
+          "title": "Brändiäänen persoonat",
+          "description": "Määritä persoona kullekin asiakkaalle — ääni, sävy, tarkat ohjeet. Jokainen kyseisen työtilan luonti noudattaa toimeksiantoa, joka kerta."
+        },
+        {
+          "title": "8 verkostoa, yksi toimeksianto",
+          "description": "Kirjoita toimeksianto kerran ja saat natiivit versiot Instagramille, LinkedInille, X:lle, TikTokille, Facebookille, YouTube Shortsille, Threadsille ja Telegramille — kaikki sekunneissa, kaikki virallisten API:en kautta."
+        },
+        {
+          "title": "Työtilakohtainen kalenteri",
+          "description": "Jokaisella asiakkaalla on oma viikko- / kuukausi- / jononäkymänsä. Aikatauluta julkaisut kanavakohtaisesti ja näe kyseisen brändin koko putki yhdellä silmäyksellä."
+        },
+        {
+          "title": "Järjestelmänvalvojan + julkaisijan roolit",
+          "description": "Kutsu tiimin jäseniä työtilakohtaisesti järjestelmänvalvojana (täysi hallinta) tai julkaisijana (luo ja julkaise). Työtilat ovat täysin eristettyjä toisistaan."
+        },
+        {
+          "title": "Työtilakohtainen analytiikka",
+          "description": "Kattavuus, sitoutuminen, klikkaukset ja kasvu kanavakohtaisesti jokaisen asiakkaan työtilassa. KPI-kortit, parhaat julkaisut ja Lori Insights — ilman hyppimistä paneelien välillä."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Miltä toimiston viikko näyttää Loritalkissa",
+      "subtitle": "Ota brändi käyttöön, brieffaa tekoäly, hanki hyväksyntä, julkaise. Toista jokaiselle asiakkaalle.",
+      "steps": [
+        {
+          "badge": "01 · KÄYTTÖÖNOTTO",
+          "title": "Pystytä asiakkaan työtila",
+          "description": "Luo työtila, yhdistä brändin sosiaalisen median tilit ja määritä persoona — ääni, sävy, tarkat ohjeet. Käyttövalmis minuuteissa."
+        },
+        {
+          "badge": "02 · TOIMEKSIANTO",
+          "title": "Kirjoita yksi toimeksianto per kampanja",
+          "description": "Valitse persoona, kanavat ja kieli. Loritalk luo natiivin version per alusta sekunneissa."
+        },
+        {
+          "badge": "03 · HIONTA",
+          "title": "Muokkaa tiimissäsi",
+          "description": "Tiimisi tarkistaa luonnokset työtilan sisällä — hienosäädä tekstiä, vaihda kuvia, valitse vahvin variantti kanavakohtaisesti ennen julkaisua."
+        },
+        {
+          "badge": "04 · JULKAISU",
+          "title": "Julkaise ja seuraa",
+          "description": "Natiivit API:t työntävät jokaiselle kanavalle. Suorituskyky virtaa takaisin työtilakohtaiseen paneeliin — KPI:t, parhaat julkaisut ja kasvu kanavittain."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Toimistoille rakennetut paketit",
+      "subtitle": "Pyöritä kourallista brändejä tai koko asiakasportfoliota. Valitse retainereitasi vastaava volyymi.",
+      "customPrice": "Jutellaan",
+      "customCredits": "Rajattomat krediitit",
+      "customCreditsDetail": "Volyymi sovitaan sopimuskohtaisesti — ei yllätyslaskutusta ylityksistä.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Custom",
+          "description": "Verkostoille ja suurille toimistoille, jotka tarvitsevat räätälöidyt volyymit ja käyttöönoton.",
+          "cta": "Ota yhteyttä myyntiin"
+        }
+      },
+      "features": {
+        "customVolumes": "Räätälöidyt krediittivolyymit",
+        "priorityEmail": "Ensisijainen sähköpostituki",
+        "euData": "EU-tietojen sijainti"
+      }
+    },
+    "faq": {
+      "title": "Toimistokysymyksiin vastattu.",
+      "items": [
+        {
+          "q": "Miten krediitit jaetaan asiakkaiden kesken?",
+          "a": "Krediitit sijaitsevat toimiston tilitasolla — mikä tahansa työtila voi käyttää samaa yhteistä varantoa. Seuraa käyttöä laskutuspaneelissa."
+        },
+        {
+          "q": "Mitä tapahtuu, kun otamme asiakkaan käyttöön tai poistamme käytöstä?",
+          "a": "Pystytä uusi työtila sekunneissa. Työtilan arkistointi poistaa sen aktiivisesta näkymästä; tilin täysi poisto noudattaa GDPR:n säilytyssääntöjä."
+        },
+        {
+          "q": "Mihin sosiaalisiin verkostoihin voimme julkaista?",
+          "a": "Natiivi julkaisu kattaa LinkedInin, Instagramin, Facebookin, X:n, TikTokin, YouTube Shortsin, Threadsin ja Telegramin — kahdeksan verkostoa, kukin alustan virallisen API:n kautta, joten virheet pysyvät kanavakohtaisesti eristettyinä."
+        },
+        {
+          "q": "Voivatko asiakkaat kirjautua sisään nähdäkseen työtilansa?",
+          "a": "Eivät tällä hetkellä. Työtilat ovat vain toimistotiimille — järjestelmänvalvojan ja julkaisijan roolit. Asiakkaiden pääsy on roadmapilla."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Valmis skaalaamaan sisältöä jokaiselle asiakkaalle?",
+      "subtitle": "Aloita Ultra-paketilla tänään tai varaa 20 minuutin demo toimistotiimin kanssa nähdäksesi Loritalkin omilla brändeilläsi.",
+      "ctaPrimary": "Aloita Ultralla",
+      "ctaSecondary": "Varaa demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Yksin toimiville sisällöntuottajille ja vaikuttajille",
+      "headlineOne": "Yksi idea.",
+      "headlineTwo": "Jokainen alusta.",
+      "headlineThree": "Menettämättä viikonloppuasi.",
+      "lead": "Loritalk muuntaa yhden toimeksiannon <strong>natiiveiksi julkaisuiksi Instagramiin, TikTokiin, YouTube Shortsiin, X:ään, Threadsiin</strong> ja muihin — pitäen äänesi johdonmukaisena jokaisella tilillä.",
+      "ctaPrimary": "Aloita ilmaiseksi Starterilla",
+      "ctaSecondary": "Katso sisällöntuottajien paketit",
+      "trust": [
+        "Äänesi jokaisella kanavalla",
+        "8 verkostoa natiivien API:en kautta",
+        "Aikatauluta viikkoja kerralla"
+      ],
+      "hubLabel": "Studiosi",
+      "hubTitle": "1 toimeksianto. 8 natiivia julkaisua.",
+      "hubBody": "Määritä persoonasi kerran. Loritalk mukauttaa jokaisen julkaisun kullekin alustalle — pituus, aihetunnisteet, emojit, sävy, kuvamuoto.",
+      "hubMeta": "1 persoona · 8 kanavaa",
+      "hubBadge": "Live",
+      "cardTag": "Natiivi muoto"
+    },
+    "pains": {
+      "title": "Kuulostaako viikoltasi?",
+      "subtitle": "Päivittäinen julkaiseminen jokaisella alustalla ei saisi maksaa sinulle sunnuntai-iltapäivää. Olemme olleet siinä tilanteessa.",
+      "items": [
+        {
+          "title": "Sama idea, uudelleenkirjoitettuna 8 kertaa",
+          "description": "Kuvateksti Instagramiin, käsikirjoitus TikTokiin, koukku YouTubeen, ketju X:ään… jokainen alusta vaatii eri muodon. Poltat iltapäivän yhteen julkaisuun."
+        },
+        {
+          "title": "Algoritmit rankaisevat taukoja",
+          "description": "Jätä kaksi päivää väliin ja kattavuus putoaa. Pysy johdonmukaisena jokaisella alustalla, niin sinulla tuskin on aikaa kuvata, saati elää elämääsi."
+        },
+        {
+          "title": "Brändidiilit vaativat usean alustan",
+          "description": "Sponsorit haluavat Reelsit + Shortsit + TikTokin + julkaisun. Sama kampanja, neljä muotoa. Laskutat yhdestä ja toimitat neljä."
+        },
+        {
+          "title": "Ääni laimenee",
+          "description": "Viidenteentoista julkaisuun mennessä kuvatekstit kuulostavat siltä, kuin vieras olisi ne kirjoittanut. Yleisö huomaa. Sitoutuminen putoaa."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Kaikki mitä sisällöntuottaja tarvitsee yhdessä paikassa",
+      "subtitle": "Brieffaa kerran, julkaise kaikkialle — menettämättä ääntä, jota yleisösi seuraa.",
+      "items": [
+        {
+          "title": "Äänesi, lukittuna",
+          "description": "Määritä persoona äänelläsi, sävylläsi ja tarkoilla ohjeillasi tavallisena tekstinä. Jokainen luonti kulkee tämän linssin läpi — kuulostaa sinulta, ei tekoälytyökalulta."
+        },
+        {
+          "title": "Yksi toimeksianto, kahdeksan natiivia julkaisua",
+          "description": "Kirjoita idea kerran. Loritalk tuottaa Instagramille, TikTokille, YouTube Shortsille, X:lle, Threadsille, Facebookille, LinkedInille ja Telegramille optimoidun version sekunneissa."
+        },
+        {
+          "title": "Brändinmukaiset kuvat per muoto",
+          "description": "Feed-julkaisut, tarinat, hero-rajaukset, pystysuuntaiset Reelseille ja Shortsille. Kuvat renderöidään oikealla kuvasuhteella ja persoonasi visuaalisten sääntöjen mukaan."
+        },
+        {
+          "title": "Aikatauluta viikko yhdeltä istumalta",
+          "description": "Suunnittele maanantaista sunnuntaihin jokaisella alustalla yhden kalenterin sisällä. Natiivit API:t työntävät automaattisesti — silloinkin kun kuvaat seuraavaa erää."
+        },
+        {
+          "title": "Näe mikä kasvaa",
+          "description": "Kattavuus, sitoutuminen, klikkaukset ja seuraajien kasvu kanavakohtaisesti. KPI-kortit ja Lori Insights nostavat esiin sen, mikä toimii — panosta siihen."
+        },
+        {
+          "title": "Moderoitu ennen julkaisua",
+          "description": "Jokainen luonnos kulkee automaattisen moderoinnin läpi, joten bränditurvallinen sisältö tavoittaa yleisösi ja sponsorisi pysyvät tyytyväisinä."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Miltä sisällöntuottajan viikko näyttää Loritalkissa",
+      "subtitle": "Vangitse äänesi kerran, brieffaa yksi idea, julkaise jokaisella alustalla, seuraa mikä kasvaa.",
+      "steps": [
+        {
+          "badge": "01 · ÄÄNI",
+          "title": "Määritä persoonasi",
+          "description": "Kirjoita äänesi, sävysi ja talon säännöt persoonaan. Siitä tulee linssi, jonka läpi jokainen tuleva julkaisu kulkee."
+        },
+        {
+          "badge": "02 · TOIMEKSIANTO",
+          "title": "Brieffaa yksi idea",
+          "description": "Kirjoita konsepti, valitse kanavat ja kieli. Loritalk tuottaa natiivin version per alusta sekunneissa — kuvatekstit, käsikirjoitukset, ketjut, koukut."
+        },
+        {
+          "badge": "03 · JULKAISU",
+          "title": "Muokkaa ja aikatauluta",
+          "description": "Viimeistele vahvin variantti kanavakohtaisesti, jonota kaikki kalenteriin, kävele pois. API:t julkaisevat oikeaan aikaan, oikeassa muodossa."
+        },
+        {
+          "badge": "04 · SEURANTA",
+          "title": "Seuraa mikä toimii",
+          "description": "Kanavakohtainen analytiikka näyttää, mikä kerää kattavuutta ja sitoutumista. Iteroi näkökulmaa, älä työnkulkua."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Sisällöntuottajille rakennetut paketit",
+      "subtitle": "Aloita ilmaiseksi betan aikana. Valitse julkaisutiheyttäsi vastaava volyymi."
+    },
+    "faq": {
+      "title": "Sisällöntuottajien kysymyksiin vastattu.",
+      "items": [
+        {
+          "q": "Kuulostaako se minulta?",
+          "a": "Kuvaile äänesi, sävysi ja talon säännöt persoonassa. Jokainen luonti kulkee tämän linssin läpi. Mitä yksityiskohtaisempi persoona, sitä lähempänä ääntäsi."
+        },
+        {
+          "q": "Mihin alustoihin todella julkaisette?",
+          "a": "Natiivi julkaisu kattaa Instagramin, TikTokin, YouTube Shortsin, X:n, Threadsin, Facebookin, LinkedInin ja Telegramin — kahdeksan verkostoa virallisten API:en kautta. Virheet yhdellä kanavalla eivät koskaan estä muita."
+        },
+        {
+          "q": "Voinko muokata ennen julkaisua?",
+          "a": "Aina. Loritalk tuottaa luonnoksen kanavakohtaisesti — sinä valitset, hienosäädät ja julkaiset. Mikään ei mene julki ilman että painat nappia (ellet ole aikatauluttanut sitä)."
+        },
+        {
+          "q": "Entä kuvat ja lyhytmuotoinen video?",
+          "a": "Brändinmukaiset kuvat luodaan alustakohtaisesti oikealla kuvasuhteella (neliö, pysty 9:16, hero). Lyhytmuotoiseen videoon saat natiivin kuvatekstin, jossa on koukku ensimmäisinä sekunteina ja CTA — liitä suoraan TikTokiin tai YouTube Shortsiin."
+        },
+        {
+          "q": "Onko Loritalk ilmainen betan aikana?",
+          "a": "Kyllä. Beta-pääsy on ilmainen anteliailla rajoituksilla. Jokainen beta-käyttäjä säilyttää nykyisen hintansa lukittuna ikuisesti, kun maksulliset paketit lanseerataan."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Lopeta uudelleenkirjoittaminen. Aloita julkaiseminen.",
+      "subtitle": "Liity betaan — ilmainen, ei luottokorttia, hintasi lukitaan ikuisesti, kun lanseeraamme.",
+      "ctaPrimary": "Aloita ilmaiseksi Starterilla",
+      "ctaSecondary": "Katso sisällöntuottajien paketit"
+    }
   }
 }

@@ -3,26 +3,60 @@
     "features": "Funcționalități",
     "howItWorks": "Cum funcționează",
     "pricing": "Prețuri",
+    "forAgencies": "Pentru agenții",
+    "forCreators": "Pentru creatori",
     "beta": "Beta",
     "startForFree": "Începe gratuit"
   },
   "hero": {
-    "badge": "Acum în Beta — acces anticipat gratuit",
+    "badge": "În Beta · Preț de acces anticipat blocat pentru totdeauna",
     "headlineOne": "Scrie mai puțin.",
     "headlineTwo": "Publică mai mult.",
-    "description": "Scrie o temă sau o idee. AI-ul Loritalk scrie postări optimizate pentru Instagram, LinkedIn, X, TikTok și altele — în secunde. Mai multe modele AI concurează pentru a-ți oferi cel mai bun rezultat.",
-    "ctaPrimary": "Începe să creezi gratuit",
-    "ctaSecondary": "Vezi cum funcționează",
-    "note": "Nu este nevoie de card de credit · Gratuit în timpul Beta",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Rescris.",
+    "headlineThree": "Verificat.",
+    "lead": "Descrie-ți postarea o singură dată. LoriTalk scrie <strong>o versiune nativă pentru fiecare platformă conectată</strong>, generează imagini fidele brandului, trece fiecare cuvânt printr-o moderare automată și le programează — în câteva secunde.",
+    "ctaPrimary": "Începe gratuit — fără card",
+    "ctaSecondary": "Vezi cum funcționează · 90s",
+    "trust": [
+      "8 integrări native",
+      "Moderat automat",
+      "Izolat pe workspace"
+    ],
+    "briefCard": {
+      "label": "Brieful tău · 1 din 1",
+      "typed": "Lansăm noul nostru pantof sport sustenabil. Fabricat din 80% plastic reciclat din oceane. Țintim alergătorii din Generația Z.",
+      "meta": "en · 8 canale · Voce de brand",
+      "send": "Generează ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "postări · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · pagini",
+      "x": "X / Twitter",
+      "xTag": "thread-uri · postare unică",
+      "tiktok": "TikTok",
+      "tiktokTag": "scripturi · descrieri",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "nativ",
+      "facebook": "Facebook",
+      "facebookTag": "pagini",
+      "telegram": "Telegram",
+      "telegramTag": "canale · grupuri"
+    },
+    "leadHook": "Descrie-ți postarea o singură dată.",
+    "leadBody": "LoriTalk scrie <strong>o versiune nativă pentru fiecare platformă conectată</strong>, generează imagini fidele brandului, trece fiecare cuvânt printr-o moderare automată și le programează — în câteva secunde."
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Rețele sociale suportate",
-    "languagesValue": "3",
-    "languagesLabel": "Limbi la lansare",
-    "generationValue": "<5s",
-    "generationLabel": "Timp mediu de generare",
+    "languagesValue": "24+",
+    "languagesLabel": "Limbi în interfață",
+    "generationValue": "Secunde",
+    "generationLabel": "De la brief la gata de publicat",
     "freeValue": "Gratuit",
     "freeLabel": "În timpul Beta — fără limite"
   },
@@ -31,113 +65,181 @@
     "subtitle": "Sună familiar?",
     "items": [
       {
-        "title": "Ore pierdute adaptând",
-        "description": "Scrii o postare pentru Instagram, apoi o rescrii pentru LinkedIn, apoi din nou pentru X. Fiecare platformă necesită ton, lungime și hashtag-uri diferite."
+        "title": "Ore pierdute cu adaptarea",
+        "description": "Scrii o postare pentru Instagram, apoi o rescrii pentru LinkedIn, apoi din nou pentru X. Fiecare platformă cere alt ton, altă lungime și alte hashtag-uri."
       },
       {
-        "title": "AI care sună generic",
-        "description": "AI îți dă o versiune care sună ca toți ceilalți. Fără vocea brandului, fără conștientizarea platformei, fără optimizare reală."
+        "title": "Un AI care sună generic",
+        "description": "Un AI cu un singur model îți dă o singură versiune care sună ca a tuturor. Fără voce de brand, fără conștientizarea platformei, fără optimizare reală."
       },
       {
         "title": "Blocaje în echipă",
-        "description": "Conținutul așteaptă aprobarea, se pierde în thread-urile Slack și nimeni nu știe ce este programat pentru săptămâna viitoare."
+        "description": "Conținutul așteaptă aprobarea, se pierde în thread-urile de Slack și nimeni nu știe ce e programat pentru săptămâna viitoare."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk rezolvă toate astea",
-    "subtitle": "Un briefing. Fiecare platformă. Mai multe AI-uri concurează pentru cea mai bună postare a ta.",
+    "title": "LoriTalk rezolvă toate astea",
+    "subtitle": "Un singur brief. O versiune nativă pentru fiecare platformă. Imagini fidele brandului, randate în paralel.",
     "ctaPrimary": "Începe să creezi gratuit",
     "rows": [
       {
         "before": "1 postare = 45 min de adaptare pentru fiecare platformă",
-        "after": "1 briefing = toate platformele în <5 secunde"
+        "after": "1 brief = toate platformele în <5 secunde"
       },
       {
-        "before": "1 model AI = text generic, potrivit tuturor",
-        "after": "Mai multe modele AI deliberează și se rafinează reciproc"
+        "before": "Text AI generic refolosit pe fiecare rețea",
+        "after": "O versiune nativă pe fiecare canal — lungime, hashtag-uri și ton adaptate"
       },
       {
-        "before": "Conținut răspândit între instrumente și thread-uri",
-        "after": "Un panou: crează, aprobă, programează, publică, monitorizează"
+        "before": "Conținut împrăștiat prin instrumente și thread-uri",
+        "after": "Un singur panou: creezi, aprobi, programezi, publici, urmărești"
       }
     ]
   },
   "features": {
     "title": "Tot ce are nevoie echipa ta de conținut",
-    "subtitle": "De la idee la postarea publicată — Loritalk gestionează întregul flux de lucru.",
+    "subtitle": "De la idee la postarea publicată — LoriTalk gestionează întregul flux de lucru.",
     "items": [
       {
-        "title": "Deliberare AI Multi-Model",
-        "description": "Nu un singur AI — mai multe modele generează independent, apoi rafinează munca celorlalte."
+        "title": "Conținut nativ pentru fiecare platformă",
+        "description": "Un singur brief devine o versiune nativă pentru fiecare platformă — lungime, hashtag-uri, emoji-uri și ton adaptate pentru Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads și Telegram."
       },
       {
-        "title": "Conținut optimizat pentru platformă",
-        "description": "Fiecare postare este adaptată platformei sale — ton, lungime, hashtag-uri, emoji-uri și format corecte. Descrieri Instagram, articole LinkedIn, thread-uri X, scripturi TikTok."
+        "title": "Generare de imagini fidele brandului",
+        "description": "Imagini randate pentru fiecare platformă, cu raportul de aspect corect și regulile vizuale ale personajului tău — postări în feed, stories, cadre hero. Gata cu redimensionarea manuală."
       },
       {
         "title": "Generare multilingvă",
-        "description": "Generează în portugheză, engleză, spaniolă și altele. Fluență la nivel nativ cu nuance culturale — nu doar traducere."
+        "description": "Generează în portugheză, engleză, spaniolă și altele. Fluență la nivel nativ, cu nuanțe culturale — nu doar traducere."
       },
       {
         "title": "Programează și publică",
-        "description": "Vizualizare calendar, publicare programată și postare directă pe toate canalele conectate. Ore diferite per platformă."
+        "description": "Vizualizare în calendar, publicare programată și postare directă pe toate canalele conectate. Ore diferite pentru fiecare platformă."
       },
       {
-        "title": "Vocea brandului și personaje",
-        "description": "Crează personaje AI care scriu ca brandul tău. Controlează tonul de la profesional la jucăuș. Fiecare postare sună ca tine, nu ca un robot."
+        "title": "Voce de brand și personaje",
+        "description": "Creează personaje AI care scriu ca brandul tău. Controlează tonul, de la profesional la jucăuș. Fiecare postare sună ca tine, nu ca un robot."
       },
       {
         "title": "Panou de analiză",
-        "description": "Monitorizează afișări, interacțiuni, click-uri și creștere pe toate canalele. Află ce conținut funcționează și dublează efortul."
+        "description": "Urmărește acoperirea, interacțiunile, click-urile și creșterea pe fiecare canal. Cardurile de KPI, postările de top și Lori Insights scot la iveală ce funcționează."
       }
     ]
   },
   "howItWorks": {
-    "title": "De la idee la postare în 3 pași",
-    "subtitle": "Fără ecrane goale. Fără copy-paste între platforme.",
+    "eyebrow": "05 · Flux de lucru",
+    "title": "Brief → previzualizare → publicare.",
+    "titleAccent": "Trei mișcări.",
+    "titleTail": "În câteva secunde.",
+    "subtitle": "Nu alegi niciodată un model. Nu redimensionezi niciodată o imagine. Nu copiezi și lipești niciodată între file.",
     "steps": [
       {
-        "title": "Scrie briefing-ul tău",
-        "description": "Descrie ce vrei să comunici — atât de simplu ca \"lansarea unui produs nou\" sau atât de detaliat ca un briefing complet. Alege canalele, limba și tonul."
+        "badge": "01",
+        "eyebrow": "Input",
+        "title": "Scrie-ți brieful",
+        "description": "O propoziție sau trei paragrafe. Alege canalele, personajul și limba. Asta e tot ce ai de scris azi.",
+        "footLeft": "~ 5 sec de scris",
+        "footRight": "1 brief"
       },
       {
-        "title": "Modelele AI concurează pentru tine",
-        "description": "Mai multe modele AI generează conținut independent, apoi revizuiesc și rafinează rezultatele celorlalte. Primești N versiuni șlefuite per platformă."
+        "badge": "02",
+        "eyebrow": "Generare",
+        "title": "AI-ul îl adaptează pentru fiecare canal",
+        "description": "LoriTalk îți citește brieful, personajul și regulile native ale fiecărei platforme — apoi creează o versiune făcută pentru fiecare canal. Moderarea automată rulează înainte să o vezi.",
+        "footLeft": "~ 3 sec pe canal",
+        "footRight": "Pentru fiecare canal conectat"
       },
       {
-        "title": "Alege, editează și publică",
-        "description": "Alege versiunea ta favorită pentru fiecare canal. Ajustează orice cu un click. Publică acum sau programează pentru mai târziu."
+        "badge": "03",
+        "eyebrow": "Distribuție",
+        "title": "Publică sau programează",
+        "description": "Trimite acum sau plasează în calendar cu ore distincte pentru fiecare platformă. Fiecare canal livrează prin API-ul său nativ; erorile sunt izolate — Instagram tot pleacă, chiar dacă Facebook are o problemă.",
+        "footLeft": "API-uri native · OAuth",
+        "footRight": "8 canale"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "„Lansăm noul nostru pantof sport sustenabil. Fabricat din 80% plastic reciclat din oceane. Țintim alergătorii din Generația Z.”",
+      "channelsComment": "// canale:"
+    },
+    "personasViz": {
+      "personaLabel": "Personaj",
+      "languageLabel": "Limbă",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutru — vocea de brand a lui Lori"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Relaxat, amuzant, conversațional"
+        },
+        {
+          "name": "Core",
+          "desc": "Îndrăzneț, optimist, axat pe brand"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "carusel",
+          "when": "Azi 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "articol lung",
+          "when": "Azi 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "thread",
+          "when": "Azi 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Mâine 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "postare",
+          "when": "Mâine 12:00"
+        }
+      ],
+      "cta": "▶ Publică tot · ⏱ Programează"
+    }
   },
-  "differentiator": {
-    "title": "De ce mai multe AI-uri bat unul singur",
-    "subtitle": "Alte instrumente folosesc un model. Loritalk folosește mai multe — și le face să se îmbunătățească reciproc.",
-    "briefLabel": "Briefing-ul tău",
-    "channels": "Canale",
-    "language": "Limbă:",
-    "languages": "Engleză, Portugheză",
-    "submitted": "Trimis acum 2s",
-    "round1": "RUNDA 1 — GENERARE INDEPENDENTĂ",
-    "generated": "Generat",
-    "round2": "Runda 2 — Rafinare încrucișată",
-    "round2Desc": "Fiecare model citește toate rezultatele și își îmbunătățește propria versiune",
-    "qualityNote": "Calitatea s-a îmbunătățit cu ~40% față de Runda 1",
-    "pickEdit": "Alege și editează",
-    "addMedia": "Adaugă media",
-    "uploading": "Se încarcă imaginea...",
-    "imageAttached": "Imagine încărcată cu succes",
-    "generateAI": "Generează cu AI",
-    "readyPublish": "Gata de publicare",
-    "publishAll": "Publică tot",
-    "scheduled": "Programat",
-    "draft": "Ciornă",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Imagini",
+    "title": "Imagini fidele brandului",
+    "titleAccent": "imagini",
+    "titleTail": "dimensionate pentru fiecare platformă.",
+    "subtitle": "Generarea de imagini rulează asincron și pentru fiecare platformă — fără redimensionare manuală, fără stock care nu se potrivește brandului. Postări simple, carusele, formate pentru stories, cadre hero. Fiecare randare ține cont de regulile vizuale ale personajului activ.",
+    "tiles": {
+      "instagramCaption": "5 dimineața. Cafea, două file, o decizie.\nAm construit v2 înainte ca echipa să intre online.",
+      "storyQuote": "am ajuns la 1M MRR în aceeași săptămână în care am tăiat jumătate din roadmap.",
+      "storySwipe": "↑ glisează",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Am angajat 3 colaboratori înainte de primul angajat cu normă întreagă. Iată tabelul.",
+      "linkedinCta": "Citește mai mult →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "majoritatea „conținutului de fondator” e un comunicat de presă într-un hanorac. scrie ca un om. #shipping",
+      "generatingLabel": "Se randează · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "PRIMA",
+      "ytTitleLineTwo": "ANGAJARE.",
+      "ytSubtitle": "De ce am așteptat 18 luni.",
+      "ytMeta": "LoriTalk · Ep. 14 · 32 min"
+    }
   },
   "useCases": {
     "title": "Construit pentru echipe care publică",
-    "subtitle": "Fie că ești creator solo sau o agenție de 50 de persoane.",
+    "subtitle": "Fie că ești creator solo, fie o agenție de 50 de persoane.",
     "items": [
       {
         "title": "Creatori solo și freelanceri",
@@ -145,131 +247,85 @@
       },
       {
         "title": "Echipe de marketing",
-        "description": "Un workspace per brand. Fluxuri de aprobare. Vizualizare calendar. Toată lumea știe ce se publică și când."
+        "description": "Un workspace pentru fiecare brand. Vizualizare în calendar pentru fiecare workspace. Toată lumea știe ce se publică și când."
       },
       {
         "title": "Agenții",
-        "description": "Gestionează mai multe branduri dintr-un singur cont. Atribuie roluri, controlează accesul, monitorizează performanța tuturor clienților. Postări nelimitate în planul Agenție."
+        "description": "Gestionează mai multe branduri dintr-un singur cont. Un workspace pentru fiecare client, cu canale, personaje și calendar izolate. Analiză pe fiecare canal, pentru fiecare brand."
       }
     ]
   },
   "pricing": {
     "title": "Prețuri simple și transparente",
-    "subtitle": "Gratuit în timpul Beta. Utilizatorii timpurii își blochează tariful pentru totdeauna la lansare.",
-    "mostPopular": "Cel mai popular",
+    "subtitle": "Bazat pe credite. Anulezi oricând. Plata anuală îți economisește două luni.",
     "monthly": "Lunar",
     "annual": "Anual",
     "save2Months": "-17%",
     "perMonth": "/ lună",
+    "perMonthBilledYearly": "/ lună, facturat anual",
     "perYear": "/ an",
-    "billedAnnually": "Facturat anual",
-    "customPriceLabel": "Personalizat",
-    "plans": [
-      {
-        "name": "Gratuit",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "în timpul Beta",
-        "description": "Încearcă totul cu limite generoase.",
-        "features": [
-          "5 postări / lună",
-          "3 rețele",
-          "Controale de bază ale tonului",
-          "Sugestii de hashtag-uri"
-        ],
-        "cta": "Începe gratuit",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Economisești {{amount}} / an",
+    "mostPopular": "Cel mai popular",
+    "bestValue": "Cel mai bun raport",
+    "creditsUnit": "credite / lună",
+    "creditsTexts": "~{{count}} postări text",
+    "creditsOr": "sau",
+    "creditsImages": "~{{count}} imagini fidele brandului",
+    "promoExplainer": "Promoție pentru primul an: primești 2× credite ÎN FIECARE lună, pe tot parcursul primului an, când alegi planul Anual — adică {{count}} credite bonus în fiecare lună.",
+    "promoHeroExtra": "(+{{count}} credite bonus în fiecare lună, timp de 12 luni)",
+    "tierChoose": "Alege planul",
+    "features": {
+      "workspaces_one": "{{count}} workspace",
+      "workspaces_few": "{{count}} workspace-uri",
+      "workspaces_other": "{{count}} de workspace-uri",
+      "channels": "{{count}} canale sociale",
+      "personas": "{{count}} personaje de brand",
+      "members_one": "{{count}} membru de echipă",
+      "members_few": "{{count}} membri de echipă",
+      "members_other": "{{count}} de membri de echipă",
+      "media": "{{count}} resurse media"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Pentru cei care creează prima dată conținut cu AI"
       },
-      {
-        "name": "Creator",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Pentru creatori și branduri care publică constant.",
-        "features": [
-          "200 postări / lună",
-          "Toate rețelele",
-          "Ton avansat și personaje",
-          "Calendar de conținut",
-          "Suport prioritar"
-        ],
-        "cta": "Începe perioada de probă gratuită",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Pentru o creare de conținut cu AI constantă și ușoară"
       },
-      {
-        "name": "Agenție",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Pentru echipe care gestionează mai multe branduri.",
-        "features": [
-          "Postări nelimitate",
-          "Toate rețelele",
-          "Mai multe branduri",
-          "Colaborare în echipă",
-          "Analiză",
-          "Manager de cont"
-        ],
-        "cta": "Vorbește cu noi",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Pentru creatorii care construiesc produse cu AI"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Pentru agenții și echipe mici"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Întrebări? Avem răspunsuri.",
     "items": [
       {
-        "q": "Ce modele AI folosește Loritalk?",
-        "a": "Poți configura ce modele participă în pipeline-ul tău de generare."
+        "q": "Cum funcționează AI-ul LoriTalk?",
+        "a": "LoriTalk produce o versiune nativă a briefului tău pentru fiecare canal conectat și randează imagini fidele brandului în paralel. Totul trece printr-un strat de moderare automată înainte să ajungă în panoul tău."
       },
       {
-        "q": "Cum este diferit de other AI tools?",
-        "a": "Other AI tools îți dă un rezultat de la un model. Loritalk rulează mai multe modele în paralel și apoi le face să rafineze munca celorlalte — producând constant calitate mai ridicată. În plus, fiecare postare este optimizată automat pentru fiecare platformă specifică."
+        "q": "Cu ce este diferit de alte instrumente AI?",
+        "a": "Alte instrumente îți dau un singur bloc de text pe care îl copiezi și lipești peste tot. LoriTalk produce versiuni native pentru fiecare platformă — lungime, hashtag-uri, emoji-uri și ton adaptate fiecărei rețele — și publică prin API-ul oficial al fiecărei platforme."
       },
       {
         "q": "Ce rețele sociale sunt suportate?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) și TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads și Telegram — opt rețele prin API-uri native."
       },
       {
-        "q": "Conținutul meu este privat?",
-        "a": "Da. Conținutul tău nu este niciodată folosit pentru antrenarea modelelor AI. Toate datele sunt stocate pe serverele noastre din Europa și procesate în conformitate cu GDPR."
+        "q": "Unde sunt stocate datele mele?",
+        "a": "Datele tale sunt stocate pe servere din Uniunea Europeană. Furnizorii de AI pe care îi folosim (OpenAI pentru text, Google pentru imagini) operează conform termenilor lor de API pentru companii — conținutul trimis către API nu este folosit pentru a antrena modelele lor de uz general."
       },
       {
-        "q": "Pot să-l folosesc cu echipa mea?",
-        "a": "Absolut. Crează workspace-uri pentru fiecare brand, invită membrii echipei cu roluri de admin sau editor și configurează fluxuri de aprobare pentru ca nimic să nu fie publicat fără revizuire."
+        "q": "Îl pot folosi împreună cu echipa mea?",
+        "a": "Da. Creează workspace-uri pentru fiecare brand și invită membrii echipei cu roluri de admin sau publisher. Fiecare workspace are propriile canale conectate, personaje și calendar."
       },
       {
         "q": "Ce se întâmplă după Beta?",
@@ -279,13 +335,13 @@
   },
   "ctaBanner": {
     "headline": "Nu mai scrie. Începe să publici.",
-    "subtitle": "Alătură-te Beta — acces gratuit, fără card de credit, și tariful tău este blocat pentru totdeauna la lansare.",
+    "subtitle": "Alătură-te Beta — acces gratuit, fără card de credit, iar tariful tău rămâne blocat pentru totdeauna când lansăm.",
     "ctaPrimary": "Începe să creezi gratuit",
     "ctaSecondary": "Vezi cum funcționează"
   },
   "footer": {
     "description": "Conținut AI pentru fiecare rețea socială.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugalia",
     "product": "Produs",
     "resources": "Resurse",
     "legal": "Legal",
@@ -299,6 +355,304 @@
     "privacyPolicy": "Politica de confidențialitate",
     "termsOfService": "Termeni și condiții",
     "cookiePolicy": "Politica de cookie-uri",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "legalNotice": "Notă legală",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugalia."
+  },
+  "cookieBanner": {
+    "aria": "Notificare despre cookie-uri",
+    "title": "Folosim cookie-uri",
+    "body": "Cookie-urile strict necesare mențin site-ul funcțional. Cu consimțământul tău, încărcăm și Google Analytics pentru a măsura traficul și Meta Pixel pentru a măsura publicitatea noastră. Poți accepta, refuza sau alege categorie cu categorie — și te poți răzgândi oricând.",
+    "policyLink": "Politica de cookie-uri",
+    "privacyLink": "Politica de confidențialitate",
+    "acceptAll": "Acceptă toate",
+    "rejectOptional": "Respinge opționalele",
+    "customize": "Personalizează",
+    "save": "Salvează preferințele",
+    "necessaryLabel": "Strict necesare",
+    "necessaryDesc": "Necesare pentru funcționarea site-ului (limba și alegerea ta privind consimțământul). Nu pot fi dezactivate.",
+    "analyticsLabel": "Analiză — Google Analytics",
+    "analyticsDesc": "Încarcă Google Analytics 4 pentru a măsura traficul și a îmbunătăți site-ul. Setează cookie-urile _ga și _ga_* și transmite date despre vizualizările de pagină către Google.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Încarcă Meta Pixel (Facebook / Instagram) pentru a putea măsura campaniile publicitare. Setează cookie-urile _fbp și _fbc și transmite date despre vizualizările de pagină către Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Pentru agenții de marketing și studiouri creative",
+      "headlineOne": "Te chinui să livrezi postări",
+      "headlineTwo": "pentru fiecare client",
+      "headlineThree": "pe fiecare platformă?",
+      "lead": "LoriTalk îi oferă agenției tale <strong>un workspace pentru fiecare brand</strong>, un personaj dedicat fiecărui client și publicare nativă pe 8 rețele — astfel încât echipa ta scrie o dată și publică peste tot, pe fiecare cont.",
+      "ctaPrimary": "Începe cu planul Ultra",
+      "ctaSecondary": "Vezi prețurile pentru agenții",
+      "trust": [
+        "Un workspace pentru fiecare brand",
+        "Roluri de admin + publisher",
+        "8 rețele prin API-uri native"
+      ],
+      "hubLabel": "Sediul agenției",
+      "hubTitle": "5 branduri. 5 workspace-uri.",
+      "hubBody": "Fiecare client primește propriul workspace, personaje, canale și analiză. Schimbi contextul cu un singur click.",
+      "hubMeta": "5 workspace-uri · izolate",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "Îți recunoști săptămâna?",
+      "subtitle": "Același conținut rescris de 7 ori pentru 5 clienți. În fiecare săptămână. Am trecut prin asta.",
+      "items": [
+        {
+          "title": "Jonglezi cu 5+ clienți deodată",
+          "description": "Fiecare brand vrea alt ton, alte platforme, alte termene-limită. Foile de calcul și thread-urile de Slack nu sunt un flux de lucru."
+        },
+        {
+          "title": "Vocea brandului se pierde cu fiecare postare",
+          "description": "Alți copywriteri, alte file, alte prompturi de ChatGPT. Vocea pe care clientul tău a aprobat-o acum șase luni a dispărut."
+        },
+        {
+          "title": "Reprogramări de vineri seara",
+          "description": "Clientul cere modificări de ultim moment pe Instagram, LinkedIn și TikTok. Rescrii aceeași idee de trei ori — și tot ratezi fereastra de publicare."
+        },
+        {
+          "title": "Raportarea durează o zi întreagă",
+          "description": "Copiezi afișările, interacțiunile și click-urile din cinci panouri într-o prezentare. Manual. În fiecare lună."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Tot ce are nevoie agenția ta, într-un singur loc",
+      "subtitle": "De la brief la raport — LoriTalk rulează întregul pipeline de conținut pentru fiecare brand pe care îl gestionezi.",
+      "items": [
+        {
+          "title": "Un workspace pentru fiecare client",
+          "description": "Workspace-uri izolate, cu propriile canale conectate, personaje, membri și calendar. Pornești un client nou în câteva minute."
+        },
+        {
+          "title": "Personaje cu voce de brand",
+          "description": "Definește un personaj pentru fiecare client — voce, ton, instrucțiuni specifice. Fiecare generare pentru acel workspace respectă brieful, de fiecare dată."
+        },
+        {
+          "title": "8 rețele, un singur brief",
+          "description": "Scrie brieful o dată și primește versiuni native pentru Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads și Telegram — toate în câteva secunde, toate prin API-uri oficiale."
+        },
+        {
+          "title": "Calendar pentru fiecare workspace",
+          "description": "Fiecare client are propria vizualizare pe săptămână / lună / coadă. Programezi postări pe fiecare canal și vezi întregul pipeline al brandului dintr-o privire."
+        },
+        {
+          "title": "Roluri de admin + publisher",
+          "description": "Invită membrii echipei în fiecare workspace ca admin (administrare completă) sau publisher (creează și publică). Workspace-urile sunt complet izolate unele de altele."
+        },
+        {
+          "title": "Analiză pentru fiecare workspace",
+          "description": "Acoperire, interacțiuni, click-uri și creștere pe fiecare canal, în interiorul workspace-ului fiecărui client. Carduri de KPI, postări de top și Lori Insights — fără să sari între panouri."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Cum arată o săptămână de agenție pe LoriTalk",
+      "subtitle": "Integrezi un brand, dai brieful către AI, obții aprobarea, livrezi. Repeți pentru fiecare client.",
+      "steps": [
+        {
+          "badge": "01 · INTEGRARE",
+          "title": "Pornește workspace-ul clientului",
+          "description": "Creează un workspace, conectează conturile sociale ale brandului și configurează personajul — voce, ton, instrucțiuni specifice. Gata de folosit în câteva minute."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Scrie un brief pentru fiecare campanie",
+          "description": "Alege personajul, canalele și limba. LoriTalk generează o versiune nativă pentru fiecare platformă în câteva secunde."
+        },
+        {
+          "badge": "03 · RAFINARE",
+          "title": "Editați în echipă",
+          "description": "Echipa ta revizuiește ciornele în interiorul workspace-ului — ajustează textul, schimbă imaginile, alege cea mai puternică variantă pentru fiecare canal înainte de publicare."
+        },
+        {
+          "badge": "04 · LIVRARE",
+          "title": "Publică și urmărește",
+          "description": "API-urile native trimit către fiecare canal. Performanța revine în panoul fiecărui workspace — KPI-uri, postări de top și creștere pe fiecare canal."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planuri create pentru agenții",
+      "subtitle": "Gestionează câteva branduri sau un portofoliu întreg de clienți. Alege volumul care se potrivește cu abonamentul tău.",
+      "customPrice": "Hai să vorbim",
+      "customCredits": "Credite nelimitate",
+      "customCreditsDetail": "Volum convenit prin contract — fără depășiri-surpriză.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Personalizat",
+          "description": "Pentru rețele și agenții mari care au nevoie de volume și integrare la comandă.",
+          "cta": "Vorbește cu echipa de vânzări"
+        }
+      },
+      "features": {
+        "customVolumes": "Volume de credite personalizate",
+        "priorityEmail": "Suport prioritar pe email",
+        "euData": "Stocarea datelor în UE"
+      }
+    },
+    "faq": {
+      "title": "Întrebări de agenție, cu răspunsuri.",
+      "items": [
+        {
+          "q": "Cum sunt împărțite creditele între clienți?",
+          "a": "Creditele se află la nivelul contului de agenție — orice workspace poate consuma din același bazin. Urmărești utilizarea în panoul de facturare."
+        },
+        {
+          "q": "Ce se întâmplă când integrăm sau eliminăm un client?",
+          "a": "Pornești un workspace nou în câteva secunde. Arhivarea unui workspace îl scoate din vizualizarea activă; ștergerea completă a contului respectă regulile de păstrare GDPR."
+        },
+        {
+          "q": "Pe ce rețele sociale putem publica?",
+          "a": "Publicarea nativă acoperă LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads și Telegram — opt rețele, fiecare prin API-ul oficial al platformei, astfel încât erorile rămân izolate pe fiecare canal."
+        },
+        {
+          "q": "Pot clienții să se autentifice ca să-și vadă workspace-ul?",
+          "a": "Nu deocamdată. Workspace-urile sunt doar pentru echipa agenției — roluri de admin și publisher. Accesul clienților este pe roadmap."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Gata să scalezi conținutul pentru fiecare client?",
+      "subtitle": "Începe astăzi cu planul Ultra sau rezervă o demonstrație de 20 de minute cu echipa pentru agenții, ca să vezi LoriTalk pe propriile tale branduri.",
+      "ctaPrimary": "Începe cu Ultra",
+      "ctaSecondary": "Rezervă o demonstrație"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Pentru creatori solo și influenceri",
+      "headlineOne": "O singură idee.",
+      "headlineTwo": "Fiecare platformă.",
+      "headlineThree": "Fără să-ți pierzi weekendul.",
+      "lead": "LoriTalk transformă un singur brief în <strong>postări native pentru Instagram, TikTok, YouTube Shorts, X, Threads</strong> și altele — păstrându-ți vocea consecventă pe fiecare cont.",
+      "ctaPrimary": "Începe gratuit cu Starter",
+      "ctaSecondary": "Vezi planurile pentru creatori",
+      "trust": [
+        "Vocea ta pe fiecare canal",
+        "8 rețele prin API-uri native",
+        "Programezi săptămâni dintr-o singură mișcare"
+      ],
+      "hubLabel": "Studioul tău",
+      "hubTitle": "1 brief. 8 postări native.",
+      "hubBody": "Definește-ți personajul o dată. LoriTalk adaptează fiecare postare la fiecare platformă — lungime, hashtag-uri, emoji-uri, ton, format de imagine.",
+      "hubMeta": "1 personaj · 8 canale",
+      "hubBadge": "Live",
+      "cardTag": "Format nativ"
+    },
+    "pains": {
+      "title": "Seamănă cu săptămâna ta?",
+      "subtitle": "Să postezi în fiecare zi pe fiecare platformă n-ar trebui să te coste o după-amiază de duminică. Am trecut prin asta.",
+      "items": [
+        {
+          "title": "Aceeași idee, rescrisă de 8 ori",
+          "description": "Descriere pentru Instagram, script pentru TikTok, hook pentru YouTube, thread pentru X… fiecare platformă cere altă formă. Arzi o după-amiază pe o singură postare."
+        },
+        {
+          "title": "Algoritmii pedepsesc pauzele",
+          "description": "Ratezi două zile și acoperirea scade. Rămâi consecvent pe fiecare platformă și abia mai ai timp să filmezi, darămite să-ți trăiești viața."
+        },
+        {
+          "title": "Colaborările cu branduri cer multi-platformă",
+          "description": "Sponsorii vor Reels + Shorts + TikTok + postare. Aceeași campanie, patru formate. Taxezi pentru unul și livrezi patru."
+        },
+        {
+          "title": "Vocea se diluează",
+          "description": "Până la postarea cincisprezece, descrierile sună de parcă le-a scris un străin. Publicul își dă seama. Interacțiunile scad."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Tot ce are nevoie un creator, într-un singur loc",
+      "subtitle": "Un brief o dată, livrezi peste tot — fără să pierzi vocea pe care o urmărește publicul tău.",
+      "items": [
+        {
+          "title": "Vocea ta, fixată",
+          "description": "Definește un personaj cu vocea, tonul și instrucțiunile tale specifice, în text simplu. Fiecare generare trece prin acea lentilă — sună ca tine, nu ca un instrument AI."
+        },
+        {
+          "title": "Un brief, opt postări native",
+          "description": "Scrie ideea o dată. LoriTalk produce o versiune optimizată pentru Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn și Telegram în câteva secunde."
+        },
+        {
+          "title": "Imagini fidele brandului pentru fiecare format",
+          "description": "Postări în feed, stories, cadre hero, vertical pentru Reels și Shorts. Imaginile sunt randate cu raportul de aspect corect și regulile vizuale ale personajului tău."
+        },
+        {
+          "title": "Programezi o săptămână dintr-o singură ședință",
+          "description": "Planifici de luni până duminică pe fiecare platformă, într-un singur calendar. API-urile native trimit automat — chiar și când filmezi următorul lot."
+        },
+        {
+          "title": "Vezi ce crește",
+          "description": "Acoperire, interacțiuni, click-uri și creșterea numărului de urmăritori pe fiecare canal. Cardurile de KPI și Lori Insights scot la iveală ce funcționează — concentrează-te pe asta."
+        },
+        {
+          "title": "Moderat înainte de publicare",
+          "description": "Fiecare ciornă trece printr-o moderare automată, astfel încât conținut sigur pentru brand ajunge la publicul tău, iar sponsorii tăi rămân mulțumiți."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Cum arată o săptămână de creator pe LoriTalk",
+      "subtitle": "Îți captezi vocea o dată, dai brieful pentru o idee, livrezi pe fiecare platformă, urmărești ce crește.",
+      "steps": [
+        {
+          "badge": "01 · VOCE",
+          "title": "Definește-ți personajul",
+          "description": "Scrie-ți vocea, tonul și regulile proprii într-un personaj. Devine lentila prin care trece fiecare postare viitoare."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Dă brieful pentru o idee",
+          "description": "Scrie conceptul, alege canalele și limba. LoriTalk produce o versiune nativă pentru fiecare platformă în câteva secunde — descrieri, scripturi, thread-uri, hook-uri."
+        },
+        {
+          "badge": "03 · LIVRARE",
+          "title": "Editează și programează",
+          "description": "Șlefuiește cea mai puternică variantă pentru fiecare canal, pune totul la coadă în calendar și pleacă. API-urile publică la momentul potrivit, în formatul potrivit."
+        },
+        {
+          "badge": "04 · URMĂRIRE",
+          "title": "Urmărește ce funcționează",
+          "description": "Analiza pe fiecare canal arată ce atrage acoperire și interacțiuni. Iterezi unghiul, nu fluxul de lucru."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planuri create pentru creatori",
+      "subtitle": "Începe gratuit în timpul Beta. Alege volumul care se potrivește cu cât de des postezi."
+    },
+    "faq": {
+      "title": "Întrebări de creator, cu răspunsuri.",
+      "items": [
+        {
+          "q": "Va suna ca mine?",
+          "a": "Descrie-ți vocea, tonul și regulile proprii într-un personaj. Fiecare generare trece prin acea lentilă. Cu cât personajul e mai detaliat, cu atât e mai aproape de vocea ta."
+        },
+        {
+          "q": "Pe ce platforme publicați de fapt?",
+          "a": "Publicarea nativă acoperă Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn și Telegram — opt rețele prin API-uri oficiale. Erorile de pe un canal nu blochează niciodată celelalte."
+        },
+        {
+          "q": "Pot edita înainte de a posta?",
+          "a": "Întotdeauna. LoriTalk produce o ciornă pentru fiecare canal — tu alegi, ajustezi și publici. Nimic nu apare live fără să apeși tu butonul (decât dacă ai programat-o)."
+        },
+        {
+          "q": "Cum rămâne cu imaginile și conținutul video scurt?",
+          "a": "Imaginile fidele brandului sunt generate pentru fiecare platformă, cu raportul de aspect corect (pătrat, vertical 9:16, hero). Pentru conținutul video scurt primești o descriere nativă cu un hook în primele secunde și un CTA — o lipești direct în TikTok sau YouTube Shorts."
+        },
+        {
+          "q": "Este LoriTalk gratuit în timpul Beta?",
+          "a": "Da. Accesul Beta este gratuit, cu limite generoase. Fiecare utilizator Beta își păstrează tariful curent blocat pentru totdeauna când se lansează planurile plătite."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Nu mai rescrie. Începe să livrezi.",
+      "subtitle": "Alătură-te Beta — gratuit, fără card de credit, iar tariful tău rămâne blocat pentru totdeauna când lansăm.",
+      "ctaPrimary": "Începe gratuit cu Starter",
+      "ctaSecondary": "Vezi planurile pentru creatori"
+    }
   }
 }

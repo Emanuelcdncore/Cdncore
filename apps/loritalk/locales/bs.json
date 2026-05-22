@@ -1,0 +1,658 @@
+{
+  "navbar": {
+    "features": "Funkcije",
+    "howItWorks": "Kako funkcioniše",
+    "pricing": "Cijene",
+    "forAgencies": "Za agencije",
+    "forCreators": "Za kreatore",
+    "beta": "Beta",
+    "startForFree": "Počni besplatno"
+  },
+  "hero": {
+    "badge": "U Beti · Cijena za rane korisnike zaključana zauvijek",
+    "headlineOne": "Piši manje.",
+    "headlineTwo": "Objavljuj više.",
+    "headlineTwoTail": "",
+    "headlineStrike": "Prepisano.",
+    "headlineThree": "Provjereno.",
+    "lead": "Opiši svoju objavu jednom. Loritalk piše <strong>nativnu verziju za svaku povezanu platformu</strong>, generiše slike u skladu s brendom, propušta svaku riječ kroz automatsku moderaciju i raspoređuje ih — za nekoliko sekundi.",
+    "ctaPrimary": "Počni besplatno — bez kartice",
+    "ctaSecondary": "Pogledaj na djelu · 90s",
+    "trust": [
+      "8 nativnih integracija",
+      "Automatski moderirano",
+      "Izolovano po radnom prostoru"
+    ],
+    "briefCard": {
+      "label": "Tvoj zadatak · 1 od 1",
+      "typed": "Lansiramo naše nove održive tenisice. Napravljene od 80% recikliranog okeanskog plastika. Ciljamo trkače iz generacije Z.",
+      "meta": "en · 8 kanala · Glas brenda",
+      "send": "Generiši ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "objave · reels · priče",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · stranice",
+      "x": "X / Twitter",
+      "xTag": "niti · pojedinačno",
+      "tiktok": "TikTok",
+      "tiktokTag": "skripte · opisi",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "nativno",
+      "facebook": "Facebook",
+      "facebookTag": "stranice",
+      "telegram": "Telegram",
+      "telegramTag": "kanali · grupe"
+    },
+    "leadHook": "Opiši svoju objavu jednom.",
+    "leadBody": "Loritalk piše <strong>nativnu verziju za svaku povezanu platformu</strong>, generiše slike u skladu s brendom, propušta svaku riječ kroz automatsku moderaciju i raspoređuje ih — za nekoliko sekundi."
+  },
+  "stats": {
+    "networksValue": "8",
+    "networksLabel": "Podržanih društvenih mreža",
+    "languagesValue": "24+",
+    "languagesLabel": "Jezika sučelja",
+    "generationValue": "Sekunde",
+    "generationLabel": "Od zadatka do spremnog za objavu",
+    "freeValue": "Besplatno",
+    "freeLabel": "Tokom Bete — bez ograničenja"
+  },
+  "problem": {
+    "title": "Tvoj proces izrade sadržaja je pokvaren",
+    "subtitle": "Zvuči poznato?",
+    "items": [
+      {
+        "title": "Sati potrošeni na prilagođavanje",
+        "description": "Napišeš objavu za Instagram, pa je prepišeš za LinkedIn, pa opet za X. Svaka platforma traži drugačiji ton, dužinu i hashtagove."
+      },
+      {
+        "title": "AI koji zvuči generički",
+        "description": "AI s jednim modelom daje ti jednu verziju koja zvuči kao i kod svih ostalih. Bez glasa brenda, bez svijesti o platformi, bez prave optimizacije."
+      },
+      {
+        "title": "Uska grla u timu",
+        "description": "Sadržaj čeka na odobrenje, izgubi se u Slack nitima, i niko ne zna šta je zakazano za sljedeću sedmicu."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk rješava sve to",
+    "subtitle": "Jedan zadatak. Nativna verzija za svaku platformu. Slike u skladu s brendom renderovane paralelno.",
+    "ctaPrimary": "Počni besplatno stvarati",
+    "rows": [
+      {
+        "before": "1 objava = 45 min prilagođavanja svakoj platformi",
+        "after": "1 zadatak = sve platforme za <5 sekundi"
+      },
+      {
+        "before": "Generički AI tekst ponovo iskorišten na svim mrežama",
+        "after": "Nativna verzija po kanalu — dužina, hashtagovi i ton prilagođeni"
+      },
+      {
+        "before": "Sadržaj razbacan po alatima i nitima",
+        "after": "Jedna kontrolna tabla: stvaraj, odobravaj, zakazuj, objavljuj, prati"
+      }
+    ]
+  },
+  "features": {
+    "title": "Sve što tvoj sadržajni tim treba",
+    "subtitle": "Od ideje do objavljenog posta — Loritalk vodi cijeli proces.",
+    "items": [
+      {
+        "title": "Sadržaj nativan za platformu",
+        "description": "Jedan zadatak postaje nativna verzija za svaku platformu — dužina, hashtagovi, emoji i ton prilagođeni Instagramu, LinkedInu, X-u, TikToku, Facebooku, YouTube Shortsu, Threadsu i Telegramu."
+      },
+      {
+        "title": "Generisanje slika u skladu s brendom",
+        "description": "Slike renderovane po platformi s pravim omjerom stranica i vizuelnim pravilima tvoje persone — objave za feed, priče, hero izrezi. Nema više ručnog mijenjanja veličine."
+      },
+      {
+        "title": "Višejezično generisanje",
+        "description": "Generiši na portugalskom, engleskom, španskom i drugim jezicima. Tečnost na nivou izvornog govornika s kulturološkim nijansama — ne samo prevod."
+      },
+      {
+        "title": "Zakazivanje i objavljivanje",
+        "description": "Prikaz kalendara, zakazano objavljivanje i direktno postanje na sve povezane kanale. Različita vremena po platformi."
+      },
+      {
+        "title": "Glas brenda i persone",
+        "description": "Stvori AI persone koje pišu kao tvoj brend. Kontroliši ton od profesionalnog do razigranog. Svaka objava zvuči kao ti, a ne kao robot."
+      },
+      {
+        "title": "Analitička kontrolna tabla",
+        "description": "Prati doseg, angažman, klikove i rast po kanalu. KPI kartice, najbolje objave i Lori Insights otkrivaju šta funkcioniše."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "05 · Proces",
+    "title": "Zadatak → pregled → objava.",
+    "titleAccent": "Tri poteza.",
+    "titleTail": "Za nekoliko sekundi.",
+    "subtitle": "Nikad ne biraš model. Nikad ne mijenjaš veličinu slike. Nikad ne kopiraš i lijepiš između kartica.",
+    "steps": [
+      {
+        "badge": "01",
+        "eyebrow": "Unos",
+        "title": "Napiši svoj zadatak",
+        "description": "Jedna rečenica ili tri pasusa. Odaberi kanale, personu i jezik. To je jedino što danas pišeš.",
+        "footLeft": "~ 5 sek za pisanje",
+        "footRight": "1 zadatak"
+      },
+      {
+        "badge": "02",
+        "eyebrow": "Generisanje",
+        "title": "AI ga prilagođava po kanalu",
+        "description": "Loritalk čita tvoj zadatak, tvoju personu i nativna pravila svake platforme — zatim izrađuje verziju napravljenu za svaki kanal. Automatska moderacija se odvija prije nego što je vidiš.",
+        "footLeft": "~ 3 sek po kanalu",
+        "footRight": "Po povezanom kanalu"
+      },
+      {
+        "badge": "03",
+        "eyebrow": "Distribucija",
+        "title": "Objavi ili zakaži",
+        "description": "Pošalji odmah ili ubaci u kalendar s vremenom po platformi. Svaki kanal ide kroz svoj nativni API; greške su izolovane — Instagram i dalje izlazi čak i ako Facebook zakaže.",
+        "footLeft": "Nativni API-ji · OAuth",
+        "footRight": "8 kanala"
+      }
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Lansiramo naše nove održive tenisice. Napravljene od 80% recikliranog okeanskog plastika. Ciljamo trkače iz generacije Z.\"",
+      "channelsComment": "// kanali:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Jezik",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutralan — Lorin glas brenda"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Opušten, duhovit, razgovorni"
+        },
+        {
+          "name": "Core",
+          "desc": "Smion, optimističan, vođen brendom"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karusel",
+          "when": "Danas 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "dugačka forma",
+          "when": "Danas 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "nit",
+          "when": "Danas 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Sutra 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "objava",
+          "when": "Sutra 12:00"
+        }
+      ],
+      "cta": "▶ Objavi sve · ⏱ Zakaži"
+    }
+  },
+  "imagery": {
+    "eyebrow": "06 · Slike",
+    "title": "Slike u skladu",
+    "titleAccent": "s brendom",
+    "titleTail": "dimenzionirane po platformi.",
+    "subtitle": "Generisanje slika radi asinhrono i po platformi — bez ručnog mijenjanja veličine, bez stock fotografija van brenda. Pojedinačne objave, karuseli, formati priča, hero izrezi. Svaki render se poziva na vizuelna pravila aktivne persone.",
+    "tiles": {
+      "instagramCaption": "5 ujutro. Kafa, dvije kartice, jedna odluka.\nIzgradio v2 prije nego se tim prijavio.",
+      "storyQuote": "dostigli smo 1M MRR iste sedmice kad smo uklonili pola plana razvoja.",
+      "storySwipe": "↑ povuci",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Zaposlili smo 3 vanjska saradnika prije prvog stalnog. Evo tabele.",
+      "linkedinCta": "Pročitaj više →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "većina \"osnivačkog sadržaja\" je saopštenje za javnost u hudici. piši kao čovjek. #shipping",
+      "generatingLabel": "Renderujem · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "PRVO",
+      "ytTitleLineTwo": "ZAPOŠLJAVANJE.",
+      "ytSubtitle": "Zašto smo čekali 18 mjeseci.",
+      "ytMeta": "Loritalk · Ep. 14 · 32 min"
+    }
+  },
+  "useCases": {
+    "title": "Napravljeno za timove koji objavljuju",
+    "subtitle": "Bilo da si samostalni kreator ili agencija od 50 ljudi.",
+    "items": [
+      {
+        "title": "Samostalni kreatori i frilenseri",
+        "description": "Prestani trošiti sate na prilagođavanje sadržaja. Napiši jednom, objavi svuda. Fokusiraj se na strategiju, ne na kopiranje i lijepljenje."
+      },
+      {
+        "title": "Marketinški timovi",
+        "description": "Jedan radni prostor po brendu. Prikaz kalendara po radnom prostoru. Svi znaju šta se objavljuje i kada."
+      },
+      {
+        "title": "Agencije",
+        "description": "Upravljaj s više brendova iz jednog računa. Radni prostor po klijentu s izolovanim kanalima, personama i kalendarom. Analitika po kanalu za svaki brend."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Jednostavne, transparentne cijene",
+    "subtitle": "Bazirano na kreditima. Otkaži bilo kada. Godišnje ti štedi dva mjeseca.",
+    "monthly": "Mjesečno",
+    "annual": "Godišnje",
+    "save2Months": "-17%",
+    "perMonth": "/ mj",
+    "perMonthBilledYearly": "/ mj, naplaćeno godišnje",
+    "perYear": "/ godina",
+    "saveYearly": "Uštedi {{amount}} / godišnje",
+    "mostPopular": "Najpopularnije",
+    "bestValue": "Najbolja vrijednost",
+    "creditsUnit": "kredita / mjesec",
+    "creditsTexts": "~{{count}} tekstualnih objava",
+    "creditsOr": "ili",
+    "creditsImages": "~{{count}} slika u skladu s brendom",
+    "promoExplainer": "Promocija za prvu godinu: dobij 2× kredita SVAKI mjesec tokom cijele prve godine kad odabereš Godišnje — to je {{count}} bonus kredita svaki mjesec.",
+    "promoHeroExtra": "(+{{count}} bonus kredita svaki mjesec tokom 12 mjeseci)",
+    "tierChoose": "Odaberi plan",
+    "features": {
+      "workspaces_one": "{{count}} radni prostor",
+      "workspaces_few": "{{count}} radna prostora",
+      "workspaces_other": "{{count}} radnih prostora",
+      "channels": "{{count}} društvenih kanala",
+      "personas": "{{count}} persona brenda",
+      "members_one": "{{count}} član tima",
+      "members_few": "{{count}} člana tima",
+      "members_other": "{{count}} članova tima",
+      "media": "{{count}} medijskih sadržaja"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Za one koji prvi put stvaraju sadržaj uz AI"
+      },
+      "PLUS": {
+        "name": "Plus",
+        "description": "Za dosljedno i jednostavno stvaranje sadržaja uz AI"
+      },
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Za kreatore koji grade AI proizvode"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Za agencije i male timove"
+      }
+    }
+  },
+  "faq": {
+    "title": "Pitanja? Imamo odgovore.",
+    "items": [
+      {
+        "q": "Kako radi Loritalkov AI?",
+        "a": "Loritalk proizvodi nativnu verziju tvog zadatka za svaki povezani kanal i renderuje slike u skladu s brendom paralelno. Sve prolazi kroz sloj automatske moderacije prije nego dođe do tvoje kontrolne table."
+      },
+      {
+        "q": "Po čemu se ovo razlikuje od drugih AI alata?",
+        "a": "Drugi alati ti daju jedan blok teksta za kopiranje i lijepljenje svuda. Loritalk proizvodi nativne verzije po platformi — dužina, hashtagovi, emoji i ton prilagođeni svakoj mreži — i objavljuje kroz službeni API svake platforme."
+      },
+      {
+        "q": "Koje društvene mreže su podržane?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads i Telegram — osam mreža putem nativnih API-ja."
+      },
+      {
+        "q": "Gdje se čuvaju moji podaci?",
+        "a": "Tvoji podaci se čuvaju na serverima u Evropskoj uniji. AI pružaoci koje koristimo (OpenAI za tekst, Google za slike) rade pod uslovima svog poslovnog API-ja — sadržaj poslan na API ne koristi se za obučavanje njihovih modela opće namjene."
+      },
+      {
+        "q": "Mogu li ga koristiti sa svojim timom?",
+        "a": "Da. Stvori radne prostore za svaki brend i pozovi članove tima s ulogama administratora ili objavljivača. Svaki radni prostor ima svoje povezane kanale, persone i kalendar."
+      },
+      {
+        "q": "Šta se dešava nakon Bete?",
+        "a": "Plaćeni planovi stupaju na snagu, ali svaki Beta korisnik zadržava svoju trenutnu cijenu zaključanu zauvijek. Bez iznenađenja."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Prestani pisati. Počni objavljivati.",
+    "subtitle": "Pridruži se Beti — besplatan pristup, bez kreditne kartice, a tvoja cijena je zaključana zauvijek kad lansiramo.",
+    "ctaPrimary": "Počni besplatno stvarati",
+    "ctaSecondary": "Pogledaj kako funkcioniše"
+  },
+  "footer": {
+    "description": "AI sadržaj za svaku društvenu mrežu.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Proizvod",
+    "resources": "Resursi",
+    "legal": "Pravno",
+    "features": "Funkcije",
+    "changelog": "Dnevnik izmjena",
+    "supportedNetworks": "Podržane mreže",
+    "helpCenter": "Centar za pomoć",
+    "contactUs": "Kontaktiraj nas",
+    "betaFeedback": "Beta povratne informacije",
+    "apiDocs": "API dokumentacija",
+    "privacyPolicy": "Politika privatnosti",
+    "termsOfService": "Uslovi korištenja",
+    "cookiePolicy": "Politika kolačića",
+    "legalNotice": "Pravna napomena",
+    "copyright": "© 2026 Loritalk® od CDN Core Technologies. Covilhã, Portugal."
+  },
+  "cookieBanner": {
+    "aria": "Obavijest o kolačićima",
+    "title": "Koristimo kolačiće",
+    "body": "Strogo neophodni kolačići održavaju stranicu u funkciji. Uz tvoju saglasnost također učitavamo Google Analytics za mjerenje saobraćaja i Meta Pixel za mjerenje našeg oglašavanja. Možeš prihvatiti, odbiti ili birati kategoriju po kategoriju — i predomisliti se bilo kada.",
+    "policyLink": "Politika kolačića",
+    "privacyLink": "Politika privatnosti",
+    "acceptAll": "Prihvati sve",
+    "rejectOptional": "Odbij opciono",
+    "customize": "Prilagodi",
+    "save": "Sačuvaj postavke",
+    "necessaryLabel": "Strogo neophodno",
+    "necessaryDesc": "Potrebno za funkcionisanje stranice (jezik i tvoj izbor saglasnosti). Ne može se onemogućiti.",
+    "analyticsLabel": "Analitika — Google Analytics",
+    "analyticsDesc": "Učitava Google Analytics 4 za mjerenje saobraćaja i poboljšanje stranice. Postavlja _ga i _ga_* kolačiće i prenosi podatke o pregledima stranica Googleu.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Učitava Meta Pixel (Facebook / Instagram) kako bismo mogli mjeriti reklamne kampanje. Postavlja _fbp i _fbc kolačiće i prenosi podatke o pregledima stranica Meti."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Za marketinške agencije i kreativne studije",
+      "headlineOne": "Mučiš se da objaviš postove",
+      "headlineTwo": "za svakog klijenta",
+      "headlineThree": "na svakoj platformi?",
+      "lead": "Loritalk daje tvojoj agenciji <strong>jedan radni prostor po brendu</strong>, posvećenu personu po klijentu i nativno objavljivanje na 8 mreža — tako da tvoj tim piše jednom i objavljuje svuda, na svakom računu.",
+      "ctaPrimary": "Počni s Ultra planom",
+      "ctaSecondary": "Pogledaj cijene za agencije",
+      "trust": [
+        "Jedan radni prostor po brendu",
+        "Uloge administratora i objavljivača",
+        "8 mreža putem nativnih API-ja"
+      ],
+      "hubLabel": "Sjedište agencije",
+      "hubTitle": "5 brendova. 5 radnih prostora.",
+      "hubBody": "Svaki klijent dobija svoj radni prostor, persone, kanale i analitiku. Promijeni kontekst jednim klikom.",
+      "hubMeta": "5 radnih prostora · izolovano",
+      "hubBadge": "Uživo"
+    },
+    "pains": {
+      "title": "Prepoznaješ svoju sedmicu?",
+      "subtitle": "Isti sadržaj prepisan 7 puta za 5 klijenata. Svake sedmice. Bili smo tu.",
+      "items": [
+        {
+          "title": "Žongliranje s 5+ klijenata odjednom",
+          "description": "Svaki brend želi drugačiji ton, druge platforme, druge rokove. Tabele i Slack niti nisu radni proces."
+        },
+        {
+          "title": "Glas brenda se mijenja sa svakom objavom",
+          "description": "Različiti tekstopisci, različite kartice, različiti ChatGPT upiti. Glas koji je tvoj klijent odobrio prije šest mjeseci je nestao."
+        },
+        {
+          "title": "Petkom navečer ponovno raspoređivanje",
+          "description": "Klijent traži izmjene u zadnji čas na Instagramu, LinkedInu i TikToku. Prepisuješ istu ideju tri puta — i ipak propustiš termin."
+        },
+        {
+          "title": "Izvještavanje traje cijeli dan",
+          "description": "Kopiranje pregleda, angažmana i klikova s pet kontrolnih tabli u prezentaciju. Ručno. Svaki mjesec."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Sve što tvoja agencija treba na jednom mjestu",
+      "subtitle": "Od zadatka do izvještaja — Loritalk vodi cijeli sadržajni proces za svaki brend kojim upravljaš.",
+      "items": [
+        {
+          "title": "Jedan radni prostor po klijentu",
+          "description": "Izolovani radni prostori sa svojim povezanim kanalima, personama, članovima i kalendarom. Pokreni novog klijenta za nekoliko minuta."
+        },
+        {
+          "title": "Persone glasa brenda",
+          "description": "Definiši personu po klijentu — glas, ton, specifične upute. Svako generisanje za taj radni prostor poštuje zadatak, svaki put."
+        },
+        {
+          "title": "8 mreža, jedan zadatak",
+          "description": "Napiši zadatak jednom i primi nativne verzije za Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads i Telegram — sve za nekoliko sekundi, sve putem službenih API-ja."
+        },
+        {
+          "title": "Kalendar po radnom prostoru",
+          "description": "Svaki klijent ima svoj prikaz sedmice / mjeseca / reda čekanja. Zakaži objave po kanalu i vidi cijeli proces za taj brend na prvi pogled."
+        },
+        {
+          "title": "Uloge administratora i objavljivača",
+          "description": "Pozovi članove tima po radnom prostoru kao administratore (potpuno upravljanje) ili objavljivače (stvaranje i objavljivanje). Radni prostori su potpuno izolovani jedan od drugog."
+        },
+        {
+          "title": "Analitika po radnom prostoru",
+          "description": "Doseg, angažman, klikovi i rast po kanalu unutar radnog prostora svakog klijenta. KPI kartice, najbolje objave i Lori Insights — bez preskakanja između kontrolnih tabli."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kako izgleda agencijska sedmica na Loritalku",
+      "subtitle": "Uvedi brend, zadaj AI-ju, dobij odobrenje, objavi. Ponovi za svakog klijenta.",
+      "steps": [
+        {
+          "badge": "01 · UVOĐENJE",
+          "title": "Pokreni radni prostor klijenta",
+          "description": "Stvori radni prostor, poveži društvene račune brenda i konfiguriši personu — glas, ton, specifične upute. Spremno za upotrebu za nekoliko minuta."
+        },
+        {
+          "badge": "02 · ZADATAK",
+          "title": "Napiši jedan zadatak po kampanji",
+          "description": "Odaberi personu, kanale i jezik. Loritalk generiše nativnu verziju po platformi za nekoliko sekundi."
+        },
+        {
+          "badge": "03 · DORADA",
+          "title": "Uredi u svom timu",
+          "description": "Tvoj tim pregleda nacrte unutar radnog prostora — doradi tekst, zamijeni slike, odaberi najjaču varijantu po kanalu prije nego izađe."
+        },
+        {
+          "badge": "04 · OBJAVA",
+          "title": "Objavi i prati",
+          "description": "Nativni API-ji guraju na svaki kanal. Performanse se vraćaju u kontrolnu tablu po radnom prostoru — KPI-jevi, najbolje objave i rast po kanalu."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planovi napravljeni za agencije",
+      "subtitle": "Vodi šačicu brendova ili cijeli portfolio klijenata. Odaberi obim koji odgovara tvom honoraru.",
+      "customPrice": "Razgovarajmo",
+      "customCredits": "Neograničeni krediti",
+      "customCreditsDetail": "Obim dogovoren po ugovoru — bez iznenađenja s prekoračenjem.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Po mjeri",
+          "description": "Za mreže i velike agencije kojima trebaju prilagođeni obimi i uvođenje.",
+          "cta": "Razgovaraj s prodajom"
+        }
+      },
+      "features": {
+        "customVolumes": "Prilagođeni obimi kredita",
+        "priorityEmail": "Prioritetna email podrška",
+        "euData": "Pohrana podataka u EU"
+      }
+    },
+    "faq": {
+      "title": "Agencijska pitanja, odgovorena.",
+      "items": [
+        {
+          "q": "Kako se krediti dijele između klijenata?",
+          "a": "Krediti se nalaze na nivou agencijskog računa — svaki radni prostor može trošiti iz istog skupa. Prati potrošnju u kontrolnoj tabli za naplatu."
+        },
+        {
+          "q": "Šta se dešava kad uvedemo ili isključimo klijenta?",
+          "a": "Pokreni novi radni prostor za nekoliko sekundi. Arhiviranje radnog prostora ga uklanja iz aktivnog prikaza; potpuno brisanje računa poštuje GDPR pravila o čuvanju podataka."
+        },
+        {
+          "q": "Na koje društvene mreže možemo objavljivati?",
+          "a": "Nativno objavljivanje pokriva LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads i Telegram — osam mreža, svaka putem službenog API-ja platforme, tako da greške ostaju izolovane po kanalu."
+        },
+        {
+          "q": "Mogu li se klijenti prijaviti da vide svoj radni prostor?",
+          "a": "Danas ne. Radni prostori su samo za agencijski tim — uloge administratora i objavljivača. Pristup klijenata je u planu razvoja."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Spreman za skaliranje sadržaja kroz svakog klijenta?",
+      "subtitle": "Počni s Ultra planom danas ili rezerviši 20-minutni demo s agencijskim timom da vidiš Loritalk na svojim brendovima.",
+      "ctaPrimary": "Počni s Ultra planom",
+      "ctaSecondary": "Rezerviši demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Za samostalne kreatore i influensere",
+      "headlineOne": "Jedna ideja.",
+      "headlineTwo": "Svaka platforma.",
+      "headlineThree": "Bez gubitka vikenda.",
+      "lead": "Loritalk pretvara jedan zadatak u <strong>nativne objave za Instagram, TikTok, YouTube Shorts, X, Threads</strong> i još više — zadržavajući tvoj glas dosljednim na svakom računu.",
+      "ctaPrimary": "Počni besplatno sa Starterom",
+      "ctaSecondary": "Pogledaj planove za kreatore",
+      "trust": [
+        "Tvoj glas na svakom kanalu",
+        "8 mreža putem nativnih API-ja",
+        "Zakaži sedmice odjednom"
+      ],
+      "hubLabel": "Tvoj studio",
+      "hubTitle": "1 zadatak. 8 nativnih objava.",
+      "hubBody": "Definiši svoju personu jednom. Loritalk prilagođava svaku objavu svakoj platformi — dužinu, hashtagove, emoji, ton, format slike.",
+      "hubMeta": "1 persona · 8 kanala",
+      "hubBadge": "Uživo",
+      "cardTag": "Nativni format"
+    },
+    "pains": {
+      "title": "Zvuči kao tvoja sedmica?",
+      "subtitle": "Objavljivanje svaki dan na svakoj platformi ne bi te trebalo koštati nedjeljnog popodneva. Bili smo tu.",
+      "items": [
+        {
+          "title": "Ista ideja, prepisana 8 puta",
+          "description": "Opis za Instagram, skripta za TikTok, kuka za YouTube, nit za X… svaka platforma traži drugačiji oblik. Potrošiš popodne na jednu objavu."
+        },
+        {
+          "title": "Algoritmi kažnjavaju pauze",
+          "description": "Propustiš dva dana i doseg pada. Ostani dosljedan na svakoj platformi i jedva imaš vremena snimati, a kamoli živjeti svoj život."
+        },
+        {
+          "title": "Saradnje s brendovima traže više platformi",
+          "description": "Sponzori žele Reels + Shorts + TikTok + objavu. Ista kampanja, četiri formata. Naplatiš za jedan, a isporučiš četiri."
+        },
+        {
+          "title": "Glas se razvodnjava",
+          "description": "Do petnaeste objave, opisi zvuče kao da ih je napisao stranac. Publika to primijeti. Angažman pada."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Sve što kreator treba na jednom mjestu",
+      "subtitle": "Zadaj jednom, objavi svuda — bez gubitka glasa koji tvoja publika prati.",
+      "items": [
+        {
+          "title": "Tvoj glas, zaključan",
+          "description": "Definiši personu sa svojim glasom, tonom i specifičnim uputama u običnom tekstu. Svako generisanje prolazi kroz tu prizmu — zvuči kao ti, a ne kao AI alat."
+        },
+        {
+          "title": "Jedan zadatak, osam nativnih objava",
+          "description": "Napiši ideju jednom. Loritalk proizvodi verziju optimizovanu za Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn i Telegram za nekoliko sekundi."
+        },
+        {
+          "title": "Slike u skladu s brendom po formatu",
+          "description": "Objave za feed, priče, hero izrezi, vertikalni za Reels i Shorts. Slike se renderuju s pravim omjerom stranica i vizuelnim pravilima tvoje persone."
+        },
+        {
+          "title": "Zakaži sedmicu u jednom sjedanju",
+          "description": "Isplaniraj od ponedjeljka do nedjelje na svakoj platformi unutar jednog kalendara. Nativni API-ji guraju automatski — čak i kad snimaš sljedeću seriju."
+        },
+        {
+          "title": "Vidi šta raste",
+          "description": "Doseg, angažman, klikovi i rast pratilaca po kanalu. KPI kartice i Lori Insights otkrivaju šta funkcioniše — udvostruči ulog na to."
+        },
+        {
+          "title": "Moderirano prije objave",
+          "description": "Svaki nacrt prolazi kroz automatsku moderaciju, tako da sadržaj siguran za brend dolazi do tvoje publike, a tvoji sponzori ostaju zadovoljni."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kako izgleda kreatorska sedmica na Loritalku",
+      "subtitle": "Uhvati svoj glas jednom, zadaj jednu ideju, objavi na svakoj platformi, gledaj šta raste.",
+      "steps": [
+        {
+          "badge": "01 · GLAS",
+          "title": "Definiši svoju personu",
+          "description": "Upiši svoj glas, ton i kućna pravila u personu. Postaje prizma kroz koju prolazi svaka buduća objava."
+        },
+        {
+          "badge": "02 · ZADATAK",
+          "title": "Zadaj jednu ideju",
+          "description": "Otkucaj koncept, odaberi kanale i jezik. Loritalk proizvodi nativnu verziju po platformi za nekoliko sekundi — opisi, skripte, niti, kuke."
+        },
+        {
+          "badge": "03 · OBJAVA",
+          "title": "Uredi i zakaži",
+          "description": "Doradi najjaču varijantu po kanalu, ubaci sve u red u kalendaru, otiđi. API-ji objavljuju u pravo vrijeme, u pravom formatu."
+        },
+        {
+          "badge": "04 · PRAĆENJE",
+          "title": "Gledaj šta funkcioniše",
+          "description": "Analitika po kanalu pokazuje šta privlači doseg i angažman. Mijenjaj ugao, ne radni proces."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planovi napravljeni za kreatore",
+      "subtitle": "Počni besplatno tokom Bete. Odaberi obim koji odgovara tome koliko često objavljuješ."
+    },
+    "faq": {
+      "title": "Kreatorska pitanja, odgovorena.",
+      "items": [
+        {
+          "q": "Hoće li zvučati kao ja?",
+          "a": "Opiši svoj glas, ton i kućna pravila u personi. Svako generisanje prolazi kroz tu prizmu. Što je persona detaljnija, to je bliže tvom glasu."
+        },
+        {
+          "q": "Na koje platforme zaista objavljujete?",
+          "a": "Nativno objavljivanje pokriva Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn i Telegram — osam mreža putem službenih API-ja. Greške na jednom kanalu nikad ne blokiraju ostale."
+        },
+        {
+          "q": "Mogu li urediti prije objavljivanja?",
+          "a": "Uvijek. Loritalk proizvodi nacrt po kanalu — ti biraš, doradiš i objaviš. Ništa ne ide uživo bez tvog pritiska na dugme (osim ako si to zakazao)."
+        },
+        {
+          "q": "Šta je sa slikama i kratkim videom?",
+          "a": "Slike u skladu s brendom generišu se po platformi s pravim omjerom stranica (kvadrat, vertikalni 9:16, hero). Za kratki video dobiješ nativni opis s kukom u prvim sekundama i poziv na akciju — zalijepi direktno u TikTok ili YouTube Shorts."
+        },
+        {
+          "q": "Je li Loritalk besplatan tokom Bete?",
+          "a": "Da. Beta pristup je besplatan s velikodušnim ograničenjima. Svaki Beta korisnik zadržava svoju trenutnu cijenu zaključanu zauvijek kad plaćeni planovi budu lansirani."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Prestani prepisivati. Počni objavljivati.",
+      "subtitle": "Pridruži se Beti — besplatno, bez kreditne kartice, tvoja cijena je zaključana zauvijek kad lansiramo.",
+      "ctaPrimary": "Počni besplatno sa Starterom",
+      "ctaSecondary": "Pogledaj planove za kreatore"
+    }
+  }
+}

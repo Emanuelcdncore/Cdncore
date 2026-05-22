@@ -1,0 +1,656 @@
+{
+  "navbar": {
+    "features": "Eiginleikar",
+    "howItWorks": "Hvernig það virkar",
+    "pricing": "Verðskrá",
+    "forAgencies": "Fyrir auglýsingastofur",
+    "forCreators": "Fyrir efnishöfunda",
+    "beta": "Beta",
+    "startForFree": "Byrjaðu ókeypis"
+  },
+  "hero": {
+    "badge": "Í Beta · Snemmaðgangsverð læst að eilífu",
+    "headlineOne": "Skrifaðu minna.",
+    "headlineTwo": "Birtu meira.",
+    "headlineTwoTail": "",
+    "headlineStrike": "Endurskrifað.",
+    "headlineThree": "Yfirfarið.",
+    "lead": "Lýstu færslunni þinni einu sinni. Loritalk skrifar <strong>upprunalega útgáfu fyrir hvern tengdan vettvang</strong>, býr til myndir í takt við vörumerkið þitt, keyrir hvert orð í gegnum sjálfvirka yfirferð og tímasetur þær — á sekúndum.",
+    "ctaPrimary": "Byrjaðu ókeypis — ekkert kort",
+    "ctaSecondary": "Sjáðu það virka · 90s",
+    "trust": [
+      "8 upprunalegar samþættingar",
+      "Sjálfvirkt yfirfarið",
+      "Einangrað í vinnusvæði"
+    ],
+    "briefCard": {
+      "label": "Lýsingin þín · 1 af 1",
+      "typed": "Settu á markað nýja sjálfbæra strigaskóinn okkar. Gerður úr 80% endurunnu plasti úr hafinu. Beint að hlaupurum af Z-kynslóðinni.",
+      "meta": "en · 8 rásir · Húsrödd",
+      "send": "Búa til ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "færslur · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "prófíl · síður",
+      "x": "X / Twitter",
+      "xTag": "þræðir · stök",
+      "tiktok": "TikTok",
+      "tiktokTag": "handrit · textar",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "upprunalegt",
+      "facebook": "Facebook",
+      "facebookTag": "síður",
+      "telegram": "Telegram",
+      "telegramTag": "rásir · hópar"
+    },
+    "leadHook": "Lýstu færslunni þinni einu sinni.",
+    "leadBody": "Loritalk skrifar <strong>upprunalega útgáfu fyrir hvern tengdan vettvang</strong>, býr til myndir í takt við vörumerkið þitt, keyrir hvert orð í gegnum sjálfvirka yfirferð og tímasetur þær — á sekúndum."
+  },
+  "stats": {
+    "networksValue": "8",
+    "networksLabel": "Samfélagsmiðlar studdir",
+    "languagesValue": "24+",
+    "languagesLabel": "Tungumál viðmóts",
+    "generationValue": "Sekúndur",
+    "generationLabel": "Frá lýsingu að tilbúnu til birtingar",
+    "freeValue": "Ókeypis",
+    "freeLabel": "Á meðan á Beta stendur — engin takmörk"
+  },
+  "problem": {
+    "title": "Efnisferlið þitt er bilað",
+    "subtitle": "Kannastu við þetta?",
+    "items": [
+      {
+        "title": "Klukkutímar fara í aðlögun",
+        "description": "Þú skrifar færslu fyrir Instagram, endurskrifar hana svo fyrir LinkedIn og aftur fyrir X. Hver vettvangur krefst annars tóns, annarrar lengdar og annarra myllumerkja."
+      },
+      {
+        "title": "Gervigreind sem hljómar venjuleg",
+        "description": "Gervigreind með einu líkani gefur þér eina útgáfu sem hljómar eins og hjá öllum öðrum. Engin vörumerkjarödd, engin vettvangsvitund, engin raunveruleg fínstilling."
+      },
+      {
+        "title": "Flöskuhálsar í teyminu",
+        "description": "Efni bíður eftir samþykki, týnist í Slack-þráðum og enginn veit hvað er tímasett fyrir næstu viku."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk lagar þetta allt",
+    "subtitle": "Ein lýsing. Upprunaleg útgáfa fyrir hvern vettvang. Myndir í takt við vörumerkið unnar samhliða.",
+    "ctaPrimary": "Byrjaðu að búa til ókeypis",
+    "rows": [
+      {
+        "before": "1 færsla = 45 mín að aðlaga að hverjum vettvangi",
+        "after": "1 lýsing = allir vettvangar á <5 sekúndum"
+      },
+      {
+        "before": "Venjulegur gervigreindartexti endurnýttur á öllum miðlum",
+        "after": "Upprunaleg útgáfa fyrir hverja rás — lengd, myllumerki og tónn aðlagaður"
+      },
+      {
+        "before": "Efni dreift um verkfæri og þræði",
+        "after": "Eitt mælaborð: búðu til, samþykktu, tímasettu, birtu, fylgstu með"
+      }
+    ]
+  },
+  "features": {
+    "title": "Allt sem efnisteymið þitt þarf",
+    "subtitle": "Frá hugmynd að birtri færslu — Loritalk sér um allt ferlið.",
+    "items": [
+      {
+        "title": "Efni sniðið að hverjum vettvangi",
+        "description": "Ein lýsing verður að upprunalegri útgáfu fyrir hvern vettvang — lengd, myllumerki, emoji og tónn aðlagaður að Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads og Telegram."
+      },
+      {
+        "title": "Myndgerð í takt við vörumerkið",
+        "description": "Myndir unnar fyrir hvern vettvang með réttu hlutfalli og sjónrænum reglum persónunnar þinnar — feed-færslur, stories, hero-úrklippur. Engin handvirk stærðarbreyting framar."
+      },
+      {
+        "title": "Fjöltyngd gerð",
+        "description": "Búðu til efni á portúgölsku, ensku, spænsku og fleiri tungumálum. Reiprennandi á borð við móðurmál með menningarlegum blæbrigðum — ekki bara þýðing."
+      },
+      {
+        "title": "Tímasettu og birtu",
+        "description": "Dagatalsyfirlit, tímasett birting og bein birting á allar tengdar rásir. Mismunandi tímar fyrir hvern vettvang."
+      },
+      {
+        "title": "Vörumerkjarödd og persónur",
+        "description": "Búðu til gervigreindarpersónur sem skrifa eins og vörumerkið þitt. Stýrðu tóninum frá faglegum að leikandi. Hver færsla hljómar eins og þú, ekki vélmenni."
+      },
+      {
+        "title": "Greiningarmælaborð",
+        "description": "Fylgstu með útbreiðslu, þátttöku, smellum og vexti fyrir hverja rás. KPI-spjöld, bestu færslur og Lori Insights draga fram það sem virkar."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "05 · Vinnuferli",
+    "title": "Lýsing → forskoðun → birting.",
+    "titleAccent": "Þrjú skref.",
+    "titleTail": "Á sekúndum.",
+    "subtitle": "Þú velur aldrei líkan. Þú breytir aldrei stærð á mynd. Þú afritar aldrei á milli flipa.",
+    "steps": [
+      {
+        "badge": "01",
+        "eyebrow": "Inntak",
+        "title": "Skrifaðu lýsinguna þína",
+        "description": "Ein setning eða þrjár málsgreinar. Veldu rásirnar, persónuna og tungumálið. Það er það eina sem þú skrifar í dag.",
+        "footLeft": "~ 5 sek að skrifa",
+        "footRight": "1 lýsing"
+      },
+      {
+        "badge": "02",
+        "eyebrow": "Gerð",
+        "title": "Gervigreind sníður það að hverri rás",
+        "description": "Loritalk les lýsinguna þína, persónuna þína og upprunalegar reglur hvers vettvangs — og smíðar svo útgáfu sniðna að hverri rás. Sjálfvirk yfirferð keyrir áður en þú sérð það.",
+        "footLeft": "~ 3 sek á hverja rás",
+        "footRight": "Á hverja tengda rás"
+      },
+      {
+        "badge": "03",
+        "eyebrow": "Dreifing",
+        "title": "Birtu eða tímasettu",
+        "description": "Sendu núna eða settu í dagatalið með tímasetningu fyrir hvern vettvang. Hver rás birtir í gegnum sitt eigið API; bilanir eru einangraðar — Instagram fer enn af stað þótt Facebook hiksti.",
+        "footLeft": "Upprunaleg API · OAuth",
+        "footRight": "8 rásir"
+      }
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Settu á markað nýja sjálfbæra strigaskóinn okkar. Gerður úr 80% endurunnu plasti úr hafinu. Beint að hlaupurum af Z-kynslóðinni.\"",
+      "channelsComment": "// rásir:"
+    },
+    "personasViz": {
+      "personaLabel": "Persóna",
+      "languageLabel": "Tungumál",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Hlutlaus — húsrödd Lori"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Afslappaður, fyndinn, alúðlegur"
+        },
+        {
+          "name": "Core",
+          "desc": "Djarfur, bjartsýnn, vörumerkjadrifinn"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karúsel",
+          "when": "Í dag 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "langt form",
+          "when": "Í dag 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "þráður",
+          "when": "Í dag 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Á morgun 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "færsla",
+          "when": "Á morgun 12:00"
+        }
+      ],
+      "cta": "▶ Birta allt · ⏱ Tímasetja"
+    }
+  },
+  "imagery": {
+    "eyebrow": "06 · Myndefni",
+    "title": "Myndir í takt",
+    "titleAccent": "við vörumerkið",
+    "titleTail": "stærðar fyrir hvern vettvang.",
+    "subtitle": "Myndgerð keyrir ósamstillt og fyrir hvern vettvang — engin handvirk stærðarbreyting, ekkert efni utan vörumerkis. Stakar færslur, karúselar, story-snið, hero-úrklippur. Hver mynd vísar til sjónrænna reglna virku persónunnar.",
+    "tiles": {
+      "instagramCaption": "Kl. 5. Kaffi, tveir flipar, ein ákvörðun.\nByggði v2 áður en teymið mætti í vinnu.",
+      "storyQuote": "við náðum 1M MRR sömu viku og við hentum hálfri vegáætluninni.",
+      "storySwipe": "↑ strjúktu",
+      "linkedinAuthor": "Marlow Studio · 12 mín",
+      "linkedinTitle": "Við réðum 3 verktaka áður en við réðum fyrsta fastráðna. Hér er töflureiknirinn.",
+      "linkedinCta": "Lesa meira →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "mest af „stofnandaefni“ er fréttatilkynning í hettupeysu. skrifaðu eins og manneskja. #shipping",
+      "generatingLabel": "Vinn · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "FYRSTA",
+      "ytTitleLineTwo": "RÁÐNINGIN.",
+      "ytSubtitle": "Af hverju við biðum í 18 mánuði.",
+      "ytMeta": "Loritalk · Þáttur 14 · 32 mín"
+    }
+  },
+  "useCases": {
+    "title": "Byggt fyrir teymi sem birta",
+    "subtitle": "Hvort sem þú ert einyrki eða 50 manna auglýsingastofa.",
+    "items": [
+      {
+        "title": "Einyrkjar og verktakar",
+        "description": "Hættu að eyða klukkutímum í að aðlaga efni. Skrifaðu einu sinni, birtu alls staðar. Einbeittu þér að stefnu, ekki afritun."
+      },
+      {
+        "title": "Markaðsteymi",
+        "description": "Eitt vinnusvæði fyrir hvert vörumerki. Dagatalsyfirlit fyrir hvert vinnusvæði. Allir vita hvað birtist og hvenær."
+      },
+      {
+        "title": "Auglýsingastofur",
+        "description": "Stjórnaðu mörgum vörumerkjum frá einum aðgangi. Vinnusvæði fyrir hvern viðskiptavin með einangruðum rásum, persónum og dagatali. Greining fyrir hverja rás hjá hverju vörumerki."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Einfalt og gagnsætt verð",
+    "subtitle": "Byggt á inneignum. Segðu upp hvenær sem er. Árlegt sparar þér tvo mánuði.",
+    "monthly": "Mánaðarlega",
+    "annual": "Árlega",
+    "save2Months": "-17%",
+    "perMonth": "/ mán",
+    "perMonthBilledYearly": "/ mán, greitt árlega",
+    "perYear": "/ ár",
+    "saveYearly": "Sparaðu {{amount}} / ár",
+    "mostPopular": "Vinsælast",
+    "bestValue": "Besta verðið",
+    "creditsUnit": "inneignir / mánuði",
+    "creditsTexts": "~{{count}} textafærslur",
+    "creditsOr": "eða",
+    "creditsImages": "~{{count}} myndir í takt við vörumerkið",
+    "promoExplainer": "Fyrsta-árs tilboð: fáðu 2× inneignir Í HVERJUM mánuði allt fyrsta árið þitt þegar þú velur Árlegt — það eru {{count}} bónusinneignir í hverjum mánuði.",
+    "promoHeroExtra": "(+{{count}} bónusinneignir í hverjum mánuði í 12 mánuði)",
+    "tierChoose": "Velja áskrift",
+    "features": {
+      "workspaces_one": "{{count}} vinnusvæði",
+      "workspaces_other": "{{count}} vinnusvæði",
+      "channels": "{{count}} samfélagsrásir",
+      "personas": "{{count}} vörumerkjapersónur",
+      "members_one": "{{count}} liðsmaður",
+      "members_other": "{{count}} liðsmenn",
+      "media": "{{count}} margmiðlunarskrár"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Fyrir þá sem búa til gervigreindarefni í fyrsta sinn"
+      },
+      "PLUS": {
+        "name": "Plus",
+        "description": "Fyrir stöðuga og auðvelda gervigreindarefnisgerð"
+      },
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Fyrir efnishöfunda sem byggja gervigreindarvörur"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Fyrir auglýsingastofur og lítil teymi"
+      }
+    }
+  },
+  "faq": {
+    "title": "Spurningar? Við höfum svör.",
+    "items": [
+      {
+        "q": "Hvernig virkar gervigreind Loritalk?",
+        "a": "Loritalk býr til upprunalega útgáfu af lýsingunni þinni fyrir hverja tengda rás og vinnur myndir í takt við vörumerkið samhliða. Allt fer í gegnum sjálfvirkt yfirferðarlag áður en það berst í mælaborðið þitt."
+      },
+      {
+        "q": "Hvernig er þetta öðruvísi en önnur gervigreindarverkfæri?",
+        "a": "Önnur verkfæri gefa þér einn textabálk til að afrita alls staðar. Loritalk býr til upprunalegar útgáfur fyrir hvern vettvang — lengd, myllumerki, emoji og tónn aðlagaður að hverjum miðli — og birtir í gegnum opinbera API hvers vettvangs."
+      },
+      {
+        "q": "Hvaða samfélagsmiðlar eru studdir?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads og Telegram — átta miðlar í gegnum upprunaleg API."
+      },
+      {
+        "q": "Hvar eru gögnin mín geymd?",
+        "a": "Gögnin þín eru geymd á netþjónum innan Evrópusambandsins. Gervigreindarþjónusturnar sem við notum (OpenAI fyrir texta, Google fyrir myndir) starfa samkvæmt fyrirtækjaskilmálum sinna API — efni sem sent er til API er ekki notað til að þjálfa almenn líkön þeirra."
+      },
+      {
+        "q": "Get ég notað það með teyminu mínu?",
+        "a": "Já. Búðu til vinnusvæði fyrir hvert vörumerki og bjóddu liðsmönnum með stjórnanda- eða birtingarhlutverki. Hvert vinnusvæði hefur sínar eigin tengdu rásir, persónur og dagatal."
+      },
+      {
+        "q": "Hvað gerist eftir Beta?",
+        "a": "Greiddar áskriftir taka gildi, en hver Beta-notandi heldur núverandi verði læstu að eilífu. Engar óvæntar uppákomur."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Hættu að skrifa. Byrjaðu að birta.",
+    "subtitle": "Skráðu þig í Beta — ókeypis aðgangur, ekkert greiðslukort, og verðið þitt læsist að eilífu þegar við förum í loftið.",
+    "ctaPrimary": "Byrjaðu að búa til ókeypis",
+    "ctaSecondary": "Sjáðu hvernig það virkar"
+  },
+  "footer": {
+    "description": "Gervigreindarefni fyrir hvern samfélagsmiðil.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portúgal",
+    "product": "Vara",
+    "resources": "Tilföng",
+    "legal": "Lögfræðilegt",
+    "features": "Eiginleikar",
+    "changelog": "Breytingaskrá",
+    "supportedNetworks": "Studdir miðlar",
+    "helpCenter": "Hjálparmiðstöð",
+    "contactUs": "Hafðu samband",
+    "betaFeedback": "Beta-umsögn",
+    "apiDocs": "API-skjöl",
+    "privacyPolicy": "Persónuverndarstefna",
+    "termsOfService": "Þjónustuskilmálar",
+    "cookiePolicy": "Vafrakökustefna",
+    "legalNotice": "Lögfræðileg tilkynning",
+    "copyright": "© 2026 Loritalk® frá CDN Core Technologies. Covilhã, Portúgal."
+  },
+  "cookieBanner": {
+    "aria": "Vafrakökutilkynning",
+    "title": "Við notum vafrakökur",
+    "body": "Stranglega nauðsynlegar vafrakökur halda síðunni gangandi. Með samþykki þínu hlöðum við einnig Google Analytics til að mæla umferð og Meta Pixel til að mæla auglýsingarnar okkar. Þú getur samþykkt, hafnað eða valið flokk fyrir flokk — og skipt um skoðun hvenær sem er.",
+    "policyLink": "Vafrakökustefna",
+    "privacyLink": "Persónuverndarstefna",
+    "acceptAll": "Samþykkja allt",
+    "rejectOptional": "Hafna valkvæðum",
+    "customize": "Sérsníða",
+    "save": "Vista stillingar",
+    "necessaryLabel": "Stranglega nauðsynlegt",
+    "necessaryDesc": "Nauðsynlegt til að síðan virki (tungumál og samþykkisval þitt). Ekki hægt að slökkva á.",
+    "analyticsLabel": "Greining — Google Analytics",
+    "analyticsDesc": "Hleður Google Analytics 4 til að mæla umferð og bæta síðuna. Setur _ga og _ga_* vafrakökur og sendir gögn um síðuskoðanir til Google.",
+    "marketingLabel": "Markaðssetning — Meta Pixel",
+    "marketingDesc": "Hleður Meta Pixel (Facebook / Instagram) svo við getum mælt auglýsingaherferðir. Setur _fbp og _fbc vafrakökur og sendir gögn um síðuskoðanir til Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Fyrir auglýsingastofur og hönnunarstofur",
+      "headlineOne": "Erfitt að koma færslum út",
+      "headlineTwo": "fyrir hvern viðskiptavin",
+      "headlineThree": "á hverjum vettvangi?",
+      "lead": "Loritalk gefur auglýsingastofunni þinni <strong>eitt vinnusvæði fyrir hvert vörumerki</strong>, sérstaka persónu fyrir hvern viðskiptavin og upprunalega birtingu á 8 miðlum — svo teymið þitt skrifar einu sinni og birtir alls staðar, á hverjum aðgangi.",
+      "ctaPrimary": "Byrjaðu með Ultra áskriftinni",
+      "ctaSecondary": "Sjáðu verð fyrir auglýsingastofur",
+      "trust": [
+        "Eitt vinnusvæði fyrir hvert vörumerki",
+        "Stjórnanda- og birtingarhlutverk",
+        "8 miðlar í gegnum upprunaleg API"
+      ],
+      "hubLabel": "Höfuðstöðvar stofunnar",
+      "hubTitle": "5 vörumerki. 5 vinnusvæði.",
+      "hubBody": "Hver viðskiptavinur fær sitt eigið vinnusvæði, persónur, rásir og greiningu. Skiptu um samhengi með einum smelli.",
+      "hubMeta": "5 vinnusvæði · einangruð",
+      "hubBadge": "Í loftinu"
+    },
+    "pains": {
+      "title": "Kannastu við vikuna þína?",
+      "subtitle": "Sama efnið endurskrifað 7 sinnum fyrir 5 viðskiptavini. Í hverri viku. Við höfum verið þar.",
+      "items": [
+        {
+          "title": "Að halda 5+ viðskiptavinum á lofti í einu",
+          "description": "Hvert vörumerki vill annan tón, aðra vettvanga, önnur skiladaga. Töflureiknar og Slack-þræðir eru ekki vinnuferli."
+        },
+        {
+          "title": "Vörumerkjaröddin reikar í hverri færslu",
+          "description": "Ólíkir textahöfundar, ólíkir flipar, ólíkar ChatGPT-leiðbeiningar. Röddin sem viðskiptavinurinn þinn samþykkti fyrir hálfu ári er horfin."
+        },
+        {
+          "title": "Endurtímasetningar á föstudagskvöldum",
+          "description": "Viðskiptavinurinn biður um síðustu-stundar breytingar á Instagram, LinkedIn og TikTok. Þú endurskrifar sömu hugmyndina þrisvar — og missir samt af tímaglugganum."
+        },
+        {
+          "title": "Skýrslugerð tekur heilan dag",
+          "description": "Að afrita birtingar, þátttöku og smelli úr fimm mælaborðum yfir í kynningu. Handvirkt. Í hverjum mánuði."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Allt sem auglýsingastofan þín þarf á einum stað",
+      "subtitle": "Frá lýsingu að skýrslu — Loritalk keyrir allt efnisferlið fyrir hvert vörumerki sem þú stjórnar.",
+      "items": [
+        {
+          "title": "Eitt vinnusvæði fyrir hvern viðskiptavin",
+          "description": "Einangruð vinnusvæði með sínum eigin tengdu rásum, persónum, liðsmönnum og dagatali. Settu nýjan viðskiptavin upp á nokkrum mínútum."
+        },
+        {
+          "title": "Persónur með vörumerkjarödd",
+          "description": "Skilgreindu persónu fyrir hvern viðskiptavin — rödd, tón, sérstakar leiðbeiningar. Hver gerð fyrir það vinnusvæði virðir lýsinguna, í hvert sinn."
+        },
+        {
+          "title": "8 miðlar, ein lýsing",
+          "description": "Skrifaðu lýsinguna einu sinni og fáðu upprunalegar útgáfur fyrir Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads og Telegram — allt á sekúndum, allt í gegnum opinber API."
+        },
+        {
+          "title": "Dagatal fyrir hvert vinnusvæði",
+          "description": "Hver viðskiptavinur hefur sitt eigið viku- / mánaðar- / biðraðaryfirlit. Tímasettu færslur fyrir hverja rás og sjáðu allt ferlið fyrir það vörumerki í einni svipan."
+        },
+        {
+          "title": "Stjórnanda- og birtingarhlutverk",
+          "description": "Bjóddu liðsmönnum á hvert vinnusvæði sem stjórnendum (full stjórnun) eða birtendum (búa til og birta). Vinnusvæði eru algjörlega einangruð hvert frá öðru."
+        },
+        {
+          "title": "Greining fyrir hvert vinnusvæði",
+          "description": "Útbreiðsla, þátttaka, smellir og vöxtur fyrir hverja rás innan vinnusvæðis hvers viðskiptavinar. KPI-spjöld, bestu færslur og Lori Insights — án þess að hoppa á milli mælaborða."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Hvernig vika auglýsingastofu lítur út á Loritalk",
+      "subtitle": "Taktu vörumerki inn, lýstu fyrir gervigreindina, fáðu samþykki, sendu út. Endurtaktu fyrir hvern viðskiptavin.",
+      "steps": [
+        {
+          "badge": "01 · INNRITUN",
+          "title": "Settu upp vinnusvæði viðskiptavinarins",
+          "description": "Búðu til vinnusvæði, tengdu samfélagsaðganga vörumerkisins og stilltu persónuna — rödd, tón, sérstakar leiðbeiningar. Tilbúið til notkunar á nokkrum mínútum."
+        },
+        {
+          "badge": "02 · LÝSING",
+          "title": "Skrifaðu eina lýsingu fyrir hverja herferð",
+          "description": "Veldu persónuna, rásirnar og tungumálið. Loritalk býr til upprunalega útgáfu fyrir hvern vettvang á sekúndum."
+        },
+        {
+          "badge": "03 · FÍNPÚSSUN",
+          "title": "Breyttu innan teymisins þíns",
+          "description": "Teymið þitt fer yfir drögin innan vinnusvæðisins — fínpússar texta, skiptir út myndum, velur sterkustu útgáfuna fyrir hverja rás áður en hún fer út."
+        },
+        {
+          "badge": "04 · ÚTSENDING",
+          "title": "Birtu og fylgstu með",
+          "description": "Upprunaleg API ýta á hverja rás. Frammistaðan flæðir til baka í mælaborð hvers vinnusvæðis — KPI, bestu færslur og vöxtur eftir rás."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Áskriftir byggðar fyrir auglýsingastofur",
+      "subtitle": "Rektu nokkur vörumerki eða heilan viðskiptavinahóp. Veldu magnið sem passar við samninginn þinn.",
+      "customPrice": "Tölum saman",
+      "customCredits": "Ótakmarkaðar inneignir",
+      "customCreditsDetail": "Magn umsamið í samningi — engin óvænt umframgjöld.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Sérsniðið",
+          "description": "Fyrir net og stórar auglýsingastofur sem þurfa sérsniðið magn og innritun.",
+          "cta": "Tala við sölu"
+        }
+      },
+      "features": {
+        "customVolumes": "Sérsniðið inneignamagn",
+        "priorityEmail": "Forgangs tölvupóstaðstoð",
+        "euData": "Gagnavistun innan ESB"
+      }
+    },
+    "faq": {
+      "title": "Spurningar auglýsingastofa, svaraðar.",
+      "items": [
+        {
+          "q": "Hvernig er inneignum deilt milli viðskiptavina?",
+          "a": "Inneignir liggja á reikningsstigi auglýsingastofunnar — hvaða vinnusvæði sem er getur nýtt sömu sameign. Fylgstu með notkun í greiðslumælaborðinu."
+        },
+        {
+          "q": "Hvað gerist þegar við tökum viðskiptavin inn eða út?",
+          "a": "Settu upp nýtt vinnusvæði á sekúndum. Að geyma vinnusvæði fjarlægir það úr virku yfirliti; full eyðing reiknings virðir GDPR-reglur um varðveislu."
+        },
+        {
+          "q": "Á hvaða samfélagsmiðla getum við birt?",
+          "a": "Upprunaleg birting nær yfir LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads og Telegram — átta miðlar, hver í gegnum opinbert API vettvangsins, svo bilanir haldast einangraðar fyrir hverja rás."
+        },
+        {
+          "q": "Geta viðskiptavinir skráð sig inn til að sjá vinnusvæðið sitt?",
+          "a": "Ekki í dag. Vinnusvæði eru aðeins fyrir teymi auglýsingastofunnar — stjórnanda- og birtingarhlutverk. Aðgangur viðskiptavina er á vegáætluninni."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Tilbúin að stækka efnið yfir alla viðskiptavini?",
+      "subtitle": "Byrjaðu með Ultra áskriftinni í dag eða bókaðu 20 mínútna kynningu með auglýsingastofuteyminu til að sjá Loritalk á þínum eigin vörumerkjum.",
+      "ctaPrimary": "Byrjaðu með Ultra",
+      "ctaSecondary": "Bóka kynningu"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Fyrir einyrkja og áhrifavalda",
+      "headlineOne": "Ein hugmynd.",
+      "headlineTwo": "Hver vettvangur.",
+      "headlineThree": "Án þess að tapa helginni þinni.",
+      "lead": "Loritalk breytir einni lýsingu í <strong>upprunalegar færslur fyrir Instagram, TikTok, YouTube Shorts, X, Threads</strong> og fleira — heldur röddinni þinni samkvæmri á hverjum aðgangi.",
+      "ctaPrimary": "Byrjaðu ókeypis með Starter",
+      "ctaSecondary": "Sjáðu áskriftir fyrir efnishöfunda",
+      "trust": [
+        "Röddin þín á hverri rás",
+        "8 miðlar í gegnum upprunaleg API",
+        "Tímasettu vikur í einni lotu"
+      ],
+      "hubLabel": "Stúdíóið þitt",
+      "hubTitle": "1 lýsing. 8 upprunalegar færslur.",
+      "hubBody": "Skilgreindu persónuna þína einu sinni. Loritalk aðlagar hverja færslu að hverjum vettvangi — lengd, myllumerki, emoji, tón, myndsnið.",
+      "hubMeta": "1 persóna · 8 rásir",
+      "hubBadge": "Í loftinu",
+      "cardTag": "Upprunalegt snið"
+    },
+    "pains": {
+      "title": "Hljómar eins og vikan þín?",
+      "subtitle": "Að birta á hverjum degi á hverjum vettvangi ætti ekki að kosta þig sunnudagseftirmiðdag. Við höfum verið þar.",
+      "items": [
+        {
+          "title": "Sama hugmynd, endurskrifuð 8 sinnum",
+          "description": "Texti fyrir Instagram, handrit fyrir TikTok, krókur fyrir YouTube, þráður fyrir X… hver vettvangur þarf annað form. Þú brennir heilum eftirmiðdegi á eina færslu."
+        },
+        {
+          "title": "Algrím refsa eyðum",
+          "description": "Slepptu tveimur dögum og útbreiðslan fellur. Haltu þér samkvæmum á hverjum vettvangi og þú hefur varla tíma til að taka upp, hvað þá að lifa lífinu."
+        },
+        {
+          "title": "Vörumerkjasamningar krefjast margra vettvanga",
+          "description": "Styrktaraðilar vilja Reels + Shorts + TikTok + færslu. Sama herferð, fjögur snið. Þú rukkar fyrir eitt og skilar fjórum."
+        },
+        {
+          "title": "Röddin þynnist út",
+          "description": "Við fimmtándu færslu hljóma textarnir eins og ókunnugur hafi skrifað þá. Áhorfendur finna fyrir því. Þátttakan fellur."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Allt sem efnishöfundur þarf á einum stað",
+      "subtitle": "Lýstu einu sinni, sendu alls staðar — án þess að tapa röddinni sem áhorfendur þínir fylgja.",
+      "items": [
+        {
+          "title": "Röddin þín, fest í sessi",
+          "description": "Skilgreindu persónu með röddinni þinni, tóni og sérstökum leiðbeiningum í einföldum texta. Hver gerð fer í gegnum þá linsu — hljómar eins og þú, ekki eins og gervigreindarverkfæri."
+        },
+        {
+          "title": "Ein lýsing, átta upprunalegar færslur",
+          "description": "Skrifaðu hugmyndina einu sinni. Loritalk býr til útgáfu fínstillta fyrir Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn og Telegram á sekúndum."
+        },
+        {
+          "title": "Myndir í takt við vörumerkið fyrir hvert snið",
+          "description": "Feed-færslur, stories, hero-úrklippur, lóðrétt fyrir Reels og Shorts. Myndir eru unnar með réttu hlutfalli og sjónrænum reglum persónunnar þinnar."
+        },
+        {
+          "title": "Tímasettu viku í einni setu",
+          "description": "Skipuleggðu mánudag til sunnudags á hverjum vettvangi í einu dagatali. Upprunaleg API ýta sjálfkrafa — jafnvel þegar þú ert að taka upp næstu lotu."
+        },
+        {
+          "title": "Sjáðu hvað er að vaxa",
+          "description": "Útbreiðsla, þátttaka, smellir og fylgjendavöxtur fyrir hverja rás. KPI-spjöld og Lori Insights draga fram það sem virkar — leggðu meira í það."
+        },
+        {
+          "title": "Yfirfarið áður en það fer út",
+          "description": "Hver drög fara í gegnum sjálfvirka yfirferð, svo efni öruggt fyrir vörumerkið berst til áhorfenda þinna og styrktaraðilar þínir haldast ánægðir."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Hvernig vika efnishöfundar lítur út á Loritalk",
+      "subtitle": "Fangaðu röddina þína einu sinni, lýstu einni hugmynd, sendu á hvern vettvang, fylgstu með því sem vex.",
+      "steps": [
+        {
+          "badge": "01 · RÖDD",
+          "title": "Skilgreindu persónuna þína",
+          "description": "Skrifaðu röddina þína, tón og húsreglur inn í persónu. Hún verður linsan sem hver framtíðarfærsla fer í gegnum."
+        },
+        {
+          "badge": "02 · LÝSING",
+          "title": "Lýstu einni hugmynd",
+          "description": "Skrifaðu hugmyndina, veldu rásir og tungumál. Loritalk býr til upprunalega útgáfu fyrir hvern vettvang á sekúndum — texta, handrit, þræði, króka."
+        },
+        {
+          "badge": "03 · ÚTSENDING",
+          "title": "Breyttu og tímasettu",
+          "description": "Fínpússaðu sterkustu útgáfuna fyrir hverja rás, settu allt í biðröð í dagatalinu, gakktu í burtu. API birta á réttum tíma, í réttu sniði."
+        },
+        {
+          "badge": "04 · FYLGJAST MEÐ",
+          "title": "Fylgstu með því sem virkar",
+          "description": "Greining fyrir hverja rás sýnir hvað dregur að útbreiðslu og þátttöku. Endurnýjaðu sjónarhornið, ekki vinnuferlið."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Áskriftir byggðar fyrir efnishöfunda",
+      "subtitle": "Byrjaðu ókeypis á meðan á Beta stendur. Veldu magnið sem passar við hversu oft þú birtir."
+    },
+    "faq": {
+      "title": "Spurningar efnishöfunda, svaraðar.",
+      "items": [
+        {
+          "q": "Mun það hljóma eins og ég?",
+          "a": "Lýstu röddinni þinni, tóni og húsreglum í persónu. Hver gerð fer í gegnum þá linsu. Því nákvæmari sem persónan er, því nær röddinni þinni."
+        },
+        {
+          "q": "Á hvaða vettvanga birtir þú í raun?",
+          "a": "Upprunaleg birting nær yfir Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn og Telegram — átta miðlar í gegnum opinber API. Bilanir á einni rás stöðva aldrei hinar."
+        },
+        {
+          "q": "Get ég breytt áður en ég birti?",
+          "a": "Alltaf. Loritalk býr til drög fyrir hverja rás — þú velur, fínpússar og birtir. Ekkert fer í loftið án þess að þú ýtir á hnappinn (nema þú hafir tímasett það)."
+        },
+        {
+          "q": "Hvað með myndir og stuttmyndband?",
+          "a": "Myndir í takt við vörumerkið eru búnar til fyrir hvern vettvang með réttu hlutfalli (ferningur, lóðrétt 9:16, hero). Fyrir stuttmyndband færðu upprunalegan texta með krók á fyrstu sekúndunum og ákalli til aðgerða — límdu beint inn í TikTok eða YouTube Shorts."
+        },
+        {
+          "q": "Er Loritalk ókeypis á meðan á Beta stendur?",
+          "a": "Já. Beta-aðgangur er ókeypis með rausnarlegum mörkum. Hver Beta-notandi heldur núverandi verði læstu að eilífu þegar greiddar áskriftir fara í loftið."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Hættu að endurskrifa. Byrjaðu að senda út.",
+      "subtitle": "Skráðu þig í Beta — ókeypis, ekkert greiðslukort, verðið þitt læsist að eilífu þegar við förum í loftið.",
+      "ctaPrimary": "Byrjaðu ókeypis með Starter",
+      "ctaSecondary": "Sjáðu áskriftir fyrir efnishöfunda"
+    }
+  }
+}

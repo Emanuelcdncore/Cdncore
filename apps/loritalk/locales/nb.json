@@ -1,0 +1,656 @@
+{
+  "navbar": {
+    "features": "Funksjoner",
+    "howItWorks": "Slik fungerer det",
+    "pricing": "Priser",
+    "forAgencies": "For byråer",
+    "forCreators": "For skapere",
+    "beta": "Beta",
+    "startForFree": "Kom i gang gratis"
+  },
+  "hero": {
+    "badge": "I beta · Tidlig-tilgang-pris låst for alltid",
+    "headlineOne": "Skriv mindre.",
+    "headlineTwo": "Publiser mer.",
+    "headlineTwoTail": "",
+    "headlineStrike": "Skrevet om.",
+    "headlineThree": "Revidert.",
+    "lead": "Beskriv innlegget ditt én gang. Loritalk skriver <strong>en innfødt versjon for hver tilkoblede plattform</strong>, lager merkevaretilpassede bilder, kjører hvert ord gjennom automatisk moderering og planlegger dem — på sekunder.",
+    "ctaPrimary": "Start gratis — uten kort",
+    "ctaSecondary": "Se det i bruk · 90 s",
+    "trust": [
+      "8 innfødte integrasjoner",
+      "Auto-moderert",
+      "Isolert per arbeidsområde"
+    ],
+    "briefCard": {
+      "label": "Din brief · 1 av 1",
+      "typed": "Lanser vår nye bærekraftige sneaker. Laget av 80 % resirkulert havplast. Rettet mot Gen Z-løpere.",
+      "meta": "no · 8 kanaler · Husstemme",
+      "send": "Generer ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "innlegg · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · sider",
+      "x": "X / Twitter",
+      "xTag": "tråder · enkelt",
+      "tiktok": "TikTok",
+      "tiktokTag": "manus · bildetekster",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100 s",
+      "threads": "Threads",
+      "threadsTag": "innfødt",
+      "facebook": "Facebook",
+      "facebookTag": "sider",
+      "telegram": "Telegram",
+      "telegramTag": "kanaler · grupper"
+    },
+    "leadHook": "Beskriv innlegget ditt én gang.",
+    "leadBody": "Loritalk skriver <strong>en innfødt versjon for hver tilkoblede plattform</strong>, lager merkevaretilpassede bilder, kjører hvert ord gjennom automatisk moderering og planlegger dem — på sekunder."
+  },
+  "stats": {
+    "networksValue": "8",
+    "networksLabel": "Sosiale nettverk støttet",
+    "languagesValue": "24+",
+    "languagesLabel": "Grensesnittspråk",
+    "generationValue": "Sekunder",
+    "generationLabel": "Fra brief til klar for publisering",
+    "freeValue": "Gratis",
+    "freeLabel": "Under beta — ingen grenser"
+  },
+  "problem": {
+    "title": "Innholdsarbeidsflyten din er ødelagt",
+    "subtitle": "Høres det kjent ut?",
+    "items": [
+      {
+        "title": "Timer kastet bort på tilpasning",
+        "description": "Du skriver et innlegg for Instagram, så skriver du det om for LinkedIn, og så igjen for X. Hver plattform krever ulik tone, lengde og hashtagger."
+      },
+      {
+        "title": "AI som høres generisk ut",
+        "description": "AI med én enkelt modell gir deg én versjon som høres ut som alle andre. Ingen merkevarestemme, ingen plattformbevissthet, ingen reell optimalisering."
+      },
+      {
+        "title": "Flaskehalser i teamet",
+        "description": "Innhold venter på godkjenning, forsvinner i Slack-tråder, og ingen vet hva som er planlagt for neste uke."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Loritalk fikser alt det",
+    "subtitle": "Én brief. En innfødt versjon for hver plattform. Merkevaretilpassede bilder generert parallelt.",
+    "ctaPrimary": "Begynn å lage innhold gratis",
+    "rows": [
+      {
+        "before": "1 innlegg = 45 min tilpasning til hver plattform",
+        "after": "1 brief = alle plattformer på <5 sekunder"
+      },
+      {
+        "before": "Generisk AI-tekst gjenbrukt på hvert nettverk",
+        "after": "En innfødt versjon per kanal — lengde, hashtagger og tone tilpasset"
+      },
+      {
+        "before": "Innhold spredt over verktøy og tråder",
+        "after": "Ett dashbord: lag, godkjenn, planlegg, publiser, følg opp"
+      }
+    ]
+  },
+  "features": {
+    "title": "Alt innholdsteamet ditt trenger",
+    "subtitle": "Fra idé til publisert innlegg — Loritalk håndterer hele arbeidsflyten.",
+    "items": [
+      {
+        "title": "Plattforminnfødt innhold",
+        "description": "Én brief blir til en innfødt versjon for hver plattform — lengde, hashtagger, emoji og tone tilpasset Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads og Telegram."
+      },
+      {
+        "title": "Merkevaretilpasset bildegenerering",
+        "description": "Bilder generert per plattform med riktig sideforhold og personaens visuelle regler — feed-innlegg, stories, hero-utsnitt. Slutt på manuell skalering."
+      },
+      {
+        "title": "Flerspråklig generering",
+        "description": "Generer på portugisisk, engelsk, spansk og mer. Flyt på morsmålsnivå med kulturelle nyanser — ikke bare oversettelse."
+      },
+      {
+        "title": "Planlegg og publiser",
+        "description": "Kalendervisning, planlagt publisering og direkte posting til alle tilkoblede kanaler. Ulike tidspunkt per plattform."
+      },
+      {
+        "title": "Merkevarestemme og personaer",
+        "description": "Lag AI-personaer som skriver som merkevaren din. Styr tonen fra profesjonell til leken. Hvert innlegg høres ut som deg, ikke en robot."
+      },
+      {
+        "title": "Analysedashbord",
+        "description": "Følg rekkevidde, engasjement, klikk og vekst per kanal. KPI-kort, toppinnlegg og Lori Insights løfter frem det som funker."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "05 · Arbeidsflyt",
+    "title": "Brief → forhåndsvisning → publiser.",
+    "titleAccent": "Tre trekk.",
+    "titleTail": "På sekunder.",
+    "subtitle": "Du velger aldri en modell. Du skalerer aldri et bilde. Du kopierer aldri mellom faner.",
+    "steps": [
+      {
+        "badge": "01",
+        "eyebrow": "Inndata",
+        "title": "Skriv din brief",
+        "description": "Én setning eller tre avsnitt. Velg kanaler, persona og språk. Det er det eneste du skriver i dag.",
+        "footLeft": "~ 5 sek å skrive",
+        "footRight": "1 brief"
+      },
+      {
+        "badge": "02",
+        "eyebrow": "Generering",
+        "title": "AI skreddersyr per kanal",
+        "description": "Loritalk leser briefen din, personaen din og hver plattforms innfødte regler — og lager deretter en versjon laget for hver kanal. Automatisk moderering kjører før du ser det.",
+        "footLeft": "~ 3 sek per kanal",
+        "footRight": "Per tilkoblet kanal"
+      },
+      {
+        "badge": "03",
+        "eyebrow": "Distribusjon",
+        "title": "Publiser eller planlegg",
+        "description": "Send nå eller legg i kalenderen med tidspunkt per plattform. Hver kanal går gjennom sitt innfødte API; feil er isolert — Instagram går likevel selv om Facebook svikter.",
+        "footLeft": "Innfødte API-er · OAuth",
+        "footRight": "8 kanaler"
+      }
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Lanser vår nye bærekraftige sneaker. Laget av 80 % resirkulert havplast. Rettet mot Gen Z-løpere.\"",
+      "channelsComment": "// kanaler:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Språk",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Nøytral — Loris husstemme"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Avslappet, morsom, samtalepreget"
+        },
+        {
+          "name": "Core",
+          "desc": "Dristig, optimistisk, merkevaredrevet"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karusell",
+          "when": "I dag 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "langformat",
+          "when": "I dag 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "tråd",
+          "when": "I dag 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "I morgen 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "innlegg",
+          "when": "I morgen 12:00"
+        }
+      ],
+      "cta": "▶ Publiser alle · ⏱ Planlegg"
+    }
+  },
+  "imagery": {
+    "eyebrow": "06 · Bilder",
+    "title": "Merkevaretilpassede",
+    "titleAccent": "bilder",
+    "titleTail": "i riktig størrelse per plattform.",
+    "subtitle": "Bildegenerering kjører asynkront og per plattform — ingen manuell skalering, ingen merkefremmed stock. Enkeltinnlegg, karuseller, story-formater, hero-utsnitt. Hver gjengivelse refererer til den aktive personaens visuelle regler.",
+    "tiles": {
+      "instagramCaption": "Kl. 5. Kaffe, to faner, én avgjørelse.\nBygget v2 før teamet logget på.",
+      "storyQuote": "vi nådde 1M MRR samme uke som vi fjernet halve veikartet.",
+      "storySwipe": "↑ sveip",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Vi ansatte 3 frilansere før vår første fast ansatte. Her er regnearket.",
+      "linkedinCta": "Les mer →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "det meste av «gründerinnhold» er en pressemelding i hettegenser. skriv som et menneske. #shipping",
+      "generatingLabel": "Gjengir · TikTok",
+      "generatingSub": "9:16 · ~12 s",
+      "ytTitleLineOne": "FØRSTE",
+      "ytTitleLineTwo": "ANSATT.",
+      "ytSubtitle": "Hvorfor vi ventet 18 måneder.",
+      "ytMeta": "Loritalk · Ep. 14 · 32 min"
+    }
+  },
+  "useCases": {
+    "title": "Bygget for team som publiserer",
+    "subtitle": "Enten du er en solo-skaper eller et byrå med 50 ansatte.",
+    "items": [
+      {
+        "title": "Solo-skapere og frilansere",
+        "description": "Slutt å bruke timer på å tilpasse innhold. Skriv én gang, publiser overalt. Fokuser på strategi, ikke på kopier-og-lim."
+      },
+      {
+        "title": "Markedsføringsteam",
+        "description": "Ett arbeidsområde per merkevare. Kalendervisning per arbeidsområde. Alle vet hva som publiseres og når."
+      },
+      {
+        "title": "Byråer",
+        "description": "Administrer flere merkevarer fra én konto. Ett arbeidsområde per kunde med isolerte kanaler, personaer og kalender. Analyse per kanal for hver merkevare."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Enkle, transparente priser",
+    "subtitle": "Kredittbasert. Avslutt når som helst. Årlig sparer deg to måneder.",
+    "monthly": "Månedlig",
+    "annual": "Årlig",
+    "save2Months": "-17 %",
+    "perMonth": "/ mnd",
+    "perMonthBilledYearly": "/ mnd, fakturert årlig",
+    "perYear": "/ år",
+    "saveYearly": "Spar {{amount}} / år",
+    "mostPopular": "Mest populær",
+    "bestValue": "Beste verdi",
+    "creditsUnit": "kreditter / måned",
+    "creditsTexts": "~{{count}} tekstinnlegg",
+    "creditsOr": "eller",
+    "creditsImages": "~{{count}} merkevaretilpassede bilder",
+    "promoExplainer": "Førsteårskampanje: få 2× kreditter HVER måned hele det første året når du velger Årlig — det er {{count}} bonuskreditter hver måned.",
+    "promoHeroExtra": "(+{{count}} bonuskreditter hver måned i 12 måneder)",
+    "tierChoose": "Velg plan",
+    "features": {
+      "workspaces_one": "{{count}} arbeidsområde",
+      "workspaces_other": "{{count}} arbeidsområder",
+      "channels": "{{count}} sosiale kanaler",
+      "personas": "{{count}} merkevarepersonaer",
+      "members_one": "{{count}} teammedlem",
+      "members_other": "{{count}} teammedlemmer",
+      "media": "{{count}} medieelementer"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "For førstegangsbrukere av AI-innhold"
+      },
+      "PLUS": {
+        "name": "Plus",
+        "description": "For jevn og enkel produksjon av AI-innhold"
+      },
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "For skapere som bygger AI-produkter"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "For byråer og små team"
+      }
+    }
+  },
+  "faq": {
+    "title": "Spørsmål? Vi har svarene.",
+    "items": [
+      {
+        "q": "Hvordan fungerer Loritalks AI?",
+        "a": "Loritalk lager en innfødt versjon av briefen din for hver tilkoblede kanal og gjengir merkevaretilpassede bilder parallelt. Alt går gjennom et automatisk modereringslag før det når dashbordet ditt."
+      },
+      {
+        "q": "Hvordan skiller dette seg fra andre AI-verktøy?",
+        "a": "Andre verktøy gir deg én blokk med tekst å kopiere og lime overalt. Loritalk lager innfødte versjoner per plattform — lengde, hashtagger, emoji og tone tilpasset hvert nettverk — og publiserer gjennom hver plattforms offisielle API."
+      },
+      {
+        "q": "Hvilke sosiale nettverk støttes?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads og Telegram — åtte nettverk via innfødte API-er."
+      },
+      {
+        "q": "Hvor lagres dataene mine?",
+        "a": "Dataene dine lagres på servere i Den europeiske union. AI-leverandørene vi bruker (OpenAI for tekst, Google for bilder) opererer under sine enterprise-API-vilkår — innhold sendt til API-et brukes ikke til å trene deres generelle modeller."
+      },
+      {
+        "q": "Kan jeg bruke det med teamet mitt?",
+        "a": "Ja. Lag arbeidsområder for hver merkevare og inviter teammedlemmer med admin- eller publiseringsroller. Hvert arbeidsområde har sine egne tilkoblede kanaler, personaer og kalender."
+      },
+      {
+        "q": "Hva skjer etter beta?",
+        "a": "Betalte planer trer i kraft, men hver beta-bruker beholder sin nåværende pris låst for alltid. Ingen overraskelser."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Slutt å skrive. Begynn å publisere.",
+    "subtitle": "Bli med i betaen — gratis tilgang, ingen betalingskort, og prisen din er låst for alltid når vi lanserer.",
+    "ctaPrimary": "Begynn å lage innhold gratis",
+    "ctaSecondary": "Se hvordan det fungerer"
+  },
+  "footer": {
+    "description": "AI-innhold for hvert sosiale nettverk.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "product": "Produkt",
+    "resources": "Ressurser",
+    "legal": "Juridisk",
+    "features": "Funksjoner",
+    "changelog": "Endringslogg",
+    "supportedNetworks": "Støttede nettverk",
+    "helpCenter": "Hjelpesenter",
+    "contactUs": "Kontakt oss",
+    "betaFeedback": "Beta-tilbakemelding",
+    "apiDocs": "API-dokumentasjon",
+    "privacyPolicy": "Personvernerklæring",
+    "termsOfService": "Vilkår for bruk",
+    "cookiePolicy": "Informasjonskapselregler",
+    "legalNotice": "Juridisk merknad",
+    "copyright": "© 2026 Loritalk® av CDN Core Technologies. Covilhã, Portugal."
+  },
+  "cookieBanner": {
+    "aria": "Varsel om informasjonskapsler",
+    "title": "Vi bruker informasjonskapsler",
+    "body": "Strengt nødvendige informasjonskapsler holder nettstedet i gang. Med ditt samtykke laster vi også Google Analytics for å måle trafikk og Meta Pixel for å måle annonseringen vår. Du kan godta, avslå eller velge kategori for kategori — og ombestemme deg når som helst.",
+    "policyLink": "Informasjonskapselregler",
+    "privacyLink": "Personvernerklæring",
+    "acceptAll": "Godta alle",
+    "rejectOptional": "Avslå valgfrie",
+    "customize": "Tilpass",
+    "save": "Lagre innstillinger",
+    "necessaryLabel": "Strengt nødvendige",
+    "necessaryDesc": "Nødvendig for at nettstedet skal fungere (språk og ditt samtykkevalg). Kan ikke deaktiveres.",
+    "analyticsLabel": "Analyse — Google Analytics",
+    "analyticsDesc": "Laster Google Analytics 4 for å måle trafikk og forbedre nettstedet. Setter _ga- og _ga_*-informasjonskapsler og overfører sidevisningsdata til Google.",
+    "marketingLabel": "Markedsføring — Meta Pixel",
+    "marketingDesc": "Laster Meta Pixel (Facebook / Instagram) slik at vi kan måle annonsekampanjer. Setter _fbp- og _fbc-informasjonskapsler og overfører sidevisningsdata til Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "For markedsføringsbyråer og kreative studioer",
+      "headlineOne": "Sliter du med å publisere innlegg",
+      "headlineTwo": "for hver kunde",
+      "headlineThree": "på hver plattform?",
+      "lead": "Loritalk gir byrået ditt <strong>ett arbeidsområde per merkevare</strong>, en dedikert persona per kunde og innfødt publisering på 8 nettverk — slik at teamet ditt skriver én gang og publiserer overalt, på hver konto.",
+      "ctaPrimary": "Start med Ultra-planen",
+      "ctaSecondary": "Se byråpriser",
+      "trust": [
+        "Ett arbeidsområde per merkevare",
+        "Admin- + publiseringsroller",
+        "8 nettverk via innfødte API-er"
+      ],
+      "hubLabel": "Byrå-hovedkvarter",
+      "hubTitle": "5 merkevarer. 5 arbeidsområder.",
+      "hubBody": "Hver kunde får sitt eget arbeidsområde, personaer, kanaler og analyse. Bytt kontekst med ett klikk.",
+      "hubMeta": "5 arbeidsområder · isolert",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "Kjenner du igjen uken din?",
+      "subtitle": "Samme innhold skrevet om 7 ganger for 5 kunder. Hver uke. Vi har vært der.",
+      "items": [
+        {
+          "title": "Sjonglerer 5+ kunder samtidig",
+          "description": "Hver merkevare vil ha ulik tone, ulike plattformer, ulike frister. Regneark og Slack-tråder er ikke en arbeidsflyt."
+        },
+        {
+          "title": "Merkevarestemmen sklir for hvert innlegg",
+          "description": "Ulike tekstforfattere, ulike faner, ulike ChatGPT-instruksjoner. Stemmen kunden din godkjente for seks måneder siden er borte."
+        },
+        {
+          "title": "Omplanlegginger fredag kveld",
+          "description": "Kunden ber om endringer i siste liten på tvers av Instagram, LinkedIn og TikTok. Du skriver om den samme idéen tre ganger — og bommer på tidsluken likevel."
+        },
+        {
+          "title": "Rapportering tar en hel dag",
+          "description": "Kopiere visninger, engasjement og klikk fra fem dashbord inn i en presentasjon. Manuelt. Hver måned."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Alt byrået ditt trenger på ett sted",
+      "subtitle": "Fra briefen til rapporten — Loritalk driver hele innholdspipelinen for hver merkevare du administrerer.",
+      "items": [
+        {
+          "title": "Ett arbeidsområde per kunde",
+          "description": "Isolerte arbeidsområder med sine egne tilkoblede kanaler, personaer, medlemmer og kalender. Sett opp en ny kunde på minutter."
+        },
+        {
+          "title": "Personaer for merkevarestemme",
+          "description": "Definer en persona per kunde — stemme, tone, spesifikke instruksjoner. Hver generering for det arbeidsområdet respekterer briefen, hver gang."
+        },
+        {
+          "title": "8 nettverk, én brief",
+          "description": "Skriv briefen én gang og motta innfødte versjoner for Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads og Telegram — alt på sekunder, alt via offisielle API-er."
+        },
+        {
+          "title": "Kalender per arbeidsområde",
+          "description": "Hver kunde har sin egen uke-/måneds-/køvisning. Planlegg innlegg per kanal og se hele pipelinen for den merkevaren med ett blikk."
+        },
+        {
+          "title": "Admin- + publiseringsroller",
+          "description": "Inviter teammedlemmer per arbeidsområde som admin (full administrasjon) eller publisist (lag og publiser). Arbeidsområder er fullstendig isolert fra hverandre."
+        },
+        {
+          "title": "Analyse per arbeidsområde",
+          "description": "Rekkevidde, engasjement, klikk og vekst per kanal inne i hver kundes arbeidsområde. KPI-kort, toppinnlegg og Lori Insights — uten å hoppe mellom dashbord."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Slik ser en byråuke ut på Loritalk",
+      "subtitle": "Sett opp en merkevare, brief AI-en, få godkjenning, publiser. Gjenta for hver kunde.",
+      "steps": [
+        {
+          "badge": "01 · SETT OPP",
+          "title": "Sett opp kundens arbeidsområde",
+          "description": "Lag et arbeidsområde, koble til merkevarens sosiale kontoer og konfigurer personaen — stemme, tone, spesifikke instruksjoner. Klar til bruk på minutter."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Skriv én brief per kampanje",
+          "description": "Velg persona, kanaler og språk. Loritalk genererer en innfødt versjon per plattform på sekunder."
+        },
+        {
+          "badge": "03 · FINPUSS",
+          "title": "Rediger i teamet ditt",
+          "description": "Teamet ditt gjennomgår utkastene inne i arbeidsområdet — juster tekst, bytt bilder, velg den sterkeste varianten per kanal før det går ut."
+        },
+        {
+          "badge": "04 · PUBLISER",
+          "title": "Publiser og følg opp",
+          "description": "Innfødte API-er sender til hver kanal. Resultatene flyter tilbake inn i dashbordet per arbeidsområde — KPI-er, toppinnlegg og vekst per kanal."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planer bygget for byråer",
+      "subtitle": "Driv en håndfull merkevarer eller en hel kundeportefølje. Velg volumet som passer din avtale.",
+      "customPrice": "La oss snakke",
+      "customCredits": "Ubegrensede kreditter",
+      "customCreditsDetail": "Volum avtalt per kontrakt — ingen overraskelser ved overforbruk.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Tilpasset",
+          "description": "For nettverk og store byråer som trenger skreddersydde volumer og oppstart.",
+          "cta": "Snakk med salg"
+        }
+      },
+      "features": {
+        "customVolumes": "Tilpassede kredittvolumer",
+        "priorityEmail": "Prioritert e-poststøtte",
+        "euData": "EU-datalagring"
+      }
+    },
+    "faq": {
+      "title": "Byråspørsmål, besvart.",
+      "items": [
+        {
+          "q": "Hvordan deles kreditter mellom kunder?",
+          "a": "Kreditter ligger på byråkontonivå — ethvert arbeidsområde kan trekke fra samme pott. Følg forbruket i faktureringsdashbordet."
+        },
+        {
+          "q": "Hva skjer når vi setter opp eller avslutter en kunde?",
+          "a": "Sett opp et nytt arbeidsområde på sekunder. Å arkivere et arbeidsområde fjerner det fra den aktive visningen; full kontosletting respekterer GDPR-reglene for oppbevaring."
+        },
+        {
+          "q": "Hvilke sosiale nettverk kan vi publisere til?",
+          "a": "Innfødt publisering dekker LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads og Telegram — åtte nettverk, hver via plattformens offisielle API, slik at feil holder seg isolert per kanal."
+        },
+        {
+          "q": "Kan kunder logge inn for å se arbeidsområdet sitt?",
+          "a": "Ikke i dag. Arbeidsområder er kun for byråteamet — admin- og publiseringsroller. Kundetilgang er på veikartet."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Klar til å skalere innhold på tvers av hver kunde?",
+      "subtitle": "Start med Ultra-planen i dag eller bestill en 20-minutters demo med byråteamet for å se Loritalk på dine egne merkevarer.",
+      "ctaPrimary": "Start med Ultra",
+      "ctaSecondary": "Bestill en demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "For solo-skapere og influensere",
+      "headlineOne": "Én idé.",
+      "headlineTwo": "Hver plattform.",
+      "headlineThree": "Uten å miste helgen.",
+      "lead": "Loritalk gjør én brief om til <strong>innfødte innlegg for Instagram, TikTok, YouTube Shorts, X, Threads</strong> og mer — og holder stemmen din konsistent på tvers av hver konto.",
+      "ctaPrimary": "Start gratis med Starter",
+      "ctaSecondary": "Se skaperplaner",
+      "trust": [
+        "Stemmen din på hver kanal",
+        "8 nettverk via innfødte API-er",
+        "Planlegg uker i én omgang"
+      ],
+      "hubLabel": "Studioet ditt",
+      "hubTitle": "1 brief. 8 innfødte innlegg.",
+      "hubBody": "Definer personaen din én gang. Loritalk tilpasser hvert innlegg til hver plattform — lengde, hashtagger, emoji, tone, bildeformat.",
+      "hubMeta": "1 persona · 8 kanaler",
+      "hubBadge": "Live",
+      "cardTag": "Innfødt format"
+    },
+    "pains": {
+      "title": "Høres dette ut som uken din?",
+      "subtitle": "Å poste hver dag på hver plattform burde ikke koste deg en søndag ettermiddag. Vi har vært der.",
+      "items": [
+        {
+          "title": "Samme idé, skrevet om 8 ganger",
+          "description": "Bildetekst for Instagram, manus for TikTok, hook for YouTube, tråd for X … hver plattform krever en annen form. Du brenner en ettermiddag på ett innlegg."
+        },
+        {
+          "title": "Algoritmer straffer pauser",
+          "description": "Mister du to dager, faller rekkevidden. Hold deg konsistent på hver plattform, og du har knapt tid til å filme, langt mindre å leve livet ditt."
+        },
+        {
+          "title": "Merkevareavtaler krever flere plattformer",
+          "description": "Sponsorer vil ha Reels + Shorts + TikTok + innlegg. Samme kampanje, fire formater. Du tar betalt for ett og leverer fire."
+        },
+        {
+          "title": "Stemmen blir utvannet",
+          "description": "Ved innlegg nummer femten høres bildetekstene ut som en fremmed skrev dem. Publikum merker det. Engasjementet faller."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Alt en skaper trenger på ett sted",
+      "subtitle": "Brief én gang, publiser overalt — uten å miste stemmen publikummet ditt følger.",
+      "items": [
+        {
+          "title": "Stemmen din, låst inne",
+          "description": "Definer en persona med din stemme, tone og spesifikke instruksjoner i ren tekst. Hver generering går gjennom det filteret — høres ut som deg, ikke som et AI-verktøy."
+        },
+        {
+          "title": "Én brief, åtte innfødte innlegg",
+          "description": "Skriv idéen én gang. Loritalk lager en versjon optimalisert for Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn og Telegram på sekunder."
+        },
+        {
+          "title": "Merkevaretilpassede bilder per format",
+          "description": "Feed-innlegg, stories, hero-utsnitt, vertikalt for Reels og Shorts. Bilder gjengis med riktig sideforhold og personaens visuelle regler."
+        },
+        {
+          "title": "Planlegg en uke i én økt",
+          "description": "Planlegg mandag-til-søndag på tvers av hver plattform i én kalender. Innfødte API-er publiserer automatisk — selv mens du filmer neste batch."
+        },
+        {
+          "title": "Se hva som vokser",
+          "description": "Rekkevidde, engasjement, klikk og følgervekst per kanal. KPI-kort og Lori Insights løfter frem det som funker — sats videre på det."
+        },
+        {
+          "title": "Moderert før det publiseres",
+          "description": "Hvert utkast går gjennom automatisk moderering, slik at merkevaretrygt innhold når publikummet ditt og sponsorene dine forblir fornøyde."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Slik ser en skaperuke ut på Loritalk",
+      "subtitle": "Fang stemmen din én gang, brief én idé, publiser på tvers av hver plattform, følg med på hva som vokser.",
+      "steps": [
+        {
+          "badge": "01 · STEMME",
+          "title": "Definer personaen din",
+          "description": "Skriv stemmen din, tonen og husreglene inn i en persona. Den blir filteret hvert fremtidig innlegg går gjennom."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Brief én idé",
+          "description": "Skriv konseptet, velg kanaler og språk. Loritalk lager en innfødt versjon per plattform på sekunder — bildetekster, manus, tråder, hooks."
+        },
+        {
+          "badge": "03 · PUBLISER",
+          "title": "Rediger og planlegg",
+          "description": "Finpuss den sterkeste varianten per kanal, legg alt i køen i kalenderen, gå din vei. API-er publiserer til rett tid, i rett format."
+        },
+        {
+          "badge": "04 · FØLG OPP",
+          "title": "Se hva som funker",
+          "description": "Analyse per kanal viser hva som trekker inn rekkevidde og engasjement. Itererer på vinkelen, ikke arbeidsflyten."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planer bygget for skapere",
+      "subtitle": "Start gratis under beta. Velg volumet som passer hvor ofte du poster."
+    },
+    "faq": {
+      "title": "Skaperspørsmål, besvart.",
+      "items": [
+        {
+          "q": "Vil det høres ut som meg?",
+          "a": "Beskriv stemmen din, tonen og husreglene dine i en persona. Hver generering går gjennom det filteret. Jo mer detaljert personaen er, desto nærmere din egen stemme."
+        },
+        {
+          "q": "Hvilke plattformer publiserer dere faktisk til?",
+          "a": "Innfødt publisering dekker Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn og Telegram — åtte nettverk via offisielle API-er. Feil på én kanal blokkerer aldri de andre."
+        },
+        {
+          "q": "Kan jeg redigere før jeg poster?",
+          "a": "Alltid. Loritalk lager et utkast per kanal — du velger, justerer og publiserer. Ingenting går live uten at du trykker på knappen (med mindre du har planlagt det)."
+        },
+        {
+          "q": "Hva med bilder og kortformatvideo?",
+          "a": "Merkevaretilpassede bilder genereres per plattform med riktig sideforhold (kvadratisk, vertikalt 9:16, hero). For kortformatvideo får du en innfødt bildetekst med en hook i de første sekundene og en CTA — lim rett inn i TikTok eller YouTube Shorts."
+        },
+        {
+          "q": "Er Loritalk gratis under beta?",
+          "a": "Ja. Beta-tilgang er gratis med rause grenser. Hver beta-bruker beholder sin nåværende pris låst for alltid når betalte planer lanseres."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Slutt å skrive om. Begynn å publisere.",
+      "subtitle": "Bli med i betaen — gratis, ingen betalingskort, prisen din er låst for alltid når vi lanserer.",
+      "ctaPrimary": "Start gratis med Starter",
+      "ctaSecondary": "Se skaperplaner"
+    }
+  }
+}

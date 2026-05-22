@@ -1,0 +1,656 @@
+{
+  "navbar": {
+    "features": "Veçoritë",
+    "howItWorks": "Si funksionon",
+    "pricing": "Çmimet",
+    "forAgencies": "Për agjencitë",
+    "forCreators": "Për krijuesit",
+    "beta": "Beta",
+    "startForFree": "Fillo falas"
+  },
+  "hero": {
+    "badge": "Në Beta · Çmimet e qasjes së hershme të bllokuara përgjithmonë",
+    "headlineOne": "Shkruaj më pak.",
+    "headlineTwo": "Publiko më shumë.",
+    "headlineTwoTail": "",
+    "headlineStrike": "Rishkruar.",
+    "headlineThree": "Audituar.",
+    "lead": "Përshkruaje postimin tënd një herë. LoriTalk shkruan <strong>një version vendës për çdo platformë të lidhur</strong>, gjeneron imazhe në përputhje me markën, kalon çdo fjalë përmes moderimit të automatizuar dhe i planifikon ato — brenda sekondash.",
+    "ctaPrimary": "Fillo falas — pa kartë",
+    "ctaSecondary": "Shihe në veprim · 90s",
+    "trust": [
+      "8 integrime vendëse",
+      "I moderuar automatikisht",
+      "I izoluar sipas hapësirës së punës"
+    ],
+    "briefCard": {
+      "label": "Brifi yt · 1 nga 1",
+      "typed": "Lanço atletet tona të reja të qëndrueshme. Të bëra nga 80% plastikë oqeani e ricikluar. Të synuara për vrapuesit e Gen Z.",
+      "meta": "en · 8 kanale · Zëri i Shtëpisë",
+      "send": "Gjenero ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "postime · reels · stories",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · faqe",
+      "x": "X / Twitter",
+      "xTag": "fije · të vetme",
+      "tiktok": "TikTok",
+      "tiktokTag": "skenarë · titra",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100s",
+      "threads": "Threads",
+      "threadsTag": "vendës",
+      "facebook": "Facebook",
+      "facebookTag": "faqe",
+      "telegram": "Telegram",
+      "telegramTag": "kanale · grupe"
+    },
+    "leadHook": "Përshkruaje postimin tënd një herë.",
+    "leadBody": "LoriTalk shkruan <strong>një version vendës për çdo platformë të lidhur</strong>, gjeneron imazhe në përputhje me markën, kalon çdo fjalë përmes moderimit të automatizuar dhe i planifikon ato — brenda sekondash."
+  },
+  "stats": {
+    "networksValue": "8",
+    "networksLabel": "Rrjete sociale të mbështetura",
+    "languagesValue": "24+",
+    "languagesLabel": "Gjuhë të ndërfaqes",
+    "generationValue": "Sekonda",
+    "generationLabel": "Nga brifi te gati për publikim",
+    "freeValue": "Falas",
+    "freeLabel": "Gjatë Beta-s — pa kufij"
+  },
+  "problem": {
+    "title": "Rrjedha jote e punës për përmbajtjen është e prishur",
+    "subtitle": "Të tingëllon e njohur?",
+    "items": [
+      {
+        "title": "Orë të humbura duke përshtatur",
+        "description": "Shkruan një postim për Instagram, pastaj e rishkruan për LinkedIn, pastaj sërish për X. Çdo platformë kërkon ton, gjatësi dhe hashtagë të ndryshëm."
+      },
+      {
+        "title": "AI që tingëllon e zakonshme",
+        "description": "AI me një model të vetëm të jep një version që tingëllon si i të gjithëve. Pa zë marke, pa ndërgjegjësim platforme, pa optimizim real."
+      },
+      {
+        "title": "Pengesa në ekip",
+        "description": "Përmbajtja pret për miratim, humbet në fijet e Slack-ut dhe askush nuk e di se çfarë është planifikuar për javën tjetër."
+      }
+    ]
+  },
+  "solution": {
+    "title": "LoriTalk e zgjidh gjithë këtë",
+    "subtitle": "Një brif. Një version vendës për çdo platformë. Imazhe në përputhje me markën, të krijuara paralelisht.",
+    "ctaPrimary": "Fillo të krijosh falas",
+    "rows": [
+      {
+        "before": "1 postim = 45 min duke u përshtatur me çdo platformë",
+        "after": "1 brif = të gjitha platformat brenda <5 sekondash"
+      },
+      {
+        "before": "Tekst gjenerik AI i ripërdorur në çdo rrjet",
+        "after": "Një version vendës për çdo kanal — gjatësia, hashtagët dhe toni të përshtatur"
+      },
+      {
+        "before": "Përmbajtje e shpërndarë nëpër mjete dhe fije",
+        "after": "Një panel i vetëm: krijo, mirato, planifiko, publiko, ndiq"
+      }
+    ]
+  },
+  "features": {
+    "title": "Gjithçka që i nevojitet ekipit tënd të përmbajtjes",
+    "subtitle": "Nga ideja te postimi i publikuar — LoriTalk e menaxhon të gjithë rrjedhën e punës.",
+    "items": [
+      {
+        "title": "Përmbajtje vendëse për platformën",
+        "description": "Një brif kthehet në një version vendës për çdo platformë — gjatësia, hashtagët, emoji-t dhe toni të përshtatur për Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads dhe Telegram."
+      },
+      {
+        "title": "Gjenerim imazhesh në përputhje me markën",
+        "description": "Imazhe të krijuara për çdo platformë me raportin e duhur të pamjes dhe rregullat vizuale të personës sate — postime në feed, stories, prerje hero. Pa ripërmasime manuale."
+      },
+      {
+        "title": "Gjenerim shumëgjuhësh",
+        "description": "Gjenero në portugalisht, anglisht, spanjisht dhe më shumë. Rrjedhshmëri në nivel vendësi me nuancë kulturore — jo thjesht përkthim."
+      },
+      {
+        "title": "Planifiko dhe publiko",
+        "description": "Pamje kalendari, publikim i planifikuar dhe postim i drejtpërdrejtë në të gjitha kanalet e lidhura. Orë të ndryshme për çdo platformë."
+      },
+      {
+        "title": "Zëri i markës dhe personat",
+        "description": "Krijo persona AI që shkruajnë si marka jote. Kontrollo tonin nga profesional te lozonjar. Çdo postim tingëllon si ti, jo si një robot."
+      },
+      {
+        "title": "Paneli i analitikës",
+        "description": "Ndiq shtrirjen, angazhimin, klikimet dhe rritjen për çdo kanal. Karta KPI, postimet kryesore dhe Lori Insights nxjerrin në pah çfarë po funksionon."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "05 · Rrjedha e punës",
+    "title": "Brif → parapamje → publiko.",
+    "titleAccent": "Tri lëvizje.",
+    "titleTail": "Brenda sekondash.",
+    "subtitle": "Asnjëherë nuk zgjedh një model. Asnjëherë nuk ripërmason një imazh. Asnjëherë nuk kopjon-ngjit mes skedave.",
+    "steps": [
+      {
+        "badge": "01",
+        "eyebrow": "Hyrje",
+        "title": "Shkruaj brifin tënd",
+        "description": "Një fjali ose tre paragrafë. Zgjidh kanalet, personën dhe gjuhën. Kjo është e vetmja gjë që shkruan sot.",
+        "footLeft": "~ 5 sek për të shkruar",
+        "footRight": "1 brif"
+      },
+      {
+        "badge": "02",
+        "eyebrow": "Gjenerim",
+        "title": "AI e përshtat për çdo kanal",
+        "description": "LoriTalk lexon brifin tënd, personën tënde dhe rregullat vendëse të çdo platforme — pastaj krijon një version të bërë për çdo kanal. Moderimi i automatizuar kryhet para se ta shohësh.",
+        "footLeft": "~ 3 sek për kanal",
+        "footRight": "Për çdo kanal të lidhur"
+      },
+      {
+        "badge": "03",
+        "eyebrow": "Shpërndarje",
+        "title": "Publiko ose planifiko",
+        "description": "Dërgo tani ose vendos në kalendar me orare për çdo platformë. Çdo kanal niset përmes API-së së vet vendëse; dështimet janë të izoluara — Instagram niset edhe nëse Facebook ka një problem.",
+        "footLeft": "API vendëse · OAuth",
+        "footRight": "8 kanale"
+      }
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Lanço atletet tona të reja të qëndrueshme. Të bëra nga 80% plastikë oqeani e ricikluar. Të synuara për vrapuesit e Gen Z.\"",
+      "channelsComment": "// kanalet:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Gjuha",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutral — zëri i shtëpisë i Lori-t"
+        },
+        {
+          "name": "Rupert",
+          "desc": "I qetë, qesharak, bisedor"
+        },
+        {
+          "name": "Core",
+          "desc": "I guximshëm, optimist, i udhëhequr nga marka"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karusel",
+          "when": "Sot 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "formë e gjatë",
+          "when": "Sot 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "fije",
+          "when": "Sot 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Nesër 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "postim",
+          "when": "Nesër 12:00"
+        }
+      ],
+      "cta": "▶ Publiko të gjitha · ⏱ Planifiko"
+    }
+  },
+  "imagery": {
+    "eyebrow": "06 · Imazhe",
+    "title": "Imazhe",
+    "titleAccent": "në përputhje me markën",
+    "titleTail": "të përmasuara për çdo platformë.",
+    "subtitle": "Gjenerimi i imazheve kryhet në mënyrë asinkrone dhe për çdo platformë — pa ripërmasime manuale, pa stoqe jashtë markës. Postime të vetme, karusele, formate stories, prerje hero. Çdo krijim i referohet rregullave vizuale të personës aktive.",
+    "tiles": {
+      "instagramCaption": "Ora 5 e mëngjesit. Kafe, dy skeda, një vendim.\nNdërtova v2 para se ekipi të kyçej.",
+      "storyQuote": "arritëm 1M MRR të njëjtën javë që hoqëm gjysmën e planit.",
+      "storySwipe": "↑ rrëshqit",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Punësuam 3 kontraktorë para punonjësit tonë të parë me kohë të plotë. Ja tabela.",
+      "linkedinCta": "Lexo më shumë →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "shumica e \"përmbajtjes së themeluesve\" është një njoftim shtypi me një hoodie. shkruaj si një person. #shipping",
+      "generatingLabel": "Duke krijuar · TikTok",
+      "generatingSub": "9:16 · ~12s",
+      "ytTitleLineOne": "PUNONJËSI",
+      "ytTitleLineTwo": "I PARË.",
+      "ytSubtitle": "Pse pritëm 18 muaj.",
+      "ytMeta": "LoriTalk · Ep. 14 · 32 min"
+    }
+  },
+  "useCases": {
+    "title": "Ndërtuar për ekipet që publikojnë",
+    "subtitle": "Qoftë je krijues i vetëm apo agjenci me 50 veta.",
+    "items": [
+      {
+        "title": "Krijues të vetëm dhe profesionistë të pavarur",
+        "description": "Ndalo së harxhuari orë duke përshtatur përmbajtjen. Shkruaj një herë, publiko kudo. Përqendrohu te strategjia, jo te kopjo-ngjit."
+      },
+      {
+        "title": "Ekipet e marketingut",
+        "description": "Një hapësirë pune për çdo markë. Pamje kalendari për çdo hapësirë pune. Të gjithë e dinë se çfarë publikohet dhe kur."
+      },
+      {
+        "title": "Agjencitë",
+        "description": "Menaxho marka të shumta nga një llogari e vetme. Hapësirë pune për çdo klient me kanale, persona dhe kalendar të izoluar. Analitikë për çdo kanal për secilën markë."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Çmime të thjeshta dhe transparente",
+    "subtitle": "Bazuar në kredite. Anulo në çdo kohë. Pagesa vjetore të kursen dy muaj.",
+    "monthly": "Mujore",
+    "annual": "Vjetore",
+    "save2Months": "-17%",
+    "perMonth": "/ muaj",
+    "perMonthBilledYearly": "/ muaj, faturuar vjetore",
+    "perYear": "/ vit",
+    "saveYearly": "Kurse {{amount}} / vit",
+    "mostPopular": "Më e popullarizuara",
+    "bestValue": "Vlera më e mirë",
+    "creditsUnit": "kredite / muaj",
+    "creditsTexts": "~{{count}} postime me tekst",
+    "creditsOr": "ose",
+    "creditsImages": "~{{count}} imazhe në përputhje me markën",
+    "promoExplainer": "Promocion i vitit të parë: merr 2× kredite ÇDO muaj për tërë vitin tënd të parë kur zgjedh planin Vjetor — kjo do të thotë {{count}} kredite bonus çdo muaj.",
+    "promoHeroExtra": "(+{{count}} kredite bonus çdo muaj për 12 muaj)",
+    "tierChoose": "Zgjidh planin",
+    "features": {
+      "workspaces_one": "{{count}} hapësirë pune",
+      "workspaces_other": "{{count}} hapësira pune",
+      "channels": "{{count}} kanale sociale",
+      "personas": "{{count}} persona marke",
+      "members_one": "{{count}} anëtar ekipi",
+      "members_other": "{{count}} anëtarë ekipi",
+      "media": "{{count}} burime mediatike"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Për krijuesit e parë të përmbajtjes me AI"
+      },
+      "PLUS": {
+        "name": "Plus",
+        "description": "Për krijim përmbajtjeje me AI të vazhdueshëm dhe të lehtë"
+      },
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Për krijuesit që ndërtojnë produkte me AI"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Për agjencitë dhe ekipet e vogla"
+      }
+    }
+  },
+  "faq": {
+    "title": "Pyetje? Ne kemi përgjigjet.",
+    "items": [
+      {
+        "q": "Si funksionon AI-ja e LoriTalk?",
+        "a": "LoriTalk prodhon një version vendës të brifit tënd për çdo kanal të lidhur dhe krijon imazhe në përputhje me markën paralelisht. Gjithçka kalon përmes një shtrese moderimi të automatizuar para se të arrijë në panelin tënd."
+      },
+      {
+        "q": "Si ndryshon kjo nga mjetet e tjera me AI?",
+        "a": "Mjetet e tjera të japin një bllok të vetëm teksti për ta kopjuar-ngjitur kudo. LoriTalk prodhon versione vendëse për çdo platformë — gjatësia, hashtagët, emoji-t dhe toni të përshtatur për çdo rrjet — dhe publikon përmes API-së zyrtare të çdo platforme."
+      },
+      {
+        "q": "Cilat rrjete sociale mbështeten?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads dhe Telegram — tetë rrjete përmes API-ve vendëse."
+      },
+      {
+        "q": "Ku ruhen të dhënat e mia?",
+        "a": "Të dhënat e tua ruhen në serverë në Bashkimin Evropian. Ofruesit e AI që përdorim (OpenAI për tekst, Google për imazhe) operojnë nën kushtet e tyre të API-së për ndërmarrje — përmbajtja e dërguar te API nuk përdoret për të trajnuar modelet e tyre të përgjithshme."
+      },
+      {
+        "q": "A mund ta përdor me ekipin tim?",
+        "a": "Po. Krijo hapësira pune për çdo markë dhe fto anëtarë ekipi me role administratori ose publikuesi. Çdo hapësirë pune ka kanalet, personat dhe kalendarin e vet të lidhur."
+      },
+      {
+        "q": "Çfarë ndodh pas Beta-s?",
+        "a": "Planet me pagesë hyjnë në fuqi, por çdo përdorues i Beta-s e ruan tarifën e tij aktuale të bllokuar përgjithmonë. Pa surpriza."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Ndalo së shkruari. Fillo të publikosh.",
+    "subtitle": "Bashkohu me Beta-n — qasje falas, pa kartë krediti, dhe tarifa jote bllokohet përgjithmonë kur ne lançojmë.",
+    "ctaPrimary": "Fillo të krijosh falas",
+    "ctaSecondary": "Shih si funksionon"
+  },
+  "footer": {
+    "description": "Përmbajtje me AI për çdo rrjet social.",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugali",
+    "product": "Produkti",
+    "resources": "Burime",
+    "legal": "Ligjore",
+    "features": "Veçoritë",
+    "changelog": "Ndryshimet",
+    "supportedNetworks": "Rrjetet e mbështetura",
+    "helpCenter": "Qendra e ndihmës",
+    "contactUs": "Na kontakto",
+    "betaFeedback": "Komente për Beta-n",
+    "apiDocs": "Dokumentet e API-së",
+    "privacyPolicy": "Politika e privatësisë",
+    "termsOfService": "Kushtet e shërbimit",
+    "cookiePolicy": "Politika e cookie-ve",
+    "legalNotice": "Njoftim ligjor",
+    "copyright": "© 2026 LoriTalk® nga CDN Core Technologies. Covilhã, Portugali."
+  },
+  "cookieBanner": {
+    "aria": "Njoftim për cookie-t",
+    "title": "Ne përdorim cookie",
+    "body": "Cookie-t rreptësisht të nevojshme e mbajnë faqen në punë. Me pëlqimin tënd ne gjithashtu ngarkojmë Google Analytics për të matur trafikun dhe Meta Pixel për të matur reklamat tona. Mund të pranosh, refuzosh ose të zgjedhësh kategori për kategori — dhe të ndryshosh mendje në çdo kohë.",
+    "policyLink": "Politika e cookie-ve",
+    "privacyLink": "Politika e privatësisë",
+    "acceptAll": "Prano të gjitha",
+    "rejectOptional": "Refuzo opsionale",
+    "customize": "Personalizo",
+    "save": "Ruaj preferencat",
+    "necessaryLabel": "Rreptësisht të nevojshme",
+    "necessaryDesc": "Të domosdoshme që faqja të funksionojë (gjuha dhe zgjedhja jote e pëlqimit). Nuk mund të çaktivizohen.",
+    "analyticsLabel": "Analitikë — Google Analytics",
+    "analyticsDesc": "Ngarkon Google Analytics 4 për të matur trafikun dhe për ta përmirësuar faqen. Vendos cookie-t _ga dhe _ga_* dhe transmeton të dhënat e shikimeve të faqeve te Google.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Ngarkon Meta Pixel (Facebook / Instagram) që ne të mund të masim fushatat reklamuese. Vendos cookie-t _fbp dhe _fbc dhe transmeton të dhënat e shikimeve të faqeve te Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Për agjencitë e marketingut dhe studiot kreative",
+      "headlineOne": "Po mundoheni të publikoni postime",
+      "headlineTwo": "për çdo klient",
+      "headlineThree": "në çdo platformë?",
+      "lead": "LoriTalk i jep agjencisë sate <strong>një hapësirë pune për çdo markë</strong>, një personë të dedikuar për çdo klient dhe publikim vendës në 8 rrjete — kështu ekipi yt shkruan një herë dhe publikon kudo, në çdo llogari.",
+      "ctaPrimary": "Fillo me planin Ultra",
+      "ctaSecondary": "Shih çmimet për agjencitë",
+      "trust": [
+        "Një hapësirë pune për çdo markë",
+        "Role administratori + publikuesi",
+        "8 rrjete përmes API-ve vendëse"
+      ],
+      "hubLabel": "Selia e agjencisë",
+      "hubTitle": "5 marka. 5 hapësira pune.",
+      "hubBody": "Çdo klient merr hapësirën, personat, kanalet dhe analitikën e vet të punës. Ndërro kontekstin me një klikim.",
+      "hubMeta": "5 hapësira pune · të izoluara",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "E njeh javën tënde?",
+      "subtitle": "E njëjta përmbajtje e rishkruar 7 herë për 5 klientë. Çdo javë. Edhe ne kemi qenë aty.",
+      "items": [
+        {
+          "title": "Të menaxhosh 5+ klientë njëherësh",
+          "description": "Çdo markë do një ton të ndryshëm, platforma të ndryshme, afate të ndryshme. Tabelat dhe fijet e Slack-ut nuk janë rrjedhë pune."
+        },
+        {
+          "title": "Zëri i markës zhvendoset në çdo postim",
+          "description": "Kopjshkrues të ndryshëm, skeda të ndryshme, kërkesa të ndryshme ChatGPT. Zëri që klienti yt e miratoi gjashtë muaj më parë është zhdukur."
+        },
+        {
+          "title": "Riplanifikime të natës së premte",
+          "description": "Klienti kërkon ndryshime të minutës së fundit në Instagram, LinkedIn dhe TikTok. E rishkruan të njëjtën ide tri herë — dhe sërish e humbet afatin."
+        },
+        {
+          "title": "Raportimi merr një ditë të tërë",
+          "description": "Të kopjosh përshtypjet, angazhimin dhe klikimet nga pesë panele në një prezantim. Manualisht. Çdo muaj."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Gjithçka që i nevojitet agjencisë sate në një vend",
+      "subtitle": "Nga brifi te raporti — LoriTalk drejton të gjithë procesin e përmbajtjes për çdo markë që menaxhon.",
+      "items": [
+        {
+          "title": "Një hapësirë pune për çdo klient",
+          "description": "Hapësira pune të izoluara me kanalet, personat, anëtarët dhe kalendarin e tyre të lidhur. Krijo një klient të ri brenda minutash."
+        },
+        {
+          "title": "Persona me zë marke",
+          "description": "Përcakto një personë për çdo klient — zë, ton, udhëzime specifike. Çdo gjenerim për atë hapësirë pune respekton brifin, çdo herë."
+        },
+        {
+          "title": "8 rrjete, një brif",
+          "description": "Shkruaje brifin një herë dhe merr versione vendëse për Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads dhe Telegram — të gjitha brenda sekondash, të gjitha përmes API-ve zyrtare."
+        },
+        {
+          "title": "Kalendar për çdo hapësirë pune",
+          "description": "Çdo klient ka pamjen e vet të javës / muajit / radhës. Planifiko postime për çdo kanal dhe shih të gjithë procesin për atë markë me një vështrim."
+        },
+        {
+          "title": "Role administratori + publikuesi",
+          "description": "Fto anëtarë ekipi për çdo hapësirë pune si administrator (menaxhim i plotë) ose publikues (krijo dhe publiko). Hapësirat e punës janë plotësisht të izoluara nga njëra-tjetra."
+        },
+        {
+          "title": "Analitikë për çdo hapësirë pune",
+          "description": "Shtrirje, angazhim, klikime dhe rritje për çdo kanal brenda hapësirës së punës të çdo klienti. Karta KPI, postimet kryesore dhe Lori Insights — pa kërcyer mes paneleve."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Si duket një javë agjencie në LoriTalk",
+      "subtitle": "Fute një markë, brifo AI-në, merr miratimin, publiko. Përsërite për çdo klient.",
+      "steps": [
+        {
+          "badge": "01 · FUTJE",
+          "title": "Krijo hapësirën e punës të klientit",
+          "description": "Krijo një hapësirë pune, lidh llogaritë sociale të markës dhe konfiguro personën — zë, ton, udhëzime specifike. Gati për përdorim brenda minutash."
+        },
+        {
+          "badge": "02 · BRIF",
+          "title": "Shkruaj një brif për çdo fushatë",
+          "description": "Zgjidh personën, kanalet dhe gjuhën. LoriTalk gjeneron një version vendës për çdo platformë brenda sekondash."
+        },
+        {
+          "badge": "03 · PËRSOSJE",
+          "title": "Redakto brenda ekipit tënd",
+          "description": "Ekipi yt rishikon draftet brenda hapësirës së punës — rregullon tekstin, ndërron imazhet, zgjedh variantin më të fortë për çdo kanal para se të dalë."
+        },
+        {
+          "badge": "04 · PUBLIKO",
+          "title": "Publiko dhe ndiq",
+          "description": "API-të vendëse i çojnë në çdo kanal. Performanca kthehet në panelin për çdo hapësirë pune — KPI, postimet kryesore dhe rritja sipas kanalit."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plane të ndërtuara për agjencitë",
+      "subtitle": "Drejto disa marka apo një listë të tërë klientësh. Zgjidh vëllimin që përputhet me kontratën tënde.",
+      "customPrice": "Le të bisedojmë",
+      "customCredits": "Kredite të pakufizuara",
+      "customCreditsDetail": "Vëllimi i rënë dakord për çdo kontratë — pa tepricë surprizë.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Custom",
+          "description": "Për rrjetet dhe agjencitë e mëdha që kanë nevojë për vëllime dhe futje të personalizuara.",
+          "cta": "Fol me shitjet"
+        }
+      },
+      "features": {
+        "customVolumes": "Vëllime kreditesh të personalizuara",
+        "priorityEmail": "Mbështetje me email me përparësi",
+        "euData": "Vendosja e të dhënave në BE"
+      }
+    },
+    "faq": {
+      "title": "Pyetjet e agjencive, të përgjigjura.",
+      "items": [
+        {
+          "q": "Si ndahen kreditet mes klientëve?",
+          "a": "Kreditet jetojnë në nivelin e llogarisë së agjencisë — çdo hapësirë pune mund të konsumojë nga i njëjti grumbull. Ndiq përdorimin në panelin e faturimit."
+        },
+        {
+          "q": "Çfarë ndodh kur futim ose largojmë një klient?",
+          "a": "Krijo një hapësirë pune të re brenda sekondash. Arkivimi i një hapësire pune e heq atë nga pamja aktive; fshirja e plotë e llogarisë respekton rregullat e ruajtjes së GDPR-së."
+        },
+        {
+          "q": "Në cilat rrjete sociale mund të publikojmë?",
+          "a": "Publikimi vendës mbulon LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads dhe Telegram — tetë rrjete, secili përmes API-së zyrtare të platformës, kështu që dështimet mbeten të izoluara për çdo kanal."
+        },
+        {
+          "q": "A mund të kyçen klientët për të parë hapësirën e tyre të punës?",
+          "a": "Jo për momentin. Hapësirat e punës janë vetëm për ekipin e agjencisë — role administratori dhe publikuesi. Qasja për klientët është në plan."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Gati ta shkallëzosh përmbajtjen për çdo klient?",
+      "subtitle": "Fillo me planin Ultra sot ose rezervo një demo 20-minutëshe me ekipin e agjencisë për të parë LoriTalk në markat e tua.",
+      "ctaPrimary": "Fillo me Ultra",
+      "ctaSecondary": "Rezervo një demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Për krijuesit e vetëm dhe influencerët",
+      "headlineOne": "Një ide.",
+      "headlineTwo": "Çdo platformë.",
+      "headlineThree": "Pa humbur fundjavën tënde.",
+      "lead": "LoriTalk e kthen një brif në <strong>postime vendëse për Instagram, TikTok, YouTube Shorts, X, Threads</strong> dhe më shumë — duke e mbajtur zërin tënd të qëndrueshëm në çdo llogari.",
+      "ctaPrimary": "Fillo falas me Starter",
+      "ctaSecondary": "Shih planet për krijuesit",
+      "trust": [
+        "Zëri yt në çdo kanal",
+        "8 rrjete përmes API-ve vendëse",
+        "Planifiko javë me një të rënë"
+      ],
+      "hubLabel": "Studioja jote",
+      "hubTitle": "1 brif. 8 postime vendëse.",
+      "hubBody": "Përcakto personën tënde një herë. LoriTalk e përshtat çdo postim për çdo platformë — gjatësia, hashtagët, emoji-t, toni, formati i imazhit.",
+      "hubMeta": "1 personë · 8 kanale",
+      "hubBadge": "Live",
+      "cardTag": "Format vendës"
+    },
+    "pains": {
+      "title": "Tingëllon si java jote?",
+      "subtitle": "Të postosh çdo ditë në çdo platformë nuk duhet të të kushtojë një pasdite të dielë. Edhe ne kemi qenë aty.",
+      "items": [
+        {
+          "title": "E njëjta ide, e rishkruar 8 herë",
+          "description": "Titrat për Instagram, skenari për TikTok, hook-u për YouTube, fija për X… çdo platformë kërkon një formë të ndryshme. Harxhon një pasdite për një postim."
+        },
+        {
+          "title": "Algoritmet ndëshkojnë boshllëqet",
+          "description": "Humb dy ditë dhe shtrirja bie. Qëndro i qëndrueshëm në çdo platformë dhe mezi ke kohë të xhirosh, le më të jetosh jetën tënde."
+        },
+        {
+          "title": "Marrëveshjet me marka kërkojnë shumë platforma",
+          "description": "Sponsorët duan Reels + Shorts + TikTok + postim. E njëjta fushatë, katër formate. Faturon për një dhe dorëzon katër."
+        },
+        {
+          "title": "Zëri hollohet",
+          "description": "Te postimi i pesëmbëdhjetë, titrat tingëllojnë sikur i shkroi një i panjohur. Audienca e kupton. Angazhimi bie."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Gjithçka që i nevojitet një krijuesi në një vend",
+      "subtitle": "Brifo një herë, publiko kudo — pa humbur zërin që audienca jote ndjek.",
+      "items": [
+        {
+          "title": "Zëri yt, i fiksuar",
+          "description": "Përcakto një personë me zërin, tonin dhe udhëzimet e tua specifike në tekst të thjeshtë. Çdo gjenerim kalon përmes asaj lente — tingëllon si ti, jo si një mjet AI."
+        },
+        {
+          "title": "Një brif, tetë postime vendëse",
+          "description": "Shkruaje idenë një herë. LoriTalk prodhon një version të optimizuar për Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn dhe Telegram brenda sekondash."
+        },
+        {
+          "title": "Imazhe në përputhje me markën për çdo format",
+          "description": "Postime në feed, stories, prerje hero, vertikale për Reels dhe Shorts. Imazhet krijohen me raportin e duhur të pamjes dhe rregullat vizuale të personës sate."
+        },
+        {
+          "title": "Planifiko një javë me një ulje",
+          "description": "Planifiko nga e hëna te e diela në çdo platformë brenda një kalendari. API-të vendëse publikojnë automatikisht — edhe kur po xhiron grupin tjetër."
+        },
+        {
+          "title": "Shih çfarë po rritet",
+          "description": "Shtrirje, angazhim, klikime dhe rritje ndjekësish për çdo kanal. Karta KPI dhe Lori Insights nxjerrin në pah çfarë po funksionon — përqendrohu më shumë te kjo."
+        },
+        {
+          "title": "I moderuar para se të dalë",
+          "description": "Çdo draft kalon përmes moderimit të automatizuar, kështu që përmbajtje e sigurt për markën arrin te audienca jote dhe sponsorët e tu mbeten të kënaqur."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Si duket një javë krijuesi në LoriTalk",
+      "subtitle": "Kap zërin tënd një herë, brifo një ide, publiko në çdo platformë, shiko çfarë rritet.",
+      "steps": [
+        {
+          "badge": "01 · ZË",
+          "title": "Përcakto personën tënde",
+          "description": "Shkruaj zërin, tonin dhe rregullat e shtëpisë sate në një personë. Ajo bëhet lentja përmes së cilës kalon çdo postim i ardhshëm."
+        },
+        {
+          "badge": "02 · BRIF",
+          "title": "Brifo një ide",
+          "description": "Shkruaj konceptin, zgjidh kanalet dhe gjuhën. LoriTalk prodhon një version vendës për çdo platformë brenda sekondash — titra, skenarë, fije, hook-e."
+        },
+        {
+          "badge": "03 · PUBLIKO",
+          "title": "Redakto dhe planifiko",
+          "description": "Përsos variantin më të fortë për çdo kanal, vendos gjithçka në radhë në kalendar, largohu. API-të publikojnë në kohën e duhur, në formatin e duhur."
+        },
+        {
+          "badge": "04 · NDIQ",
+          "title": "Shiko çfarë po funksionon",
+          "description": "Analitika për çdo kanal tregon çfarë po tërheq shtrirje dhe angazhim. Përsërit këndvështrimin, jo rrjedhën e punës."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plane të ndërtuara për krijuesit",
+      "subtitle": "Fillo falas gjatë Beta-s. Zgjidh vëllimin që përputhet me sa shpesh poston."
+    },
+    "faq": {
+      "title": "Pyetjet e krijuesve, të përgjigjura.",
+      "items": [
+        {
+          "q": "A do të tingëllojë si unë?",
+          "a": "Përshkruaj zërin, tonin dhe rregullat e shtëpisë sate në një personë. Çdo gjenerim kalon përmes asaj lente. Sa më e detajuar persona, aq më afër zërit tënd."
+        },
+        {
+          "q": "Në cilat platforma publikoni realisht?",
+          "a": "Publikimi vendës mbulon Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn dhe Telegram — tetë rrjete përmes API-ve zyrtare. Dështimet në një kanal nuk bllokojnë kurrë të tjerët."
+        },
+        {
+          "q": "A mund të redaktoj para se të postoj?",
+          "a": "Gjithmonë. LoriTalk prodhon një draft për çdo kanal — ti zgjedh, rregullon dhe publikon. Asgjë nuk del live pa e shtypur ti butonin (përveç nëse e ke planifikuar)."
+        },
+        {
+          "q": "Po imazhet dhe videot e formës së shkurtër?",
+          "a": "Imazhet në përputhje me markën gjenerohen për çdo platformë me raportin e duhur të pamjes (katror, vertikal 9:16, hero). Për videon e formës së shkurtër merr një titull vendës me një hook në sekondat e para dhe një CTA — ngjite drejt e në TikTok ose YouTube Shorts."
+        },
+        {
+          "q": "A është LoriTalk falas gjatë Beta-s?",
+          "a": "Po. Qasja në Beta është falas me kufij bujarë. Çdo përdorues i Beta-s e ruan tarifën e tij aktuale të bllokuar përgjithmonë kur lançohen planet me pagesë."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Ndalo së rishkruari. Fillo të publikosh.",
+      "subtitle": "Bashkohu me Beta-n — falas, pa kartë krediti, tarifa jote bllokohet përgjithmonë kur ne lançojmë.",
+      "ctaPrimary": "Fillo falas me Starter",
+      "ctaSecondary": "Shih planet për krijuesit"
+    }
+  }
+}

@@ -3,50 +3,84 @@
     "features": "Funkcje",
     "howItWorks": "Jak to działa",
     "pricing": "Cennik",
+    "forAgencies": "Dla agencji",
+    "forCreators": "Dla twórców",
     "beta": "Beta",
     "startForFree": "Zacznij za darmo"
   },
   "hero": {
-    "badge": "Teraz w Beta — darmowy wczesny dostęp",
+    "badge": "W wersji Beta · Cena early-access zablokowana na zawsze",
     "headlineOne": "Pisz mniej.",
     "headlineTwo": "Publikuj więcej.",
-    "description": "Wpisz temat lub pomysł. AI Loritalk pisze zoptymalizowane posty na Instagram, LinkedIn, X, TikTok i inne — w sekundy. Wiele modeli AI rywalizuje, by dać Ci najlepszy rezultat.",
-    "ctaPrimary": "Zacznij tworzyć za darmo",
-    "ctaSecondary": "Zobacz, jak to działa",
-    "note": "Karta kredytowa nie jest wymagana · Bezpłatnie podczas Beta",
-    "headlineTwoTail": ""
+    "headlineTwoTail": "",
+    "headlineStrike": "Przepisane.",
+    "headlineThree": "Zweryfikowane.",
+    "lead": "Opisz swój post raz. Loritalk pisze <strong>natywną wersję dla każdej podłączonej platformy</strong>, generuje zgodne z marką obrazy, sprawdza każde słowo przez automatyczną moderację i planuje publikacje — w kilka sekund.",
+    "ctaPrimary": "Zacznij za darmo — bez karty",
+    "ctaSecondary": "Zobacz, jak działa · 90 s",
+    "trust": [
+      "8 natywnych integracji",
+      "Automatyczna moderacja",
+      "Izolacja na poziomie obszaru roboczego"
+    ],
+    "briefCard": {
+      "label": "Twój brief · 1 z 1",
+      "typed": "Wprowadź na rynek nasze nowe zrównoważone sneakersy. Wykonane w 80% z recyklingowanego plastiku z oceanów. Dla biegaczy z pokolenia Z.",
+      "meta": "pl · 8 kanałów · Głos marki",
+      "send": "Generuj ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "posty · rolki · relacje",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profil · strony",
+      "x": "X / Twitter",
+      "xTag": "wątki · pojedyncze",
+      "tiktok": "TikTok",
+      "tiktokTag": "skrypty · podpisy",
+      "youtube": "YouTube",
+      "youtubeTag": "shorty ≤ 100 s",
+      "threads": "Threads",
+      "threadsTag": "natywne",
+      "facebook": "Facebook",
+      "facebookTag": "strony",
+      "telegram": "Telegram",
+      "telegramTag": "kanały · grupy"
+    },
+    "leadHook": "Opisz swój post raz.",
+    "leadBody": "Loritalk pisze <strong>natywną wersję dla każdej podłączonej platformy</strong>, generuje zgodne z marką obrazy, sprawdza każde słowo przez automatyczną moderację i planuje publikacje — w kilka sekund."
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Obsługiwanych sieci społecznościowych",
-    "languagesValue": "3",
-    "languagesLabel": "Języki na start",
-    "generationValue": "<5s",
-    "generationLabel": "Średni czas generowania",
+    "languagesValue": "24+",
+    "languagesLabel": "Języków interfejsu",
+    "generationValue": "Sekundy",
+    "generationLabel": "Od briefu do gotowości do publikacji",
     "freeValue": "Za darmo",
-    "freeLabel": "Podczas Beta — bez limitów"
+    "freeLabel": "W trakcie Bety — bez limitów"
   },
   "problem": {
-    "title": "Twój obieg pracy nad treścią jest zepsuty",
+    "title": "Twój proces tworzenia treści jest zepsuty",
     "subtitle": "Brzmi znajomo?",
     "items": [
       {
-        "title": "Godziny marnowane na dostosowywanie",
-        "description": "Piszesz post na Instagram, potem przepisujesz go na LinkedIn, potem znowu na X. Każda platforma wymaga innego tonu, długości i hashtagów."
+        "title": "Godziny tracone na dostosowywanie",
+        "description": "Piszesz post na Instagram, potem przerabiasz go na LinkedIn, a następnie jeszcze raz na X. Każda platforma wymaga innego tonu, długości i hashtagów."
       },
       {
         "title": "AI, które brzmi generycznie",
-        "description": "AI daje Ci jedną wersję, która brzmi jak wszyscy inni. Brak głosu marki, brak świadomości platformy, brak prawdziwej optymalizacji."
+        "description": "AI oparte na jednym modelu daje Ci jedną wersję, która brzmi jak u wszystkich. Bez głosu marki, bez świadomości platformy, bez prawdziwej optymalizacji."
       },
       {
-        "title": "Wąskie gardła w zespole",
-        "description": "Treści czekają na zatwierdzenie, gubią się w wątkach Slack i nikt nie wie, co jest zaplanowane na następny tydzień."
+        "title": "Zatory w zespole",
+        "description": "Treści czekają na akceptację, giną w wątkach na Slacku, a nikt nie wie, co jest zaplanowane na przyszły tydzień."
       }
     ]
   },
   "solution": {
-    "title": "Loritalk rozwiązuje to wszystko",
-    "subtitle": "Jeden brief. Każda platforma. Wiele AI rywalizuje o Twój najlepszy post.",
+    "title": "Loritalk naprawia to wszystko",
+    "subtitle": "Jeden brief. Natywna wersja dla każdej platformy. Zgodne z marką obrazy renderowane równolegle.",
     "ctaPrimary": "Zacznij tworzyć za darmo",
     "rows": [
       {
@@ -54,251 +88,573 @@
         "after": "1 brief = wszystkie platformy w <5 sekund"
       },
       {
-        "before": "1 model AI = generyczny, uniwersalny tekst",
-        "after": "Wiele modeli AI dyskutuje i udoskonala się nawzajem"
+        "before": "Generyczny tekst z AI powielany w każdej sieci",
+        "after": "Natywna wersja na każdy kanał — długość, hashtagi i ton dopasowane"
       },
       {
-        "before": "Treści rozproszone między narzędziami i wątkami",
-        "after": "Jeden panel: tworzenie, zatwierdzanie, planowanie, publikacja, śledzenie"
+        "before": "Treści rozproszone po narzędziach i wątkach",
+        "after": "Jeden panel: twórz, akceptuj, planuj, publikuj, analizuj"
       }
     ]
   },
   "features": {
-    "title": "Wszystko, czego potrzebuje Twój zespół contentowy",
-    "subtitle": "Od pomysłu do opublikowanego posta — Loritalk zarządza całym obiegiem pracy.",
+    "title": "Wszystko, czego potrzebuje Twój zespół ds. treści",
+    "subtitle": "Od pomysłu do opublikowanego posta — Loritalk obsługuje cały proces.",
     "items": [
       {
-        "title": "Wielomodelowa deliberacja AI",
-        "description": "Nie jeden AI — wiele modeli generuje niezależnie, a następnie udoskonala pracę pozostałych."
+        "title": "Treści natywne dla platformy",
+        "description": "Jeden brief staje się natywną wersją dla każdej platformy — długość, hashtagi, emoji i ton dopasowane do Instagrama, LinkedIna, X, TikToka, Facebooka, YouTube Shorts, Threads i Telegrama."
       },
       {
-        "title": "Treści zoptymalizowane pod platformę",
-        "description": "Każdy post jest dostosowany do swojej platformy — odpowiedni ton, długość, hashtagi, emoji i format. Podpisy na Instagram, artykuły na LinkedIn, wątki na X, skrypty TikTok."
+        "title": "Generowanie obrazów zgodnych z marką",
+        "description": "Obrazy renderowane pod każdą platformę z właściwymi proporcjami i regułami wizualnymi Twojej persony — posty w feedzie, relacje, kadry hero. Koniec z ręcznym skalowaniem."
       },
       {
-        "title": "Wielojęzyczne generowanie",
-        "description": "Generuj po portugalsku, angielsku, hiszpańsku i w innych językach. Płynność na poziomie native z niuansami kulturowymi — nie tylko tłumaczenie."
+        "title": "Generowanie wielojęzyczne",
+        "description": "Generuj po polsku, angielsku, hiszpańsku i w innych językach. Płynność na poziomie native’a z niuansami kulturowymi — nie zwykłe tłumaczenie."
       },
       {
-        "title": "Zaplanuj i opublikuj",
-        "description": "Widok kalendarza, zaplanowana publikacja i bezpośrednie postowanie na wszystkich podłączonych kanałach. Różne godziny na platformę."
+        "title": "Planowanie i publikacja",
+        "description": "Widok kalendarza, zaplanowane publikacje i bezpośrednie publikowanie na wszystkich podłączonych kanałach. Różne godziny dla każdej platformy."
       },
       {
         "title": "Głos marki i persony",
-        "description": "Twórz persony AI, które piszą jak Twoja marka. Kontroluj ton od profesjonalnego do zabawnego. Każdy post brzmi jak Ty, nie jak robot."
+        "description": "Twórz persony AI, które piszą jak Twoja marka. Kontroluj ton — od profesjonalnego po żartobliwy. Każdy post brzmi jak Ty, a nie jak robot."
       },
       {
         "title": "Panel analityczny",
-        "description": "Śledź wyświetlenia, zaangażowanie, kliknięcia i wzrost na wszystkich kanałach. Wiedz, które treści działają, i podwój wysiłek."
+        "description": "Śledź zasięg, zaangażowanie, kliknięcia i wzrost na każdym kanale. Karty KPI, najlepsze posty i Lori Insights pokazują, co działa."
       }
     ]
   },
   "howItWorks": {
-    "title": "Od pomysłu do posta w 3 krokach",
-    "subtitle": "Żadnych pustych ekranów. Żadnego kopiowania między platformami.",
+    "eyebrow": "05 · Proces",
+    "title": "Brief → podgląd → publikacja.",
+    "titleAccent": "Trzy ruchy.",
+    "titleTail": "W kilka sekund.",
+    "subtitle": "Nigdy nie wybierasz modelu. Nigdy nie skalujesz obrazu. Nigdy nie kopiujesz i nie wklejasz między kartami.",
     "steps": [
       {
+        "badge": "01",
+        "eyebrow": "Wprowadzanie",
         "title": "Napisz swój brief",
-        "description": "Opisz, co chcesz przekazać — tak prosto jak \"premiera nowego produktu\" lub tak szczegółowo jak pełny brief. Wybierz kanały, język i ton."
+        "description": "Jedno zdanie lub trzy akapity. Wybierz kanały, personę i język. To jedyne, co dziś piszesz.",
+        "footLeft": "~ 5 s na napisanie",
+        "footRight": "1 brief"
       },
       {
-        "title": "Modele AI rywalizują o Ciebie",
-        "description": "Wiele modeli AI generuje treści niezależnie, następnie przegląda i udoskonala wyniki pozostałych. Otrzymujesz N dopracowanych wersji na platformę."
+        "badge": "02",
+        "eyebrow": "Generowanie",
+        "title": "AI dopasowuje treść do każdego kanału",
+        "description": "Loritalk czyta Twój brief, Twoją personę i natywne reguły każdej platformy — a następnie tworzy wersję stworzoną pod każdy kanał. Automatyczna moderacja działa, zanim ją zobaczysz.",
+        "footLeft": "~ 3 s na kanał",
+        "footRight": "Na każdy podłączony kanał"
       },
       {
-        "title": "Wybierz, edytuj i opublikuj",
-        "description": "Wybierz ulubioną wersję dla każdego kanału. Dostosuj cokolwiek jednym kliknięciem. Opublikuj teraz lub zaplanuj na później."
+        "badge": "03",
+        "eyebrow": "Dystrybucja",
+        "title": "Publikuj lub planuj",
+        "description": "Wyślij teraz lub dodaj do kalendarza z harmonogramem dla każdej platformy. Każdy kanał działa przez swoje natywne API; awarie są izolowane — Instagram nadal publikuje, nawet gdy Facebook ma problem.",
+        "footLeft": "Natywne API · OAuth",
+        "footRight": "8 kanałów"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "\"Wprowadź na rynek nasze nowe zrównoważone sneakersy. Wykonane w 80% z recyklingowanego plastiku z oceanów. Dla biegaczy z pokolenia Z.\"",
+      "channelsComment": "// kanały:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Język",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutralny — głos marki Lori"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Wyluzowany, zabawny, swobodny"
+        },
+        {
+          "name": "Core",
+          "desc": "Odważny, optymistyczny, w duchu marki"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karuzela",
+          "when": "Dziś 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "długa forma",
+          "when": "Dziś 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "wątek",
+          "when": "Dziś 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Jutro 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "post",
+          "when": "Jutro 12:00"
+        }
+      ],
+      "cta": "▶ Opublikuj wszystko · ⏱ Zaplanuj"
+    }
   },
-  "differentiator": {
-    "title": "Dlaczego wiele AI pokonuje jedną",
-    "subtitle": "Inne narzędzia używają jednego modelu. Loritalk używa kilku — i sprawia, że się nawzajem ulepszają.",
-    "briefLabel": "Twój brief",
-    "channels": "Kanały",
-    "language": "Język:",
-    "languages": "Angielski, Portugalski",
-    "submitted": "Wysłano 2s temu",
-    "round1": "RUNDA 1 — NIEZALEŻNE GENEROWANIE",
-    "generated": "Wygenerowano",
-    "round2": "Runda 2 — Krzyżowe udoskonalanie",
-    "round2Desc": "Każdy model czyta wszystkie wyniki i ulepsza swoją wersję",
-    "qualityNote": "Jakość poprawiła się o ~40% vs Runda 1",
-    "pickEdit": "Wybierz i edytuj",
-    "addMedia": "Dodaj media",
-    "uploading": "Przesyłanie obrazu...",
-    "imageAttached": "Obraz przesyłany pomyślnie",
-    "generateAI": "Generuj z AI",
-    "readyPublish": "Gotowe do publikacji",
-    "publishAll": "Opublikuj wszystko",
-    "scheduled": "Zaplanowane",
-    "draft": "Szkic",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Grafika",
+    "title": "Zgodne z marką",
+    "titleAccent": "obrazy",
+    "titleTail": "w rozmiarze pod każdą platformę.",
+    "subtitle": "Generowanie obrazów działa asynchronicznie i pod każdą platformę — bez ręcznego skalowania, bez niepasujących do marki zdjęć stockowych. Pojedyncze posty, karuzele, formaty relacji, kadry hero. Każdy render odwołuje się do reguł wizualnych aktywnej persony.",
+    "tiles": {
+      "instagramCaption": "5 rano. Kawa, dwie karty, jedna decyzja.\nZbudowane v2, zanim zespół się zalogował.",
+      "storyQuote": "osiągnęliśmy 1 mln MRR w tym samym tygodniu, w którym wycięliśmy połowę roadmapy.",
+      "storySwipe": "↑ przesuń",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Zatrudniliśmy 3 wykonawców, zanim wzięliśmy pierwszego pracownika na etat. Oto arkusz.",
+      "linkedinCta": "Czytaj więcej →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "większość „treści founderów” to informacja prasowa w bluzie z kapturem. pisz jak człowiek. #shipping",
+      "generatingLabel": "Renderowanie · TikTok",
+      "generatingSub": "9:16 · ~12 s",
+      "ytTitleLineOne": "PIERWSZY",
+      "ytTitleLineTwo": "ETAT.",
+      "ytSubtitle": "Dlaczego czekaliśmy 18 miesięcy.",
+      "ytMeta": "Loritalk · Odc. 14 · 32 min"
+    }
   },
   "useCases": {
     "title": "Stworzone dla zespołów, które publikują",
-    "subtitle": "Niezależnie od tego, czy jesteś twórcą solo, czy agencją 50-osobową.",
+    "subtitle": "Niezależnie od tego, czy jesteś samodzielnym twórcą, czy 50-osobową agencją.",
     "items": [
       {
-        "title": "Twórcy solo i freelancerzy",
-        "description": "Przestań tracić godziny na dostosowywanie treści. Pisz raz, publikuj wszędzie. Skup się na strategii, nie na kopiowaniu."
+        "title": "Samodzielni twórcy i freelancerzy",
+        "description": "Przestań tracić godziny na dostosowywanie treści. Napisz raz, publikuj wszędzie. Skup się na strategii, a nie na kopiowaniu i wklejaniu."
       },
       {
         "title": "Zespoły marketingowe",
-        "description": "Jeden workspace na markę. Obiegi zatwierdzania. Widok kalendarza. Każdy wie, co jest publikowane i kiedy."
+        "description": "Jeden obszar roboczy na markę. Widok kalendarza dla każdego obszaru. Każdy wie, co i kiedy się publikuje."
       },
       {
         "title": "Agencje",
-        "description": "Zarządzaj wieloma markami z jednego konta. Przypisuj role, kontroluj dostęp, śledź wydajność u wszystkich klientów. Nieograniczone posty w planie Agencja."
+        "description": "Zarządzaj wieloma markami z jednego konta. Obszar roboczy na klienta z izolowanymi kanałami, personami i kalendarzem. Analityka per kanał dla każdej marki."
       }
     ]
   },
   "pricing": {
-    "title": "Proste, przejrzyste ceny",
-    "subtitle": "Za darmo podczas Beta. Wcześni użytkownicy blokują swoją stawkę na zawsze po premierze.",
-    "mostPopular": "Najpopularniejszy",
+    "title": "Prosty, przejrzysty cennik",
+    "subtitle": "Oparty na kredytach. Anuluj w dowolnym momencie. Plan roczny oszczędza Ci dwa miesiące.",
     "monthly": "Miesięcznie",
     "annual": "Rocznie",
     "save2Months": "-17%",
-    "perMonth": "/ miesiąc",
+    "perMonth": "/ mies.",
+    "perMonthBilledYearly": "/ mies., płatne rocznie",
     "perYear": "/ rok",
-    "billedAnnually": "Rozliczane rocznie",
-    "customPriceLabel": "Indywidualnie",
-    "plans": [
-      {
-        "name": "Darmowy",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "podczas Beta",
-        "description": "Wypróbuj wszystko z hojnymi limitami.",
-        "features": [
-          "5 postów / miesiąc",
-          "3 sieci",
-          "Podstawowa kontrola tonu",
-          "Sugestie hashtagów"
-        ],
-        "cta": "Zacznij za darmo",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Oszczędź {{amount}} / rok",
+    "mostPopular": "Najpopularniejszy",
+    "bestValue": "Najlepsza wartość",
+    "creditsUnit": "kredytów / miesiąc",
+    "creditsTexts": "~{{count}} postów tekstowych",
+    "creditsOr": "lub",
+    "creditsImages": "~{{count}} obrazów zgodnych z marką",
+    "promoExplainer": "Promocja na pierwszy rok: otrzymuj 2× kredytów CO MIESIĄC przez cały pierwszy rok, gdy wybierzesz plan roczny — to {{count}} dodatkowych kredytów każdego miesiąca.",
+    "promoHeroExtra": "(+{{count}} dodatkowych kredytów co miesiąc przez 12 miesięcy)",
+    "tierChoose": "Wybierz plan",
+    "features": {
+      "workspaces_one": "{{count}} obszar roboczy",
+      "workspaces_few": "{{count}} obszary robocze",
+      "workspaces_many": "{{count}} obszarów roboczych",
+      "workspaces_other": "{{count}} obszaru roboczego",
+      "channels": "{{count}} kanałów społecznościowych",
+      "personas": "{{count}} person marki",
+      "members_one": "{{count}} członek zespołu",
+      "members_few": "{{count}} członków zespołu",
+      "members_many": "{{count}} członków zespołu",
+      "members_other": "{{count}} członka zespołu",
+      "media": "{{count}} zasobów multimedialnych"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Dla osób tworzących treści z AI po raz pierwszy"
       },
-      {
-        "name": "Twórca",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Dla twórców i marek, które publikują regularnie.",
-        "features": [
-          "200 postów / miesiąc",
-          "Wszystkie sieci",
-          "Zaawansowany ton i persony",
-          "Kalendarz treści",
-          "Priorytetowe wsparcie"
-        ],
-        "cta": "Rozpocznij bezpłatny okres próbny",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Dla spójnego i łatwego tworzenia treści z AI"
       },
-      {
-        "name": "Agencja",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Dla zespołów zarządzających wieloma markami.",
-        "features": [
-          "Nieograniczone posty",
-          "Wszystkie sieci",
-          "Wiele marek",
-          "Współpraca zespołowa",
-          "Analityka",
-          "Opiekun konta"
-        ],
-        "cta": "Porozmawiaj z nami",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Dla twórców budujących produkty z AI"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Dla agencji i małych zespołów"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Pytania? Mamy odpowiedzi.",
     "items": [
       {
-        "q": "Jakie modele AI używa Loritalk?",
-        "a": "Możesz skonfigurować, które modele uczestniczą w Twoim procesie generowania."
+        "q": "Jak działa AI w Loritalk?",
+        "a": "Loritalk tworzy natywną wersję Twojego briefu dla każdego podłączonego kanału i renderuje zgodne z marką obrazy równolegle. Wszystko przechodzi przez warstwę automatycznej moderacji, zanim trafi do Twojego panelu."
       },
       {
-        "q": "Czym to się różni od other AI tools?",
-        "a": "Other AI tools daje Ci jeden wynik z jednego modelu. Loritalk uruchamia wiele modeli równolegle, a następnie każe im udoskonalać pracę pozostałych — produkując konsekwentnie wyższą jakość. Ponadto każdy post jest automatycznie zoptymalizowany pod konkretną platformę."
+        "q": "Czym to się różni od innych narzędzi AI?",
+        "a": "Inne narzędzia dają Ci jeden blok tekstu do kopiowania i wklejania wszędzie. Loritalk tworzy natywne wersje pod każdą platformę — długość, hashtagi, emoji i ton dopasowane do każdej sieci — i publikuje przez oficjalne API każdej platformy."
       },
       {
-        "q": "Jakie sieci społecznościowe są obsługiwane?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) i TikTok."
+        "q": "Które sieci społecznościowe są obsługiwane?",
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads i Telegram — osiem sieci przez natywne API."
       },
       {
-        "q": "Czy moje treści są prywatne?",
-        "a": "Tak. Twoje treści nigdy nie są używane do trenowania modeli AI. Wszystkie dane są przechowywane na naszych serwerach w Europie i przetwarzane zgodnie z RODO."
+        "q": "Gdzie przechowywane są moje dane?",
+        "a": "Twoje dane są przechowywane na serwerach w Unii Europejskiej. Dostawcy AI, z których korzystamy (OpenAI dla tekstu, Google dla obrazów), działają na warunkach swoich firmowych API — treści wysyłane do API nie są wykorzystywane do trenowania ich modeli ogólnego przeznaczenia."
       },
       {
         "q": "Czy mogę używać tego z moim zespołem?",
-        "a": "Oczywiście. Utwórz workspace'y dla każdej marki, zaproś członków zespołu z rolami administratora lub wydawcy i skonfiguruj obiegi zatwierdzania, aby nic nie zostało opublikowane bez przeglądu."
+        "a": "Tak. Twórz obszary robocze dla każdej marki i zapraszaj członków zespołu z rolami administratora lub publikującego. Każdy obszar roboczy ma własne podłączone kanały, persony i kalendarz."
       },
       {
-        "q": "Co się stanie po Beta?",
-        "a": "Wejdą w życie płatne plany, ale każdy użytkownik Beta zachowa swoją obecną stawkę zablokwaną na zawsze. Bez niespodzianek."
+        "q": "Co stanie się po zakończeniu Bety?",
+        "a": "Wejdą w życie plany płatne, ale każdy użytkownik Bety zachowuje swoją obecną stawkę zablokowaną na zawsze. Bez niespodzianek."
       }
     ]
   },
   "ctaBanner": {
     "headline": "Przestań pisać. Zacznij publikować.",
-    "subtitle": "Dołącz do Beta — darmowy dostęp, bez karty kredytowej, a Twoja stawka jest zablokowana na zawsze po premierze.",
+    "subtitle": "Dołącz do Bety — darmowy dostęp, bez karty kredytowej, a Twoja stawka zostaje zablokowana na zawsze, gdy wystartujemy.",
     "ctaPrimary": "Zacznij tworzyć za darmo",
     "ctaSecondary": "Zobacz, jak to działa"
   },
   "footer": {
     "description": "Treści AI dla każdej sieci społecznościowej.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugalia",
     "product": "Produkt",
     "resources": "Zasoby",
-    "legal": "Prawne",
+    "legal": "Informacje prawne",
     "features": "Funkcje",
-    "changelog": "Dziennik zmian",
+    "changelog": "Lista zmian",
     "supportedNetworks": "Obsługiwane sieci",
     "helpCenter": "Centrum pomocy",
     "contactUs": "Skontaktuj się z nami",
-    "betaFeedback": "Opinie o Beta",
+    "betaFeedback": "Opinie o Becie",
     "apiDocs": "Dokumentacja API",
     "privacyPolicy": "Polityka prywatności",
-    "termsOfService": "Warunki usługi",
-    "cookiePolicy": "Polityka cookies",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "termsOfService": "Warunki korzystania z usługi",
+    "cookiePolicy": "Polityka plików cookie",
+    "legalNotice": "Nota prawna",
+    "copyright": "© 2026 Loritalk® od CDN Core Technologies. Covilhã, Portugalia."
+  },
+  "cookieBanner": {
+    "aria": "Informacja o plikach cookie",
+    "title": "Używamy plików cookie",
+    "body": "Niezbędne pliki cookie utrzymują działanie witryny. Za Twoją zgodą ładujemy także Google Analytics, aby mierzyć ruch, oraz Meta Pixel, aby mierzyć skuteczność naszych reklam. Możesz zaakceptować, odrzucić lub wybrać kategorię po kategorii — i zmienić zdanie w dowolnym momencie.",
+    "policyLink": "Polityka plików cookie",
+    "privacyLink": "Polityka prywatności",
+    "acceptAll": "Zaakceptuj wszystkie",
+    "rejectOptional": "Odrzuć opcjonalne",
+    "customize": "Dostosuj",
+    "save": "Zapisz preferencje",
+    "necessaryLabel": "Ściśle niezbędne",
+    "necessaryDesc": "Wymagane do działania witryny (język i Twój wybór zgody). Nie można ich wyłączyć.",
+    "analyticsLabel": "Analityka — Google Analytics",
+    "analyticsDesc": "Ładuje Google Analytics 4, aby mierzyć ruch i ulepszać witrynę. Ustawia pliki cookie _ga i _ga_* oraz przesyła dane o odsłonach stron do Google.",
+    "marketingLabel": "Marketing — Meta Pixel",
+    "marketingDesc": "Ładuje Meta Pixel (Facebook / Instagram), abyśmy mogli mierzyć kampanie reklamowe. Ustawia pliki cookie _fbp i _fbc oraz przesyła dane o odsłonach stron do Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Dla agencji marketingowych i studiów kreatywnych",
+      "headlineOne": "Masz trudności z publikowaniem postów",
+      "headlineTwo": "dla każdego klienta",
+      "headlineThree": "na każdej platformie?",
+      "lead": "Loritalk daje Twojej agencji <strong>jeden obszar roboczy na markę</strong>, dedykowaną personę dla każdego klienta i natywne publikowanie w 8 sieciach — więc Twój zespół pisze raz i publikuje wszędzie, na każdym koncie.",
+      "ctaPrimary": "Zacznij z planem Ultra",
+      "ctaSecondary": "Zobacz cennik dla agencji",
+      "trust": [
+        "Jeden obszar roboczy na markę",
+        "Role administratora i publikującego",
+        "8 sieci przez natywne API"
+      ],
+      "hubLabel": "Centrum agencji",
+      "hubTitle": "5 marek. 5 obszarów roboczych.",
+      "hubBody": "Każdy klient ma własny obszar roboczy, persony, kanały i analitykę. Przełączaj kontekst jednym kliknięciem.",
+      "hubMeta": "5 obszarów roboczych · izolowanych",
+      "hubBadge": "Na żywo"
+    },
+    "pains": {
+      "title": "Rozpoznajesz swój tydzień?",
+      "subtitle": "Te same treści przepisywane 7 razy dla 5 klientów. Co tydzień. Też przez to przeszliśmy.",
+      "items": [
+        {
+          "title": "Żonglowanie 5+ klientami naraz",
+          "description": "Każda marka chce innego tonu, innych platform, innych terminów. Arkusze i wątki na Slacku to nie jest proces."
+        },
+        {
+          "title": "Głos marki zmienia się z każdym postem",
+          "description": "Różni copywriterzy, różne karty, różne prompty do ChatGPT. Głos, który klient zatwierdził pół roku temu, zniknął."
+        },
+        {
+          "title": "Zmiany planów w piątkowy wieczór",
+          "description": "Klient prosi o zmiany na ostatnią chwilę na Instagramie, LinkedInie i TikToku. Przepisujesz ten sam pomysł trzy razy — i i tak nie zdążysz w terminie."
+        },
+        {
+          "title": "Raportowanie zajmuje cały dzień",
+          "description": "Kopiowanie wyświetleń, zaangażowania i kliknięć z pięciu paneli do prezentacji. Ręcznie. Co miesiąc."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Wszystko, czego potrzebuje Twoja agencja, w jednym miejscu",
+      "subtitle": "Od briefu do raportu — Loritalk obsługuje cały proces tworzenia treści dla każdej zarządzanej marki.",
+      "items": [
+        {
+          "title": "Jeden obszar roboczy na klienta",
+          "description": "Izolowane obszary robocze z własnymi podłączonymi kanałami, personami, członkami i kalendarzem. Uruchom nowego klienta w kilka minut."
+        },
+        {
+          "title": "Persony głosu marki",
+          "description": "Zdefiniuj personę dla każdego klienta — głos, ton, konkretne instrukcje. Każda generacja dla tego obszaru roboczego respektuje brief, za każdym razem."
+        },
+        {
+          "title": "8 sieci, jeden brief",
+          "description": "Napisz brief raz i otrzymaj natywne wersje dla Instagrama, LinkedIna, X, TikToka, Facebooka, YouTube Shorts, Threads i Telegrama — wszystko w kilka sekund, wszystko przez oficjalne API."
+        },
+        {
+          "title": "Kalendarz dla każdego obszaru roboczego",
+          "description": "Każdy klient ma własny widok tygodnia / miesiąca / kolejki. Planuj posty na każdy kanał i miej cały proces danej marki na pierwszy rzut oka."
+        },
+        {
+          "title": "Role administratora i publikującego",
+          "description": "Zapraszaj członków zespołu do każdego obszaru roboczego jako administratorów (pełne zarządzanie) lub publikujących (tworzenie i publikacja). Obszary robocze są w pełni odizolowane od siebie."
+        },
+        {
+          "title": "Analityka dla każdego obszaru roboczego",
+          "description": "Zasięg, zaangażowanie, kliknięcia i wzrost na każdym kanale wewnątrz obszaru roboczego każdego klienta. Karty KPI, najlepsze posty i Lori Insights — bez przeskakiwania między panelami."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Jak wygląda tydzień agencji na Loritalk",
+      "subtitle": "Wprowadź markę, przygotuj brief dla AI, zdobądź akceptację, publikuj. Powtórz dla każdego klienta.",
+      "steps": [
+        {
+          "badge": "01 · WDROŻENIE",
+          "title": "Uruchom obszar roboczy klienta",
+          "description": "Utwórz obszar roboczy, podłącz konta społecznościowe marki i skonfiguruj personę — głos, ton, konkretne instrukcje. Gotowe do użycia w kilka minut."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Napisz jeden brief na kampanię",
+          "description": "Wybierz personę, kanały i język. Loritalk generuje natywną wersję pod każdą platformę w kilka sekund."
+        },
+        {
+          "badge": "03 · DOPRACOWANIE",
+          "title": "Edytuj w swoim zespole",
+          "description": "Twój zespół sprawdza wersje robocze wewnątrz obszaru roboczego — poprawia teksty, podmienia obrazy, wybiera najlepszy wariant na każdy kanał, zanim trafi w świat."
+        },
+        {
+          "badge": "04 · PUBLIKACJA",
+          "title": "Publikuj i analizuj",
+          "description": "Natywne API wysyłają treści na każdy kanał. Wyniki wracają do panelu danego obszaru roboczego — KPI, najlepsze posty i wzrost na każdym kanale."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plany stworzone dla agencji",
+      "subtitle": "Prowadź garstkę marek lub całą listę klientów. Wybierz wolumen pasujący do Twojego abonamentu.",
+      "customPrice": "Porozmawiajmy",
+      "customCredits": "Nielimitowane kredyty",
+      "customCreditsDetail": "Wolumen ustalany w umowie — bez niespodziewanych przekroczeń.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Indywidualny",
+          "description": "Dla sieci i dużych agencji, które potrzebują indywidualnych wolumenów i wdrożenia.",
+          "cta": "Porozmawiaj z działem sprzedaży"
+        }
+      },
+      "features": {
+        "customVolumes": "Indywidualne wolumeny kredytów",
+        "priorityEmail": "Priorytetowe wsparcie e-mail",
+        "euData": "Przechowywanie danych w UE"
+      }
+    },
+    "faq": {
+      "title": "Pytania agencji, na które odpowiadamy.",
+      "items": [
+        {
+          "q": "Jak kredyty są współdzielone między klientami?",
+          "a": "Kredyty znajdują się na poziomie konta agencji — każdy obszar roboczy może korzystać z tej samej puli. Śledź wykorzystanie w panelu rozliczeń."
+        },
+        {
+          "q": "Co się dzieje, gdy wprowadzamy lub rezygnujemy z klienta?",
+          "a": "Uruchom nowy obszar roboczy w kilka sekund. Zarchiwizowanie obszaru roboczego usuwa go z aktywnego widoku; pełne usunięcie konta respektuje zasady przechowywania danych zgodne z RODO."
+        },
+        {
+          "q": "Na których sieciach społecznościowych możemy publikować?",
+          "a": "Natywne publikowanie obejmuje LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads i Telegram — osiem sieci, każda przez oficjalne API platformy, więc awarie pozostają izolowane na danym kanale."
+        },
+        {
+          "q": "Czy klienci mogą się logować, aby zobaczyć swój obszar roboczy?",
+          "a": "Na razie nie. Obszary robocze są przeznaczone wyłącznie dla zespołu agencji — role administratora i publikującego. Dostęp dla klientów jest w planach."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Gotowy, by skalować treści u każdego klienta?",
+      "subtitle": "Zacznij już dziś z planem Ultra lub umów 20-minutowe demo z zespołem ds. agencji, aby zobaczyć Loritalk na własnych markach.",
+      "ctaPrimary": "Zacznij z Ultra",
+      "ctaSecondary": "Umów demo"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Dla samodzielnych twórców i influencerów",
+      "headlineOne": "Jeden pomysł.",
+      "headlineTwo": "Każda platforma.",
+      "headlineThree": "Bez poświęcania weekendu.",
+      "lead": "Loritalk zamienia jeden brief w <strong>natywne posty na Instagram, TikTok, YouTube Shorts, X, Threads</strong> i nie tylko — utrzymując spójny głos na każdym koncie.",
+      "ctaPrimary": "Zacznij za darmo z planem Starter",
+      "ctaSecondary": "Zobacz plany dla twórców",
+      "trust": [
+        "Twój głos na każdym kanale",
+        "8 sieci przez natywne API",
+        "Zaplanuj tygodnie za jednym razem"
+      ],
+      "hubLabel": "Twoje studio",
+      "hubTitle": "1 brief. 8 natywnych postów.",
+      "hubBody": "Zdefiniuj swoją personę raz. Loritalk dopasowuje każdy post do każdej platformy — długość, hashtagi, emoji, ton, format obrazu.",
+      "hubMeta": "1 persona · 8 kanałów",
+      "hubBadge": "Na żywo",
+      "cardTag": "Format natywny"
+    },
+    "pains": {
+      "title": "Brzmi jak Twój tydzień?",
+      "subtitle": "Publikowanie codziennie na każdej platformie nie powinno kosztować Cię niedzielnego popołudnia. Też przez to przeszliśmy.",
+      "items": [
+        {
+          "title": "Ten sam pomysł przepisany 8 razy",
+          "description": "Podpis na Instagram, skrypt na TikTok, hook na YouTube, wątek na X… każda platforma wymaga innej formy. Spalasz całe popołudnie na jeden post."
+        },
+        {
+          "title": "Algorytmy karzą za przerwy",
+          "description": "Opuść dwa dni, a zasięg spada. Zachowaj spójność na każdej platformie, a ledwo masz czas na nagrywanie, nie mówiąc o życiu."
+        },
+        {
+          "title": "Współprace wymagają wielu platform",
+          "description": "Sponsorzy chcą Rolek + Shorts + TikToka + posta. Ta sama kampania, cztery formaty. Liczysz za jeden, a dostarczasz cztery."
+        },
+        {
+          "title": "Głos się rozmywa",
+          "description": "Przy piętnastym poście podpisy brzmią, jakby napisał je ktoś obcy. Odbiorcy to wyczuwają. Zaangażowanie spada."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Wszystko, czego potrzebuje twórca, w jednym miejscu",
+      "subtitle": "Jeden brief, publikacja wszędzie — bez utraty głosu, za którym podąża Twoja widownia.",
+      "items": [
+        {
+          "title": "Twój głos, zachowany",
+          "description": "Zdefiniuj personę swoim głosem, tonem i konkretnymi instrukcjami w zwykłym tekście. Każda generacja przechodzi przez ten filtr — brzmi jak Ty, a nie jak narzędzie AI."
+        },
+        {
+          "title": "Jeden brief, osiem natywnych postów",
+          "description": "Napisz pomysł raz. Loritalk tworzy wersję zoptymalizowaną pod Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn i Telegram w kilka sekund."
+        },
+        {
+          "title": "Obrazy zgodne z marką pod każdy format",
+          "description": "Posty w feedzie, relacje, kadry hero, pionowe pod Rolki i Shorts. Obrazy są renderowane z właściwymi proporcjami i regułami wizualnymi Twojej persony."
+        },
+        {
+          "title": "Zaplanuj tydzień za jednym posiedzeniem",
+          "description": "Zaplanuj od poniedziałku do niedzieli na każdej platformie w jednym kalendarzu. Natywne API publikują automatycznie — nawet gdy nagrywasz kolejną partię."
+        },
+        {
+          "title": "Zobacz, co rośnie",
+          "description": "Zasięg, zaangażowanie, kliknięcia i wzrost liczby obserwujących na każdym kanale. Karty KPI i Lori Insights pokazują, co działa — postaw na to mocniej."
+        },
+        {
+          "title": "Moderacja przed publikacją",
+          "description": "Każda wersja robocza przechodzi przez automatyczną moderację, więc treści bezpieczne dla marki docierają do Twojej widowni, a sponsorzy są zadowoleni."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Jak wygląda tydzień twórcy na Loritalk",
+      "subtitle": "Uchwyć swój głos raz, przygotuj brief jednego pomysłu, publikuj na każdej platformie, obserwuj, co rośnie.",
+      "steps": [
+        {
+          "badge": "01 · GŁOS",
+          "title": "Zdefiniuj swoją personę",
+          "description": "Zapisz swój głos, ton i zasady w personie. Staje się ona filtrem, przez który przechodzi każdy przyszły post."
+        },
+        {
+          "badge": "02 · BRIEF",
+          "title": "Opisz jeden pomysł",
+          "description": "Wpisz koncept, wybierz kanały i język. Loritalk tworzy natywną wersję pod każdą platformę w kilka sekund — podpisy, skrypty, wątki, hooki."
+        },
+        {
+          "badge": "03 · PUBLIKACJA",
+          "title": "Edytuj i planuj",
+          "description": "Dopracuj najlepszy wariant na każdy kanał, dodaj wszystko do kolejki w kalendarzu i odejdź. API publikują o właściwej porze, we właściwym formacie."
+        },
+        {
+          "badge": "04 · ANALIZA",
+          "title": "Obserwuj, co działa",
+          "description": "Analityka per kanał pokazuje, co przynosi zasięg i zaangażowanie. Zmieniaj podejście, a nie proces."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plany stworzone dla twórców",
+      "subtitle": "Zacznij za darmo w trakcie Bety. Wybierz wolumen pasujący do tego, jak często publikujesz."
+    },
+    "faq": {
+      "title": "Pytania twórców, na które odpowiadamy.",
+      "items": [
+        {
+          "q": "Czy będzie brzmieć jak ja?",
+          "a": "Opisz swój głos, ton i zasady w personie. Każda generacja przechodzi przez ten filtr. Im bardziej szczegółowa persona, tym bliżej Twojego głosu."
+        },
+        {
+          "q": "Na których platformach faktycznie publikujecie?",
+          "a": "Natywne publikowanie obejmuje Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn i Telegram — osiem sieci przez oficjalne API. Awarie na jednym kanale nigdy nie blokują pozostałych."
+        },
+        {
+          "q": "Czy mogę edytować przed publikacją?",
+          "a": "Zawsze. Loritalk tworzy wersję roboczą na każdy kanał — wybierasz, poprawiasz i publikujesz. Nic nie trafia na żywo bez naciśnięcia przez Ciebie przycisku (chyba że to zaplanowałeś)."
+        },
+        {
+          "q": "A co z obrazami i krótkimi filmami?",
+          "a": "Obrazy zgodne z marką są generowane pod każdą platformę z właściwymi proporcjami (kwadrat, pion 9:16, hero). Do krótkich filmów otrzymujesz natywny podpis z hookiem w pierwszych sekundach i CTA — wklej go prosto do TikToka lub YouTube Shorts."
+        },
+        {
+          "q": "Czy Loritalk jest darmowy w trakcie Bety?",
+          "a": "Tak. Dostęp do Bety jest darmowy z hojnymi limitami. Każdy użytkownik Bety zachowuje swoją obecną stawkę zablokowaną na zawsze, gdy wystartują plany płatne."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Przestań przepisywać. Zacznij publikować.",
+      "subtitle": "Dołącz do Bety — za darmo, bez karty kredytowej, Twoja stawka zostaje zablokowana na zawsze, gdy wystartujemy.",
+      "ctaPrimary": "Zacznij za darmo z planem Starter",
+      "ctaSecondary": "Zobacz plany dla twórców"
+    }
   }
 }

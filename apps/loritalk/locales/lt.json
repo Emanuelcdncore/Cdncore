@@ -3,50 +3,84 @@
     "features": "Funkcijos",
     "howItWorks": "Kaip tai veikia",
     "pricing": "Kainos",
+    "forAgencies": "Agentūroms",
+    "forCreators": "Kūrėjams",
     "beta": "Beta",
     "startForFree": "Pradėkite nemokamai"
   },
   "hero": {
-    "badge": "Dabar Beta — nemokama ankstyvoji prieiga",
-    "headlineOne": "Rašyk mažiau.",
-    "headlineTwo": "Skelbk daugiau.",
-    "description": "Įveskite temą ar idėją. Loritalk AI rašo optimizuotus įrašus Instagram, LinkedIn, X, TikTok ir kitiems — per sekundes. Keli AI modeliai varžosi, kad duotų jums geriausią rezultatą.",
-    "ctaPrimary": "Pradėkite kurti nemokamai",
-    "ctaSecondary": "Pažiūrėkite, kaip tai veikia",
-    "note": "Kredito kortelė nereikalinga · Nemokamai Beta metu",
-    "headlineTwoTail": ""
+    "badge": "Beta versija · Ankstyvosios prieigos kainos užfiksuotos amžinai",
+    "headlineOne": "Rašykite mažiau.",
+    "headlineTwo": "Skelbkite daugiau.",
+    "headlineTwoTail": "",
+    "headlineStrike": "Perrašyta.",
+    "headlineThree": "Patikrinta.",
+    "lead": "Aprašykite savo įrašą vieną kartą. Loritalk parašo <strong>gimtąją versiją kiekvienai prijungtai platformai</strong>, sukuria prekės ženklą atitinkančius vaizdus, kiekvieną žodį praleidžia per automatinį moderavimą ir suplanuoja juos — per kelias sekundes.",
+    "ctaPrimary": "Pradėkite nemokamai — be kortelės",
+    "ctaSecondary": "Pažiūrėkite, kaip veikia · 90 s",
+    "trust": [
+      "8 gimtosios integracijos",
+      "Automatiškai moderuojama",
+      "Izoliuota darbo erdvėmis"
+    ],
+    "briefCard": {
+      "label": "Jūsų brifingas · 1 iš 1",
+      "typed": "Pristatome mūsų naują tvarų sportbatį. Pagamintas iš 80 % perdirbto vandenyno plastiko. Skirtas Z kartos bėgikams.",
+      "meta": "en · 8 kanalai · Prekės balsas",
+      "send": "Generuoti ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "įrašai · reels · istorijos",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "profiliai · puslapiai",
+      "x": "X / Twitter",
+      "xTag": "gijos · pavieniai",
+      "tiktok": "TikTok",
+      "tiktokTag": "scenarijai · aprašymai",
+      "youtube": "YouTube",
+      "youtubeTag": "shorts ≤ 100 s",
+      "threads": "Threads",
+      "threadsTag": "gimtoji",
+      "facebook": "Facebook",
+      "facebookTag": "puslapiai",
+      "telegram": "Telegram",
+      "telegramTag": "kanalai · grupės"
+    },
+    "leadHook": "Aprašykite savo įrašą vieną kartą.",
+    "leadBody": "Loritalk parašo <strong>gimtąją versiją kiekvienai prijungtai platformai</strong>, sukuria prekės ženklą atitinkančius vaizdus, kiekvieną žodį praleidžia per automatinį moderavimą ir suplanuoja juos — per kelias sekundes."
   },
   "stats": {
-    "networksValue": "6+",
-    "networksLabel": "Palaikomų socialinių tinklų",
-    "languagesValue": "3",
-    "languagesLabel": "Kalbos paleidimo metu",
-    "generationValue": "<5s",
-    "generationLabel": "Vidutinis generavimo laikas",
+    "networksValue": "8",
+    "networksLabel": "Palaikomi socialiniai tinklai",
+    "languagesValue": "24+",
+    "languagesLabel": "Sąsajos kalbos",
+    "generationValue": "Sekundės",
+    "generationLabel": "Nuo brifingo iki paruošto skelbti",
     "freeValue": "Nemokamai",
     "freeLabel": "Beta metu — be apribojimų"
   },
   "problem": {
-    "title": "Jūsų turinio darbo eiga yra sugedusi",
+    "title": "Jūsų turinio darbo eiga sugedusi",
     "subtitle": "Skamba pažįstamai?",
     "items": [
       {
         "title": "Valandos švaistomos adaptuojant",
-        "description": "Rašote įrašą Instagram, tada perrašote LinkedIn, tada vėl X. Kiekviena platforma reikalauja kitokio tono, ilgio ir žymių."
+        "description": "Parašote įrašą Instagram, tada perrašote LinkedIn, tada vėl X. Kiekviena platforma reikalauja kitokio tono, ilgio ir žymių."
       },
       {
         "title": "AI, kuris skamba generiškai",
-        "description": "AI duoda vieną versiją, kuri skamba kaip visi kiti. Jokio prekės ženklo balso, jokio platformos suvokimo, jokio tikro optimizavimo."
+        "description": "Vieno modelio AI duoda vieną versiją, kuri skamba kaip visi kiti. Jokio prekės ženklo balso, jokio platformos suvokimo, jokio tikro optimizavimo."
       },
       {
         "title": "Komandos kliūtys",
-        "description": "Turinys laukia patvirtinimo, pasimeta Slack gijose ir niekas nežino, kas suplanuota kitai savaitei."
+        "description": "Turinys laukia patvirtinimo, pasimeta Slack gijose, ir niekas nežino, kas suplanuota kitai savaitei."
       }
     ]
   },
   "solution": {
     "title": "Loritalk visa tai išsprendžia",
-    "subtitle": "Vienas brifingas. Kiekviena platforma. Keli AI varžosi dėl jūsų geriausio įrašo.",
+    "subtitle": "Vienas brifingas. Gimtoji versija kiekvienai platformai. Prekės ženklą atitinkantys vaizdai sukuriami lygiagrečiai.",
     "ctaPrimary": "Pradėkite kurti nemokamai",
     "rows": [
       {
@@ -54,8 +88,8 @@
         "after": "1 brifingas = visos platformos per <5 sekundes"
       },
       {
-        "before": "1 AI modelis = generiškas, visiems vienodas tekstas",
-        "after": "Keli AI modeliai diskutuoja ir tobulina vieni kitus"
+        "before": "Generiškas AI tekstas, panaudotas visuose tinkluose",
+        "after": "Gimtoji versija kiekvienam kanalui — pritaikytas ilgis, žymės ir tonas"
       },
       {
         "before": "Turinys išsklaidytas tarp įrankių ir gijų",
@@ -68,12 +102,12 @@
     "subtitle": "Nuo idėjos iki paskelbto įrašo — Loritalk valdo visą darbo eigą.",
     "items": [
       {
-        "title": "Kelių modelių AI deliberacija",
-        "description": "Ne vienas AI — keli modeliai generuoja nepriklausomai, tada tobulina vieni kitų darbą."
+        "title": "Platformai pritaikytas turinys",
+        "description": "Vienas brifingas virsta gimtąja versija kiekvienai platformai — ilgis, žymės, jaustukai ir tonas pritaikyti Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads ir Telegram."
       },
       {
-        "title": "Platformai optimizuotas turinys",
-        "description": "Kiekvienas įrašas pritaikytas savo platformai — teisingas tonas, ilgis, žymės, jaustukos ir formatas. Instagram aprašymai, LinkedIn straipsniai, X gijos, TikTok scenarijai."
+        "title": "Prekės ženklą atitinkantis vaizdų generavimas",
+        "description": "Vaizdai sukuriami kiekvienai platformai su teisingu kraštinių santykiu ir jūsų asmenybės vizualinėmis taisyklėmis — įrašai sraute, istorijos, pagrindiniai kadrai. Jokio rankinio dydžio keitimo."
       },
       {
         "title": "Daugiakalbis generavimas",
@@ -85,207 +119,231 @@
       },
       {
         "title": "Prekės ženklo balsas ir asmenybės",
-        "description": "Sukurkite AI asmenybes, kurios rašo kaip jūsų prekės ženklas. Valdykite toną nuo profesionalaus iki žaismingo. Kiekvienas įrašas skamba kaip jūs, ne kaip robotas."
+        "description": "Sukurkite AI asmenybes, kurios rašo kaip jūsų prekės ženklas. Valdykite toną nuo profesionalaus iki žaismingo. Kiekvienas įrašas skamba kaip jūs, o ne kaip robotas."
       },
       {
-        "title": "Analitikos valdymo skydelis",
-        "description": "Sekite peržiūras, įsitraukimą, paspaudimus ir augimą visuose kanaluose. Žinokite, koks turinys veikia, ir padvigubinkite pastangas."
+        "title": "Analitikos skydelis",
+        "description": "Sekite pasiekiamumą, įsitraukimą, paspaudimus ir augimą kiekviename kanale. KPI kortelės, geriausi įrašai ir „Lori Insights“ parodo, kas veikia."
       }
     ]
   },
   "howItWorks": {
-    "title": "Nuo idėjos iki įrašo per 3 žingsnius",
-    "subtitle": "Jokių tuščių ekranų. Jokio kopijavimo tarp platformų.",
+    "eyebrow": "05 · Darbo eiga",
+    "title": "Brifingas → peržiūra → publikavimas.",
+    "titleAccent": "Trys žingsniai.",
+    "titleTail": "Per kelias sekundes.",
+    "subtitle": "Jūs niekada nesirenkate modelio. Niekada nekeičiate vaizdo dydžio. Niekada nekopijuojate tarp skirtukų.",
     "steps": [
       {
+        "badge": "01",
+        "eyebrow": "Įvestis",
         "title": "Parašykite savo brifingą",
-        "description": "Aprašykite, ką norite perduoti — taip paprastai kaip \"naujo produkto pristatymas\" arba taip detaliai kaip pilnas brifingas. Pasirinkite savo kanalus, kalbą ir toną."
+        "description": "Vienas sakinys ar trys pastraipos. Pasirinkite kanalus, asmenybę ir kalbą. Tai vienintelis dalykas, kurį šiandien parašysite.",
+        "footLeft": "~ 5 s parašyti",
+        "footRight": "1 brifingas"
       },
       {
-        "title": "AI modeliai varžosi dėl jūsų",
-        "description": "Keli AI modeliai generuoja turinį nepriklausomai, tada peržiūri ir tobulina vieni kitų rezultatus. Gausite N nušlifuotų versijų kiekvienai platformai."
+        "badge": "02",
+        "eyebrow": "Generavimas",
+        "title": "AI pritaiko kiekvienam kanalui",
+        "description": "Loritalk perskaito jūsų brifingą, asmenybę ir kiekvienos platformos gimtąsias taisykles — tada sukuria versiją, skirtą kiekvienam kanalui. Automatinis moderavimas vyksta, kol dar nematote.",
+        "footLeft": "~ 3 s vienam kanalui",
+        "footRight": "Kiekvienam prijungtam kanalui"
       },
       {
-        "title": "Pasirinkite, redaguokite ir publikuokite",
-        "description": "Pasirinkite mėgstamiausią versiją kiekvienam kanalui. Koreguokite bet ką vienu paspaudimu. Publikuokite dabar arba suplanuokite vėliau."
+        "badge": "03",
+        "eyebrow": "Platinimas",
+        "title": "Publikuokite arba suplanuokite",
+        "description": "Siųskite dabar arba įkelkite į kalendorių su atskirais laikais kiekvienai platformai. Kiekvienas kanalas siunčia per savo gimtąją API; gedimai izoliuoti — Instagram vis tiek paskelbs, net jei Facebook užstrigs.",
+        "footLeft": "Gimtosios API · OAuth",
+        "footRight": "8 kanalai"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "„Pristatome mūsų naują tvarų sportbatį. Pagamintas iš 80 % perdirbto vandenyno plastiko. Skirtas Z kartos bėgikams.“",
+      "channelsComment": "// kanalai:"
+    },
+    "personasViz": {
+      "personaLabel": "Asmenybė",
+      "languageLabel": "Kalba",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutralus — Lori prekės balsas"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Atsipalaidavęs, juokingas, šnekamas"
+        },
+        {
+          "name": "Core",
+          "desc": "Drąsus, optimistiškas, vedamas prekės ženklo"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "karuselė",
+          "when": "Šiandien 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "ilgas formatas",
+          "when": "Šiandien 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "gija",
+          "when": "Šiandien 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "short 0:54",
+          "when": "Rytoj 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "įrašas",
+          "when": "Rytoj 12:00"
+        }
+      ],
+      "cta": "▶ Publikuoti viską · ⏱ Suplanuoti"
+    }
   },
-  "differentiator": {
-    "title": "Kodėl keli AI įveikia vieną",
-    "subtitle": "Kiti įrankiai naudoja vieną modelį. Loritalk naudoja kelis — ir verčia juos tobulinti vieni kitus.",
-    "briefLabel": "Jūsų brifingas",
-    "channels": "Kanalai",
-    "language": "Kalba:",
-    "languages": "Anglų, Portugalų",
-    "submitted": "Pateikta prieš 2 s",
-    "round1": "1 RAUNDAS — NEPRIKLAUSOMAS GENERAVIMAS",
-    "generated": "Sugeneruota",
-    "round2": "2 raundas — Kryžminis tobulinimas",
-    "round2Desc": "Kiekvienas modelis skaito visus rezultatus ir tobulina savo versiją",
-    "qualityNote": "Kokybė pagerėjo ~40% palyginti su 1 raundu",
-    "pickEdit": "Pasirinkite ir redaguokite",
-    "addMedia": "Pridėti mediją",
-    "uploading": "Įkeliamas vaizdas...",
-    "imageAttached": "Vaizdas sėkmingai įkeltas",
-    "generateAI": "Generuoti su AI",
-    "readyPublish": "Paruošta publikavimui",
-    "publishAll": "Publikuoti viską",
-    "scheduled": "Suplanuota",
-    "draft": "Juodraštis",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Vaizdai",
+    "title": "Prekės ženklą atitinkantys",
+    "titleAccent": "vaizdai",
+    "titleTail": "pritaikyti kiekvienai platformai.",
+    "subtitle": "Vaizdų generavimas vyksta asinchroniškai ir atskirai kiekvienai platformai — jokio rankinio dydžio keitimo, jokių prekės ženklą neatitinkančių nuotraukų. Pavieniai įrašai, karuselės, istorijų formatai, pagrindiniai kadrai. Kiekvienas atvaizdavimas remiasi aktyvios asmenybės vizualinėmis taisyklėmis.",
+    "tiles": {
+      "instagramCaption": "5 val. ryto. Kava, du skirtukai, vienas sprendimas.\nSukūriau v2, kol komanda dar net neprisijungė.",
+      "storyQuote": "pasiekėme 1 mln. MRR tą pačią savaitę, kai pašalinome pusę veiksmų plano.",
+      "storySwipe": "↑ braukite",
+      "linkedinAuthor": "Marlow Studio · 12 min",
+      "linkedinTitle": "Pasamdėme 3 rangovus, kol atsirado pirmas etatinis darbuotojas. Štai skaičiuoklė.",
+      "linkedinCta": "Skaityti daugiau →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "didžioji dalis „įkūrėjų turinio“ yra pranešimas spaudai su džemperiu. rašykite kaip žmogus. #shipping",
+      "generatingLabel": "Atvaizduojama · TikTok",
+      "generatingSub": "9:16 · ~12 s",
+      "ytTitleLineOne": "PIRMAS",
+      "ytTitleLineTwo": "DARBUOTOJAS.",
+      "ytSubtitle": "Kodėl laukėme 18 mėnesių.",
+      "ytMeta": "Loritalk · 14 ep. · 32 min"
+    }
   },
   "useCases": {
     "title": "Sukurta komandoms, kurios publikuoja",
-    "subtitle": "Nesvarbu, ar esate vienas kūrėjas, ar 50 žmonių agentūra.",
+    "subtitle": "Nesvarbu, ar esate pavienis kūrėjas, ar 50 žmonių agentūra.",
     "items": [
       {
         "title": "Pavieniai kūrėjai ir laisvai samdomi",
-        "description": "Nustokite švaistyti valandas turinio adaptavimui. Rašykite vieną kartą, publikuokite visur. Sutelkite dėmesį į strategiją, ne į kopijavimą."
+        "description": "Nustokite švaistyti valandas turinio adaptavimui. Rašykite vieną kartą, publikuokite visur. Sutelkite dėmesį į strategiją, o ne į kopijavimą."
       },
       {
         "title": "Rinkodaros komandos",
-        "description": "Viena darbo erdvė kiekvienam prekės ženklui. Patvirtinimo darbo eigos. Kalendoriaus rodinys. Visi žino, kas publikuojama ir kada."
+        "description": "Viena darbo erdvė kiekvienam prekės ženklui. Kalendoriaus rodinys kiekvienai darbo erdvei. Visi žino, kas publikuojama ir kada."
       },
       {
         "title": "Agentūros",
-        "description": "Valdykite kelis prekės ženklus iš vienos paskyros. Priskirkite vaidmenis, valdykite prieigą, sekite rezultatus visų klientų atžvilgiu. Neriboti įrašai Agentūros plane."
+        "description": "Valdykite kelis prekės ženklus iš vienos paskyros. Darbo erdvė kiekvienam klientui su izoliuotais kanalais, asmenybėmis ir kalendoriumi. Analitika pagal kanalą kiekvienam prekės ženklui."
       }
     ]
   },
   "pricing": {
     "title": "Paprastos, skaidrios kainos",
-    "subtitle": "Nemokamai Beta metu. Ankstyvieji vartotojai užfiksuoja savo kainą amžinai paleidimo metu.",
-    "mostPopular": "Populiariausias",
+    "subtitle": "Pagrįsta kreditais. Atšaukite bet kada. Metinis planas sutaupo du mėnesius.",
     "monthly": "Mėnesinis",
     "annual": "Metinis",
-    "save2Months": "-17%",
+    "save2Months": "-17 %",
     "perMonth": "/ mėn.",
+    "perMonthBilledYearly": "/ mėn., apmokestinama kasmet",
     "perYear": "/ metus",
-    "billedAnnually": "Apmokestinama kasmet",
-    "customPriceLabel": "Individualu",
-    "plans": [
-      {
-        "name": "Nemokamas",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "Beta metu",
-        "description": "Išbandykite viską su dosniais limitais.",
-        "features": [
-          "5 įrašai / mėn.",
-          "3 tinklai",
-          "Pagrindiniai tono valdikliai",
-          "Žymių pasiūlymai"
-        ],
-        "cta": "Pradėkite nemokamai",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Sutaupykite {{amount}} / metus",
+    "mostPopular": "Populiariausias",
+    "bestValue": "Geriausia vertė",
+    "creditsUnit": "kreditai / mėn.",
+    "creditsTexts": "~{{count}} tekstinių įrašų",
+    "creditsOr": "arba",
+    "creditsImages": "~{{count}} prekės ženklą atitinkančių vaizdų",
+    "promoExplainer": "Pirmųjų metų akcija: pasirinkę metinį planą, visus pirmuosius metus KIEKVIENĄ mėnesį gausite 2× kreditų — tai {{count}} papildomų kreditų kas mėnesį.",
+    "promoHeroExtra": "(+{{count}} papildomų kreditų kas mėnesį 12 mėnesių)",
+    "tierChoose": "Pasirinkti planą",
+    "features": {
+      "workspaces_one": "{{count}} darbo erdvė",
+      "workspaces_few": "{{count}} darbo erdvės",
+      "workspaces_many": "{{count}} darbo erdvės",
+      "workspaces_other": "{{count}} darbo erdvių",
+      "channels": "{{count}} socialinių kanalų",
+      "personas": "{{count}} prekės ženklo asmenybių",
+      "members_one": "{{count}} komandos narys",
+      "members_few": "{{count}} komandos nariai",
+      "members_many": "{{count}} komandos nario",
+      "members_other": "{{count}} komandos narių",
+      "media": "{{count}} medijos failų"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Pirmą kartą kuriantiems turinį su AI"
       },
-      {
-        "name": "Kūrėjas",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Kūrėjams ir prekės ženklams, kurie nuolat publikuoja.",
-        "features": [
-          "200 įrašų / mėn.",
-          "Visi tinklai",
-          "Išplėstinis tonas ir asmenybės",
-          "Turinio kalendorius",
-          "Prioritetinis palaikymas"
-        ],
-        "cta": "Pradėti nemokamą bandomąjį laikotarpį",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Nuosekliam ir paprastam turinio kūrimui su AI"
       },
-      {
-        "name": "Agentūra",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Komandoms, valdančioms kelis prekės ženklus.",
-        "features": [
-          "Neriboti įrašai",
-          "Visi tinklai",
-          "Keli prekės ženklai",
-          "Komandinis bendradarbiavimas",
-          "Analitika",
-          "Paskyros vadybininkas"
-        ],
-        "cta": "Susisiekite su mumis",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Kūrėjams, kuriantiems AI produktus"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Agentūroms ir mažoms komandoms"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Klausimai? Turime atsakymus.",
     "items": [
       {
-        "q": "Kokius AI modelius naudoja Loritalk?",
-        "a": "Galite konfigūruoti, kurie modeliai dalyvauja jūsų generavimo procese."
+        "q": "Kaip veikia Loritalk AI?",
+        "a": "Loritalk sukuria gimtąją jūsų brifingo versiją kiekvienam prijungtam kanalui ir lygiagrečiai atvaizduoja prekės ženklą atitinkančius vaizdus. Viskas praeina per automatinį moderavimo sluoksnį, kol pasiekia jūsų valdymo skydelį."
       },
       {
-        "q": "Kuo tai skiriasi nuo other AI tools?",
-        "a": "Other AI tools duoda vieną rezultatą iš vieno modelio. Loritalk paleidžia kelis modelius lygiagrečiai ir verčia juos tobulinti vieni kitų darbą — nuosekliai gamindamas aukštesnę kokybę. Be to, kiekvienas įrašas automatiškai optimizuojamas konkrečiai platformai."
+        "q": "Kuo tai skiriasi nuo kitų AI įrankių?",
+        "a": "Kiti įrankiai duoda vieną teksto bloką, kurį kopijuojate visur. Loritalk sukuria gimtąsias versijas kiekvienai platformai — ilgis, žymės, jaustukai ir tonas pritaikyti kiekvienam tinklui — ir publikuoja per kiekvienos platformos oficialią API."
       },
       {
         "q": "Kokie socialiniai tinklai palaikomi?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) ir TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads ir Telegram — aštuoni tinklai per gimtąsias API."
       },
       {
-        "q": "Ar mano turinys yra privatus?",
-        "a": "Taip. Jūsų turinys niekada nėra naudojamas AI modelių mokymui. Visi duomenys saugomi mūsų serveriuose Europoje ir tvarkomi pagal BDAR."
+        "q": "Kur saugomi mano duomenys?",
+        "a": "Jūsų duomenys saugomi serveriuose Europos Sąjungoje. AI tiekėjai, kuriuos naudojame (OpenAI tekstui, Google vaizdams), veikia pagal savo įmonėms skirtas API sąlygas — į API siunčiamas turinys nenaudojamas jų bendrosios paskirties modeliams mokyti."
       },
       {
         "q": "Ar galiu naudoti su savo komanda?",
-        "a": "Žinoma. Sukurkite darbo erdves kiekvienam prekės ženklui, pakvieskite komandos narius su administratoriaus ar leidėjo vaidmenimis ir nustatykite patvirtinimo darbo eigas, kad niekas nepaskelbtų be peržiūros."
+        "a": "Taip. Sukurkite darbo erdves kiekvienam prekės ženklui ir pakvieskite komandos narius su administratoriaus ar leidėjo vaidmenimis. Kiekviena darbo erdvė turi savo prijungtus kanalus, asmenybes ir kalendorių."
       },
       {
         "q": "Kas atsitiks po Beta?",
-        "a": "Įsigalios mokamos prenumeratos, bet kiekvienas Beta naudotojas išlaikys dabartinę kainą užfiksuotą amžinai. Jokių staigmenų."
+        "a": "Įsigalios mokami planai, bet kiekvienas Beta naudotojas amžinai išlaiko savo dabartinę kainą. Jokių staigmenų."
       }
     ]
   },
   "ctaBanner": {
     "headline": "Nustokite rašyti. Pradėkite publikuoti.",
-    "subtitle": "Prisijunkite prie Beta — nemokama prieiga, be kredito kortelės, ir jūsų kaina užfiksuota amžinai paleidimo metu.",
+    "subtitle": "Prisijunkite prie Beta — nemokama prieiga, be kredito kortelės, o jūsų kaina užfiksuojama amžinai, kai pradėsime veiklą.",
     "ctaPrimary": "Pradėkite kurti nemokamai",
     "ctaSecondary": "Pažiūrėkite, kaip tai veikia"
   },
   "footer": {
     "description": "AI turinys kiekvienam socialiniam tinklui.",
-    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
+    "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugalija",
     "product": "Produktas",
     "resources": "Ištekliai",
     "legal": "Teisinė informacija",
@@ -299,6 +357,304 @@
     "privacyPolicy": "Privatumo politika",
     "termsOfService": "Paslaugų sąlygos",
     "cookiePolicy": "Slapukų politika",
-    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+    "legalNotice": "Teisinis pranešimas",
+    "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugalija."
+  },
+  "cookieBanner": {
+    "aria": "Slapukų pranešimas",
+    "title": "Naudojame slapukus",
+    "body": "Būtinieji slapukai užtikrina svetainės veikimą. Su jūsų sutikimu taip pat įkeliame „Google Analytics“ srautui matuoti ir „Meta Pixel“ mūsų reklamai matuoti. Galite priimti, atsisakyti arba pasirinkti kategoriją po kategorijos — ir bet kada apsigalvoti.",
+    "policyLink": "Slapukų politika",
+    "privacyLink": "Privatumo politika",
+    "acceptAll": "Priimti visus",
+    "rejectOptional": "Atmesti pasirenkamus",
+    "customize": "Tinkinti",
+    "save": "Išsaugoti nuostatas",
+    "necessaryLabel": "Būtinieji",
+    "necessaryDesc": "Reikalingi svetainei veikti (kalba ir jūsų sutikimo pasirinkimas). Negalima išjungti.",
+    "analyticsLabel": "Analitika — „Google Analytics“",
+    "analyticsDesc": "Įkelia „Google Analytics 4“ srautui matuoti ir svetainei tobulinti. Nustato _ga ir _ga_* slapukus ir perduoda puslapio peržiūrų duomenis „Google“.",
+    "marketingLabel": "Rinkodara — „Meta Pixel“",
+    "marketingDesc": "Įkelia „Meta Pixel“ (Facebook / Instagram), kad galėtume matuoti reklamos kampanijas. Nustato _fbp ir _fbc slapukus ir perduoda puslapio peržiūrų duomenis „Meta“."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Rinkodaros agentūroms ir kūrybinėms studijoms",
+      "headlineOne": "Sunku paskelbti įrašus",
+      "headlineTwo": "kiekvienam klientui",
+      "headlineThree": "kiekvienoje platformoje?",
+      "lead": "Loritalk suteikia jūsų agentūrai <strong>vieną darbo erdvę kiekvienam prekės ženklui</strong>, atskirą asmenybę kiekvienam klientui ir gimtąjį publikavimą 8 tinkluose — kad jūsų komanda rašytų vieną kartą ir publikuotų visur, kiekvienoje paskyroje.",
+      "ctaPrimary": "Pradėkite su Ultra planu",
+      "ctaSecondary": "Žiūrėti agentūrų kainas",
+      "trust": [
+        "Viena darbo erdvė kiekvienam prekės ženklui",
+        "Administratoriaus ir leidėjo vaidmenys",
+        "8 tinklai per gimtąsias API"
+      ],
+      "hubLabel": "Agentūros būstinė",
+      "hubTitle": "5 prekės ženklai. 5 darbo erdvės.",
+      "hubBody": "Kiekvienas klientas turi savo darbo erdvę, asmenybes, kanalus ir analitiką. Perjunkite kontekstą vienu paspaudimu.",
+      "hubMeta": "5 darbo erdvės · izoliuotos",
+      "hubBadge": "Tiesiogiai"
+    },
+    "pains": {
+      "title": "Atpažįstate savo savaitę?",
+      "subtitle": "Tas pats turinys, perrašytas 7 kartus 5 klientams. Kiekvieną savaitę. Mes ten buvome.",
+      "items": [
+        {
+          "title": "Vienu metu žongliruojate 5+ klientais",
+          "description": "Kiekvienas prekės ženklas nori kitokio tono, kitokių platformų, kitokių terminų. Skaičiuoklės ir Slack gijos nėra darbo eiga."
+        },
+        {
+          "title": "Prekės ženklo balsas plūduriuoja su kiekvienu įrašu",
+          "description": "Skirtingi tekstų kūrėjai, skirtingi skirtukai, skirtingos ChatGPT užklausos. Balso, kurį jūsų klientas patvirtino prieš pusę metų, nebėra."
+        },
+        {
+          "title": "Penktadienio vakaro perplanavimai",
+          "description": "Klientas prašo paskutinės minutės pakeitimų Instagram, LinkedIn ir TikTok. Tą pačią idėją perrašote tris kartus — ir vis tiek nespėjate į laiko langą."
+        },
+        {
+          "title": "Ataskaitos užima visą dieną",
+          "description": "Rankiniu būdu kopijuojate parodymus, įsitraukimą ir paspaudimus iš penkių skydelių į pristatymą. Kiekvieną mėnesį."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Viskas, ko reikia jūsų agentūrai, vienoje vietoje",
+      "subtitle": "Nuo brifingo iki ataskaitos — Loritalk valdo visą turinio konvejerį kiekvienam jūsų valdomam prekės ženklui.",
+      "items": [
+        {
+          "title": "Viena darbo erdvė kiekvienam klientui",
+          "description": "Izoliuotos darbo erdvės su savo prijungtais kanalais, asmenybėmis, nariais ir kalendoriumi. Naują klientą paleiskite per kelias minutes."
+        },
+        {
+          "title": "Prekės ženklo balso asmenybės",
+          "description": "Apibrėžkite asmenybę kiekvienam klientui — balsą, toną, konkrečias instrukcijas. Kiekvienas tos darbo erdvės generavimas visada laikosi brifingo."
+        },
+        {
+          "title": "8 tinklai, vienas brifingas",
+          "description": "Parašykite brifingą vieną kartą ir gaukite gimtąsias versijas Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads ir Telegram — viskas per kelias sekundes, viskas per oficialias API."
+        },
+        {
+          "title": "Kalendorius kiekvienai darbo erdvei",
+          "description": "Kiekvienas klientas turi savo savaitės / mėnesio / eilės rodinį. Planuokite įrašus kiekvienam kanalui ir vienu žvilgsniu matykite visą to prekės ženklo konvejerį."
+        },
+        {
+          "title": "Administratoriaus ir leidėjo vaidmenys",
+          "description": "Pakvieskite komandos narius į kiekvieną darbo erdvę kaip administratorius (visiškas valdymas) arba leidėjus (kurti ir publikuoti). Darbo erdvės visiškai izoliuotos viena nuo kitos."
+        },
+        {
+          "title": "Analitika kiekvienai darbo erdvei",
+          "description": "Pasiekiamumas, įsitraukimas, paspaudimai ir augimas pagal kanalą kiekvieno kliento darbo erdvėje. KPI kortelės, geriausi įrašai ir „Lori Insights“ — nešokinėjant tarp skydelių."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kaip agentūros savaitė atrodo su Loritalk",
+      "subtitle": "Įtraukite prekės ženklą, instruktuokite AI, gaukite patvirtinimą, paskelbkite. Kartokite kiekvienam klientui.",
+      "steps": [
+        {
+          "badge": "01 · ĮTRAUKIMAS",
+          "title": "Paleiskite kliento darbo erdvę",
+          "description": "Sukurkite darbo erdvę, prijunkite prekės ženklo socialines paskyras ir sukonfigūruokite asmenybę — balsą, toną, konkrečias instrukcijas. Paruošta naudoti per kelias minutes."
+        },
+        {
+          "badge": "02 · BRIFINGAS",
+          "title": "Parašykite vieną brifingą kiekvienai kampanijai",
+          "description": "Pasirinkite asmenybę, kanalus ir kalbą. Loritalk per kelias sekundes sugeneruoja gimtąją versiją kiekvienai platformai."
+        },
+        {
+          "badge": "03 · TOBULINIMAS",
+          "title": "Redaguokite komandoje",
+          "description": "Jūsų komanda peržiūri juodraščius darbo erdvėje — koreguokite tekstą, keiskite vaizdus, pasirinkite stipriausią kiekvieno kanalo variantą prieš jį paskelbiant."
+        },
+        {
+          "badge": "04 · PASKELBIMAS",
+          "title": "Publikuokite ir sekite",
+          "description": "Gimtosios API skelbia kiekviename kanale. Rezultatai grįžta į kiekvienos darbo erdvės skydelį — KPI, geriausi įrašai ir augimas pagal kanalą."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planai, sukurti agentūroms",
+      "subtitle": "Valdykite saują prekės ženklų ar visą klientų sąrašą. Pasirinkite apimtį, atitinkančią jūsų sutartį.",
+      "customPrice": "Pasikalbėkime",
+      "customCredits": "Neriboti kreditai",
+      "customCreditsDetail": "Apimtis sutarta pagal sutartį — jokių netikėtų viršijimo mokesčių.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Individualus",
+          "description": "Tinklams ir didelėms agentūroms, kurioms reikia pritaikytų apimčių ir įtraukimo.",
+          "cta": "Susisiekite su pardavimais"
+        }
+      },
+      "features": {
+        "customVolumes": "Individualios kreditų apimtys",
+        "priorityEmail": "Prioritetinė palaikymo el. paštu pagalba",
+        "euData": "Duomenų saugojimas ES"
+      }
+    },
+    "faq": {
+      "title": "Atsakymai į agentūrų klausimus.",
+      "items": [
+        {
+          "q": "Kaip kreditai dalijami tarp klientų?",
+          "a": "Kreditai laikomi agentūros paskyros lygmeniu — bet kuri darbo erdvė gali naudoti iš to paties bendro fondo. Sekite naudojimą atsiskaitymo skydelyje."
+        },
+        {
+          "q": "Kas nutinka, kai įtraukiame ar atjungiame klientą?",
+          "a": "Naują darbo erdvę paleiskite per kelias sekundes. Darbo erdvės archyvavimas pašalina ją iš aktyvaus rodinio; visiškas paskyros ištrynimas laikosi BDAR saugojimo taisyklių."
+        },
+        {
+          "q": "Į kokius socialinius tinklus galime publikuoti?",
+          "a": "Gimtasis publikavimas apima LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads ir Telegram — aštuonis tinklus, kiekvieną per oficialią platformos API, todėl gedimai lieka izoliuoti kiekviename kanale."
+        },
+        {
+          "q": "Ar klientai gali prisijungti, kad matytų savo darbo erdvę?",
+          "a": "Šiandien ne. Darbo erdvės skirtos tik agentūros komandai — administratoriaus ir leidėjo vaidmenys. Kliento prieiga yra veiksmų plane."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Pasiruošę plėsti turinį kiekvienam klientui?",
+      "subtitle": "Pradėkite su Ultra planu šiandien arba užsisakykite 20 minučių demonstraciją su agentūrų komanda ir pamatykite Loritalk veikiant su jūsų prekės ženklais.",
+      "ctaPrimary": "Pradėkite su Ultra",
+      "ctaSecondary": "Užsisakyti demonstraciją"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Pavieniams kūrėjams ir influenceriams",
+      "headlineOne": "Viena idėja.",
+      "headlineTwo": "Kiekviena platforma.",
+      "headlineThree": "Neprarandant savo savaitgalio.",
+      "lead": "Loritalk paverčia vieną brifingą <strong>gimtaisiais įrašais Instagram, TikTok, YouTube Shorts, X, Threads</strong> ir kitur — išlaikydamas jūsų balsą nuoseklų kiekvienoje paskyroje.",
+      "ctaPrimary": "Pradėkite nemokamai su Starter",
+      "ctaSecondary": "Žiūrėti kūrėjų planus",
+      "trust": [
+        "Jūsų balsas kiekviename kanale",
+        "8 tinklai per gimtąsias API",
+        "Suplanuokite savaites iš karto"
+      ],
+      "hubLabel": "Jūsų studija",
+      "hubTitle": "1 brifingas. 8 gimtieji įrašai.",
+      "hubBody": "Apibrėžkite savo asmenybę vieną kartą. Loritalk pritaiko kiekvieną įrašą kiekvienai platformai — ilgį, žymes, jaustukus, toną, vaizdo formatą.",
+      "hubMeta": "1 asmenybė · 8 kanalai",
+      "hubBadge": "Tiesiogiai",
+      "cardTag": "Gimtasis formatas"
+    },
+    "pains": {
+      "title": "Skamba kaip jūsų savaitė?",
+      "subtitle": "Skelbimas kiekvieną dieną kiekvienoje platformoje neturėtų kainuoti jums sekmadienio popietės. Mes ten buvome.",
+      "items": [
+        {
+          "title": "Ta pati idėja, perrašyta 8 kartus",
+          "description": "Aprašymas Instagram, scenarijus TikTok, kabliukas YouTube, gija X… kiekvienai platformai reikia kitokios formos. Vienam įrašui sudeginate popietę."
+        },
+        {
+          "title": "Algoritmai baudžia už pertraukas",
+          "description": "Praleiskite dvi dienas ir pasiekiamumas krenta. Likite nuoseklūs kiekvienoje platformoje, ir vos turite laiko filmuoti, jau nekalbant apie gyvenimą."
+        },
+        {
+          "title": "Prekės ženklų sandoriai reikalauja kelių platformų",
+          "description": "Rėmėjai nori Reels + Shorts + TikTok + įrašo. Ta pati kampanija, keturi formatai. Apmokestinate už vieną, o pristatote keturis."
+        },
+        {
+          "title": "Balsas praskysta",
+          "description": "Iki penkiolikto įrašo aprašymai skamba taip, lyg juos parašytų nepažįstamasis. Auditorija tai pajunta. Įsitraukimas krenta."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Viskas, ko reikia kūrėjui, vienoje vietoje",
+      "subtitle": "Instruktuokite vieną kartą, paskelbkite visur — neprarandant balso, kurį seka jūsų auditorija.",
+      "items": [
+        {
+          "title": "Jūsų balsas, užfiksuotas",
+          "description": "Apibrėžkite asmenybę su savo balsu, tonu ir konkrečiomis instrukcijomis paprastu tekstu. Kiekvienas generavimas praeina pro tą lęšį — skamba kaip jūs, o ne kaip AI įrankis."
+        },
+        {
+          "title": "Vienas brifingas, aštuoni gimtieji įrašai",
+          "description": "Parašykite idėją vieną kartą. Loritalk per kelias sekundes sukuria versiją, optimizuotą Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn ir Telegram."
+        },
+        {
+          "title": "Prekės ženklą atitinkantys vaizdai kiekvienam formatui",
+          "description": "Įrašai sraute, istorijos, pagrindiniai kadrai, vertikalūs Reels ir Shorts. Vaizdai sukuriami su teisingu kraštinių santykiu ir jūsų asmenybės vizualinėmis taisyklėmis."
+        },
+        {
+          "title": "Suplanuokite savaitę vienu prisėdimu",
+          "description": "Suplanuokite nuo pirmadienio iki sekmadienio kiekvienoje platformoje viename kalendoriuje. Gimtosios API skelbia automatiškai — net kai filmuojate kitą partiją."
+        },
+        {
+          "title": "Matykite, kas auga",
+          "description": "Pasiekiamumas, įsitraukimas, paspaudimai ir sekėjų augimas pagal kanalą. KPI kortelės ir „Lori Insights“ parodo, kas veikia — sutelkite dėmesį į tai."
+        },
+        {
+          "title": "Moderuojama prieš paskelbimą",
+          "description": "Kiekvienas juodraštis praeina per automatinį moderavimą, todėl prekės ženklui saugus turinys pasiekia jūsų auditoriją, o rėmėjai lieka patenkinti."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Kaip kūrėjo savaitė atrodo su Loritalk",
+      "subtitle": "Užfiksuokite savo balsą vieną kartą, instruktuokite vieną idėją, paskelbkite kiekvienoje platformoje, stebėkite, kas auga.",
+      "steps": [
+        {
+          "badge": "01 · BALSAS",
+          "title": "Apibrėžkite savo asmenybę",
+          "description": "Užrašykite savo balsą, toną ir namų taisykles į asmenybę. Tai tampa lęšiu, pro kurį praeina kiekvienas būsimas įrašas."
+        },
+        {
+          "badge": "02 · BRIFINGAS",
+          "title": "Instruktuokite vieną idėją",
+          "description": "Įveskite koncepciją, pasirinkite kanalus ir kalbą. Loritalk per kelias sekundes sukuria gimtąją versiją kiekvienai platformai — aprašymus, scenarijus, gijas, kabliukus."
+        },
+        {
+          "badge": "03 · PASKELBIMAS",
+          "title": "Redaguokite ir suplanuokite",
+          "description": "Nušlifuokite stipriausią kiekvieno kanalo variantą, sudėkite viską į kalendorių, nueikite. API publikuoja tinkamu laiku, tinkamu formatu."
+        },
+        {
+          "badge": "04 · SEKIMAS",
+          "title": "Stebėkite, kas veikia",
+          "description": "Analitika pagal kanalą rodo, kas traukia pasiekiamumą ir įsitraukimą. Keiskite kampą, o ne darbo eigą."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planai, sukurti kūrėjams",
+      "subtitle": "Pradėkite nemokamai Beta metu. Pasirinkite apimtį, atitinkančią, kaip dažnai skelbiate."
+    },
+    "faq": {
+      "title": "Atsakymai į kūrėjų klausimus.",
+      "items": [
+        {
+          "q": "Ar tai skambės kaip aš?",
+          "a": "Aprašykite savo balsą, toną ir namų taisykles asmenybėje. Kiekvienas generavimas praeina pro tą lęšį. Kuo detalesnė asmenybė, tuo arčiau jūsų balso."
+        },
+        {
+          "q": "Į kokias platformas iš tikrųjų publikuojate?",
+          "a": "Gimtasis publikavimas apima Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn ir Telegram — aštuonis tinklus per oficialias API. Gedimai viename kanale niekada neblokuoja kitų."
+        },
+        {
+          "q": "Ar galiu redaguoti prieš skelbiant?",
+          "a": "Visada. Loritalk sukuria juodraštį kiekvienam kanalui — jūs pasirenkate, koreguojate ir publikuojate. Niekas nepaskelbiama be jūsų mygtuko paspaudimo (nebent suplanavote)."
+        },
+        {
+          "q": "O kaip dėl vaizdų ir trumpo formato vaizdo įrašų?",
+          "a": "Prekės ženklą atitinkantys vaizdai generuojami kiekvienai platformai su teisingu kraštinių santykiu (kvadratinis, vertikalus 9:16, pagrindinis). Trumpo formato vaizdo įrašui gaunate gimtąjį aprašymą su kabliuku pirmosiose sekundėse ir CTA — įklijuokite tiesiai į TikTok ar YouTube Shorts."
+        },
+        {
+          "q": "Ar Loritalk nemokamas Beta metu?",
+          "a": "Taip. Beta prieiga nemokama su dosniais limitais. Kiekvienas Beta naudotojas amžinai išlaiko savo dabartinę kainą, kai pasirodys mokami planai."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Nustokite perrašinėti. Pradėkite skelbti.",
+      "subtitle": "Prisijunkite prie Beta — nemokamai, be kredito kortelės, jūsų kaina užfiksuota amžinai, kai pradėsime veiklą.",
+      "ctaPrimary": "Pradėkite nemokamai su Starter",
+      "ctaSecondary": "Žiūrėti kūrėjų planus"
+    }
   }
 }

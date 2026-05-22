@@ -3,40 +3,74 @@
     "features": "Funktionen",
     "howItWorks": "So funktioniert's",
     "pricing": "Preise",
+    "forAgencies": "Für Agenturen",
+    "forCreators": "Für Creator",
     "beta": "Beta",
     "startForFree": "Kostenlos starten"
   },
   "hero": {
-    "badge": "Jetzt in der Beta — kostenloser Frühzugang",
-    "headlineOne": "Schreib weniger.",
-    "headlineTwo": "Veröffentliche mehr.",
-    "description": "Geben Sie ein Thema oder eine Idee ein. Die KI von Loritalk schreibt optimierte Beiträge für Instagram, LinkedIn, X, TikTok und mehr — in Sekunden. Mehrere KI-Modelle konkurrieren, um Ihnen das beste Ergebnis zu liefern.",
-    "ctaPrimary": "Jetzt kostenlos loslegen",
-    "ctaSecondary": "So funktioniert's",
-    "note": "Keine Kreditkarte erforderlich · Kostenlos während der Beta",
-    "headlineTwoTail": ""
+    "badge": "In Beta · Early-Access-Preis für immer gesichert",
+    "headlineOne": "Weniger schreiben.",
+    "headlineTwo": "Mehr veröffentlichen.",
+    "headlineTwoTail": "",
+    "headlineStrike": "Neu geschrieben.",
+    "headlineThree": "Geprüft.",
+    "lead": "Beschreiben Sie Ihren Beitrag einmal. Loritalk schreibt <strong>eine native Version für jede verbundene Plattform</strong>, generiert markengerechte Bilder, prüft jedes Wort durch automatische Moderation und plant alles – in Sekunden.",
+    "ctaPrimary": "Kostenlos starten – ohne Karte",
+    "ctaSecondary": "In Aktion sehen · 90 Sek.",
+    "trust": [
+      "8 native Integrationen",
+      "Automatisch moderiert",
+      "Workspace-isoliert"
+    ],
+    "briefCard": {
+      "label": "Ihr Briefing · 1 von 1",
+      "typed": "Wir bringen unseren neuen nachhaltigen Sneaker auf den Markt. Hergestellt aus 80 % recyceltem Meeresplastik. Zielgruppe: Gen-Z-Läufer.",
+      "meta": "de · 8 Kanäle · House Voice",
+      "send": "Generieren ↗"
+    },
+    "marquee": {
+      "instagram": "Instagram",
+      "instagramTag": "Beiträge · Reels · Storys",
+      "linkedin": "LinkedIn",
+      "linkedinTag": "Profil · Seiten",
+      "x": "X / Twitter",
+      "xTag": "Threads · Einzeln",
+      "tiktok": "TikTok",
+      "tiktokTag": "Skripte · Untertitel",
+      "youtube": "YouTube",
+      "youtubeTag": "Shorts ≤ 100 Sek.",
+      "threads": "Threads",
+      "threadsTag": "nativ",
+      "facebook": "Facebook",
+      "facebookTag": "Seiten",
+      "telegram": "Telegram",
+      "telegramTag": "Kanäle · Gruppen"
+    },
+    "leadHook": "Beschreiben Sie Ihren Beitrag einmal.",
+    "leadBody": "Loritalk schreibt <strong>eine native Version für jede verbundene Plattform</strong>, generiert markengerechte Bilder, prüft jedes Wort durch automatische Moderation und plant alles – in Sekunden."
   },
   "stats": {
-    "networksValue": "6+",
+    "networksValue": "8",
     "networksLabel": "Unterstützte soziale Netzwerke",
-    "languagesValue": "3",
-    "languagesLabel": "Sprachen zum Start",
-    "generationValue": "<5s",
-    "generationLabel": "Durchschnittliche Generierungszeit",
-    "freeValue": "Kostenlos",
-    "freeLabel": "Während der Beta — ohne Einschränkungen"
+    "languagesValue": "24+",
+    "languagesLabel": "UI-Sprachen",
+    "generationValue": "Sekunden",
+    "generationLabel": "Vom Briefing bis zur Veröffentlichung",
+    "freeValue": "Gratis",
+    "freeLabel": "Während der Beta – ohne Limits"
   },
   "problem": {
     "title": "Ihr Content-Workflow ist kaputt",
     "subtitle": "Kommt Ihnen das bekannt vor?",
     "items": [
       {
-        "title": "Stunden verschwendet mit Anpassen",
-        "description": "Sie schreiben einen Beitrag für Instagram, schreiben ihn dann für LinkedIn um, dann nochmal für X. Jede Plattform braucht einen anderen Ton, andere Länge und andere Hashtags."
+        "title": "Stunden mit Anpassen verschwendet",
+        "description": "Sie schreiben einen Beitrag für Instagram, dann schreiben Sie ihn für LinkedIn um, dann noch einmal für X. Jede Plattform braucht einen anderen Ton, eine andere Länge und andere Hashtags."
       },
       {
         "title": "KI, die generisch klingt",
-        "description": "AI gibt Ihnen eine Version, die wie bei allen anderen klingt. Keine Markenstimme, kein Plattformbewusstsein, keine echte Optimierung."
+        "description": "Single-Model-KI liefert Ihnen eine Version, die klingt wie alle anderen. Keine Markenstimme, kein Plattformbewusstsein, keine echte Optimierung."
       },
       {
         "title": "Engpässe im Team",
@@ -45,39 +79,39 @@
     ]
   },
   "solution": {
-    "title": "Loritalk löst all das",
-    "subtitle": "Ein Briefing. Jede Plattform. Mehrere KI-Modelle konkurrieren um Ihren besten Beitrag.",
-    "ctaPrimary": "Jetzt kostenlos loslegen",
+    "title": "Loritalk behebt das alles",
+    "subtitle": "Ein Briefing. Eine native Version für jede Plattform. Markengerechte Bilder parallel gerendert.",
+    "ctaPrimary": "Kostenlos mit dem Erstellen beginnen",
     "rows": [
       {
-        "before": "1 Beitrag = 45 Min. Anpassung an jede Plattform",
+        "before": "1 Beitrag = 45 Min. Anpassen an jede Plattform",
         "after": "1 Briefing = alle Plattformen in <5 Sekunden"
       },
       {
-        "before": "1 KI-Modell = generischer Einheitstext",
-        "after": "Mehrere KI-Modelle diskutieren und verbessern sich gegenseitig"
+        "before": "Generischer KI-Text, über jedes Netzwerk hinweg wiederverwendet",
+        "after": "Eine native Version pro Kanal – Länge, Hashtags und Ton angepasst"
       },
       {
-        "before": "Inhalte verstreut in verschiedenen Tools und Threads",
-        "after": "Ein Dashboard: erstellen, freigeben, planen, veröffentlichen, verfolgen"
+        "before": "Inhalte über Tools und Threads verstreut",
+        "after": "Ein Dashboard: erstellen, freigeben, planen, veröffentlichen, auswerten"
       }
     ]
   },
   "features": {
     "title": "Alles, was Ihr Content-Team braucht",
-    "subtitle": "Von der Idee zum veröffentlichten Beitrag — Loritalk steuert den gesamten Workflow.",
+    "subtitle": "Von der Idee bis zum veröffentlichten Beitrag – Loritalk übernimmt den gesamten Workflow.",
     "items": [
       {
-        "title": "Multi-Modell-KI-Deliberation",
-        "description": "Nicht eine KI — mehrere Modelle generieren unabhängig und verbessern dann die Arbeit der anderen."
+        "title": "Plattform-native Inhalte",
+        "description": "Aus einem Briefing wird eine native Version für jede Plattform – Länge, Hashtags, Emojis und Ton angepasst an Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads und Telegram."
       },
       {
-        "title": "Plattformoptimierter Content",
-        "description": "Jeder Beitrag ist auf seine Plattform zugeschnitten — richtiger Ton, Länge, Hashtags, Emojis und Format. Instagram-Bildunterschriften, LinkedIn-Artikel, X-Threads, TikTok-Skripte."
+        "title": "Markengerechte Bildgenerierung",
+        "description": "Bilder pro Plattform mit dem richtigen Seitenverhältnis und den visuellen Regeln Ihrer Persona gerendert – Feed-Beiträge, Storys, Hero-Zuschnitte. Schluss mit manuellem Skalieren."
       },
       {
         "title": "Mehrsprachige Generierung",
-        "description": "Generieren Sie auf Portugiesisch, Englisch, Spanisch und mehr. Muttersprachliche Flüssigkeit mit kulturellen Nuancen — nicht nur Übersetzung."
+        "description": "Generieren Sie auf Portugiesisch, Englisch, Spanisch und mehr. Sprachgewandtheit auf Muttersprachniveau mit kulturellem Feingefühl – nicht nur eine Übersetzung."
       },
       {
         "title": "Planen & veröffentlichen",
@@ -85,220 +119,538 @@
       },
       {
         "title": "Markenstimme & Personas",
-        "description": "Erstellen Sie KI-Personas, die wie Ihre Marke schreiben. Steuern Sie den Ton von professionell bis spielerisch. Jeder Beitrag klingt nach Ihnen, nicht nach einem Roboter."
+        "description": "Erstellen Sie KI-Personas, die wie Ihre Marke schreiben. Steuern Sie den Ton von professionell bis verspielt. Jeder Beitrag klingt nach Ihnen, nicht nach einem Roboter."
       },
       {
         "title": "Analyse-Dashboard",
-        "description": "Verfolgen Sie Impressionen, Engagement, Klicks und Wachstum über alle Kanäle hinweg. Erfahren Sie, welcher Content funktioniert, und verdoppeln Sie Ihre Bemühungen."
+        "description": "Verfolgen Sie Reichweite, Engagement, Klicks und Wachstum pro Kanal. KPI-Karten, Top-Beiträge und Lori Insights zeigen, was funktioniert."
       }
     ]
   },
   "howItWorks": {
-    "title": "Von der Idee zum Beitrag in 3 Schritten",
-    "subtitle": "Keine leeren Bildschirme mehr. Kein Kopieren zwischen Plattformen mehr.",
+    "eyebrow": "05 · Workflow",
+    "title": "Briefing → Vorschau → veröffentlichen.",
+    "titleAccent": "Drei Schritte.",
+    "titleTail": "In Sekunden.",
+    "subtitle": "Sie wählen nie ein Modell aus. Sie skalieren nie ein Bild. Sie kopieren nie zwischen Tabs.",
     "steps": [
       {
+        "badge": "01",
+        "eyebrow": "Eingabe",
         "title": "Schreiben Sie Ihr Briefing",
-        "description": "Beschreiben Sie, was Sie kommunizieren möchten — so einfach wie 'neue Produkteinführung' oder so detailliert wie ein vollständiges Briefing. Wählen Sie Ihre Kanäle, Sprache und Tonalität."
+        "description": "Ein Satz oder drei Absätze. Wählen Sie die Kanäle, die Persona und die Sprache. Das ist das Einzige, was Sie heute schreiben.",
+        "footLeft": "~ 5 Sek. zum Schreiben",
+        "footRight": "1 Briefing"
       },
       {
-        "title": "KI-Modelle konkurrieren für Sie",
-        "description": "Mehrere KI-Modelle generieren Inhalte unabhängig, überprüfen und verbessern dann gegenseitig ihre Ergebnisse. Sie erhalten N ausgereifte Versionen pro Plattform."
+        "badge": "02",
+        "eyebrow": "Generierung",
+        "title": "Die KI passt es pro Kanal an",
+        "description": "Loritalk liest Ihr Briefing, Ihre Persona und die nativen Regeln jeder Plattform – und erstellt dann eine Version, die für jeden Kanal gemacht ist. Die automatische Moderation läuft, bevor Sie es sehen.",
+        "footLeft": "~ 3 Sek. pro Kanal",
+        "footRight": "Pro verbundenem Kanal"
       },
       {
-        "title": "Auswählen, bearbeiten & veröffentlichen",
-        "description": "Wählen Sie Ihre Lieblingsversion für jeden Kanal. Passen Sie alles mit einem Klick an. Sofort veröffentlichen oder für später planen."
+        "badge": "03",
+        "eyebrow": "Verteilung",
+        "title": "Veröffentlichen oder planen",
+        "description": "Jetzt senden oder mit kanalspezifischem Timing in den Kalender legen. Jeder Kanal wird über seine native API ausgeliefert; Fehler bleiben isoliert – Instagram läuft weiter, selbst wenn Facebook hakt.",
+        "footLeft": "Native APIs · OAuth",
+        "footRight": "8 Kanäle"
       }
-    ]
+    ],
+    "briefViz": {
+      "comment": "// brief.txt",
+      "text": "„Wir bringen unseren neuen nachhaltigen Sneaker auf den Markt. Hergestellt aus 80 % recyceltem Meeresplastik. Zielgruppe: Gen-Z-Läufer.“",
+      "channelsComment": "// Kanäle:"
+    },
+    "personasViz": {
+      "personaLabel": "Persona",
+      "languageLabel": "Sprache",
+      "personas": [
+        {
+          "name": "Lori",
+          "desc": "Neutral – Loris House Voice"
+        },
+        {
+          "name": "Rupert",
+          "desc": "Locker, witzig, gesprächig"
+        },
+        {
+          "name": "Core",
+          "desc": "Mutig, optimistisch, markengeführt"
+        }
+      ]
+    },
+    "pubViz": {
+      "items": [
+        {
+          "platform": "Instagram",
+          "kind": "Karussell",
+          "when": "Heute 14:00"
+        },
+        {
+          "platform": "LinkedIn",
+          "kind": "Langform",
+          "when": "Heute 15:30"
+        },
+        {
+          "platform": "X",
+          "kind": "Thread",
+          "when": "Heute 16:00"
+        },
+        {
+          "platform": "YouTube",
+          "kind": "Short 0:54",
+          "when": "Morgen 09:00"
+        },
+        {
+          "platform": "Facebook",
+          "kind": "Beitrag",
+          "when": "Morgen 12:00"
+        }
+      ],
+      "cta": "▶ Alle veröffentlichen · ⏱ Planen"
+    }
   },
-  "differentiator": {
-    "title": "Warum mehrere KI-Modelle ein einzelnes schlagen",
-    "subtitle": "Andere Tools nutzen ein Modell. Loritalk nutzt mehrere — und lässt sie sich gegenseitig verbessern.",
-    "briefLabel": "Ihr Briefing",
-    "channels": "Kanäle",
-    "language": "Sprache:",
-    "languages": "Englisch, Portugiesisch",
-    "submitted": "Vor 2 Sek. gesendet",
-    "round1": "RUNDE 1 — UNABHÄNGIGE GENERIERUNG",
-    "generated": "Generiert",
-    "round2": "Runde 2 — Kreuzverfeinerung",
-    "round2Desc": "Jedes Modell liest alle Ergebnisse und verbessert seine eigene Version",
-    "qualityNote": "Qualität um ~40 % verbessert gegenüber Runde 1",
-    "pickEdit": "Auswählen & bearbeiten",
-    "addMedia": "Medien hinzufügen",
-    "uploading": "Bild wird hochgeladen...",
-    "imageAttached": "Bild erfolgreich hochgeladen",
-    "generateAI": "Mit KI generieren",
-    "readyPublish": "Bereit zur Veröffentlichung",
-    "publishAll": "Alle veröffentlichen",
-    "scheduled": "Geplant",
-    "draft": "Entwurf",
-    "explanation": "Each AI version brings different strengths — creative range, analytical depth, and factual precision. By making them collaborate and refine each other's output, every final text reaches a quality no single model could achieve alone."
+  "imagery": {
+    "eyebrow": "06 · Bildwelt",
+    "title": "Markengerechte",
+    "titleAccent": "Bilder",
+    "titleTail": "pro Plattform skaliert.",
+    "subtitle": "Die Bildgenerierung läuft asynchron und pro Plattform – kein manuelles Skalieren, keine markenfremden Stockfotos. Einzelne Beiträge, Karussells, Story-Formate, Hero-Zuschnitte. Jedes Rendering berücksichtigt die visuellen Regeln der aktiven Persona.",
+    "tiles": {
+      "instagramCaption": "5 Uhr morgens. Kaffee, zwei Tabs, eine Entscheidung.\nv2 gebaut, bevor das Team online war.",
+      "storyQuote": "wir haben 1 Mio. MRR in derselben Woche erreicht, in der wir die halbe Roadmap gestrichen haben.",
+      "storySwipe": "↑ swipen",
+      "linkedinAuthor": "Marlow Studio · 12 Min.",
+      "linkedinTitle": "Wir haben 3 Freelancer eingestellt, bevor wir die erste Vollzeitkraft hatten. Hier ist die Tabelle.",
+      "linkedinCta": "Mehr lesen →",
+      "xName": "Jamie",
+      "xHandle": "@jamie",
+      "xBody": "die meisten „Founder-Inhalte“ sind eine Pressemitteilung im Hoodie. schreib wie ein Mensch. #shipping",
+      "generatingLabel": "Rendert · TikTok",
+      "generatingSub": "9:16 · ~12 Sek.",
+      "ytTitleLineOne": "ERSTE",
+      "ytTitleLineTwo": "EINSTELLUNG.",
+      "ytSubtitle": "Warum wir 18 Monate gewartet haben.",
+      "ytMeta": "Loritalk · Ep. 14 · 32 Min."
+    }
   },
   "useCases": {
-    "title": "Gemacht für Teams, die veröffentlichen",
-    "subtitle": "Egal, ob Sie ein Solo-Creator oder eine 50-köpfige Agentur sind.",
+    "title": "Gebaut für Teams, die veröffentlichen",
+    "subtitle": "Ob Sie Solo-Creator sind oder eine Agentur mit 50 Personen.",
     "items": [
       {
         "title": "Solo-Creator & Freelancer",
-        "description": "Hören Sie auf, stundenlang Inhalte anzupassen. Einmal schreiben, überall veröffentlichen. Konzentrieren Sie sich auf Strategie statt auf Copy-Paste."
+        "description": "Verschwenden Sie keine Stunden mehr mit dem Anpassen von Inhalten. Einmal schreiben, überall veröffentlichen. Konzentrieren Sie sich auf Strategie statt auf Copy-and-paste."
       },
       {
         "title": "Marketing-Teams",
-        "description": "Ein Arbeitsbereich pro Marke. Freigabe-Workflows. Kalenderansicht. Jeder weiß, was wann veröffentlicht wird."
+        "description": "Ein Workspace pro Marke. Kalenderansicht pro Workspace. Jeder weiß, was wann veröffentlicht wird."
       },
       {
         "title": "Agenturen",
-        "description": "Verwalten Sie mehrere Marken von einem Konto aus. Weisen Sie Rollen zu, steuern Sie den Zugang, verfolgen Sie die Leistung aller Kunden. Unbegrenzte Beiträge im Agency-Plan."
+        "description": "Verwalten Sie mehrere Marken über ein Konto. Ein Workspace pro Kunde mit isolierten Kanälen, Personas und Kalender. Kanalspezifische Analysen für jede Marke."
       }
     ]
   },
   "pricing": {
     "title": "Einfache, transparente Preise",
-    "subtitle": "Kostenlos während der Beta. Frühnutzer sichern sich ihren Tarif für immer beim Launch.",
-    "mostPopular": "Am beliebtesten",
+    "subtitle": "Guthabenbasiert. Jederzeit kündbar. Jährlich sparen Sie zwei Monate.",
     "monthly": "Monatlich",
     "annual": "Jährlich",
-    "save2Months": "-17%",
-    "perMonth": "/ Monat",
+    "save2Months": "-17 %",
+    "perMonth": "/ Mon.",
+    "perMonthBilledYearly": "/ Mon., jährlich abgerechnet",
     "perYear": "/ Jahr",
-    "billedAnnually": "Jährliche Abrechnung",
-    "customPriceLabel": "Individuell",
-    "plans": [
-      {
-        "name": "Free",
-        "monthlyPrice": "€0",
-        "annualPrice": "€0",
-        "period": "während der Beta",
-        "description": "Alles testen mit großzügigen Limits.",
-        "features": [
-          "5 Beiträge / Monat",
-          "3 Netzwerke",
-          "Grundlegende Tonsteuerung",
-          "Hashtag-Vorschläge"
-        ],
-        "cta": "Kostenlos starten",
-        "code": "STARTER",
-        "quotas": {
-          "workspaces": 1,
-          "channels": 3,
-          "personas": 4,
-          "members": 3,
-          "media": 100
-        },
-        "monthlyCents": 1400,
-        "yearlyCents": 14000,
-        "creditsPerMonth": 600
+    "saveYearly": "Sparen Sie {{amount}} / Jahr",
+    "mostPopular": "Am beliebtesten",
+    "bestValue": "Bestes Preis-Leistungs-Verhältnis",
+    "creditsUnit": "Guthaben / Monat",
+    "creditsTexts": "~{{count}} Textbeiträge",
+    "creditsOr": "oder",
+    "creditsImages": "~{{count}} markengerechte Bilder",
+    "promoExplainer": "Promo im ersten Jahr: Erhalten Sie JEDEN Monat 2× Guthaben Ihr gesamtes erstes Jahr lang, wenn Sie Jährlich wählen – das sind {{count}} Bonus-Guthaben pro Monat.",
+    "promoHeroExtra": "(+{{count}} Bonus-Guthaben jeden Monat für 12 Monate)",
+    "tierChoose": "Tarif wählen",
+    "features": {
+      "workspaces_one": "{{count}} Workspace",
+      "workspaces_other": "{{count}} Workspaces",
+      "channels": "{{count}} soziale Kanäle",
+      "personas": "{{count}} Marken-Personas",
+      "members_one": "{{count}} Teammitglied",
+      "members_other": "{{count}} Teammitglieder",
+      "media": "{{count}} Medien-Assets"
+    },
+    "tiers": {
+      "STARTER": {
+        "name": "Starter",
+        "description": "Für alle, die zum ersten Mal KI-Inhalte erstellen"
       },
-      {
-        "name": "Creator",
-        "monthlyPrice": "€30",
-        "annualPrice": "€300",
-        "annualMonthly": "€25",
-        "period": "",
-        "description": "Für Creator und Marken, die regelmäßig veröffentlichen.",
-        "features": [
-          "200 Beiträge / Monat",
-          "Alle Netzwerke",
-          "Erweiterte Töne & Personas",
-          "Content-Kalender",
-          "Prioritäts-Support"
-        ],
-        "cta": "Kostenlose Testversion starten",
-        "code": "PLUS",
-        "quotas": {
-          "workspaces": 2,
-          "channels": 10,
-          "personas": 15,
-          "members": 10,
-          "media": 600
-        },
-        "monthlyCents": 3700,
-        "yearlyCents": 37000,
-        "creditsPerMonth": 1700
+      "PLUS": {
+        "name": "Plus",
+        "description": "Für konsistentes und einfaches Erstellen von KI-Inhalten"
       },
-      {
-        "name": "Agency",
-        "monthlyPrice": "",
-        "annualPrice": "",
-        "annualMonthly": "",
-        "period": "",
-        "description": "Für Teams, die mehrere Marken verwalten.",
-        "features": [
-          "Unbegrenzte Beiträge",
-          "Alle Netzwerke",
-          "Mehrere Marken",
-          "Team-Zusammenarbeit",
-          "Analytik",
-          "Account-Manager"
-        ],
-        "cta": "Kontaktieren Sie uns",
-        "customPrice": true,
-        "code": "ULTRA",
-        "quotas": {
-          "workspaces": 5,
-          "channels": 25,
-          "personas": 40,
-          "members": 25,
-          "media": 2500
-        },
-        "monthlyCents": 9700,
-        "yearlyCents": 97000,
-        "creditsPerMonth": 4600
+      "ULTRA": {
+        "name": "Ultra",
+        "description": "Für Creator, die KI-Produkte aufbauen"
+      },
+      "BUSINESS": {
+        "name": "Business",
+        "description": "Für Agenturen und kleine Teams"
       }
-    ]
+    }
   },
   "faq": {
     "title": "Fragen? Wir haben Antworten.",
     "items": [
       {
-        "q": "Welche KI-Modelle nutzt Loritalk?",
-        "a": "Sie können konfigurieren, welche Modelle an Ihrem Generierungsprozess teilnehmen."
+        "q": "Wie funktioniert die KI von Loritalk?",
+        "a": "Loritalk erstellt eine native Version Ihres Briefings für jeden verbundenen Kanal und rendert markengerechte Bilder parallel. Alles durchläuft eine automatische Moderationsschicht, bevor es Ihr Dashboard erreicht."
       },
       {
-        "q": "Wie unterscheidet sich das von other AI tools?",
-        "a": "Other AI tools gibt Ihnen ein Ergebnis von einem Modell. Loritalk betreibt mehrere Modelle parallel und lässt sie dann gegenseitig ihre Arbeit verbessern — für eine durchgehend höhere Qualität. Außerdem wird jeder Beitrag automatisch für die jeweilige Plattform optimiert."
+        "q": "Wie unterscheidet sich das von anderen KI-Tools?",
+        "a": "Andere Tools geben Ihnen einen Textblock zum überall Kopieren. Loritalk erstellt native Versionen pro Plattform – Länge, Hashtags, Emojis und Ton an jedes Netzwerk angepasst – und veröffentlicht über die offizielle API jeder Plattform."
       },
       {
         "q": "Welche sozialen Netzwerke werden unterstützt?",
-        "a": "LinkedIn, Instagram, Facebook, X (Twitter) und TikTok."
+        "a": "LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads und Telegram – acht Netzwerke über native APIs."
       },
       {
-        "q": "Sind meine Inhalte privat?",
-        "a": "Ja. Ihre Inhalte werden niemals zum Training von KI-Modellen verwendet. Alle Daten werden auf unseren Servern in Europa gespeichert und DSGVO-konform verarbeitet."
+        "q": "Wo werden meine Daten gespeichert?",
+        "a": "Ihre Daten werden auf Servern in der Europäischen Union gespeichert. Die von uns genutzten KI-Anbieter (OpenAI für Text, Google für Bilder) arbeiten unter ihren Enterprise-API-Bedingungen – an die API gesendete Inhalte werden nicht zum Training ihrer Allzweckmodelle verwendet."
       },
       {
         "q": "Kann ich es mit meinem Team nutzen?",
-        "a": "Auf jeden Fall. Erstellen Sie Arbeitsbereiche für jede Marke, laden Sie Teammitglieder mit Administrator- oder Publisher-Rollen ein und richten Sie Freigabe-Workflows ein, damit nichts ohne Prüfung live geht."
+        "a": "Ja. Erstellen Sie Workspaces für jede Marke und laden Sie Teammitglieder mit Admin- oder Publisher-Rollen ein. Jeder Workspace hat seine eigenen verbundenen Kanäle, Personas und Kalender."
       },
       {
         "q": "Was passiert nach der Beta?",
-        "a": "Bezahlpläne treten in Kraft, aber jeder Beta-Nutzer behält seinen aktuellen Tarif für immer. Keine Überraschungen."
+        "a": "Kostenpflichtige Tarife treten in Kraft, aber jeder Beta-Nutzer behält seinen aktuellen Preis für immer. Keine Überraschungen."
       }
     ]
   },
   "ctaBanner": {
-    "headline": "Aufhören zu schreiben. Anfangen zu veröffentlichen.",
-    "subtitle": "Treten Sie der Beta bei — kostenloser Zugang, keine Kreditkarte, und Ihr Tarif ist beim Launch für immer gesichert.",
-    "ctaPrimary": "Jetzt kostenlos loslegen",
-    "ctaSecondary": "So funktioniert's"
+    "headline": "Hören Sie auf zu schreiben. Fangen Sie an zu veröffentlichen.",
+    "subtitle": "Treten Sie der Beta bei – kostenloser Zugang, keine Kreditkarte, und Ihr Preis wird beim Launch für immer gesichert.",
+    "ctaPrimary": "Kostenlos mit dem Erstellen beginnen",
+    "ctaSecondary": "Sehen Sie, wie es funktioniert"
   },
   "footer": {
-    "description": "KI-Content für jedes soziale Netzwerk.",
+    "description": "KI-Inhalte für jedes soziale Netzwerk.",
     "location": "CDN Core Technologies\nParkurbis, Covilhã · Portugal",
     "product": "Produkt",
     "resources": "Ressourcen",
     "legal": "Rechtliches",
     "features": "Funktionen",
-    "changelog": "Änderungsprotokoll",
+    "changelog": "Changelog",
     "supportedNetworks": "Unterstützte Netzwerke",
-    "helpCenter": "Hilfe-Center",
-    "contactUs": "Kontaktieren Sie uns",
+    "helpCenter": "Hilfecenter",
+    "contactUs": "Kontakt",
     "betaFeedback": "Beta-Feedback",
     "apiDocs": "API-Dokumentation",
-    "privacyPolicy": "Datenschutzrichtlinie",
+    "privacyPolicy": "Datenschutzerklärung",
     "termsOfService": "Nutzungsbedingungen",
     "cookiePolicy": "Cookie-Richtlinie",
+    "legalNotice": "Impressum",
     "copyright": "© 2026 Loritalk® by CDN Core Technologies. Covilhã, Portugal."
+  },
+  "cookieBanner": {
+    "aria": "Cookie-Hinweis",
+    "title": "Wir verwenden Cookies",
+    "body": "Unbedingt erforderliche Cookies halten die Website funktionsfähig. Mit Ihrer Einwilligung laden wir außerdem Google Analytics zur Messung des Datenverkehrs und das Meta-Pixel zur Messung unserer Werbung. Sie können alle akzeptieren, ablehnen oder Kategorie für Kategorie auswählen – und Ihre Meinung jederzeit ändern.",
+    "policyLink": "Cookie-Richtlinie",
+    "privacyLink": "Datenschutzerklärung",
+    "acceptAll": "Alle akzeptieren",
+    "rejectOptional": "Optionale ablehnen",
+    "customize": "Anpassen",
+    "save": "Einstellungen speichern",
+    "necessaryLabel": "Unbedingt erforderlich",
+    "necessaryDesc": "Erforderlich für die Funktion der Website (Sprache und Ihre Einwilligungsentscheidung). Kann nicht deaktiviert werden.",
+    "analyticsLabel": "Analyse – Google Analytics",
+    "analyticsDesc": "Lädt Google Analytics 4 zur Messung des Datenverkehrs und zur Verbesserung der Website. Setzt _ga- und _ga_*-Cookies und übermittelt Seitenaufrufdaten an Google.",
+    "marketingLabel": "Marketing – Meta-Pixel",
+    "marketingDesc": "Lädt das Meta-Pixel (Facebook / Instagram), damit wir Werbekampagnen messen können. Setzt _fbp- und _fbc-Cookies und übermittelt Seitenaufrufdaten an Meta."
+  },
+  "agency": {
+    "hero": {
+      "badge": "Für Marketingagenturen & Kreativstudios",
+      "headlineOne": "Mühe, Beiträge auszuliefern",
+      "headlineTwo": "für jeden Kunden",
+      "headlineThree": "auf jeder Plattform?",
+      "lead": "Loritalk gibt Ihrer Agentur <strong>einen Workspace pro Marke</strong>, eine dedizierte Persona pro Kunde und natives Veröffentlichen über 8 Netzwerke – damit Ihr Team einmal schreibt und überall veröffentlicht, auf jedem Konto.",
+      "ctaPrimary": "Mit dem Ultra-Tarif starten",
+      "ctaSecondary": "Agenturpreise ansehen",
+      "trust": [
+        "Ein Workspace pro Marke",
+        "Admin- + Publisher-Rollen",
+        "8 Netzwerke über native APIs"
+      ],
+      "hubLabel": "Agentur-Zentrale",
+      "hubTitle": "5 Marken. 5 Workspaces.",
+      "hubBody": "Jeder Kunde erhält seinen eigenen Workspace, eigene Personas, Kanäle und Analysen. Wechseln Sie den Kontext mit einem Klick.",
+      "hubMeta": "5 Workspaces · isoliert",
+      "hubBadge": "Live"
+    },
+    "pains": {
+      "title": "Erkennen Sie Ihre Woche wieder?",
+      "subtitle": "Derselbe Inhalt 7-mal umgeschrieben für 5 Kunden. Jede Woche. Wir kennen das.",
+      "items": [
+        {
+          "title": "5+ Kunden gleichzeitig jonglieren",
+          "description": "Jede Marke will einen anderen Ton, andere Plattformen, andere Deadlines. Tabellen und Slack-Threads sind kein Workflow."
+        },
+        {
+          "title": "Markenstimme driftet bei jedem Beitrag",
+          "description": "Andere Texter, andere Tabs, andere ChatGPT-Prompts. Die Stimme, die Ihr Kunde vor sechs Monaten abgesegnet hat, ist weg."
+        },
+        {
+          "title": "Umplanungen am Freitagabend",
+          "description": "Der Kunde bittet um Last-Minute-Änderungen über Instagram, LinkedIn und TikTok. Sie schreiben dieselbe Idee dreimal um – und verpassen den Slot trotzdem."
+        },
+        {
+          "title": "Reporting kostet einen ganzen Tag",
+          "description": "Impressionen, Engagement und Klicks aus fünf Dashboards in eine Präsentation kopieren. Manuell. Jeden Monat."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Alles, was Ihre Agentur braucht, an einem Ort",
+      "subtitle": "Vom Briefing bis zum Report – Loritalk steuert die gesamte Content-Pipeline für jede Marke, die Sie verwalten.",
+      "items": [
+        {
+          "title": "Ein Workspace pro Kunde",
+          "description": "Isolierte Workspaces mit eigenen verbundenen Kanälen, Personas, Mitgliedern und Kalender. Richten Sie einen neuen Kunden in Minuten ein."
+        },
+        {
+          "title": "Markenstimmen-Personas",
+          "description": "Definieren Sie eine Persona pro Kunde – Stimme, Ton, spezifische Anweisungen. Jede Generierung für diesen Workspace respektiert das Briefing, jedes Mal."
+        },
+        {
+          "title": "8 Netzwerke, ein Briefing",
+          "description": "Schreiben Sie das Briefing einmal und erhalten Sie native Versionen für Instagram, LinkedIn, X, TikTok, Facebook, YouTube Shorts, Threads und Telegram – alles in Sekunden, alles über offizielle APIs."
+        },
+        {
+          "title": "Kalender pro Workspace",
+          "description": "Jeder Kunde hat seine eigene Wochen-/Monats-/Queue-Ansicht. Planen Sie Beiträge pro Kanal und sehen Sie die gesamte Pipeline dieser Marke auf einen Blick."
+        },
+        {
+          "title": "Admin- + Publisher-Rollen",
+          "description": "Laden Sie Teammitglieder pro Workspace als Admin (volle Verwaltung) oder Publisher (erstellen und veröffentlichen) ein. Workspaces sind vollständig voneinander isoliert."
+        },
+        {
+          "title": "Analysen pro Workspace",
+          "description": "Reichweite, Engagement, Klicks und Wachstum pro Kanal in jedem Kunden-Workspace. KPI-Karten, Top-Beiträge und Lori Insights – ohne zwischen Dashboards zu springen."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "So sieht eine Agenturwoche mit Loritalk aus",
+      "subtitle": "Marke onboarden, KI briefen, Freigabe einholen, ausliefern. Wiederholen für jeden Kunden.",
+      "steps": [
+        {
+          "badge": "01 · ONBOARDING",
+          "title": "Kunden-Workspace einrichten",
+          "description": "Erstellen Sie einen Workspace, verbinden Sie die Social-Accounts der Marke und konfigurieren Sie die Persona – Stimme, Ton, spezifische Anweisungen. In Minuten einsatzbereit."
+        },
+        {
+          "badge": "02 · BRIEFING",
+          "title": "Ein Briefing pro Kampagne schreiben",
+          "description": "Wählen Sie die Persona, Kanäle und Sprache. Loritalk generiert eine native Version pro Plattform in Sekunden."
+        },
+        {
+          "badge": "03 · FEINSCHLIFF",
+          "title": "Im Team bearbeiten",
+          "description": "Ihr Team prüft die Entwürfe im Workspace – Text anpassen, Bilder austauschen, die stärkste Variante pro Kanal auswählen, bevor sie rausgeht."
+        },
+        {
+          "badge": "04 · AUSLIEFERN",
+          "title": "Veröffentlichen & auswerten",
+          "description": "Native APIs liefern an jeden Kanal aus. Die Performance fließt zurück in das Dashboard pro Workspace – KPIs, Top-Beiträge und Wachstum nach Kanal."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Tarife für Agenturen gemacht",
+      "subtitle": "Betreuen Sie eine Handvoll Marken oder einen ganzen Kundenstamm. Wählen Sie das Volumen, das zu Ihrem Retainer passt.",
+      "customPrice": "Sprechen wir",
+      "customCredits": "Unbegrenztes Guthaben",
+      "customCreditsDetail": "Volumen pro Vertrag vereinbart – keine Überraschungskosten.",
+      "tiers": {
+        "CUSTOM": {
+          "name": "Custom",
+          "description": "Für Netzwerke und große Agenturen, die maßgeschneiderte Volumina und Onboarding brauchen.",
+          "cta": "Mit dem Vertrieb sprechen"
+        }
+      },
+      "features": {
+        "customVolumes": "Individuelle Guthaben-Volumina",
+        "priorityEmail": "Priorisierter E-Mail-Support",
+        "euData": "Datenspeicherung in der EU"
+      }
+    },
+    "faq": {
+      "title": "Agenturfragen, beantwortet.",
+      "items": [
+        {
+          "q": "Wie wird Guthaben auf Kunden aufgeteilt?",
+          "a": "Guthaben liegt auf Ebene des Agenturkontos – jeder Workspace kann aus demselben Pool schöpfen. Verfolgen Sie die Nutzung im Abrechnungs-Dashboard."
+        },
+        {
+          "q": "Was passiert beim On- oder Off-Boarding eines Kunden?",
+          "a": "Richten Sie in Sekunden einen neuen Workspace ein. Das Archivieren eines Workspace entfernt ihn aus der aktiven Ansicht; die vollständige Kontolöschung beachtet die DSGVO-Aufbewahrungsregeln."
+        },
+        {
+          "q": "Auf welchen sozialen Netzwerken können wir veröffentlichen?",
+          "a": "Natives Veröffentlichen umfasst LinkedIn, Instagram, Facebook, X, TikTok, YouTube Shorts, Threads und Telegram – acht Netzwerke, jeweils über die offizielle Plattform-API, sodass Fehler pro Kanal isoliert bleiben."
+        },
+        {
+          "q": "Können sich Kunden anmelden, um ihren Workspace zu sehen?",
+          "a": "Heute nicht. Workspaces sind nur für das Agenturteam – Admin- und Publisher-Rollen. Kundenzugang ist auf der Roadmap."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Bereit, Inhalte über jeden Kunden zu skalieren?",
+      "subtitle": "Starten Sie heute mit dem Ultra-Tarif oder buchen Sie eine 20-minütige Demo mit dem Agenturteam, um Loritalk an Ihren eigenen Marken zu sehen.",
+      "ctaPrimary": "Mit Ultra starten",
+      "ctaSecondary": "Demo buchen"
+    }
+  },
+  "influencer": {
+    "hero": {
+      "badge": "Für Solo-Creator & Influencer",
+      "headlineOne": "Eine Idee.",
+      "headlineTwo": "Jede Plattform.",
+      "headlineThree": "Ohne Ihr Wochenende zu opfern.",
+      "lead": "Loritalk verwandelt ein Briefing in <strong>native Beiträge für Instagram, TikTok, YouTube Shorts, X, Threads</strong> und mehr – und hält Ihre Stimme über jedes Konto hinweg konsistent.",
+      "ctaPrimary": "Kostenlos mit Starter loslegen",
+      "ctaSecondary": "Creator-Tarife ansehen",
+      "trust": [
+        "Ihre Stimme auf jedem Kanal",
+        "8 Netzwerke über native APIs",
+        "Wochen auf einmal planen"
+      ],
+      "hubLabel": "Ihr Studio",
+      "hubTitle": "1 Briefing. 8 native Beiträge.",
+      "hubBody": "Definieren Sie Ihre Persona einmal. Loritalk passt jeden Beitrag an jede Plattform an – Länge, Hashtags, Emojis, Ton, Bildformat.",
+      "hubMeta": "1 Persona · 8 Kanäle",
+      "hubBadge": "Live",
+      "cardTag": "Natives Format"
+    },
+    "pains": {
+      "title": "Klingt das nach Ihrer Woche?",
+      "subtitle": "Jeden Tag auf jeder Plattform zu posten sollte Sie keinen Sonntagnachmittag kosten. Wir kennen das.",
+      "items": [
+        {
+          "title": "Dieselbe Idee, 8-mal umgeschrieben",
+          "description": "Bildunterschrift für Instagram, Skript für TikTok, Hook für YouTube, Thread für X … jede Plattform braucht eine andere Form. Sie verbrennen einen Nachmittag für einen einzigen Beitrag."
+        },
+        {
+          "title": "Algorithmen bestrafen Lücken",
+          "description": "Verpassen Sie zwei Tage und die Reichweite sinkt. Bleiben Sie auf jeder Plattform konsistent, und Sie haben kaum Zeit zum Filmen, geschweige denn zum Leben."
+        },
+        {
+          "title": "Markendeals verlangen Multi-Plattform",
+          "description": "Sponsoren wollen Reels + Shorts + TikTok + Beitrag. Dieselbe Kampagne, vier Formate. Sie berechnen eins und liefern vier."
+        },
+        {
+          "title": "Die Stimme verwässert",
+          "description": "Ab Beitrag fünfzehn klingen die Bildunterschriften, als hätte ein Fremder sie geschrieben. Das Publikum merkt es. Das Engagement sinkt."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Alles, was ein Creator braucht, an einem Ort",
+      "subtitle": "Einmal briefen, überall ausliefern – ohne die Stimme zu verlieren, der Ihr Publikum folgt.",
+      "items": [
+        {
+          "title": "Ihre Stimme, fest verankert",
+          "description": "Definieren Sie eine Persona mit Ihrer Stimme, Ihrem Ton und spezifischen Anweisungen im Klartext. Jede Generierung läuft durch diese Linse – klingt nach Ihnen, nicht nach einem KI-Tool."
+        },
+        {
+          "title": "Ein Briefing, acht native Beiträge",
+          "description": "Schreiben Sie die Idee einmal. Loritalk erstellt in Sekunden eine für Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn und Telegram optimierte Version."
+        },
+        {
+          "title": "Markengerechte Bilder pro Format",
+          "description": "Feed-Beiträge, Storys, Hero-Zuschnitte, vertikal für Reels und Shorts. Bilder werden mit dem richtigen Seitenverhältnis und den visuellen Regeln Ihrer Persona gerendert."
+        },
+        {
+          "title": "Eine Woche in einer Sitzung planen",
+          "description": "Planen Sie von Montag bis Sonntag über jede Plattform in einem Kalender. Native APIs liefern automatisch aus – selbst wenn Sie gerade die nächste Charge filmen."
+        },
+        {
+          "title": "Sehen, was wächst",
+          "description": "Reichweite, Engagement, Klicks und Follower-Wachstum pro Kanal. KPI-Karten und Lori Insights zeigen, was funktioniert – legen Sie nach."
+        },
+        {
+          "title": "Moderiert, bevor es rausgeht",
+          "description": "Jeder Entwurf durchläuft eine automatische Moderation, sodass markensichere Inhalte Ihr Publikum erreichen und Ihre Sponsoren zufrieden bleiben."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "So sieht eine Creator-Woche mit Loritalk aus",
+      "subtitle": "Erfassen Sie Ihre Stimme einmal, briefen Sie eine Idee, liefern Sie über jede Plattform aus, beobachten Sie, was wächst.",
+      "steps": [
+        {
+          "badge": "01 · STIMME",
+          "title": "Definieren Sie Ihre Persona",
+          "description": "Schreiben Sie Ihre Stimme, Ihren Ton und Ihre Hausregeln in eine Persona. Sie wird zur Linse, durch die jeder zukünftige Beitrag läuft."
+        },
+        {
+          "badge": "02 · BRIEFING",
+          "title": "Briefen Sie eine Idee",
+          "description": "Tippen Sie das Konzept ein, wählen Sie Kanäle und Sprache. Loritalk erstellt in Sekunden eine native Version pro Plattform – Bildunterschriften, Skripte, Threads, Hooks."
+        },
+        {
+          "badge": "03 · AUSLIEFERN",
+          "title": "Bearbeiten & planen",
+          "description": "Schleifen Sie die stärkste Variante pro Kanal, reihen Sie alles im Kalender ein, gehen Sie weg. APIs veröffentlichen zur richtigen Zeit, im richtigen Format."
+        },
+        {
+          "badge": "04 · AUSWERTEN",
+          "title": "Beobachten, was funktioniert",
+          "description": "Kanalspezifische Analysen zeigen, was Reichweite und Engagement bringt. Iterieren Sie den Ansatz, nicht den Workflow."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Tarife für Creator gemacht",
+      "subtitle": "Starten Sie kostenlos während der Beta. Wählen Sie das Volumen, das zu Ihrer Posting-Frequenz passt."
+    },
+    "faq": {
+      "title": "Creator-Fragen, beantwortet.",
+      "items": [
+        {
+          "q": "Wird es nach mir klingen?",
+          "a": "Beschreiben Sie Ihre Stimme, Ihren Ton und Ihre Hausregeln in einer Persona. Jede Generierung läuft durch diese Linse. Je detaillierter die Persona, desto näher an Ihrer Stimme."
+        },
+        {
+          "q": "Auf welchen Plattformen veröffentlichen Sie tatsächlich?",
+          "a": "Natives Veröffentlichen umfasst Instagram, TikTok, YouTube Shorts, X, Threads, Facebook, LinkedIn und Telegram – acht Netzwerke über offizielle APIs. Fehler auf einem Kanal blockieren nie die anderen."
+        },
+        {
+          "q": "Kann ich vor dem Posten bearbeiten?",
+          "a": "Immer. Loritalk erstellt einen Entwurf pro Kanal – Sie wählen, passen an und veröffentlichen. Nichts geht live, ohne dass Sie auf den Button drücken (es sei denn, Sie haben es geplant)."
+        },
+        {
+          "q": "Was ist mit Bildern und Kurzvideos?",
+          "a": "Markengerechte Bilder werden pro Plattform mit dem richtigen Seitenverhältnis generiert (quadratisch, vertikal 9:16, Hero). Für Kurzvideos erhalten Sie eine native Bildunterschrift mit einem Hook in den ersten Sekunden und einem CTA – direkt in TikTok oder YouTube Shorts einfügen."
+        },
+        {
+          "q": "Ist Loritalk während der Beta kostenlos?",
+          "a": "Ja. Der Beta-Zugang ist kostenlos mit großzügigen Limits. Jeder Beta-Nutzer behält seinen aktuellen Preis für immer, wenn die kostenpflichtigen Tarife starten."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Hören Sie auf umzuschreiben. Fangen Sie an auszuliefern.",
+      "subtitle": "Treten Sie der Beta bei – kostenlos, keine Kreditkarte, Ihr Preis wird beim Launch für immer gesichert.",
+      "ctaPrimary": "Kostenlos mit Starter loslegen",
+      "ctaSecondary": "Creator-Tarife ansehen"
+    }
   }
 }
