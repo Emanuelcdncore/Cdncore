@@ -340,9 +340,11 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: Animated logo — desktop only */}
-          <div className="hidden lg:flex lg:flex-shrink-0 lg:items-center lg:justify-center" style={{ width: "48%" }}>
-            <LoriAnimLogo style={{ width: "min(560px, 100%)" }} />
+          {/* Right: Animated logo */}
+          <div className="flex justify-center lg:flex-shrink-0 lg:items-center lg:justify-center lg:w-[48%]">
+            <div className="w-[260px] lg:w-full">
+              <LoriAnimLogo style={{ width: "100%" }} />
+            </div>
           </div>
 
         </div>
