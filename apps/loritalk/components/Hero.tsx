@@ -291,7 +291,7 @@ export default function Hero() {
         <div data-hero-shape className="absolute top-1/2 left-[10%] w-24 h-24 rotate-45 rounded-lg opacity-[0.06]" style={{ backgroundColor: "#E54013" }} />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 py-14 md:py-20 flex flex-col gap-6">
+      <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-14 md:pt-28 md:pb-20 flex flex-col gap-6">
 
         {/* Two-column row: text left, animated logo right */}
         <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
@@ -300,7 +300,7 @@ export default function Hero() {
           <div className="flex flex-col gap-4 text-left lg:flex-1">
             <div
               data-hero-badge
-              className="self-start inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-white"
+              className="self-start inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold text-white"
               style={{ backgroundColor: "#5D92E8", visibility: "hidden" }}
             >
               <span className="material-icons-round text-sm">science</span>
