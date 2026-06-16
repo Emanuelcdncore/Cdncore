@@ -1,3 +1,5 @@
+@import '../Glass/glass-tokens.css';
+
 .floating-nav {
   position: fixed;
   top: 2.5rem;
@@ -5,17 +7,18 @@
   right: 0;
   z-index: 5000;
   display: flex;
-  width: auto;
-  max-width: 700px;
-  background: #0a0a0f;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: max-content;
+  max-width: min(95vw, 1050px);
+  background: var(--glass-bg-nav);
+  -webkit-backdrop-filter: blur(var(--glass-blur-nav)) saturate(var(--glass-saturate));
+  backdrop-filter: blur(var(--glass-blur-nav)) saturate(var(--glass-saturate));
+  border: 1px solid var(--glass-border-bright);
   border-radius: 9999px;
   padding: 0.75rem 1.5rem;
   box-shadow:
-    0px 2px 3px -1px rgba(0, 0, 0, 0.1),
-    0px 1px 0px 0px rgba(25, 28, 33, 0.02),
-    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 0 1px rgba(153, 69, 255, 0.06);
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
@@ -78,7 +81,7 @@
 }
 
 @media (min-width: 1200px) {
-  .floating-nav { max-width: 750px; padding: 0.8rem 1.6rem; gap: 1rem; top: 3rem; }
+  .floating-nav { max-width: min(95vw, 1100px); padding: 0.8rem 1.6rem; gap: 1rem; top: 3rem; }
   .floating-nav-item { font-size: 1rem; padding: 0.4rem 0.6rem; }
 }
 
@@ -99,4 +102,29 @@
 @media (max-width: 480px) {
   .floating-nav { width: calc(100% - 1rem); max-width: 350px; padding: 0.4rem 0.5rem; gap: 0.3rem; top: 1.5rem; }
   .floating-nav-item { font-size: 0.8rem; padding: 0.15rem 0.25rem; }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .floating-nav {
+    background: var(--glass-bg-opaque);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .floating-nav {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: var(--glass-bg-opaque);
+  }
+}
+
+.floating-nav-separator {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 4px;
+}
+
+.floating-nav .lang-selector {
+  margin-left: 4px;
 }

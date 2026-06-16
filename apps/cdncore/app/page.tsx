@@ -1,16 +1,17 @@
 import Hero from '@/components/Hero';
 import IntroSection from '@/components/IntroSection';
+import TrustedBy from '@/components/TrustedBy';
 import Capabilities from '@/components/Capabilities';
-import RoboticsSection from '@/components/RoboticsSection';
 import HowWeWork from '@/components/HowWeWork';
 import OurWork from '@/components/OurWork';
 import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
+import { LandingScrollProvider } from '@/components/ScrollReveal/LandingScrollProvider';
 
 export default function Home() {
   return (
-    <>
+    <LandingScrollProvider>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -54,7 +55,7 @@ export default function Home() {
                     name: "What services does CDNCore offer?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text: "CDNCore provides comprehensive technology solutions including cybersecurity, AI & intelligent automation, big data analytics, advanced R&D, robotics, and full-stack software development.",
+                      text: "CDNCore provides comprehensive technology solutions including cybersecurity, AI & intelligent automation, big data analytics, advanced R&D, and full-stack software development.",
                     },
                   },
                   {
@@ -89,13 +90,13 @@ export default function Home() {
       />
       <Hero />
       <IntroSection />
+      <TrustedBy />
       <Capabilities />
-      <RoboticsSection />
       <HowWeWork />
       <OurWork />
       <FAQ />
       <CTA />
       <Footer />
-    </>
+    </LandingScrollProvider>
   );
 }

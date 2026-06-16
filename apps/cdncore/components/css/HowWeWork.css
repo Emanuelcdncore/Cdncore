@@ -40,6 +40,14 @@
   max-width: 240px;
 }
 
+.hww-glass-card {
+  height: 100%;
+}
+
+.hww-glass-card .glass-card__inner {
+  height: 100%;
+}
+
 .hww-card {
   display: flex;
   flex-direction: column;

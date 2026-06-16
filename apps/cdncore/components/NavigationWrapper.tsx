@@ -8,12 +8,14 @@ const HIDE_THRESHOLD = 80;
 const DELTA = 6;
 
 const NavigationWrapper: React.FC = () => {
+  const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
   const ticking = useRef(false);
 
   useEffect(() => {
+    setMounted(true);
     const mediaQuery = window.matchMedia('(max-width: 768px)');
     const handleChange = (e: MediaQueryListEvent | MediaQueryList) => setIsMobile(e.matches);
     setIsMobile(mediaQuery.matches);
@@ -45,6 +47,7 @@ const NavigationWrapper: React.FC = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  if (!mounted) return null;
   return isMobile ? <MobileNav hidden={hidden} /> : <FinalFloatingNav hidden={hidden} />;
 };
 

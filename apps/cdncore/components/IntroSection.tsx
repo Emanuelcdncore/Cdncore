@@ -1,67 +1,75 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { staggerContainer, staggerItem } from '@/utils/animations';
-import Cubes from './Backgrounds/Cubes';
+import React, { useRef } from 'react';
+import dynamic from 'next/dynamic';
+import { useTranslation } from 'react-i18next';
 import { LayoutTextFlip } from './ui/layout-text-flip';
+import { useIntroScroll } from './ScrollReveal/useIntroScroll';
+import RBScrollReveal from './ReactBits/RBScrollReveal';
 import './css/IntroSection.css';
 
-const IntroSection: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+const Antigravity = dynamic(() => import('./ReactBits/Antigravity'), { ssr: false });
 
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+const IntroSection: React.FC = () => {
+  const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useIntroScroll({
+    sectionRef,
+    overlayRef,
+    rightRef: contentRef,
+  });
+
+  const words = [
+    t('intro.word1', 'Build'),
+    t('intro.word2', 'Develop'),
+    t('intro.word3', 'Deploy'),
+    t('intro.word4', 'Maintain'),
+    t('intro.word5', 'Secure'),
+  ];
 
   return (
-    <motion.section
-      ref={ref}
-      className="intro-section section-padding"
-      variants={staggerContainer}
-      initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
-    >
-      <div className="intro-gradient-overlay" />
+    <section ref={sectionRef} className="intro-section section-padding">
+      <div ref={overlayRef} className="intro-gradient-overlay" />
+      <div className="intro-antigravity-bg">
+        <Antigravity
+          count={80}
+          autoAnimate={true}
+          color="#9945ff"
+          particleSize={1.2}
+          waveAmplitude={1.0}
+          waveSpeed={0.25}
+          ringRadius={8}
+          magnetRadius={8}
+          lerpSpeed={0.03}
+        />
+      </div>
       <div className="container">
-        <div className="intro-content">
-          {!isMobile && (
-            <div className="intro-left">
-              <Cubes
-                gridSize={3} maxAngle={45} radius={2.5}
-                borderStyle="2px dashed #8B5CF6" faceColor="#000000"
-                rippleColor="hsla(263, 69.30%, 42.20%, 0.70)"
-                rippleSpeed={0.8} autoAnimate={false}
-                rippleOnClick={true} cubeSize={80} cellGap={25}
-              />
+        <div ref={contentRef} className="intro-content">
+          <div className="intro-text">
+            <LayoutTextFlip
+              text={t('intro.prefix', 'We') + ' '}
+              words={words}
+              duration={2000}
+            />
+            <div className="mt-4">
+              <RBScrollReveal
+                baseOpacity={0}
+                enableBlur={true}
+                baseRotation={2}
+                blurStrength={5}
+                containerClassName="intro-paragraph-scroll-reveal"
+                textClassName="intro-paragraph-text"
+              >
+                {t('intro.description', 'Cutting-edge applied informatics and AI solutions, driven by R&D and innovation, empowering modern enterprises through agentic intelligence.')}
+              </RBScrollReveal>
             </div>
-          )}
-          <div className="intro-right">
-            <motion.div
-              className="intro-text"
-              variants={staggerItem}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.4, ease: 'easeOut' }}
-            >
-              <LayoutTextFlip
-                text="We "
-                words={['Engineer', 'Architect', 'Develop', 'Maintain', 'Secure']}
-                duration={2000}
-              />
-              <div className="mt-4">
-                <span className="gray-text">Cutting-edge applied informatics and AI solutions, driven by R&D and innovation, empowering modern enterprises through agentic intelligence.</span>
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

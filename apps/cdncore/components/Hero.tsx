@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useMemo, useEffect, lazy, Suspense } from 'react';
+import React, { useMemo, useRef, lazy, Suspense, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { mobileOptimizedStaggerContainer } from '@/utils/mobileAnimations';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import { useHeroEntrance } from './Hero/useHeroEntrance';
+import BlurText from './ReactBits/BlurText';
 import './css/Hero.css';
 
 const VantaFog = lazy(() => import('./Backgrounds/VantaFog'));
@@ -11,89 +13,113 @@ const VantaFog = lazy(() => import('./Backgrounds/VantaFog'));
 const bp = process.env.BASE_PATH || '';
 
 const Hero: React.FC = () => {
-  const containerVariants = mobileOptimizedStaggerContainer;
+  const { t } = useTranslation();
+  const contentRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
+  const parallaxRef = useRef<HTMLDivElement>(null);
+  const taglineRef = useRef<HTMLParagraphElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const logo = document.querySelector('.main-logo') as HTMLElement;
-    const wrapper = document.querySelector('.logo-scale-wrapper') as HTMLElement;
-    if (logo) {
-      logo.style.setProperty('transform', 'scale(0.78)', 'important');
-      logo.style.setProperty('transform-origin', 'center center', 'important');
-      logo.style.setProperty('height', 'clamp(495px, 44.55vh, 1485px)', 'important');
-      logo.style.setProperty('width', 'auto', 'important');
-      logo.style.setProperty('max-width', '90vw', 'important');
-      logo.style.setProperty('max-height', '90vh', 'important');
-    }
-    if (wrapper) {
-      wrapper.style.setProperty('transform', 'scale(0.78)', 'important');
-      wrapper.style.setProperty('transform-origin', 'center center', 'important');
-      wrapper.style.setProperty('display', 'inline-block', 'important');
-    }
-  }, []);
+  const { entranceDone, isPending } = useHeroEntrance({
+    contentRef,
+    glowRef,
+    parallaxRef,
+    taglineRef,
+    scrollRef,
+  });
 
-  const memoizedVantaFog = useMemo(() => (
-    <Suspense fallback={<div className="fallback-background" />}>
-      <VantaFog className="" style={{}} />
-    </Suspense>
-  ), []);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const tagline = mounted ? t('home.hero.tagline') : '';
+
+  const memoizedVantaFog = useMemo(
+    () => (
+      <Suspense fallback={<div className="fallback-background" />}>
+        <VantaFog className="" style={{}} />
+      </Suspense>
+    ),
+    []
+  );
 
   return (
-    <motion.section
-      className="hero"
-      id="hero"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      transition={{ duration: 0.6, staggerChildren: 0.1 }}
-    >
+    <section className="hero" id="hero">
       <div className="fallback-background" />
       <div className="hero-gradient-overlay" />
-      <div className="faulty-terminal-background">
-        {memoizedVantaFog}
-      </div>
+      <div className="faulty-terminal-background">{memoizedVantaFog}</div>
 
-      <div className="logo-container" style={{ zIndex: 10 }}>
-        <div className="logo-scale-wrapper" style={{ transform: 'scale(0.78)', transformOrigin: 'center center', display: 'inline-block' }}>
-          <Image
-            src={`${bp}/assets/logos/CDNCORE-03.png`}
-            alt="CDN Logo"
-            className="main-logo"
-            width={800}
-            height={800}
-            unoptimized
-            priority
-            style={{
-              zIndex: 10,
-              transform: 'scale(0.78)',
-              transformOrigin: 'center center',
-              height: 'clamp(495px, 44.55vh, 1485px)',
-              width: 'auto',
-              maxWidth: '90vw',
-              maxHeight: '90vh'
-            }}
-          />
+      <div className="logo-container">
+        <div
+          ref={contentRef}
+          className={`hero-content${isPending ? ' hero-content--pending' : ''}`}
+        >
+          <div className="hero-logo-stage">
+            <div ref={glowRef} className="hero-logo-glow" aria-hidden="true" />
+            <div ref={parallaxRef} className="hero-logo-parallax logo-scale-wrapper">
+              <Image
+                src={`${bp}/assets/logos/CDNCORE-03.png`}
+                alt="CDN Logo"
+                className="main-logo"
+                width={800}
+                height={800}
+                unoptimized
+                priority
+              />
+            </div>
+          </div>
+
+          {/* Ghost element \u2014 satisfies entrance system's taglineRef non-null check */}
+          <p ref={taglineRef} className="hero-tagline-ghost" aria-hidden="true" />
+
+          {/* BlurText tagline \u2014 mounts after entrance completes */}
+          {mounted && entranceDone && (
+            <BlurText
+              text={tagline}
+              className="hero-tagline"
+              delay={80}
+              animateBy="words"
+              direction="top"
+              stepDuration={0.5}
+            />
+          )}
         </div>
       </div>
 
-      {/* Scroll mouse indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
+        ref={scrollRef}
+        className="hero-scroll-indicator"
+        animate={entranceDone ? { y: [0, 10, 0] } : undefined}
+        transition={
+          entranceDone
+            ? { duration: 2, repeat: Infinity, ease: 'easeInOut' }
+            : undefined
+        }
       >
         <div className="relative w-8 h-14 flex justify-center items-start">
-          <div className="absolute inset-0 rounded-full border-2 border-transparent" style={{ background: 'linear-gradient(#000, #000) padding-box, linear-gradient(to right, rgba(139,92,246,0.6), rgba(236,72,153,0.6)) border-box' }}>
-            <div className="w-full h-full bg-black rounded-full"></div>
+          <div
+            className="absolute inset-0 rounded-full border-2 border-transparent"
+            style={{
+              background:
+                'linear-gradient(#000, #000) padding-box, linear-gradient(to right, rgba(139,92,246,0.6), rgba(236,72,153,0.6)) border-box',
+            }}
+          >
+            <div className="w-full h-full bg-black rounded-full" />
           </div>
           <motion.div
             className="relative w-2 h-3 rounded-full mt-3"
-            style={{ background: 'linear-gradient(to bottom, rgba(139,92,246,0.8), rgba(236,72,153,0.8))' }}
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
+            style={{
+              background:
+                'linear-gradient(to bottom, rgba(139,92,246,0.8), rgba(236,72,153,0.8))',
+            }}
+            animate={entranceDone ? { y: [0, 6, 0] } : undefined}
+            transition={
+              entranceDone
+                ? { duration: 1.5, repeat: Infinity, ease: 'easeInOut' }
+                : undefined
+            }
           />
         </div>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { loadScript, loadStyle } from '@/lib/load-external';
 
 declare global {
@@ -10,10 +10,16 @@ declare global {
 const bp = process.env.BASE_PATH || '';
 const LEAFLET_CSS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
 const LEAFLET_JS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+const LAT = 40.22831908063358;
+const LNG = -7.49888183428806;
+const DEFAULT_ZOOM = 15;
+const MIN_ZOOM = 10;
+const MAX_ZOOM = 19;
 
 const CustomMap: React.FC = () => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
+  const [zoom, setZoom] = useState(DEFAULT_ZOOM);
 
   useEffect(() => {
     const loadLeafletMap = () => {
@@ -22,11 +28,17 @@ const CustomMap: React.FC = () => {
           mapInstanceRef.current = window.L.map(mapRef.current, {
             zoomControl: false,
             attributionControl: false,
-          }).setView([40.22831908063358, -7.49888183428806], 15);
+            dragging: false,
+            scrollWheelZoom: false,
+            doubleClickZoom: false,
+            keyboard: false,
+            touchZoom: false,
+            boxZoom: false,
+          }).setView([LAT, LNG], DEFAULT_ZOOM);
 
           window.L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             subdomains: 'abcd',
-            maxZoom: 19,
+            maxZoom: MAX_ZOOM,
             tileSize: 512,
             zoomOffset: -1,
             keepBuffer: 4,
@@ -46,9 +58,13 @@ const CustomMap: React.FC = () => {
             popupAnchor: [0, -52],
           });
 
-          window.L.marker([40.22831908063358, -7.49888183428806], { icon: customIcon })
+          window.L.marker([LAT, LNG], { icon: customIcon })
             .addTo(mapInstanceRef.current)
             .bindPopup('CDNCORE<br>Rua G 60, 6200-823 Covilhã, Portugal');
+
+          mapInstanceRef.current.on('zoomend', () => {
+            setZoom(mapInstanceRef.current.getZoom());
+          });
         }
       } catch (e) {
         console.error('Error loading Leaflet map:', e);
@@ -78,14 +94,78 @@ const CustomMap: React.FC = () => {
     };
   }, []);
 
+  const handleZoomIn = () => {
+    if (mapInstanceRef.current && zoom < MAX_ZOOM) {
+      mapInstanceRef.current.zoomIn();
+    }
+  };
+
+  const handleZoomOut = () => {
+    if (mapInstanceRef.current && zoom > MIN_ZOOM) {
+      mapInstanceRef.current.zoomOut();
+    }
+  };
+
+  const btnBase: React.CSSProperties = {
+    width: '32px',
+    height: '32px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    background: 'rgba(13, 17, 22, 0.85)',
+    border: '1px solid rgba(139, 92, 246, 0.4)',
+    backdropFilter: 'blur(8px)',
+    color: '#d4d4d8',
+    fontSize: '18px',
+    fontFamily: 'monospace',
+    lineHeight: 1,
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    userSelect: 'none',
+  };
+
   return (
     <div style={{ position: 'relative', width: '100%', height: '250px', overflow: 'hidden', border: 'none' }}>
       <div ref={mapRef} style={{ width: '100%', height: '100%', border: 'none', outline: 'none' }} />
 
       {/* Online badge */}
-      <div style={{ position: 'absolute', top: '14px', right: '14px', display: 'flex', alignItems: 'center', gap: '8px', zIndex: 20 }}>
+      <div style={{ position: 'absolute', top: '14px', right: '14px', display: 'flex', alignItems: 'center', gap: '8px', zIndex: 1000 }}>
         <div style={{ width: '8px', height: '8px', backgroundColor: '#34d399', borderRadius: '9999px', animation: 'map-pulse 1.5s ease-in-out infinite' }} />
         <span style={{ color: '#34d399', fontFamily: 'monospace', fontSize: '12px' }}>ONLINE</span>
+      </div>
+
+      {/* Zoom controls */}
+      <div style={{ position: 'absolute', top: '14px', left: '14px', display: 'flex', flexDirection: 'column', gap: '2px', zIndex: 1000 }}>
+        <button
+          onClick={handleZoomIn}
+          disabled={zoom >= MAX_ZOOM}
+          style={{
+            ...btnBase,
+            borderRadius: '6px 6px 0 0',
+            opacity: zoom >= MAX_ZOOM ? 0.4 : 1,
+            cursor: zoom >= MAX_ZOOM ? 'not-allowed' : 'pointer',
+          }}
+          onMouseEnter={(e) => { if (zoom < MAX_ZOOM) { e.currentTarget.style.background = 'rgba(139, 92, 246, 0.35)'; e.currentTarget.style.color = '#ffffff'; } }}
+          onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(13, 17, 22, 0.85)'; e.currentTarget.style.color = '#d4d4d8'; }}
+          aria-label="Zoom in"
+        >
+          +
+        </button>
+        <button
+          onClick={handleZoomOut}
+          disabled={zoom <= MIN_ZOOM}
+          style={{
+            ...btnBase,
+            borderRadius: '0 0 6px 6px',
+            opacity: zoom <= MIN_ZOOM ? 0.4 : 1,
+            cursor: zoom <= MIN_ZOOM ? 'not-allowed' : 'pointer',
+          }}
+          onMouseEnter={(e) => { if (zoom > MIN_ZOOM) { e.currentTarget.style.background = 'rgba(139, 92, 246, 0.35)'; e.currentTarget.style.color = '#ffffff'; } }}
+          onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(13, 17, 22, 0.85)'; e.currentTarget.style.color = '#d4d4d8'; }}
+          aria-label="Zoom out"
+        >
+          −
+        </button>
       </div>
 
       {/* Open in Maps button */}
@@ -100,7 +180,7 @@ const CustomMap: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           gap: '6px',
-          zIndex: 20,
+          zIndex: 1000,
           padding: '6px 12px',
           borderRadius: '6px',
           background: 'rgba(139, 92, 246, 0.25)',

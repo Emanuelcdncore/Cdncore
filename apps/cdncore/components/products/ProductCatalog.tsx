@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { ProductListItem } from '@/lib/products-data';
 import { ProductCard } from './ProductCard';
 import { Input } from '@/components/products-ui/input';
@@ -14,6 +15,7 @@ import { formatEUR } from '@/lib/products-format';
 import { X, SlidersHorizontal } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/products-ui/sheet';
 import { SPEC_GROUPS } from '@/lib/products-specs';
+import { normalizeSpecKey } from '@/lib/products-i18n';
 import '@/components/css/Products.css';
 
 type Facets = {
@@ -38,6 +40,7 @@ function buildFacets(items: ProductListItem[]): Facets {
 }
 
 export default function ProductCatalog({ products }: { products: ProductListItem[] }) {
+  const { t } = useTranslation();
   const [search, setSearch] = useState('');
   const [sort, setSort] = useState('title-asc');
   const [inStockOnly, setInStockOnly] = useState(false);
@@ -142,8 +145,8 @@ export default function ProductCatalog({ products }: { products: ProductListItem
     <div className="products-page min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-12 pt-28">
         <div className="mb-10">
-          <h1 className="products-depot-font text-4xl md:text-5xl font-semibold text-white mt-3 tracking-tight">Produtos</h1>
-          <p className="text-muted-foreground mt-2 text-sm">{items.length} produtos</p>
+          <h1 className="products-depot-font text-4xl md:text-5xl font-semibold text-white mt-3 tracking-tight">{t('products_page.title')}</h1>
+          <p className="text-muted-foreground mt-2 text-sm">{t('products_page.count', { count: items.length })}</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10">
           <aside className="hidden lg:block">{sidebar}</aside>
@@ -152,7 +155,7 @@ export default function ProductCatalog({ products }: { products: ProductListItem
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="outline" className="lg:hidden">
-                    <SlidersHorizontal className="h-4 w-4 mr-2" /> Filtros
+                    <SlidersHorizontal className="h-4 w-4 mr-2" /> {t('products_page.filters_btn')}
                     {activeFilterCount > 0 && (
                       <span className="ml-2 bg-primary text-primary-foreground rounded-full text-xs px-2 py-0.5">
                         {activeFilterCount}
@@ -162,13 +165,13 @@ export default function ProductCatalog({ products }: { products: ProductListItem
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[300px] overflow-y-auto">
                   <SheetHeader>
-                    <SheetTitle>Filtros</SheetTitle>
+                    <SheetTitle>{t('products_page.filters_btn')}</SheetTitle>
                   </SheetHeader>
                   <div className="mt-4">{sidebar}</div>
                 </SheetContent>
               </Sheet>
               <Input
-                placeholder="Pesquisar produtos..."
+                placeholder={t('products_page.search_placeholder')}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="md:max-w-sm bg-white/[0.03] border-white/10"
@@ -179,18 +182,18 @@ export default function ProductCatalog({ products }: { products: ProductListItem
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="title-asc">Nome A-Z</SelectItem>
-                    <SelectItem value="title-desc">Nome Z-A</SelectItem>
-                    <SelectItem value="price-asc">Preço crescente</SelectItem>
-                    <SelectItem value="price-desc">Preço decrescente</SelectItem>
+                    <SelectItem value="title-asc">{t('products_page.sort_title_asc')}</SelectItem>
+                    <SelectItem value="title-desc">{t('products_page.sort_title_desc')}</SelectItem>
+                    <SelectItem value="price-asc">{t('products_page.sort_price_asc')}</SelectItem>
+                    <SelectItem value="price-desc">{t('products_page.sort_price_desc')}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
             </div>
             {items.length === 0 ? (
               <div className="text-center py-16 border border-white/10 rounded-xl bg-white/[0.02]">
-                <p className="text-muted-foreground">Nenhum produto encontrado.</p>
-                <Button variant="link" onClick={clearAll}>Limpar filtros</Button>
+                <p className="text-muted-foreground">{t('products_page.no_products')}</p>
+                <Button variant="link" onClick={clearAll}>{t('products_page.clear_filters')}</Button>
               </div>
             ) : (
               <>
@@ -200,7 +203,7 @@ export default function ProductCatalog({ products }: { products: ProductListItem
                 {limit < items.length && (
                   <div className="mt-14 flex justify-center">
                     <button onClick={() => setLimit(limit + 20)} className="btn-violet">
-                      Carregar mais
+                      {t('products_page.load_more')}
                     </button>
                   </div>
                 )}
@@ -228,6 +231,7 @@ function FilterSidebar(props: {
   activeFilterCount: number;
   clearAll: () => void;
 }) {
+  const { t } = useTranslation();
   const {
     facets, inStockOnly, setInStockOnly, selectedVendors, toggleVendor,
     selectedTags, toggleTag, minPrice, maxPrice, priceRange, setPriceRange,
@@ -244,26 +248,26 @@ function FilterSidebar(props: {
     <div className="text-sm">
       {activeFilterCount > 0 && (
         <div className="flex items-center justify-between mb-3 pb-3 border-b">
-          <span className="text-xs text-muted-foreground">{activeFilterCount} filtros ativos</span>
+          <span className="text-xs text-muted-foreground">{t('products_page.active_filters', { count: activeFilterCount })}</span>
           <Button variant="ghost" size="sm" onClick={clearAll} className="h-7 text-xs">
-            <X className="h-3 w-3 mr-1" /> Limpar
+            <X className="h-3 w-3 mr-1" /> {t('products_page.clear')}
           </Button>
         </div>
       )}
 
       <Accordion type="multiple" defaultValue={defaultOpen} className="w-full">
         <AccordionItem value="availability">
-          <AccordionTrigger className="text-sm font-semibold py-3">Disponibilidade</AccordionTrigger>
+          <AccordionTrigger className="text-sm font-semibold py-3">{t('products_page.availability')}</AccordionTrigger>
           <AccordionContent>
             <label className="flex items-center justify-between pb-2 cursor-pointer">
-              <span>Em stock</span>
+              <span>{t('products_page.in_stock')}</span>
               <Switch checked={inStockOnly} onCheckedChange={setInStockOnly} />
             </label>
           </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="price">
-          <AccordionTrigger>Preço</AccordionTrigger>
+          <AccordionTrigger>{t('products_page.price')}</AccordionTrigger>
           <AccordionContent>
             <div className="pt-4 pb-2 px-2">
               <Slider
@@ -277,14 +281,14 @@ function FilterSidebar(props: {
                 <span>{formatEUR(priceRange[0])}</span>
                 <span>{formatEUR(priceRange[1])}</span>
               </div>
-              <p className="text-[10px] text-muted-foreground mt-2">Preço máximo: {formatEUR(maxPrice)}</p>
+              <p className="text-[10px] text-muted-foreground mt-2">{t('products_page.max_price')} {formatEUR(maxPrice)}</p>
             </div>
           </AccordionContent>
         </AccordionItem>
 
         {facets.vendors.size > 0 && (
           <AccordionItem value="brand">
-            <AccordionTrigger>Marca</AccordionTrigger>
+            <AccordionTrigger>{t('products_page.brand')}</AccordionTrigger>
             <AccordionContent>
               <FacetList
                 entries={Array.from(facets.vendors.entries())}
@@ -302,12 +306,15 @@ function FilterSidebar(props: {
           const selected = selectedTags.get(g.key) ?? new Set<string>();
           return (
             <AccordionItem key={g.key} value={`tag-${g.key}`}>
-              <AccordionTrigger className="text-sm font-semibold py-3">{g.label}</AccordionTrigger>
+              <AccordionTrigger className="text-sm font-semibold py-3">
+                {t(`product_specs.${normalizeSpecKey(g.key)}`, { defaultValue: g.key })}
+              </AccordionTrigger>
               <AccordionContent>
                 <FacetList
                   entries={entries}
                   selected={selected}
                   onToggle={(v) => toggleTag(g.key, v)}
+                  translateLabel
                 />
               </AccordionContent>
             </AccordionItem>
@@ -319,12 +326,14 @@ function FilterSidebar(props: {
 }
 
 function FacetList({
-  entries, selected, onToggle,
+  entries, selected, onToggle, translateLabel = false,
 }: {
   entries: [string, number][];
   selected: Set<string>;
   onToggle: (v: string) => void;
+  translateLabel?: boolean;
 }) {
+  const { t } = useTranslation();
   return (
     <ul className="space-y-2 pt-1 max-h-64 overflow-y-auto pr-1">
       {entries.map(([value, count]) => (
@@ -334,7 +343,11 @@ function FacetList({
               checked={selected.has(value)}
               onCheckedChange={() => onToggle(value)}
             />
-            <span className="flex-1 truncate">{value}</span>
+            <span className="flex-1 truncate">
+              {translateLabel
+                ? t(`product_specs.${normalizeSpecKey(value)}`, { defaultValue: value })
+                : value}
+            </span>
             <span className="text-xs text-muted-foreground">({count})</span>
           </label>
         </li>

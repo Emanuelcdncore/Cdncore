@@ -1,22 +1,25 @@
 'use client';
 
-import React, { useCallback } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { IconHome, IconCode, IconNews, IconHeart, IconMessage, IconPackage } from '@tabler/icons-react';
+import LanguageSelector from './LanguageSelector';
+import { useTranslation } from 'react-i18next';
 import './css/FloatingNav.css';
-
-const navItems = [
-  { icon: IconHome, label: 'Home', href: '/', section: 'hero' },
-  { icon: IconCode, label: 'Services', href: '/#capabilities', section: 'capabilities' },
-  { icon: IconPackage, label: 'Products', href: '/products' },
-  { icon: IconNews, label: 'News', href: '/news' },
-  { icon: IconHeart, label: 'Commitments', href: '/commitments' },
-  { icon: IconMessage, label: 'Contact', href: '/contact' },
-];
 
 const FinalFloatingNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) => {
   const router = useRouter();
   const pathname = usePathname();
+  const { t } = useTranslation();
+
+  const navItems = useMemo(() => [
+    { icon: IconHome, label: t('nav.home', 'Home'), href: '/', section: 'hero' },
+    { icon: IconCode, label: t('nav.services', 'Services'), href: '/services' },
+    { icon: IconPackage, label: t('nav.products', 'Products'), href: '/products' },
+    { icon: IconNews, label: t('nav.news', 'News'), href: '/news' },
+    { icon: IconHeart, label: t('nav.commitments', 'Commitments'), href: '/commitments' },
+    { icon: IconMessage, label: t('nav.contact', 'Contact'), href: '/contact' },
+  ], [t]);
 
   const handleClick = useCallback((item: typeof navItems[0], e: React.MouseEvent) => {
     e.preventDefault();
@@ -41,13 +44,13 @@ const FinalFloatingNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) =>
     } else {
       router.push(item.href);
     }
-  }, [pathname, router]);
+  }, [pathname, router, t]);
 
   return (
     <nav className={`floating-nav ${hidden ? 'floating-nav-hidden' : ''}`}>
-      {navItems.map((item, i) => (
+      {navItems.map((item) => (
         <a
-          key={item.label}
+          key={item.href}
           href={item.href}
           className={`floating-nav-item ${pathname === item.href ? 'active' : ''}`}
           onClick={(e) => handleClick(item, e)}
@@ -59,6 +62,8 @@ const FinalFloatingNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) =>
           <span className="floating-nav-item-underline" />
         </a>
       ))}
+      <div className="floating-nav-separator" />
+      <LanguageSelector />
     </nav>
   );
 };

@@ -1,9 +1,130 @@
-.hamburger-btn { display: none; position: fixed; top: 20px; right: 20px; z-index: 1001; width: 44px; height: 44px; border-radius: 50%; background: rgba(19, 17, 21, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(139, 92, 246, 0.2); align-items: center; justify-content: center; cursor: pointer; color: #ffffff; transition: transform 0.35s cubic-bezier(.2,.8,.2,1), opacity 0.25s ease; will-change: transform; }
-.hamburger-btn-hidden { transform: translateY(calc(-100% - 20px)); opacity: 0; pointer-events: none; }
-@media (max-width: 768px) { .hamburger-btn { display: flex; } }
-.mobile-nav-panel { position: fixed; top: 0; right: 0; width: 280px; height: 100vh; background: rgba(19, 17, 21, 0.95); backdrop-filter: blur(30px); border-left: 1px solid rgba(139, 92, 246, 0.2); z-index: 1000; padding: 80px 30px 30px; display: flex; flex-direction: column; gap: 15px; }
-.mobile-nav-item { display: flex; align-items: center; gap: 15px; padding: 14px 16px; border-radius: 12px; color: #9CA3AF; cursor: pointer; transition: all 0.3s ease; background: transparent; border: none; font-size: 16px; width: 100%; text-align: left; }
-.mobile-nav-item:hover { color: #ffffff; background: rgba(139, 92, 246, 0.15); }
-.mobile-nav-item.active { color: #8B5CF6; background: rgba(139, 92, 246, 0.1); }
-.mobile-nav-item svg { width: 20px; height: 20px; flex-shrink: 0; }
-.mobile-nav-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+@import '../Glass/glass-tokens.css';
+
+.hamburger-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--glass-bg-surface);
+  border: 1px solid var(--glass-border);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.35s cubic-bezier(.2,.8,.2,1), opacity 0.25s ease;
+  will-change: transform;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.hamburger-btn-hidden {
+  transform: translateY(calc(-100% - 20px));
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn { display: flex; }
+}
+
+.mobile-nav-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  background: var(--glass-bg-nav);
+  -webkit-backdrop-filter: blur(var(--glass-blur-nav)) saturate(var(--glass-saturate));
+  backdrop-filter: blur(var(--glass-blur-nav)) saturate(var(--glass-saturate));
+  border-left: 1px solid var(--glass-border-bright);
+  z-index: 1000;
+  padding: 80px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+
+.mobile-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  color: #9CA3AF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+}
+
+.mobile-nav-item:hover {
+  color: #ffffff;
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.mobile-nav-item.active {
+  color: #8B5CF6;
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.mobile-nav-item svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.mobile-nav-lang {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mobile-nav-lang .lang-selector {
+  width: 100%;
+}
+
+.mobile-nav-lang .lang-selector-trigger {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+}
+
+.mobile-nav-lang .lang-dropdown {
+  width: 100%;
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .mobile-nav-panel {
+    background: var(--glass-bg-opaque);
+  }
+  .hamburger-btn {
+    background: var(--glass-bg-opaque);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .mobile-nav-panel,
+  .hamburger-btn {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: var(--glass-bg-opaque);
+  }
+}

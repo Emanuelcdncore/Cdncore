@@ -1,12 +1,17 @@
 'use client';
 
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslation } from 'react-i18next';
 import { contactFormSchema, type ContactFormData } from '@cdn/email/schema';
 import './css/Contact.css';
 
+const Antigravity = dynamic(() => import('./ReactBits/Antigravity'), { ssr: false });
+
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const {
@@ -50,34 +55,47 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="contact-page-centered">
-      <div className="contact-centered-wrapper">
+    <section className="contact-page-centered" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }}>
+        <Antigravity
+          count={120}
+          autoAnimate={true}
+          color="#9945ff"
+          particleSize={1}
+          waveAmplitude={1.2}
+          waveSpeed={0.3}
+          ringRadius={6}
+          magnetRadius={6}
+          lerpSpeed={0.04}
+        />
+      </div>
+      <div className="contact-centered-wrapper" style={{ position: 'relative', zIndex: 1 }}>
         <div className="contact-form-card">
-          <h1 className="contact-form-heading">Get in Touch</h1>
+          <h1 className="contact-form-heading">{t('contact.heading', 'Get in Touch')}</h1>
           <p className="contact-form-subheading">
-            Have a question about our services? Our team is ready to help.
+            {t('contact.subheading', 'Have a question about our services? Our team is ready to help.')}
           </p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="contact-form-inner">
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="firstName">FIRST NAME</label>
+                <label htmlFor="firstName">{t('contact.first_name', 'FIRST NAME')}</label>
                 <input
                   type="text"
                   id="firstName"
                   {...register('firstName')}
-                  placeholder="Jonathan"
+                  placeholder={t('contact.placeholder_first', 'Jonathan')}
                   className="form-input"
                 />
                 {errors.firstName && <span className="error-message">{errors.firstName.message}</span>}
               </div>
               <div className="form-group">
-                <label htmlFor="lastName">LAST NAME</label>
+                <label htmlFor="lastName">{t('contact.last_name', 'LAST NAME')}</label>
                 <input
                   type="text"
                   id="lastName"
                   {...register('lastName')}
-                  placeholder="Telstar"
+                  placeholder={t('contact.placeholder_last', 'Telstar')}
                   className="form-input"
                 />
                 {errors.lastName && <span className="error-message">{errors.lastName.message}</span>}
@@ -85,48 +103,51 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="email">EMAIL</label>
+              <label htmlFor="email">{t('contact.email', 'EMAIL')}</label>
               <input
                 type="email"
                 id="email"
                 {...register('email')}
-                placeholder="Email address"
+                placeholder={t('contact.placeholder_email', 'Email address')}
                 className="form-input"
               />
               {errors.email && <span className="error-message">{errors.email.message}</span>}
             </div>
 
             <div className="form-group">
-              <label htmlFor="company">COMPANY <span style={{ opacity: 0.5 }}>(Optional)</span></label>
+              <label htmlFor="company">
+                {t('contact.company', 'COMPANY')}{' '}
+                <span style={{ opacity: 0.5 }}>{t('contact.optional', '(Optional)')}</span>
+              </label>
               <input
                 type="text"
                 id="company"
                 {...register('company')}
-                placeholder="Company name"
+                placeholder={t('contact.placeholder_company', 'Company name')}
                 className="form-input"
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="subject">SUBJECT</label>
+              <label htmlFor="subject">{t('contact.subject', 'SUBJECT')}</label>
               <input
                 type="text"
                 id="subject"
                 {...register('subject')}
-                placeholder="What is this about?"
+                placeholder={t('contact.placeholder_subject', 'What is this about?')}
                 className="form-input"
               />
               {errors.subject && <span className="error-message">{errors.subject.message}</span>}
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">MESSAGE</label>
+              <label htmlFor="message">{t('contact.message', 'MESSAGE')}</label>
               <textarea
                 id="message"
                 {...register('message')}
                 className="form-textarea"
                 rows={4}
-                placeholder="How can we help?"
+                placeholder={t('contact.placeholder_message', 'How can we help?')}
               />
               {errors.message && <span className="error-message">{errors.message.message}</span>}
             </div>
@@ -137,27 +158,27 @@ const Contact: React.FC = () => {
               disabled={isSubmitting}
             >
               {isSubmitting ? (
-                <><span className="loading-spinner"></span>SENDING...</>
+                <><span className="loading-spinner"></span>{t('contact.sending', 'SENDING...')}</>
               ) : submitStatus === 'success' ? (
-                <>MESSAGE SENT</>
+                <>{t('contact.sent', 'MESSAGE SENT')}</>
               ) : submitStatus === 'error' ? (
-                <>TRY AGAIN</>
+                <>{t('contact.try_again', 'TRY AGAIN')}</>
               ) : (
-                <>SUBMIT <span className="plus-icon">+</span></>
+                <>{t('contact.submit', 'SUBMIT')} <span className="plus-icon">+</span></>
               )}
             </button>
 
             {submitStatus === 'success' && (
-              <div className="success-message">Your message has been sent successfully!</div>
+              <div className="success-message">{t('contact.success_msg', 'Your message has been sent successfully!')}</div>
             )}
             {submitStatus === 'error' && (
-              <div className="error-message">There was an error sending your message. Please try again.</div>
+              <div className="error-message">{t('contact.error_msg', 'There was an error sending your message. Please try again.')}</div>
             )}
 
             <p className="form-disclaimer">
-              By submitting, I have read, and I understand and agree
+              {t('contact.disclaimer1', 'By submitting, I have read, and I understand and agree')}
               <br />
-              to our Terms of Use and Privacy Policy.
+              {t('contact.disclaimer2', 'to our Terms of Use and Privacy Policy.')}
             </p>
           </form>
         </div>

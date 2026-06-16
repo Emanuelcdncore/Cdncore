@@ -134,23 +134,111 @@
   position: relative;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content--pending {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-logo-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo-glow {
+  position: absolute;
+  width: min(72vw, 520px);
+  height: min(52vw, 380px);
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(153, 69, 255, 0.45) 0%,
+    rgba(0, 255, 255, 0.2) 45%,
+    transparent 70%
+  );
+  opacity: 0;
+  transform: scale(0.6);
+  transform-origin: center center;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.hero-logo-parallax {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
 .logo-scale-wrapper {
-  transform: scale(0.78) !important;
-  transform-origin: center center !important;
-  display: inline-block !important;
+  transform-origin: center center;
+  display: inline-block;
+}
+
+.hero-tagline {
+  margin: 0;
+  max-width: min(90vw, 42rem);
+  text-align: center;
+  justify-content: center;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+}
+
+.hero-tagline-char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.hero-tagline-ghost {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-tagline.blur-text-words {
+  justify-content: center;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 20;
+  opacity: 0;
+  will-change: transform, opacity;
 }
 
 .main-logo {
-  height: clamp(495px, 44.55vh, 1485px) !important;
-  width: clamp(495px, 44.55vh, 1485px) !important;
-  max-width: 90vw !important;
-  max-height: 90vh !important;
-  object-fit: contain !important;
+  height: clamp(495px, 44.55vh, 1485px);
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
   cursor: default;
-  transition: all 0.3s ease;
-  display: block !important;
-  transform: scale(0.78) !important;
-  transform-origin: center center !important;
+  display: block;
+  transform: none;
+  transform-origin: center center;
 }
 
 @media (max-width: 768px) {
@@ -164,48 +252,47 @@
     height: 1px;
   }
   .main-logo {
-    height: clamp(390px, 52vh, 832px) !important;
-    width: auto !important;
-    max-width: 90vw !important;
-    max-height: 85vh !important;
+    height: clamp(390px, 52vh, 832px);
+    width: auto;
+    max-width: 90vw;
+    max-height: 85vh;
     margin: 0 auto;
-    transform: scale(0.78) !important;
-    transform-origin: center center;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
   .main-logo {
-    height: clamp(741px, 34.5vh, 1480px) !important;
-    max-height: 85vh !important;
-    transform: scale(0.78) !important;
-    transform-origin: center center;
+    height: clamp(741px, 34.5vh, 1480px);
+    max-height: 85vh;
   }
 }
 
 @media (min-width: 1441px) and (max-width: 2560px) {
   .main-logo {
-    height: clamp(990px, 31vh, 1730px) !important;
-    max-height: 85vh !important;
-    transform: scale(0.78) !important;
-    transform-origin: center center;
+    height: clamp(990px, 31vh, 1730px);
+    max-height: 85vh;
   }
 }
 
 @media (min-width: 2561px) {
   .main-logo {
-    height: clamp(1235px, 24.2vh, 1975px) !important;
-    max-height: 85vh !important;
-    transform: scale(0.78) !important;
-    transform-origin: center center;
+    height: clamp(1235px, 24.2vh, 1975px);
+    max-height: 85vh;
   }
 }
 
 @media (orientation: landscape) and (max-height: 600px) {
   .main-logo {
-    height: clamp(390px, 34.5vh, 858px) !important;
-    max-height: 80vh !important;
-    transform: scale(0.78) !important;
-    transform-origin: center center;
+    height: clamp(390px, 34.5vh, 858px);
+    max-height: 80vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo-glow,
+  .hero-logo-parallax,
+  .hero-tagline-char,
+  .hero-scroll-indicator {
+    will-change: auto;
   }
 }

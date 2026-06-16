@@ -41,6 +41,19 @@
   gap: 28px;
 }
 
+.ow-card-reveal {
+  width: 100%;
+}
+
+.ow-glass-card {
+  width: 100%;
+}
+
+.ow-glass-card .glass-card__inner {
+  overflow: hidden;
+  border-radius: inherit;
+}
+
 .ow-card {
   display: flex;
   flex-direction: column;
@@ -80,7 +93,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .ow-card-tags {

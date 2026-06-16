@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import CustomMap from './CustomMap';
 import './css/Footer.css';
@@ -9,40 +10,60 @@ import './css/Footer.css';
 const bp = process.env.BASE_PATH || '';
 
 const Footer: React.FC = () => {
-  const scrollToSection = (sectionId: string, path: string = '/') => {
-    if (typeof window !== 'undefined') {
-      if (window.location.pathname !== path) {
-        window.location.href = `${path}#${sectionId}`;
+  const { t } = useTranslation();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const goTo = (path: string, sectionId?: string) => {
+    if (pathname === path) {
+      if (sectionId) {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
       } else {
-        const element = document.getElementById(sectionId);
-        if (element) element.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    } else {
+      if (sectionId) {
+        router.push(`${path}#${sectionId}`);
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      } else {
+        router.push(path);
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       }
     }
+  };
+
+  const handleClick = (e: React.MouseEvent, path: string, sectionId?: string) => {
+    e.preventDefault();
+    goTo(path, sectionId);
   };
 
   return (
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-section">
-          <h3 className="footer-title">SERVICES</h3>
-          <a href="/#cybersecurity" onClick={(e) => { e.preventDefault(); scrollToSection('cybersecurity'); }}>Cybersecurity</a>
-          <a href="/#ai-solutions" onClick={(e) => { e.preventDefault(); scrollToSection('ai-solutions'); }}>AI Solutions</a>
-          <a href="https://cdntv.eu/about#team" target="_blank" rel="noopener noreferrer">Designers</a>
+          <h3 className="footer-title">{t('footer.services', 'SERVICES')}</h3>
+          <a href="/services" onClick={(e) => handleClick(e, '/services')}>{t('footer.cybersecurity', 'Cybersecurity')}</a>
+          <a href="/services" onClick={(e) => handleClick(e, '/services')}>{t('footer.ai_solutions', 'AI Solutions')}</a>
+          <a href="https://cdntv.eu/about#team" target="_blank" rel="noopener noreferrer">{t('footer.designers', 'Designers')}</a>
         </div>
         <div className="footer-section">
-          <h3 className="footer-title">COMPANY</h3>
-          <Link href="/commitments">Commitments</Link>
-          <a href="/commitments#mission" onClick={(e) => { e.preventDefault(); scrollToSection('mission', '/commitments'); }}>Mission</a>
-          <a href="/commitments#team" onClick={(e) => { e.preventDefault(); scrollToSection('team', '/commitments'); }}>Team</a>
+          <h3 className="footer-title">{t('footer.company', 'COMPANY')}</h3>
+          <a href="/commitments" onClick={(e) => handleClick(e, '/commitments')}>{t('footer.commitments', 'Commitments')}</a>
+          <a href="/commitments#mission" onClick={(e) => handleClick(e, '/commitments', 'mission')}>{t('footer.mission', 'Mission')}</a>
+          <a href="/commitments#team" onClick={(e) => handleClick(e, '/commitments', 'team')}>{t('footer.team', 'Team')}</a>
         </div>
         <div className="footer-section">
-          <h3 className="footer-title">LEGAL</h3>
-          <Link href="/privacy-policy">Privacy Policy</Link>
-          <Link href="/terms-of-service">Terms of Service</Link>
-          <Link href="/cookies-policy">Cookies Policy</Link>
+          <h3 className="footer-title">{t('footer.legal', 'LEGAL')}</h3>
+          <a href="/privacy-policy" onClick={(e) => handleClick(e, '/privacy-policy')}>{t('footer.privacy_policy', 'Privacy Policy')}</a>
+          <a href="/terms-of-service" onClick={(e) => handleClick(e, '/terms-of-service')}>{t('footer.terms_of_service', 'Terms of Service')}</a>
+          <a href="/cookies-policy" onClick={(e) => handleClick(e, '/cookies-policy')}>{t('footer.cookies_policy', 'Cookies Policy')}</a>
         </div>
         <div className="footer-section">
-          <h3 className="footer-title">CONTACTS</h3>
+          <h3 className="footer-title">{t('footer.contacts', 'CONTACTS')}</h3>
           <span>Parkurbis</span>
           <span>Parque da Ciência e Tecnologia da Covilhã</span>
           <span>6200-865 Covilhã</span>
@@ -88,12 +109,12 @@ const Footer: React.FC = () => {
         <div className="footer-bottom-separator"></div>
         <div className="footer-copyright-row">
           <div className="footer-copyright">
-            Copyright © CDNCORE - AI Agent &amp; Drone Services {new Date().getFullYear()}. All rights reserved.
+            {t('footer.copyright', 'Copyright © CDNCORE - AI Agent & Software Services {{year}}. All rights reserved.', { year: new Date().getFullYear() })}
           </div>
           <button
             className="footer-scroll-top"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            aria-label="Scroll to top"
+            aria-label={t('footer.scroll_top', 'Scroll to top')}
           >
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
               <defs>

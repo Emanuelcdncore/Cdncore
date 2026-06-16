@@ -8,7 +8,7 @@ export const newsSeoConfig: NewsSiteConfig = {
   news: {
     title: 'Notícias CDNCore',
     description:
-      'Últimas notícias, investigação e novidades da CDNCore - IA, Drones e Robótica',
+      'Últimas notícias, investigação e novidades da CDNCore - IA, Cibersegurança e Software',
   },
-  defaultOgImage: '/images/og-default.png',
+  defaultOgImage: '/og-default.png',
 };

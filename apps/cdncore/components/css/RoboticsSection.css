@@ -1,6 +1,0 @@
-.robotics-section { position: relative; z-index: 2; background: #0D1116; overflow: visible; }
-.robotics-card-wrapper { border-radius: 16px; overflow: visible !important; }
-.robotics-card-wrapper .spotlight-card-content { padding: 60px; overflow: visible; position: relative; }
-.robotics-image-container { position: absolute; right: -40px; top: -60px; width: 400px; height: 400px; pointer-events: none; z-index: 10; }
-.robotics-image-container img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.3)); }
-@media (max-width: 768px) { .robotics-image-container { position: relative; right: 0; top: 0; width: 100%; height: 250px; margin-bottom: 20px; } }

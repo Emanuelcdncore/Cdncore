@@ -9,7 +9,12 @@ export function generateMetadata() {
 }
 
 export default async function News() {
-    const rows = await getPublishedNews('cdncore');
-    const articles = rows.map(toNewsArticle);
+    let articles: ReturnType<typeof toNewsArticle>[] = [];
+    try {
+        const rows = await getPublishedNews('cdncore');
+        articles = rows.map(toNewsArticle);
+    } catch {
+        // DB unavailable locally — render empty state
+    }
     return <NewsPage articles={articles} />;
 }

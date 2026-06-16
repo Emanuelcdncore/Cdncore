@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import type { ProductDetail } from '@/lib/products-data';
+import { normalizeSpecKey } from '@/lib/products-i18n';
 import { formatEUR } from '@/lib/products-format';
 import { Skeleton } from '@/components/products-ui/skeleton';
 import {
@@ -18,7 +20,22 @@ import { motion } from 'framer-motion';
 import '@/components/css/Products.css';
 
 export default function ProductDetail({ product }: { product: ProductDetail }) {
+  const { t, i18n } = useTranslation();
+  const tSpec = (name: string) => t(`product_specs.${normalizeSpecKey(name)}`, { defaultValue: name });
   const [variantId, setVariantId] = useState<string | null>(null);
+  const [localizedDesc, setLocalizedDesc] = useState(product.description_html);
+
+  useEffect(() => {
+    const lang = (i18n.language ?? 'pt').split('-')[0];
+    if (lang === 'pt' || !product.description_html) return;
+    const bp = process.env.BASE_PATH || '';
+    fetch(`${bp}/product-descriptions/${lang}.json`)
+      .then(r => r.ok ? r.json() : null)
+      .then((data: Record<string, string> | null) => {
+        setLocalizedDesc(data?.[product.handle] ?? product.description_html);
+      })
+      .catch(() => {});
+  }, [i18n.language, product.handle]);
   const [activeImage, setActiveImage] = useState(0);
   const [qty, setQty] = useState(1);
   const [tab, setTab] = useState<'desc' | 'specs' | 'ship'>('desc');
@@ -29,17 +46,17 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
   const mainImg = images[activeImage]?.url ?? product.featured_image;
 
   const specList: { label: string; value: string }[] = [];
-  if (product.vendor) specList.push({ label: 'Fabricante / Marca', value: product.vendor });
-  if (product.product_type) specList.push({ label: 'Tipo de Produto', value: product.product_type });
-  if (selectedVariant?.sku) specList.push({ label: 'Código de Artigo (SKU)', value: selectedVariant.sku });
+  if (product.vendor) specList.push({ label: t('products_page.spec_manufacturer'), value: product.vendor });
+  if (product.product_type) specList.push({ label: t('products_page.spec_product_type'), value: product.product_type });
+  if (selectedVariant?.sku) specList.push({ label: t('products_page.spec_sku'), value: selectedVariant.sku });
   if (selectedVariant?.weight_g) {
     const weightKg = selectedVariant.weight_g / 1000;
-    specList.push({ label: 'Peso', value: `${weightKg.toFixed(2)} kg (${selectedVariant.weight_g} g)` });
+    specList.push({ label: t('products_page.spec_weight'), value: `${weightKg.toFixed(2)} kg (${selectedVariant.weight_g} g)` });
   }
   if (product.specs) {
     Object.entries(product.specs).forEach(([key, values]) => {
       if (Array.isArray(values) && values.length > 0) {
-        specList.push({ label: key, value: values.join(', ') });
+        specList.push({ label: tSpec(key), value: values.map(v => tSpec(String(v))).join(', ') });
       }
     });
   }
@@ -48,13 +65,13 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
     <div className="products-page min-h-screen pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 py-6">
         <nav className="flex items-center gap-1.5 text-xs text-zinc-400 mb-6">
-          <Link href="/" className="hover:text-purple-400">Início</Link>
+          <Link href="/" className="hover:text-purple-400">{t('products_page.breadcrumb_home')}</Link>
           <ChevronRight className="h-3 w-3" />
-          <Link href="/products" className="hover:text-purple-400">Produtos</Link>
+          <Link href="/products" className="hover:text-purple-400">{t('products_page.breadcrumb_products')}</Link>
           {product.product_type && (
             <>
               <ChevronRight className="h-3 w-3" />
-              <span>{product.product_type}</span>
+              <span>{tSpec(product.product_type)}</span>
             </>
           )}
           <ChevronRight className="h-3 w-3" />
@@ -77,7 +94,7 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                   className="w-full h-full object-contain p-8 transition-transform duration-300 group-hover:scale-105 relative z-10"
                 />
               ) : (
-                <span className="text-zinc-600 text-sm relative z-10">Sem imagem</span>
+                <span className="text-zinc-600 text-sm relative z-10">{t('products_page.no_image')}</span>
               )}
             </div>
             {images.length > 1 && (
@@ -115,7 +132,7 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                   )}
                   {product.product_type && (
                     <span className="text-[11px] uppercase tracking-wide text-zinc-400">
-                      {product.product_type}
+                      {tSpec(product.product_type)}
                     </span>
                   )}
                 </div>
@@ -130,25 +147,25 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                   <span className="text-4xl font-bold text-white">
                     {formatEUR(selectedVariant?.price_cents ?? 0)}
                   </span>
-                  <span className="text-xs text-zinc-500 uppercase tracking-widest">IVA incluído</span>
+                  <span className="text-xs text-zinc-500 uppercase tracking-widest">{t('products_page.vat_included')}</span>
                 </div>
 
                 <div className="mt-3">
                   {selectedVariant?.available ? (
                     <span className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-500">
                       <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                      <Check className="h-4 w-4" /> Em stock
+                      <Check className="h-4 w-4" /> {t('products_page.in_stock_label')}
                     </span>
                   ) : (
                     <span className="inline-flex items-center gap-1.5 text-sm font-medium text-red-500">
-                      <span className="h-2 w-2 rounded-full bg-red-500" /> Esgotado
+                      <span className="h-2 w-2 rounded-full bg-red-500" /> {t('products_page.out_of_stock')}
                     </span>
                   )}
                 </div>
 
                 {variants.length > 1 && (
                   <div className="mt-6">
-                    <label className="text-sm font-medium block mb-2">Variante</label>
+                    <label className="text-sm font-medium block mb-2">{t('products_page.variant')}</label>
                     <div className="grid gap-2">
                       {variants.map((v: any) => {
                         const active = v.id === (selectedVariant?.id);
@@ -175,18 +192,18 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-white/5">
                   <TrustBadge
                     icon={<Truck className="h-4 w-4" />}
-                    title="Entrega gratuita"
-                    desc="Encomendas acima de 75,00 €"
+                    title={t('products_page.trust_free_shipping')}
+                    desc={t('products_page.trust_free_shipping_desc')}
                   />
                   <TrustBadge
                     icon={<ShieldCheck className="h-4 w-4" />}
-                    title="Pagamento seguro"
-                    desc="SSL encriptado"
+                    title={t('products_page.trust_secure_payment')}
+                    desc={t('products_page.trust_secure_payment_desc')}
                   />
                   <TrustBadge
                     icon={<RotateCcw className="h-4 w-4" />}
-                    title="Devoluções"
-                    desc="Sem complicações"
+                    title={t('products_page.trust_returns')}
+                    desc={t('products_page.trust_returns_desc')}
                   />
                 </div>
               </div>
@@ -209,7 +226,7 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                     tab === 'desc' ? 'text-purple-500' : 'text-zinc-400 hover:text-white'
                   }`}
                 >
-                  Descrição
+                  {t('products_page.tab_description')}
                   {tab === 'desc' && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-500" />}
                 </button>
               )}
@@ -220,7 +237,7 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                     tab === 'specs' ? 'text-purple-500' : 'text-zinc-400 hover:text-white'
                   }`}
                 >
-                  Especificações
+                  {t('products_page.tab_specs')}
                   {tab === 'specs' && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-500" />}
                 </button>
               )}
@@ -230,15 +247,15 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                   tab === 'ship' ? 'text-purple-500' : 'text-zinc-400 hover:text-white'
                 }`}
               >
-                Envio e Devoluções
+                {t('products_page.tab_shipping')}
                 {tab === 'ship' && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-500" />}
               </button>
             </div>
             <div className="p-6 lg:p-8">
-              {tab === 'desc' && product.description_html && (
+              {tab === 'desc' && localizedDesc && (
                 <div
                   className="prose-product max-w-3xl text-zinc-300"
-                  dangerouslySetInnerHTML={{ __html: product.description_html }}
+                  dangerouslySetInnerHTML={{ __html: localizedDesc }}
                 />
               )}
               {tab === 'specs' && (
@@ -248,10 +265,10 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
                       <thead>
                         <tr className="border-b border-white/5 bg-white/2">
                           <th className="px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-purple-400 w-1/3">
-                            Especificação
+                            {t('products_page.spec_col_name')}
                           </th>
                           <th className="px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-purple-400">
-                            Detalhe
+                            {t('products_page.spec_col_detail')}
                           </th>
                         </tr>
                       </thead>
@@ -270,13 +287,13 @@ export default function ProductDetail({ product }: { product: ProductDetail }) {
               {tab === 'ship' && (
                 <div className="max-w-3xl space-y-4 text-sm text-zinc-400">
                   <p>
-                    <strong className="text-white">Envio:</strong> Entrega gratuita em encomendas acima de 75,00 €.
+                    <strong className="text-white">{t('products_page.shipping_title')}</strong> {t('products_page.shipping_desc')}
                   </p>
                   <p>
-                    <strong className="text-white">Devoluções:</strong> Aceitamos devoluções até 14 dias após a receção.
+                    <strong className="text-white">{t('products_page.returns_title')}</strong> {t('products_page.returns_desc')}
                   </p>
                   <p>
-                    <strong className="text-white">Garantia:</strong> Todos os produtos incluem garantia do fabricante.
+                    <strong className="text-white">{t('products_page.warranty_title')}</strong> {t('products_page.warranty_desc')}
                   </p>
                 </div>
               )}

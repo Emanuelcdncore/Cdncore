@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import I18nProvider from "@/components/I18nProvider";
 import ScrollToTop from "@/components/ScrollToTop";
 import NavigationWrapper from "@/components/NavigationWrapper";
+import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 import "./globals.css";
 
 const inter = Inter({
@@ -81,6 +82,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${depot.variable} antialiased`}>
         <I18nProvider>
+          <LoadingScreen />
           <ScrollToTop />
           <NavigationWrapper />
           {children}

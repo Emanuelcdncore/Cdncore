@@ -1,12 +1,57 @@
 'use client';
 
 import Link from "next/link";
+import { useTranslation } from 'react-i18next';
 import { NewsCard } from "./NewsCard";
 import type { NewsArticle } from "@cdn/news";
 
 export function NewsSection({ articles }: { articles: NewsArticle[] }) {
+    const { t } = useTranslation();
     const heroArticle = articles[0];
     const gridArticles = articles;
+
+    if (articles.length === 0) {
+        return (
+            <div style={{
+                backgroundColor: '#0c0c14',
+                minHeight: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '1rem',
+                padding: '4rem 2rem',
+            }}>
+                <p style={{
+                    fontSize: '11px',
+                    fontWeight: 700,
+                    color: 'rgba(255,255,255,0.3)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.15em',
+                }}>
+                    CDNCore News
+                </p>
+                <h2 style={{
+                    fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
+                    fontWeight: 900,
+                    color: 'rgba(255,255,255,0.85)',
+                    textAlign: 'center',
+                    fontFamily: "var(--font-depot), 'Inter', sans-serif",
+                }}>
+                    {t('news.coming_soon_title')}
+                </h2>
+                <p style={{
+                    fontSize: '1rem',
+                    color: 'rgba(255,255,255,0.4)',
+                    textAlign: 'center',
+                    maxWidth: '28rem',
+                    lineHeight: 1.7,
+                }}>
+                    {t('news.coming_soon_desc')}
+                </p>
+            </div>
+        );
+    }
 
     return (
         <div style={{ backgroundColor: '#0c0c14', minHeight: '100vh' }}>

@@ -1,0 +1,13 @@
+.rb-scroll-reveal {
+  margin: 0;
+}
+
+.rb-scroll-reveal-text {
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 0;
+}
+
+.rb-word {
+  display: inline-block;
+}

@@ -2,23 +2,26 @@
 
 import React, { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IconHome, IconBulb, IconHeart, IconNews, IconMessage, IconMenu2, IconX, IconPackage } from '@tabler/icons-react';
+import LanguageSelector from './LanguageSelector';
 import './css/MobileNav.css';
 
-const navItems = [
-  { icon: IconHome, label: 'Home', href: '/' },
-  { icon: IconBulb, label: 'Capabilities', href: '/#capabilities' },
-  { icon: IconPackage, label: 'Products', href: '/products' },
-  { icon: IconHeart, label: 'Commitments', href: '/commitments' },
-  { icon: IconNews, label: 'News', href: '/news' },
-  { icon: IconMessage, label: 'Contact', href: '/contact' },
-];
-
 const MobileNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+
+  const navItems = [
+    { icon: IconHome, label: t('nav.home', 'Home'), href: '/' },
+    { icon: IconBulb, label: t('nav.services', 'Services'), href: '/services' },
+    { icon: IconPackage, label: t('nav.products', 'Products'), href: '/products' },
+    { icon: IconHeart, label: t('nav.commitments', 'Commitments'), href: '/commitments' },
+    { icon: IconNews, label: t('nav.news', 'News'), href: '/news' },
+    { icon: IconMessage, label: t('nav.contact', 'Contact'), href: '/contact' },
+  ];
 
   const handleClick = (href: string) => {
     setIsOpen(false);
@@ -58,7 +61,7 @@ const MobileNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) => {
             >
               {navItems.map((item) => (
                 <button
-                  key={item.label}
+                  key={item.href}
                   className={`mobile-nav-item ${pathname === item.href ? 'active' : ''}`}
                   onClick={() => handleClick(item.href)}
                 >
@@ -66,6 +69,9 @@ const MobileNav: React.FC<{ hidden?: boolean }> = ({ hidden = false }) => {
                   <span>{item.label}</span>
                 </button>
               ))}
+              <div className="mobile-nav-lang">
+                <LanguageSelector />
+              </div>
             </motion.div>
           </>
         )}
